@@ -1,7 +1,7 @@
 # Deployment configuration for a physical hardware POD
 ---
 seedServer:
-  ip: '10.201.101.3'
+  ip: '10.201.101.11'
   # User name and password used by Ansible to connect to the host for remote
   # provisioning. These default values are used for automated testing, change
   # with care.
