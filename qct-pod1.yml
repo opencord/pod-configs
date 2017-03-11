@@ -23,7 +23,7 @@ seedServer:
   #                 NAT-ed through this interface
   fabric_ip: '10.6.1.1/24'
   management_ip: '10.6.0.1/24'
-  management_ignore_names=eth2
+  management_ignore_names: eth2
   external_ip: '10.201.101.11/24'
   #external_iface: 'eth0'
   skipTags:
