@@ -6,8 +6,8 @@ seedServer:
   
   # User name and password used by Ansible to connect to the host for remote
   # provisioning
-  user: 'ubuntu'
-  password: 'ubuntu'
+  user: 'cord'
+  password: 'cord'
 
   fabric_ip: '10.6.1.1/24'
   management_ip: '10.6.0.1/24'
