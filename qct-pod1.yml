@@ -27,9 +27,8 @@ seedServer:
   external_iface: 'eth2'
   external_gw: '10.201.101.1'
   skipTags:
-
-extraVars:
-  - 'management_ignore_names=eth0'
+  extraVars:
+    - 'management_ignore_names=eth0'
 
 passwords:
   compute_node: "ubuntu"
