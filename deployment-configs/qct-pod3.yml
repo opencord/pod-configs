@@ -1,0 +1,33 @@
+# Automated deployment configuration for QCT POD 3
+---
+
+branch: 'cord-3.0'
+
+pod_config:
+  repo_url: 'https://gerrit.opencord.org/pod-configs'
+  file_name: 'qct-pod3.yml'
+
+notify_to:
+  - 'luca@onlab.us'
+
+make_release: 'false'
+
+maas:
+  ip: '10.201.101.254'
+  api_key: 'fQp2rrr3RqZtkJJYBK:XqQX7UqwXGKMYQ8EZ5:UDbFhfenPdjc3fmmCQX2fek7AyRGrf6A'
+  head_system_id: 'amnpa7'
+
+head:
+  ip: '10.201.101.31'
+  user: 'cord'
+  pass: 'cord'
+
+compute_nodes_ipmi:
+  -
+    ip: '10.201.101.33'
+    user: 'OCPQ'
+    pass: 'OCPQ'
+  -
+    ip: '10.201.101.34'
+    user: 'OCPQ'
+    pass: 'OCPQ'
