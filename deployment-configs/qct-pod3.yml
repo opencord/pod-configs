@@ -1,14 +1,9 @@
 # Automated deployment configuration for QCT POD 3
 ---
 
-branch: 'cord-3.0'
-
 pod_config:
   repo_url: 'https://gerrit.opencord.org/pod-configs'
   file_name: 'qct-pod3.yml'
-
-notify_to:
-  - 'luca@onlab.us'
 
 make_release: 'false'
 

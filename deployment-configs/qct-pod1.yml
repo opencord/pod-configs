@@ -1,0 +1,55 @@
+# Automated deployment configuration for QCT POD 1
+---
+
+pod_config:
+  repo_url: 'https://gerrit.opencord.org/pod-configs'
+  file_name: 'qct-pod1.yml'
+
+make_release: 'false'
+
+maas:
+  ip: '10.201.101.254'
+  api_key: 'fQp2rrr3RqZtkJJYBK:XqQX7UqwXGKMYQ8EZ5:UDbFhfenPdjc3fmmCQX2fek7AyRGrf6A'
+  head_system_id: 'b4ey3w'
+
+dev_node:
+  user: 'cord'
+
+head:
+  ip: '10.201.101.11'
+  user: 'cord'
+  pass: 'cord'
+
+compute_nodes:
+  -
+    ipmi:
+      ip: '10.201.101.13'
+      user: 'OCPQ'
+      pass: 'OCPQ'
+  -
+    ipmi:
+      ip: '10.201.101.14'
+      user: 'OCPQ'
+      pass: 'OCPQ'
+
+fabric_switches:
+  -
+    mac: '48:0f:cf:ae:de:26'
+    ip: '10.6.0.101'
+    user: 'root'
+    pass: 'onl'
+  -
+    mac: '48:0f:cf:ae:cc:24'
+    ip: '10.6.0.102'
+    user: 'root'
+    pass: 'onl'
+  -
+    mac: '48:0f:cf:ae:ee:2a'
+    ip: '10.6.0.103'
+    user: 'root'
+    pass: 'onl'
+  -
+    mac: '48:0f:cf:ae:9d:58'
+    ip: '10.6.0.104'
+    user: 'root'
+    pass: 'onl'
