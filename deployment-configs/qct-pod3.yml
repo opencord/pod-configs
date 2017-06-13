@@ -17,17 +17,22 @@ maas:
   api_key: 'fQp2rrr3RqZtkJJYBK:XqQX7UqwXGKMYQ8EZ5:UDbFhfenPdjc3fmmCQX2fek7AyRGrf6A'
   head_system_id: 'amnpa7'
 
+dev_node:
+  user: 'cord'
+
 head:
   ip: '10.201.101.31'
   user: 'cord'
   pass: 'cord'
 
-compute_nodes_ipmi:
+compute_nodes:
   -
-    ip: '10.201.101.33'
-    user: 'OCPQ'
-    pass: 'OCPQ'
+    ipmi:
+      ip: '10.201.101.33'
+      user: 'OCPQ'
+      pass: 'OCPQ'
   -
-    ip: '10.201.101.34'
-    user: 'OCPQ'
-    pass: 'OCPQ'
+    ipmi:
+      ip: '10.201.101.34'
+      user: 'OCPQ'
+      pass: 'OCPQ'
