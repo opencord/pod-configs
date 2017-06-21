@@ -13,6 +13,7 @@ maas:
   head_system_id: 'amnpa7'
 
 dev_node:
+  name: 'qct-cord-pod3'
   user: 'cord'
 
 head:
