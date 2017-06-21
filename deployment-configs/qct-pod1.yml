@@ -13,6 +13,7 @@ maas:
   head_system_id: 'b4ey3w'
 
 dev_node:
+  name: 'qct-cord-pod1'
   user: 'cord'
 
 head:
