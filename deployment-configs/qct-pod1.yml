@@ -5,7 +5,7 @@ pod_config:
   repo_url: 'https://gerrit.opencord.org/pod-configs'
   file_name: 'qct-pod1.yml'
 
-make_release: 'false'
+make_release: 'true'
 
 maas:
   ip: '10.201.101.254'
