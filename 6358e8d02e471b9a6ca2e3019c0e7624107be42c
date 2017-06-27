@@ -46,6 +46,30 @@
       "revId": "6358e8d02e471b9a6ca2e3019c0e7624107be42c",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a202591_f594b845",
+        "filename": "deployment-configs/calix-pod1.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2017-06-27T09:54:26Z",
+      "side": 1,
+      "message": "@david this is not the maas api key of the maas instance running on the head node, but rather the one re-provisioning the head node at every build.\n@andy all the IPs are private and reachable only thorough our internal IPSEC tunnels. Anyway, if we want in the future we could make this part of the repo (or even the entire repo) private and downloadable only through authentication. ANYWAY, Jenkins displays in clear all variables used during the job, including passwords and keys.",
+      "parentUuid": "5a202591_55eecc23",
+      "range": {
+        "startLine": 12,
+        "startChar": 12,
+        "endLine": 12,
+        "endChar": 82
+      },
+      "revId": "6358e8d02e471b9a6ca2e3019c0e7624107be42c",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
     }
   ]
 }
