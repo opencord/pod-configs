@@ -1,0 +1,34 @@
+# Automated deployment configuration for Calix POD 1
+---
+
+pod_config:
+  repo_url: 'https://gerrit.opencord.org/pod-configs'
+  file_name: 'calix-pod1.yml'
+
+make_release: 'false'
+
+maas:
+  ip: '10.66.12.5'
+  api_key: 'RPbnFddZXfsyzMq3va:yXqjhC5HBHN9SPEmnp:rkZ4YsCSRaVtjfer6RYUKXT85cYQTLW4'
+  head_system_id: 'dd33wn'
+
+dev_node:
+  name: 'calix-cord-pod1'
+  user: 'sdn'
+
+head:
+  ip: '10.66.12.7'
+  user: 'cord'
+  pass: 'cord'
+
+compute_nodes:
+  -
+    ipmi:
+      ip: '10.66.12.3'
+      user: 'admin'
+      pass: 'admin'
+  -
+    ipmi:
+      ip: '10.66.12.4'
+      user: 'admin'
+      pass: 'admin'
