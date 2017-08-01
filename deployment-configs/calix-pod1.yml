@@ -9,7 +9,7 @@ make_release: 'false'
 
 maas:
   ip: '10.66.12.5'
-  api_key: 'RPbnFddZXfsyzMq3va:yXqjhC5HBHN9SPEmnp:rkZ4YsCSRaVtjfer6RYUKXT85cYQTLW4'
+  api_key: 'gSwcMgspjagTH5uyYQ:wPBBz3MRqAcDpXd2aL:C8aTg7pLmTpaF9bXZvN2bLDzzMCJVhTF'
   head_system_id: 'dd33wn'
 
 dev_node:
