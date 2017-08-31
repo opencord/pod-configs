@@ -19,7 +19,7 @@
 
 # this is used to generate the genconfig/cord-inv file
 headnode:
-  ip: '10.118.126.11'
+  ip: '10.192.4.62'
   ansible_user: 'cord'
   ansible_ssh_pass: 'cord'
   ansible_ssh_port: 22
@@ -51,9 +51,9 @@ common:
   #                 NAT-ed through this interface
   fabric_ip: '10.6.1.1/24'
   management_ip: '10.6.0.1/24'
-  external_ip: '10.118.126.11/20'
-  external_iface: 'enp4s0f0'
-  external_gw: '10.118.112.1'
+  external_ip: '10.192.4.62/20'
+  external_iface: 'enp4s0f1'
+  external_gw: '10.192.4.1'
   skipTags:
 
 passwords:
