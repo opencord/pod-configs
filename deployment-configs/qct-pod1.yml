@@ -10,7 +10,7 @@ make_release: 'true'
 maas:
   ip: '10.201.101.254'
   api_key: 'fQp2rrr3RqZtkJJYBK:XqQX7UqwXGKMYQ8EZ5:UDbFhfenPdjc3fmmCQX2fek7AyRGrf6A'
-  head_system_id: 'b4ey3w'
+  head_system_id: 'bqqqkm'
 
 dev_node:
   name: 'qct-cord-pod1'
