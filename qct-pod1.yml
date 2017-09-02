@@ -63,6 +63,8 @@ physical_node_list:
     aliases:
       - head
 
+management_ignore_names: 'eth0'
+
 # Inventory for ansible, used to generate inventory.ini
 inventory_groups:
 
