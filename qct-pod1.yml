@@ -47,7 +47,10 @@ headnode: cord@10.201.101.11
 host_cord_profile_dir: "/var/jenkins_home/workspace/cord_profile"
 
 build_targets:
- - setup-automation
+  - setup-automation
+
+copy_cord_prereqs:
+  - config-ssh-key
 
 skipTags:
   - 'set_compute_node_password'
@@ -83,3 +86,4 @@ inventory_groups:
       ansible_ssh_pass: cord
 
   compute:
+
