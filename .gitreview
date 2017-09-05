@@ -3,3 +3,4 @@ host=gerrit.opencord.org
 port=29418
 project=pod-configs.git
 defaultremote=origin
+defaultbranch=cord-4.0
