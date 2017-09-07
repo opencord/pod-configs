@@ -23,7 +23,7 @@ cord_profile: rcord
 
 
 vagrant_vms:
-  - corddev
+  - 'corddev'
 
 # Variables
 credentials_dir: '/opt/credentials'
@@ -47,18 +47,17 @@ headnode: cord@10.201.101.11
 host_cord_profile_dir: "/var/jenkins_home/workspace/cord_profile"
 
 build_targets:
-  - setup-automation
+  - 'setup-automation'
 
 copy_cord_prereqs:
-  - config-ssh-key
+  - 'config-ssh-key'
 
 skipTags:
   - 'set_compute_node_password'
-  - 'switch_support'
 
 # Wait until headnode prepped before building containers, for consistent DNS
 docker_images_prereqs:
-  - prep-headnode
+  - 'prep-headnode'
 
 # node topology
 physical_node_list:
@@ -70,20 +69,15 @@ management_ignore_names: 'eth0'
 
 # Inventory for ansible, used to generate inventory.ini
 inventory_groups:
-
   config:
     localhost:
       ansible_connection: local
-
   build:
     corddev:
-
   head:
     head1:
       ansible_host: 10.201.101.11
       ansible_port: 22
       ansible_user: cord
       ansible_ssh_pass: cord
-
   compute:
-
