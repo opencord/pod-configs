@@ -35,5 +35,5 @@ compute_nodes:
   -
     ipmi:
       ip: '10.192.4.29'
-      user: 'ADMINk'
+      user: 'ADMIN'
       pass: 'ADMIN'
