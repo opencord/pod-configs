@@ -37,3 +37,25 @@ compute_nodes:
       ip: '10.192.4.29'
       user: 'ADMIN'
       pass: 'ADMIN'
+
+fabric_switches:
+  -
+    mac: '08:35:71:07:70:14'
+    ip: '10.6.0.101'
+    user: 'root'
+    pass: 'onl'
+  -
+    mac: '08:35:71:08:7f:2e'
+    ip: '10.6.0.102'
+    user: 'root'
+    pass: 'onl'
+  -
+    mac: '08:35:71:07:6f:da'
+    ip: '10.6.0.103'
+    user: 'root'
+    pass: 'onl'
+  -
+    mac: '70:72:cf:6c:6a:60'
+    ip: '10.6.0.104'
+    user: 'root'
+    pass: 'onl'
