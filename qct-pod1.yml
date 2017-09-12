@@ -13,14 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
 ---
-# rcord-physical-example Pod Config
-# Example configuration for a physical R-CORD pod
 
 cord_scenario: cord
 cord_profile: rcord
-
 
 vagrant_vms:
   - 'corddev'
