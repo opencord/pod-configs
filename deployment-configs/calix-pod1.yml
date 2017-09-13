@@ -10,7 +10,7 @@ make_release: 'false'
 maas:
   ip: '10.66.12.5'
   api_key: 'gSwcMgspjagTH5uyYQ:wPBBz3MRqAcDpXd2aL:C8aTg7pLmTpaF9bXZvN2bLDzzMCJVhTF'
-  head_system_id: 'ygytse'
+  head_system_id: 'wxcpkg'
 
 dev_node:
   name: 'calix-cord-pod1'
