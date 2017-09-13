@@ -50,6 +50,7 @@ copy_cord_prereqs:
 
 skipTags:
   - 'set_compute_node_password'
+  - 'reboot'
 
 # Wait until headnode prepped before building containers, for consistent DNS
 docker_images_prereqs:
