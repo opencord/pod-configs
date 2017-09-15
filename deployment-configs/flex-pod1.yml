@@ -10,7 +10,7 @@ make_release: 'false'
 maas:
   ip: '10.192.4.61'
   api_key: 'rsz9S2cYpr7M5w4SfL:gyw4vKqLpWwagSjFGg:pamj7QtqGC6eUZusMj6rCWRdNy9qPab7'
-  head_system_id: 'wrqqk3'
+  head_system_id: 'wbgst6'
 
 dev_node:
   name: 'flex-cord-pod1'
