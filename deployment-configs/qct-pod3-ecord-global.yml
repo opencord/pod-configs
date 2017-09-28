@@ -12,13 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Automated deployment configuration for QCT POD 3
+# Automated E-CORD global node deployment configuration for QCT POD 3
 
 ---
 
 pod_config:
   repo_url: 'https://gerrit.opencord.org/pod-configs'
-  file_name: 'qct-pod3.yml'
+  file_name: 'qct-pod3-ecord-global.yml'
 
 make_release: 'false'
 
