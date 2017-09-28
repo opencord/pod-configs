@@ -1,0 +1,34 @@
+# Automated M-CORD deployment configuration for QCT POD 4
+---
+
+pod_config:
+  repo_url: 'https://gerrit.opencord.org/pod-configs'
+  file_name: 'qct-pod4-mcord.yml'
+
+make_release: 'false'
+
+maas:
+  ip: '10.201.101.254'
+  api_key: 'fQp2rrr3RqZtkJJYBK:XqQX7UqwXGKMYQ8EZ5:UDbFhfenPdjc3fmmCQX2fek7AyRGrf6A'
+  head_system_id: 'b43ra7'
+
+dev_node:
+  name: 'qct-cord-pod4'
+  user: 'cord'
+
+head:
+  ip: '10.201.101.41'
+  user: 'cord'
+  pass: 'cord'
+
+compute_nodes:
+  -
+    ipmi:
+      ip: '10.201.101.43'
+      user: 'OCPQ'
+      pass: 'OCPQ'
+  -
+    ipmi:
+      ip: '10.201.101.44'
+      user: 'OCPQ'
+      pass: 'OCPQ'
