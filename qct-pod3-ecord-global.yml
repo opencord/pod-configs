@@ -15,7 +15,7 @@
 
 ---
 
-cord_scenario: cord
+cord_scenario: single
 cord_profile: ecord-global
 
 vagrant_vms:
