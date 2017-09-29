@@ -22,6 +22,30 @@
       "revId": "c5a2779b8cb324009000175cfc177cfc476f41e2",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a5c5d37_ffc6ba48",
+        "filename": "qct-pod3-ecord-global.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2017-09-29T16:52:00Z",
+      "side": 1,
+      "message": "sorry, missed it this morning. I\u0027ll immediately correct it in a following patch in few mins",
+      "parentUuid": "9a5c5d37_df02d6b3",
+      "range": {
+        "startLine": 18,
+        "startChar": 15,
+        "endLine": 18,
+        "endChar": 19
+      },
+      "revId": "c5a2779b8cb324009000175cfc177cfc476f41e2",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
     }
   ]
 }
