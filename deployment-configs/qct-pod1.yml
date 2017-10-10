@@ -38,11 +38,17 @@ head:
 
 compute_nodes:
   -
+    mac: '2c:60:0c:6f:b6:76'
+    ip: '10.6.0.201'
+    switch: '48:0f:cf:ae:de:26'
     ipmi:
       ip: '10.201.101.13'
       user: 'OCPQ'
       pass: 'OCPQ'
   -
+    mac: '2c:60:0c:6f:b6:04'
+    ip: '10.6.0.202'
+    switch: '48:0f:cf:ae:ee:2a'
     ipmi:
       ip: '10.201.101.14'
       user: 'OCPQ'
@@ -54,18 +60,22 @@ fabric_switches:
     ip: '10.6.0.101'
     user: 'root'
     pass: 'onl'
+    role: 'leaf-1'
   -
     mac: '48:0f:cf:ae:cc:24'
     ip: '10.6.0.102'
     user: 'root'
     pass: 'onl'
+    role: 'spine-1'
   -
     mac: '48:0f:cf:ae:ee:2a'
     ip: '10.6.0.103'
     user: 'root'
     pass: 'onl'
+    role: 'leaf-2'
   -
     mac: '48:0f:cf:ae:9d:58'
     ip: '10.6.0.104'
     user: 'root'
     pass: 'onl'
+    role: 'spine-2'
