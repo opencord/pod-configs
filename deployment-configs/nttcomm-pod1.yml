@@ -1,0 +1,76 @@
+# Copyright 2017-present Open Networking Foundation
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Automated deployment configuration for QCT POD 1
+
+---
+
+pod_config:
+  repo_url: 'https://gerrit.opencord.org/pod-configs'
+  file_name: 'nttcomm-pod1.yml'
+
+make_release: 'true'
+
+maas:
+  ip: '192.168.18.60'
+  api_key: 'aCdu75LWyhMqMX9C6g:q6s39tsvRzLesSUXa5:VgrbVQx5FpQwk3PmJLED82RVSn2AqpPS'
+  head_system_id: 'h4ecwg'
+
+dev_node:
+  name: 'nttcomm-cord-pod1'
+  user: 'cord'
+
+head:
+  ip: '192.168.18.61'
+  user: 'cord'
+  pass: 'cord'
+
+compute_nodes:
+  -
+    ipmi:
+      ip: '192.168.18.52'
+      user: 'OCPQ'
+      pass: 'OCPQ'
+  -
+    ipmi:
+      ip: '192.168.18.53'
+      user: 'OCPQ'
+      pass: 'OCPQ'
+  -
+    ipmi:
+      ip: '192.168.18.54'
+      user: 'OCPQ'
+      pass: 'OCPQ'
+
+fabric_switches:
+  -
+    mac: 'cc:37:ab:a0:e5:bd'
+    ip: '10.6.0.101'
+    user: 'root'
+    pass: 'onl'
+  -
+    mac: 'cc:37:ab:a0:e4:37'
+    ip: '10.6.0.102'
+    user: 'root'
+    pass: 'onl'
+  -
+    mac: 'cc:37:ab:a0:e3:b5'
+    ip: '10.6.0.103'
+    user: 'root'
+    pass: 'onl'
+  -
+    mac: 'cc:37:ab:a0:dd:9d'
+    ip: '10.6.0.104'
+    user: 'root'
+    pass: 'onl'
