@@ -35,15 +35,3 @@ head:
   ip: '10.201.101.31'
   user: 'cord'
   pass: 'cord'
-
-compute_nodes:
-  -
-    ipmi:
-      ip: '10.201.101.33'
-      user: 'OCPQ'
-      pass: 'OCPQ'
-  -
-    ipmi:
-      ip: '10.201.101.34'
-      user: 'OCPQ'
-      pass: 'OCPQ'
