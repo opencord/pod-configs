@@ -22,12 +22,14 @@ start_xos_prereqs:
 
 vagrant_vms: []
 
+cord_config_prereqs:
+  - config-ssh-key
+
 copy_cord_prereqs:
   - config-ssh-key
 
-cord_config_prereqs: []
-
 prep_buildnode_prereqs:
+  - copy-cord
   - copy-config
 
 # Inventory for ansible, used to generate inventory.ini
