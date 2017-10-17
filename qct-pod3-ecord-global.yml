@@ -22,6 +22,9 @@ start_xos_prereqs:
 
 vagrant_vms: []
 
+copy_cord_prereqs:
+  - config-ssh-key
+
 cord_config_prereqs: []
 
 prep_buildnode_prereqs:

@@ -1,4 +1,4 @@
-
+---
 # Copyright 2017-present Open Networking Foundation
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,8 +12,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
----
 
 cord_scenario: cord
 cord_profile: mcord
@@ -44,6 +42,9 @@ host_cord_profile_dir: "/var/jenkins_home/workspace/cord_profile"
 
 build_targets:
   - 'setup-automation'
+
+config_ssh_key_prereqs:
+  - 'vagrant-up'
 
 copy_cord_prereqs:
   - 'config-ssh-key'
