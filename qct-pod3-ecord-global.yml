@@ -32,6 +32,9 @@ prep_buildnode_prereqs:
   - copy-cord
   - copy-config
 
+headnode: cord@10.201.101.31
+buildnode: cord@10.201.101.31
+
 # Inventory for ansible, used to generate inventory.ini
 inventory_groups:
   config:
