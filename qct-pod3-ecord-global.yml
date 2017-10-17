@@ -20,6 +20,13 @@ cord_profile: ecord-global
 start_xos_prereqs:
   - deploy-onos
 
+vagrant_vms: []
+
+cord_config_prereqs: []
+
+prep_buildnode_prereqs:
+  - copy-config
+
 # Inventory for ansible, used to generate inventory.ini
 inventory_groups:
   config:
