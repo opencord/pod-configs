@@ -29,7 +29,7 @@ fabric_ip: '10.6.1.1/24'
 management_ip: '10.6.0.1/24'
 external_ip: '10.90.1.70/16'
 external_gw: '10.90.0.1'
-external_iface: 'p255p1'
+external_iface: 'eth0'
 management_network: 10.6.0.0/24
 
 deploy_docker_registry: "10.90.1.70:5000"
