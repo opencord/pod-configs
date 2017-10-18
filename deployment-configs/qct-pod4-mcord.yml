@@ -42,8 +42,3 @@ compute_nodes:
       ip: '10.201.101.43'
       user: 'OCPQ'
       pass: 'OCPQ'
-  -
-    ipmi:
-      ip: '10.201.101.44'
-      user: 'OCPQ'
-      pass: 'OCPQ'
