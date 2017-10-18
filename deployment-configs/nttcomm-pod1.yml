@@ -40,18 +40,18 @@ compute_nodes:
   -
     ipmi:
       ip: '192.168.18.52'
-      user: 'OCPQ'
-      pass: 'OCPQ'
+      user: 'Administrator'
+      pass: 'Administrator'
   -
     ipmi:
       ip: '192.168.18.53'
-      user: 'OCPQ'
-      pass: 'OCPQ'
+      user: 'Administrator'
+      pass: 'Administrator'
   -
     ipmi:
       ip: '192.168.18.54'
-      user: 'OCPQ'
-      pass: 'OCPQ'
+      user: 'Administrator'
+      pass: 'Administrator'
 
 fabric_switches:
   -
