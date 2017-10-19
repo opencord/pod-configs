@@ -20,20 +20,15 @@ vagrant_vms:
   - 'corddev'
 
 # Variables
-credentials_dir: '/opt/credentials'
-pki_dir: '/opt/pki'
-ssh_pki_dir: '/opt/ssh_pki'
-
 fabric_ip: '10.6.1.1/24'
 management_ip: '10.6.0.1/24'
 external_ip: '10.201.101.31/24'
 external_gw: '10.201.101.1'
 external_iface: 'eth2'
 management_network: 10.6.0.0/24
+management_ignore_names: 'eth0'
 
 deploy_docker_registry: "10.201.101.31:5000"
-
-headnode: cord@10.201.101.31
 
 # NOTE: The `host_cord_profile_dir` variable below is the path to the cord_profile dir that
 # gets mounted to corddev VM.This `cord_profile` dir typically lives in a directory
@@ -53,13 +48,8 @@ skipTags:
 docker_images_prereqs:
   - 'prep-headnode'
 
-# node topology
-physical_node_list:
-  - name: head1
-    aliases:
-      - head
-
-management_ignore_names: 'eth0'
+# headnode to ssh to for some make tasks
+headnode: cord@10.201.101.31
 
 # Inventory for ansible, used to generate inventory.ini
 inventory_groups:
