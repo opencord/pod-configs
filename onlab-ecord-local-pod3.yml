@@ -16,14 +16,17 @@
 # POD config for ONF E-CORD POD, E-CORD local POD 3
 cord_scenario: cord
 cord_profile: ecord
-
-vagrant_vms:
-  - 'corddev'
-
 # Variables
-credentials_dir: '/opt/credentials'
-pki_dir: '/opt/pki'
-ssh_pki_dir: '/opt/ssh_pki'
+# shared between podconfigs, for root/intermediate CA setup
+pki_dir: "{{ ( playbook_dir ~ '/../../../onf_ecord_pki' ) | realpath }}"
+
+# different, as passwords/SSH keys/cord_profile should be different
+credentials_dir: "{{ ( playbook_dir ~ '/../../../onf_ecord_local_pod3_credentials' ) | realpath }}"
+ssh_pki_dir: "{{ ( playbook_dir ~ '/../../../onf_ecord_local_pod3_ssh_pki' ) | realpath }}"
+config_cord_profile_dir: "{{ ( playbook_dir ~ '/../../../onf_ecord_local_pod3_profile' ) | realpath }}"
+
+# path created on local system, mounted into corddev by Vagrant
+host_cord_profile_dir: "/var/jenkins_home/workspace/onf_ecord_local_pod3_profile"
 
 fabric_ip: '10.6.1.1/24'
 management_ip: '10.6.0.1/24'
@@ -34,11 +37,8 @@ management_network: 10.6.0.0/24
 
 deploy_docker_registry: "10.90.1.70:5000"
 
-headnode: cord@10.90.1.70
-
-# NOTE: The `host_cord_profile_dir` variable below is the path to the cord_profile dir that
-# gets mounted to corddev VM.This `cord_profile` dir typically lives in a directory
-# one level up from the `cord` directory
+vagrant_vms:
+  - 'corddev'
 
 build_targets:
   - 'setup-automation'
@@ -53,11 +53,8 @@ skipTags:
 docker_images_prereqs:
   - 'prep-headnode'
 
-# node topology
-physical_node_list:
-  - name: head1
-    aliases:
-      - head
+# headnode to ssh to for some make tasks
+headnode: cord@10.90.1.70
 
 # Inventory for ansible, used to generate inventory.ini
 inventory_groups:
