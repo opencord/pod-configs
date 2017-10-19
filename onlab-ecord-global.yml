@@ -17,6 +17,15 @@
 cord_scenario: single
 cord_profile: ecord-global
 
+# Variables
+# shared between podconfigs, for root/intermediate CA setup
+pki_dir: "{{ ( playbook_dir ~ '/../../../onf_ecord_pki' ) | realpath }}"
+
+# different, as passwords/SSH keys/cord_profile should be different
+credentials_dir: "{{ ( playbook_dir ~ '/../../../onf_ecord_global_credentials' ) | realpath }}"
+ssh_pki_dir: "{{ ( playbook_dir ~ '/../../../onf_ecord_global_ssh_pki' ) | realpath }}"
+config_cord_profile_dir: "{{ ( playbook_dir ~ '/../../../onf_ecord_global_profile' ) | realpath }}"
+
 start_xos_prereqs:
   - deploy-onos
 
@@ -31,6 +40,9 @@ copy_cord_prereqs:
 prep_buildnode_prereqs:
   - copy-cord
   - copy-config
+
+headnode: cord@10.90.1.10
+buildnode: cord@10.90.1.10
 
 # Inventory for ansible, used to generate inventory.ini
 inventory_groups:
