@@ -27,7 +27,7 @@ ssh_pki_dir: "{{ ( playbook_dir ~ '/../../../onf_ecord_local_pod1_ssh_pki' ) | r
 config_cord_profile_dir: "{{ ( playbook_dir ~ '/../../../onf_ecord_local_pod1_profile' ) | realpath }}"
 
 # path created on local system, mounted into corddev by Vagrant
-host_cord_profile_dir: "/var/jenkins_home/workspace/cord_profile"
+host_cord_profile_dir: "/var/jenkins_home/workspace/onf_ecord_local_pod1_profile"
 
 fabric_ip: '10.6.1.1/24'
 management_ip: '10.6.0.1/24'
