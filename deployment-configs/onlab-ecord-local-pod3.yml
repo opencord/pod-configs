@@ -42,3 +42,9 @@ compute_nodes:
       ip: '10.90.1.72'
       user: 'admin'
       pass: 'admin'
+fabric_switches:
+  -
+    mac: 'cc:37:ab:7c:bc:60'
+    ip: '10.6.0.101'
+    user: 'root'
+    pass: 'onl'
