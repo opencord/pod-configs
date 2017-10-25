@@ -61,7 +61,7 @@ physical_node_list:
 
 # Extra network config
 'fabric_include_names': 'eth4'
-'management_ignore_names': 'eth0,eth1,eth3,eth5'
+'management_ignore_names': 'eth0,eth1,eth3,eth4,eth5'
 
 # Inventory for ansible, used to generate inventory.ini
 inventory_groups:
