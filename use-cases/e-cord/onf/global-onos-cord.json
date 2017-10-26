@@ -1,0 +1,71 @@
+{
+  "apps" : {
+    "org.opencord.ce.global.vprovider" : {
+      "xos" : {
+        "username" : "xosadmin@opencord.org",
+        "password" : "Cc42rM8rIKGTvguZjvv5",
+        "address" : "10.90.1.10",
+        "resource" : "/xosapi/v1/vnaas/usernetworkinterfaces/"
+      }
+    },
+    "org.opencord.ce.global.channel.http" : {
+      "endPoints" : {
+        "port" : "8182",
+        "topics" : [
+          "ecord-domains-topic-one"
+        ],
+        "domains" :
+        [
+          {
+            "domainId" : "10.90.1.30-fabric-onos",
+            "publicIp" : "10.90.1.30",
+            "port" : "8181",
+            "username" : "onos",
+            "password" : "rocks",
+            "topic" : "ecord-domains-topic-one"
+          },
+          {
+            "domainId" : "10.90.1.30-cord-onos",
+            "publicIp" : "10.90.1.30",
+            "port" : "8182",
+            "username" : "onos",
+            "password" : "rocks",
+            "topic" : "ecord-domains-topic-one"
+          },
+          {
+            "domainId" : "10.90.1.50-fabric-onos",
+            "publicIp" : "10.90.1.50",
+            "port" : "8181",
+            "username" : "onos",
+            "password" : "rocks",
+            "topic" : "ecord-domains-topic-one"
+          },
+          {
+            "domainId" : "10.90.1.50-cord-onos",
+            "publicIp" : "10.90.1.50",
+            "port" : "8182",
+            "username" : "onos",
+            "password" : "rocks",
+            "topic" : "ecord-domains-topic-one"
+          },
+          {
+            "domainId" : "10.90.1.70-fabric-onos",
+            "publicIp" : "10.90.1.70",
+            "port" : "8181",
+            "username" : "onos",
+            "password" : "rocks",
+            "topic" : "ecord-domains-topic-one"
+          },
+          {
+            "domainId" : "10.90.1.70-cord-onos",
+            "publicIp" : "10.90.1.70",
+            "port" : "8182",
+            "username" : "onos",
+            "password" : "rocks",
+            "topic" : "ecord-domains-topic-one"
+          }
+        ]
+      }
+    }
+  }
+}

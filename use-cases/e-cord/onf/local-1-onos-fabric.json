@@ -1,0 +1,42 @@
+{
+  "apps" : {
+    "org.opencord.ce.local.fabric" : {
+      "segmentrouting_ctl": {
+        "publicIp": "10.90.1.30",
+        "port": "8181",
+        "username": "onos",
+        "password": "rocks",
+        "deviceId": "of:0000cc37ab7cbd64"
+      }
+    },
+    "org.opencord.ce.local.bigswitch" : {
+      "mefPorts" :
+      [
+        {
+          "mefPortType" : "INNI",
+          "connectPoint" : "of:0000cc37ab7cbd64/2",
+          "interlinkId" : "EE-1-to-fabric"
+        },
+        {
+          "mefPortType" : "ENNI",
+          "connectPoint" : "of:0000cc37ab7cbd64/30",
+          "interlinkId" : "fabric-1-to-fabric-2"
+        },
+        {
+          "mefPortType" : "ENNI",
+          "connectPoint" : "of:0000cc37ab7cbd64/32",
+          "interlinkId" : "fabric-1-to-fabric-3"
+        }
+      ]
+    },
+    "org.opencord.ce.local.channel.http" : {
+      "global" : {
+        "publicIp" : "10.90.1.10",
+        "port" : "8182",
+        "username" : "onos",
+        "password" : "rocks",
+        "topic" : "ecord-domains-topic-one"
+      }
+    }
+  }
+}
