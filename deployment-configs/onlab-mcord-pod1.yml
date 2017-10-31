@@ -39,12 +39,12 @@ head:
 compute_nodes:
   -
     ipmi:
-      ip: '10.90.0.12'
+      ip: '10.90.2.12'
       user: 'admin'
       pass: 'admin'
   -
     ipmi:
-      ip: '10.90.0.13'
+      ip: '10.90.2.13'
       user: 'admin'
       pass: 'admin'
 
