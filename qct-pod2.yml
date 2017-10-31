@@ -30,7 +30,7 @@ fabric_ip: '10.6.1.1/24'
 management_ip: '10.6.0.1/24'
 external_ip: '10.201.101.21/24'
 external_gw: '10.201.101.1'
-external_iface: 'eth2'
+external_iface: 'eth0'
 management_network: 10.6.0.0/24
 
 deploy_docker_registry: "10.201.101.21:5000"
@@ -61,7 +61,8 @@ physical_node_list:
     aliases:
       - head
 
-management_ignore_names: 'eth0'
+'fabric_include_names'='eth2'
+'management_exclude_names'='eth2'
 
 # Inventory for ansible, used to generate inventory.ini
 inventory_groups:
