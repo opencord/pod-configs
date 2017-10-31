@@ -18,7 +18,7 @@
 
 pod_config:
   repo_url: 'https://gerrit.opencord.org/pod-configs'
-  file_name: 'onlab-mcord-pod1.yml.yml'
+  file_name: 'onlab-mcord-pod1.yml'
 
 make_release: 'false'
 
