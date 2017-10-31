@@ -14,8 +14,8 @@
       [
         {
           "mefPortType" : "INNI",
-          "connectPoint" : "of:0000cc37ab7cc2fa/2",
-          "interlinkId" : "EE-2-to-fabric"
+          "connectPoint" : "of:0000cc37ab7cc2fa/37",
+          "interlinkId" : "UNI-2-to-fabric"
         },
         {
           "mefPortType" : "ENNI",
