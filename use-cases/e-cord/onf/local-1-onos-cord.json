@@ -16,12 +16,12 @@
   }
  },
  "links": {
-  "netconf:10.6.0.160:830/0-of:0000001e08095936/49" : {
+  "netconf:10.6.0.160:830/0-of:0000001e08095936/50" : {
    "basic" : {
     "type" : "DIRECT"
    }
   },
-  "of:0000001e08095936/49-netconf:10.6.0.160:830/0" : {
+  "of:0000001e08095936/50-netconf:10.6.0.160:830/0" : {
    "basic" : {
     "type" : "DIRECT"
    }
@@ -38,7 +38,7 @@
      {
       "mefPortType" : "INNI",
       "connectPoint" : "of:0000001e08095936/50",
-      "interlinkId" : "EE-2-fabric"
+      "interlinkId" : "EE-1-to-fabric"
      }
     ]
   },

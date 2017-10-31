@@ -42,8 +42,8 @@ topology_template:
       properties:
         cbs: 1000
         ebs: 1200
-        cir: 1000000
-        eir: 1200000
+        cir: 1000
+        eir: 1200
         name: bronze
 
     bandwidthprofile#silver:
@@ -52,8 +52,8 @@ topology_template:
       properties:
         cbs: 1500
         ebs: 2000
-        cir: 1500000
-        eir: 2000000
+        cir: 10000
+        eir: 2000
         name: silver
 
     bandwidthprofile#gold:
@@ -62,8 +62,8 @@ topology_template:
       properties:
         cbs: 2000
         ebs: 2700
-        cir: 2000000
-        eir: 2700000
+        cir: 20000
+        eir: 5000
         name: gold
 
     bandwidthprofile#platinum:
@@ -72,8 +72,8 @@ topology_template:
       properties:
         cbs: 2500
         ebs: 3200
-        cir: 2500000
-        eir: 3200000
+        cir: 100000
+        eir: 10000
         name: platinum
 
     usernetworkinterface#UserNetworkInterface1:

@@ -1,10 +1,10 @@
 {
  "devices": {
-  "netconf:10.6.0.161:830": {
+  "netconf:10.6.0.162:830": {
    "netconf": {
      "username": "admin",
      "password": "admin",
-     "ip": "10.6.0.161",
+     "ip": "10.6.0.162",
      "port": "830"
    },
    "basic": {
@@ -15,25 +15,14 @@
    }
   }
  },
- "links": {
-  "netconf:10.6.0.161:830/0-of:0000cc37ab7cc2fa/2" : {
-   "basic" : {
-    "type" : "DIRECT"
-   }
-  },
-  "of:0000cc37ab7cc2fa/2-netconf:10.6.0.161:830/0" : {
-   "basic" : {
-    "type" : "DIRECT"
-   }
-  }
- },
  "apps" : {
   "org.opencord.ce.local.bigswitch" : {
    "mefPorts" :
     [
      {
-      "mefPortType" : "UNI",
-      "connectPoint" : "netconf:10.6.0.161:830/0"
+	 "mefPortType" : "UNI",
+	 "connectPoint" : "netconf:10.6.0.162:830/0",
+         "interlinkId" : "UNI-2-to-fabric"
      }
     ]
   },
