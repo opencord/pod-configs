@@ -55,7 +55,7 @@ docker_images_prereqs:
 
 # set which interfaces to use for fabric/mgmt network
 fabric_include_names: 'eth2'
-management_exclude_names: 'eth2'
+management_exclude_names: 'eth0,eth2'
 
 # Inventory for ansible, used to generate inventory.ini
 inventory_groups:
