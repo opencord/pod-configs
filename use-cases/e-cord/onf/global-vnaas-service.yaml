@@ -30,7 +30,7 @@ topology_template:
       requirements:
       properties:
         name: onfGlobalONOS
-        onos_ip: 127.0.0.1
+        onos_ip: onos-cord
         onos_port: 8182
         onos_username: onos
         onos_password: rocks
@@ -40,40 +40,40 @@ topology_template:
       type: tosca.nodes.BandwidthProfile
       requirements:
       properties:
-        cbs: 1000
-        ebs: 1200
-        cir: 1000
-        eir: 1200
+        cbs: 10
+        ebs: 12
+        cir: 10
+        eir: 12
         name: bronze
 
     bandwidthprofile#silver:
       type: tosca.nodes.BandwidthProfile
       requirements:
       properties:
-        cbs: 1500
-        ebs: 2000
-        cir: 10000
-        eir: 2000
+        cbs: 15
+        ebs: 20
+        cir: 15
+        eir: 20
         name: silver
 
     bandwidthprofile#gold:
       type: tosca.nodes.BandwidthProfile
       requirements:
       properties:
-        cbs: 2000
-        ebs: 2700
-        cir: 20000
-        eir: 5000
+        cbs: 20
+        ebs: 27
+        cir: 20
+        eir: 27
         name: gold
 
     bandwidthprofile#platinum:
       type: tosca.nodes.BandwidthProfile
       requirements:
       properties:
-        cbs: 2500
-        ebs: 3200
-        cir: 100000
-        eir: 10000
+        cbs: 25
+        ebs: 32
+        cir: 25
+        eir: 32
         name: platinum
 
     usernetworkinterface#UserNetworkInterface1:
@@ -83,7 +83,7 @@ topology_template:
         tenant: onf
         name: uni1
         latlng: [37.973535, -122.531087]
-        cpe_id: netconf:10.6.0.160:830/0
+        cpe_id: domain:10.90.1.30-cord-onos/1
 
     usernetworkinterface#UserNetworkInterface2:
       type: tosca.nodes.UserNetworkInterface
@@ -92,7 +92,7 @@ topology_template:
         tenant: onf
         name: uni2
         latlng: [37.773972, -122.431297]
-        cpe_id: netconf:10.6.0.161:830/0
+        cpe_id: domain:10.90.1.50-cord-onos/1
 
     usernetworkinterface#UserNetworkInterface3:
       type: tosca.nodes.UserNetworkInterface
@@ -101,15 +101,16 @@ topology_template:
         tenant: onf
         name: uni3
         latlng: [37.871637, -122.259750]
-        cpe_id: netconf:10.6.0.162:830/0
+        cpe_id: domain:10.90.1.70-cord-onos/1
 
     # eline#testeline:
-    #  type: tosca.nodes.ELine
-    #  requirements:
-    #  properties:
-    #    name: testeline
-    #    connect_point_1_id: netconf:10.6.0.160:830/0
-    #    connect_point_2_id: netconf:10.6.0.161:830/0
-    #    vlanids: 100
-    #    cord_site_name: onfGlobalONOS
-    #    bwp: gold
+    #   type: tosca.nodes.ELine
+    #   requirements:
+    #   properties:
+    #     name: testeline
+    #     connect_point_1_id: domain:10.90.1.30-cord-onos/1
+    #     connect_point_2_id: domain:10.90.1.50-cord-onos/1
+    #     vlanids: 100
+    #     cord_site_name: onfGlobalONOS
+    #     bwp: gold
+
