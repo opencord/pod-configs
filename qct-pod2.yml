@@ -53,14 +53,9 @@ skipTags:
 docker_images_prereqs:
   - 'prep-headnode'
 
-# node topology
-physical_node_list:
-  - name: head1
-    aliases:
-      - head
-
-'fabric_include_names'='eth2'
-'management_exclude_names'='eth2'
+# set which interfaces to use for fabric/mgmt network
+fabric_include_names: 'eth2'
+management_exclude_names: 'eth2'
 
 # Inventory for ansible, used to generate inventory.ini
 inventory_groups:
@@ -76,3 +71,4 @@ inventory_groups:
       ansible_user: cord
       ansible_ssh_pass: cord
   compute:
+
