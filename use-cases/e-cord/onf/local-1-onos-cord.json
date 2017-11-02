@@ -37,7 +37,7 @@
      },
      {
       "mefPortType" : "INNI",
-      "connectPoint" : "of:0000001e08095936/50",
+      "connectPoint" : "of:0000001e08095936/49",
       "interlinkId" : "EE-1-to-fabric"
      }
     ]
