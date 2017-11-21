@@ -33,6 +33,10 @@
     [
      {
       "mefPortType" : "UNI",
+      "connectPoint" : "netconf:10.6.0.160:830/0"
+     },
+     {
+      "mefPortType" : "GENERIC",
       "connectPoint" : "netconf:10.6.0.160:830/1"
      },
      {
