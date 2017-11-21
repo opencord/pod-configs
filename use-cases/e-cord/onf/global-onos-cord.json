@@ -3,9 +3,8 @@
     "org.opencord.ce.global.vprovider" : {
       "xos" : {
         "username" : "xosadmin@opencord.org",
-        "password" : "Cc42rM8rIKGTvguZjvv5",
-        "address" : "10.90.1.10",
-        "resource" : "/xosapi/v1/vnaas/usernetworkinterfaces/"
+        "password" : "0Ui8QNJNCdXrjjLpF1U6",
+        "endpoint" : "10.90.1.10:80/xosapi/v1/vnaas/usernetworkinterfaces"
       }
     },
     "org.opencord.ce.global.channel.http" : {
