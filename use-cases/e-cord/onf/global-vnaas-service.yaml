@@ -76,33 +76,6 @@ topology_template:
         eir: 10000
         name: platinum
 
-    usernetworkinterface#UserNetworkInterface1:
-      type: tosca.nodes.UserNetworkInterface
-      requirements:
-      properties:
-        tenant: onf
-        name: uni1
-        latlng: [37.973535, -122.531087]
-        cpe_id: domain:10.90.1.30-cord-onos/1
-
-    usernetworkinterface#UserNetworkInterface2:
-      type: tosca.nodes.UserNetworkInterface
-      requirements:
-      properties:
-        tenant: onf
-        name: uni2
-        latlng: [37.773972, -122.431297]
-        cpe_id: domain:10.90.1.50-cord-onos/1
-
-    usernetworkinterface#UserNetworkInterface3:
-      type: tosca.nodes.UserNetworkInterface
-      requirements:
-      properties:
-        tenant: onf
-        name: uni3
-        latlng: [37.871637, -122.259750]
-        cpe_id: domain:10.90.1.70-cord-onos/1
-
     # eline#testeline:
     #   type: tosca.nodes.ELine
     #   requirements:
