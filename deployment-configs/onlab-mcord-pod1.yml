@@ -54,3 +54,18 @@ fabric_switches:
     ip: '10.6.0.101'
     user: 'root'
     pass: 'onl'
+  -
+    mac: 'cc:37:ab:5b:6d:26'
+    ip: '10.6.0.17'
+    user: 'root'
+    pass: 'onl'
+  -
+    mac: 'cc:37:ab:6b:07:8e'
+    ip: '10.6.0.18'
+    user: 'root'
+    pass: 'onl'
+  -
+    mac: 'cc:37:ab:7c:b8:50'
+    ip: '10.6.0.16'
+    user: 'root'
+    pass: 'onl'
