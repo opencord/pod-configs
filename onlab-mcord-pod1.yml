@@ -1,4 +1,3 @@
----
 # Copyright 2017-present Open Networking Foundation
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,67 +12,60 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-cord_scenario: cord
-cord_profile: mcord-spirent
+# Automated deployment configuration for ONF/ON.Lab physical POD 1
 
-vagrant_vms:
-  - 'corddev'
+---
 
-# Variables
-credentials_dir: '/opt/credentials'
-pki_dir: '/opt/pki'
-ssh_pki_dir: '/opt/ssh_pki'
+pod_config:
+  repo_url: 'https://gerrit.opencord.org/pod-configs'
+  file_name: 'onlab-mcord-pod1.yml'
 
-fabric_ip: '10.6.1.1/24'
-management_ip: '10.6.0.1/24'
-external_ip: '10.90.2.10/16'
-external_gw: '10.90.0.1'
-external_iface: 'eth0'
-management_network: 10.6.0.0/24
-fabric_include_names: 'eth2,eth3'
-fabric_exclude_names: 'eth0,eth1'
-management_include_names: 'eth1'
-management_exclude_names: 'eth0,eth2,eth3'
+make_release: 'false'
 
-deploy_docker_registry: "10.90.2.10:5000"
+maas:
+  ip: '10.90.0.2'
+  api_key: 'gFH8GA9FLp3bWpesZX:rVyJz3ThB93FrrNyPw:Fu9KZEwBenXRLUu9TMXVkMjLJsuXNXDb'
+  head_system_id: '4y3h8b'
 
-headnode: cord@10.90.2.10
+dev_node:
+  name: 'onf-mcord-dev'
+  user: 'cord'
 
-# NOTE: The `host_cord_profile_dir` variable below is the path to the cord_profile dir that
-# gets mounted to corddev VM.This `cord_profile` dir typically lives in a directory
-# one level up from the `cord` directory
-host_cord_profile_dir: "/var/jenkins_home/workspace/cord_profile"
+head:
+  ip: '10.90.2.10'
+  user: 'cord'
+  pass: 'cord'
 
-build_targets:
-  - 'setup-automation'
+compute_nodes:
+  -
+    ipmi:
+      ip: '10.90.2.12'
+      user: 'admin'
+      pass: 'admin'
+  -
+    ipmi:
+      ip: '10.90.2.13'
+      user: 'admin'
+      pass: 'admin'
 
-copy_cord_prereqs:
-  - 'config-ssh-key'
-
-skipTags:
-  - 'set_compute_node_password'
-
-# Wait until headnode prepped before building containers, for consistent DNS
-docker_images_prereqs:
-  - 'prep-headnode'
-
-# node topology
-physical_node_list:
-  - name: head1
-    aliases:
-      - head
-
-# Inventory for ansible, used to generate inventory.ini
-inventory_groups:
-  config:
-    localhost:
-      ansible_connection: local
-  build:
-    corddev:
-  head:
-    head1:
-      ansible_host: 10.90.2.10
-      ansible_port: 22
-      ansible_user: cord
-      ansible_ssh_pass: cord
-  compute:
+fabric_switches:
+  -
+    mac: '48:0f:cf:ae:7e:90'
+    ip: '10.6.0.101'
+    user: 'root'
+    pass: 'onl'
+  -
+    mac: 'cc:37:ab:5b:6d:26'
+    ip: '10.6.0.17'
+    user: 'root'
+    pass: 'onl'
+  -
+    mac: 'cc:37:ab:6b:07:8e'
+    ip: '10.6.0.18'
+    user: 'root'
+    pass: 'onl'
+  -
+    mac: 'cc:37:ab:7c:b8:50'
+    ip: '10.6.0.16'
+    user: 'root'
+    pass: 'onl'
