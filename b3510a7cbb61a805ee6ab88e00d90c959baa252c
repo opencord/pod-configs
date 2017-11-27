@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3e3bec06_516836ed",
+        "filename": "onlab-ecord-local-pod3.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1000029
+      },
+      "writtenOn": "2017-11-27T18:24:50Z",
+      "side": 1,
+      "message": "this one should be 10.90.1.70",
+      "revId": "b3510a7cbb61a805ee6ab88e00d90c959baa252c",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
