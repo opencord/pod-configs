@@ -72,3 +72,6 @@ inventory_groups:
       ansible_ssh_pass: cord
   compute:
 
+#Prefix for the domainId
+carrierethernet_domainid_prefix: 10.90.1.30
+
