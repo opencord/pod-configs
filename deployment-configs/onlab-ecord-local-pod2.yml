@@ -48,3 +48,6 @@ fabric_switches:
     ip: '10.6.0.101'
     user: 'root'
     pass: 'onl'
+    breakout_ports:
+	- 2
+	- 10
