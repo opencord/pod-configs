@@ -49,5 +49,4 @@ fabric_switches:
     user: 'root'
     pass: 'onl'
     breakout_ports:
-	- 2
-	- 10
+        - 2
