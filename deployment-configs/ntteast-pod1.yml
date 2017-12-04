@@ -32,24 +32,24 @@ dev_node:
   user: 'cord'
 
 head:
-  ip: '192.168.18.61'
+  ip: '192.168.99.61'
   user: 'cord'
   pass: 'cord'
 
 compute_nodes:
   -
     ipmi:
-      ip: '192.168.18.52'
+      ip: '192.168.99.52'
       user: 'Administrator'
       pass: 'Administrator'
   -
     ipmi:
-      ip: '192.168.18.53'
+      ip: '192.168.99.53'
       user: 'Administrator'
       pass: 'Administrator'
   -
     ipmi:
-      ip: '192.168.18.54'
+      ip: '192.168.99.54'
       user: 'Administrator'
       pass: 'Administrator'
 
