@@ -47,11 +47,6 @@ compute_nodes:
       ip: '192.168.99.53'
       user: 'Administrator'
       pass: 'Administrator'
-  -
-    ipmi:
-      ip: '192.168.99.54'
-      user: 'Administrator'
-      pass: 'Administrator'
 
 fabric_switches:
   -
