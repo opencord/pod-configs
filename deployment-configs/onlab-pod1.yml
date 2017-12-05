@@ -49,11 +49,11 @@ compute_nodes:
       pass: 'admin'
 
 fabric_switches:
-  -
-    mac: 'cc:37:ab:61:7e:c2'
-    ip: '10.6.0.101'
-    user: 'root'
-    pass: 'onl'
+  #-
+  #  mac: 'cc:37:ab:61:7e:c2'
+  #  ip: '10.6.0.101'
+  #  user: 'root'
+  #  pass: 'onl'
   -
     mac: 'cc:37:ab:61:80:48'
     ip: '10.6.0.102'
