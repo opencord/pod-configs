@@ -24,8 +24,8 @@ make_release: 'false'
 
 maas:
   ip: '192.168.99.60'
-  api_key: 'tj5zQM6TvEhuXpafsf:nBD3kPzQhHPNS5k6wb:xCS2sFqgrrjGNgrGucE5MFhy9P8EzuKb'
-  head_system_id: 'dfemfy'
+  api_key: 'PsfrZpCyXZhwRQ8Wbb:DcNjKqVchaTQjJ3BvJ:GjFsRmbxgB8p5JuZu9MQGVPxsrkwrG8a'
+  head_system_id: '8bswf6'
 
 dev_node:
   name: 'ntteast-cord-pod1'
