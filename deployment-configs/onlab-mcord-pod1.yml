@@ -67,9 +67,13 @@ fabric_switches:
     user: 'root'
     pass: 'onl'
     role: 'leaf-1'
+    breakout_ports:
+        - 9
   -
     mac: '48:0f:cf:ae:7e:90'
     ip: '10.6.0.104'
     user: 'root'
     pass: 'onl'
     role: 'leaf-2'
+    breakout_ports:
+        - 9
