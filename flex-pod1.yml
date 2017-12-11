@@ -20,10 +20,6 @@ vagrant_vms:
   - 'corddev'
 
 # Variables
-credentials_dir: '/opt/credentials'
-pki_dir: '/opt/pki'
-ssh_pki_dir: '/opt/ssh_pki'
-
 fabric_ip: '10.6.1.1/24'
 management_ip: '10.6.0.1/24'
 external_ip: '10.192.4.62/24'
