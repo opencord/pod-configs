@@ -23,7 +23,7 @@ pod_config:
 make_release: 'false'
 
 maas:
-  ip: '10.92.0.20'
+  ip: '10.92.0.10'
   api_key: '4AZntjAPJmN6xCdyh3:RU4aMndpdCrWLpEv3W:QbjPXNe3Pkf8EL62FCutRwn2MdVt9BJa'
   head_system_id: 'kx6mpd'
 
