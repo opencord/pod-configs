@@ -25,7 +25,7 @@ make_release: 'false'
 maas:
   ip: '10.90.0.2'
   api_key: 'gFH8GA9FLp3bWpesZX:rVyJz3ThB93FrrNyPw:Fu9KZEwBenXRLUu9TMXVkMjLJsuXNXDb'
-  head_system_id: '4y3h7p'
+  head_system_id: '4y3h8d'
 
 dev_node:
   name: 'build'
