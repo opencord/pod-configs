@@ -18,12 +18,6 @@ cord_scenario: cord
 cord_profile: ecord
 
 # Variables
-# FIXME: should be shared between podconfigs, for root/intermediate CA setup
-pki_dir: "{{ ( playbook_dir ~ '/../../../onf_ecord_local_pod1_pki' ) | realpath }}"
-
-# different, as passwords/SSH keys/cord_profile should be different
-credentials_dir: "{{ ( playbook_dir ~ '/../../../onf_ecord_local_pod1_credentials' ) | realpath }}"
-ssh_pki_dir: "{{ ( playbook_dir ~ '/../../../onf_ecord_local_pod1_ssh_pki' ) | realpath }}"
 config_cord_profile_dir: "{{ ( playbook_dir ~ '/../../../onf_ecord_local_pod1_profile' ) | realpath }}"
 
 # path created on local system, mounted into corddev by Vagrant
