@@ -59,22 +59,18 @@ fabric_switches:
     ip: '10.6.0.101'
     user: 'root'
     pass: 'onl'
-    role: 'spine-1'
   -
     mac: 'cc:37:ab:b6:b5:64'
     ip: '10.6.0.102'
     user: 'root'
     pass: 'onl'
-    role: 'leaf-2'
   -
     mac: 'cc:37:ab:d9:37:69'
     ip: '10.6.0.103'
     user: 'root'
     pass: 'onl'
-    role: 'leaf-1'
   -
     mac: 'cc:37:ab:5b:6d:a8'
     ip: '10.6.0.104'
     user: 'root'
     pass: 'onl'
-    role: 'spine-2'
