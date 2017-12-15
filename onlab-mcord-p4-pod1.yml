@@ -26,7 +26,6 @@ external_ip: '10.92.0.20/24'
 external_gw: '10.92.0.1'
 external_iface: 'enp8s0f0'
 management_network: 10.6.0.0/24
-management_exclude_names: 'enp8s0f0'
 fabric_include_module_types: 'ixgbe'
 fabric_exclude_module_types: 'igb'
 management_include_module_types: 'igb'
