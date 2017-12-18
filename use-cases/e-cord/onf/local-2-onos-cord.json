@@ -20,13 +20,13 @@
    "mefPorts" :
     [
      {
-	 "mefPortType" : "UNI",
-	 "connectPoint" : "netconf:10.6.0.162:830/0",
+         "mefPortType" : "UNI",
+         "connectPoint" : "netconf:10.6.0.162:830/0",
          "interlinkId" : "UNI-2-to-fabric"
      },
      {
-	 "mefPortType" : "GENERIC",
-	 "connectPoint" : "netconf:10.6.0.162:830/1",
+         "mefPortType" : "GENERIC",
+         "connectPoint" : "netconf:10.6.0.162:830/1"
      }
     ]
   },
