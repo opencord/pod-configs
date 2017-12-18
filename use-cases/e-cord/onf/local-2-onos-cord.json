@@ -26,7 +26,7 @@
      },
      {
 	 "mefPortType" : "GENERIC",
-	 "connectPoint" : "netconf:10.6.0.162:830/1",
+	 "connectPoint" : "netconf:10.6.0.162:830/1"
      }
     ]
   },
