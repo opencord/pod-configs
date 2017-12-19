@@ -55,6 +55,10 @@ physical_node_list:
     aliases:
       - head
 
+password_compute_node: ubuntu
+password_maas_admin: admin
+password_maas_user: cord
+
 # Inventory for ansible, used to generate inventory.ini
 inventory_groups:
   config:
