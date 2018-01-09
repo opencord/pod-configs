@@ -52,25 +52,25 @@ compute_nodes:
 fabric_switches_bmc:
   -
     mac: 'A8:2B:B5:3C:DB:40'
-    ip: '10.6.0.111'
+    ip: '10.6.0.211'
     user: 'root'
     pass: '0penBmc'
     role: 'leaf-1-bmc'
   -
     mac: 'A8:2B:B5:3C:BD:F0'
-    ip: '10.6.0.112'
+    ip: '10.6.0.212'
     user: 'root'
     pass: '0penBmc'
     role: 'leaf-2-bmc'
   -
     mac: '8C:EA:1B:E4:96:71'
-    ip: '10.6.0.121'
+    ip: '10.6.0.221'
     user: 'root'
     pass: '0penBmc'
     role: 'spine-1-bmc'
   -
     mac: '8C:EA:1B:E4:8C:0D'
-    ip: '10.6.0.122'
+    ip: '10.6.0.222'
     user: 'root'
     pass: '0penBmc'
     role: 'spine-2-bmc'
@@ -78,25 +78,25 @@ fabric_switches_bmc:
 fabric_switches:
   -
     mac: '00:90:fb:5d:9d:15'
-    ip: '10.6.0.11'
+    ip: '10.6.0.111'
     user: 'root'
     pass: 'onl'
     role: 'leaf-1'
   -
     mac: '00:90:fb:5e:48:9a'
-    ip: '10.6.0.12'
+    ip: '10.6.0.112'
     user: 'root'
     pass: 'onl'
     role: 'leaf-2'
   -
     mac: '00:90:fb:5c:e1:a6'
-    ip: '10.6.0.21'
+    ip: '10.6.0.121'
     user: 'root'
     pass: 'onl'
     role: 'spine-1'
   -
     mac: '00:90:fb:5c:e1:97'
-    ip: '10.6.0.22'
+    ip: '10.6.0.122'
     user: 'root'
     pass: 'onl'
     role: 'spine-2'
