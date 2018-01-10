@@ -41,13 +41,13 @@ inventory_groups:
     localhost:
       ansible_connection: local
   build:
-    head1:
+    cord-head-03:
       ansible_host: 10.201.101.31
       ansible_port: 22
       ansible_user: cord
       ansible_ssh_pass: cord
   head:
-    head1:
+    cord-head-03:
       ansible_host: 10.201.101.31
       ansible_port: 22
       ansible_user: cord
