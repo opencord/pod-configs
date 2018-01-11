@@ -36,8 +36,10 @@ headnode: cord@10.201.101.31
 buildnode: cord@10.201.101.31
 
 # node topology
+# this is unusual, but needed because we're running a "single" scenario on a physical node instead of a VM
 physical_node_list:
   - name: cord-head-03
+    ipv4_last_octet: 1
     aliases:
       - head
       - head1
