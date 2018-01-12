@@ -36,6 +36,9 @@ headnode: cord@10.255.21.2
 # one level up from the `cord` directory
 host_cord_profile_dir: "/var/jenkins_home/workspace/cord_profile"
 
+# Extra network config
+fabric_include_module_types: 'ixgbe'
+
 build_targets:
   - 'setup-automation'
 

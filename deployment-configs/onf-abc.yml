@@ -55,7 +55,12 @@ compute_nodes:
 
 fabric_switches:
   -
-    mac: 'cc:37:ab:61:80:48'
+    mac: 'a8:2b:b5:d2:a6:78'
+    ip: '10.255.20.201'
+    user: 'root'
+    pass: 'onl'
+  -
+    mac: 'a8:2b:b5:bd:13:a7'
     ip: '10.255.20.201'
     user: 'root'
     pass: 'onl'
