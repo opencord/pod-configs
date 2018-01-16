@@ -42,11 +42,13 @@ compute_nodes:
       ip: '10.92.0.41'
       user: 'admin'
       pass: 'admin'
+      mac: 'a4:bf:01:04:38:58'
   -
     ipmi:
       ip: '10.92.0.51'
       user: 'admin'
       pass: 'admin'
+      mac: 'a4:bf:01:04:8c:65'
 
 # P4 HW switch deployment stuff
 fabric_switches_bmc:
@@ -100,3 +102,9 @@ fabric_switches:
     user: 'root'
     pass: 'onl'
     role: 'spine-2'
+  -
+    mac: '24:8a:07:12:51:00'
+    ip: '10.6.0.231'
+    user: 'root'
+    pass: 'root'
+    role: 'spine-1-mellanox'
