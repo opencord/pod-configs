@@ -59,8 +59,10 @@ fabric_switches:
     ip: '10.255.20.201'
     user: 'root'
     pass: 'onl'
+    role: 'spine-1'
   -
     mac: 'a8:2b:b5:bd:13:a7'
     ip: '10.255.20.201'
     user: 'root'
     pass: 'onl'
+    role: 'leaf-1'
