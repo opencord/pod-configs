@@ -39,11 +39,6 @@ head:
 compute_nodes:
   -
     ipmi:
-      ip: '10.255.21.203'
-      user: 'root'
-      pass: 'Google321'
-  -
-    ipmi:
       ip: '10.255.21.204'
       user: 'root'
       pass: 'Google321'
