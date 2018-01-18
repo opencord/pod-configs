@@ -39,6 +39,11 @@ head:
 compute_nodes:
   -
     ipmi:
+      ip: '10.255.21.203'
+      user: 'root'
+      pass: 'Google321'
+  -
+    ipmi:
       ip: '10.255.21.204'
       user: 'root'
       pass: 'Google321'
@@ -57,7 +62,7 @@ fabric_switches:
     role: 'spine-1'
   -
     mac: 'a8:2b:b5:bd:13:a7'
-    ip: '10.255.20.201'
+    ip: '10.255.20.202'
     user: 'root'
     pass: 'onl'
     role: 'leaf-1'
