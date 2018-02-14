@@ -66,3 +66,15 @@ fabric_switches:
     user: 'root'
     pass: 'onl'
     role: 'leaf-1'
+  -
+    mac: 'a8:2b:b5:9d:cd:73'
+    ip: '10.255.20.203'
+    user: 'root'
+    pass: 'onl'
+    role: 'spine-2'
+  -
+    mac: 'a8:2b:b5:bd:15:ad'
+    ip: '10.255.20.204'
+    user: 'root'
+    pass: 'onl'
+    role: 'leaf-2'
