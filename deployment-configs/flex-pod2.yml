@@ -1,0 +1,80 @@
+# Copyright 2017-present Open Networking Foundation
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Automated deployment configuration for Flex POD 2
+
+---
+
+pod_config:
+  repo_url: 'https://gerrit.opencord.org/pod-configs'
+  file_name: 'flex-pod2.yml'
+
+make_release: 'false'
+
+maas:
+  ip: '10.192.20.61'
+  api_key: 'un9j4NkrTdtx6F7W3K:rP2gBaJvEPvjsc6qxX:zRxDNFVGVynVuVS93XbjxFh2DmCC8Zun'
+  head_system_id: 'ttawhe'
+
+dev_node:
+  name: 'flex-cord-pod2'
+  user: 'cluser'
+
+head:
+  ip: '10.192.20.62'
+  user: 'cord'
+  pass: 'cord'
+
+compute_nodes:
+  -
+    ipmi:
+      ip: '10.192.20.35'
+      user: 'OCPM'
+      pass: 'OCPM'
+  -
+    ipmi:
+      ip: '10.192.20.36'
+      user: 'OCPM'
+      pass: 'OCPM'
+  -
+    ipmi:
+      ip: '10.192.20.37'
+      user: 'OCPM'
+      pass: 'OCPM'
+
+fabric_switches:
+  -
+    mac: 'cc:37:ab:7c:b4:68'
+    ip: '10.6.0.101'
+    user: 'root'
+    pass: 'onl'
+    role: 'spine-1'
+  -
+    mac: '70:72:cf:df:f4:7e'
+    ip: '10.6.0.102'
+    user: 'root'
+    pass: 'onl'
+    role: 'leaf-2'
+  -
+    mac: 'cc:37:ab:97:13:27'
+    ip: '10.6.0.103'
+    user: 'root'
+    pass: 'onl'
+    role: 'leaf-1'
+  -
+    mac: 'cc:37:ab:7c:b4:1e'
+    ip: '10.6.0.104'
+    user: 'root'
+    pass: 'onl'
+    role: 'spine-2'
