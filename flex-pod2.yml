@@ -49,6 +49,10 @@ skipTags:
 docker_images_prereqs:
   - 'prep-headnode'
 
+
+# set which interfaces to use for fabric/mgmt network
+fabric_include_module_types: 'ixgbe'
+
 # node topology
 physical_node_list:
   - name: head1
