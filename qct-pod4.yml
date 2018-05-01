@@ -34,7 +34,7 @@ headnode: cord@10.201.101.41
 # NOTE: The `host_cord_profile_dir` variable below is the path to the cord_profile dir that
 # gets mounted to corddev VM.This `cord_profile` dir typically lives in a directory
 # one level up from the `cord` directory
-host_cord_profile_dir: "/var/jenkins_home/workspace/cord_profile"
+host_cord_profile_dir: "/var/jenkins_home_new/workspace/cord_profile"
 
 build_targets:
   - 'setup-automation'
