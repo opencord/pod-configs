@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Automated deployment configuration for ONF/ON.Lab physical POD 1 -- Cavium scenario on Master branch
-
+# This file is for M-CORD 5.0
 ---
 
 pod_config:
