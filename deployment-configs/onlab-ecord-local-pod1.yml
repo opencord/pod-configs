@@ -28,7 +28,7 @@ maas:
   head_system_id: '4y3h87'
 
 dev_node:
-  name: 'build'
+  name: 'onf-build'
   user: 'ubuntu'
 
 head:
