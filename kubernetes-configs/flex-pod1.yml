@@ -12,23 +12,28 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Automated deployment configuration for Flex ONF POD 1
+# Automated deployment configuration for Flex POD 1
 
 ---
 
-pod_config: 'flex-onf-pod1.conf'
+pod_config: 'flex-pod1.conf'
 
 node1:
-  ip: '10.192.22.61'
+  ip: '10.192.4.29'
   user: 'cord'
   pass: 'cord'
 
 node2:
-  ip: '10.192.22.62'
+  ip: '10.192.4.30'
   user: 'cord'
   pass: 'cord'
 
 node3:
-  ip: '10.192.22.63'
+  ip: '10.192.4.31'
+  user: 'cord'
+  pass: 'cord'
+
+node4:
+  ip: '10.192.4.32'
   user: 'cord'
   pass: 'cord'
