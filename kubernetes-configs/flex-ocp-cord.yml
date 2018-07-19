@@ -33,7 +33,7 @@ node3:
   user: 'cord'
   pass: 'cord'
 
- node4:
+node4:
   ip: '10.192.20.434'
   user: 'cord'
   pass: 'cord'
