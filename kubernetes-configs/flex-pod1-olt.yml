@@ -37,3 +37,16 @@ node4:
   ip: '10.192.4.244'
   user: 'cord'
   pass: 'cord'
+
+srcHost:
+  ip: '10.192.4.61'
+  user: 'cluser'
+  pass: 'cloudlabs'
+  gateway: '10.8.2.254'
+
+dstHost:
+  ip: '10.192.4.62'
+  hostIp: '10.8.3.100'
+  user: 'cord'
+  pass: 'cord'
+  gateway: '10.8.3.254'
