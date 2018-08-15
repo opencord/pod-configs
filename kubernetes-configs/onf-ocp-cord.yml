@@ -19,31 +19,21 @@
 pod_config: 'onf-ocp-cord.conf'
 
 node1:
-  ip: '10.192.16.20'
-  user: 'cord'
-  pass: 'cord'
-
-node2:
-  ip: '10.192.16.22'
-  user: 'cord'
-  pass: 'cord'
-
-node3:
   ip: '10.192.16.23'
   user: 'cord'
   pass: 'cord'
 
-node4:
+node2:
   ip: '10.192.16.24'
   user: 'cord'
   pass: 'cord'
 
-node5:
+node3:
   ip: '10.192.16.25'
   user: 'cord'
   pass: 'cord'
 
-node6:
+node4:
   ip: '10.192.16.26'
   user: 'cord'
   pass: 'cord'
