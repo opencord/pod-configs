@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "23c59b80_e8dbd363",
+        "filename": "kubernetes-configs/onf-ocp-cord.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1000064
+      },
+      "writtenOn": "2018-08-15T19:36:11Z",
+      "side": 1,
+      "message": "Please update the names accordingly.  Probably you may want to change the name of the files to.. because you will have multiple pods.",
+      "range": {
+        "startLine": 15,
+        "startChar": 46,
+        "endLine": 15,
+        "endChar": 49
+      },
+      "revId": "f5ed6a4a23073a241cb34e8d47b3201b53989456",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
