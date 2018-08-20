@@ -16,27 +16,31 @@
 
 ---
 
-pod_config: 'flex-pod1-olt.conf'
+pod_config: '/var/jenkins_home/workspace/flex-pod1-olt.conf'
 
-node1:
-  ip: '10.192.4.241'
-  user: 'cord'
-  pass: 'cord'
+nodes:
+  -
+    ip: '10.192.4.241'
+    user: 'cord'
+    pass: 'cord'
+  -
+    ip: '10.192.4.242'
+    user: 'cord'
+    pass: 'cord'
+  -
+    ip: '10.192.4.243'
+    user: 'cord'
+    pass: 'cord'
+  -
+    ip: '10.192.4.244'
+    user: 'cord'
+    pass: 'cord'
 
-node2:
-  ip: '10.192.4.242'
-  user: 'cord'
-  pass: 'cord'
-
-node3:
-  ip: '10.192.4.243'
-  user: 'cord'
-  pass: 'cord'
-
-node4:
-  ip: '10.192.4.244'
-  user: 'cord'
-  pass: 'cord'
+olts:
+  -
+    ip: 10.192.4.218
+    user: root
+    pass: onl
 
 srcHost:
   ip: '10.192.4.61'
@@ -50,3 +54,4 @@ dstHost:
   user: 'cord'
   pass: 'cord'
   gateway: '10.8.3.254'
+
