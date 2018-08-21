@@ -16,6 +16,8 @@
 
 ---
 
+kube_config: '/var/jenkins_home/workspace/admin.conf'
+
 nodes:
   -
     ip: '10.90.0.101'
