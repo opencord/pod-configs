@@ -16,39 +16,56 @@
 
 ---
 
-nodes:
+pod_config:
+  repo_url: 'https://gerrit.opencord.org/pod-configs'
+  file_name: 'onlab.yml'
+
+make_release: 'false'
+
+maas:
+  ip: '10.90.0.2'
+  api_key: 'gFH8GA9FLp3bWpesZX:rVyJz3ThB93FrrNyPw:Fu9KZEwBenXRLUu9TMXVkMjLJsuXNXDb'
+  head_system_id: '4y3h8d'
+
+dev_node:
+  name: 'build'
+  user: 'ubuntu'
+
+head:
+  ip: '10.90.0.251'
+  user: 'cord'
+  pass: 'cord'
+
+compute_nodes:
   -
-    ip: '10.90.0.101'
-    user: 'cord'
-    pass: 'cord'
+    ipmi:
+      ip: '10.90.0.10'
+      user: 'admin'
+      pass: 'admin'
   -
-    ip: '10.90.0.102'
-    user: 'cord'
-    pass: 'cord'
-  -
-    ip: '10.90.0.103'
-    user: 'cord'
-    pass: 'cord'
+    ipmi:
+      ip: '10.90.0.11'
+      user: 'admin'
+      pass: 'admin'
 
 fabric_switches:
+  #-
+  #  mac: 'cc:37:ab:61:7e:c2'
+  #  ip: '10.6.0.101'
+  #  user: 'root'
+  #  pass: 'onl'
+  -
+    mac: 'cc:37:ab:61:80:48'
+    ip: '10.6.0.102'
+    user: 'root'
+    pass: 'onl'
   -
     mac: 'cc:37:ab:61:80:ca'
-    ip: '10.6.0.111'
+    ip: '10.6.0.103'
     user: 'root'
     pass: 'onl'
-
-olts:
   -
-    ip: '10.90.0.114'
+    mac: 'cc:37:ab:61:82:d2'
+    ip: '10.6.0.104'
     user: 'root'
     pass: 'onl'
-
-onus:
-  -
-    serial: 'BRCM22222222'
-
-srcHost:
-  ip: '10.0.3.56'
-  user: 'root'
-  pass: 'root'
-
