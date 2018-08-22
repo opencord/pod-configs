@@ -12,38 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Automated deployment configuration for QCT POD 2
+# MAAS System information for Flex OCP MCORD Server
 
 ---
 
-pod_config:
-  repo_url: 'https://gerrit.opencord.org/pod-configs'
-  file_name: 'qct-pod2-dpdk.yml'
-
-make_release: 'false'
-
 maas:
-  ip: '10.201.101.254'
-  api_key: 'fQp2rrr3RqZtkJJYBK:XqQX7UqwXGKMYQ8EZ5:UDbFhfenPdjc3fmmCQX2fek7AyRGrf6A'
-  head_system_id: 'bqqqkm'
+  ip: '10.192.18.200'
+  api_key: 'MjANS9eByptLAWXVNU:pwuet4hrWkznmYmueF:hDgm7vnvLbfFCkNcAsS6j7Ezkwu9B5Ts'
+  head_system_id: 'rrwkmn'
 
-dev_node:
-  name: 'qct-cord-pod2'
-  user: 'cord'
-
-head:
-  ip: '10.201.101.21'
-  user: 'cord'
-  pass: 'cord'
-
-compute_nodes:
-  -
-    ipmi:
-      ip: '10.201.101.23'
-      user: 'OCPQ'
-      pass: 'OCPQ'
-  -
-    ipmi:
-      ip: '10.201.101.24'
-      user: 'OCPQ'
-      pass: 'OCPQ'

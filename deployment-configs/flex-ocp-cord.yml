@@ -1,4 +1,3 @@
----
 # Copyright 2017-present Open Networking Foundation
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,24 +12,26 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Automated E-CORD global node deployment configuration for ONF E-CORD POD 
+# Automated deployment configuration for Flex OCP POD 1
 
-pod_config:
-  repo_url: 'https://gerrit.opencord.org/pod-configs'
-  file_name: 'onlab-ecord-global.yml'
+---
 
-make_release: 'false'
+kube_config: 'flex-ocp-cord.conf'
 
-maas:
-  ip: '10.90.0.2'
-  api_key: 'gFH8GA9FLp3bWpesZX:rVyJz3ThB93FrrNyPw:Fu9KZEwBenXRLUu9TMXVkMjLJsuXNXDb'
-  head_system_id: '4y3h86'
-
-dev_node:
-  name: 'onf-build'
-  user: 'ubuntu'
-
-head:
-  ip: '10.90.1.10'
-  user: 'cord'
-  pass: 'cord'
+nodes:
+  -
+    ip: '10.192.20.41'
+    user: 'cord'
+    pass: 'cord'
+  -
+    ip: '10.192.20.42'
+    user: 'cord'
+    pass: 'cord'
+  -
+    ip: '10.192.20.43'
+    user: 'cord'
+    pass: 'cord'
+  -
+    ip: '10.192.20.44'
+    user: 'cord'
+    pass: 'cord'
