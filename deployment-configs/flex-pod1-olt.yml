@@ -12,38 +12,39 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Automated E-CORD local node deployment configuration for QCT POD 3
+# Automated deployment configuration for Flex POD 1 , olt/onu are connected to this
 
 ---
 
-pod_config:
-  repo_url: 'https://gerrit.opencord.org/pod-configs'
-  file_name: 'qct-pod3-ecord-local.yml'
+kube_config: 'flex-pod1-olt.conf'
 
-make_release: 'false'
+nodes:
+  -
+    ip: '10.192.4.241'
+    user: 'cord'
+    pass: 'cord'
+  -
+    ip: '10.192.4.242'
+    user: 'cord'
+    pass: 'cord'
+  -
+    ip: '10.192.4.243'
+    user: 'cord'
+    pass: 'cord'
+  -
+    ip: '10.192.4.244'
+    user: 'cord'
+    pass: 'cord'
 
-maas:
-  ip: '10.201.101.254'
-  api_key: 'fQp2rrr3RqZtkJJYBK:XqQX7UqwXGKMYQ8EZ5:UDbFhfenPdjc3fmmCQX2fek7AyRGrf6A'
-  head_system_id: 'amnpa7'
+srcHost:
+  ip: '10.192.4.61'
+  user: 'cluser'
+  pass: 'cloudlabs'
+  gateway: '10.8.2.254'
 
-dev_node:
-  name: 'qct-cord-pod3'
-  user: 'cord'
-
-head:
-  ip: '10.201.101.31'
+dstHost:
+  ip: '10.192.4.62'
+  hostIp: '10.8.3.100'
   user: 'cord'
   pass: 'cord'
-
-compute_nodes:
-  -
-    ipmi:
-      ip: '10.201.101.33'
-      user: 'OCPQ'
-      pass: 'OCPQ'
-  -
-    ipmi:
-      ip: '10.201.101.34'
-      user: 'OCPQ'
-      pass: 'OCPQ'
+  gateway: '10.8.3.254'
