@@ -16,7 +16,7 @@
 
 ---
 
-kube_config: '/var/jenkins_home/workspace/admin.conf'
+kube_config: '/var/new_jenkins_home/workspace/admin.conf'
 
 nodes:
   -
