@@ -16,42 +16,25 @@
 
 ---
 
-pod_config:
-  repo_url: 'https://gerrit.opencord.org/pod-configs'
-  file_name: 'flex-pod1.yml'
+kube_config: 'flex-pod1-olt.conf'
 
-make_release: 'false'
-
-maas:
-  ip: '10.192.4.61'
-  api_key: 'rsz9S2cYpr7M5w4SfL:gyw4vKqLpWwagSjFGg:pamj7QtqGC6eUZusMj6rCWRdNy9qPab7'
-  head_system_id: 'wbgst6'
-
-dev_node:
-  name: 'flex-cord-pod1'
-  user: 'cluser'
-
-head:
-  ip: '10.192.4.62'
-  user: 'cord'
-  pass: 'cord'
-
-compute_nodes:
+nodes:
   -
-    ipmi:
-      ip: '10.192.4.31'
-      user: 'ADMIN'
-      pass: 'ADMIN'
+    ip: '10.192.4.241'
+    user: 'cord'
+    pass: 'cord'
   -
-    ipmi:
-      ip: '10.192.4.30'
-      user: 'ADMIN'
-      pass: 'ADMIN'
+    ip: '10.192.4.242'
+    user: 'cord'
+    pass: 'cord'
   -
-    ipmi:
-      ip: '10.192.4.29'
-      user: 'ADMIN'
-      pass: 'ADMIN'
+    ip: '10.192.4.243'
+    user: 'cord'
+    pass: 'cord'
+  -
+    ip: '10.192.4.244'
+    user: 'cord'
+    pass: 'cord'
 
 fabric_switches:
   -
