@@ -45,6 +45,30 @@
       "revId": "cbb16b3dd055e90f664271e0be833744e78d3ccb",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "50e90997_78d0cac1",
+        "filename": "deployment-configs/qct-pod2.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1000162
+      },
+      "writtenOn": "2018-08-22T18:37:25Z",
+      "side": 0,
+      "message": "only QCT-POD1 has been recabled for a k8s type deployment. We can add the deployment configs as the other pods get re-cabled",
+      "parentUuid": "5b8f7919_ded76995",
+      "range": {
+        "startLine": 7,
+        "startChar": 6,
+        "endLine": 25,
+        "endChar": 5
+      },
+      "revId": "cbb16b3dd055e90f664271e0be833744e78d3ccb",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
     }
   ]
 }
