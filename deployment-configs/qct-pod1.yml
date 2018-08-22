@@ -16,60 +16,18 @@
 
 ---
 
-pod_config:
-  repo_url: 'https://gerrit.opencord.org/pod-configs'
-  file_name: 'qct-pod1.yml'
+kube_config: 'qct-pod1.conf'
 
-make_release: 'true'
-
-maas:
-  ip: '10.201.101.254'
-  api_key: 'fQp2rrr3RqZtkJJYBK:XqQX7UqwXGKMYQ8EZ5:UDbFhfenPdjc3fmmCQX2fek7AyRGrf6A'
-  head_system_id: 'ehm46m'
-
-dev_node:
-  name: 'qct-cord-pod1'
-  user: 'cord'
-
-head:
-  ip: '10.201.101.11'
-  user: 'cord'
-  pass: 'cord'
-
-compute_nodes:
+nodes:
   -
-    ipmi:
-      ip: '10.201.101.13'
-      user: 'OCPQ'
-      pass: 'OCPQ'
+    ip: '10.201.101.11'
+    user: 'cord'
+    pass: 'cord'
   -
-    ipmi:
-      ip: '10.201.101.14'
-      user: 'OCPQ'
-      pass: 'OCPQ'
-
-fabric_switches:
+    ip: '10.201.101.12'
+    user: 'cord'
+    pass: 'cord'
   -
-    mac: '48:0f:cf:ae:de:26'
-    ip: '10.6.0.101'
-    user: 'root'
-    pass: 'onl'
-    role: 'leaf-1'
-  -
-    mac: '48:0f:cf:ae:cc:24'
-    ip: '10.6.0.102'
-    user: 'root'
-    pass: 'onl'
-    role: 'spine-1'
-  -
-    mac: '48:0f:cf:ae:ee:2a'
-    ip: '10.6.0.103'
-    user: 'root'
-    pass: 'onl'
-    role: 'leaf-2'
-  -
-    mac: '48:0f:cf:ae:9d:58'
-    ip: '10.6.0.104'
-    user: 'root'
-    pass: 'onl'
-    role: 'spine-2'
+    ip: '10.201.101.13'
+    user: 'cord'
+    pass: 'cord'

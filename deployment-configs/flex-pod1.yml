@@ -12,69 +12,26 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Automated deployment configuration for Flex POD 1
+# Automated deployment configuration for Flex POD 1 , olt/onu are connected to this
 
 ---
 
-pod_config:
-  repo_url: 'https://gerrit.opencord.org/pod-configs'
-  file_name: 'flex-pod1.yml'
+kube_config: 'flex-pod1-olt.conf'
 
-make_release: 'false'
-
-maas:
-  ip: '10.192.4.61'
-  api_key: 'rsz9S2cYpr7M5w4SfL:gyw4vKqLpWwagSjFGg:pamj7QtqGC6eUZusMj6rCWRdNy9qPab7'
-  head_system_id: 'wbgst6'
-
-dev_node:
-  name: 'flex-cord-pod1'
-  user: 'cluser'
-
-head:
-  ip: '10.192.4.62'
-  user: 'cord'
-  pass: 'cord'
-
-compute_nodes:
+nodes:
   -
-    ipmi:
-      ip: '10.192.4.31'
-      user: 'ADMIN'
-      pass: 'ADMIN'
+    ip: '10.192.4.241'
+    user: 'cord'
+    pass: 'cord'
   -
-    ipmi:
-      ip: '10.192.4.30'
-      user: 'ADMIN'
-      pass: 'ADMIN'
+    ip: '10.192.4.242'
+    user: 'cord'
+    pass: 'cord'
   -
-    ipmi:
-      ip: '10.192.4.29'
-      user: 'ADMIN'
-      pass: 'ADMIN'
-
-fabric_switches:
+    ip: '10.192.4.243'
+    user: 'cord'
+    pass: 'cord'
   -
-    mac: 'cc:37:ab:d9:38:6d'
-    ip: '10.6.0.101'
-    user: 'root'
-    pass: 'onl'
-    role: 'spine-1'
-  -
-    mac: 'cc:37:ab:b6:b5:64'
-    ip: '10.6.0.102'
-    user: 'root'
-    pass: 'onl'
-    role: 'leaf-2'
-  -
-    mac: 'cc:37:ab:d9:37:69'
-    ip: '10.6.0.103'
-    user: 'root'
-    pass: 'onl'
-    role: 'leaf-1'
-  -
-    mac: 'cc:37:ab:5b:6d:a8'
-    ip: '10.6.0.104'
-    user: 'root'
-    pass: 'onl'
-    role: 'spine-2'
+    ip: '10.192.4.244'
+    user: 'cord'
+    pass: 'cord'
