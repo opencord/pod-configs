@@ -36,6 +36,12 @@ nodes:
     user: 'cord'
     pass: 'cord'
 
+olts:
+  -
+    ip: '10.192.4.218'
+    user: 'root'
+    pass: 'onl'
+
 srcHost:
   ip: '10.192.4.61'
   user: 'cluser'
