@@ -41,6 +41,7 @@ olts:
     ip: '10.192.4.218'
     user: 'root'
     pass: 'onl'
+    fortygig: 'true'
 
 srcHost:
   ip: '10.192.4.61'
