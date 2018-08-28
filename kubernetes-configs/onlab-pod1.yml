@@ -1,0 +1,14 @@
+# SEBA Values
+
+envoyForEtcdImage: '10.90.0.101:30500/voltha/voltha-envoy:latest'
+netconfImage: '10.90.0.101:30500/voltha/voltha-netconf:latest'
+ofagentImage: '10.90.0.101:30500/voltha/voltha-ofagent:latest'
+vcliImage: '10.90.0.101:30500/voltha/voltha-cli:latest'
+vcoreImage: '10.90.0.101:30500/voltha/voltha-voltha:latest'
+
+onosImage: "10.90.0.101:30500/onosproject/onos:malaka"
+
+mavenRepoImage: 10.90.0.101:30500/opencord/mavenrepo:latest
+
+fabric-crossconnect:
+fabric_crossconnect_synchronizerImage: "10.90.0.101:30500/xosproject/fabric-crossconnect-synchronizer:candidate"
