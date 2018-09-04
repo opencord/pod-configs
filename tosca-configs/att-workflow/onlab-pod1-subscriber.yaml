@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# curl -H "xos-username: admin@opencord.org" -H "xos-password: letmein" -X POST --data-binary @subscriber.yaml http://10.90.0.101:30007/run
+# curl -H "xos-username: admin@opencord.org" -H "xos-password: letmein" -X POST --data-binary @onlab-pod1-subscriber.yaml http://10.90.0.101:30007/run
 
 tosca_definitions_version: tosca_simple_yaml_1_0
 imports:
@@ -33,15 +33,53 @@ topology_template:
         s_tag: 222 
         onu_device: BRCM22222222
         nas_port_id : "PON 1/1/03/1:1.1.1"
-        circuit_id: foo
+        circuit_id: foo1
+        remote_id: bar1
 
-    ISK:
+    ISK1:
       type: tosca.nodes.RCORDSubscriber
       properties:
-        name: ISKClient
+        name: ISKClient80
         status: pre-provisioned
         c_tag: 112
         s_tag: 222 
-        onu_device: ISKT71E80080
+        onu_device: ISKT71e80080
         nas_port_id : "PON 1/1/04/1:1.1.1"
-        circuit_id: foo
+        circuit_id: foo2
+        remote_id: bar2
+
+    ISK2:
+      type: tosca.nodes.RCORDSubscriber
+      properties:
+        name: ISKClientA0
+        status: pre-provisioned
+        c_tag: 113
+        s_tag: 222 
+        onu_device: ISKT71e801a0
+        nas_port_id : "PON 1/1/05/1:1.1.1"
+        circuit_id: foo3
+        remote_id: bar3
+
+    ALPH1:
+      type: tosca.nodes.RCORDSubscriber
+      properties:
+        name: ALPH-EA3
+        status: pre-provisioned
+        c_tag: 114
+        s_tag: 222 
+        onu_device: ALPHe3d1cea3
+        nas_port_id : "PON 1/1/04/1:1.1.2"
+        circuit_id: foo4
+        remote_id: bar4
+
+    ALPH2:
+      type: tosca.nodes.RCORDSubscriber
+      properties:
+        name: ALPH-EE9
+        status: pre-provisioned
+        c_tag: 115
+        s_tag: 222 
+        onu_device: ALPHe3d1cee9
+        nas_port_id : "PON 1/1/04/1:1.1.3"
+        circuit_id: foo5
+        remote_id: bar5

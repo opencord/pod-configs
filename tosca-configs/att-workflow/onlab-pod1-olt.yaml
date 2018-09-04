@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# curl -H "xos-username: admin@opencord.org" -H "xos-password: letmein" -X POST --data-binary @pod-olt.yaml http://10.90.0.101:30007/run
+# curl -H "xos-username: admin@opencord.org" -H "xos-password: letmein" -X POST --data-binary @onlab-pod1-olt.yaml http://10.90.0.101:30007/run
 
 tosca_definitions_version: tosca_simple_yaml_1_0
 imports:
@@ -40,6 +40,7 @@ topology_template:
         switch_port: "1"
         outer_tpid: "0x8100"
         uplink: "128"
+        nas_id: "NAS_ID"
       requirements:
         - volt_service:
             node: service#volt
