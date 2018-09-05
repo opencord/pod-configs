@@ -30,7 +30,7 @@ topology_template:
         name: QQClient
         status: pre-provisioned
         c_tag: 111
-        s_tag: 222 
+        s_tag: 111
         onu_device: BRCM22222222
         nas_port_id : "PON 1/1/03/1:1.1.1"
         circuit_id: foo1
@@ -42,7 +42,7 @@ topology_template:
         name: ISKClient80
         status: pre-provisioned
         c_tag: 112
-        s_tag: 222 
+        s_tag: 111
         onu_device: ISKT71e80080
         nas_port_id : "PON 1/1/04/1:1.1.1"
         circuit_id: foo2
@@ -54,7 +54,7 @@ topology_template:
         name: ISKClientA0
         status: pre-provisioned
         c_tag: 113
-        s_tag: 222 
+        s_tag: 111
         onu_device: ISKT71e801a0
         nas_port_id : "PON 1/1/05/1:1.1.1"
         circuit_id: foo3
@@ -66,7 +66,7 @@ topology_template:
         name: ALPH-EA3
         status: pre-provisioned
         c_tag: 114
-        s_tag: 222 
+        s_tag: 111
         onu_device: ALPHe3d1cea3
         nas_port_id : "PON 1/1/04/1:1.1.2"
         circuit_id: foo4
@@ -78,7 +78,7 @@ topology_template:
         name: ALPH-EE9
         status: pre-provisioned
         c_tag: 115
-        s_tag: 222 
+        s_tag: 111
         onu_device: ALPHe3d1cee9
         nas_port_id : "PON 1/1/04/1:1.1.3"
         circuit_id: foo5
