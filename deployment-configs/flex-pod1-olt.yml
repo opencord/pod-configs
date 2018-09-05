@@ -48,6 +48,7 @@ srcHost:
   user: 'cluser'
   pass: 'cloudlabs'
   gateway: '10.8.2.254'
+  public_iface: 'enp4s0f1'
 
 dstHost:
   ip: '10.192.4.62'
