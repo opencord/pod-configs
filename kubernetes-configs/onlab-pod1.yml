@@ -11,4 +11,5 @@ onosImage: "10.90.0.101:30500/onosproject/onos:latest"
 
 mavenRepoImage: 10.90.0.101:30500/opencord/mavenrepo:latest
 
-#kafkaAppUrl: http://10.90.0.101:30160/repository/kafka-1.0.0-SNAPSHOT.oar
+# kafkaAppUrl: http://10.90.0.101:30160/repository/kafka-1.0.0-SNAPSHOT.oar
+sadisAppUrl: http://10.90.0.101:30160/repository/sadis-app-2.2.0-SNAPSHOT.oar
