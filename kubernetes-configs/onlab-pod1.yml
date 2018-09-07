@@ -6,6 +6,13 @@
 #vcliImage: '10.90.0.101:30500/voltha/voltha-cli:debug'
 #vcoreImage: '10.90.0.101:30500/voltha/voltha-voltha:debug'
 
+envoyForEtcdImage: 'voltha/voltha-envoy:master'
+freeradiusImage: 'tpdock/freeradius:latest'
+netconfImage: 'voltha/voltha-netconf:master'
+ofagentImage: 'voltha/voltha-ofagent:master'
+vcliImage: 'voltha/voltha-cli:master'
+vcoreImage: 'voltha/voltha-voltha:master'
+
 onosImage: "10.90.0.101:30500/onosproject/onos:malaka"
 
 # mavenRepoImage: 10.90.0.101:30500/opencord/mavenrepo:latest
