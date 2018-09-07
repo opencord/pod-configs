@@ -6,7 +6,7 @@
 #vcliImage: '10.90.0.101:30500/voltha/voltha-cli:debug'
 #vcoreImage: '10.90.0.101:30500/voltha/voltha-voltha:debug'
 
-# onosImage: "10.90.0.101:30500/onosproject/onos:malaka"
+onosImage: "10.90.0.101:30500/onosproject/onos:malaka"
 
 # mavenRepoImage: 10.90.0.101:30500/opencord/mavenrepo:latest
 
