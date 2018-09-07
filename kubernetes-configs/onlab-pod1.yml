@@ -1,14 +1,12 @@
 # SEBA Values
 
-envoyForEtcdImage: '10.90.0.101:30500/voltha/voltha-envoy:debug'
-netconfImage: '10.90.0.101:30500/voltha/voltha-netconf:debug'
-ofagentImage: '10.90.0.101:30500/voltha/voltha-ofagent:debug'
-vcliImage: '10.90.0.101:30500/voltha/voltha-cli:debug'
-vcoreImage: '10.90.0.101:30500/voltha/voltha-voltha:debug'
+#envoyForEtcdImage: '10.90.0.101:30500/voltha/voltha-envoy:debug'
+#netconfImage: '10.90.0.101:30500/voltha/voltha-netconf:debug'
+#ofagentImage: '10.90.0.101:30500/voltha/voltha-ofagent:debug'
+#vcliImage: '10.90.0.101:30500/voltha/voltha-cli:debug'
+#vcoreImage: '10.90.0.101:30500/voltha/voltha-voltha:debug'
 
 # onosImage: "10.90.0.101:30500/onosproject/onos:malaka"
-# onosImage: "10.90.0.101:30500/onosproject/onos:latest"
-onosImage: "onosproject/onos:1.13.3"
 
 # mavenRepoImage: 10.90.0.101:30500/opencord/mavenrepo:latest
 
