@@ -18,3 +18,19 @@
 
 ---
 
+# SEBA Values
+
+envoyForEtcdImage: 'matteoscandolo/voltha-envoy:ams-1.0.0'
+netconfImage: 'matteoscandolo/voltha-netconf:ams-1.0.0'
+ofagentImage: 'matteoscandolo/voltha-ofagent:ams-1.0.0'
+vcliImage: 'matteoscandolo/voltha-cli:ams-1.0.0'
+vcoreImage: 'matteoscandolo/voltha-voltha:ams-1.0.0'
+
+onosImage: 'matteoscandolo/onos:ams-1.0.0'
+
+#application_logs: |
+#  log4j.logger.org.opencord.olt = DEBUG
+#  log4j.logger.org.opencord.kafka = DEBUG
+#  log4j.logger.org.opencord.sadis = DEBUG
+#  log4j.logger.org.opencord.aaa = DEBUG
+
