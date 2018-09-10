@@ -98,10 +98,10 @@ topology_template:
             node: service#att
             relationship: tosca.relationships.BelongsToOne
 
-    ALPHe3d1cfde:
+    ISKT71E80080:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
-        serial_number: ALPHe3d1cfde
+        serial_number: ISKT71E80080
         pon_port_id: 536870912
         device_id: of:000000000a5a0097
       requirements:
@@ -109,21 +109,10 @@ topology_template:
             node: service#att
             relationship: tosca.relationships.BelongsToOne
 
-    # BRCM12345678:
-    #   type: tosca.nodes.AttWorkflowDriverWhiteListEntry
-    #   properties:
-    #     serial_number: BRCM12345678
-    #     pon_port_id: 536870916
-    #     device_id: of:000000000a5a0097
-    #   requirements:
-    #     - owner:
-    #         node: service#att
-    #         relationship: tosca.relationships.BelongsToOne
-
-    ISKT71E80080:
+    ALPHe3d1cfde:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
-        serial_number: ISKT71e80080
+        serial_number: ALPHe3d1cfde
         pon_port_id: 536870912
         device_id: of:000000000a5a0072
       requirements:
@@ -135,29 +124,6 @@ topology_template:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
         serial_number: ISKT71e801a0
-        pon_port_id: 536870912
-        device_id: of:000000000a5a0072
-      requirements:
-        - owner:
-            node: service#att
-            relationship: tosca.relationships.BelongsToOne
-
-
-    ALPHE3D1CEA3:
-      type: tosca.nodes.AttWorkflowDriverWhiteListEntry
-      properties:
-        serial_number: ALPHe3d1cea3
-        pon_port_id: 536870912
-        device_id: of:000000000a5a0072
-      requirements:
-        - owner:
-            node: service#att
-            relationship: tosca.relationships.BelongsToOne
-
-    ALPHE3D1CEE9:
-      type: tosca.nodes.AttWorkflowDriverWhiteListEntry
-      properties:
-        serial_number: ALPHe3d1cee9
         pon_port_id: 536870912
         device_id: of:000000000a5a0072
       requirements:
