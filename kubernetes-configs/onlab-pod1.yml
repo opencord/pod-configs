@@ -1,12 +1,19 @@
 # SEBA Values
 
-envoyForEtcdImage: '10.90.0.101:30500/voltha/voltha-envoy:debug'
-netconfImage: '10.90.0.101:30500/voltha/voltha-netconf:debug'
-ofagentImage: '10.90.0.101:30500/voltha/voltha-ofagent:debug'
-vcliImage: '10.90.0.101:30500/voltha/voltha-cli:debug'
-vcoreImage: '10.90.0.101:30500/voltha/voltha-voltha:debug'
+# envoyForEtcdImage: '10.90.0.101:30500/voltha/voltha-envoy:debug'
+# netconfImage: '10.90.0.101:30500/voltha/voltha-netconf:debug'
+# ofagentImage: '10.90.0.101:30500/voltha/voltha-ofagent:debug'
+# vcliImage: '10.90.0.101:30500/voltha/voltha-cli:debug'
+# vcoreImage: '10.90.0.101:30500/voltha/voltha-voltha:debug'
 
-onosImage: "10.90.0.101:30500/onosproject/onos:malaka"
+envoyForEtcdImage: 'matteoscandolo/voltha-envoy:ams-1.0.0'
+netconfImage: 'matteoscandolo/voltha-netconf:ams-1.0.0'
+ofagentImage: 'matteoscandolo/voltha-ofagent:ams-1.0.0'
+vcliImage: 'matteoscandolo/voltha-cli:ams-1.0.0'
+vcoreImage: 'matteoscandolo/voltha-voltha:ams-1.0.0'
+
+# onosImage: "10.90.0.101:30500/onosproject/onos:malaka"
+onosImage: 'matteoscandolo/onos:ams-1.0.0'
 
 # mavenRepoImage: 10.90.0.101:30500/opencord/mavenrepo:latest
 
@@ -18,3 +25,4 @@ application_logs: |
   log4j.logger.org.opencord.olt = DEBUG
   log4j.logger.org.opencord.kafka = DEBUG
   log4j.logger.org.opencord.sadis = DEBUG
+  log4j.logger.org.opencord.aaa = DEBUG
