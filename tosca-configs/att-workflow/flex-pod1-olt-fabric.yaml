@@ -55,7 +55,7 @@ topology_template:
       type: tosca.nodes.SwitchPort
       properties:
         portId: 8
-	host_learning: false
+        host_learning: false
       requirements:
         - switch:
             node: switch#leaf_1
