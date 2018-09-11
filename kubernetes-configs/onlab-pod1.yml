@@ -1,18 +1,11 @@
 # SEBA Values
 
-# envoyForEtcdImage: '10.90.0.101:30500/voltha/voltha-envoy:debug'
-# netconfImage: '10.90.0.101:30500/voltha/voltha-netconf:debug'
-# ofagentImage: '10.90.0.101:30500/voltha/voltha-ofagent:debug'
-# vcliImage: '10.90.0.101:30500/voltha/voltha-cli:debug'
-# vcoreImage: '10.90.0.101:30500/voltha/voltha-voltha:debug'
-
 envoyForEtcdImage: 'matteoscandolo/voltha-envoy:ams-1.0.0'
 netconfImage: 'matteoscandolo/voltha-netconf:ams-1.0.0'
 ofagentImage: 'matteoscandolo/voltha-ofagent:ams-1.0.0'
 vcliImage: 'matteoscandolo/voltha-cli:ams-1.0.0'
 vcoreImage: 'matteoscandolo/voltha-voltha:ams-1.0.0'
 
-# onosImage: "10.90.0.101:30500/onosproject/onos:malaka"
 onosImage: 'matteoscandolo/onos:ams-1.0.0'
 
 # mavenRepoImage: 10.90.0.101:30500/opencord/mavenrepo:latest
@@ -20,6 +13,10 @@ onosImage: 'matteoscandolo/onos:ams-1.0.0'
 # kafkaAppUrl: http://10.90.0.101:30160/repository/kafka-1.0.0-SNAPSHOT.oar
 # sadisAppUrl: http://10.90.0.101:30160/repository/sadis-app-2.2.0-SNAPSHOT.oar
 # oltAppUrl: http://10.90.0.101:30160/repository/olt-app-2.0.0-SNAPSHOT.oar
+
+xos_coreImage: 'xosproject/xos-core:2.1.0'
+fabric:
+  fabric_synchronizerImage: 'xosproject/fabric-synchronizer:2.1.0'
 
 application_logs: |
   log4j.logger.org.opencord.olt = DEBUG
