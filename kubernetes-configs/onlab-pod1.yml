@@ -1,10 +1,16 @@
 # SEBA Values
 
-envoyForEtcdImage: 'matteoscandolo/voltha-envoy:ams-1.0.0'
-netconfImage: 'matteoscandolo/voltha-netconf:ams-1.0.0'
-ofagentImage: 'matteoscandolo/voltha-ofagent:ams-1.0.0'
-vcliImage: 'matteoscandolo/voltha-cli:ams-1.0.0'
-vcoreImage: 'matteoscandolo/voltha-voltha:ams-1.0.0'
+# envoyForEtcdImage: 'matteoscandolo/voltha-envoy:ams-1.0.0'
+# netconfImage: 'matteoscandolo/voltha-netconf:ams-1.0.0'
+# ofagentImage: 'matteoscandolo/voltha-ofagent:ams-1.0.0'
+# vcliImage: 'matteoscandolo/voltha-cli:ams-1.0.0'
+# vcoreImage: 'matteoscandolo/voltha-voltha:ams-1.0.0'
+
+envoyForEtcdImage: '10.90.0.101:30500/voltha/voltha-envoy:debug'
+netconfImage: '10.90.0.101:30500/voltha/voltha-netconf:debug'
+ofagentImage: '10.90.0.101:30500/voltha/voltha-ofagent:debug'
+vcliImage: '10.90.0.101:30500/voltha/voltha-cli:debug'
+vcoreImage: '10.90.0.101:30500/voltha/voltha-voltha:debug'
 
 onosImage: 'matteoscandolo/onos:ams-1.0.0'
 
