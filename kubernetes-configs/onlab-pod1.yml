@@ -17,6 +17,8 @@ onosImage: 'matteoscandolo/onos:ams-1.0.0'
 xos_coreImage: 'xosproject/xos-core:2.1.0'
 fabric:
   fabric_synchronizerImage: 'xosproject/fabric-synchronizer:2.1.0'
+att-workflow-driver:
+  attWorkflowDriver_synchronizerImage: '10.90.0.101:30500/xosproject/att-workflow-driver-synchronizer:candidate'
 
 application_logs: |
   log4j.logger.org.opencord.olt = DEBUG
