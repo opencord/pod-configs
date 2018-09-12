@@ -6,11 +6,11 @@
 # vcliImage: 'matteoscandolo/voltha-cli:ams-1.0.0'
 # vcoreImage: 'matteoscandolo/voltha-voltha:ams-1.0.0'
 
-envoyForEtcdImage: '10.90.0.101:30500/voltha/voltha-envoy:debug'
-netconfImage: '10.90.0.101:30500/voltha/voltha-netconf:debug'
-ofagentImage: '10.90.0.101:30500/voltha/voltha-ofagent:debug'
-vcliImage: '10.90.0.101:30500/voltha/voltha-cli:debug'
-vcoreImage: '10.90.0.101:30500/voltha/voltha-voltha:debug'
+envoyForEtcdImage: '10.90.0.101:30500/voltha/voltha-envoy:ams-1.0.1'
+netconfImage: '10.90.0.101:30500/voltha/voltha-netconf:ams-1.0.1'
+ofagentImage: '10.90.0.101:30500/voltha/voltha-ofagent:ams-1.0.1'
+vcliImage: '10.90.0.101:30500/voltha/voltha-cli:ams-1.0.1'
+vcoreImage: '10.90.0.101:30500/voltha/voltha-voltha:ams-1.0.1'
 
 onosImage: 'matteoscandolo/onos:ams-1.0.0'
 
