@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# curl -H "xos-username: admin@opencord.org" -H "xos-password: letmein" -X POST --data-binary @flex-pod1-olt-fabric.yaml http://10.192.4.241:30007/run
+# curl -H "xos-username: admin@opencord.org" -H "xos-password: letmein" -X POST --data-binary @onlab-pod1-fabric.yaml http://10.90.0.101:30007/run
 
 tosca_definitions_version: tosca_simple_yaml_1_0
 imports:
@@ -23,7 +23,7 @@ imports:
   - custom_types/attworkflowdriverwhitelistentry.yaml
   - custom_types/attworkflowdriverservice.yaml
 
-description: Configures the Flex POD with AT&T workflow
+description: Configures the ONF SEBA POD with AT&T workflow
 
 topology_template:
   node_templates:
@@ -32,18 +32,18 @@ topology_template:
       type: tosca.nodes.Switch
       properties:
         driver: ofdpa3
-        ipv4Loopback: 192.168.9.24
-        ipv4NodeSid: 19
-        isEdgeRouter: false
-        name: Fabric Switch - 1
-        ofId: of:0000cc37ab5b6da8
-        routerMac: 00:00:00:00:00:03
+        ipv4Loopback: 192.168.0.201
+        ipv4NodeSid: 17
+        isEdgeRouter: True
+        name: leaf_1
+        ofId: of:0000000000000001
+        routerMac: 00:00:02:01:06:01
 
     # Setup the OLT switch port
     port#olt_port:
       type: tosca.nodes.SwitchPort
       properties:
-        portId: 7
+        portId: 1
         host_learning: false
       requirements:
         - switch:
@@ -54,7 +54,7 @@ topology_template:
     port#bng_port:
       type: tosca.nodes.SwitchPort
       properties:
-        portId: 8
+        portId: 1
         host_learning: false
       requirements:
         - switch:
@@ -67,7 +67,7 @@ topology_template:
       type: tosca.nodes.BNGPortMapping
       properties:
         s_tag: any
-        switch_port: 8
+        switch_port: 1
 
     # ONU Whitelist
     service#att:
@@ -76,12 +76,12 @@ topology_template:
         name: att-workflow-driver
         must-exist: true
 
-    ALPHe3d1cfa7:
+    ISKT71E810C0:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
-        serial_number: ALPHe3d1cfa7
+        serial_number: ISKT71E810C0
         pon_port_id: 536870912
-        device_id: of:000000000ac004da
+        device_id: of:000000000a5a0072
       requirements:
         - owner:
             node: service#att

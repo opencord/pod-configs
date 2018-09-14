@@ -19,11 +19,10 @@ imports:
   - custom_types/switch.yaml
   - custom_types/switchport.yaml
   - custom_types/portinterface.yaml
-  - custom_types/bngportmapping.yaml
-  - custom_types/attworkflowdriverwhitelistentry.yaml
-  - custom_types/attworkflowdriverservice.yaml
+  - custom_types/vrouterserviceinstance.yaml
+  - custom_types/vrouterstaticroute.yaml
 
-description: Configures the Flex POD with AT&T workflow
+description: Configures the ONF SEBA POD with AT&T workflow
 
 topology_template:
   node_templates:
@@ -33,7 +32,7 @@ topology_template:
       properties:
         driver: ofdpa3
         ipv4Loopback: 192.168.9.24
-        ipv4NodeSid: 19
+        ipv4NodeSid: 17
         isEdgeRouter: false
         name: Fabric Switch - 1
         ofId: of:0000cc37ab5b6da8
@@ -50,39 +49,54 @@ topology_template:
             node: switch#leaf_1
             relationship: tosca.relationships.BelongsToOne
 
-    # Port connected to the BNG
-    port#bng_port:
+    # Setup the OLT switch port interface
+    interface#olt_interface:
+      type: tosca.nodes.PortInterface
+      properties:
+        ips: 10.8.2.254/24
+        name: olt_interface
+      requirements:
+        - port:
+            node: port#olt_port
+            relationship: tosca.relationships.BelongsToOne
+
+    # Setup the fabric switch port where the external
+    # router is connected to
+    port#upstream_port:
       type: tosca.nodes.SwitchPort
       properties:
         portId: 8
-        host_learning: false
       requirements:
         - switch:
             node: switch#leaf_1
             relationship: tosca.relationships.BelongsToOne
 
-    # Setup the fabric switch port where the external
-    # router is connected to
-    bngmapping:
-      type: tosca.nodes.BNGPortMapping
+    # Setup the fabric switch port interface where the
+    # external router is connected to
+    interface#upstream_interface:
+      type: tosca.nodes.PortInterface
       properties:
-        s_tag: any
-        switch_port: 8
-
-    # ONU Whitelist
-    service#att:
-      type: tosca.nodes.AttWorkflowDriverService
-      properties:
-        name: att-workflow-driver
-        must-exist: true
-
-    ALPHe3d1cfa7:
-      type: tosca.nodes.AttWorkflowDriverWhiteListEntry
-      properties:
-        serial_number: ALPHe3d1cfa7
-        pon_port_id: 536870912
-        device_id: of:000000000ac004da
+        name: upstream_interface
+        vlanUntagged: 40
+        ips: 10.8.3.254/24
       requirements:
-        - owner:
-            node: service#att
+        - port:
+            node: port#upstream_port
+            relationship: tosca.relationships.BelongsToOne
+
+    # Add a vRouter (ONOS)
+    vrouter#my_vrouter:
+      type: tosca.nodes.VRouterServiceInstance
+      properties:
+        name: my_vrouter
+
+    # Add a static route to the vRouter (ONOS)
+    route#my_route:
+      type: tosca.nodes.VRouterStaticRoute
+      properties:
+        prefix: "0.0.0.0/0"
+        next_hop: "10.8.3.1"
+      requirements:
+        - vrouter:
+            node: vrouter#my_vrouter
             relationship: tosca.relationships.BelongsToOne
