@@ -19,6 +19,7 @@ imports:
   - custom_types/oltdevice.yaml
   - custom_types/onudevice.yaml
   - custom_types/voltservice.yaml
+
 description: Create a simulated OLT Device in VOLTHA
 topology_template:
   node_templates:
@@ -40,7 +41,6 @@ topology_template:
         switch_port: "7"
         outer_tpid: "0x8100"
         uplink: "65536"
-        nas_id: "NAS_ID"
       requirements:
         - volt_service:
             node: service#volt
