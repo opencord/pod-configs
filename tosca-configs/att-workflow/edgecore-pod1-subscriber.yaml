@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# curl -H "xos-username: admin@opencord.org" -H "xos-password: letmein" -X POST --data-binary @onlab-pod1-subscriber.yaml http://10.90.0.101:30007/run
+# curl -H "xos-username: admin@opencord.org" -H "xos-password: letmein" -X POST --data-binary @edgecore-pod1-subscriber.yaml http://10.90.0.101:30007/run
 
 tosca_definitions_version: tosca_simple_yaml_1_0
 imports:
@@ -23,14 +23,38 @@ description: Pre-provsion a subscriber
 topology_template:
   node_templates:
 
-    ISK1:
+    ISKT71E81130:
       type: tosca.nodes.RCORDSubscriber
       properties:
-        name: Client1
+        name: ISKT71E81130
         status: pre-provisioned
-        c_tag: 112
         s_tag: 111
+        c_tag: 11
+        onu_device: ISKT71E81130
+        nas_port_id : "nas-port-id-ISKT71E81130"
+        circuit_id: "circuit-id-ISKT71E81130"
+        remote_id: "remote-id-ISKT71E81130"
+
+    ISKT71E81050:
+      type: tosca.nodes.RCORDSubscriber
+      properties:
+        name: ISKT71E81050
+        status: pre-provisioned
+        s_tag: 111
+        c_tag: 12
+        onu_device: ISKT71E81050
+        nas_port_id : "nas-port-id-ISKT71E81050"
+        circuit_id: "circuit-id-ISKT71E81050"
+        remote_id: "remote-id-ISKT71E81050"
+
+    ISKT71E81130:
+      type: tosca.nodes.RCORDSubscriber
+      properties:
+        name: ISKT71E810C0
+        status: pre-provisioned
+        s_tag: 111
+        c_tag: 13
         onu_device: ISKT71E810C0
-        nas_port_id : "PON 1/1/04/1:1.1.1"
-        circuit_id: foo1
-        remote_id: bar1
+        nas_port_id : "nas-port-id-ISKT71E810C0"
+        circuit_id: "circuit-id-ISKT71E810C0"
+        remote_id: "remote-id-ISKT71E810C0"
