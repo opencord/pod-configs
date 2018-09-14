@@ -31,3 +31,5 @@ nodes:
     ip: '10.201.101.13'
     user: 'cord'
     pass: 'cord'
+
+olts: []
