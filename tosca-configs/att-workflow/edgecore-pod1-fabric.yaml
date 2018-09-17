@@ -43,7 +43,7 @@ topology_template:
     port#olt_port:
       type: tosca.nodes.SwitchPort
       properties:
-        portId: 1
+        portId: 49
         host_learning: false
       requirements:
         - switch:
@@ -54,7 +54,7 @@ topology_template:
     port#bng_port:
       type: tosca.nodes.SwitchPort
       properties:
-        portId: 1
+        portId: 48
         host_learning: false
       requirements:
         - switch:
@@ -67,7 +67,7 @@ topology_template:
       type: tosca.nodes.BNGPortMapping
       properties:
         s_tag: any
-        switch_port: 1
+        switch_port: 48
 
     # ONU Whitelist
     service#att:
