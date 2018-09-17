@@ -24,10 +24,10 @@ topology_template:
   node_templates:
 
     # Pre-provision the subscriber the subscriber
-    my_house:
+    onf_subscriber_1:
       type: tosca.nodes.RCORDSubscriber
       properties:
-        name: QQClient
+        name: Sub_BRCM22222222
         status: pre-provisioned
         c_tag: 111
         s_tag: 111
@@ -36,10 +36,10 @@ topology_template:
         circuit_id: foo1
         remote_id: bar1
 
-    ISK1:
+    onf_subscriber_2:
       type: tosca.nodes.RCORDSubscriber
       properties:
-        name: Client3
+        name: Sub_ALPHe3d1cfde
         status: pre-provisioned
         c_tag: 112
         s_tag: 111
@@ -48,10 +48,10 @@ topology_template:
         circuit_id: foo2
         remote_id: bar2
 
-    ISK2:
+    onf_subscriber_3:
       type: tosca.nodes.RCORDSubscriber
       properties:
-        name: ISKClientA0
+        name: Sub_ISKT71e801a0
         status: pre-provisioned
         c_tag: 113
         s_tag: 111
