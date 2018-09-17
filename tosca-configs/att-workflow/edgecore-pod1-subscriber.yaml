@@ -23,62 +23,62 @@ description: Pre-provsion a subscriber
 topology_template:
   node_templates:
 
-    ISKT71E81130:
+    ISKT71e81130:
       type: tosca.nodes.RCORDSubscriber
       properties:
-        name: ISKT71E81130
+        name: ISKT71e81130
         status: pre-provisioned
         s_tag: 111
         c_tag: 11
-        onu_device: ISKT71E81130
-        nas_port_id : "nas-port-id-ISKT71E81130"
-        circuit_id: "circuit-id-ISKT71E81130"
-        remote_id: "remote-id-ISKT71E81130"
+        onu_device: ISKT71e81130
+        nas_port_id : "nas-port-id-ISKT71e81130"
+        circuit_id: "circuit-id-ISKT71e81130"
+        remote_id: "remote-id-ISKT71e81130"
 
-    ISKT71E81050:
+    ISKT71e81050:
       type: tosca.nodes.RCORDSubscriber
       properties:
-        name: ISKT71E81050
+        name: ISKT71e81050
         status: pre-provisioned
         s_tag: 111
         c_tag: 22
-        onu_device: ISKT71E81050
-        nas_port_id : "nas-port-id-ISKT71E81050"
-        circuit_id: "circuit-id-ISKT71E81050"
-        remote_id: "remote-id-ISKT71E81050"
+        onu_device: ISKT71e81050
+        nas_port_id : "nas-port-id-ISKT71e81050"
+        circuit_id: "circuit-id-ISKT71e81050"
+        remote_id: "remote-id-ISKT71e81050"
 
-    ISKT71E810C0:
+    ISKT71e810C0:
       type: tosca.nodes.RCORDSubscriber
       properties:
-        name: ISKT71E810C0
+        name: ISKT71e810C0
         status: pre-provisioned
         s_tag: 111
         c_tag: 33
-        onu_device: ISKT71E810C0
-        nas_port_id : "nas-port-id-ISKT71E810C0"
-        circuit_id: "circuit-id-ISKT71E810C0"
-        remote_id: "remote-id-ISKT71E810C0"
+        onu_device: ISKT71e810C0
+        nas_port_id : "nas-port-id-ISKT71e810C0"
+        circuit_id: "circuit-id-ISKT71e810C0"
+        remote_id: "remote-id-ISKT71e810C0"
 
-    ALPHE3D1CEA3:
+    ALPHe3d1cea3:
       type: tosca.nodes.RCORDSubscriber
       properties:
-        name: ALPHE3D1CEA3
+        name: ALPHe3d1cea3
         status: pre-provisioned
         s_tag: 111
         c_tag: 44
-        onu_device: ALPHE3D1CEA3
-        nas_port_id : "nas-port-id-ALPHE3D1CEA3"
-        circuit_id: "circuit-id-ALPHE3D1CEA3"
-        remote_id: "remote-id-ALPHE3D1CEA3"
+        onu_device: ALPHe3d1cea3
+        nas_port_id : "nas-port-id-ALPHe3d1cea3"
+        circuit_id: "circuit-id-ALPHe3d1cea3"
+        remote_id: "remote-id-ALPHe3d1cea3"
 
-    ALPHE3D1CEE9:
+    ALPHe3d1cee9:
       type: tosca.nodes.RCORDSubscriber
       properties:
-        name: ALPHE3D1CEE9
+        name: ALPHe3d1cee9
         status: pre-provisioned
         s_tag: 111
         c_tag: 55
-        onu_device: ALPHE3D1CEE9
-        nas_port_id : "nas-port-id-ALPHE3D1CEE9"
-        circuit_id: "circuit-id-ALPHE3D1CEE9"
-        remote_id: "remote-id-ALPHE3D1CEE9"
+        onu_device: ALPHe3d1cee9
+        nas_port_id : "nas-port-id-ALPHe3d1cee9"
+        circuit_id: "circuit-id-ALPHe3d1cee9"
+        remote_id: "remote-id-ALPHe3d1cee9"
