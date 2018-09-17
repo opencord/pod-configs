@@ -76,10 +76,10 @@ topology_template:
         name: att-workflow-driver
         must-exist: true
 
-    ISKT71E81130:
+    ALPHE3D1CEA3:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
-        serial_number: ISKT71E81130
+        serial_number: ALPHE3D1CEA3
         pon_port_id: 536870912
         device_id: of:00000000c0a863b6
       requirements:
@@ -87,11 +87,11 @@ topology_template:
             node: service#att
             relationship: tosca.relationships.BelongsToOne
 
-    ISKT71E81050:
+    ALPHE3D1CEE9:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
-        serial_number: ISKT71E81050
-        pon_port_id: 536870913
+        serial_number: ALPHE3D1CEE9
+        pon_port_id: 536870912
         device_id: of:00000000c0a863b6
       requirements:
         - owner:
@@ -102,6 +102,28 @@ topology_template:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
         serial_number: ISKT71E810C0
+        pon_port_id: 536870912
+        device_id: of:00000000c0a863b6
+      requirements:
+        - owner:
+            node: service#att
+            relationship: tosca.relationships.BelongsToOne
+
+    ISKT71E81050:
+      type: tosca.nodes.AttWorkflowDriverWhiteListEntry
+      properties:
+        serial_number: ISKT71E81130
+        pon_port_id: 536870913
+        device_id: of:00000000c0a863b6
+      requirements:
+        - owner:
+            node: service#att
+            relationship: tosca.relationships.BelongsToOne
+
+    ISKT71E810C0:
+      type: tosca.nodes.AttWorkflowDriverWhiteListEntry
+      properties:
+        serial_number: ISKT71E81050
         pon_port_id: 536870913
         device_id: of:00000000c0a863b6
       requirements:

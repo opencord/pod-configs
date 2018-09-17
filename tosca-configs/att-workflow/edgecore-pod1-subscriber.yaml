@@ -58,3 +58,27 @@ topology_template:
         nas_port_id : "nas-port-id-ISKT71E810C0"
         circuit_id: "circuit-id-ISKT71E810C0"
         remote_id: "remote-id-ISKT71E810C0"
+
+    ALPHE3D1CEA3:
+      type: tosca.nodes.RCORDSubscriber
+      properties:
+        name: ALPHE3D1CEA3
+        status: pre-provisioned
+        s_tag: 111
+        c_tag: 14
+        onu_device: ALPHE3D1CEA3
+        nas_port_id : "nas-port-id-ALPHE3D1CEA3"
+        circuit_id: "circuit-id-ALPHE3D1CEA3"
+        remote_id: "remote-id-ALPHE3D1CEA3"
+
+    ALPHE3D1CEE9:
+      type: tosca.nodes.RCORDSubscriber
+      properties:
+        name: ALPHE3D1CEE9
+        status: pre-provisioned
+        s_tag: 111
+        c_tag: 15
+        onu_device: ALPHE3D1CEE9
+        nas_port_id : "nas-port-id-ALPHE3D1CEE9"
+        circuit_id: "circuit-id-ALPHE3D1CEE9"
+        remote_id: "remote-id-ALPHE3D1CEE9"
