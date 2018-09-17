@@ -109,7 +109,7 @@ topology_template:
             node: service#att
             relationship: tosca.relationships.BelongsToOne
 
-    ISKT71E81050:
+    ISKT71E81130:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
         serial_number: ISKT71E81130
@@ -120,7 +120,7 @@ topology_template:
             node: service#att
             relationship: tosca.relationships.BelongsToOne
 
-    ISKT71E810C0:
+    ISKT71E81050:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
         serial_number: ISKT71E81050
