@@ -47,7 +47,7 @@ topology_template:
         circuit_id: "circuit-id-ISKT71E81050"
         remote_id: "remote-id-ISKT71E81050"
 
-    ISKT71E81130:
+    ISKT71E810C0:
       type: tosca.nodes.RCORDSubscriber
       properties:
         name: ISKT71E810C0
