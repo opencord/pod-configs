@@ -98,10 +98,10 @@ topology_template:
             node: service#att
             relationship: tosca.relationships.BelongsToOne
 
-    ISKT71e810C0:
+    ISKT71e810c0:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
-        serial_number: ISKT71e810C0
+        serial_number: ISKT71e810c0
         pon_port_id: 536870912
         device_id: of:00000000c0a863b6
       requirements:

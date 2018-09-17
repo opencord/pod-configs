@@ -47,17 +47,17 @@ topology_template:
         circuit_id: "circuit-id-ISKT71e81050"
         remote_id: "remote-id-ISKT71e81050"
 
-    ISKT71e810C0:
+    ISKT71e810c0:
       type: tosca.nodes.RCORDSubscriber
       properties:
-        name: ISKT71e810C0
+        name: ISKT71e810c0
         status: pre-provisioned
         s_tag: 111
         c_tag: 33
-        onu_device: ISKT71e810C0
-        nas_port_id : "nas-port-id-ISKT71e810C0"
-        circuit_id: "circuit-id-ISKT71e810C0"
-        remote_id: "remote-id-ISKT71e810C0"
+        onu_device: ISKT71e810c0
+        nas_port_id : "nas-port-id-ISKT71e810c0"
+        circuit_id: "circuit-id-ISKT71e810c0"
+        remote_id: "remote-id-ISKT71e810c0"
 
     ALPHe3d1cea3:
       type: tosca.nodes.RCORDSubscriber

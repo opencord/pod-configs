@@ -37,7 +37,7 @@ topology_template:
         host: 192.168.99.182
         port: 9191
         switch_datapath_id: of:0000000000000001
-        switch_port: "1"
+        switch_port: "49"
         outer_tpid: "0x8100"
         uplink: "65536"
         nas_id: "NAS_ID"
