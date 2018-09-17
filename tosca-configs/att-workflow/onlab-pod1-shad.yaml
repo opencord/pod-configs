@@ -19,6 +19,9 @@ imports:
   - custom_types/oltdevice.yaml
   - custom_types/onudevice.yaml
   - custom_types/voltservice.yaml
+  - custom_types/rcordsubscriber.yaml
+  - custom_types/attworkflowdriverwhitelistentry.yaml
+  - custom_types/attworkflowdriverservice.yaml
 description: Create a simulated OLT Device in VOLTHA
 topology_template:
   node_templates:
@@ -33,12 +36,12 @@ topology_template:
     olt_device:
       type: tosca.nodes.OLTDevice
       properties:
-        name: ONF OLT
+        name: SHAD OLT
         device_type: openolt
-        host: 10.90.0.114
+        host: 10.90.0.151
         port: 9191
         switch_datapath_id: of:0000000000000001
-        switch_port: "1"
+        switch_port: "2"
         outer_tpid: "0x8100"
         uplink: "65536"
         nas_id: "NAS_ID"
@@ -48,6 +51,12 @@ topology_template:
             relationship: tosca.relationships.BelongsToOne
 
     # Whitelist ------------------------------------------------
+    service#att:
+      type: tosca.nodes.AttWorkflowDriverService
+      properties:
+        name: att-workflow-driver
+        must-exist: true
+
     ALPHe3d1cfe3:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
@@ -76,7 +85,7 @@ topology_template:
       properties:
         name: Sub_ALPHe3d1cfe3
         status: pre-provisioned
-        c_tag: 111
+        c_tag: 115
         s_tag: 222
         onu_device: ALPHe3d1cfe3
         nas_port_id : "PON 1/1/03/1:1.1.1"
@@ -90,7 +99,7 @@ topology_template:
         status: pre-provisioned
         c_tag: 222
         s_tag: 222
-        onu_device: ISKT71E80080
+        onu_device: ISKT71e80080
         nas_port_id : "PON 1/1/04/1:1.1.1"
         circuit_id: foo2
         remote_id: bar2
