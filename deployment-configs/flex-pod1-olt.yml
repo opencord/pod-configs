@@ -56,6 +56,6 @@ hosts:
     user: 'cord'
     pass: 'cord'
     dp_iface_name: 'ens3'
-    dp_iface_ip_qinq: '10.8.2.254'
+    dp_iface_ip_qinq: '10.8.2.100'
     dp_iface_ip: '10.8.3.1'
     dp_iface_gateway: '10.8.3.254'
