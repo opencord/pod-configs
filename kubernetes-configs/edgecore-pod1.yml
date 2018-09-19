@@ -14,7 +14,17 @@ vcoreImage: '192.168.99.181:30500/voltha/voltha-voltha:ams-1.0.2'
 
 onosImage: '192.168.99.181:30500/onos/onos:ams-1.0.0'
 
+# xos
 xos_coreImage: '192.168.99.181:30500/xosproject/xos-core:2.1.4'
+xos_chameleonImage: '192.168.99.181:30500/xosproject/chameleon:master'
+xos_toscaImage: '192.168.99.181:30500/xosproject/xos-tosca:master'
+xos-gui:
+  xos_guiImage: '192.168.99.181:30500/xosproject/xos-gui:master'
+  xos_wsImage: '192.168.99.181:30500/xosproject/xos-ws:master'
+xos-db:
+  postgresImage: '192.168.99.181:30500/postgres:10.3-alpine'
+
+# synchronizers
 rcord:
   rcord_synchronizerImage: '192.168.99.181:30500/xosproject/rcord-synchronizer:1.0.3'
 fabric:
