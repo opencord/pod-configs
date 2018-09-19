@@ -66,7 +66,7 @@ etcd-operator:
   restoreOperator:
     image:
       repository: 192.168.99.181:30500/quay.io/coreos/etcd-operator
-      tag: v0.9.2
+      tag: v0.7.0
 
 application_logs: |
   log4j.logger.org.opencord.olt = DEBUG
