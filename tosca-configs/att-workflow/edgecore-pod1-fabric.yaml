@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# curl -H "xos-username: admin@opencord.org" -H "xos-password: letmein" -X POST --data-binary @edgecore-pod1-fabric.yaml http://10.90.0.101:30007/run
+# curl -H "xos-username: admin@opencord.org" -H "xos-password: letmein" -X POST --data-binary @edgecore-pod1-fabric.yaml http://192.168.99.181:30007/run
 
 tosca_definitions_version: tosca_simple_yaml_1_0
 imports:
