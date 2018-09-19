@@ -1,18 +1,51 @@
 # SEBA Values
 
-envoyForEtcdImage: 'matteoscandolo/voltha-envoy:ams-1.0.1'
-netconfImage: 'matteoscandolo/voltha-netconf:ams-1.0.1'
-ofagentImage: 'matteoscandolo/voltha-ofagent:ams-1.0.1'
-vcliImage: 'matteoscandolo/voltha-cli:ams-1.0.1'
-vcoreImage: 'matteoscandolo/voltha-voltha:ams-1.0.1'
+# envoyForEtcdImage: 'matteoscandolo/voltha-envoy:ams-1.0.2'
+# netconfImage: 'matteoscandolo/voltha-netconf:ams-1.0.2'
+# ofagentImage: 'matteoscandolo/voltha-ofagent:ams-1.0.2'
+# vcliImage: 'matteoscandolo/voltha-cli:ams-1.0.2'
+# vcoreImage: 'matteoscandolo/voltha-voltha:ams-1.0.2'
 
-onosImage: 'matteoscandolo/onos:ams-1.0.0'
+envoyForEtcdImage: '192.168.99.181:30500/voltha/voltha-envoy:ams-1.0.2'
+netconfImage: '192.168.99.181:30500/voltha/voltha-netconf:ams-1.0.2'
+ofagentImage: '192.168.99.181:30500/voltha/voltha-ofagent:ams-1.0.2'
+vcliImage: '192.168.99.181:30500/voltha/voltha-cli:ams-1.0.2'
+vcoreImage: '192.168.99.181:30500/voltha/voltha-voltha:ams-1.0.2'
 
-xos_coreImage: 'xosproject/xos-core:2.1.0'
+onosImage: '192.168.99.181:30500/onos/onos:ams-1.0.0'
+
+xos_coreImage: '192.168.99.181:30500/xosproject/xos-core:2.1.4'
+rcord:
+  rcord_synchronizerImage: '192.168.99.181:30500/xosproject/rcord-synchronizer:1.0.3'
 fabric:
-  fabric_synchronizerImage: 'xosproject/fabric-synchronizer:2.1.0'
+  fabric_synchronizerImage: '192.168.99.181:30500/xosproject/fabric-synchronizer:2.1.1'
+volt:
+  volt_synchronizerImage: '192.168.99.181:30500/xosproject/volt-synchronizer:2.0.3'
+fabric-crossconnect:
+  fabric_crossconnect_synchronizerImage: '192.168.99.181:30500/xosproject/fabric-crossconnect-synchronizer:1.0.2'
+onos-service:
+  onos_synchronizerImage: '192.168.99.181:30500/xosproject/onos-synchronizer:2.0.4'
 att-workflow-driver:
-  attWorkflowDriver_synchronizerImage: '192.168.99.181:30500/xosproject/att-workflow-driver-synchronizer:candidate'
+  attWorkflowDriver_synchronizerImage: '192.168.99.181:30500/xosproject/att-workflow-driver-synchronizer:1.0.0'
+kubernetes:
+  kubernetes_synchronizerImage: "192.168.99.181:30500/xosproject/kubernetes-synchronizer:1.0.2"
+
+# kafka
+image: '192.168.99.181:30500/confluentinc/cp-kafka:4.1.2-2'
+
+zookeper:
+  image: '192.168.99.181:30500/google_samples/k8szk:v3'
+
+# etcd
+etcd-operator:
+  etcdOperator:
+    image:
+      repository: 192.168.99.181:30500/quay.io/coreos/etcd-operator
+      tag: v0.7.0
+  etcdCluster:
+    image:
+      repository: 192.168.99.181:30500/quay.io/coreos/etcd
+      tag: v3.2.13
 
 application_logs: |
   log4j.logger.org.opencord.olt = DEBUG

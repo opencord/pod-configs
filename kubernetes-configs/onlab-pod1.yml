@@ -6,12 +6,6 @@ ofagentImage: 'matteoscandolo/voltha-ofagent:ams-1.0.2'
 vcliImage: 'matteoscandolo/voltha-cli:ams-1.0.2'
 vcoreImage: 'matteoscandolo/voltha-voltha:ams-1.0.2'
 
-# envoyForEtcdImage: '10.90.0.101:30500/voltha/voltha-envoy:ams-1.0.2-alpha'
-# netconfImage: '10.90.0.101:30500/voltha/voltha-netconf:ams-1.0.2-alpha'
-# ofagentImage: '10.90.0.101:30500/voltha/voltha-ofagent:ams-1.0.2-alpha'
-# vcliImage: '10.90.0.101:30500/voltha/voltha-cli:ams-1.0.2-alpha'
-# vcoreImage: '10.90.0.101:30500/voltha/voltha-voltha:ams-1.0.2-alpha'
-
 onosImage: 'matteoscandolo/onos:ams-1.0.0'
 
 # mavenRepoImage: 10.90.0.101:30500/opencord/mavenrepo:latest
@@ -20,14 +14,8 @@ onosImage: 'matteoscandolo/onos:ams-1.0.0'
 # sadisAppUrl: http://10.90.0.101:30160/repository/sadis-app-2.2.0-SNAPSHOT.oar
 # oltAppUrl: http://10.90.0.101:30160/repository/olt-app-2.0.0-SNAPSHOT.oar
 
-xos_coreImage: 'xosproject/xos-core:2.1.0'
-fabric:
-  fabric_synchronizerImage: 'xosproject/fabric-synchronizer:2.1.0'
-att-workflow-driver:
-  attWorkflowDriver_synchronizerImage: '10.90.0.101:30500/xosproject/att-workflow-driver-synchronizer:candidate'
-
 application_logs: |
   log4j.logger.org.opencord.olt = DEBUG
   log4j.logger.org.opencord.kafka = DEBUG
   log4j.logger.org.opencord.sadis = DEBUG
-  log4j.logger.org.opencord.aaa = DEBUG
+  log4j.logger.org.opencord.aaa = TRACE
