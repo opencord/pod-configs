@@ -81,7 +81,7 @@ topology_template:
       properties:
         serial_number: ALPHe3d1cea3
         # pon_port_id: 536870912
-        pon_port_id: 123456789
+        pon_port_id: 536870913
         device_id: of:00000000c0a863b6
       requirements:
         - owner:
