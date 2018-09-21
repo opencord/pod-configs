@@ -6,6 +6,12 @@ ofagentImage: 'matteoscandolo/voltha-ofagent:ams-1.0.2'
 vcliImage: 'matteoscandolo/voltha-cli:ams-1.0.2'
 vcoreImage: 'matteoscandolo/voltha-voltha:ams-1.0.2'
 
+# envoyForEtcdImage: '10.90.0.101:30500/voltha/voltha-envoy:dev'
+# netconfImage: '10.90.0.101:30500/voltha/voltha-netconf:dev'
+# ofagentImage: '10.90.0.101:30500/voltha/voltha-ofagent:dev'
+# vcliImage: '10.90.0.101:30500/voltha/voltha-cli:dev'
+# vcoreImage: '10.90.0.101:30500/voltha/voltha-voltha:dev'
+
 onosImage: 'matteoscandolo/onos:ams-1.0.0'
 
 # mavenRepoImage: 10.90.0.101:30500/opencord/mavenrepo:latest
