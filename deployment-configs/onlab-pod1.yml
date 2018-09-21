@@ -44,6 +44,7 @@ olts:
     ip: '10.90.0.114'
     user: 'root'
     pass: 'onl'
+    fortygig: 'true'
 
 onus:
   -
