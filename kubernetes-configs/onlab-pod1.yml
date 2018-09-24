@@ -21,10 +21,10 @@ onosImage: 'matteoscandolo/onos:ams-1.0.0'
 # oltAppUrl: http://10.90.0.101:30160/repository/olt-app-2.0.0-SNAPSHOT.oar
 
 # synchronizers
-volt:
-  volt_synchronizerImage: '10.90.0.101:30500/xosproject/volt-synchronizer:2.1.0'
-fabric-crossconnect:
-  fabric_crossconnect_synchronizerImage: '10.90.0.101:30500/xosproject/fabric-crossconnect-synchronizer:2.1.0'
+#volt:
+#  volt_synchronizerImage: '10.90.0.101:30500/xosproject/volt-synchronizer:2.1.0'
+#fabric-crossconnect:
+#  fabric_crossconnect_synchronizerImage: '10.90.0.101:30500/xosproject/fabric-crossconnect-synchronizer:2.1.0'
 
 application_logs: |
   log4j.logger.org.opencord.olt = DEBUG
