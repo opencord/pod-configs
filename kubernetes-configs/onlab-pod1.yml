@@ -1,27 +1,21 @@
 # SEBA Values
 
-envoyForEtcdImage: 'matteoscandolo/voltha-envoy:ams-1.0.2'
-netconfImage: 'matteoscandolo/voltha-netconf:ams-1.0.2'
-ofagentImage: 'matteoscandolo/voltha-ofagent:ams-1.0.2'
-vcliImage: 'matteoscandolo/voltha-cli:ams-1.0.2'
-vcoreImage: 'matteoscandolo/voltha-voltha:ams-1.0.2'
+envoyForEtcdImage: 'voltha/voltha-envoy:amsterdam'
+netconfImage: 'voltha/voltha-netconf:amsterdam'
+ofagentImage: 'voltha/voltha-ofagent:amsterdam'
+vcliImage: 'voltha/voltha-cli:amsterdam'
+vcoreImage: 'voltha/voltha-voltha:amsterdam'
 
-# envoyForEtcdImage: '10.90.0.101:30500/voltha/voltha-envoy:dev'
-# netconfImage: '10.90.0.101:30500/voltha/voltha-netconf:dev'
-# ofagentImage: '10.90.0.101:30500/voltha/voltha-ofagent:dev'
-# vcliImage: '10.90.0.101:30500/voltha/voltha-cli:dev'
-# vcoreImage: '10.90.0.101:30500/voltha/voltha-voltha:dev'
+onosImage: 'onosproject/onos:1.13.4'
 
-onosImage: 'matteoscandolo/onos:ams-1.0.0'
+xos_coreImage: 'xosproject/xos-core:2.1.0'
+fabric:
+  fabric_synchronizerImage: 'xosproject/fabric-synchronizer:2.1.0'
+att-workflow-driver:
+  attWorkflowDriver_synchronizerImage: 'xosproject/att-workflow-driver-synchronizer:1.0.0'
 
-# mavenRepoImage: 10.90.0.101:30500/opencord/mavenrepo:latest
-
-# kafkaAppUrl: http://10.90.0.101:30160/repository/kafka-1.0.0-SNAPSHOT.oar
-# sadisAppUrl: http://10.90.0.101:30160/repository/sadis-app-2.2.0-SNAPSHOT.oar
-# oltAppUrl: http://10.90.0.101:30160/repository/olt-app-2.0.0-SNAPSHOT.oar
-
-application_logs: |
-  log4j.logger.org.opencord.olt = DEBUG
-  log4j.logger.org.opencord.kafka = DEBUG
-  log4j.logger.org.opencord.sadis = DEBUG
-  log4j.logger.org.opencord.aaa = TRACE
+# application_logs: |
+#   log4j.logger.org.opencord.olt = DEBUG
+#   log4j.logger.org.opencord.kafka = DEBUG
+#   log4j.logger.org.opencord.sadis = DEBUG
+#   log4j.logger.org.opencord.aaa = DEBUG
