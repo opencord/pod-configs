@@ -62,7 +62,7 @@ olts:
     user: 'root'
     pass: 'onl'
     fortygig: 'true'
-   -
+  -
     name: 'iskratelg'
     ip: '192.168.100.115'
     user: 'root'
