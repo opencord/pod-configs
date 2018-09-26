@@ -1,0 +1,21 @@
+# SEBA Values
+
+envoyForEtcdImage: 'voltha/voltha-envoy:amsterdam'
+netconfImage: 'voltha/voltha-netconf:amsterdam'
+ofagentImage: 'voltha/voltha-ofagent:amsterdam'
+vcliImage: 'voltha/voltha-cli:amsterdam'
+vcoreImage: 'voltha/voltha-voltha:amsterdam'
+
+onosImage: 'onosproject/onos:1.13.4'
+
+xos_coreImage: 'xosproject/xos-core:2.1.0'
+fabric:
+  fabric_synchronizerImage: 'xosproject/fabric-synchronizer:2.1.0'
+att-workflow-driver:
+  attWorkflowDriver_synchronizerImage: 'xosproject/att-workflow-driver-synchronizer:1.0.0'
+
+# application_logs: |
+#   log4j.logger.org.opencord.olt = DEBUG
+#   log4j.logger.org.opencord.kafka = DEBUG
+#   log4j.logger.org.opencord.sadis = DEBUG
+#   log4j.logger.org.opencord.aaa = DEBUG
