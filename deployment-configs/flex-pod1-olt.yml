@@ -45,9 +45,11 @@ olts:
 
 srcHost:
   ip: '10.192.4.61'
+  hostIp: '10.8.2.105'
   user: 'cluser'
   pass: 'cloudlabs'
   gateway: '10.8.2.254'
+  iface: 'enp4s0f1'
 
 dstHost:
   ip: '10.192.4.62'
@@ -55,3 +57,4 @@ dstHost:
   user: 'cord'
   pass: 'cord'
   gateway: '10.8.3.254'
+  iface: 'ens3'
