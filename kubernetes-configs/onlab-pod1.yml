@@ -14,6 +14,15 @@ fabric:
 att-workflow-driver:
   attWorkflowDriver_synchronizerImage: 'xosproject/att-workflow-driver-synchronizer:1.0.0'
 
+xos-gui:
+  xos_wsImage: 'matteoscandolo/xos-ws:latest'
+
+# mavenRepoImage: 10.90.0.101:30500/opencord/mavenrepo:latest
+
+# kafkaAppUrl: http://10.90.0.101:30160/repository/kafka-1.0.0-SNAPSHOT.oar
+# sadisAppUrl: http://10.90.0.101:30160/repository/sadis-app-2.2.0-SNAPSHOT.oar
+# oltAppUrl: http://10.90.0.101:30160/repository/olt-app-2.0.0-SNAPSHOT.oar
+
 # application_logs: |
 #   log4j.logger.org.opencord.olt = DEBUG
 #   log4j.logger.org.opencord.kafka = DEBUG
