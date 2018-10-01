@@ -14,8 +14,10 @@ onosImage: 'onosproject/onos:1.13.4'
 #att-workflow-driver:
 #  attWorkflowDriver_synchronizerImage: 'xosproject/att-workflow-driver-synchronizer:1.0.0'
 
-# application_logs: |
-#   log4j.logger.org.opencord.olt = DEBUG
-#   log4j.logger.org.opencord.kafka = DEBUG
-#   log4j.logger.org.opencord.sadis = DEBUG
-#   log4j.logger.org.opencord.aaa = DEBUG
+ application_logs: |
+   log4j.logger.org.opencord.olt = TRACE
+   log4j.logger.org.opencord.kafka = DEBUG
+   log4j.logger.org.opencord.sadis = DEBUG
+   log4j.logger.org.opencord.aaa = TRACE
+   log4j.logger.org.opencord.dhcpl2relay = TRACE
+   log4j.logger.org.onosproject.drivers = DEBUG
