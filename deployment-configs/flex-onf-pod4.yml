@@ -1,0 +1,23 @@
+# Automated deployment configuration for Flex POD 4
+
+---
+
+kube_config: 'flex-onf-pod4.conf'
+
+nodes:
+  -
+    ip: '10.192.16.35'
+    user: 'cord'
+    pass: 'cord'
+  -
+    ip: '10.192.16.36'
+    user: 'cord'
+    pass: 'cord'
+  -
+    ip: '10.192.16.37'
+    user: 'cord'
+    pass: 'cord'
+  -
+    ip: '10.192.16.38'
+    user: 'cord'
+    pass: 'cord'
