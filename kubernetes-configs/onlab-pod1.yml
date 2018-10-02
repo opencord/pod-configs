@@ -11,7 +11,7 @@ onosImage: 'onosproject/onos:1.13.4'
 xos-gui:
   xos_wsImage: '10.90.0.101:30500/xosproject/xos-ws:candidate'
 
- application_logs: |
+application_logs: |
    log4j.logger.org.opencord.olt = TRACE
    log4j.logger.org.opencord.kafka = DEBUG
    log4j.logger.org.opencord.sadis = DEBUG
