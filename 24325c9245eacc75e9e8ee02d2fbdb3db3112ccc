@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a1cd1494_f30ecbea",
+        "filename": "kubernetes-configs/flex-pod4.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000054
+      },
+      "writtenOn": "2018-10-03T20:12:05Z",
+      "side": 1,
+      "message": "This is for another POD right?",
+      "range": {
+        "startLine": 19,
+        "startChar": 13,
+        "endLine": 19,
+        "endChar": 31
+      },
+      "revId": "24325c9245eacc75e9e8ee02d2fbdb3db3112ccc",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e1bcdcc7_01b0b8dd",
+        "filename": "kubernetes-configs/flex-pod4.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1000054
+      },
+      "writtenOn": "2018-10-03T20:12:05Z",
+      "side": 1,
+      "message": "This config file should go to pod-configs/deployment-configs",
+      "revId": "24325c9245eacc75e9e8ee02d2fbdb3db3112ccc",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
