@@ -16,31 +16,47 @@ ingressControllerImage: '192.168.99.181:30500/quay.io/kubernetes-ingress-control
 
 onosImage: '192.168.99.181:30500/onos/onos:ams-1.0.0'
 
+global:
+  registry: '192.168.99.181:30500/'
+
 # xos
-xos_coreImage: '192.168.99.181:30500/xosproject/xos-core:2.1.4'
-xos_chameleonImage: '192.168.99.181:30500/xosproject/chameleon:master'
-xos_toscaImage: '192.168.99.181:30500/xosproject/xos-tosca:master'
+images:
+  xos_core:
+    tag: 2.1.4
+  xos_chameleon:
+    tag: master
+  xos_tosca:
+    tag: master
+
 xos-gui:
-  xos_guiImage: '192.168.99.181:30500/xosproject/xos-gui:master'
-  xos_wsImage: '192.168.99.181:30500/xosproject/xos-ws:master'
-xos-db:
-  postgresImage: '192.168.99.181:30500/postgres:10.3-alpine'
+  images:
+    xos_gui:
+      tag: master
+    xos_ws:
+      tag: master
 
 # synchronizers
 rcord:
-  rcord_synchronizerImage: '192.168.99.181:30500/xosproject/rcord-synchronizer:1.0.3'
+  image:
+    tag: 1.0.3
 fabric:
-  fabric_synchronizerImage: '192.168.99.181:30500/xosproject/fabric-synchronizer:2.1.1'
+  image:
+    tag: 2.1.1
 volt:
-  volt_synchronizerImage: '192.168.99.181:30500/xosproject/volt-synchronizer:2.0.3'
+  image:
+    tag: 2.0.3
 fabric-crossconnect:
-  fabric_crossconnect_synchronizerImage: '192.168.99.181:30500/xosproject/fabric-crossconnect-synchronizer:1.0.2'
+  image:
+    tag: 1.0.2
 onos-service:
-  onos_synchronizerImage: '192.168.99.181:30500/xosproject/onos-synchronizer:2.0.4'
+  image:
+    tag: 2.0.4
 att-workflow-driver:
-  attWorkflowDriver_synchronizerImage: '192.168.99.181:30500/xosproject/att-workflow-driver-synchronizer:1.0.0'
+  image:
+    tag: 1.0.0
 kubernetes:
-  kubernetes_synchronizerImage: "192.168.99.181:30500/xosproject/kubernetes-synchronizer:1.0.2"
+  image:
+    tag: 1.0.2
 
 # kafka
 image: '192.168.99.181:30500/confluentinc/cp-kafka:4.1.2-2'
