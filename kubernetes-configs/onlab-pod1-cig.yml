@@ -8,11 +8,19 @@ vcoreImage: 'voltha/voltha-voltha:amsterdam'
 
 onosImage: 'onosproject/onos:1.13.4'
 
-xos_coreImage: 'xosproject/xos-core:2.1.0'
+# XOS core images
+images:
+  xos_core:
+    tag: 2.1.0
+
+# service images
 fabric:
-  fabric_synchronizerImage: 'xosproject/fabric-synchronizer:2.1.0'
+  images:
+    tag: 2.1.0
+
 att-workflow-driver:
-  attWorkflowDriver_synchronizerImage: 'xosproject/att-workflow-driver-synchronizer:1.0.0'
+  images:
+    tag: 1.0.0
 
 # application_logs: |
 #   log4j.logger.org.opencord.olt = DEBUG
