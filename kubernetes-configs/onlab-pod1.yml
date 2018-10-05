@@ -10,10 +10,10 @@ vcoreImage: 'voltha/voltha-voltha:latest'
 
 onosImage: 'onosproject/onos:1.13.4'
 
-xos_coreImage: '10.90.0.101:30500/xosproject/xos-core:candidate'
+#xos_coreImage: '10.90.0.101:30500/xosproject/xos-core:candidate'
 
-xos-gui:
-  xos_wsImage: '10.90.0.101:30500/xosproject/xos-ws:candidate'
+#xos-gui:
+#  xos_wsImage: '10.90.0.101:30500/xosproject/xos-ws:candidate'
 
 application_logs: |
    log4j.logger.org.opencord.olt = TRACE
