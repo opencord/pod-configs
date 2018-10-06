@@ -43,6 +43,9 @@ olts:
     pass: 'onl'
     fortygig: 'true'
 
+test:
+  pass: 'cloudlabs'
+
 hosts:
   src:
     ip: '10.192.4.61'
