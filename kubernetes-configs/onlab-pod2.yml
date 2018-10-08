@@ -1,0 +1,24 @@
+# SEBA Values
+
+envoyForEtcdImage: 'voltha/voltha-envoy:latest'
+#freeradiusImage: '10.90.0.120:30500/freeradius:tls'
+freeradiusImage: 'tpdock/freeradius:latest'
+netconfImage: 'voltha/voltha-netconf:latest'
+ofagentImage: 'voltha/voltha-ofagent:latest'
+vcliImage: 'voltha/voltha-cli:latest'
+vcoreImage: 'voltha/voltha-voltha:latest'
+
+onosImage: 'onosproject/onos:1.13.4'
+
+#xos_coreImage: '10.90.0.120:30500/xosproject/xos-core:candidate'
+
+#xos-gui:
+#  xos_wsImage: '10.90.0.120:30500/xosproject/xos-ws:candidate'
+
+application_logs: |
+   log4j.logger.org.opencord.olt = TRACE
+   log4j.logger.org.opencord.kafka = DEBUG
+   log4j.logger.org.opencord.sadis = DEBUG
+   log4j.logger.org.opencord.aaa = TRACE
+   log4j.logger.org.opencord.dhcpl2relay = TRACE
+   log4j.logger.org.onosproject.drivers = DEBUG

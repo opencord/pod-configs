@@ -20,39 +20,29 @@ kube_config: '/var/new_jenkins_home/workspace/admin.conf'
 
 nodes:
   -
-    ip: '10.90.0.101'
-    user: 'cord'
-    pass: 'cord'
-  -
-    ip: '10.90.0.102'
-    user: 'cord'
-    pass: 'cord'
-  -
-    ip: '10.90.0.103'
+    ip: '10.90.0.120'
     user: 'cord'
     pass: 'cord'
 
 fabric_switches:
   -
     mac: 'cc:37:ab:61:80:ca'
-    ip: '10.6.0.111'
+    ip: '10.90.0.121'
     user: 'root'
     pass: 'onl'
 
 olts:
   -
-    ip: '10.90.0.114'
+    ip: '10.90.0.122'
     user: 'root'
     pass: 'onl'
     fortygig: 'true'
 
 onus:
   -
-    serial: 'BRCM22222222'
+    serial: 'ISKT71e80080'
   -
-    serial: 'ISKT71e801a0'
-  -
-    serial: 'ALPHe3d1cfde'
+    serial: 'ALPHe3d1cfe3'
 
 srcHost:
   ip: '10.0.3.56'
