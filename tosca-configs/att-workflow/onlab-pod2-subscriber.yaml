@@ -29,7 +29,7 @@ topology_template:
       properties:
         name: Sub_ALPHe3d1cfe3
         status: pre-provisioned
-        c_tag: 115
+        c_tag: 111
         s_tag: 222
         onu_device: ALPHe3d1cfe3
         nas_port_id : "PON 1/1/03/1:1.1.1"
