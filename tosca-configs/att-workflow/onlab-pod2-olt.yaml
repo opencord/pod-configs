@@ -32,11 +32,11 @@ topology_template:
     olt_device:
       type: tosca.nodes.OLTDevice
       properties:
-        name: ONF OLT
+        name: SHAD OLT
         device_type: openolt
         host: 10.90.0.122
         port: 9191
-        switch_datapath_id: of:0000000000000001
+        switch_datapath_id: of:0000000000000002
         switch_port: "1"
         outer_tpid: "0x8100"
         uplink: "65536"

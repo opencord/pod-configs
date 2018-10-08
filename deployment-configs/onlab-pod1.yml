@@ -35,7 +35,7 @@ nodes:
 fabric_switches:
   -
     mac: 'cc:37:ab:61:80:ca'
-    ip: '10.6.0.111'
+    ip: '10.90.0.111'
     user: 'root'
     pass: 'onl'
 
