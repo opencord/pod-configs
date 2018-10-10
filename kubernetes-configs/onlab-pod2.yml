@@ -10,12 +10,15 @@ vcoreImage: 'voltha/voltha-voltha:latest'
 
 onosImage: '10.90.0.101:30500/onosproject/onos:candidate'
 
-xos_coreImage: '10.90.0.120:30500/xosproject/xos-core:candidate'
+images:
+  xos_core:
+    repository: '10.90.0.120:30500/xosproject/xos-core'
+    tag: 'candidate'
 
 volt:
-  volt_synchronizerImage: "10.90.0.120:30500/xosproject/volt-synchronizer:candidate"
-#xos-gui:
-#  xos_wsImage: '10.90.0.120:30500/xosproject/xos-ws:candidate'
+  image:
+    repository: '10.90.0.120:30500/xosproject/volt-synchronizer'
+    tag: 'candidate'
 
 application_logs: |
    log4j.logger.org.opencord.olt = TRACE
