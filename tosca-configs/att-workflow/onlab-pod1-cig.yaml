@@ -41,7 +41,7 @@ topology_template:
         host: 10.90.0.115
         port: 10400
         switch_datapath_id: of:0000000000000001
-        switch_port: "3"
+        switch_port: "4"
         outer_tpid: "0x8100"
         uplink: "65536"
         nas_id: "NAS_ID"
