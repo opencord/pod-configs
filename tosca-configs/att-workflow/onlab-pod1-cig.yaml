@@ -74,7 +74,7 @@ topology_template:
       properties:
         name: Sub_CIGG70606829
         status: pre-provisioned
-        c_tag: 111
+        c_tag: 444
         s_tag: 444
         onu_device: CIGG70606829
         nas_port_id : "PON 1/1/03/1:1.1.1"
