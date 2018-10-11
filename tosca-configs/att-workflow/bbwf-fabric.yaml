@@ -135,7 +135,7 @@ topology_template:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
         serial_number: ISKT71E81130
-        pon_port_id: 536870913
+        pon_port_id: 536870912
         device_id: of:000000000a5a0072
       requirements:
         - owner:
@@ -158,7 +158,7 @@ topology_template:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
         serial_number: ADTN16180345
-        pon_port_id: 536870913
+        pon_port_id: 536870912
         device_id: of:000000000a5a0072
       requirements:
         - owner:
@@ -193,7 +193,7 @@ topology_template:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
         serial_number: SBB2888AA010
-        pon_port_id: 536870913
+        pon_port_id: 536870912
         device_id: of:000000000a5a0072
       requirements:
         - owner:
@@ -216,7 +216,7 @@ topology_template:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
         serial_number: ISKT45F2BD61
-        pon_port_id: 536870913
+        pon_port_id: 536870912
         device_id: of:000000000a5a0072
       requirements:
         - owner:
@@ -227,7 +227,7 @@ topology_template:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
         serial_number: ISKT45F2C1E4
-        pon_port_id: 536870914
+        pon_port_id: 536870912
         device_id: of:000000000a5a0072
       requirements:
         - owner:
