@@ -50,7 +50,7 @@ topology_template:
       type: tosca.nodes.OLTDevice
       properties:
         name: Adtran OLT
-        device_type: openolt
+        device_type: adtran
         host: 192.168.100.112
         port: 9191
         switch_datapath_id: of:0000000000000001

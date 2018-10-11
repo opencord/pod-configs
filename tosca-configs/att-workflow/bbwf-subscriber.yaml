@@ -102,11 +102,11 @@ topology_template:
     iskratelx_subscriber_2:
       type: tosca.nodes.RCORDSubscriber
       properties:
-        name: Sub_SBB2888AA010
+        name: Sub_ISKT71E81071
         status: pre-provisioned
         c_tag: 22
         s_tag: 444
-        onu_device: SBB2888AA010
+        onu_device: ISKT71E81071
         nas_port_id : "PON 1/1/05/1:1.1.1"
         circuit_id: iskx_sub2_circuit
         remote_id: iskx_sub2_remote
