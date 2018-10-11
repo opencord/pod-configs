@@ -125,7 +125,7 @@ topology_template:
       properties:
         serial_number: ALPHE3D1CEE9
         pon_port_id: 536870912
-        device_id: of:000000000a5a0072
+        device_id: of:00000000C0A8646F
       requirements:
         - owner:
             node: service#att
@@ -136,7 +136,7 @@ topology_template:
       properties:
         serial_number: ISKT71E81130
         pon_port_id: 536870912
-        device_id: of:000000000a5a0072
+        device_id: of:00000000C0A8646F
       requirements:
         - owner:
             node: service#att
@@ -148,7 +148,7 @@ topology_template:
       properties:
         serial_number: ADTN17510028
         pon_port_id: 536870912
-        device_id: of:000000000a5a0072
+        device_id: of:00000000C0A86470
       requirements:
         - owner:
             node: service#att
@@ -159,7 +159,7 @@ topology_template:
       properties:
         serial_number: ADTN16180345
         pon_port_id: 536870912
-        device_id: of:000000000a5a0072
+        device_id: of:00000000C0A86470
       requirements:
         - owner:
             node: service#att
@@ -171,7 +171,7 @@ topology_template:
       properties:
         serial_number: CIG
         pon_port_id: 536870912
-        device_id: of:000000000a5a0072
+        device_id: of:00000000C0A86471
       requirements:
         - owner:
             node: service#att
@@ -183,7 +183,7 @@ topology_template:
       properties:
         serial_number: ISKT71E81070
         pon_port_id: 536870912
-        device_id: of:000000000a5a0072
+        device_id: of:00000000C0A86472
       requirements:
         - owner:
             node: service#att
@@ -194,7 +194,7 @@ topology_template:
       properties:
         serial_number: ISKT71E81071
         pon_port_id: 536870912
-        device_id: of:000000000a5a0072
+        device_id: of:00000000C0A86472
       requirements:
         - owner:
             node: service#att
@@ -206,7 +206,7 @@ topology_template:
       properties:
         serial_number: ISKT45F2C688
         pon_port_id: 536870912
-        device_id: of:000000000a5a0072
+        device_id: of:00000000C0A86473
       requirements:
         - owner:
             node: service#att
@@ -217,7 +217,7 @@ topology_template:
       properties:
         serial_number: ISKT45F2BD61
         pon_port_id: 536870912
-        device_id: of:000000000a5a0072
+        device_id: of:00000000C0A86473
       requirements:
         - owner:
             node: service#att
@@ -228,7 +228,7 @@ topology_template:
       properties:
         serial_number: ISKT45F2C1E4
         pon_port_id: 536870912
-        device_id: of:000000000a5a0072
+        device_id: of:00000000C0A86473
       requirements:
         - owner:
             node: service#att
