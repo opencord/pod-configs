@@ -69,7 +69,7 @@ topology_template:
         name: CIG OLT
         device_type: openolt
         host: 192.168.100.113
-        port: 9191
+        port: 10400
         switch_datapath_id: of:0000000000000001
         switch_port: "51"
         outer_tpid: "0x8100"

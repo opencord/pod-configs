@@ -6,24 +6,11 @@ ofagentImage: 'voltha/voltha-ofagent:amsterdam'
 vcliImage: 'voltha/voltha-cli:amsterdam'
 vcoreImage: 'voltha/voltha-voltha:amsterdam'
 
-onosImage: 'onosproject/onos:1.13.4'
+onosImage: 'matteoscandolo/onos:berlin'
 
-# XOS core images
-images:
-  xos_core:
-    tag: 2.1.0
-
-# service images
-fabric:
-  images:
-    tag: 2.1.0
-
-att-workflow-driver:
-  images:
-    tag: 1.0.0
-
-# application_logs: |
-#   log4j.logger.org.opencord.olt = DEBUG
-#   log4j.logger.org.opencord.kafka = DEBUG
-#   log4j.logger.org.opencord.sadis = DEBUG
-#   log4j.logger.org.opencord.aaa = DEBUG
+application_logs: |
+  log4j.logger.org.opencord.olt = TRACE
+  log4j.logger.org.opencord.kafka = DEBUG
+  log4j.logger.org.opencord.sadis = DEBUG
+  log4j.logger.org.opencord.aaa = TRACE
+  log4j.logger.org.opencord.dhcpl2relay = TRACE

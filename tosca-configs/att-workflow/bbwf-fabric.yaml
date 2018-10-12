@@ -22,6 +22,8 @@ imports:
   - custom_types/bngportmapping.yaml
   - custom_types/attworkflowdriverwhitelistentry.yaml
   - custom_types/attworkflowdriverservice.yaml
+  - custom_types/serviceinstanceattribute.yaml
+  - custom_types/onosapp.yaml
 
 description: Configures the fabric and the whitelist
 
@@ -98,7 +100,6 @@ topology_template:
       type: tosca.nodes.SwitchPort
       properties:
         portId: 48
-        host_learning: false
       requirements:
         - switch:
             node: switch#leaf_1
@@ -111,6 +112,29 @@ topology_template:
       properties:
         s_tag: any
         switch_port: 48
+
+    # DHCP L2 Relay config
+    onos_app#dhcpl2relay:
+      type: tosca.nodes.ONOSApp
+      properties:
+        name: dhcpl2relay
+        must-exist: true
+
+    dhcpl2relay-config-attr:
+      type: tosca.nodes.ServiceInstanceAttribute
+      properties:
+        name: /onos/v1/network/configuration/apps/org.opencord.dhcpl2relay
+        value: >
+          {
+            "dhcpl2relay" : {
+              "useOltUplinkForServerPktInOut" : false,
+              "dhcpServerConnectPoints" : [ "of:0000000000000001/31" ]
+            }
+          }
+      requirements:
+        - service_instance:
+            node: onos_app#dhcpl2relay
+            relationship: tosca.relationships.BelongsToOne
 
     # ONU Whitelist
     service#att:
