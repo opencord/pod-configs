@@ -1,10 +1,10 @@
 # SEBA Values
 
-envoyForEtcdImage: 'voltha/voltha-envoy:amsterdam'
-netconfImage: 'voltha/voltha-netconf:amsterdam'
-ofagentImage: 'voltha/voltha-ofagent:amsterdam'
-vcliImage: 'voltha/voltha-cli:amsterdam'
-vcoreImage: 'voltha/voltha-voltha:amsterdam'
+envoyForEtcdImage: 'matteoscandolo/voltha-envoy:berlin'
+netconfImage: 'matteoscandolo/voltha-netconf:berlin'
+ofagentImage: 'matteoscandolo/voltha-ofagent:berlin'
+vcliImage: 'matteoscandolo/voltha-cli:berlin'
+vcoreImage: 'matteoscandolo/voltha-voltha:berlin'
 
 onosImage: 'matteoscandolo/onos:berlin'
 

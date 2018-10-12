@@ -1,17 +1,16 @@
 # SEBA Values
 
-# envoyForEtcdImage: '10.90.0.101:30500/voltha/voltha-envoy:cig'
-# netconfImage: '10.90.0.101:30500/voltha/voltha-netconf:cig'
-# ofagentImage: '10.90.0.101:30500/voltha/voltha-ofagent:cig'
-# vcliImage: '10.90.0.101:30500/voltha/voltha-cli:cig'
-# vcoreImage: '10.90.0.101:30500/voltha/voltha-voltha:cig'
+envoyForEtcdImage: 'matteoscandolo/voltha-envoy:berlin'
+netconfImage: 'matteoscandolo/voltha-netconf:berlin'
+ofagentImage: 'matteoscandolo/voltha-ofagent:berlin'
+vcliImage: 'matteoscandolo/voltha-cli:berlin'
+vcoreImage: 'matteoscandolo/voltha-voltha:berlin'
 
-onosImage: '10.90.0.101:30500/onosproject/onos:latest'
+onosImage: 'matteoscandolo/onos:berlin'
 
 application_logs: |
-   log4j.logger.org.opencord.olt = TRACE
-   log4j.logger.org.opencord.kafka = DEBUG
-   log4j.logger.org.opencord.sadis = DEBUG
-   log4j.logger.org.opencord.aaa = TRACE
-   log4j.logger.org.opencord.dhcpl2relay = TRACE
-   log4j.logger.org.onosproject.drivers = DEBUG
+  log4j.logger.org.opencord.olt = TRACE
+  log4j.logger.org.opencord.kafka = DEBUG
+  log4j.logger.org.opencord.sadis = DEBUG
+  log4j.logger.org.opencord.aaa = TRACE
+  log4j.logger.org.opencord.dhcpl2relay = TRACE
