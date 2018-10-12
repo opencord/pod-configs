@@ -22,6 +22,8 @@ imports:
   - custom_types/bngportmapping.yaml
   - custom_types/attworkflowdriverwhitelistentry.yaml
   - custom_types/attworkflowdriverservice.yaml
+  - custom_types/serviceinstanceattribute.yaml
+  - custom_types/onosapp.yaml
 
 description: Configures the Flex POD with AT&T workflow
 
@@ -55,7 +57,6 @@ topology_template:
       type: tosca.nodes.SwitchPort
       properties:
         portId: 8
-        host_learning: false
       requirements:
         - switch:
             node: switch#leaf_1
@@ -68,6 +69,29 @@ topology_template:
       properties:
         s_tag: any
         switch_port: 8
+
+    # DHCP L2 Relay config
+    onos_app#dhcpl2relay:
+      type: tosca.nodes.ONOSApp
+      properties:
+        name: dhcpl2relay
+        must-exist: true
+
+    dhcpl2relay-config-attr:
+      type: tosca.nodes.ServiceInstanceAttribute
+      properties:
+        name: /onos/v1/network/configuration/apps/org.opencord.dhcpl2relay
+        value: >
+          {
+            "dhcpl2relay" : {
+              "useOltUplinkForServerPktInOut" : false,
+              "dhcpServerConnectPoints" : [ "of:0000cc37ab5b6da8/8" ]
+            }
+          }
+      requirements:
+        - service_instance:
+            node: onos_app#dhcpl2relay
+            relationship: tosca.relationships.BelongsToOne
 
     # ONU Whitelist
     service#att:
