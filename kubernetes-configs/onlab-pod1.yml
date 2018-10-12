@@ -1,14 +1,12 @@
 # SEBA Values
 
-envoyForEtcdImage: '10.90.0.101:30500/voltha/voltha-envoy:cig'
-#freeradiusImage: '10.90.0.101:30500/freeradius:tls'
-# freeradiusImage: 'tpdock/freeradius:latest'
-netconfImage: '10.90.0.101:30500/voltha/voltha-netconf:cig'
-ofagentImage: '10.90.0.101:30500/voltha/voltha-ofagent:cig'
-vcliImage: '10.90.0.101:30500/voltha/voltha-cli:cig'
-vcoreImage: '10.90.0.101:30500/voltha/voltha-voltha:cig'
+# envoyForEtcdImage: '10.90.0.101:30500/voltha/voltha-envoy:cig'
+# netconfImage: '10.90.0.101:30500/voltha/voltha-netconf:cig'
+# ofagentImage: '10.90.0.101:30500/voltha/voltha-ofagent:cig'
+# vcliImage: '10.90.0.101:30500/voltha/voltha-cli:cig'
+# vcoreImage: '10.90.0.101:30500/voltha/voltha-voltha:cig'
 
-# onosImage: '10.90.0.101:30500/onosproject/onos:candidate'
+onosImage: '10.90.0.101:30500/onosproject/onos:latest'
 
 application_logs: |
    log4j.logger.org.opencord.olt = TRACE

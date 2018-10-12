@@ -35,7 +35,7 @@ topology_template:
         ipv4Loopback: 192.168.0.201
         ipv4NodeSid: 17
         isEdgeRouter: True
-        name: leaf_1
+        name: AGG_SWITCH
         ofId: of:0000000000000002
         routerMac: 00:00:02:01:06:01
 

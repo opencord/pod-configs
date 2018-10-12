@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# curl -H "xos-username: admin@opencord.org" -H "xos-password: letmein" -X POST --data-binary @onlab-pod1-cig.yaml http://10.90.0.101:30007/run
+# curl -H "xos-username: admin@opencord.org" -H "xos-password: letmein" -X POST --data-binary @onlab-pod1-bbsim.yaml http://10.90.0.101:30007/run
 
 tosca_definitions_version: tosca_simple_yaml_1_0
 imports:
@@ -22,8 +22,6 @@ imports:
   - custom_types/attworkflowdriverwhitelistentry.yaml
   - custom_types/attworkflowdriverservice.yaml
   - custom_types/rcordsubscriber.yaml
-  - custom_types/switch.yaml
-  - custom_types/switchport.yaml
 description: Create a simulated OLT Device in VOLTHA
 topology_template:
   node_templates:
@@ -34,16 +32,16 @@ topology_template:
         name: volt
         must-exist: true
 
-    # CIG
     olt_device:
       type: tosca.nodes.OLTDevice
       properties:
-        name: CIG
-        device_type: openolt
-        host: 10.90.0.115
-        port: 10400
+        name: BBSIM_OLT
+        device_type: bbsim
+        host: bbsim.voltha.svc
+        # host: 10.233.33.1
+        port: 50060
         switch_datapath_id: of:0000000000000001
-        switch_port: "4"
+        switch_port: "3"
         outer_tpid: "0x8100"
         uplink: "65536"
         nas_id: "NAS_ID"
@@ -59,42 +57,27 @@ topology_template:
         name: att-workflow-driver
         must-exist: true
 
-    CIG:
+    NONE31323030:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
-        serial_number: CIGG70606829
-        pon_port_id: 536870913
-        device_id: of:000000000a5a0073
+        serial_number: NONE30313030
+        pon_port_id: 536870912
+        # device_id: of:000000000ae9327a
+        device_id: of:0000aabbccddee12
       requirements:
         - owner:
             node: service#att
             relationship: tosca.relationships.BelongsToOne
 
     # Pre-provision the subscriber
-    cig_subscriber_1:
+    bbsim_subscriber_1:
       type: tosca.nodes.RCORDSubscriber
       properties:
-        name: Sub_CIGG70606829
+        name: Sub_NONE30313030
         status: pre-provisioned
-        c_tag: 444
-        s_tag: 444
-        onu_device: CIGG70606829
+        c_tag: 123
+        s_tag: 456
+        onu_device: NONE30313030
         nas_port_id : "PON 1/1/03/1:1.1.1"
         circuit_id: foo1
         remote_id: bar1
-
-    switch#leaf_1:
-      type: tosca.nodes.Switch
-      properties:
-        name: AGG_SWITCH
-        must-exist: true
-
-    port#cig_olt_port:
-      type: tosca.nodes.SwitchPort
-      properties:
-        portId: 4
-        host_learning: false
-      requirements:
-        - switch:
-            node: switch#leaf_1
-            relationship: tosca.relationships.BelongsToOne
