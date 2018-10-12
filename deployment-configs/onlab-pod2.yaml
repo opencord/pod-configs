@@ -54,6 +54,7 @@ hosts:
     ip: '10.90.0.51'
     user: 'ubuntu'
     dp_iface_name: 'eth1'
+    container_type: 'LXC'
     container_name: 'ALPHe3d1cfe3'
   dst:
     dp_iface_ip_qinq: '8.8.8.8'
