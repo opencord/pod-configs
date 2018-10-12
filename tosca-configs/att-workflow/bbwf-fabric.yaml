@@ -147,7 +147,7 @@ topology_template:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
         serial_number: ADTN17510028
-        pon_port_id: 536870912
+        pon_port_id: 5
         device_id: of:00000000C0A86470
       requirements:
         - owner:
@@ -158,7 +158,7 @@ topology_template:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
         serial_number: ADTN16180345
-        pon_port_id: 536870912
+        pon_port_id: 6
         device_id: of:00000000C0A86470
       requirements:
         - owner:

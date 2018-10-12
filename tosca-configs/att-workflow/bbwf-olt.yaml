@@ -52,11 +52,11 @@ topology_template:
         name: Adtran OLT
         device_type: adtran
         host: 192.168.100.112
-        port: 9191
+        port: 830
         switch_datapath_id: of:0000000000000001
         switch_port: "50"
         outer_tpid: "0x8100"
-        uplink: "65536"
+        uplink: "1"
         nas_id: "NAS_ID"
       requirements:
         - volt_service:
