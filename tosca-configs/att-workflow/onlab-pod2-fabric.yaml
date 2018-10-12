@@ -22,6 +22,7 @@ imports:
   - custom_types/bngportmapping.yaml
   - custom_types/attworkflowdriverwhitelistentry.yaml
   - custom_types/attworkflowdriverservice.yaml
+  - custom_types/serviceinstanceattribute.yaml
 
 description: Configures the ONF SEBA POD2 with AT&T workflow
 
@@ -55,7 +56,6 @@ topology_template:
       type: tosca.nodes.SwitchPort
       properties:
         portId: 32
-        host_learning: false
       requirements:
         - switch:
             node: switch#leaf_1
@@ -68,6 +68,23 @@ topology_template:
       properties:
         s_tag: any
         switch_port: 32
+
+    # DHCP L2 Relay config
+    dhcpl2relay-config-attr:
+      type: tosca.nodes.ServiceInstanceAttribute
+      properties:
+        name: /onos/v1/network/configuration/apps/org.opencord.dhcpl2relay
+        value: >
+          {
+            "dhcpl2relay" : {
+              "useOltUplinkForServerPktInOut" : false,
+              "dhcpServerConnectPoints" : [ "of:0000000000000002/32" ]
+            }
+          }
+      requirements:
+        - service_instance:
+            node: onos_app#dhcpl2relay
+            relationship: tosca.relationships.BelongsToOne
 
     # ONU Whitelist
     service#att:
