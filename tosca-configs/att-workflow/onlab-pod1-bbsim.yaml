@@ -19,6 +19,7 @@ imports:
   - custom_types/oltdevice.yaml
   - custom_types/onudevice.yaml
   - custom_types/voltservice.yaml
+  - custom_types/bngportmapping.yaml
   - custom_types/attworkflowdriverwhitelistentry.yaml
   - custom_types/attworkflowdriverservice.yaml
   - custom_types/rcordsubscriber.yaml
@@ -36,7 +37,7 @@ topology_template:
       type: tosca.nodes.OLTDevice
       properties:
         name: BBSIM_OLT
-        device_type: bbsim
+        device_type: bbsimolt
         host: bbsim.voltha.svc
         # host: 10.233.33.1
         port: 50060
@@ -50,6 +51,12 @@ topology_template:
             node: service#volt
             relationship: tosca.relationships.BelongsToOne
 
+    bngmapping:
+      type: tosca.nodes.BNGPortMapping
+      properties:
+        s_tag: any
+        switch_port: 31
+
     # Whitelist
     service#att:
       type: tosca.nodes.AttWorkflowDriverService
@@ -60,9 +67,8 @@ topology_template:
     NONE31323030:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
-        serial_number: NONE30313030
-        pon_port_id: 536870912
-        # device_id: of:000000000ae9327a
+        serial_number: NONE00000100
+        pon_port_id: 536870913
         device_id: of:0000aabbccddee12
       requirements:
         - owner:
@@ -73,11 +79,11 @@ topology_template:
     bbsim_subscriber_1:
       type: tosca.nodes.RCORDSubscriber
       properties:
-        name: Sub_NONE30313030
+        name: Sub_NONE00000100
         status: pre-provisioned
         c_tag: 123
         s_tag: 456
-        onu_device: NONE30313030
+        onu_device: NONE00000100
         nas_port_id : "PON 1/1/03/1:1.1.1"
         circuit_id: foo1
         remote_id: bar1
