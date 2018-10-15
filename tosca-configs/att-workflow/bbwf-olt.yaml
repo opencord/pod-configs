@@ -29,7 +29,7 @@ topology_template:
         name: volt
         must-exist: true
 
-    olt_device:
+    edgecore:
       type: tosca.nodes.OLTDevice
       properties:
         name: EdgeCore OLT
@@ -46,11 +46,11 @@ topology_template:
             node: service#volt
             relationship: tosca.relationships.BelongsToOne
 
-    olt_device:
+    adtran:
       type: tosca.nodes.OLTDevice
       properties:
         name: Adtran OLT
-        device_type: adtran
+        device_type: adtran_olt
         host: 192.168.100.112
         port: 830
         switch_datapath_id: of:0000000000000001
@@ -63,7 +63,7 @@ topology_template:
             node: service#volt
             relationship: tosca.relationships.BelongsToOne
 
-    olt_device:
+    cig:
       type: tosca.nodes.OLTDevice
       properties:
         name: CIG OLT
@@ -80,7 +80,7 @@ topology_template:
             node: service#volt
             relationship: tosca.relationships.BelongsToOne
 
-    olt_device:
+    iskratel-xgspon:
       type: tosca.nodes.OLTDevice
       properties:
         name: Iskratel XGS-PON OLT
@@ -97,7 +97,7 @@ topology_template:
             node: service#volt
             relationship: tosca.relationships.BelongsToOne
 
-    olt_device:
+    iskratel-gpon:
       type: tosca.nodes.OLTDevice
       properties:
         name: Iskratel GPON OLT
