@@ -77,7 +77,7 @@ topology_template:
     port#iskratelx_olt_port:
       type: tosca.nodes.SwitchPort
       properties:
-        portId: 52
+        portId: 46
         host_learning: false
       requirements:
         - switch:
