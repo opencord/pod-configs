@@ -194,7 +194,7 @@ topology_template:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
         serial_number: CIG
-        pon_port_id: 536870912
+        pon_port_id: 536870913
         device_id: of:00000000C0A86471
       requirements:
         - owner:
