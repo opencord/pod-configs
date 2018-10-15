@@ -1,12 +1,21 @@
 # SEBA Values
 
-envoyForEtcdImage: 'matteoscandolo/voltha-envoy:berlin'
-netconfImage: 'matteoscandolo/voltha-netconf:berlin'
-ofagentImage: 'matteoscandolo/voltha-ofagent:berlin'
-vcliImage: 'matteoscandolo/voltha-cli:berlin'
-vcoreImage: 'matteoscandolo/voltha-voltha:berlin'
+#envoyForEtcdImage: 'matteoscandolo/voltha-envoy:berlin'
+#netconfImage: 'matteoscandolo/voltha-netconf:berlin'
+#ofagentImage: 'matteoscandolo/voltha-ofagent:berlin'
+#vcliImage: 'matteoscandolo/voltha-cli:berlin'
+#vcoreImage: 'matteoscandolo/voltha-voltha:berlin'
 
-onosImage: 'matteoscandolo/onos:berlin'
+envoyForEtcdImage: 'voltha/voltha-envoy:latest'
+freeradiusImage: 'tpdock/freeradius:latest'
+netconfImage: 'voltha/voltha-netconf:latest'
+ofagentImage: 'voltha/voltha-ofagent:latest'
+vcliImage: 'voltha/voltha-cli:latest'
+vcoreImage: 'voltha/voltha-voltha:latest'
+
+#onosImage: 'matteoscandolo/onos:berlin'
+
+onosImage: 'onosproject/onos:1.13.4'
 
 application_logs: |
   log4j.logger.org.opencord.olt = TRACE
