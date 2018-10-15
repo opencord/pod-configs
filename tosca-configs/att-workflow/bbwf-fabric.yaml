@@ -190,10 +190,10 @@ topology_template:
             relationship: tosca.relationships.BelongsToOne
 
     # ONUs connected to CIG OLT
-    CIG:
+    CIGG18a00002:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
-        serial_number: CIG
+        serial_number: CIGG18a00002
         pon_port_id: 536870913
         device_id: of:00000000C0A86471
       requirements:
