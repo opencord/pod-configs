@@ -22,7 +22,7 @@ nodes:
     user: 'cord'
     pass: 'cord'
   -
-    ip: '192.168.110.2'
+    ip: '192.168.100.2'
     user: 'cord'
     pass: 'cord'
   -
@@ -44,44 +44,3 @@ olts:
     user: 'root'
     pass: 'onl'
     fortygig: 'true'
-  -
-    name: 'adtran'
-    ip: '192.168.100.112'
-    user: 'root'
-    pass: 'onl'
-    fortygig: 'true'
-  -
-    name: 'cig'
-    ip: '192.168.100.113'
-    user: 'root'
-    pass: 'onl'
-    fortygig: 'true'
-  -
-    name: 'iskratelx'
-    ip: '192.168.100.114'
-    user: 'root'
-    pass: 'onl'
-    fortygig: 'true'
-  -
-    name: 'iskratelg'
-    ip: '192.168.100.115'
-    user: 'root'
-    pass: 'onl'
-    fortygig: 'true'
-
-onus:
-  -
-    serial: 'X'
-  -
-    serial: 'Y'
-  -
-    serial: 'W'
-  -
-    serial: 'Z'
-  -
-    serial: 'Q'
-
-srcHost:
-  ip: '10.0.3.56'
-  user: 'root'
-  pass: 'root'
