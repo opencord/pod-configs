@@ -12,9 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Automated deployment configuration for ONF/ON.Lab physical POD 1
+# Automated deployment configuration for BBWF POD
 
 ---
+
+kube_config: '/var/bbwf.conf'
 
 nodes:
   -
