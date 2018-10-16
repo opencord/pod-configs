@@ -13,15 +13,9 @@ ofagentImage: 'voltha/voltha-ofagent:latest'
 vcliImage: 'voltha/voltha-cli:latest'
 vcoreImage: 'smbaker/voltha-voltha:latest'
 
-#onosImage: 'matteoscandolo/onos:berlin'
-volt:
+att-workflow-driver:
   image:
-    repository: '10.90.0.101:30500/xosproject/volt-synchronizer'
-    tag: 'candidate'
-sadis-server:
-  image:
-    repository: '10.90.0.101:30500/opencord/sadis-server'
-    tag: 'candidate'
+    tag: 'master'
 
 onosImage: 'onosproject/onos:1.13.5'
 
