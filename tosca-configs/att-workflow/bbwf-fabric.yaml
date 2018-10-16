@@ -62,16 +62,16 @@ topology_template:
     #         node: switch#leaf_1
     #         relationship: tosca.relationships.BelongsToOne
 
-    # # Setup the CIG OLT switch port
-    # port#cig_olt_port:
-    #   type: tosca.nodes.SwitchPort
-    #   properties:
-    #     portId: 51
-    #     host_learning: false
-    #   requirements:
-    #     - switch:
-    #         node: switch#leaf_1
-    #         relationship: tosca.relationships.BelongsToOne
+    # Setup the CIG OLT switch port
+    port#cig_olt_port:
+      type: tosca.nodes.SwitchPort
+      properties:
+        portId: 51
+        host_learning: false
+      requirements:
+        - switch:
+            node: switch#leaf_1
+            relationship: tosca.relationships.BelongsToOne
 
     # # Setup the Iskratel XGS-PON OLT switch port
     # port#iskratelx_olt_port:
