@@ -8,15 +8,6 @@ vcoreImage: 'matteoscandolo/voltha-voltha:berlin-1.0.1'
 
 onosImage: 'onosproject/onos:1.13.5'
 
-volt:
-  image:
-    repository: 'matteoscandolo/volt-synchronizer'
-    tag: 'candidate'
-sadis-server:
-  image:
-    repository: 'matteoscandolo/sadis-server'
-    tag: 'candidate'
-
 application_logs: |
   log4j.logger.org.opencord.olt = TRACE
   log4j.logger.org.opencord.kafka = DEBUG
