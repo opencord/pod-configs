@@ -20,27 +20,14 @@
 
 # SEBA Values
 
-envoyForEtcdImage: 'voltha/voltha-envoy:amsterdam'
-netconfImage: 'voltha/voltha-netconf:amsterdam'
-ofagentImage: 'voltha/voltha-ofagent:amsterdam'
-vcliImage: 'voltha/voltha-cli:amsterdam'
-vcoreImage: 'voltha/voltha-voltha:amsterdam'
+envoyForEtcdImage: 'voltha/voltha-envoy:latest'
+freeradiusImage: 'tpdock/freeradius:latest'
+netconfImage: 'voltha/voltha-netconf:latest'
+ofagentImage: 'voltha/voltha-ofagent:latest'
+vcliImage: 'voltha/voltha-cli:latest'
+vcoreImage: 'voltha/voltha-voltha:latest'
 
-onosImage: 'onosproject/onos:1.13.4'
-
-# XOS core images
-images:
-  xos_core:
-    tag: 2.1.0
-
-# service images
-fabric:
-  images:
-    tag: 2.1.0
-
-att-workflow-driver:
-  images:
-    tag: 1.0.0
+onosImage: 'onosproject/onos:1.13.5'
 
 # application_logs: |
 #   log4j.logger.org.opencord.olt = DEBUG
