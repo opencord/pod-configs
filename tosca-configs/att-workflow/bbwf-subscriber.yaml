@@ -36,114 +36,114 @@ topology_template:
         circuit_id: edgecore_alpha_circuit
         remote_id: edgecore_alpha_remote
 
-    edgecore_iskratel_subscriber:
-      type: tosca.nodes.RCORDSubscriber
-      properties:
-        name: Sub_ISKT71E81130
-        status: pre-provisioned
-        c_tag: 22
-        s_tag: 111
-        onu_device: ISKT71E81130
-        nas_port_id : "PON 1/1/04/1:1.1.1"
-        circuit_id: edgecore_iskratel_circuit
-        remote_id: edgecore_iskratel_remote
+    # edgecore_iskratel_subscriber:
+    #   type: tosca.nodes.RCORDSubscriber
+    #   properties:
+    #     name: Sub_ISKT71E81130
+    #     status: pre-provisioned
+    #     c_tag: 22
+    #     s_tag: 111
+    #     onu_device: ISKT71E81130
+    #     nas_port_id : "PON 1/1/04/1:1.1.1"
+    #     circuit_id: edgecore_iskratel_circuit
+    #     remote_id: edgecore_iskratel_remote
 
-    # Adtran OLT subscribers
-    adtran_subscriber_1:
-      type: tosca.nodes.RCORDSubscriber
-      properties:
-        name: Sub_ADTN17510028
-        status: pre-provisioned
-        c_tag: 11
-        s_tag: 222
-        onu_device: ADTN17510028
-        nas_port_id : "PON 1/1/05/1:1.1.1"
-        circuit_id: adtran_sub1_circuit
-        remote_id: adtran_sub1_remote
+    # # Adtran OLT subscribers
+    # adtran_subscriber_1:
+    #   type: tosca.nodes.RCORDSubscriber
+    #   properties:
+    #     name: Sub_ADTN17510028
+    #     status: pre-provisioned
+    #     c_tag: 11
+    #     s_tag: 222
+    #     onu_device: ADTN17510028
+    #     nas_port_id : "PON 1/1/05/1:1.1.1"
+    #     circuit_id: adtran_sub1_circuit
+    #     remote_id: adtran_sub1_remote
 
-    adtran_subscriber_2:
-      type: tosca.nodes.RCORDSubscriber
-      properties:
-        name: Sub_ADTN16180345
-        status: pre-provisioned
-        c_tag: 22
-        s_tag: 222
-        onu_device: ADTN16180345
-        nas_port_id : "PON 1/1/05/1:1.1.1"
-        circuit_id: adtran_sub2_circuit
-        remote_id: adtran_sub2_remote
+    # adtran_subscriber_2:
+    #   type: tosca.nodes.RCORDSubscriber
+    #   properties:
+    #     name: Sub_ADTN16180345
+    #     status: pre-provisioned
+    #     c_tag: 22
+    #     s_tag: 222
+    #     onu_device: ADTN16180345
+    #     nas_port_id : "PON 1/1/05/1:1.1.1"
+    #     circuit_id: adtran_sub2_circuit
+    #     remote_id: adtran_sub2_remote
 
-    # CIG OLT subscribers
-    cig_subscriber_1:
-      type: tosca.nodes.RCORDSubscriber
-      properties:
-        name: Sub_CIGG18a00002
-        status: pre-provisioned
-        c_tag: 11
-        s_tag: 333
-        onu_device: CIGG18a00002
-        nas_port_id : "PON 1/1/05/1:1.1.1"
-        circuit_id: cig_sub1_circuit
-        remote_id: cig_sub1_remote
+    # # CIG OLT subscribers
+    # cig_subscriber_1:
+    #   type: tosca.nodes.RCORDSubscriber
+    #   properties:
+    #     name: Sub_CIGG18a00002
+    #     status: pre-provisioned
+    #     c_tag: 11
+    #     s_tag: 333
+    #     onu_device: CIGG18a00002
+    #     nas_port_id : "PON 1/1/05/1:1.1.1"
+    #     circuit_id: cig_sub1_circuit
+    #     remote_id: cig_sub1_remote
 
-    # Iskratel XGS-PON OLT subscribers
-    iskratelx_subscriber_1:
-      type: tosca.nodes.RCORDSubscriber
-      properties:
-        name: Sub_ISKT71E81070
-        status: pre-provisioned
-        c_tag: 11
-        s_tag: 444
-        onu_device: ISKT71E81070
-        nas_port_id : "PON 1/1/05/1:1.1.1"
-        circuit_id: iskx_sub1_circuit
-        remote_id: iskx_sub1_remote
+    # # Iskratel XGS-PON OLT subscribers
+    # iskratelx_subscriber_1:
+    #   type: tosca.nodes.RCORDSubscriber
+    #   properties:
+    #     name: Sub_ISKT71E81070
+    #     status: pre-provisioned
+    #     c_tag: 11
+    #     s_tag: 444
+    #     onu_device: ISKT71E81070
+    #     nas_port_id : "PON 1/1/05/1:1.1.1"
+    #     circuit_id: iskx_sub1_circuit
+    #     remote_id: iskx_sub1_remote
 
-    iskratelx_subscriber_2:
-      type: tosca.nodes.RCORDSubscriber
-      properties:
-        name: Sub_ISKT71E81071
-        status: pre-provisioned
-        c_tag: 22
-        s_tag: 444
-        onu_device: ISKT71E81071
-        nas_port_id : "PON 1/1/05/1:1.1.1"
-        circuit_id: iskx_sub2_circuit
-        remote_id: iskx_sub2_remote
+    # iskratelx_subscriber_2:
+    #   type: tosca.nodes.RCORDSubscriber
+    #   properties:
+    #     name: Sub_ISKT71E81071
+    #     status: pre-provisioned
+    #     c_tag: 22
+    #     s_tag: 444
+    #     onu_device: ISKT71E81071
+    #     nas_port_id : "PON 1/1/05/1:1.1.1"
+    #     circuit_id: iskx_sub2_circuit
+    #     remote_id: iskx_sub2_remote
 
-    # Iskratel GPON OLT subscribers
-    iskratelg_subscriber_1:
-      type: tosca.nodes.RCORDSubscriber
-      properties:
-        name: Sub_ISKT45F2C688
-        status: pre-provisioned
-        c_tag: 11
-        s_tag: 555
-        onu_device: ISKT45F2C688
-        nas_port_id : "PON 1/1/05/1:1.1.1"
-        circuit_id: iskg_sub1_circuit
-        remote_id: iskg_sub1_remote
+    # # Iskratel GPON OLT subscribers
+    # iskratelg_subscriber_1:
+    #   type: tosca.nodes.RCORDSubscriber
+    #   properties:
+    #     name: Sub_ISKT45F2C688
+    #     status: pre-provisioned
+    #     c_tag: 11
+    #     s_tag: 555
+    #     onu_device: ISKT45F2C688
+    #     nas_port_id : "PON 1/1/05/1:1.1.1"
+    #     circuit_id: iskg_sub1_circuit
+    #     remote_id: iskg_sub1_remote
 
-    iskratelg_subscriber_2:
-      type: tosca.nodes.RCORDSubscriber
-      properties:
-        name: Sub_ISKT45F2BD61
-        status: pre-provisioned
-        c_tag: 22
-        s_tag: 555
-        onu_device: ISKT45F2BD61
-        nas_port_id : "PON 1/1/05/1:1.1.1"
-        circuit_id: iskg_sub2_circuit
-        remote_id: iskg_sub2_remote
+    # iskratelg_subscriber_2:
+    #   type: tosca.nodes.RCORDSubscriber
+    #   properties:
+    #     name: Sub_ISKT45F2BD61
+    #     status: pre-provisioned
+    #     c_tag: 22
+    #     s_tag: 555
+    #     onu_device: ISKT45F2BD61
+    #     nas_port_id : "PON 1/1/05/1:1.1.1"
+    #     circuit_id: iskg_sub2_circuit
+    #     remote_id: iskg_sub2_remote
 
-    iskratelg_subscriber_3:
-      type: tosca.nodes.RCORDSubscriber
-      properties:
-        name: Sub_ISKT45F2C1E4
-        status: pre-provisioned
-        c_tag: 33
-        s_tag: 555
-        onu_device: ISKT45F2C1E4
-        nas_port_id : "PON 1/1/05/1:1.1.1"
-        circuit_id: iskg_sub3_circuit
-        remote_id: iskg_sub3_remote
+    # iskratelg_subscriber_3:
+    #   type: tosca.nodes.RCORDSubscriber
+    #   properties:
+    #     name: Sub_ISKT45F2C1E4
+    #     status: pre-provisioned
+    #     c_tag: 33
+    #     s_tag: 555
+    #     onu_device: ISKT45F2C1E4
+    #     nas_port_id : "PON 1/1/05/1:1.1.1"
+    #     circuit_id: iskg_sub3_circuit
+    #     remote_id: iskg_sub3_remote
