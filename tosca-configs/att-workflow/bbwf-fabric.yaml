@@ -84,16 +84,16 @@ topology_template:
     #         node: switch#leaf_1
     #         relationship: tosca.relationships.BelongsToOne
 
-    # # Setup the Iskratel GPON OLT switch port
-    # port#iskratelg_olt_port:
-    #   type: tosca.nodes.SwitchPort
-    #   properties:
-    #     portId: 47
-    #     host_learning: false
-    #   requirements:
-    #     - switch:
-    #         node: switch#leaf_1
-    #         relationship: tosca.relationships.BelongsToOne
+    # Setup the Iskratel GPON OLT switch port
+    port#iskratelg_olt_port:
+      type: tosca.nodes.SwitchPort
+      properties:
+        portId: 47
+        host_learning: false
+      requirements:
+        - switch:
+            node: switch#leaf_1
+            relationship: tosca.relationships.BelongsToOne
 
     # Port connected to the BNG
     port#bng_port:

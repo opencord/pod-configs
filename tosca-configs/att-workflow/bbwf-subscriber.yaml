@@ -41,7 +41,7 @@ topology_template:
       properties:
         name: Sub_ISKT71e81130
         status: pre-provisioned
-        c_tag: 22
+        c_tag: 12
         s_tag: 111
         onu_device: ISKT71e81130
         nas_port_id : "PON 1/1/04/1:1.1.1"
@@ -54,7 +54,7 @@ topology_template:
     #   properties:
     #     name: Sub_ADTN17510028
     #     status: pre-provisioned
-    #     c_tag: 11
+    #     c_tag: 21
     #     s_tag: 222
     #     onu_device: ADTN17510028
     #     nas_port_id : "PON 1/1/05/1:1.1.1"
@@ -79,7 +79,7 @@ topology_template:
       properties:
         name: Sub_CIGG18a00002
         status: pre-provisioned
-        c_tag: 11
+        c_tag: 31
         s_tag: 333
         onu_device: CIGG18a00002
         nas_port_id : "PON 1/1/05/1:1.1.1"
@@ -92,7 +92,7 @@ topology_template:
     #   properties:
     #     name: Sub_ISKT71e81070
     #     status: pre-provisioned
-    #     c_tag: 11
+    #     c_tag: 41
     #     s_tag: 444
     #     onu_device: ISKT71e81070
     #     nas_port_id : "PON 1/1/05/1:1.1.1"
@@ -104,7 +104,7 @@ topology_template:
     #   properties:
     #     name: Sub_ISKT71e81071
     #     status: pre-provisioned
-    #     c_tag: 22
+    #     c_tag: 42
     #     s_tag: 444
     #     onu_device: ISKT71e81071
     #     nas_port_id : "PON 1/1/05/1:1.1.1"
@@ -117,7 +117,7 @@ topology_template:
     #   properties:
     #     name: Sub_ISKT45f2c688
     #     status: pre-provisioned
-    #     c_tag: 11
+    #     c_tag: 51
     #     s_tag: 555
     #     onu_device: ISKT45f2c688
     #     nas_port_id : "PON 1/1/05/1:1.1.1"
@@ -129,7 +129,7 @@ topology_template:
     #   properties:
     #     name: Sub_ISKT45f2bd61
     #     status: pre-provisioned
-    #     c_tag: 22
+    #     c_tag: 52
     #     s_tag: 555
     #     onu_device: ISKT45f2bd61
     #     nas_port_id : "PON 1/1/05/1:1.1.1"
@@ -141,7 +141,7 @@ topology_template:
     #   properties:
     #     name: Sub_ISKT45f2c1e4
     #     status: pre-provisioned
-    #     c_tag: 33
+    #     c_tag: 53
     #     s_tag: 555
     #     onu_device: ISKT45f2c1e4
     #     nas_port_id : "PON 1/1/05/1:1.1.1"
