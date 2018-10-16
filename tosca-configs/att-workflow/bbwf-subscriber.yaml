@@ -48,30 +48,30 @@ topology_template:
         circuit_id: edgecore_iskratel_circuit
         remote_id: edgecore_iskratel_remote
 
-    # # Adtran OLT subscribers
-    # adtran_subscriber_1:
-    #   type: tosca.nodes.RCORDSubscriber
-    #   properties:
-    #     name: Sub_ADTN17510028
-    #     status: pre-provisioned
-    #     c_tag: 21
-    #     s_tag: 222
-    #     onu_device: ADTN17510028
-    #     nas_port_id : "PON 1/1/05/1:1.1.1"
-    #     circuit_id: adtran_sub1_circuit
-    #     remote_id: adtran_sub1_remote
+    # Adtran OLT subscribers
+    adtran_subscriber_1:
+      type: tosca.nodes.RCORDSubscriber
+      properties:
+        name: Sub_ADTN17510028
+        status: pre-provisioned
+        c_tag: 21
+        s_tag: 222
+        onu_device: ADTN17510028
+        nas_port_id : "PON 1/1/05/1:1.1.1"
+        circuit_id: adtran_sub1_circuit
+        remote_id: adtran_sub1_remote
 
-    # adtran_subscriber_2:
-    #   type: tosca.nodes.RCORDSubscriber
-    #   properties:
-    #     name: Sub_ADTN16180345
-    #     status: pre-provisioned
-    #     c_tag: 22
-    #     s_tag: 222
-    #     onu_device: ADTN16180345
-    #     nas_port_id : "PON 1/1/05/1:1.1.1"
-    #     circuit_id: adtran_sub2_circuit
-    #     remote_id: adtran_sub2_remote
+    adtran_subscriber_2:
+      type: tosca.nodes.RCORDSubscriber
+      properties:
+        name: Sub_ADTN16180345
+        status: pre-provisioned
+        c_tag: 22
+        s_tag: 222
+        onu_device: ADTN16180345
+        nas_port_id : "PON 1/1/05/1:1.1.1"
+        circuit_id: adtran_sub2_circuit
+        remote_id: adtran_sub2_remote
 
     # CIG OLT subscribers
     cig_subscriber_1:

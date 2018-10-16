@@ -51,16 +51,16 @@ topology_template:
             node: switch#leaf_1
             relationship: tosca.relationships.BelongsToOne
 
-    # # Setup the Adtran OLT switch port
-    # port#adtran_olt_port:
-    #   type: tosca.nodes.SwitchPort
-    #   properties:
-    #     portId: 50
-    #     host_learning: false
-    #   requirements:
-    #     - switch:
-    #         node: switch#leaf_1
-    #         relationship: tosca.relationships.BelongsToOne
+    # Setup the Adtran OLT switch port
+    port#adtran_olt_port:
+      type: tosca.nodes.SwitchPort
+      properties:
+        portId: 50
+        host_learning: false
+      requirements:
+        - switch:
+            node: switch#leaf_1
+            relationship: tosca.relationships.BelongsToOne
 
     # Setup the CIG OLT switch port
     port#cig_olt_port:
@@ -166,28 +166,28 @@ topology_template:
             node: service#att
             relationship: tosca.relationships.BelongsToOne
 
-    # # ONUs connected to Adtran OLT
-    # ADTN17510028:
-    #   type: tosca.nodes.AttWorkflowDriverWhiteListEntry
-    #   properties:
-    #     serial_number: ADTN17510028
-    #     pon_port_id: 5
-    #     device_id: of:00000024454A6BE4
-    #   requirements:
-    #     - owner:
-    #         node: service#att
-    #         relationship: tosca.relationships.BelongsToOne
+    # ONUs connected to Adtran OLT
+    ADTN17510028:
+      type: tosca.nodes.AttWorkflowDriverWhiteListEntry
+      properties:
+        serial_number: ADTN17510028
+        pon_port_id: 5
+        device_id: of:00000024454A6BE4
+      requirements:
+        - owner:
+            node: service#att
+            relationship: tosca.relationships.BelongsToOne
 
-    # ADTN16180345:
-    #   type: tosca.nodes.AttWorkflowDriverWhiteListEntry
-    #   properties:
-    #     serial_number: ADTN16180345
-    #     pon_port_id: 6
-    #     device_id: of:00000024454A6BE4
-    #   requirements:
-    #     - owner:
-    #         node: service#att
-    #         relationship: tosca.relationships.BelongsToOne
+    ADTN16180345:
+      type: tosca.nodes.AttWorkflowDriverWhiteListEntry
+      properties:
+        serial_number: ADTN16180345
+        pon_port_id: 6
+        device_id: of:00000024454A6BE4
+      requirements:
+        - owner:
+            node: service#att
+            relationship: tosca.relationships.BelongsToOne
 
     # ONUs connected to CIG OLT
     CIGG18a00002:
