@@ -136,6 +136,29 @@ topology_template:
             node: onos_app#dhcpl2relay
             relationship: tosca.relationships.BelongsToOne
 
+    # OLT app extra config
+    onos_app#olt:
+      type: tosca.nodes.ONOSApp
+      properties:
+        name: olt
+        must-exist: true
+
+    olt-config-attr:
+      type: tosca.nodes.ServiceInstanceAttribute
+      properties:
+        name: /onos/v1/network/configuration/devices
+        value: >
+          "of:00000024454a6be4" : {
+            "basic" : {
+              "name" : "ADTRAN OLT",
+              "driver" : "voltha"
+            }
+          }
+      requirements:
+        - service_instance:
+            node: onos_app#olt
+            relationship: tosca.relationships.BelongsToOne
+
     # ONU Whitelist
     service#att:
       type: tosca.nodes.AttWorkflowDriverService

@@ -14,6 +14,14 @@ vcliImage: 'voltha/voltha-cli:latest'
 vcoreImage: 'voltha/voltha-voltha:latest'
 
 #onosImage: 'matteoscandolo/onos:berlin'
+volt:
+  image:
+    repository: '10.90.0.101:30500/xosproject/volt-synchronizer'
+    tag: 'candidate'
+sadis-server:
+  image:
+    repository: '10.90.0.101:30500/opencord/sadis-server'
+    tag: 'candidate'
 
 onosImage: 'onosproject/onos:1.13.5'
 
