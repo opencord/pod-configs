@@ -144,27 +144,27 @@ topology_template:
         must-exist: true
 
     # ONUs connected to EdgeCore OLT
-    ALPHE3D1CEE9:
+    ALPHe3d1cee9:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
-        serial_number: ALPHE3D1CEE9
+        serial_number: ALPHe3d1cee9
         pon_port_id: 536870912
-        device_id: of:00000000C0A8646F
+        device_id: of:00000000c0a8646f
       requirements:
         - owner:
             node: service#att
             relationship: tosca.relationships.BelongsToOne
 
-    # ISKT71E81130:
-    #   type: tosca.nodes.AttWorkflowDriverWhiteListEntry
-    #   properties:
-    #     serial_number: ISKT71E81130
-    #     pon_port_id: 536870912
-    #     device_id: of:00000000C0A8646F
-    #   requirements:
-    #     - owner:
-    #         node: service#att
-    #         relationship: tosca.relationships.BelongsToOne
+    ISKT71e81130:
+      type: tosca.nodes.AttWorkflowDriverWhiteListEntry
+      properties:
+        serial_number: ISKT71e81130
+        pon_port_id: 536870912
+        device_id: of:00000000c0a8646f
+      requirements:
+        - owner:
+            node: service#att
+            relationship: tosca.relationships.BelongsToOne
 
     # # ONUs connected to Adtran OLT
     # ADTN17510028:
@@ -189,70 +189,70 @@ topology_template:
     #         node: service#att
     #         relationship: tosca.relationships.BelongsToOne
 
-    # # ONUs connected to CIG OLT
-    # CIGG18a00002:
-    #   type: tosca.nodes.AttWorkflowDriverWhiteListEntry
-    #   properties:
-    #     serial_number: CIGG18a00002
-    #     pon_port_id: 536870913
-    #     device_id: of:00000000C0A86471
-    #   requirements:
-    #     - owner:
-    #         node: service#att
-    #         relationship: tosca.relationships.BelongsToOne
+    # ONUs connected to CIG OLT
+    CIGG18a00002:
+      type: tosca.nodes.AttWorkflowDriverWhiteListEntry
+      properties:
+        serial_number: CIGG18a00002
+        pon_port_id: 536870913
+        device_id: of:00000000c0a86471
+      requirements:
+        - owner:
+            node: service#att
+            relationship: tosca.relationships.BelongsToOne
 
     # # ONUs connected to Iskratel XGS-PON OLT
-    # ISKT71E81070:
+    # ISKT71e81070:
     #   type: tosca.nodes.AttWorkflowDriverWhiteListEntry
     #   properties:
-    #     serial_number: ISKT71E81070
+    #     serial_number: ISKT71e81070
     #     pon_port_id: 536870912
-    #     device_id: of:00000000C0A86472
+    #     device_id: of:00000000c0a86472
     #   requirements:
     #     - owner:
     #         node: service#att
     #         relationship: tosca.relationships.BelongsToOne
 
-    # ISKT71E81071:
+    # ISKT71e81071:
     #   type: tosca.nodes.AttWorkflowDriverWhiteListEntry
     #   properties:
-    #     serial_number: ISKT71E81071
+    #     serial_number: ISKT71e81071
     #     pon_port_id: 536870912
-    #     device_id: of:00000000C0A86472
+    #     device_id: of:00000000c0a86472
     #   requirements:
     #     - owner:
     #         node: service#att
     #         relationship: tosca.relationships.BelongsToOne
 
     # # ONUs connected to Iskratel GPON OLT
-    # ISKT45F2C688:
+    # ISKT45f2c688:
     #   type: tosca.nodes.AttWorkflowDriverWhiteListEntry
     #   properties:
-    #     serial_number: ISKT45F2C688
+    #     serial_number: ISKT45f2c688
     #     pon_port_id: 536870912
-    #     device_id: of:00000000C0A86473
+    #     device_id: of:00000000c0a86473
     #   requirements:
     #     - owner:
     #         node: service#att
     #         relationship: tosca.relationships.BelongsToOne
 
-    # ISKT45F2BD61:
+    # ISKT45f2bd61:
     #   type: tosca.nodes.AttWorkflowDriverWhiteListEntry
     #   properties:
-    #     serial_number: ISKT45F2BD61
+    #     serial_number: ISKT45f2bd61
     #     pon_port_id: 536870912
-    #     device_id: of:00000000C0A86473
+    #     device_id: of:00000000c0a86473
     #   requirements:
     #     - owner:
     #         node: service#att
     #         relationship: tosca.relationships.BelongsToOne
 
-    # ISKT45F2C1E4:
+    # ISKT45f2c1e4:
     #   type: tosca.nodes.AttWorkflowDriverWhiteListEntry
     #   properties:
-    #     serial_number: ISKT45F2C1E4
+    #     serial_number: ISKT45f2c1e4
     #     pon_port_id: 536870912
-    #     device_id: of:00000000C0A86473
+    #     device_id: of:00000000c0a86473
     #   requirements:
     #     - owner:
     #         node: service#att
