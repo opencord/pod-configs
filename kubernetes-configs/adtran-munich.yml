@@ -1,0 +1,24 @@
+# SEBA Values
+
+envoyForEtcdImage: 'matteoscandolo/voltha-envoy:berlin-1.0.1'
+netconfImage: 'matteoscandolo/voltha-netconf:berlin-1.0.1'
+ofagentImage: 'matteoscandolo/voltha-ofagent:berlin-1.0.1'
+vcliImage: 'matteoscandolo/voltha-cli:berlin-1.0.1'
+vcoreImage: 'matteoscandolo/voltha-voltha:berlin-1.0.1'
+
+onosImage: 'onosproject/onos:1.13.5'
+
+att-workflow-driver:
+  image:
+    tag: 'master'
+
+# volt:
+#   image:
+#     tag: 'master'
+
+application_logs: |
+  log4j.logger.org.opencord.olt = TRACE
+  log4j.logger.org.opencord.kafka = DEBUG
+  log4j.logger.org.opencord.sadis = DEBUG
+  log4j.logger.org.opencord.aaa = TRACE
+  log4j.logger.org.opencord.dhcpl2relay = TRACE
