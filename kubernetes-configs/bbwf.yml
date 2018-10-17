@@ -12,6 +12,10 @@ att-workflow-driver:
   image:
     tag: 'master'
 
+# volt:
+#   image:
+#     tag: 'master'
+
 application_logs: |
   log4j.logger.org.opencord.olt = TRACE
   log4j.logger.org.opencord.kafka = DEBUG

@@ -17,6 +17,10 @@ att-workflow-driver:
   image:
     tag: 'master'
 
+volt:
+  image:
+    tag: 'master'
+
 onosImage: 'onosproject/onos:1.13.5'
 
 application_logs: |
