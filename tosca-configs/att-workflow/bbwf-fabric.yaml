@@ -51,7 +51,7 @@ topology_template:
             node: switch#agg_sw
             relationship: tosca.relationships.BelongsToOne
 
-    Setup the Adtran OLT switch port
+    # Setup the Adtran OLT switch port
     port#adtran_olt_port:
       type: tosca.nodes.SwitchPort
       properties:
