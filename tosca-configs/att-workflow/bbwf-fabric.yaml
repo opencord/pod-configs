@@ -148,10 +148,12 @@ topology_template:
       properties:
         name: /onos/v1/network/configuration/devices
         value: >
-          "of:00000024454a6be4" : {
-            "basic" : {
-              "name" : "ADTRAN OLT",
-              "driver" : "voltha"
+          {
+            "of:00000024454a6be4" : {
+              "basic" : {
+                "name" : "ADTRAN OLT",
+                "driver" : "voltha"
+              }
             }
           }
       requirements:
