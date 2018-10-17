@@ -180,16 +180,16 @@ topology_template:
             node: service#att
             relationship: tosca.relationships.BelongsToOne
 
-    # ISKT71e81130:
-    #   type: tosca.nodes.AttWorkflowDriverWhiteListEntry
-    #   properties:
-    #     serial_number: ISKT71e81130
-    #     pon_port_id: 536870912
-    #     device_id: of:00000000c0a8646f
-    #   requirements:
-    #     - owner:
-    #         node: service#att
-    #         relationship: tosca.relationships.BelongsToOne
+    ISKT71e81130:
+      type: tosca.nodes.AttWorkflowDriverWhiteListEntry
+      properties:
+        serial_number: ISKT71e81130
+        pon_port_id: 536870912
+        device_id: of:00000000c0a8646f
+      requirements:
+        - owner:
+            node: service#att
+            relationship: tosca.relationships.BelongsToOne
 
     # ONUs connected to Adtran OLT
     ADTN17510028:
