@@ -1,24 +1,6 @@
 # SEBA Values
 
-envoyForEtcdImage: 'voltha/voltha-envoy:latest'
-#freeradiusImage: '10.90.0.120:30500/freeradius:tls'
-freeradiusImage: 'tpdock/freeradius:latest'
-netconfImage: 'voltha/voltha-netconf:latest'
-ofagentImage: 'voltha/voltha-ofagent:latest'
-vcliImage: 'voltha/voltha-cli:latest'
-vcoreImage: 'voltha/voltha-voltha:latest'
-
-onosImage: '10.90.0.101:30500/onosproject/onos:candidate'
-
-images:
-  xos_core:
-    repository: '10.90.0.120:30500/xosproject/xos-core'
-    tag: 'candidate'
-
-volt:
-  image:
-    repository: '10.90.0.120:30500/xosproject/volt-synchronizer'
-    tag: 'candidate'
+vcoreImage: '10.90.0.120:30500/voltha/voltha-voltha:latest'
 
 application_logs: |
    log4j.logger.org.opencord.olt = TRACE
