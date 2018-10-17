@@ -8,6 +8,10 @@ vcoreImage: 'matteoscandolo/voltha-voltha:berlin-1.0.1'
 
 onosImage: 'onosproject/onos:1.13.5'
 
+att-workflow-driver:
+  image:
+    tag: 'master'
+
 application_logs: |
   log4j.logger.org.opencord.olt = TRACE
   log4j.logger.org.opencord.kafka = DEBUG
