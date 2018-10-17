@@ -46,22 +46,22 @@ topology_template:
             node: service#volt
             relationship: tosca.relationships.BelongsToOne
 
-    adtran:
-      type: tosca.nodes.OLTDevice
-      properties:
-        name: Adtran OLT
-        device_type: adtran_olt
-        host: 192.168.100.112
-        port: 830
-        switch_datapath_id: of:0000000000000001
-        switch_port: "50"
-        outer_tpid: "0x8100"
-        uplink: "1"
-        nas_id: "NAS_ID"
-      requirements:
-        - volt_service:
-            node: service#volt
-            relationship: tosca.relationships.BelongsToOne
+    # adtran:
+    #   type: tosca.nodes.OLTDevice
+    #   properties:
+    #     name: Adtran OLT
+    #     device_type: adtran_olt
+    #     host: 192.168.100.112
+    #     port: 830
+    #     switch_datapath_id: of:0000000000000001
+    #     switch_port: "50"
+    #     outer_tpid: "0x8100"
+    #     uplink: "1"
+    #     nas_id: "NAS_ID"
+    #   requirements:
+    #     - volt_service:
+    #         node: service#volt
+    #         relationship: tosca.relationships.BelongsToOne
 
     cig:
       type: tosca.nodes.OLTDevice
