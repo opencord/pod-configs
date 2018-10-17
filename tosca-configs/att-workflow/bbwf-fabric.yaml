@@ -73,27 +73,27 @@ topology_template:
             node: switch#agg_sw
             relationship: tosca.relationships.BelongsToOne
 
-    # Setup the Iskratel XGS-PON OLT switch port
-    port#iskratelx_olt_port:
-      type: tosca.nodes.SwitchPort
-      properties:
-        portId: 46
-        host_learning: false
-      requirements:
-        - switch:
-            node: switch#agg_sw
-            relationship: tosca.relationships.BelongsToOne
-
-    # # Setup the Iskratel GPON OLT switch port
-    # port#iskratelg_olt_port:
+    # # Setup the Iskratel XGS-PON OLT switch port
+    # port#iskratelx_olt_port:
     #   type: tosca.nodes.SwitchPort
     #   properties:
-    #     portId: 47
+    #     portId: 46
     #     host_learning: false
     #   requirements:
     #     - switch:
     #         node: switch#agg_sw
     #         relationship: tosca.relationships.BelongsToOne
+
+    # Setup the Iskratel GPON OLT switch port
+    port#iskratelg_olt_port:
+      type: tosca.nodes.SwitchPort
+      properties:
+        portId: 47
+        host_learning: false
+      requirements:
+        - switch:
+            node: switch#agg_sw
+            relationship: tosca.relationships.BelongsToOne
 
     # Port connected to the BNG
     port#bng_port:
@@ -136,30 +136,30 @@ topology_template:
             node: onos_app#dhcpl2relay
             relationship: tosca.relationships.BelongsToOne
 
-    # OLT app extra config
-    # onos_app#olt:
-    #   type: tosca.nodes.ONOSApp
-    #   properties:
-    #     name: olt
-    #     must-exist: true
+    OLT app extra config
+    onos_app#olt:
+      type: tosca.nodes.ONOSApp
+      properties:
+        name: olt
+        must-exist: true
 
-    # olt-config-attr:
-    #   type: tosca.nodes.ServiceInstanceAttribute
-    #   properties:
-    #     name: /onos/v1/network/configuration/devices
-    #     value: >
-    #       {
-    #         "of:00000024454a6be4" : {
-    #           "basic" : {
-    #             "name" : "ADTRAN OLT",
-    #             "driver" : "voltha"
-    #           }
-    #         }
-    #       }
-    #   requirements:
-    #     - service_instance:
-    #         node: onos_app#olt
-    #         relationship: tosca.relationships.BelongsToOne
+    olt-config-attr:
+      type: tosca.nodes.ServiceInstanceAttribute
+      properties:
+        name: /onos/v1/network/configuration/devices
+        value: >
+          {
+            "of:00000024454a6be4" : {
+              "basic" : {
+                "name" : "ADTRAN OLT",
+                "driver" : "voltha"
+              }
+            }
+          }
+      requirements:
+        - service_instance:
+            node: onos_app#olt
+            relationship: tosca.relationships.BelongsToOne
 
     # ONU Whitelist
     service#att:
@@ -226,17 +226,17 @@ topology_template:
             node: service#att
             relationship: tosca.relationships.BelongsToOne
 
-    # # ONUs connected to Iskratel XGS-PON OLT
-    ISKT71e81070:
-      type: tosca.nodes.AttWorkflowDriverWhiteListEntry
-      properties:
-        serial_number: ISKT71e81070
-        pon_port_id: 536870912
-        device_id: of:00000000c0a86472
-      requirements:
-        - owner:
-            node: service#att
-            relationship: tosca.relationships.BelongsToOne
+    # # # ONUs connected to Iskratel XGS-PON OLT
+    # ISKT71e81070:
+    #   type: tosca.nodes.AttWorkflowDriverWhiteListEntry
+    #   properties:
+    #     serial_number: ISKT71e81070
+    #     pon_port_id: 536870912
+    #     device_id: of:00000000c0a86472
+    #   requirements:
+    #     - owner:
+    #         node: service#att
+    #         relationship: tosca.relationships.BelongsToOne
 
     # ISKT71e81071:
     #   type: tosca.nodes.AttWorkflowDriverWhiteListEntry
@@ -249,17 +249,17 @@ topology_template:
     #         node: service#att
     #         relationship: tosca.relationships.BelongsToOne
 
-    # # ONUs connected to Iskratel GPON OLT
-    # ISKT45f2c688:
-    #   type: tosca.nodes.AttWorkflowDriverWhiteListEntry
-    #   properties:
-    #     serial_number: ISKT45f2c688
-    #     pon_port_id: 536870912
-    #     device_id: of:00000000c0a86473
-    #   requirements:
-    #     - owner:
-    #         node: service#att
-    #         relationship: tosca.relationships.BelongsToOne
+    # ONUs connected to Iskratel GPON OLT
+    ISKT45f2c688:
+      type: tosca.nodes.AttWorkflowDriverWhiteListEntry
+      properties:
+        serial_number: ISKT45f2c688
+        pon_port_id: 536870912
+        device_id: of:00000000c0a86473
+      requirements:
+        - owner:
+            node: service#att
+            relationship: tosca.relationships.BelongsToOne
 
     # ISKT45f2bd61:
     #   type: tosca.nodes.AttWorkflowDriverWhiteListEntry

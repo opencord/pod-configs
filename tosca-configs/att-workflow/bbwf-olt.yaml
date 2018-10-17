@@ -80,32 +80,15 @@ topology_template:
             node: service#volt
             relationship: tosca.relationships.BelongsToOne
 
-    iskratel-xgspon:
-      type: tosca.nodes.OLTDevice
-      properties:
-        name: Iskratel XGS-PON OLT
-        device_type: openolt
-        host: 192.168.100.114
-        port: 9191
-        switch_datapath_id: of:0000000000000001
-        switch_port: "46"
-        outer_tpid: "0x8100"
-        uplink: "65536"
-        nas_id: "NAS_ID"
-      requirements:
-        - volt_service:
-            node: service#volt
-            relationship: tosca.relationships.BelongsToOne
-
-    # iskratel-gpon:
+    # iskratel-xgspon:
     #   type: tosca.nodes.OLTDevice
     #   properties:
-    #     name: Iskratel GPON OLT
+    #     name: Iskratel XGS-PON OLT
     #     device_type: openolt
-    #     host: 192.168.100.115
+    #     host: 192.168.100.114
     #     port: 9191
     #     switch_datapath_id: of:0000000000000001
-    #     switch_port: "47"
+    #     switch_port: "46"
     #     outer_tpid: "0x8100"
     #     uplink: "65536"
     #     nas_id: "NAS_ID"
@@ -113,3 +96,20 @@ topology_template:
     #     - volt_service:
     #         node: service#volt
     #         relationship: tosca.relationships.BelongsToOne
+
+    iskratel-gpon:
+      type: tosca.nodes.OLTDevice
+      properties:
+        name: Iskratel GPON OLT
+        device_type: openolt
+        host: 192.168.100.115
+        port: 9191
+        switch_datapath_id: of:0000000000000001
+        switch_port: "47"
+        outer_tpid: "0x8100"
+        uplink: "65536"
+        nas_id: "NAS_ID"
+      requirements:
+        - volt_service:
+            node: service#volt
+            relationship: tosca.relationships.BelongsToOne
