@@ -46,3 +46,18 @@ olts:
     user: 'root'
     pass: 'onl'
     fortygig: 'true'
+  -
+    name: 'cig'
+    ip: '192.168.100.113'
+    user: 'root'
+    pass: 'onl'
+  -
+    name: 'cig'
+    ip: '192.168.100.114'
+    user: 'root'
+    pass: 'iskratel'
+  -
+    name: 'cig'
+    ip: '192.168.100.115'
+    user: 'root'
+    pass: 'iskratel'
