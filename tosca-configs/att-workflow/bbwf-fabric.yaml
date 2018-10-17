@@ -136,7 +136,7 @@ topology_template:
             node: onos_app#dhcpl2relay
             relationship: tosca.relationships.BelongsToOne
 
-    OLT app extra config
+    # OLT app extra config
     onos_app#olt:
       type: tosca.nodes.ONOSApp
       properties:
