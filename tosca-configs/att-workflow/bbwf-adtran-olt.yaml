@@ -41,6 +41,7 @@ topology_template:
         outer_tpid: "0x8100"
         uplink: "1"
         nas_id: "NAS_ID"
+        serial_number: "fill-me-in"
       requirements:
         - volt_service:
             node: service#volt

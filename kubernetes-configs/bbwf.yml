@@ -14,7 +14,8 @@ att-workflow-driver:
 
 volt:
   image:
-    tag: 'master'
+    repository: matteoscandolo/volt-synchronizer
+    tag: 'candidate'
 
 application_logs: |
   log4j.logger.org.opencord.olt = TRACE
