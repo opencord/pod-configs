@@ -41,7 +41,7 @@ topology_template:
         outer_tpid: "0x8100"
         uplink: "1"
         nas_id: "NAS_ID"
-        serial_number: "ADTN17510028"
+        serial_number: "LBADTN1826AC658"
       requirements:
         - volt_service:
             node: service#volt
