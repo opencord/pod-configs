@@ -74,6 +74,30 @@ sadis-server:
     repository: '192.168.100.1:30500/opencord/sadis-server'
     tag: 'latest'
 
+# kafka
+image: '192.168.100.1:30500/confluentinc/cp-kafka:4.1.2-2'
+
+zookeper:
+  image: '192.168.100.1:30500/google_samples/k8szk:v3'
+
+etcd-operator:
+  etcdOperator:
+    image:
+      repository: 192.168.100.1:30500/quay.io/coreos/etcd-operator
+      tag: v0.7.0
+  etcdCluster:
+    image:
+      repository: 192.168.100.1:30500/quay.io/coreos/etcd
+      tag: v3.2.13
+  backupOperator:
+    image:
+      repository: 192.168.100.1:30500/quay.io/coreos/etcd-operator
+      tag: v0.7.0
+  restoreOperator:
+    image:
+      repository: 192.168.100.1:30500/quay.io/coreos/etcd-operator
+      tag: v0.7.0
+
 application_logs: |
   log4j.logger.org.opencord.olt = TRACE
   log4j.logger.org.opencord.kafka = DEBUG
