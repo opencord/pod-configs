@@ -68,6 +68,8 @@ kubernetes:
     repository: 192.168.100.1:30500/xosproject/kubernetes-synchronizer
     tag: 1.0.4
 
+tosca_loaderImage: '192.168.100.1:30500/xosproject/tosca-loader:1.0.1'
+
 # others
 sadis-server:
   image:
