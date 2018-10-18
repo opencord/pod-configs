@@ -46,6 +46,10 @@ olts:
     user: 'root'
     pass: 'onl'
     fortygig: 'true'
+  - name: 'adtran'
+    ip: '192.168.100.112'
+    user: 'hsvroot'
+    pass: 'BOSCO'
   -
     name: 'cig'
     ip: '192.168.100.113'
