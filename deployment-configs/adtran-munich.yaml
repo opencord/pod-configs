@@ -29,5 +29,3 @@ fabric_switches:
     ip: '10.17.188.3'
     user: 'root'
     pass: 'onl'
-
-olts:
