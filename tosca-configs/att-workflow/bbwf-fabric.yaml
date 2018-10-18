@@ -197,7 +197,7 @@ topology_template:
       properties:
         serial_number: ADTN17510028
         pon_port_id: 5
-        device_id: of:00000024454A6BE4
+        device_id: of:00000024454a6be4
       requirements:
         - owner:
             node: service#att
