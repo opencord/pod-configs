@@ -2,6 +2,17 @@
 
 vcoreImage: '10.90.0.120:30500/voltha/voltha-voltha:latest'
 
+volt:
+  image:
+    tag: 'master'
+att-workflow-driver:
+  image:
+    tag: 'master'
+
+image:
+  repository: '10.90.0.120:30500/voltha/voltha-bbsim'
+  tag: 'stable'
+
 application_logs: |
    log4j.logger.org.opencord.olt = TRACE
    log4j.logger.org.opencord.kafka = DEBUG

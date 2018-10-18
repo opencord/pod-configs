@@ -1,21 +1,78 @@
 # SEBA Values
 
-envoyForEtcdImage: 'matteoscandolo/voltha-envoy:berlin-1.0.2'
-netconfImage: 'matteoscandolo/voltha-netconf:berlin-1.0.2'
-ofagentImage: 'matteoscandolo/voltha-ofagent:berlin-1.0.2'
-vcliImage: 'matteoscandolo/voltha-cli:berlin-1.0.2'
-vcoreImage: 'matteoscandolo/voltha-voltha:berlin-1.0.2'
+envoyForEtcdImage: '192.168.100.1:30500/voltha/voltha-envoy:berlin-1.0.2'
+netconfImage: '192.168.100.1:30500/voltha/voltha-netconf:berlin-1.0.2'
+ofagentImage: '192.168.100.1:30500/voltha/voltha-ofagent:berlin-1.0.2'
+vcliImage: '192.168.100.1:30500/voltha/voltha-cli:berlin-1.0.2'
+vcoreImage: '192.168.100.1:30500/voltha/voltha-voltha:berlin-1.0.2'
 
-onosImage: 'onosproject/onos:1.13.5'
+onosImage: '192.168.100.1:30500/onosproject/onos:1.13.5'
 
+# xos core
+images:
+  xos_core:
+    repository: 192.168.100.1:30500/xosproject/xos-core
+    tag: 2.1.9
+  xos_chameleon:
+    repository: 192.168.100.1:30500/xosproject/chameleon
+    tag: 2.1.9
+  xos_tosca:
+    repository: 192.168.100.1:30500/xosproject/xos-tosca
+    tag: 1.1.3
+xos-gui:
+  images:
+    xos_gui:
+      repository: 192.168.100.1:30500/xosproject/xos-gui
+      tag: 1.0.3
+    xos_ws:
+      repository: 192.168.100.1:30500/xosproject/xos-ws
+      tag: 2.0.0
+xos-db:
+  image:
+  repository: '192.168.100.1:30500/postgres'
+  tag: '10.3-alpine'
+
+# synchronizers
 att-workflow-driver:
   image:
+    repository: 192.168.100.1:30500/xosproject/att-workflow-driver-synchronizer
     tag: 'master'
 
 volt:
   image:
-    repository: matteoscandolo/volt-synchronizer
+    repository: 192.168.100.1:30500/xosproject/volt-synchronizer
     tag: 'candidate'
+
+rcord:
+  image:
+    repository: 192.168.100.1:30500/xosproject/rcord-synchronizer
+    tag: 1.0.4
+
+onos-service:
+  image:
+    repository: 192.168.100.1:30500/xosproject/onos-synchronizer
+    tag: 2.0.5
+
+fabric:
+  image:
+    repository: 192.168.100.1:30500/xosproject/fabric-synchronizer
+    tag: 2.1.3
+
+fabric-crossconnect:
+  image:
+    repository: 192.168.100.1:30500/xosproject/fabric-crossconnect-synchronizer
+    tag: 1.1.1
+
+kubernetes:
+  image:
+    repository: 192.168.100.1:30500/xosproject/kubernetes-synchronizer
+    tag: 1.0.4
+
+# others
+sadis-server:
+  image:
+    repository: '192.168.100.1:30500/opencord/sadis-server'
+    tag: 'latest'
 
 application_logs: |
   log4j.logger.org.opencord.olt = TRACE
