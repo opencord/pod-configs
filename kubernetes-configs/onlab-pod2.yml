@@ -1,6 +1,6 @@
 # SEBA Values
 
-vcoreImage: '10.90.0.120:30500/voltha/voltha-voltha:latest'
+vcoreImage: '10.90.0.120:30500/voltha/voltha-voltha:dev'
 
 volt:
   image:
@@ -11,7 +11,7 @@ att-workflow-driver:
 
 image:
   repository: '10.90.0.120:30500/voltha/voltha-bbsim'
-  tag: 'stable'
+  tag: 'sleep'
 
 application_logs: |
    log4j.logger.org.opencord.olt = TRACE

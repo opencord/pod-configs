@@ -15,11 +15,21 @@ vcoreImage: 'voltha/voltha-voltha:latest'
 
 att-workflow-driver:
   image:
-    tag: 'master'
+    repository: 10.90.0.101:30500/xosproject/att-workflow-driver-synchronizer
+    tag: candidate
 
-volt:
+rcord:
   image:
-    tag: 'master'
+    repository: 10.90.0.101:30500/xosproject/rcord-synchronizer
+    tag: candidate
+fabric:
+  image:
+    repository: 10.90.0.101:30500/xosproject/fabric-synchronizer
+    tag: candidate
+vsg-hw:
+  image:
+    repository: 10.90.0.101:30500/xosproject/vsg-hw-synchronizer
+    tag: candidate
 
 onosImage: 'onosproject/onos:1.13.5'
 

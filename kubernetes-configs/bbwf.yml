@@ -4,7 +4,15 @@ envoyForEtcdImage: '192.168.100.1:30500/voltha/voltha-envoy:berlin-1.0.2'
 netconfImage: '192.168.100.1:30500/voltha/voltha-netconf:berlin-1.0.2'
 ofagentImage: '192.168.100.1:30500/voltha/voltha-ofagent:berlin-1.0.2'
 vcliImage: '192.168.100.1:30500/voltha/voltha-cli:berlin-1.0.2'
-vcoreImage: '192.168.100.1:30500/voltha/voltha-voltha:berlin-1.0.2'
+vcoreImage: '192.168.100.1:30500/voltha/voltha-voltha:dev'
+# vcoreImage: '192.168.100.1:30500/voltha/voltha-voltha:berlin-1.0.2'
+freeradiusImage: '192.168.100.1:30500/tpdock/freeradius:latest'
+ingressControllerImage: '192.168.100.1:30500/quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.10.2'
+httpBackendImage: '192.168.100.1:30500/google_containers/defaultbackend:1.4'
+
+etcd-operator:
+  etcdCluster:
+    size: 1
 
 onosImage: '192.168.100.1:30500/onosproject/onos:1.13.5'
 
@@ -29,44 +37,8 @@ xos-gui:
       tag: 2.0.0
 xos-db:
   image:
-  repository: '192.168.100.1:30500/postgres'
-  tag: '10.3-alpine'
-
-# synchronizers
-att-workflow-driver:
-  image:
-    repository: 192.168.100.1:30500/xosproject/att-workflow-driver-synchronizer
-    tag: 'master'
-
-volt:
-  image:
-    repository: 192.168.100.1:30500/xosproject/volt-synchronizer
-    tag: 'candidate'
-
-rcord:
-  image:
-    repository: 192.168.100.1:30500/xosproject/rcord-synchronizer
-    tag: 1.0.4
-
-onos-service:
-  image:
-    repository: 192.168.100.1:30500/xosproject/onos-synchronizer
-    tag: 2.0.5
-
-fabric:
-  image:
-    repository: 192.168.100.1:30500/xosproject/fabric-synchronizer
-    tag: 2.1.3
-
-fabric-crossconnect:
-  image:
-    repository: 192.168.100.1:30500/xosproject/fabric-crossconnect-synchronizer
-    tag: 1.1.1
-
-kubernetes:
-  image:
-    repository: 192.168.100.1:30500/xosproject/kubernetes-synchronizer
-    tag: 1.0.4
+    repository: '192.168.100.1:30500/postgres'
+    tag: '10.3-alpine'
 
 tosca_loaderImage: '192.168.100.1:30500/xosproject/tosca-loader:1.0.1'
 
@@ -77,10 +49,14 @@ sadis-server:
     tag: 'latest'
 
 # kafka
-image: '192.168.100.1:30500/confluentinc/cp-kafka:4.1.2-2'
+image: '192.168.100.1:30500/confluentinc/cp-kafka'
+configurationOverrides:
+  "confluent.support.metrics.enable": false
 
 zookeper:
-  image: '192.168.100.1:30500/google_samples/k8szk:v3'
+  image:
+    reposiroty: '192.168.100.1:30500/google_samples/k8szk'
+    tag: v3
 
 etcd-operator:
   etcdOperator:
