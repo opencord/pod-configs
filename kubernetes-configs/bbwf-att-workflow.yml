@@ -1,0 +1,45 @@
+# synchronizers
+images:
+  tosca_loader:
+    repository: '192.168.100.1:30500/xosproject/tosca-loader'
+    tag: '1.1.3'
+
+att-workflow-driver:
+  image:
+    repository: 192.168.100.1:30500/xosproject/att-workflow-driver-synchronizer
+    tag: 'master'
+
+volt:
+  image:
+    repository: 192.168.100.1:30500/xosproject/volt-synchronizer
+    tag: 'candidate'
+
+rcord:
+  image:
+    repository: 192.168.100.1:30500/xosproject/rcord-synchronizer
+    tag: 1.0.4
+
+onos-service:
+  image:
+    repository: 192.168.100.1:30500/xosproject/onos-synchronizer
+    tag: 2.0.5
+
+fabric:
+  image:
+    repository: 192.168.100.1:30500/xosproject/fabric-synchronizer
+    tag: 2.1.3
+
+fabric-crossconnect:
+  image:
+    repository: 192.168.100.1:30500/xosproject/fabric-crossconnect-synchronizer
+    tag: 1.1.1
+
+kubernetes:
+  image:
+    repository: 192.168.100.1:30500/xosproject/kubernetes-synchronizer
+    tag: 1.0.4
+
+sadis-server:
+  image:
+    repository: '192.168.100.1:30500/opencord/sadis-server'
+    tag: 'latest'

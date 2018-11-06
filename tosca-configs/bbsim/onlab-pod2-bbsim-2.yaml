@@ -1,0 +1,124 @@
+# Copyright 2017-present Open Networking Foundation
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# curl -H "xos-username: admin@opencord.org" -H "xos-password: letmein" -X POST --data-binary @onlab-pod2-bbsim-2.yaml http://10.90.0.120:30007/run
+
+tosca_definitions_version: tosca_simple_yaml_1_0
+imports:
+  - custom_types/oltdevice.yaml
+  - custom_types/onudevice.yaml
+  - custom_types/voltservice.yaml
+  - custom_types/bngportmapping.yaml
+  - custom_types/attworkflowdriverwhitelistentry.yaml
+  - custom_types/attworkflowdriverservice.yaml
+  - custom_types/rcordsubscriber.yaml
+  - custom_types/serviceinstanceattribute.yaml
+  - custom_types/onosapp.yaml
+description: Create a simulated OLT Device in VOLTHA
+topology_template:
+  node_templates:
+
+    service#volt:
+      type: tosca.nodes.VOLTService
+      properties:
+        name: volt
+        must-exist: true
+
+    olt_device:
+      type: tosca.nodes.OLTDevice
+      properties:
+        name: BBSIM_OLT
+        device_type: bbsimolt
+        host: bbsim.voltha.svc
+        port: 50060
+        switch_datapath_id: of:0000000000000002
+        switch_port: "3"
+        outer_tpid: "0x8100"
+        uplink: "65536"
+        nas_id: "NAS_ID"
+        serial_number: "bbsim.voltha.svc:50060"
+      requirements:
+        - volt_service:
+            node: service#volt
+            relationship: tosca.relationships.BelongsToOne
+
+    # link
+    onos_app#olt:
+      type: tosca.nodes.ONOSApp
+      properties:
+        name: olt
+        must-exist: true
+
+    olt-config-attr:
+      type: tosca.nodes.ServiceInstanceAttribute
+      properties:
+        name: /onos/v1/network/configuration/links
+        value: >
+          {
+            "of:0000000000000002/24-of:0000000000000012/65536": {
+              "basic": {}
+            }
+          }
+      requirements:
+        - service_instance:
+            node: onos_app#olt
+            relationship: tosca.relationships.BelongsToOne
+
+    # Whitelist
+    service#att:
+      type: tosca.nodes.AttWorkflowDriverService
+      properties:
+        name: att-workflow-driver
+        must-exist: true
+
+    BBSM00000100:
+      type: tosca.nodes.AttWorkflowDriverWhiteListEntry
+      properties:
+        serial_number: BBSM00000100
+        pon_port_id: 536870913
+        device_id: of:0000000000000012
+      requirements:
+        - owner:
+            node: service#att
+            relationship: tosca.relationships.BelongsToOne
+
+    BBSM00000101:
+      type: tosca.nodes.AttWorkflowDriverWhiteListEntry
+      properties:
+        serial_number: BBSM00000101
+        pon_port_id: 536870913
+        device_id: of:0000000000000012
+      requirements:
+        - owner:
+            node: service#att
+            relationship: tosca.relationships.BelongsToOne
+
+    # Pre-provision the subscriber
+    bbsim_subscriber_0:
+      type: tosca.nodes.RCORDSubscriber
+      properties:
+        name: Sub_BBSM00000100
+        status: pre-provisioned
+        c_tag: 900
+        s_tag: 999
+        onu_device: BBSM00000100
+
+    bbsim_subscriber_1:
+      type: tosca.nodes.RCORDSubscriber
+      properties:
+        name: Sub_BBSM00000101
+        status: pre-provisioned
+        c_tag: 901
+        s_tag: 999
+        onu_device: BBSM00000101
