@@ -11,7 +11,7 @@ freeradiusImage: 'tpdock/freeradius:latest'
 netconfImage: 'voltha/voltha-netconf:latest'
 ofagentImage: 'voltha/voltha-ofagent:latest'
 vcliImage: 'voltha/voltha-cli:latest'
-vcoreImage: 'smbaker/voltha-voltha:latest'
+vcoreImage: 'smbaker/voltha-voltha:tid-grpc'
 
 att-workflow-driver:
   image:
