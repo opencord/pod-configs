@@ -1,51 +1,68 @@
 # SEBA Values
 
-envoyForEtcdImage: '192.168.100.1:30500/voltha/voltha-envoy:berlin-1.0.2'
-netconfImage: '192.168.100.1:30500/voltha/voltha-netconf:berlin-1.0.2'
-ofagentImage: '192.168.100.1:30500/voltha/voltha-ofagent:berlin-1.0.2'
-vcliImage: '192.168.100.1:30500/voltha/voltha-cli:berlin-1.0.2'
-vcoreImage: '192.168.100.1:30500/voltha/voltha-voltha:dev'
-# vcoreImage: '192.168.100.1:30500/voltha/voltha-voltha:berlin-1.0.2'
-freeradiusImage: '192.168.100.1:30500/tpdock/freeradius:latest'
-ingressControllerImage: '192.168.100.1:30500/quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.10.2'
-httpBackendImage: '192.168.100.1:30500/google_containers/defaultbackend:1.4'
+global:
+  registry: '192.168.100.1:30500/'
+
+images:
+
+  envoy_for_etcd:
+    repository: 'matteoscandolo/voltha-envoy'
+    tag: 'berlin-1.0.2'
+
+  netconf:
+    repository: 'matteoscandolo/voltha-netconf'
+    tag: 'berlin-1.0.2'
+
+  ofagent:
+    repository: 'matteoscandolo/voltha-ofagent'
+    tag: 'berlin-1.0.2'
+
+  vcli:
+    repository: 'matteoscandolo/voltha-vcli'
+    tag: 'berlin-1.0.2'
+
+  vcore:
+    repository: 'matteoscandolo/voltha-voltha'
+    tag: 'dev'
+
+  onos:
+    tag: '1.13.5'
+
+# xos core
+  xos_core:
+    repository: xosproject/xos-core
+    tag: 2.1.9
+
+  xos_chameleon:
+    repository: xosproject/chameleon
+    tag: 2.1.9
+
+  xos_tosca:
+    repository: xosproject/xos-tosca
+    tag: 1.1.3
+
+xos-gui:
+  images:
+    xos_gui:
+      repository: xosproject/xos-gui
+      tag: 1.0.3
+    xos_ws:
+      repository: xosproject/xos-ws
+      tag: 2.0.0
+
+xos-db:
+  image:
+    repository: 'postgres'
+    tag: '10.3-alpine'
 
 etcd-operator:
   etcdCluster:
     size: 1
 
-onosImage: '192.168.100.1:30500/onosproject/onos:1.13.5'
-
-# xos core
-images:
-  xos_core:
-    repository: 192.168.100.1:30500/xosproject/xos-core
-    tag: 2.1.9
-  xos_chameleon:
-    repository: 192.168.100.1:30500/xosproject/chameleon
-    tag: 2.1.9
-  xos_tosca:
-    repository: 192.168.100.1:30500/xosproject/xos-tosca
-    tag: 1.1.3
-xos-gui:
-  images:
-    xos_gui:
-      repository: 192.168.100.1:30500/xosproject/xos-gui
-      tag: 1.0.3
-    xos_ws:
-      repository: 192.168.100.1:30500/xosproject/xos-ws
-      tag: 2.0.0
-xos-db:
-  image:
-    repository: '192.168.100.1:30500/postgres'
-    tag: '10.3-alpine'
-
-tosca_loaderImage: '192.168.100.1:30500/xosproject/tosca-loader:1.0.1'
-
 # others
 sadis-server:
   image:
-    repository: '192.168.100.1:30500/opencord/sadis-server'
+    repository: 'opencord/sadis-server'
     tag: 'latest'
 
 # kafka

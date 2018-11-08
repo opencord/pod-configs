@@ -1,12 +1,29 @@
 # SEBA Values
 
-envoyForEtcdImage: 'matteoscandolo/voltha-envoy:berlin-1.0.2'
-netconfImage: 'matteoscandolo/voltha-netconf:berlin-1.0.2'
-ofagentImage: 'matteoscandolo/voltha-ofagent:berlin-1.0.2'
-vcliImage: 'matteoscandolo/voltha-cli:berlin-1.0.2'
-vcoreImage: 'matteoscandolo/voltha-voltha:berlin-1.0.2'
+images:
 
-onosImage: 'onosproject/onos:1.13.5'
+  envoy_for_etcd:
+    repository: 'matteoscandolo/voltha-envoy'
+    tag: 'berlin-1.0.2'
+
+  netconf:
+    repository: 'matteoscandolo/voltha-netconf'
+    tag: 'berlin-1.0.2'
+
+  ofagent:
+    repository: 'matteoscandolo/voltha-ofagent'
+    tag: 'berlin-1.0.2'
+
+  vcli:
+    repository: 'matteoscandolo/voltha-vcli'
+    tag: 'berlin-1.0.2'
+
+  vcore:
+    repository: 'matteoscandolo/voltha-voltha'
+    tag: 'berlin-1.0.2'
+
+  onos:
+    tag: '1.13.5'
 
 # synchronizers
 att-workflow-driver:

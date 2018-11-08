@@ -1,3 +1,4 @@
+---
 # Copyright 2017-present Open Networking Foundation
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,18 +17,28 @@
 
 # This file is used to optionally customize helm charts installations
 
----
-
 # SEBA Values
 
-envoyForEtcdImage: 'voltha/voltha-envoy:latest'
-freeradiusImage: 'tpdock/freeradius:latest'
-netconfImage: 'voltha/voltha-netconf:latest'
-ofagentImage: 'voltha/voltha-ofagent:latest'
-vcliImage: 'voltha/voltha-cli:latest'
-vcoreImage: 'voltha/voltha-voltha:latest'
+images:
 
-onosImage: 'onosproject/onos:1.13.5'
+  envoy_for_etcd:
+    tag: 'latest'
+
+  netconf:
+    tag: 'latest'
+
+  ofagent:
+    tag: 'latest'
+
+  vcli:
+    tag: 'latest'
+
+  vcore:
+    tag: 'latest'
+
+  onos:
+    tag: '1.13.5'
+
 
 # application_logs: |
 #   log4j.logger.org.opencord.olt = DEBUG
