@@ -8,10 +8,10 @@
 
 envoyForEtcdImage: 'voltha/voltha-envoy:latest'
 freeradiusImage: 'tpdock/freeradius:latest'
-netconfImage: 'voltha/voltha-netconf:latest'
-ofagentImage: 'voltha/voltha-ofagent:latest'
-vcliImage: 'voltha/voltha-cli:latest'
-vcoreImage: 'smbaker/voltha-voltha:tid-grpc'
+netconfImage: 'smbaker/voltha-netconf:grpc'
+ofagentImage: 'smbaker/voltha-ofagent:grpc'
+vcliImage: 'smbaker/voltha-cli:grpc'
+vcoreImage: 'smbaker/voltha-voltha:grpc'
 
 att-workflow-driver:
   image:
