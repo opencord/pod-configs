@@ -1,17 +1,28 @@
+---
 # SEBA Values
 
-#envoyForEtcdImage: 'matteoscandolo/voltha-envoy:berlin-1.0.1'
-#netconfImage: 'matteoscandolo/voltha-netconf:berlin-1.0.1'
-#ofagentImage: 'matteoscandolo/voltha-ofagent:berlin-1.0.1'
-#vcliImage: 'matteoscandolo/voltha-cli:berlin-1.0.1'
-#vcoreImage: 'matteoscandolo/voltha-voltha:berlin-1.0.1'
+images:
+  envoy_for_etcd:
+    tag: 'latest'
 
-envoyForEtcdImage: 'voltha/voltha-envoy:latest'
-freeradiusImage: 'tpdock/freeradius:latest'
-netconfImage: 'smbaker/voltha-netconf:grpc'
-ofagentImage: 'smbaker/voltha-ofagent:grpc'
-vcliImage: 'smbaker/voltha-cli:grpc'
-vcoreImage: 'smbaker/voltha-voltha:grpc'
+  netconf:
+    repository: 'smbaker/voltha-netconf'
+    tag: 'grpc'
+
+  ofagent:
+    repository: 'smbaker/voltha-ofagent'
+    tag: 'grpc'
+
+  vcli:
+    repository: 'smbaker/voltha-vcli'
+    tag: 'grpc'
+
+  vcore:
+    repository: 'smbaker/voltha-voltha'
+    tag: 'grpc'
+
+  onos:
+    tag: '1.13.5'
 
 att-workflow-driver:
   image:
@@ -30,8 +41,6 @@ vsg-hw:
   image:
     repository: 10.90.0.101:30500/xosproject/vsg-hw-synchronizer
     tag: candidate
-
-onosImage: 'onosproject/onos:1.13.5'
 
 application_logs: |
   log4j.logger.org.opencord.olt = TRACE

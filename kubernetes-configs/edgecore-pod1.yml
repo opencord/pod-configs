@@ -1,26 +1,35 @@
+---
 # SEBA Values
-
-# envoyForEtcdImage: 'matteoscandolo/voltha-envoy:ams-1.0.2'
-# netconfImage: 'matteoscandolo/voltha-netconf:ams-1.0.2'
-# ofagentImage: 'matteoscandolo/voltha-ofagent:ams-1.0.2'
-# vcliImage: 'matteoscandolo/voltha-cli:ams-1.0.2'
-# vcoreImage: 'matteoscandolo/voltha-voltha:ams-1.0.2'
-
-envoyForEtcdImage: '192.168.99.181:30500/voltha/voltha-envoy:ams-1.0.2'
-netconfImage: '192.168.99.181:30500/voltha/voltha-netconf:ams-1.0.2'
-ofagentImage: '192.168.99.181:30500/voltha/voltha-ofagent:ams-1.0.2'
-vcliImage: '192.168.99.181:30500/voltha/voltha-cli:ams-1.0.2'
-vcoreImage: '192.168.99.181:30500/voltha/voltha-voltha:ams-1.0.2'
-httpBackendImage: '192.168.99.181:30500/google_containers/defaultbackend:1.4'
-ingressControllerImage: '192.168.99.181:30500/quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.10.2'
-
-onosImage: '192.168.99.181:30500/onos/onos:ams-1.0.0'
 
 global:
   registry: '192.168.99.181:30500/'
 
-# xos
 images:
+
+  envoy_for_etcd:
+    repository: 'matteoscandolo/voltha-envoy'
+    tag: 'ams-1.0.2'
+
+  netconf:
+    repository: 'matteoscandolo/voltha-netconf'
+    tag: 'ams-1.0.2'
+
+  ofagent:
+    repository: 'matteoscandolo/voltha-ofagent'
+    tag: 'ams-1.0.2'
+
+  vcli:
+    repository: 'matteoscandolo/voltha-vcli'
+    tag: 'ams-1.0.2'
+
+  vcore:
+    repository: 'matteoscandolo/voltha-voltha'
+    tag: 'ams-1.0.2'
+
+  onos:
+    tag: 'ams-1.0.0'
+
+# xos
   xos_core:
     tag: 2.1.4
   xos_chameleon:

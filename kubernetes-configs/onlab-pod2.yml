@@ -1,6 +1,10 @@
+---
 # SEBA Values
 
-vcoreImage: '10.90.0.120:30500/voltha/voltha-voltha:dev'
+images:
+  vcore:
+    repository: '10.90.0.120:30500/voltha/voltha-voltha'
+    tag: 'dev'
 
 volt:
   image:
