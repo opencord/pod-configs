@@ -38,7 +38,7 @@ nodes:
 
 olts:
   -
-    ip: '10.192.4.218'
+    ip: '10.192.4.206'
     user: 'root'
     pass: 'onl'
     fortygig: 'true'
