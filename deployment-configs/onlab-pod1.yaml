@@ -67,4 +67,4 @@ hosts:
     container_type: 'LXC'
     container_name: 'ALPHe3d1cfde'
   dst:
-    dp_iface_ip_qinq: '10.11.2.254'
+    dp_iface_ip_qinq: '8.8.8.8'
