@@ -36,6 +36,13 @@ nodes:
     user: 'cord'
     pass: 'cord'
 
+fabric_switches:
+  -
+    mac: 'cc:37:ab:5b:6d:a8'
+    ip: '10.192.4.217'
+    user: 'root'
+    pass: 'onl'
+
 olts:
   -
     ip: '10.192.4.206'
