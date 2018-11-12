@@ -19,7 +19,7 @@ images:
     tag: 'berlin-1.0.2'
 
   vcli:
-    repository: 'matteoscandolo/voltha-vcli'
+    repository: 'matteoscandolo/voltha-cli'
     tag: 'berlin-1.0.2'
 
   vcore:
@@ -64,13 +64,16 @@ sadis-server:
     tag: 'latest'
 
 # kafka
-image: '192.168.100.1:30500/confluentinc/cp-kafka'
-configurationOverrides:
-  "confluent.support.metrics.enable": false
+# NOTE: should make this a separate file or it will collide with other
+# definitions of 'image'
+#
+# image: '192.168.100.1:30500/confluentinc/cp-kafka'
+# configurationOverrides:
+#   "confluent.support.metrics.enable": false
 
 zookeper:
   image:
-    reposiroty: '192.168.100.1:30500/google_samples/k8szk'
+    repository: '192.168.100.1:30500/google_samples/k8szk'
     tag: v3
 
 etcd-operator:

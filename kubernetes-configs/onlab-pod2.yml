@@ -9,6 +9,7 @@ images:
 volt:
   image:
     tag: 'master'
+
 att-workflow-driver:
   image:
     tag: 'master'

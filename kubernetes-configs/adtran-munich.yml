@@ -16,7 +16,7 @@ images:
     tag: 'berlin-1.0.2'
 
   vcli:
-    repository: 'matteoscandolo/voltha-vcli'
+    repository: 'matteoscandolo/voltha-cli'
     tag: 'berlin-1.0.2'
 
   vcore:
