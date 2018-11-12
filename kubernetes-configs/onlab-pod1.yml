@@ -14,7 +14,7 @@ images:
     tag: 'grpc'
 
   vcli:
-    repository: 'smbaker/voltha-vcli'
+    repository: 'smbaker/voltha-cli'
     tag: 'grpc'
 
   vcore:
