@@ -2,21 +2,8 @@
 # SEBA Values
 
 images:
-  vcore:
-    repository: '10.90.0.120:30500/voltha/voltha-voltha'
-    tag: 'dev'
-
-volt:
-  image:
-    tag: 'master'
-
-att-workflow-driver:
-  image:
-    tag: 'master'
-
-image:
-  repository: '10.90.0.120:30500/voltha/voltha-bbsim'
-  tag: 'sleep'
+  onos:
+      tag: '1.13.5'
 
 application_logs: |
    log4j.logger.org.opencord.olt = TRACE
