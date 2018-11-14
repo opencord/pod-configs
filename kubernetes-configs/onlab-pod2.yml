@@ -5,6 +5,10 @@ images:
   onos:
       tag: '1.13.5'
 
+  vcore:
+      repository: 'smbaker/voltha-voltha'
+      tag: 'quiet'
+
 application_logs: |
    log4j.logger.org.opencord.olt = TRACE
    log4j.logger.org.opencord.kafka = DEBUG
