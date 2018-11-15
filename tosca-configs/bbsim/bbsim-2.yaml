@@ -122,6 +122,9 @@ topology_template:
         c_tag: 900
         s_tag: 999
         onu_device: BBSM00000100
+        circuit_id: circuit0
+        remote_id: remote0
+        nas_port_id: PON 2/1/01/1:1.1.0
 
     bbsim_subscriber_1:
       type: tosca.nodes.RCORDSubscriber
@@ -131,3 +134,6 @@ topology_template:
         c_tag: 901
         s_tag: 999
         onu_device: BBSM00000101
+        circuit_id: circuit1
+        remote_id: remote1
+        nas_port_id: PON 2/1/01/1:1.1.1
