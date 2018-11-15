@@ -5,9 +5,14 @@ images:
   onos:
       tag: '1.13.5'
 
+#  vcore:
+#      repository: '10.90.0.120:30500/voltha/voltha-voltha'
+#      tag: 'dev'
+
   vcore:
-      repository: '10.90.0.120:30500/voltha/voltha-voltha'
-      tag: 'dev'
+    repository: 'smbaker/voltha-voltha'
+    tag: 'quiet'
+
 
 application_logs: |
    log4j.logger.org.opencord.olt = TRACE
