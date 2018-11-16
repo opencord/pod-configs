@@ -42,6 +42,11 @@ vsg-hw:
     repository: 10.90.0.101:30500/xosproject/vsg-hw-synchronizer
     tag: candidate
 
+volt:
+  image:
+    repository: smbaker/volt-synchronizer
+    tag: test
+
 application_logs: |
   log4j.logger.org.opencord.olt = TRACE
   log4j.logger.org.opencord.kafka = DEBUG
