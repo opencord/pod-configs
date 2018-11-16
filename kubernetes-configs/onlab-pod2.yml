@@ -13,6 +13,11 @@ images:
     repository: 'smbaker/voltha-voltha'
     tag: 'quiet'
 
+volt:
+  image:
+    repository: smbaker/volt-synchronizer
+    tag: test
+
 
 application_logs: |
    log4j.logger.org.opencord.olt = TRACE
