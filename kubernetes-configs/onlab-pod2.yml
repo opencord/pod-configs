@@ -11,7 +11,7 @@ images:
 
   vcore:
     repository: 'smbaker/voltha-voltha'
-    tag: 'quiet'
+    tag: 'test'
 
 volt:
   image:
