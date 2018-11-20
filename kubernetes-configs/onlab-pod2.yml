@@ -9,9 +9,9 @@ images:
 #      repository: '10.90.0.120:30500/voltha/voltha-voltha'
 #      tag: 'dev'
 
-  vcore:
-    repository: 'smbaker/voltha-voltha'
-    tag: 'test'
+#  vcore:
+#    repository: 'smbaker/voltha-voltha'
+#    tag: 'test'
 
 volt:
   image:
