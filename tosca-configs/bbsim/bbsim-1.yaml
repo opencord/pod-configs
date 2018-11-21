@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# curl -H "xos-username: admin@opencord.org" -H "xos-password: letmein" -X POST --data-binary @onlab-pod2-bbsim-16.yaml http://10.90.0.120:30007/run
+# curl -H "xos-username: admin@opencord.org" -H "xos-password: letmein" -X POST --data-binary @bbsim-1.yaml http://10.90.0.120:30007/run
 
 tosca_definitions_version: tosca_simple_yaml_1_0
 imports:
@@ -38,9 +38,9 @@ topology_template:
     olt_device:
       type: tosca.nodes.OLTDevice
       properties:
-        name: BBSIM_OLT
+        name: BBSIM_OLT_1
         device_type: bbsimolt
-        host: bbsim.voltha.svc
+        host: bbsim-0.voltha.svc
         port: 50060
         switch_datapath_id: of:0000000000000002
         switch_port: "3"
@@ -56,35 +56,37 @@ topology_template:
     # map the BNG to a port
     # this is not really used by BBSIM as there's no data-plane traffic,
     # but it's required by NEM to configure the crossconnect
-    bngmapping:
-      type: tosca.nodes.BNGPortMapping
-      properties:
-        s_tag: any
-        switch_port: 1
+    # bngmapping:
+    #   type: tosca.nodes.BNGPortMapping
+    #   properties:
+    #     s_tag: any
+    #     switch_port: 1
 
-    # DHCP L2 Relay config
-    onos_app#dhcpl2relay:
-      type: tosca.nodes.ONOSApp
-      properties:
-        name: dhcpl2relay
-        must-exist: true
+    # # DHCP L2 Relay config
+    # onos_app#dhcpl2relay:
+    #   type: tosca.nodes.ONOSApp
+    #   properties:
+    #     name: dhcpl2relay
+    #     must-exist: true
 
-    dhcpl2relay-config-attr:
-      type: tosca.nodes.ServiceInstanceAttribute
-      properties:
-        name: /onos/v1/network/configuration/apps/org.opencord.dhcpl2relay
-        value: >
-          {
-            "dhcpl2relay" : {
-              "useOltUplinkForServerPktInOut" : true
-            }
-          }
-      requirements:
-        - service_instance:
-            node: onos_app#dhcpl2relay
-            relationship: tosca.relationships.BelongsToOne
+    # dhcpl2relay-config-attr:
+    #   type: tosca.nodes.ServiceInstanceAttribute
+    #   properties:
+    #     name: /onos/v1/network/configuration/apps/org.opencord.dhcpl2relay
+    #     value: >
+    #       {
+    #         "dhcpl2relay" : {
+    #           "useOltUplinkForServerPktInOut" : true
+    #         }
+    #       }
+    #   requirements:
+    #     - service_instance:
+    #         node: onos_app#dhcpl2relay
+    #         relationship: tosca.relationships.BelongsToOne
 
-    # Whitelist
+    ###############################################################################################
+    #                                          Whitelist                                          #
+    ###############################################################################################
     service#att:
       type: tosca.nodes.AttWorkflowDriverService
       properties:
@@ -267,7 +269,9 @@ topology_template:
             node: service#att
             relationship: tosca.relationships.BelongsToOne
 
-    # Pre-provision the subscriber
+    ###############################################################################################
+    #                                         Subscribers                                         #
+    ###############################################################################################
     bbsim_subscriber_0:
       type: tosca.nodes.RCORDSubscriber
       properties:
