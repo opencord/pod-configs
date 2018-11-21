@@ -5,18 +5,35 @@ images:
   onos:
       tag: '1.13.5'
 
-#  vcore:
-#      repository: '10.90.0.120:30500/voltha/voltha-voltha'
-#      tag: 'dev'
+  vcore:
+    repository: 'smbaker/voltha-voltha'
+    tag: '1.6-grpc'
 
-#  vcore:
-#    repository: 'smbaker/voltha-voltha'
-#    tag: 'test'
+  vcli:
+    repository: 'smbaker/voltha-cli'
+    tag: '1.6-grpc'
+    pullPolicy: 'Always'
 
-volt:
-  image:
-    repository: smbaker/volt-synchronizer
-    tag: test
+  ofagent:
+    repository: 'smbaker/voltha-ofagent'
+    tag: '1.6-grpc'
+    pullPolicy: 'Always'
+
+  netconf:
+    repository: 'smbaker/voltha-netconf'
+    tag: '1.6-grpc'
+    pullPolicy: 'Always'
+
+  envoy_for_etcd:
+    repository: 'smbaker/voltha-envoy'
+    tag: '1.6-grpc'
+    pullPolicy: 'Always'
+
+  alarm_generator:
+    repository: 'smbaker/voltha-alarm-generator'
+    tag: '1.6-grpc'
+    pullPolicy: 'Always'
+
 
 
 application_logs: |
