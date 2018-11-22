@@ -3,23 +3,23 @@
 
 images:
   envoy_for_etcd:
-    repository: '10.90.0.120:30500/voltha/voltha-envoy'
+    repository: '10.90.0.101:30500/voltha/voltha-envoy'
     tag: 'e7a995dd9'
 
   netconf:
-    repository: '10.90.0.120:30500/voltha/voltha-netconf'
+    repository: '10.90.0.101:30500/voltha/voltha-netconf'
     tag: 'e7a995dd9'
 
   ofagent:
-    repository: '10.90.0.120:30500/voltha/voltha-ofagent'
+    repository: '10.90.0.101:30500/voltha/voltha-ofagent'
     tag: 'e7a995dd9'
 
   vcli:
-    repository: '10.90.0.120:30500/voltha/voltha-cli'
+    repository: '10.90.0.101:30500/voltha/voltha-cli'
     tag: 'e7a995dd9'
 
   vcore:
-    repository: '10.90.0.120:30500/voltha/voltha-voltha'
+    repository: '10.90.0.101:30500/voltha/voltha-voltha'
     tag: 'e7a995dd9'
 
 application_logs: |
