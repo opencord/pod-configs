@@ -3,44 +3,24 @@
 
 images:
   envoy_for_etcd:
-    tag: 'latest'
+    repository: '10.90.0.120:30500/voltha/voltha-envoy'
+    tag: 'e7a995dd9'
 
   netconf:
-    repository: 'smbaker/voltha-netconf'
-    tag: 'grpc'
+    repository: '10.90.0.120:30500/voltha/voltha-netconf'
+    tag: 'e7a995dd9'
 
   ofagent:
-    repository: 'smbaker/voltha-ofagent'
-    tag: 'grpc'
+    repository: '10.90.0.120:30500/voltha/voltha-ofagent'
+    tag: 'e7a995dd9'
 
   vcli:
-    repository: 'smbaker/voltha-cli'
-    tag: 'grpc'
+    repository: '10.90.0.120:30500/voltha/voltha-cli'
+    tag: 'e7a995dd9'
 
   vcore:
-    repository: 'smbaker/voltha-voltha'
-    tag: 'grpc'
-
-  onos:
-    tag: '1.13.5'
-
-att-workflow-driver:
-  image:
-    repository: 10.90.0.101:30500/xosproject/att-workflow-driver-synchronizer
-    tag: candidate
-
-rcord:
-  image:
-    repository: 10.90.0.101:30500/xosproject/rcord-synchronizer
-    tag: candidate
-fabric:
-  image:
-    repository: 10.90.0.101:30500/xosproject/fabric-synchronizer
-    tag: candidate
-vsg-hw:
-  image:
-    repository: 10.90.0.101:30500/xosproject/vsg-hw-synchronizer
-    tag: candidate
+    repository: '10.90.0.120:30500/voltha/voltha-voltha'
+    tag: 'e7a995dd9'
 
 application_logs: |
   log4j.logger.org.opencord.olt = TRACE
