@@ -4,23 +4,23 @@
 images:
   envoy_for_etcd:
     repository: '10.90.0.101:30500/voltha/voltha-envoy'
-    tag: '8d811fd'
+    tag: 'f841e7f'
 
   netconf:
     repository: '10.90.0.101:30500/voltha/voltha-netconf'
-    tag: '8d811fd'
+    tag: 'f841e7f'
 
   ofagent:
     repository: '10.90.0.101:30500/voltha/voltha-ofagent'
-    tag: '8d811fd'
+    tag: 'f841e7f'
 
   vcli:
     repository: '10.90.0.101:30500/voltha/voltha-cli'
-    tag: '8d811fd'
+    tag: 'f841e7f'
 
   vcore:
     repository: '10.90.0.101:30500/voltha/voltha-voltha'
-    tag: '8d811fd'
+    tag: 'f841e7f'
 
 application_logs: |
   log4j.logger.org.opencord.olt = TRACE
