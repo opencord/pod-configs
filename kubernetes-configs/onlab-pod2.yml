@@ -6,32 +6,32 @@ images:
       tag: '1.13.5'
 
   vcore:
-    repository: 'smbaker/voltha-voltha'
-    tag: '1.6-grpc'
+    repository: '10.90.0.120:30550/voltha-voltha'
+    tag: 'dev'
 
   vcli:
-    repository: 'smbaker/voltha-cli'
-    tag: '1.6-grpc'
+    repository: '10.90.0.120:30550/voltha-cli'
+    tag: 'dev'
     pullPolicy: 'Always'
 
   ofagent:
-    repository: 'smbaker/voltha-ofagent'
-    tag: '1.6-grpc'
+    repository: '10.90.0.120:30550/voltha-ofagent'
+    tag: 'dev'
     pullPolicy: 'Always'
 
   netconf:
-    repository: 'smbaker/voltha-netconf'
-    tag: '1.6-grpc'
+    repository: '10.90.0.120:30550/voltha-netconf'
+    tag: 'dev'
     pullPolicy: 'Always'
 
   envoy_for_etcd:
-    repository: 'smbaker/voltha-envoy'
-    tag: '1.6-grpc'
+    repository: '10.90.0.120:30550/voltha-envoy'
+    tag: 'dev'
     pullPolicy: 'Always'
 
   alarm_generator:
-    repository: 'smbaker/voltha-alarm-generator'
-    tag: '1.6-grpc'
+    repository: '10.90.0.120:30550/voltha-alarm-generator'
+    tag: 'dev'
     pullPolicy: 'Always'
 
 
