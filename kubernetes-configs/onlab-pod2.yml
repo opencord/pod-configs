@@ -6,31 +6,31 @@ images:
       tag: '1.13.5'
 
   vcore:
-    repository: '10.90.0.120:30550/voltha-voltha'
+    repository: '10.90.0.120:30500/voltha/voltha-voltha'
     tag: 'dev'
 
   vcli:
-    repository: '10.90.0.120:30550/voltha-cli'
+    repository: '10.90.0.120:30500/voltha/voltha-cli'
     tag: 'dev'
     pullPolicy: 'Always'
 
   ofagent:
-    repository: '10.90.0.120:30550/voltha-ofagent'
+    repository: '10.90.0.120:30500/voltha/voltha-ofagent'
     tag: 'dev'
     pullPolicy: 'Always'
 
   netconf:
-    repository: '10.90.0.120:30550/voltha-netconf'
+    repository: '10.90.0.120:30500/voltha/voltha-netconf'
     tag: 'dev'
     pullPolicy: 'Always'
 
   envoy_for_etcd:
-    repository: '10.90.0.120:30550/voltha-envoy'
+    repository: '10.90.0.120:30500/voltha/voltha-envoy'
     tag: 'dev'
     pullPolicy: 'Always'
 
   alarm_generator:
-    repository: '10.90.0.120:30550/voltha-alarm-generator'
+    repository: '10.90.0.120:30500/voltha/voltha-alarm-generator'
     tag: 'dev'
     pullPolicy: 'Always'
 
