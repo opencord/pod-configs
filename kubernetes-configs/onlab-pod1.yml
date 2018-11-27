@@ -4,15 +4,15 @@
 images:
   envoy_for_etcd:
     repository: 'smbaker/voltha-envoy'
-    tag: '1,6'
+    tag: '1.6'
 
   netconf:
     repository: 'smbaker/voltha-netconf'
-    tag: '1,6'
+    tag: '1.6'
 
   ofagent:
     repository: 'smbaker/voltha-ofagent'
-    tag: '1,6'
+    tag: '1.6'
 
   vcli:
     repository: 'smbaker/voltha-cli'
