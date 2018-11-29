@@ -4,23 +4,23 @@
 images:
   envoy_for_etcd:
     repository: 'smbaker/voltha-envoy'
-    tag: 'test'
+    tag: '1.6'
 
   netconf:
     repository: 'smbaker/voltha-netconf'
-    tag: 'test'
+    tag: '1.6'
 
   ofagent:
     repository: 'smbaker/voltha-ofagent'
-    tag: 'test'
+    tag: '1.6'
 
   vcli:
     repository: 'smbaker/voltha-cli'
-    tag: 'test'
+    tag: '1.6'
 
   vcore:
     repository: 'smbaker/voltha-voltha'
-    tag: 'test'
+    tag: '1.6'
 
 application_logs: |
   log4j.logger.org.opencord.olt = TRACE
