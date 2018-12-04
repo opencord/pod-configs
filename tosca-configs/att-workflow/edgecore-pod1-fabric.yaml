@@ -131,3 +131,26 @@ topology_template:
         - owner:
             node: service#att
             relationship: tosca.relationships.BelongsToOne
+
+    # DHCP L2 Relay config
+    onos_app#dhcpl2relay:
+      type: tosca.nodes.ONOSApp
+      properties:
+        name: dhcpl2relay
+        must-exist: true
+
+    dhcpl2relay-config-attr:
+      type: tosca.nodes.ServiceInstanceAttribute
+      properties:
+        name: /onos/v1/network/configuration/apps/org.opencord.dhcpl2relay
+        value: >
+          {
+            "dhcpl2relay" : {
+              "useOltUplinkForServerPktInOut" : false,
+              "dhcpServerConnectPoints" : [ "of:0000000000000001/48" ]
+            }
+          }
+      requirements:
+        - service_instance:
+            node: onos_app#dhcpl2relay
+            relationship: tosca.relationships.BelongsToOne
