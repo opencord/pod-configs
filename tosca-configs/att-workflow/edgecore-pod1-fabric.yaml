@@ -22,6 +22,8 @@ imports:
   - custom_types/bngportmapping.yaml
   - custom_types/attworkflowdriverwhitelistentry.yaml
   - custom_types/attworkflowdriverservice.yaml
+  - custom_types/serviceinstanceattribute.yaml
+  - custom_types/onosapp.yaml
 
 description: Configures the EdgeCore SEBA POD with AT&T workflow
 
