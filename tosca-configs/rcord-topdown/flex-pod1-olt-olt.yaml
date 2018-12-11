@@ -40,6 +40,7 @@ topology_template:
         switch_datapath_id: of:0000cc37ab5b6da8
         switch_port: "7"
         outer_tpid: "0x8100"
+        uplink: "65536"
       requirements:
         - volt_service:
             node: service#volt
