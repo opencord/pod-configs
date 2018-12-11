@@ -2,9 +2,6 @@
 # SEBA Values
 
 images:
-  onos:
-      tag: '1.13.5'
-
   vcore:
     repository: '10.90.0.120:30500/voltha/voltha-voltha'
     tag: 'dev'
@@ -33,8 +30,6 @@ images:
     repository: '10.90.0.120:30500/voltha/voltha-alarm-generator'
     tag: 'dev'
     pullPolicy: 'Always'
-
-
 
 application_logs: |
    log4j.logger.org.opencord.olt = TRACE
