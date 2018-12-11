@@ -22,6 +22,11 @@ images:
     repository: 'smbaker/voltha-voltha'
     tag: '1.6'
 
+volt:
+  image:
+      repository: smbaker/volt-synchronizer
+      tag: test-syncstep
+
 application_logs: |
   log4j.logger.org.opencord.olt = TRACE
   log4j.logger.org.opencord.kafka = DEBUG
