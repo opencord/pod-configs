@@ -24,43 +24,44 @@ imports:
   - custom_types/attworkflowdriverservice.yaml
   - custom_types/serviceinstanceattribute.yaml
   - custom_types/onosapp.yaml
+  - custom_types/onosservice.yaml
 
 description: Configures the ONF SEBA POD2 with AT&T workflow
 
 topology_template:
   node_templates:
     # Fabric configuration
-    switch#leaf_1:
-      type: tosca.nodes.Switch
-      properties:
-        driver: ofdpa3
-        ipv4Loopback: 192.168.0.201
-        ipv4NodeSid: 17
-        isEdgeRouter: True
-        name: AGG_SWITCH
-        ofId: of:0000000000000002
-        routerMac: 00:00:02:01:06:01
+    # switch#leaf_1:
+    #   type: tosca.nodes.Switch
+    #   properties:
+    #     driver: ofdpa3
+    #     ipv4Loopback: 192.168.0.201
+    #     ipv4NodeSid: 17
+    #     isEdgeRouter: True
+    #     name: AGG_SWITCH
+    #     ofId: of:0000000000000002
+    #     routerMac: 00:00:02:01:06:01
 
-    # Setup the OLT switch port
-    port#olt_port:
-      type: tosca.nodes.SwitchPort
-      properties:
-        portId: 1
-        host_learning: false
-      requirements:
-        - switch:
-            node: switch#leaf_1
-            relationship: tosca.relationships.BelongsToOne
+    # # Setup the OLT switch port
+    # port#olt_port:
+    #   type: tosca.nodes.SwitchPort
+    #   properties:
+    #     portId: 1
+    #     host_learning: false
+    #   requirements:
+    #     - switch:
+    #         node: switch#leaf_1
+    #         relationship: tosca.relationships.BelongsToOne
 
-    # Port connected to the BNG
-    port#bng_port:
-      type: tosca.nodes.SwitchPort
-      properties:
-        portId: 32
-      requirements:
-        - switch:
-            node: switch#leaf_1
-            relationship: tosca.relationships.BelongsToOne
+    # # Port connected to the BNG
+    # port#bng_port:
+    #   type: tosca.nodes.SwitchPort
+    #   properties:
+    #     portId: 32
+    #   requirements:
+    #     - switch:
+    #         node: switch#leaf_1
+    #         relationship: tosca.relationships.BelongsToOne
 
     # Setup the fabric switch port where the external
     # router is connected to
@@ -68,7 +69,7 @@ topology_template:
       type: tosca.nodes.BNGPortMapping
       properties:
         s_tag: any
-        switch_port: 32
+        switch_port: 28
 
     # DHCP L2 Relay config
     onos_app#dhcpl2relay:
@@ -85,13 +86,44 @@ topology_template:
           {
             "dhcpl2relay" : {
               "useOltUplinkForServerPktInOut" : false,
-              "dhcpServerConnectPoints" : [ "of:0000000000000002/32" ]
+              "dhcpServerConnectPoints" : [ "device:tofino:1/164" ]
             }
           }
       requirements:
         - service_instance:
             node: onos_app#dhcpl2relay
             relationship: tosca.relationships.BelongsToOne
+    # P4 Apps
+    service#onos:
+      type: tosca.nodes.ONOSService
+      properties:
+          name: onos
+          must-exist: true
+
+    # onos_app#onos-drivers-barefoot-pro:
+    #   type: tosca.nodes.ONOSApp
+    #   properties:
+    #     name: onos-drivers-barefoot-pro
+    #     app_id: org.onosproject.drivers.barefoot-pro
+    #     url: http://10.90.0.120:30160/repository/onos-drivers-barefoot-pro.oar
+    #     dependencies: org.onosproject.pipelines.fabric
+    #     version: 1.15.0.SNAPSHOT
+    #   requirements:
+    #     - owner:
+    #         node: service#onos
+    #         relationship: tosca.relationships.BelongsToOne
+
+    # onos_app#onos-pipelines-fabric:
+    #   type: tosca.nodes.ONOSApp
+    #   properties:
+    #     name: onos-pipelines-fabric
+    #     app_id: org.onosproject.pipelines.fabric
+    #     url: http://10.90.0.120:30160/repository/onos-pipelines-fabric.oar
+    #     version: 1.15.0.SNAPSHOT
+    #   requirements:
+    #     - owner:
+    #         node: service#onos
+    #         relationship: tosca.relationships.BelongsToOne
 
     # ONU Whitelist
     service#att:
@@ -115,6 +147,50 @@ topology_template:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
         serial_number: ISKT71e80080
+        pon_port_id: 536870927
+        device_id: of:000000000a5a007a
+      requirements:
+        - owner:
+            node: service#att
+            relationship: tosca.relationships.BelongsToOne
+
+    ALPHe3d1cf8e:
+      type: tosca.nodes.AttWorkflowDriverWhiteListEntry
+      properties:
+        serial_number: ALPHe3d1cf8e
+        pon_port_id: 536870927
+        device_id: of:000000000a5a007a
+      requirements:
+        - owner:
+            node: service#att
+            relationship: tosca.relationships.BelongsToOne
+
+    ALPHe3d1cf9d:
+      type: tosca.nodes.AttWorkflowDriverWhiteListEntry
+      properties:
+        serial_number: ALPHe3d1cf9d
+        pon_port_id: 536870927
+        device_id: of:000000000a5a007a
+      requirements:
+        - owner:
+            node: service#att
+            relationship: tosca.relationships.BelongsToOne
+
+    ALPHe3d1ced5:
+      type: tosca.nodes.AttWorkflowDriverWhiteListEntry
+      properties:
+        serial_number: ALPHe3d1ced5
+        pon_port_id: 536870927
+        device_id: of:000000000a5a007a
+      requirements:
+        - owner:
+            node: service#att
+            relationship: tosca.relationships.BelongsToOne
+
+    ALPHe3d1cf70:
+      type: tosca.nodes.AttWorkflowDriverWhiteListEntry
+      properties:
+        serial_number: ALPHe3d1cf70
         pon_port_id: 536870927
         device_id: of:000000000a5a007a
       requirements:

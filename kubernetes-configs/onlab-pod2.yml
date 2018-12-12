@@ -37,4 +37,5 @@ application_logs: |
    log4j.logger.org.opencord.sadis = DEBUG
    log4j.logger.org.opencord.aaa = TRACE
    log4j.logger.org.opencord.dhcpl2relay = TRACE
-   log4j.logger.org.onosproject.drivers = DEBUG
+   log4j.logger.org.onosproject.drivers = INFO
+   log4j.logger.org.onosproject.openflow.controller.impl = TRACE
