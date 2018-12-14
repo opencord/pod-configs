@@ -24,10 +24,11 @@ images:
   alarm_generator:
     tag: 'voltha-1.6'
     pullPolicy: 'Always'
-  volt:
-    image:
-      repository: '10.90.0.120:30500/xosproject/volt-synchronizer'
-      tag: candidate
+
+volt:
+  image:
+    repository: '10.90.0.120:30500/xosproject/volt-synchronizer'
+    tag: candidate
 
 application_logs: |
    log4j.logger.org.opencord.olt = TRACE
