@@ -19,25 +19,25 @@
 
 images:
   netconf:
-    repository: '10.192.4.244:30500/voltha/voltha-netconf'
-    tag: 'voltha-test3'
+    repository: 'voltha/voltha-netconf'
+    tag: 'voltha-1.6'
 
   ofagent:
-    repository: '10.192.4.244:30500/voltha/voltha-ofagent'
-    tag: 'voltha-test3'
+    repository: 'voltha/voltha-ofagent'
+    tag: 'voltha-1.6'
 
   vcli:
-    repository: '10.192.4.244:30500/voltha/voltha-cli'
-    tag: 'voltha-test3'
+    repository: 'voltha/voltha-cli'
+    tag: 'voltha-1.6'
 
   vcore:
-    repository: '10.192.4.244:30500/voltha/voltha-voltha'
-    tag: 'voltha-test3'
+    repository: 'voltha/voltha-voltha'
+    tag: 'voltha-1.6'
 
   envoy_for_etcd:
-    repository: '10.192.4.244:30500/voltha/voltha-envoy'
-    tag: 'voltha-test3'
+    repository: 'voltha/voltha-envoy'
+    tag: 'voltha-1.6'
 
   alarm_generator:
-    repository: '10.192.4.244:30500/voltha/voltha-alarm-generator'
-    tag: 'voltha-test3'
+    repository: 'voltha/voltha-alarm-generator'
+    tag: 'voltha-1.6'
