@@ -17,3 +17,52 @@
 
 # This file is used to optionally customize helm charts installations
 
+global:
+  registry: "10.192.4.244:30500/"
+
+images:
+
+  # from xos-core chart
+  xos_core:
+    tag: 'ee72577'
+
+  xos_chameleon:
+    tag: 'ee72577'
+
+  xos_tosca:
+    tag: 'ee72577'
+
+# from xos-profiles/seba-services/requirements.txt
+
+fabric:
+  image:
+    tag: 'ee72577'
+
+fabric-crossconnect:
+  image:
+    tag: 'ee72577'
+
+onos-service:
+  image:
+    tag: 'ee72577'
+
+rcord:
+  image:
+    tag: 'ee72577'
+
+volt:
+  image:
+    tag: 'ee72577'
+
+# from xos-profiles/base-kubernetes/requirements.txt
+
+kubernetes:
+  image:
+    tag: 'ee72577'
+
+# from workflows/att-workflow/requirements.txt
+
+att-workflow-driver:
+  image:
+    tag: 'ee72577'
+
