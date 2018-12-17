@@ -1,0 +1,37 @@
+# Copyright 2017-present Open Networking Foundation
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# curl -H "xos-username: admin@opencord.org" -H "xos-password: letmein" -X POST --data-binary @onlab-pod1-subscriber.yaml http://10.90.0.101:30007/run
+
+tosca_definitions_version: tosca_simple_yaml_1_0
+imports:
+  - custom_types/rcordsubscriber.yaml
+
+description: Pre-provsion a subscriber
+
+topology_template:
+  node_templates:
+
+    # Pre-provision the subscriber the subscriber
+    my_house:
+      type: tosca.nodes.RCORDSubscriber
+      properties:
+        name: My House-305
+        status: pre-provisioned
+        s_tag: 111
+        c_tag: 999
+        onu_device: ALPHe3d1cfa7
+        nas_port_id : "PON 1/1/03/1:1.1.1"
+        circuit_id: foo1
+        remote_id: bar1
