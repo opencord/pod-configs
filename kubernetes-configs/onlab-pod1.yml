@@ -27,6 +27,35 @@
 #       repository: smbaker/volt-synchronizer
 #       tag: test-syncstep
 
+# in seba service chart
+fabric:
+  image:
+    repository: 'smbaker/fabric-synchronizer'
+    tag: 'test'
+fabric-crossconnect:
+  image:
+    repository: 'smbaker/fabric-crossconnect-synchronizer'
+    tag: 'test'
+onos-service:
+  image:
+    repository: 'smbaker/onos-synchronizer'
+    tag: 'test'
+volt:
+  image:
+    repository: 'smbaker/volt-synchronizer'
+    tag: 'test'
+rcord:
+  image:
+    repository: 'smbaker/rcord-synchronizer'
+    tag: 'test'
+
+# in workflow/att-workflow service chart
+att-workflow-driver:
+  image:
+    repository: 'smbaker/att-workflow-driver-synchronizer'
+    tag: 'test'
+
+
 application_logs: |
   log4j.logger.org.opencord.olt = TRACE
   log4j.logger.org.opencord.kafka = DEBUG
