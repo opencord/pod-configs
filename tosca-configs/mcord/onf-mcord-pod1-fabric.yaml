@@ -81,7 +81,7 @@ topology_template:
     port#node_2_port:
       type: tosca.nodes.SwitchPort
       properties:
-        portId: 34
+        portId: 35
       requirements:
         - switch:
             node: switch#leaf_1
@@ -121,7 +121,7 @@ topology_template:
     port#node_3_port:
       type: tosca.nodes.SwitchPort
       properties:
-        portId: 34
+        portId: 36
       requirements:
         - switch:
             node: switch#leaf_1
