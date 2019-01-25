@@ -27,6 +27,50 @@
 #       repository: smbaker/volt-synchronizer
 #       tag: test-syncstep
 
+# in xos-core
+images:
+  xos_core:
+    tag: '8035085'
+  xos_chameleon:
+    tag: '8035085'
+  xos_tosca:
+    tag: '8035085'
+  xos_api_tester:
+    tag: '8035085'
+  tosca_loader:
+    tag: '8035085'
+
+# in xos-profiles/base-kubernetes
+kubernetes:
+  image:
+    tag: '8035085'
+
+# in xos-profiles/seba-services
+rcord:
+  image:
+    tag: '8035085'
+onos-service:
+  image:
+    tag: '8035085'
+fabric:
+  image:
+    tag: '8035085'
+volt:
+  image:
+    tag: '8035085'
+fabric-crossconnect:
+  image:
+    tag: '8035085'
+# sadis-server:
+#   image:
+#     tag: '8035085'
+
+# in workflows/att-workflow
+att-workflow-driver:
+  image:
+    tag: '8035085'
+
+# ONOS config
 application_logs: |
   log4j.logger.org.opencord.olt = TRACE
   log4j.logger.org.opencord.kafka = DEBUG
