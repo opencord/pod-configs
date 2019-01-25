@@ -60,7 +60,7 @@ topology_template:
     ip#port_1_ip_1:
       type: tosca.nodes.FabricIpAddress
       properties:
-        ip: 118.0.0.254/24
+        ip: 13.1.1.0/24
         description: node_1_ip_1
       requirements:
         - interface:
@@ -100,7 +100,7 @@ topology_template:
     ip#port_2_ip_1:
       type: tosca.nodes.FabricIpAddress
       properties:
-        ip: 118.0.0.254/24
+        ip: 13.1.1.0/24
         description: node_2_ip_1
       requirements:
         - interface:
@@ -140,7 +140,7 @@ topology_template:
     ip#port_3_ip_1:
       type: tosca.nodes.FabricIpAddress
       properties:
-        ip: 118.0.0.254/24
+        ip: 13.1.1.0/24
         description: node_3_ip_1
       requirements:
         - interface:
