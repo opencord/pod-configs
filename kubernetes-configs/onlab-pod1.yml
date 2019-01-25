@@ -48,6 +48,7 @@ images:
 # in xos-profiles/base-kubernetes
 kubernetes:
   image:
+    repository: '10.90.0.101:30500/xosproject/kubernetes-synchronizer'
     tag: '8035085'
 
 # in xos-profiles/seba-services
