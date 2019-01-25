@@ -31,34 +31,62 @@
 #    tag: candidate
 
 
-# in seba service chart
-fabric:
+# in xos-core
+images:
+  xos_core:
+    repository: '10.90.0.101:30500/xosproject/xos-core'
+    tag: '8035085'
+  xos_chameleon:
+    repository: '10.90.0.101:30500/xosproject/chameleon'
+    tag: '8035085'
+  xos_tosca:
+    repository: '10.90.0.101:30500/xosproject/xos-tosca'
+    tag: '8035085'
+  xos_api_tester:
+    repository: '10.90.0.101:30500/xosproject/xos-api-tester'
+    tag: '8035085'
+  tosca_loader:
+    repository: '10.90.0.101:30500/xosproject/tosca-loader'
+    tag: '8035085'
+
+# in xos-profiles/base-kubernetes
+kubernetes:
   image:
-    repository: 'smbaker/fabric-synchronizer'
-    tag: 'test'
-fabric-crossconnect:
-  image:
-    repository: 'smbaker/fabric-crossconnect-synchronizer'
-    tag: 'test'
-onos-service:
-  image:
-    repository: 'smbaker/onos-synchronizer'
-    tag: 'test'
-volt:
-  image:
-    repository: 'smbaker/volt-synchronizer'
-    tag: 'test'
+    repository: '10.90.0.101:30500/xosproject/kubernetes-synchronizer'
+    tag: '8035085'
+
+# in xos-profiles/seba-services
 rcord:
   image:
-    repository: 'smbaker/rcord-synchronizer'
-    tag: 'test'
+    repository: '10.90.0.101:30500/xosproject/rcord-synchronizer'
+    tag: '8035085'
+onos-service:
+  image:
+    repository: '10.90.0.101:30500/xosproject/onos-synchronizer'
+    tag: '8035085'
+fabric:
+  image:
+    repository: '10.90.0.101:30500/xosproject/fabric-synchronizer'
+    tag: '8035085'
+volt:
+  image:
+    repository: '10.90.0.101:30500/xosproject/volt-synchronizer'
+    tag: '8035085'
+fabric-crossconnect:
+  image:
+    repository: '10.90.0.101:30500/xosproject/fabric-crossconnect-synchronizer'
+    tag: '8035085'
+# sadis-server:
+#   image:
+#     tag: '8035085'
 
-# in workflow/att-workflow service chart
+# in workflows/att-workflow
 att-workflow-driver:
   image:
-    repository: 'smbaker/att-workflow-driver-synchronizer'
-    tag: 'test'
+    repository: '10.90.0.101:30500/xosproject/att-workflow-driver-synchronizer'
+    tag: '8035085'
 
+# ONOS config
 application_logs: |
    log4j.logger.org.opencord.olt = TRACE
    log4j.logger.org.opencord.kafka = DEBUG
