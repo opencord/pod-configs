@@ -34,47 +34,47 @@
 # in xos-core
 images:
   xos_core:
-    repository: '10.90.0.101:30500/xosproject/xos-core'
+    repository: '10.90.0.120:30500/xosproject/xos-core'
     tag: '8035085'
   xos_chameleon:
-    repository: '10.90.0.101:30500/xosproject/chameleon'
+    repository: '10.90.0.120:30500/xosproject/chameleon'
     tag: '8035085'
   xos_tosca:
-    repository: '10.90.0.101:30500/xosproject/xos-tosca'
+    repository: '10.90.0.120:30500/xosproject/xos-tosca'
     tag: '8035085'
   xos_api_tester:
-    repository: '10.90.0.101:30500/xosproject/xos-api-tester'
+    repository: '10.90.0.120:30500/xosproject/xos-api-tester'
     tag: '8035085'
   tosca_loader:
-    repository: '10.90.0.101:30500/xosproject/tosca-loader'
+    repository: '10.90.0.120:30500/xosproject/tosca-loader'
     tag: '8035085'
 
 # in xos-profiles/base-kubernetes
 kubernetes:
   image:
-    repository: '10.90.0.101:30500/xosproject/kubernetes-synchronizer'
+    repository: '10.90.0.120:30500/xosproject/kubernetes-synchronizer'
     tag: '8035085'
 
 # in xos-profiles/seba-services
 rcord:
   image:
-    repository: '10.90.0.101:30500/xosproject/rcord-synchronizer'
+    repository: '10.90.0.120:30500/xosproject/rcord-synchronizer'
     tag: '8035085'
 onos-service:
   image:
-    repository: '10.90.0.101:30500/xosproject/onos-synchronizer'
+    repository: '10.90.0.120:30500/xosproject/onos-synchronizer'
     tag: '8035085'
 fabric:
   image:
-    repository: '10.90.0.101:30500/xosproject/fabric-synchronizer'
+    repository: '10.90.0.120:30500/xosproject/fabric-synchronizer'
     tag: '8035085'
 volt:
   image:
-    repository: '10.90.0.101:30500/xosproject/volt-synchronizer'
+    repository: '10.90.0.120:30500/xosproject/volt-synchronizer'
     tag: '8035085'
 fabric-crossconnect:
   image:
-    repository: '10.90.0.101:30500/xosproject/fabric-crossconnect-synchronizer'
+    repository: '10.90.0.120:30500/xosproject/fabric-crossconnect-synchronizer'
     tag: '8035085'
 # sadis-server:
 #   image:
@@ -83,7 +83,7 @@ fabric-crossconnect:
 # in workflows/att-workflow
 att-workflow-driver:
   image:
-    repository: '10.90.0.101:30500/xosproject/att-workflow-driver-synchronizer'
+    repository: '10.90.0.120:30500/xosproject/att-workflow-driver-synchronizer'
     tag: '8035085'
 
 # ONOS config
