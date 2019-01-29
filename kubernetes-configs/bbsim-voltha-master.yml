@@ -13,34 +13,31 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Automated deployment configuration for installing latest/master of bbsim+voltha
+# Automated deployment configuration for installing latest/master of bbsim+voltha1.6 (currently not supported with voltha-master)
 
 # This file is used to optionally customize helm charts installations
-images:
-  envoy_for_etcd:
-    tag: 'latest'
 
+images:
   netconf:
-    tag: 'latest'
+    repository: 'voltha/voltha-netconf'
+    tag: 'voltha-1.6'
 
   ofagent:
-    tag: 'latest'
+    repository: 'voltha/voltha-ofagent'
+    tag: 'voltha-1.6'
 
   vcli:
-    tag: 'latest'
+    repository: 'voltha/voltha-cli'
+    tag: 'voltha-1.6'
 
   vcore:
-    tag: 'latest'
+    repository: 'voltha/voltha-voltha'
+    tag: 'voltha-1.6'
 
-# ONOS applications
-aaaAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/aaa/1.8.0-SNAPSHOT/aaa-1.8.0-20181129.184849-116.oar"
-aaaAppVersion: "1.8.0.SNAPSHOT"
+  envoy_for_etcd:
+    repository: 'voltha/voltha-envoy'
+    tag: 'voltha-1.6'
 
-sadisAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/sadis-app/2.2.0-SNAPSHOT/sadis-app-2.2.0-20181127.081727-156.oar"
-sadisAppVersion: "2.2.0.SNAPSHOT"
-
-dhcpl2relayAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/dhcpl2relay/1.5.0-SNAPSHOT/dhcpl2relay-1.5.0-20181129.184928-160.oar"
-dhcpl2relayAppVersion: "1.5.0.SNAPSHOT"
-
-oltAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/olt-app/2.1.0-SNAPSHOT/olt-app-2.1.0-20181129.184957-41.oar"
-oltAppVersion: "2.1.0.SNAPSHOT"
+  alarm_generator:
+    repository: 'voltha/voltha-alarm-generator'
+    tag: 'voltha-1.6'
