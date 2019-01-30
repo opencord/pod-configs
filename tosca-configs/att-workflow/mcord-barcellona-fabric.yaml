@@ -56,7 +56,7 @@ topology_template:
     port#bng_port:
       type: tosca.nodes.SwitchPort
       properties:
-        portId: 31
+        portId: 36
       requirements:
         - switch:
             node: switch#leaf_1
@@ -68,7 +68,7 @@ topology_template:
       type: tosca.nodes.BNGPortMapping
       properties:
         s_tag: any
-        switch_port: 31
+        switch_port: 36
 
     # DHCP L2 Relay config
     onos_app#dhcpl2relay:
@@ -85,7 +85,7 @@ topology_template:
           {
             "dhcpl2relay" : {
               "useOltUplinkForServerPktInOut" : false,
-              "dhcpServerConnectPoints" : [ "of:0000000000000001/31" ]
+              "dhcpServerConnectPoints" : [ "of:0000000000000001/36" ]
             }
           }
       requirements:
