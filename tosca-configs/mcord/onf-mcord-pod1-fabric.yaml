@@ -25,6 +25,71 @@ description: Configures the ONF SEBA POD with AT&T workflow
 
 topology_template:
   node_templates:
+
+    # Site deployment
+    mySite:
+      type: tosca.nodes.Site
+      properties:
+          name: mysite
+          login_base: opencord
+          abbreviated_name: ms
+          site_url: http://opencord.org/
+          hosts_nodes: true
+
+    myDeployment:
+      type: tosca.nodes.Deployment
+      properties:
+        name: mydeployment
+
+    site_deployment:
+      type: tosca.nodes.SiteDeployment
+      requirements:
+        - site:
+            node: mySite
+            relationship: tosca.relationships.BelongsToOne
+        - deployment:
+            node: myDeployment
+            relationship: tosca.relationships.BelongsToOne
+
+    # compute nodes
+    node#node1:
+        type: tosca.nodes.Node
+        properties:
+            dataPlaneIntf: eth2
+            dataPlaneIp: 118.0.0.201
+            name: node1
+        requirements:
+            - site_deployment:
+                node: site_deployment
+                relationship: tosca.relationships.BelongsToOne
+
+    node#node2:
+        type: tosca.nodes.Node
+        properties:
+            dataPlaneIntf: eth2
+            dataPlaneIp: 118.0.0.202
+            name: node2
+        requirements:
+            - site_deployment:
+                node: site_deployment
+                relationship: tosca.relationships.BelongsToOne
+
+    node#node3:
+        type: tosca.nodes.Node
+        properties:
+            dataPlaneIntf: eth2
+            dataPlaneIp: 118.0.0.203
+            name: node3
+        requirements:
+            - site_deployment:
+                node: site_deployment
+                relationship: tosca.relationships.BelongsToOne
+
+    vroutersi#calico:
+        type: tosca.nodes.VRouterServiceInstance
+        properties:
+          name: calico
+
     # Fabric configuration
     switch#leaf_1:
       type: tosca.nodes.Switch
