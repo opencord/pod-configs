@@ -20,6 +20,12 @@ imports:
   - custom_types/switchport.yaml
   - custom_types/portinterface.yaml
   - custom_types/fabricipaddress.yaml
+  - custom_types/site.yaml
+  - custom_types/deployment.yaml
+  - custom_types/sitedeployment.yaml
+  - custom_types/node.yaml
+  - custom_types/vrouterservice.yaml
+  - custom_types/vrouterserviceinstance.yaml
 
 description: Configures the ONF SEBA POD with AT&T workflow
 
@@ -84,6 +90,19 @@ topology_template:
             - site_deployment:
                 node: site_deployment
                 relationship: tosca.relationships.BelongsToOne
+
+    # static routes
+
+    service#vrouter:
+        type: tosca.nodes.VRouterService
+        properties:
+            name: vrouter
+            must-exist: true
+        requirements:
+            - owner:
+                node: service#vrouter
+                relationship: tosca.relationships.BelongsToOne
+
 
     vroutersi#calico:
         type: tosca.nodes.VRouterServiceInstance
