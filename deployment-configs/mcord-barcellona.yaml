@@ -35,3 +35,11 @@ fabric_switches:
     ip: '192.168.69.4'
     user: 'root'
     pass: 'onl'
+
+olts:
+  -
+    name: 'edgecore'
+    ip: '192.168.69.5'
+    user: 'root'
+    pass: 'onl'
+    fortygig: 'true'
