@@ -161,6 +161,16 @@ topology_template:
             node: interface#port_1_interface
             relationship: tosca.relationships.BelongsToOne
 
+    ip#port_1_ip_3:
+      type: tosca.nodes.FabricIpAddress
+      properties:
+        ip: 116.0.0.254/24
+        description: node_1_ip_3
+      requirements:
+        - interface:
+            node: interface#port_1_interface
+            relationship: tosca.relationships.BelongsToOne
+
     # Node2 Port
     port#node_2_port:
       type: tosca.nodes.SwitchPort
@@ -201,6 +211,16 @@ topology_template:
             node: interface#port_2_interface
             relationship: tosca.relationships.BelongsToOne
 
+    ip#port_2_ip_3:
+      type: tosca.nodes.FabricIpAddress
+      properties:
+        ip: 116.0.0.254/24
+        description: node_2_ip_3
+      requirements:
+        - interface:
+            node: interface#port_2_interface
+            relationship: tosca.relationships.BelongsToOne
+
     # Node3 Port
     port#node_3_port:
       type: tosca.nodes.SwitchPort
@@ -235,6 +255,16 @@ topology_template:
       type: tosca.nodes.FabricIpAddress
       properties:
         ip: 119.0.0.254/24
+        description: node_3_ip_2
+      requirements:
+        - interface:
+            node: interface#port_3_interface
+            relationship: tosca.relationships.BelongsToOne
+
+    ip#port_3_ip_3:
+      type: tosca.nodes.FabricIpAddress
+      properties:
+        ip: 116.0.0.254/24
         description: node_3_ip_2
       requirements:
         - interface:

@@ -20,6 +20,12 @@ imports:
   - custom_types/switchport.yaml
   - custom_types/portinterface.yaml
   - custom_types/fabricipaddress.yaml
+  - custom_types/site.yaml
+  - custom_types/deployment.yaml
+  - custom_types/sitedeployment.yaml
+  - custom_types/node.yaml
+  - custom_types/vrouterservice.yaml
+  - custom_types/vrouterserviceinstance.yaml
 
 description: Configures the ONF SEBA POD with AT&T workflow
 
@@ -106,7 +112,7 @@ topology_template:
     port#node_1_port:
       type: tosca.nodes.SwitchPort
       properties:
-        portId: 34
+        portId: 33
       requirements:
         - switch:
             node: switch#leaf_1
@@ -142,11 +148,21 @@ topology_template:
             node: interface#port_1_interface
             relationship: tosca.relationships.BelongsToOne
 
+    ip#port_1_ip_3:
+      type: tosca.nodes.FabricIpAddress
+      properties:
+        ip: 116.0.0.254/24
+        description: node_1_ip_3
+      requirements:
+        - interface:
+            node: interface#port_1_interface
+            relationship: tosca.relationships.BelongsToOne
+
     # Node2 Port
     port#node_2_port:
       type: tosca.nodes.SwitchPort
       properties:
-        portId: 35
+        portId: 34
       requirements:
         - switch:
             node: switch#leaf_1
@@ -182,11 +198,21 @@ topology_template:
             node: interface#port_2_interface
             relationship: tosca.relationships.BelongsToOne
 
+    ip#port_2_ip_3:
+      type: tosca.nodes.FabricIpAddress
+      properties:
+        ip: 116.0.0.254/24
+        description: node_2_ip_3
+      requirements:
+        - interface:
+            node: interface#port_2_interface
+            relationship: tosca.relationships.BelongsToOne
+
     # Node3 Port
     port#node_3_port:
       type: tosca.nodes.SwitchPort
       properties:
-        portId: 36
+        portId: 35
       requirements:
         - switch:
             node: switch#leaf_1
@@ -221,3 +247,14 @@ topology_template:
         - interface:
             node: interface#port_3_interface
             relationship: tosca.relationships.BelongsToOne
+
+    ip#port_3_ip_3:
+      type: tosca.nodes.FabricIpAddress
+      properties:
+        ip: 116.0.0.254/24
+        description: node_3_ip_2
+      requirements:
+        - interface:
+            node: interface#port_3_interface
+            relationship: tosca.relationships.BelongsToOne
+
