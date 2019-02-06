@@ -1,4 +1,10 @@
 ---
+
+vrouter:
+  image:
+    repository: 'matteoscandolo/vrouter-synchronizer'
+    tag: 'latest'
+    
 mcord-control-plane:
   hss:
     images:

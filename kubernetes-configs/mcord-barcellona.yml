@@ -2,6 +2,11 @@
 global:
   registry: '192.168.69.1:30500/'
 
+vrouter:
+  image:
+    repository: 'matteoscandolo/vrouter-synchronizer'
+    tag: 'latest'
+
 accelleran:
   images:
     nats: "192.168.69.1:30500/ngick8stesting/vbbu-nats:20190121"
