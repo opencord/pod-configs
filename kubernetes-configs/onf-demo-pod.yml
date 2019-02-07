@@ -1,93 +1,34 @@
-global:
-  registry: 192.168.100.1:30500/
+---
 
-image: 192.168.100.1:30500/confluentinc/cp-kafka
-imageTag: 4.1.2-2
-
-images:
-  vcore:
-    tag: '1.6'
-  
-  vcli:
-    tag: '1.6'
-  
-  ofagent:
-    tag: '1.6'
-  
-  netconf:
-    tag: '1.6'
-  
-  envoy_for_etcd:
-    tag: '1.6'
-  
-  alarm_generator:
-    tag: '1.6'
-
-zookeeper:
+vrouter:
   image:
-    repository: 192.168.100.1:30500/gcr.io/google_samples/k8szk
+    repository: 'matteoscandolo/vrouter-synchronizer'
+    tag: 'latest'
 
-etcd-cluster:
-  spec:
-    repository: 192.168.100.1:30500/quay.io/coreos/etcd
-  pod:
-    busyboxImage: 192.168.100.1:30500/busybox:1.28.1-glibc
+mcord-control-plane:
+  hss:
+    images:
+      init: "10.90.100.1:30500/ngick8stesting/c3po-cassandra:5e2eaf6"
+      hss: "192.168.100.1:30500/ngick8stesting/c3po-hss:5e2eaf6"
+  mme:
+    images:
+      init: "192.168.100.1:30500/ngick8stesting/c3po-mmeinit:5e2eaf6"
+      mme: "192.168.100.1:30500/ngick8stesting/c3po-mme:5e2eaf6"
+  ngic_cp:
+    images:
+      init: "192.168.100.1:30500/ngick8stesting/c3po-mmeinit:5e2eaf6"
+      cp: "192.168.100.1:30500/ngick8stesting/ngic-cp:690f418"
 
-etcdOperator:
-  image:
-    repository: 192.168.100.1:30500/quay.io/coreos/etcd-operator
-backupOperator:
-  image:
-    repository: 192.168.100.1:30500/quay.io/coreos/etcd-operator
-restoreOperator:
-  image:
-    repository: 192.168.100.1:30500/quay.io/coreos/etcd-operator
+mcord-data-plane:
+  ngic_dp:
+    images:
+      init: "192.168.100.1:30500/ngick8stesting/c3po-mmeinit:5e2eaf6"
+      dp: "192.168.100.1:30500/ngick8stesting/ngic-dp:690f418"
 
-grafana:
-  image:
-    repository: 192.168.100.1:30500/grafana/grafana
-  sidecar:
-    image: 192.168.100.1:30500/kiwigrid/k8s-sidecar:0.0.3
-
-prometheus:
-  server:
-    image:
-      repository: 192.168.100.1:30500/prom/prometheus
-  alertmanager:
-    image:
-      repository: 192.168.100.1:30500/prom/alertmanager
-  configmapReload:
-    image:
-      repository: 192.168.100.1:30500/jimmidyson/configmap-reload
-  kubeStateMetrics:
-    image:
-      repository: 192.168.100.1:30500/quay.io/coreos/kube-state-metrics
-  nodeExporter:
-    image:
-      repository: 192.168.100.1:30500/prom/node-exporter
-  pushgateway:
-    image:
-      repository: 192.168.100.1:30500/prom/pushgateway
-  initChownData:
-    image:
-      repository: 192.168.100.1:30500/busybox
-
-elasticsearch:
-  image:
-    repository: 192.168.100.1:30500/docker.elastic.co/elasticsearch/elasticsearch-oss
-  initImage:
-    repository: 192.168.100.1:30500/busybox
-
-kibana:
-  image:
-    repository: 192.168.100.1:30500/docker.elastic.co/kibana/kibana-oss
-
-logstash:
-  image:
-    repository: 192.168.100.1:30500/docker.elastic.co/logstash/logstash-oss
-
-oltAppUrl: http://192.168.100.1:30160/olt.oar
-sadisAppUrl: http://192.168.100.1:30160/sadis.oar
-dhcpL2RelayAppUrl: http://192.168.100.1:30160/dhcpl2relay.oar
-aaaAppUrl: http://192.168.100.1:30160/aaa.oar
-kafkaAppUrl: http://192.168.100.1:30160/kafka.oar
+mcord-bbu:
+  accelleran:
+    images:
+      init: "ngick8stesting/c3po-mmeinit"
+      nats: "192.168.100.1:30500/accelleran/vbbu-nats:20190121"
+      redis: "192.168.100.1:30500/accelleran/vbbu-redis:20190121"
+      bbu: "192.168.100.1:30500/accelleran/vran-l3-fdd:onf-dns"
