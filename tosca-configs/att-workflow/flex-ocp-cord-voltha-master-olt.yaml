@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# curl -H "xos-username: admin@opencord.org" -H "xos-password: letmein" -X POST --data-binary @flex-pod1-olt-olt.yaml http://10.192.4.241:30007/run
+# curl -H "xos-username: admin@opencord.org" -H "xos-password: letmein" -X POST --data-binary @flex-pod1-olt-olt.yaml http://10.192.20.45:30007/run
 
 tosca_definitions_version: tosca_simple_yaml_1_0
 imports:
@@ -34,7 +34,7 @@ topology_template:
       properties:
         name: olt-1
         device_type: openolt
-        host: 10.192.4.206
+        host: 10.192.20.206
         port: 9191
         switch_datapath_id: of:0000cc37ab5b6da8
         switch_port: "7"
