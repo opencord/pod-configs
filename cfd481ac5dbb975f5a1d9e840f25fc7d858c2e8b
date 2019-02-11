@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "38ae596f_d97633aa",
+        "filename": "deployment-configs/flex-ocp-cord-voltha-master.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1000054
+      },
+      "writtenOn": "2019-02-11T21:25:21Z",
+      "side": 1,
+      "message": "ens2f0",
+      "range": {
+        "startLine": 54,
+        "startChar": 20,
+        "endLine": 54,
+        "endChar": 25
+      },
+      "revId": "cfd481ac5dbb975f5a1d9e840f25fc7d858c2e8b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
