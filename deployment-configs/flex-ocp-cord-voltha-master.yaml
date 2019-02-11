@@ -51,7 +51,7 @@ hosts:
     ip: '10.192.20.61'
     user: 'cord'
     pass: 'cord'
-    dp_iface_name: 'en2f0'
+    dp_iface_name: 'ens2f0'
     dp_iface_ip: '10.8.2.1'
     dp_iface_gateway: '10.8.2.254'
   dst:
