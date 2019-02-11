@@ -48,17 +48,17 @@ olts:
 
 hosts:
   src:
-    ip: '10.192.4.61'
-    user: 'cluser'
-    pass: 'cloudlabs'
-    dp_iface_name: 'enp4s0f1'
+    ip: '10.192.20.61'
+    user: 'cord'
+    pass: 'cord'
+    dp_iface_name: 'en2f0'
     dp_iface_ip: '10.8.2.1'
     dp_iface_gateway: '10.8.2.254'
   dst:
-    ip: '10.192.4.62'
+    ip: '10.192.20.198'
     user: 'cord'
     pass: 'cord'
-    dp_iface_name: 'ens3'
+    dp_iface_name: 'ens3d1'
     dp_iface_ip_qinq: '10.8.2.100'
     dp_iface_ip: '10.8.3.1'
     dp_iface_gateway: '10.8.3.254'
