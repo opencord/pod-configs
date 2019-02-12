@@ -16,7 +16,7 @@
 
 ---
 
-kube_config: 'flex-ocp-cord-voltha-master.conf'
+kube_config: 'flex-ocp-cord-voltha16.conf'
 
 nodes:
   -
