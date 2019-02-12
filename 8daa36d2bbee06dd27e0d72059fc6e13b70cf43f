@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9642b485_30979533",
+        "filename": "tosca-configs/att-workflow/flex-ocp-cord-voltha16-fabric.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 1000054
+      },
+      "writtenOn": "2019-02-12T19:46:43Z",
+      "side": 1,
+      "message": "000000000ac014ce",
+      "range": {
+        "startLine": 108,
+        "startChar": 22,
+        "endLine": 108,
+        "endChar": 38
+      },
+      "revId": "8daa36d2bbee06dd27e0d72059fc6e13b70cf43f",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
