@@ -1,3 +1,4 @@
 ---
-global:
-  registry: '192.168.87.2:30500/'
+wowza:
+  images:
+    wowza_image: "192.168.87.2:30500/wowzamedia/wowza-streaming-engine-linux"
