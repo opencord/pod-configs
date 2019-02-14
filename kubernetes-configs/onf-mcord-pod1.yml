@@ -1,5 +1,8 @@
 ---
 
+log_agent:
+    enabled: false
+
 vrouter:
   image:
     repository: 'matteoscandolo/vrouter-synchronizer'

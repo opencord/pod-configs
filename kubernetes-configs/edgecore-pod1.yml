@@ -1,3 +1,86 @@
 ---
-# SEBA Values
+# Create file to override the default helm charts values (call it extend.yaml)
+global:
+  registry: 192.168.99.181:30500/
 
+# CORD platform overrides
+kafka:
+  image: 192.168.99.181:30500/confluentinc/cp-kafka
+  imageTag: 4.1.2-2
+  configurationOverrides:
+    zookeeper.connection.timeout.ms: 60000
+    zookeeper.session.timeout.ms: 60000
+
+  zookeeper:
+    image:
+      repository: 192.168.99.181:30500/gcr.io/google_samples/k8szk
+
+logging:
+  elasticsearch:
+    image:
+      repository: 192.168.99.181:30500/docker.elastic.co/elasticsearch/elasticsearch-oss
+    initImage:
+      repository: 192.168.99.181:30500/busybox
+
+  kibana:
+    image:
+      repository: 192.168.99.181:30500/docker.elastic.co/kibana/kibana-oss
+
+  logstash:
+    image:
+      repository: 192.168.99.181:30500/docker.elastic.co/logstash/logstash-oss
+
+nem-monitoring:
+  grafana:
+    image:
+      repository: 192.168.99.181:30500/grafana/grafana
+    sidecar:
+      image: 192.168.99.181:30500/kiwigrid/k8s-sidecar:0.0.3
+
+  prometheus:
+    server:
+      image:
+        repository: 192.168.99.181:30500/prom/prometheus
+    alertmanager:
+      image:
+        repository: 192.168.99.181:30500/prom/alertmanager
+    configmapReload:
+      image:
+        repository: 192.168.99.181:30500/jimmidyson/configmap-reload
+    kubeStateMetrics:
+      image:
+        repository: 192.168.99.181:30500/quay.io/coreos/kube-state-metrics
+    nodeExporter:
+      image:
+        repository: 192.168.99.181:30500/prom/node-exporter
+    pushgateway:
+      image:
+        repository: 192.168.99.181:30500/prom/pushgateway
+    initChownData:
+      image:
+        repository: 192.168.99.181:30500/busybox
+
+# SEBA specific overrides
+voltha:
+  etcd-cluster:
+    spec:
+      repository: 192.168.99.181:30500/quay.io/coreos/etcd
+    pod:
+      busyboxImage: 192.168.99.181:30500/busybox:1.28.1-glibc
+
+  etcdOperator:
+    image:
+      repository: 192.168.99.181:30500/quay.io/coreos/etcd-operator
+  backupOperator:
+    image:
+      repository: 192.168.99.181:30500/quay.io/coreos/etcd-operator
+  restoreOperator:
+    image:
+      repository: 192.168.99.181:30500/quay.io/coreos/etcd-operator
+
+seba-services:
+  oltAppUrl: http://192.168.99.181:30160/olt.oar
+  sadisAppUrl: http://192.168.99.181:30160/sadis.oar
+  dhcpL2RelayAppUrl: http://192.168.99.181:30160/dhcpl2relay.oar
+  aaaAppUrl: http://192.168.99.181:30160/aaa.oar
+  kafkaAppUrl: http://192.168.99.181:30160/kafka.oar
