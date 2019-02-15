@@ -90,11 +90,20 @@ topology_template:
             - site_deployment:
                 node: site_deployment
                 relationship: tosca.relationships.BelongsToOne
+    service#vrouter:
+      type: tosca.nodes.VRouterService
+      properties:
+        name: vrouter
+        must-exist: true
 
     vroutersi#calico:
         type: tosca.nodes.VRouterServiceInstance
         properties:
           name: calico
+        requirements:
+          - owner:
+              node: service#vrouter
+              relationship: tosca.relationships.BelongsToOne
 
     # Fabric configuration
     switch#leaf_1:
@@ -257,4 +266,3 @@ topology_template:
         - interface:
             node: interface#port_3_interface
             relationship: tosca.relationships.BelongsToOne
-
