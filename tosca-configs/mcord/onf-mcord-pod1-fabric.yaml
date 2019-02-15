@@ -113,7 +113,7 @@ topology_template:
         ipv4Loopback: 192.168.0.204
         ipv4NodeSid: 214
         isEdgeRouter: true
-        name: Agg Switch
+        name: AGG_SWITCH
         ofId: of:0000000000000001
         routerMac: 54:87:de:ad:be:ef
 
