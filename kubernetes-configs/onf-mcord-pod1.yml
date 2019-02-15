@@ -13,22 +13,20 @@ vrouter:
     repository: 'matteoscandolo/vrouter-synchronizer'
     tag: 'latest'
 
-mcord-control-plane:
-  hss:
-    images:
-      init: "10.90.0.131:30500/ngick8stesting/c3po-cassandra:5e2eaf6"
-      hss: "10.90.0.131:30500/ngick8stesting/c3po-hss:5e2eaf6"
-  mme:
-    images:
-      init: "10.90.0.131:30500/ngick8stesting/c3po-mmeinit:5e2eaf6"
-      mme: "10.90.0.131:30500/ngick8stesting/c3po-mme:5e2eaf6"
-  ngic_cp:
-    images:
-      init: "10.90.0.131:30500/ngick8stesting/c3po-mmeinit:5e2eaf6"
-      cp: "10.90.0.131:30500/ngick8stesting/ngic-cp:690f418"
-
-mcord-data-plane:
-  ngic_dp:
-    images:
-      init: "10.90.0.131:30500/ngick8stesting/c3po-mmeinit:5e2eaf6"
-      dp: "10.90.0.131:30500/ngick8stesting/ngic-dp:690f418"
+# hss:
+#   images:
+#     init: "10.90.0.131:30500/ngick8stesting/c3po-cassandra:5e2eaf6"
+#     hss: "10.90.0.131:30500/ngick8stesting/c3po-hss:5e2eaf6"
+# mme:
+#   images:
+#     init: "10.90.0.131:30500/ngick8stesting/c3po-mmeinit:5e2eaf6"
+#     mme: "10.90.0.131:30500/ngick8stesting/c3po-mme:5e2eaf6"
+# ngic_cp:
+#   images:
+#     init: "10.90.0.131:30500/ngick8stesting/c3po-mmeinit:5e2eaf6"
+#     cp: "10.90.0.131:30500/ngick8stesting/ngic-cp:690f418"
+#
+# ngic_dp:
+#   images:
+#     init: "10.90.0.131:30500/ngick8stesting/c3po-mmeinit:5e2eaf6"
+#     dp: "10.90.0.131:30500/ngick8stesting/ngic-dp:690f418"
