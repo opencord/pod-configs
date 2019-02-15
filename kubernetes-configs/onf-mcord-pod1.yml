@@ -1,4 +1,9 @@
 ---
+xos-gui:
+  images:
+    xos_gui:
+      repository: 'matteoscandolo/xos-gui'
+      tag: "mwc"
 
 log_agent:
     enabled: false
@@ -7,7 +12,7 @@ vrouter:
   image:
     repository: 'matteoscandolo/vrouter-synchronizer'
     tag: 'latest'
-    
+
 mcord-control-plane:
   hss:
     images:
