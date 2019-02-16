@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "82ee71b7_9eecd13a",
+        "filename": "tosca-configs/mcord/onf-mcord-pod1-fabric.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 1000017
+      },
+      "writtenOn": "2019-02-16T23:32:52Z",
+      "side": 1,
+      "message": "here should be rru",
+      "range": {
+        "startLine": 134,
+        "startChar": 14,
+        "endLine": 134,
+        "endChar": 20
+      },
+      "revId": "e8ab25cbc90cd9571c787674c57358637776cdf0",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
