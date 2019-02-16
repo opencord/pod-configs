@@ -13,6 +13,11 @@ vrouter:
     repository: 'matteoscandolo/vrouter-synchronizer'
     tag: 'latest'
 
+progran:
+  image:
+    repository: '10.90.0.131:30500/xosproject/progran-synchronizer'
+    tag: 'candidate'
+
 # hss:
 #   images:
 #     init: "10.90.0.131:30500/ngick8stesting/c3po-cassandra:5e2eaf6"
