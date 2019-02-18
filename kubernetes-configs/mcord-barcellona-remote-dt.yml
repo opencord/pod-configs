@@ -2,3 +2,9 @@
 wowza:
   images:
     wowza_image: "192.168.87.2:30500/wowzamedia/wowza-streaming-engine-linux"
+
+hssdb_node_selector: node1
+hss_node_selector: node1
+mme_node_selector: node1
+spgwc_node_selector: node1
+cdn_node_selector: node1
