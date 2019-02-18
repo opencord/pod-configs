@@ -1,0 +1,143 @@
+# Copyright 2017-present Open Networking Foundation
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# curl -H "xos-username: admin@opencord.org" -H "xos-password: letmein" -X POST --data-binary @onf-mcord-pod1-progran.yaml http://10.90.0.131:30007/run
+
+tosca_definitions_version: tosca_simple_yaml_1_0
+imports:
+  - custom_types/handover.yaml
+  - custom_types/enodeb.yaml
+  - custom_types/serviceinstancelink.yaml
+  - custom_types/progranservice.yaml
+  - custom_types/progranserviceinstance.yaml
+  - custom_types/mcordsubscriberservice.yaml
+  - custom_types/mcordsubscriberinstance.yaml
+
+topology_template:
+  node_templates:
+
+    service#progran:
+      type: tosca.nodes.ProgranService
+      properties:
+        name: progran
+        must-exist: true
+
+    service#mcord:
+      type: tosca.nodes.MCordSubscriberService
+      properties:
+        name: mcord
+        must-exist: true
+
+    handover#barcelona-handover:
+      type: tosca.nodes.Handover
+      properties:
+        name: barcelona-handover
+        A3offset: 1
+        A3TriggerQuantity: 0
+        A5Thresh1Rsrp: 74
+        A5Thresh1Rsrq: 10
+        A5Thresh2Rsrp: 78
+        A5Thresh2Rsrq: 10
+        A5TriggerQuantity: 0
+        A5TriggerType: 0
+        HysteresisA3: 0
+        HysteresisA5: 1
+
+    enodeb#accelaran:
+      type: tosca.nodes.ENodeB
+      properties:
+        description: accelaran
+        enbId: "1"
+        ipAddr: 0.0.0.0
+
+    # SUBSCRIBERS
+    imsi#IMSI1:
+      type: tosca.nodes.MCordSubscriberInstance
+      properties:
+        imsi_number: "302720100000420"
+        name: IMSI1
+        ue_status: "1"
+      requirements:
+        - owner:
+            node: service#mcord
+            relationship: tosca.relationships.BelongsToOne
+
+    imsi#IMSI2:
+      type: tosca.nodes.MCordSubscriberInstance
+      properties:
+        imsi_number: "302720100000421"
+        name: IMSI2
+        ue_status: "1"
+      requirements:
+        - owner:
+            node: service#mcord
+            relationship: tosca.relationships.BelongsToOne
+
+    profile#video-slice:
+      type: tosca.nodes.ProgranServiceInstance
+      properties:
+        name: video-slice
+        CellIndividualOffset: 0
+        DlSchedType: RR
+        DlAllocRBRate: 50
+        UlSchedType: RR
+        UlAllocRBRate: 50
+        mmeip: 10.90.0.152
+        mmeport: "31412"
+      requirements:
+        - owner:
+            node: service#progran
+            relationship: tosca.relationships.BelongsToOne
+        - handover:
+            node: handover#barcelona-handover
+            relationship: tosca.relationships.BelongsToOne
+
+    profile#download-slice:
+      type: tosca.nodes.ProgranServiceInstance
+      properties:
+        name: download-slice
+        CellIndividualOffset: 0
+        DlSchedType: RR
+        DlAllocRBRate: 20
+        UlSchedType: RR
+        UlAllocRBRate: 20
+        mmeip: 10.90.0.152
+        mmeport: "31412"
+      requirements:
+        - owner:
+            node: service#progran
+            relationship: tosca.relationships.BelongsToOne
+        - handover:
+            node: handover#barcelona-handover
+            relationship: tosca.relationships.BelongsToOne
+
+    imsi2_to_video_slice:
+      type: tosca.nodes.ServiceInstanceLink
+      requirements:
+        - provider_service_instance:
+            node: profile#video-slice
+            relationship: tosca.relationships.BelongsToOne
+        - subscriber_service_instance:
+            node: imsi#IMSI2
+            relationship: tosca.relationships.BelongsToOne
+
+    imsi1_to_download_slice:
+      type: tosca.nodes.ServiceInstanceLink
+      requirements:
+        - provider_service_instance:
+            node: profile#download-slice
+            relationship: tosca.relationships.BelongsToOne
+        - subscriber_service_instance:
+            node: imsi#IMSI1
+            relationship: tosca.relationships.BelongsToOne
