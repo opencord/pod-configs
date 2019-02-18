@@ -32,3 +32,15 @@ mcord-bbu:
       nats: "192.168.100.1:30500/accelleran/vbbu-nats:20190121"
       redis: "192.168.100.1:30500/accelleran/vbbu-redis:20190121"
       bbu: "192.168.100.1:30500/accelleran/vran-l3-fdd:onf-dns"
+
+# For CDN
+cdn_node_selector: node2
+
+# Old CDN
+remote_vlc:
+  video_quality: 360
+
+# New CDN
+remote_streaming:
+  video_quality: 360
+  nginx_ip: 10.90.0.131

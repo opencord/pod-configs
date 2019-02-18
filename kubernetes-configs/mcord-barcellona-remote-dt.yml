@@ -9,3 +9,13 @@ hss_node_selector: node1
 mme_node_selector: node1
 spgwc_node_selector: node1
 cdn_node_selector: node1
+
+# Old CDN
+remote_vlc:
+  video_quality:360
+
+# New CDN
+# Need to set up port forwarding from mgmt node to one of the K8S nodes
+remote_streaming:
+  video_quality: 360
+  nginx_ip: 37.34.64.22

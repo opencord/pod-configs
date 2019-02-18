@@ -35,3 +35,8 @@ progran:
 #   images:
 #     init: "10.90.0.131:30500/ngick8stesting/c3po-mmeinit:5e2eaf6"
 #     dp: "10.90.0.131:30500/ngick8stesting/ngic-dp:690f418"
+
+# For CDN
+cdn_node_selector: node3
+local_streaming:
+  video_quality: 360
