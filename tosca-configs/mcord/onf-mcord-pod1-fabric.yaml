@@ -131,7 +131,7 @@ topology_template:
       type: tosca.nodes.PortInterface
       properties:
         vlanUntagged: 20
-        name: node_1
+        name: rru
       requirements:
         - port:
             node: port#rru_port
