@@ -54,10 +54,10 @@ topology_template:
         HysteresisA3: 0
         HysteresisA5: 1
 
-    enodeb#accelaran:
+    enodeb#accelleran:
       type: tosca.nodes.ENodeB
       properties:
-        description: accelaran
+        description: accelleran
         enbId: "1"
         ipAddr: 0.0.0.0
 
@@ -89,6 +89,7 @@ topology_template:
       properties:
         name: video-slice
         CellIndividualOffset: 0
+        DlWifiRate: 0
         DlSchedType: RR
         DlAllocRBRate: 50
         UlSchedType: RR
@@ -103,7 +104,7 @@ topology_template:
             node: handover#barcelona-handover
             relationship: tosca.relationships.BelongsToOne
         - enodeb:
-            node: enodeb#accelaran
+            node: enodeb#accelleran
             relationship: tosca.relationships.BelongsToOne
 
     profile#download-slice:
@@ -111,6 +112,7 @@ topology_template:
       properties:
         name: download-slice
         CellIndividualOffset: 0
+        DlWifiRate: 0
         DlSchedType: RR
         DlAllocRBRate: 20
         UlSchedType: RR
@@ -125,7 +127,7 @@ topology_template:
             node: handover#barcelona-handover
             relationship: tosca.relationships.BelongsToOne
         - enodeb:
-            node: enodeb#accelaran
+            node: enodeb#accelleran
             relationship: tosca.relationships.BelongsToOne
 
     imsi2_to_video_slice:
