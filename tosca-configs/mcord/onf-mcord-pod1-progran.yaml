@@ -102,6 +102,9 @@ topology_template:
         - handover:
             node: handover#barcelona-handover
             relationship: tosca.relationships.BelongsToOne
+        - enodeb:
+            node: enodeb#accelaran
+            relationship: tosca.relationships.BelongsToOne
 
     profile#download-slice:
       type: tosca.nodes.ProgranServiceInstance
@@ -120,6 +123,9 @@ topology_template:
             relationship: tosca.relationships.BelongsToOne
         - handover:
             node: handover#barcelona-handover
+            relationship: tosca.relationships.BelongsToOne
+        - enodeb:
+            node: enodeb#accelaran
             relationship: tosca.relationships.BelongsToOne
 
     imsi2_to_video_slice:
