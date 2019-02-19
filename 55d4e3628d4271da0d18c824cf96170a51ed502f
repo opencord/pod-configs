@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "af6e17dd_4ca13396",
+        "filename": "kubernetes-configs/mcord-barcellona-remote-dt.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000324
+      },
+      "writtenOn": "2019-02-19T12:06:45Z",
+      "side": 1,
+      "message": "It should be changed to remote_streaming.\nI am sorry but the Google document for new CDN I sent had typos...\nNow it was fixed.\n\nNot remote_vlc but remote_streaming.",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 10
+      },
+      "revId": "55d4e3628d4271da0d18c824cf96170a51ed502f",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4083c074_ab028b77",
+        "filename": "kubernetes-configs/onf-demo-pod.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1000324
+      },
+      "writtenOn": "2019-02-19T12:06:45Z",
+      "side": 1,
+      "message": "It should be changed to remote_streaming.\nI am sorry but the Google document for new CDN I sent had typos...\nNow it was fixed.\n\nNot remote_vlc but remote_streaming.",
+      "range": {
+        "startLine": 38,
+        "startChar": 0,
+        "endLine": 38,
+        "endChar": 10
+      },
+      "revId": "55d4e3628d4271da0d18c824cf96170a51ed502f",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
