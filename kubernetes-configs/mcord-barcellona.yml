@@ -7,6 +7,16 @@ vrouter:
     repository: 'matteoscandolo/vrouter-synchronizer'
     tag: 'latest'
 
+progran:
+  image:
+    repository: 'matteoscandolo/progran-synchronizer'
+    tag: 'mwc'
+
+mcord-subscriber:
+  image:
+    repository: 'matteoscandolo/mcord-synchronizer'
+    tag: 'mwc'
+
 accelleran:
   images:
     nats: "192.168.69.1:30500/ngick8stesting/vbbu-nats:20190121"
