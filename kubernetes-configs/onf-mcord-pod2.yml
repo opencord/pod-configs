@@ -19,6 +19,16 @@ mcord-control-plane:
       init: "10.90.0.135:30500/ngick8stesting/c3po-mmeinit:5e2eaf6"
       cp: "10.90.0.135:30500/ngick8stesting/ngic-cp:690f418"
 
+progran:
+  image:
+    repository: 'matteoscandolo/progran-synchronizer'
+    tag: 'mwc'
+
+mcord-subscriber:
+  image:
+    repository: 'matteoscandolo/mcord-synchronizer'
+    tag: 'mwc'
+
 mcord-data-plane:
   ngic_dp:
     images:

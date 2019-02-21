@@ -15,9 +15,13 @@ vrouter:
 
 progran:
   image:
-    repository: '10.90.0.131:30500/xosproject/progran-synchronizer'
-    tag: 'candidate'
+    repository: 'matteoscandolo/progran-synchronizer'
+    tag: 'mwc'
 
+mcord-subscriber:
+  image:
+    repository: 'matteoscandolo/mcord-synchronizer'
+    tag: 'mwc'
 # hss:
 #   images:
 #     init: "10.90.0.131:30500/ngick8stesting/c3po-cassandra:5e2eaf6"
