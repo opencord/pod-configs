@@ -1,0 +1,8 @@
+Code-Review+1: Wei-Yu Chen <weiyu@opennetworking.org>
+Code-Review+2: Matteo Scandolo <teo@opennetworking.org>
+Verified+1: Matteo Scandolo <teo@opennetworking.org>
+Submitted-by: Matteo Scandolo <teo@opennetworking.org>
+Submitted-at: Thu, 21 Feb 2019 01:24:04 +0000
+Reviewed-on: https://gerrit.opencord.org/13001
+Project: pod-configs
+Branch: refs/heads/master
