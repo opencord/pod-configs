@@ -12,3 +12,7 @@ mcord-subscriber:
   image:
     repository: 'matteoscandolo/mcord-synchronizer'
     tag: 'mwc'
+
+nginx:
+  images:
+    nginx_image: "node1:30500/woojoong/nginx:onf-video-v3"
