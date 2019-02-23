@@ -6,7 +6,6 @@ vrouter:
   image:
     repository: 'matteoscandolo/vrouter-synchronizer'
     tag: 'latest'
-
 progran:
   image:
     repository: 'matteoscandolo/progran-synchronizer'
@@ -16,32 +15,3 @@ mcord-subscriber:
   image:
     repository: 'matteoscandolo/mcord-synchronizer'
     tag: 'mwc'
-
-accelleran:
-  images:
-    nats: "192.168.69.1:30500/ngick8stesting/vbbu-nats:20190121"
-    redis: "192.168.69.1:30500/ngick8stesting/vbbu-redis:20190121"
-    bbu: "192.168.69.1:30500/accelleran/vran-l3-fdd:onf-dns"
-
-zookeper:
-  image:
-    repository: '192.168.69.1:30500/google_samples/k8szk'
-    tag: v3
-
-etcd-operator:
-  etcdOperator:
-    image:
-      repository: 192.168.69.1:30500/quay.io/coreos/etcd-operator
-      tag: v0.7.0
-  etcdCluster:
-    image:
-      repository: 192.168.69.1:30500/quay.io/coreos/etcd
-      tag: v3.2.13
-  backupOperator:
-    image:
-      repository: 192.168.69.1:30500/quay.io/coreos/etcd-operator
-      tag: v0.7.0
-  restoreOperator:
-    image:
-      repository: 192.168.69.1:30500/quay.io/coreos/etcd-operator
-      tag: v0.7.0
