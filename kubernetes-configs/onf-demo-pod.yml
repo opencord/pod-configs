@@ -1,1 +1,10 @@
 ---
+
+fabric:
+  image:
+    repository: '10.90.0.120:30500/xosproject/fabric-synchronizer'
+    tag: '8035085'
+volt:
+  image:
+   repository: 'smbaker/volt-synchronizer'
+   tag: 'test'
