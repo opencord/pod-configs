@@ -44,7 +44,7 @@ topology_template:
     port#edgecore_olt_port:
       type: tosca.nodes.SwitchPort
       properties:
-        portId: 1 
+        portId: 1
         host_learning: false
       requirements:
         - switch:
@@ -66,7 +66,7 @@ topology_template:
     port#bng_port:
       type: tosca.nodes.SwitchPort
       properties:
-        portId: 109 
+        portId: 153
       requirements:
         - switch:
             node: switch#agg_sw
@@ -78,7 +78,7 @@ topology_template:
       type: tosca.nodes.BNGPortMapping
       properties:
         s_tag: any
-        switch_port: 109 
+        switch_port: 153
 
     # DHCP L2 Relay config
     onos_app#dhcpl2relay:
@@ -95,7 +95,7 @@ topology_template:
           {
             "dhcpl2relay" : {
               "useOltUplinkForServerPktInOut" : false,
-              "dhcpServerConnectPoints" : [ "of:0000000000000001/109" ]
+              "dhcpServerConnectPoints" : [ "of:0000000000000001/153" ]
             }
           }
       requirements:
@@ -144,4 +144,3 @@ topology_template:
         - owner:
             node: service#att
             relationship: tosca.relationships.BelongsToOne
-
