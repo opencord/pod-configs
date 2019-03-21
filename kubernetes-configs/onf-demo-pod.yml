@@ -1,1 +1,7 @@
 ---
+global:
+  registry: 192.168.100.1:30500/
+images:
+  bbsim:
+    repository: voltha/voltha-bbsim
+    tag: latest
