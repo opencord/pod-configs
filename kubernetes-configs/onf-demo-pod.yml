@@ -1,10 +1,10 @@
 ---
 
-fabric:
-  image:
-    repository: 'smbaker/fabric-synchronizer'
-    tag: 'test'
-volt:
-  image:
-    repository: 'smbaker/volt-synchronizer'
-    tag: 'test'
+#fabric:
+#  image:
+#    repository: 'smbaker/fabric-synchronizer'
+#    tag: 'test'
+#volt:
+#  image:
+#    repository: 'smbaker/volt-synchronizer'
+#    tag: 'test'
