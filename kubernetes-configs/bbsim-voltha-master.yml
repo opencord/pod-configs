@@ -1,5 +1,5 @@
 ---
-# Copyright 2017-present Open Networking Foundation
+# Copyright 2018-present Open Networking Foundation
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,32 +13,67 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Automated deployment configuration for installing latest/master of bbsim and voltha master
+# Values file for deploying SEBA with Ponsim
+# Use this file to deploy the service versions speecified in the Helm charts.
 
-# This file is used to optionally customize helm charts installations
+# voltha
+etcd-cluster:
+  clusterSize: 1
+
+# in workflow/att-workflow service chart
+att-workflow-driver:
+  # this is mandatory, it's needed to correctly configure the kafka endpoint
+  kafkaService: cord-kafka
+
+# in workflow/tt-workflow service chart
+tt-workflow-driver:
+  image:
+    repository: andybavier/test-image-synchronizer
+    tag: tt-workflow-driver
+
+  # this is mandatory, it's needed to correctly configure the kafka endpoint
+  kafkaService: cord-kafka
+
 images:
-  envoy_for_etcd:
-    tag: 'latest'
-
-  netconf:
-    tag: 'latest'
-
-  ofagent:
-    tag: 'latest'
-
-  vcli:
-    tag: 'latest'
-
   vcore:
     tag: 'latest'
-
+  vcli:
+    tag: 'latest'
+  ofagent:
+    tag: 'latest'
+  netconf:
+    tag: 'latest'
+  envoy_for_etcd:
+    tag: 'latest'
+  alarm_generator:
+    tag: 'latest'
+  freeradius:
+    tag: 'latest'
+  olt:
+    repository: "voltha/voltha-ponsim"
+    tag: "latest"
+  onu:
+    repository: "voltha/voltha-ponsim"
+    tag: "latest"
   onos:
-    tag: '1.13.9-rc'
-    pullPolicy: 'Never'
+#    tag: "1.13.8"
+    repository: "andybavier/test-image"
+    tag: "onos-1.13.9-rc3"
 
 
-# ONOS applications
-aaaAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/aaa/aaa-1.9.0-20190325.071418-15.oar"
+sadis-server:
+  image:
+    repository: "andybavier/sadis-server"
+    tag: "dev"
+
+# Grab https://gerrit.opencord.org/#/c/13330/
+rcord:
+  image:
+    tag: 'master'
+  bandwidthprofile:
+    name: "Default"
+
+aaaAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/aaa/1.9.0-SNAPSHOT/aaa-1.9.0-20190325.071418-15.oar"
 aaaAppVersion: "1.9.0.SNAPSHOT"
 
 sadisAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/sadis-app/3.1.0-SNAPSHOT/sadis-app-3.1.0-20190325.071529-14.oar"
@@ -51,4 +86,4 @@ oltAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord
 oltAppVersion: "3.0.1.SNAPSHOT"
 
 kafkaAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/kafka/1.1.0-SNAPSHOT/kafka-1.1.0-20190325.071504-14.oar"
-kafkaAppVersion: "1.1.0"
+kafkaAppVersion: "1.1.0.SNAPSHOT"
