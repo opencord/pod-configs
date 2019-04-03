@@ -39,11 +39,11 @@ topology_template:
     edgecore_iskratel_subscriber:
       type: tosca.nodes.RCORDSubscriber
       properties:
-        name: Sub_ISKT71e801a0
+        name: Sub_ISKT71e80080
         status: pre-provisioned
         c_tag: 12
         s_tag: 111
-        onu_device: ISKT71e801a0
+        onu_device: ISKT71e80080 
         nas_port_id : "PON 1/1/04/1:1.1.1"
         circuit_id: edgecore_iskratel_circuit
         remote_id: edgecore_iskratel_remote
