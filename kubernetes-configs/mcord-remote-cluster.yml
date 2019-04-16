@@ -1,0 +1,20 @@
+hss:
+  images:
+    init: "ngick8stesting/c3po-cassandra:5e2eaf6"
+    hss: "ngick8stesting/c3po-hss:5e2eaf6"
+
+mme:
+  images:
+    init: "ngick8stesting/c3po-mmeinit"
+    mme: "ngick8stesting/c3po-mme:mwca-mme-debug"
+
+ngic_cp:
+  images:
+    init: "ngick8stesting/c3po-mmeinit"
+    cp: "ngick8stesting/ngic-cp:690f418"
+
+hssdb_node_selector: node1
+hss_node_selector: node1
+mme_node_selector: node1
+spgwc_node_selector: node1
+cdn_node_selector: node1
