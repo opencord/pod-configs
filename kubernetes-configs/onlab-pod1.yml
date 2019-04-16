@@ -18,20 +18,20 @@
 # This file is used to optionally customize helm charts installations
 images:
 # VOLTHA
- envoy_for_etcd:
-   tag: 'latest'
+  envoy_for_etcd:
+    tag: 'latest'
 
- netconf:
-   tag: 'latest'
+  netconf:
+    tag: 'latest'
 
- ofagent:
-   tag: 'latest'
+  ofagent:
+    tag: 'latest'
 
- vcli:
-   tag: 'latest'
+  vcli:
+    tag: 'latest'
 
- vcore:
-   tag: 'latest'
+  vcore:
+    tag: 'latest'
 
 # ONOS
   onos:
