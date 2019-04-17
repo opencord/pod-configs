@@ -94,7 +94,7 @@ topology_template:
         DlAllocRBRate: 50
         UlSchedType: RR
         UlAllocRBRate: 50
-        mmeip: 10.90.0.152
+        mmeip: 10.90.0.141
         mmeport: "31412"
       requirements:
         - owner:
@@ -117,7 +117,7 @@ topology_template:
         DlAllocRBRate: 20
         UlSchedType: RR
         UlAllocRBRate: 20
-        mmeip: 10.90.0.152
+        mmeip: 10.90.0.141
         mmeport: "31412"
       requirements:
         - owner:
