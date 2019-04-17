@@ -38,6 +38,15 @@ images:
     repository: 'matteoscandolo/onos'
     tag: '1.13.9-rc3'
 
+sadis-server:
+  image:
+    repository: opencord/sadis-server
+    tag: latest
+
+rcord:
+  image:
+    tag: 1.3.1
+
 # # ONOS applications
 aaaAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/aaa/1.9.0-SNAPSHOT/aaa-1.9.0-20190410.071508-31.oar"
 aaaAppVersion: "1.9.0.SNAPSHOT"
