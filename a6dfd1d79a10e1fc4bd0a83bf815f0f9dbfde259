@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "60a0e8e6_b9d0209b",
+        "filename": "tosca-configs/mcord/mcord-local-cluster-progran.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1000523
+      },
+      "writtenOn": "2019-04-17T18:14:11Z",
+      "side": 1,
+      "message": "We use this yaml file to insert profiles manually (without using ONAP). I think the mme IP should be 10.90.0.141 because our remote cluster have the IP now.",
+      "range": {
+        "startLine": 97,
+        "startChar": 8,
+        "endLine": 97,
+        "endChar": 26
+      },
+      "revId": "a6dfd1d79a10e1fc4bd0a83bf815f0f9dbfde259",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "67d4b1fd_da3c9200",
+        "filename": "tosca-configs/mcord/mcord-local-cluster-progran.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 1000523
+      },
+      "writtenOn": "2019-04-17T18:14:11Z",
+      "side": 1,
+      "message": "I think it should be 10.90.0.141 as well.",
+      "range": {
+        "startLine": 120,
+        "startChar": 0,
+        "endLine": 120,
+        "endChar": 26
+      },
+      "revId": "a6dfd1d79a10e1fc4bd0a83bf815f0f9dbfde259",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
