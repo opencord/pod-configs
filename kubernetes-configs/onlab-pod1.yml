@@ -40,12 +40,13 @@ images:
 
 sadis-server:
   image:
-    repository: opencord/sadis-server
-    tag: latest
+    repository: 10.90.0.101:30500/opencord/sadis-server
+    tag: candidate
 
 rcord:
   image:
-    tag: 1.3.1
+    repository: 10.90.0.101:30500/xosproject/rcord-synchronizer
+    tag: candidate
 
 # # ONOS applications
 aaaAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/aaa/1.9.0-SNAPSHOT/aaa-1.9.0-20190410.071508-31.oar"
