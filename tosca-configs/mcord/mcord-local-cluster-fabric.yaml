@@ -270,3 +270,53 @@ topology_template:
         - interface:
             node: interface#port_3_interface
             relationship: tosca.relationships.BelongsToOne
+
+    # eNodeB - rru Port
+    port#rru_port:
+      type: tosca.nodes.SwitchPort
+      properties:
+        portId: 37
+      requirements:
+        - switch:
+            node: switch#leaf_1
+            relationship: tosca.relationships.BelongsToOne
+
+    interface#port_1_interface:
+      type: tosca.nodes.PortInterface
+      properties:
+        vlanUntagged: 20
+        name: rru
+      requirements:
+        - port:
+            node: port#rru_port
+            relationship: tosca.relationships.BelongsToOne
+
+    ip#port_1_ip_1:
+      type: tosca.nodes.FabricIpAddress
+      properties:
+        ip: 13.1.1.0/24
+        description: rru_ip_1
+      requirements:
+        - interface:
+            node: interface#port_1_interface
+            relationship: tosca.relationships.BelongsToOne
+
+    ip#port_1_ip_2:
+      type: tosca.nodes.FabricIpAddress
+      properties:
+        ip: 119.0.0.254/24
+        description: rru_ip_2
+      requirements:
+        - interface:
+            node: interface#port_1_interface
+            relationship: tosca.relationships.BelongsToOne
+
+    ip#port_1_ip_3:
+      type: tosca.nodes.FabricIpAddress
+      properties:
+        ip: 116.0.0.254/24
+        description: rru_ip_3
+      requirements:
+        - interface:
+            node: interface#port_1_interface
+            relationship: tosca.relationships.BelongsToOne
