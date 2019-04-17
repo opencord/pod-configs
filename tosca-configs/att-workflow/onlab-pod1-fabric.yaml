@@ -24,11 +24,61 @@ imports:
   - custom_types/attworkflowdriverservice.yaml
   - custom_types/serviceinstanceattribute.yaml
   - custom_types/onosapp.yaml
+  - custom_types/onosservice.yaml
+  - custom_types/serviceinstanceattribute.yaml
 
 description: Configures the ONF SEBA POD with AT&T workflow
 
 topology_template:
   node_templates:
+    # ONOS Apps for tech-profiles
+    service#onos:
+      type: tosca.nodes.ONOSService
+      properties:
+          name: onos
+          must-exist: true
+
+    onos_app#sadis:
+      type: tosca.nodes.ONOSApp
+      properties:
+        name: sadis
+        must-exist: true
+      requirements:
+        - owner:
+            node: service#onos
+            relationship: tosca.relationships.BelongsToOne
+
+    sadis-config-attr:
+      type: tosca.nodes.ServiceInstanceAttribute
+      properties:
+        name: /onos/v1/network/configuration/apps/org.opencord.sadis
+        value: >
+          {
+            "sadis" : {
+              "integration" : {
+                "cache" : {
+                  "maxsize" : 1000,
+                  "ttl": "PT300S"
+                },
+                "url" : "http://sadis-service:8000/subscriber/%s"
+              }
+            },
+            "bandwidthprofile":{
+               "integration":{
+                  "url": "http://sadis-service:8000/bandwidthprofiles/%s",
+                  "cache":{
+                     "enabled":true,
+                     "maxsize":40,
+                     "ttl":"PT1m"
+                  }
+               }
+            }
+          }
+      requirements:
+        - service_instance:
+            node: onos_app#sadis
+            relationship: tosca.relationships.BelongsToOne
+
     # Fabric configuration
     switch#leaf_1:
       type: tosca.nodes.Switch
