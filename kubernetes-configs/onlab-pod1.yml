@@ -42,18 +42,18 @@ images:
 aaaAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/aaa/1.9.0-SNAPSHOT/aaa-1.9.0-20190410.071508-31.oar"
 aaaAppVersion: "1.9.0.SNAPSHOT"
 
-sadisAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/sadis-app/2.2.0-SNAPSHOT/sadis-app-2.2.0-20181127.081727-156.oar"
-sadisAppVersion: "2.2.0.SNAPSHOT"
+sadisAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/sadis-app/3.1.0-SNAPSHOT/sadis-app-3.1.0-20190410.071623-30.oar"
+sadisAppVersion: "3.1.0.SNAPSHOT"
 
-dhcpl2relayAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/dhcpl2relay/1.5.0-SNAPSHOT/dhcpl2relay-1.5.0-20181129.184928-160.oar"
-dhcpl2relayAppVersion: "1.5.0.SNAPSHOT"
+dhcpl2relayAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/dhcpl2relay/1.6.0-SNAPSHOT/dhcpl2relay-1.6.0-20190410.071549-30.oar"
+dhcpl2relayAppVersion: "1.6.0.SNAPSHOT"
 
-oltAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/olt-app/2.1.0-SNAPSHOT/olt-app-2.1.0-20181129.184957-41.oar"
-oltAppVersion: "2.1.0.SNAPSHOT"
+oltAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/olt-app/3.0.1-SNAPSHOT/olt-app-3.0.1-20190410.071612-30.oar"
+oltAppVersion: "3.0.1.SNAPSHOT"
 
 # kafkaAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/kafka/1.1.0-SNAPSHOT/kafka-1.1.0-20190410.071556-30.oar"
 kafkaAppUrl: "http://10.90.0.101:30160/repository/kafka-1.1.0-SNAPSHOT.oar"
-kafkaAppVersion: "1.1.0-SNAPSHOT"
+kafkaAppVersion: "1.1.0.SNAPSHOT"
 
 application_logs: |
   log4j.logger.org.opencord.olt = DEBUG
