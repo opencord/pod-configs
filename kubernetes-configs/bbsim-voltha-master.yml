@@ -14,7 +14,8 @@
 # limitations under the License.
 
 # Values file for deploying SEBA with Ponsim
-# Use this file to deploy the service versions speecified in the Helm charts.
+# Use this file to deploy the 'master' (dev) versions of all services.
+# This is mainly useful for testing.
 
 # voltha
 etcd-cluster:
@@ -25,7 +26,27 @@ att-workflow-driver:
   # this is mandatory, it's needed to correctly configure the kafka endpoint
   kafkaService: cord-kafka
 
+etcd-operator:
+  etcdCluster:
+    size: 1
+
+# in xos-core chart and other charts with multiple images
 images:
+  xos_core:
+    tag: 'master'
+  xos_chameleon:
+    tag: 'master'
+  xos_tosca:
+    tag: 'master'
+  xos_api_tester:
+    tag: 'master'
+  tosca_loader:
+    tag: 'master'
+# ONOS
+  onos:
+    repository: 'matteoscandolo/onos'
+    tag: '1.13.9-rc3'
+# VOLTHA
   vcore:
     tag: 'latest'
   vcli:
@@ -40,9 +61,81 @@ images:
     tag: 'latest'
   freeradius:
     tag: 'latest'
+
+# Ponsimv2
   olt:
     repository: "voltha/voltha-ponsim"
     tag: "latest"
   onu:
+<<<<<<< HEAD
     repository: "voltha/voltha-ponsim"
     tag: "latest"
+=======
+   repository: "voltha/voltha-ponsim"
+   tag: "latest"
+
+# in xos-gui sub-chart required by xos-core chart
+xos-gui:
+  images:
+    xos_gui:
+      tag: 'master'
+    xos_ws:
+      tag: 'master'
+
+# in seba service chart
+fabric:
+  image:
+    tag: 'master'
+fabric-crossconnect:
+  image:
+    tag: 'master'
+onos-service:
+  image:
+    tag: 'master'
+sadis-server:
+  image:
+    tag: 'latest'
+volt:
+  image:
+    tag: 'master'
+rcord:
+  image:
+    tag: 'master'
+
+# in base-kubernetes chart
+kubernetes:
+  image:
+    tag: 'master'
+
+# in workflow/att-workflow service chart
+att-workflow-driver:
+  image:
+    tag: 'master'
+
+  # this is mandatory, it's needed to correctly configure the kafka endpoint
+  kafkaService: cord-kafka
+
+# in workflow/tt-workflow service chart
+tt-workflow-driver:
+  image:
+    repository: andybavier/test-image-synchronizer
+    tag: tt-workflow-driver
+
+  # this is mandatory, it's needed to correctly configure the kafka endpoint
+  kafkaService: cord-kafka
+
+# ONOS applications
+aaaAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/aaa/1.9.0-SNAPSHOT/aaa-1.9.0-20190422.071426-44.oar"
+aaaAppVersion: "1.9.0.SNAPSHOT"
+
+sadisAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/sadis-app/3.1.0-SNAPSHOT/sadis-app-3.1.0-20190422.071545-43.oar"
+sadisAppVersion: "3.1.0.SNAPSHOT"
+
+dhcpl2relayAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/dhcpl2relay/1.6.0-SNAPSHOT/dhcpl2relay-1.6.0-20190422.071506-43.oar"
+dhcpl2relayAppVersion: "1.6.0.SNAPSHOT"
+
+oltAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/olt-app/3.0.1-SNAPSHOT/olt-app-3.0.1-20190422.071530-43.oar"
+oltAppVersion: "3.0.1.SNAPSHOT"
+
+kafkaAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/kafka/1.1.0-SNAPSHOT/kafka-1.1.0-20190422.071513-43.oar"
+kafkaAppVersion: "1.1.0.SNAPSHOT"
