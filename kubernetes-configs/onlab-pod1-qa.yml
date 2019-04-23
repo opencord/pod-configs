@@ -13,7 +13,65 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Automated deployment configuration for ONF POD1
+# Automated deployment configuration for Flex POD 1 , olt/onu are connected to this
 
 # This file is used to optionally customize helm charts installations
+images:
+# VOLTHA
+  envoy_for_etcd:
+    tag: 'latest'
 
+  netconf:
+    tag: 'latest'
+
+  ofagent:
+    tag: 'latest'
+
+  vcli:
+    tag: 'latest'
+
+  vcore:
+    tag: 'latest'
+
+# ONOS
+  onos:
+    repository: 'matteoscandolo/onos'
+    tag: '1.13.9-rc3'
+
+sadis-server:
+  image:
+    repository: 10.90.0.101:30500/opencord/sadis-server
+    tag: candidate
+
+rcord:
+  image:
+    repository: 10.90.0.101:30500/xosproject/rcord-synchronizer
+    tag: candidate
+
+att-workflow-driver:
+  image:
+    repository: 10.90.0.101:30500/xosproject/att-workflow-driver-synchronizer
+    tag: candidate
+
+# ONOS applications
+aaaAppUrl: "https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=org.opencord&a=aaa&v=1.9.0-SNAPSHOT&e=oar"
+aaaAppVersion: "1.9.0.SNAPSHOT"
+
+sadisAppUrl: "https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=org.opencord&a=sadis-app&v=3.1.0-SNAPSHOT&e=oar"
+sadisAppVersion: "3.1.0.SNAPSHOT"
+
+dhcpl2relayAppUrl: "https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=org.opencord&a=dhcpl2relay&v=1.6.0-SNAPSHOT&e=oar"
+dhcpl2relayAppVersion: "1.6.0.SNAPSHOT"
+
+oltAppUrl: "https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=org.opencord&a=olt-app&v=3.0.1-SNAPSHOT&e=oar"
+oltAppVersion: "3.0.1.SNAPSHOT"
+
+kafkaAppUrl: "https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=org.opencord&a=kafka&v=1.1.0-SNAPSHOT&e=oar"
+kafkaAppVersion: "1.1.0.SNAPSHOT"
+
+application_logs: |
+  log4j.logger.org.opencord.olt = DEBUG
+  log4j.logger.org.opencord.kafka = DEBUG
+  log4j.logger.org.opencord.sadis = DEBUG
+  log4j.logger.org.opencord.aaa = DEBUG
+  log4j.logger.org.opencord.dhcpl2relay = DEBUG
