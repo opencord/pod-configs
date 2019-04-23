@@ -33,6 +33,14 @@ images:
   vcore:
     tag: 'latest'
 
+rcord:
+  image:
+    tag: 'master'
+
+att-workflow-driver:
+  image:
+    tag: 'master'
+
 # ONOS
   onos:
     repository: 'matteoscandolo/onos'
