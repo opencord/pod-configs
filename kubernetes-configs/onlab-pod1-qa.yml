@@ -19,39 +19,37 @@
 images:
 # VOLTHA
   envoy_for_etcd:
-    tag: 'latest'
+    tag: 'voltha-1.7'
 
   netconf:
-    tag: 'latest'
+    tag: 'voltha-1.7'
 
   ofagent:
-    tag: 'latest'
+    tag: 'voltha-1.7'
 
   vcli:
-    tag: 'latest'
+    tag: 'voltha-1.7'
 
   vcore:
-    tag: 'latest'
+    tag: 'voltha-1.7'
 
 # ONOS
   onos:
     repository: 'matteoscandolo/onos'
-    tag: '1.13.9-rc3'
-
-sadis-server:
-  image:
-    repository: 10.90.0.101:30500/opencord/sadis-server
-    tag: candidate
+    tag: '1.13.9-rc4'
 
 rcord:
   image:
-    repository: 10.90.0.101:30500/xosproject/rcord-synchronizer
-    tag: candidate
+    tag: 'master'
 
 att-workflow-driver:
   image:
-    repository: 10.90.0.101:30500/xosproject/att-workflow-driver-synchronizer
-    tag: candidate
+    tag: 'master'
+
+sadis-server:
+  image:
+    repository: opencord/sadis-server
+    tag: latest
 
 # ONOS applications
 aaaAppUrl: "https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=org.opencord&a=aaa&v=1.9.0-SNAPSHOT&e=oar"
