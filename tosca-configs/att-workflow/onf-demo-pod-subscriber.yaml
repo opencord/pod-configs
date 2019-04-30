@@ -24,40 +24,14 @@ topology_template:
   node_templates:
 
     # EdgeCore OLT subscribers
-    edgecore_alpha_subscriber:
-      type: tosca.nodes.RCORDSubscriber
-      properties:
-        name: Sub_ALPHe3d1cfde
-        status: pre-provisioned
-        c_tag: 11
-        s_tag: 111
-        onu_device: ALPHe3d1cfde
-        nas_port_id : "PON 1/1/03/1:1.1.1"
-        circuit_id: edgecore_alpha_circuit
-        remote_id: edgecore_alpha_remote
-
     edgecore_iskratel_subscriber:
       type: tosca.nodes.RCORDSubscriber
       properties:
-        name: Sub_ISKT71e80080
+        name: Sub_ISKT71e801a0
         status: pre-provisioned
         c_tag: 12
         s_tag: 111
-        onu_device: ISKT71e80080 
+        onu_device: ISKT71e801a0
         nas_port_id : "PON 1/1/04/1:1.1.1"
         circuit_id: edgecore_iskratel_circuit
         remote_id: edgecore_iskratel_remote
-
-    # Adtran OLT subscribers
-    adtran_subscriber_1:
-      type: tosca.nodes.RCORDSubscriber
-      properties:
-        name: Sub_ADTN17510028
-        status: pre-provisioned
-        c_tag: 21
-        s_tag: 222
-        onu_device: ADTN17510028
-        nas_port_id : "PON 1/1/05/1:1.1.1"
-        circuit_id: adtran_sub1_circuit
-        remote_id: adtran_sub1_remote
-

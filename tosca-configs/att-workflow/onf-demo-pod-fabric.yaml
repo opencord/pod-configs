@@ -111,35 +111,12 @@ topology_template:
         must-exist: true
 
     # ONUs connected to EdgeCore OLT
-    ALPHe3d1cfde:
+    ISKT71e801a0:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
-        serial_number: ALPHe3d1cfde
+        serial_number: ISKT71e801a0
         pon_port_id: 536870912
         device_id: of:00000000c0a8646f
-      requirements:
-        - owner:
-            node: service#att
-            relationship: tosca.relationships.BelongsToOne
-
-    ISKT71e80080:
-      type: tosca.nodes.AttWorkflowDriverWhiteListEntry
-      properties:
-        serial_number: ISKT71e80080 
-        pon_port_id: 536870912
-        device_id: of:00000000c0a8646f
-      requirements:
-        - owner:
-            node: service#att
-            relationship: tosca.relationships.BelongsToOne
-
-    # ONUs connected to Adtran OLT
-    ADTN17510028:
-      type: tosca.nodes.AttWorkflowDriverWhiteListEntry
-      properties:
-        serial_number: ADTN17510028
-        pon_port_id: 5
-        device_id: of:00000024454a6be4
       requirements:
         - owner:
             node: service#att
