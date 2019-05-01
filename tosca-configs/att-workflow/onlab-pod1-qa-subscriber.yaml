@@ -17,11 +17,18 @@
 tosca_definitions_version: tosca_simple_yaml_1_0
 imports:
   - custom_types/rcordsubscriber.yaml
+  - custom_types/bandwidthprofile.yaml
 
 description: Pre-provsion a subscriber
 
 topology_template:
   node_templates:
+
+    default_bp:
+      type: tosca.nodes.BandwidthProfile
+      properties:
+         name: Default
+         must-exist: true
 
     # Pre-provision the subscriber the subscriber
     onf_subscriber_1:
@@ -35,6 +42,13 @@ topology_template:
         nas_port_id : "PON 1/1/03/1:1.1.1"
         circuit_id: foo1
         remote_id: bar1
+      requirements:
+        - upstream_bps:
+            node: default_bp
+            relationship: tosca.relationships.BelongsToOne
+        - downstream_bps:
+            node: default_bp
+            relationship: tosca.relationships.BelongsToOne
 
     onf_subscriber_2:
       type: tosca.nodes.RCORDSubscriber
@@ -47,6 +61,13 @@ topology_template:
         nas_port_id : "PON 1/1/04/1:1.1.1"
         circuit_id: foo2
         remote_id: bar2
+      requirements:
+        - upstream_bps:
+            node: default_bp
+            relationship: tosca.relationships.BelongsToOne
+        - downstream_bps:
+            node: default_bp
+            relationship: tosca.relationships.BelongsToOne
 
     onf_subscriber_3:
       type: tosca.nodes.RCORDSubscriber
@@ -59,3 +80,10 @@ topology_template:
         nas_port_id : "PON 1/1/05/1:1.1.1"
         circuit_id: foo3
         remote_id: bar3
+      requirements:
+        - upstream_bps:
+            node: default_bp
+            relationship: tosca.relationships.BelongsToOne
+        - downstream_bps:
+            node: default_bp
+            relationship: tosca.relationships.BelongsToOne
