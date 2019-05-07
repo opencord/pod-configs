@@ -19,19 +19,19 @@
 images:
 # VOLTHA
   envoy_for_etcd:
-    tag: 'latest'
+    tag: 'voltha-1.7'
 
   netconf:
-    tag: 'latest'
+    tag: 'voltha-1.7'
 
   ofagent:
-    tag: 'latest'
+    tag: 'voltha-1.7'
 
   vcli:
-    tag: 'latest'
+    tag: 'voltha-1.7'
 
   vcore:
-    tag: 'latest'
+    tag: 'voltha-1.7'
 
 # ONOS
   onos:
