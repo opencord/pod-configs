@@ -52,7 +52,7 @@ sadis-server:
     tag: latest
 
 # ONOS applications
-aaAppUrl: "http://10.90.0.101:30160/repository/aaa-app-1.9.0-SNAPSHOT.oar"
+aaaAppUrl: "http://10.90.0.101:30160/repository/aaa-app-1.9.0-SNAPSHOT.oar"
 aaaAppVersion: "1.9.0.SNAPSHOT"
 
 sadisAppUrl: "http://10.90.0.101:30160/repository/sadis-app-3.1.0-SNAPSHOT.oar"
