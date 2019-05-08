@@ -52,19 +52,19 @@ sadis-server:
     tag: latest
 
 # ONOS applications
-aaaAppUrl: "https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=org.opencord&a=aaa&v=1.9.0-SNAPSHOT&e=oar"
+aaAppUrl: "http://10.90.0.101:30160/repository/aaa-app-1.9.0-SNAPSHOT.oar"
 aaaAppVersion: "1.9.0.SNAPSHOT"
 
-sadisAppUrl: "https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=org.opencord&a=sadis-app&v=3.1.0-SNAPSHOT&e=oar"
+sadisAppUrl: "http://10.90.0.101:30160/repository/sadis-app-3.1.0-SNAPSHOT.oar"
 sadisAppVersion: "3.1.0.SNAPSHOT"
 
-dhcpl2relayAppUrl: "https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=org.opencord&a=dhcpl2relay&v=1.6.0-SNAPSHOT&e=oar"
+dhcpl2relayAppUrl: "http://10.90.0.101:30160/repository/dhcpl2relay-app-1.6.0-SNAPSHOT.oar"
 dhcpl2relayAppVersion: "1.6.0.SNAPSHOT"
 
-oltAppUrl: "https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=org.opencord&a=olt-app&v=3.0.1-SNAPSHOT&e=oar"
+oltAppUrl: "http://10.90.0.101:30160/repository/olt-app-3.0.1-SNAPSHOT.oar"
 oltAppVersion: "3.0.1.SNAPSHOT"
 
-kafkaAppUrl: "https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=org.opencord&a=kafka&v=1.1.0-SNAPSHOT&e=oar"
+kafkaAppUrl: "http://10.90.0.101:30160/repository/kafka-1.1.0-SNAPSHOT.oar"
 kafkaAppVersion: "1.1.0.SNAPSHOT"
 
 application_logs: |
