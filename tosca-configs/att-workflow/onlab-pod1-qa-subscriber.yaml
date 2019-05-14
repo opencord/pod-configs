@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# curl -H "xos-username: admin@opencord.org" -H "xos-password: letmein" -X POST --data-binary @onlab-pod1-subscriber.yaml http://10.90.0.101:30007/run
+# curl -H "xos-username: admin@opencord.org" -H "xos-password: letmein" -X POST --data-binary @onlab-pod1-qa-subscriber.yaml http://10.90.0.101:30007/run
 
 tosca_definitions_version: tosca_simple_yaml_1_0
 imports:
@@ -72,11 +72,11 @@ topology_template:
     onf_subscriber_3:
       type: tosca.nodes.RCORDSubscriber
       properties:
-        name: Sub_ISKT71e801a0
+        name: Sub_ISKT71e80080
         status: pre-provisioned
         c_tag: 113
         s_tag: 111
-        onu_device: ISKT71e801a0
+        onu_device: ISKT71e80080
         nas_port_id : "PON 1/1/05/1:1.1.1"
         circuit_id: foo3
         remote_id: bar3
