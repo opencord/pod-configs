@@ -17,18 +17,18 @@
 tosca_definitions_version: tosca_simple_yaml_1_0
 imports:
   - custom_types/rcordsubscriber.yaml
-    #- custom_types/bandwidthprofile.yaml
+  - custom_types/bandwidthprofile.yaml
 
 description: Pre-provsion subscribers
 
 topology_template:
   node_templates:
 
-    #default_bp:
-    #  type: tosca.nodes.BandwidthProfile
-    #  properties:
-    #     name: Default
-    #     must-exist: true
+    default_bp:
+     type: tosca.nodes.BandwidthProfile
+     properties:
+        name: Default
+        must-exist: true
 
     # EdgeCore OLT subscribers
     edgecore_iskratel_subscriber:
@@ -42,13 +42,13 @@ topology_template:
         nas_port_id : "PON 1/1/04/1:1.1.1"
         circuit_id: edgecore_iskratel_circuit
         remote_id: edgecore_iskratel_remote
-      #requirements:
-      #  - upstream_bps:
-      #      node: default_bp
-      #      relationship: tosca.relationships.BelongsToOne
-      #  - downstream_bps:
-      #      node: default_bp
-      #      relationship: tosca.relationships.BelongsToOne
+      requirements:
+       - upstream_bps:
+           node: default_bp
+           relationship: tosca.relationships.BelongsToOne
+       - downstream_bps:
+           node: default_bp
+           relationship: tosca.relationships.BelongsToOne
 
     edgecore_brcm_subscriber:
       type: tosca.nodes.RCORDSubscriber
@@ -61,10 +61,10 @@ topology_template:
         nas_port_id : "PON 1/1/04/1:1.1.2"
         circuit_id: edgecore_brcm_circuit
         remote_id: edgecore_brcm_remote
-      #requirements:
-      #  - upstream_bps:
-      #      node: default_bp
-      #      relationship: tosca.relationships.BelongsToOne
-      #  - downstream_bps:
-      #      node: default_bp
-      #      relationship: tosca.relationships.BelongsToOne
+      requirements:
+       - upstream_bps:
+           node: default_bp
+           relationship: tosca.relationships.BelongsToOne
+       - downstream_bps:
+           node: default_bp
+           relationship: tosca.relationships.BelongsToOne
