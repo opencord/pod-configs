@@ -49,3 +49,22 @@ topology_template:
       #  - downstream_bps:
       #      node: default_bp
       #      relationship: tosca.relationships.BelongsToOne
+
+    edgecore_brcm_subscriber:
+      type: tosca.nodes.RCORDSubscriber
+      properties:
+        name: Sub_BRCM22222222
+        status: pre-provisioned
+        c_tag: 11
+        s_tag: 111
+        onu_device: BRCM22222222
+        nas_port_id : "PON 1/1/04/1:1.1.2"
+        circuit_id: edgecore_brcm_circuit
+        remote_id: edgecore_brcm_remote
+      #requirements:
+      #  - upstream_bps:
+      #      node: default_bp
+      #      relationship: tosca.relationships.BelongsToOne
+      #  - downstream_bps:
+      #      node: default_bp
+      #      relationship: tosca.relationships.BelongsToOne
