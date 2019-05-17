@@ -30,6 +30,17 @@ topology_template:
          name: Default
          must-exist: true
 
+     # bandwidth2  bandwidthprofile for subscriber
+    bandwidth2_bp:
+      type: tosca.nodes.BandwidthProfile
+      properties:
+         air: 99999
+         cbs: 99999
+         cir: 99999
+         ebs: 99999
+         eir: 99999
+         name: bandwidth2
+
     # Pre-provision the subscriber the subscriber
     onf_subscriber_1:
       type: tosca.nodes.RCORDSubscriber
@@ -82,8 +93,8 @@ topology_template:
         remote_id: bar3
       requirements:
         - upstream_bps:
-            node: default_bp
+            node: bandwidth2_bp
             relationship: tosca.relationships.BelongsToOne
         - downstream_bps:
-            node: default_bp
+            node: bandwidth2_bp
             relationship: tosca.relationships.BelongsToOne
