@@ -45,7 +45,7 @@ images:
   vcli:
     tag: 'voltha-1.7'
   ofagent:
-    tag: 'voltha-1.7'
+    tag: 'master'
   netconf:
     tag: 'voltha-1.7'
   envoy_for_etcd:
