@@ -133,3 +133,10 @@ oltAppVersion: "3.0.1.SNAPSHOT"
 
 kafkaAppUrl: "https://oss.sonatype.org/service/local/artifact/maven/redirect?r=snapshots&g=org.opencord&a=kafka&v=1.1.0-SNAPSHOT&e=oar"
 kafkaAppVersion: "1.1.0.SNAPSHOT"
+
+application_logs: |
+  log4j.logger.org.opencord.olt = DEBUG
+  log4j.logger.org.opencord.kafka = TRACE
+  log4j.logger.org.opencord.sadis = DEBUG
+  log4j.logger.org.opencord.aaa = DEBUG
+  log4j.logger.org.opencord.dhcpl2relay = DEBUG
