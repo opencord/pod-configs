@@ -48,17 +48,24 @@ olts:
 
 hosts:
   src:
-    ip: '10.192.20.61'
-    user: 'cord'
-    pass: 'cord'
-    dp_iface_name: 'ens2f1'
-    dp_iface_ip: '10.8.2.1'
-    dp_iface_gateway: '10.8.2.254'
+    -
+      ip: '10.192.20.61'
+      user: 'cord'
+      pass: 'cord'
+      dp_iface_name: 'ens2f1'
+      container_type: ''
+      container_name: ''
+      onu: 'ALPHe3d1cfa7'
+
   dst:
-    ip: '10.192.20.198'
-    user: 'cord'
-    pass: 'cord'
-    dp_iface_name: 'ens3d1'
-    dp_iface_ip_qinq: '10.8.2.100'
-    dp_iface_ip: '10.8.3.1'
-    dp_iface_gateway: '10.8.3.254'
+    -
+      ip: '10.192.20.198'
+      user: 'cord'
+      pass: 'cord'
+      dp_iface_name: 'ens3d1'
+      dp_iface_ip_qinq: '10.8.2.100'
+      dp_iface_ip: '10.8.3.1'
+      dp_iface_gateway: '10.8.3.254'
+      dp_iface_ip_qinq: '8.8.8.8'
+      container_type: null
+      container_name: null
