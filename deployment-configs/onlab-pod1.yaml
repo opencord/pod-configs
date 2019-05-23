@@ -59,12 +59,65 @@ srcHost:
   user: 'root'
   pass: 'root'
 
+
 hosts:
   src:
-    ip: '10.90.0.51'
-    user: 'ubuntu'
-    dp_iface_name: 'eth1'
-    container_type: 'LXC'
-    container_name: 'ALPHe3d1cfde'
+    -
+      ip: '10.90.0.51'
+      user: 'ubuntu'
+      pass: null
+      dp_iface_name: 'eth1'
+      container_type: 'LXC'
+      container_name: 'ALPHe3d1cfde'
+      onu: 'ALPHe3d1cfde'
+    -
+      ip: '10.90.0.51'
+      user: 'ubuntu'
+      pass: null
+      dp_iface_name: 'eth1'
+      container_type: 'LXC'
+      container_name: 'ISKT71e801a0'
+      onu: 'ISKT71e801a0'
+    -
+      ip: '10.90.0.51'
+      user: 'ubuntu'
+      pass: null
+      dp_iface_name: 'eth1'
+      container_type: 'LXC'
+      container_name: 'BRCM22222222'
+      onu: 'BRCM22222222'
+
   dst:
-    dp_iface_ip_qinq: '8.8.8.8'
+    -
+      ip: null
+      user: null
+      pass: null
+      dp_iface_name: null
+      dp_iface_ip_qinq: null
+      dp_iface_ip: null
+      dp_iface_gateway: null
+      dp_iface_ip_qinq: '8.8.8.8'
+      container_type: null
+      container_name: null
+    -
+      ip: null
+      user: null
+      pass: null
+      dp_iface_name: null
+      dp_iface_ip_qinq: null
+      dp_iface_ip: null
+      dp_iface_gateway: null
+      dp_iface_ip_qinq: '8.8.8.8'
+      container_type: null
+      container_name: null
+    -
+      ip: null
+      user: null
+      pass: null
+      dp_iface_name: null
+      dp_iface_ip_qinq: null
+      dp_iface_ip: null
+      dp_iface_gateway: null
+      dp_iface_ip_qinq: '8.8.8.8'
+      container_type: null
+      container_name: null

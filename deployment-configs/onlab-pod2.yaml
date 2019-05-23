@@ -51,10 +51,24 @@ srcHost:
 
 hosts:
   src:
+  -
     ip: '10.90.0.51'
     user: 'ubuntu'
+    pass: null
     dp_iface_name: 'eth1'
     container_type: 'LXC'
     container_name: 'ALPHe3d1cfe3'
+    onu: 'ALPHe3d1cfe3'
+
   dst:
-    dp_iface_ip_qinq: '8.8.8.8'
+    -
+      ip: null
+      user: null
+      pass: null
+      dp_iface_name: null
+      dp_iface_ip_qinq: null
+      dp_iface_ip: null
+      dp_iface_gateway: null
+      dp_iface_ip_qinq: '8.8.8.8'
+      container_type: null
+      container_name: null
