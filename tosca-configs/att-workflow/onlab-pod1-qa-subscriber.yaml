@@ -74,10 +74,10 @@ topology_template:
         remote_id: bar2
       requirements:
         - upstream_bps:
-            node: default_bp
+            node: bandwidth2_bp
             relationship: tosca.relationships.BelongsToOne
         - downstream_bps:
-            node: default_bp
+            node: bandwidth2_bp
             relationship: tosca.relationships.BelongsToOne
 
     onf_subscriber_3:
