@@ -69,6 +69,8 @@ hosts:
       container_type: 'LXC'
       container_name: 'ALPHe3d1cfde'
       onu: 'ALPHe3d1cfde'
+      c_tag: '112'
+      s_tag: '111'
 
     -
       ip: '10.90.0.51'
@@ -76,8 +78,10 @@ hosts:
       pass: null
       dp_iface_name: 'eth1'
       container_type: 'LXC'
-      container_name: 'ISKT71e801a0'
-      onu: 'ISKT71e801a0'
+      container_name: 'ISKT71e80080'
+      onu: 'ISKT71e80080'
+      c_tag: '113'
+      s_tag: '111'
     -
       ip: '10.90.0.51'
       user: 'ubuntu'
@@ -86,6 +90,8 @@ hosts:
       container_type: 'LXC'
       container_name: 'BRCM22222222'
       onu: 'BRCM22222222'
+      c_tag: '114'
+      s_tag: '110'
 
   dst:
     -
