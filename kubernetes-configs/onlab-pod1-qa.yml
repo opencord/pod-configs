@@ -32,8 +32,8 @@ images:
 
   vcore:
     repository: '10.90.0.101:30500/voltha/voltha-voltha'
-    # tag: 'voltha-1.7'
-    tag: 'dev'
+    tag: 'voltha-1.7'
+    #tag: 'dev'
 
 # ONOS
   onos:
