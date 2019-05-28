@@ -31,7 +31,7 @@ images:
     tag: 'voltha-1.7'
 
   vcore:
-    repository: '10.90.0.101:30500/voltha/voltha-voltha'
+    #repository: '10.90.0.101:30500/voltha/voltha-voltha'
     tag: 'voltha-1.7'
     #tag: 'dev'
 
