@@ -24,11 +24,11 @@ description: Pre-provsion subscribers
 topology_template:
   node_templates:
 
-    default_bp:
-     type: tosca.nodes.BandwidthProfile
-     properties:
-        name: Default
-        must-exist: true
+    # default_bp:
+    #  type: tosca.nodes.BandwidthProfile
+    #  properties:
+    #     name: Default
+    #     must-exist: true
 
     # EdgeCore OLT subscribers
     edgecore_iskratel_subscriber:
