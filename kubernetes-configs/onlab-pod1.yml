@@ -19,19 +19,24 @@
 images:
 # VOLTHA
   envoy_for_etcd:
-    tag: 'latest'
+    repository: smbaker/voltha-envoy
+    tag: 'test'
 
   netconf:
-    tag: 'latest'
+    repository: smbaker/voltha-netconf
+    tag: 'test'
 
   ofagent:
-    tag: 'latest'
+    repository: smbaker/voltha-ofagent
+    tag: 'test'
 
   vcli:
-    tag: 'latest'
+    repository: smbaker/voltha-cli
+    tag: 'test'
 
   vcore:
-    tag: 'latest'
+    repository: smbaker/voltha-voltha
+    tag: 'test'
 
 # ONOS
   onos:
