@@ -43,6 +43,19 @@ images:
     repository: 'matteoscandolo/onos'
     tag: '1.13.9-rc3'
 
+rcord:
+  image:
+    tag: 'master'
+
+att-workflow-driver:
+  image:
+    tag: 'master'
+
+sadis-server:
+  image:
+    repository: opencord/sadis-server
+    tag: latest
+
 #sadis-server:
 #  image:
 #    repository: 10.90.0.101:30500/opencord/sadis-server
