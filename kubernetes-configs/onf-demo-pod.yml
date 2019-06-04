@@ -1,22 +1,30 @@
 ---
+
+etcd-cluster:
+  clusterSize: 1
 # global:
-#   registry: 192.168.100.1:30500/
+#    registry: 192.168.100.1:30500/
 images:
 # VOLTHA
  envoy_for_etcd:
-   tag: 'voltha-1.7'
+   repository: '192.168.100.1:30500/voltha/voltha-envoy'
+   tag: 'dev'
 
  netconf:
-   tag: 'voltha-1.7'
+   repository: '192.168.100.1:30500/voltha/voltha-netconf'
+   tag: 'dev'
 
  ofagent:
-   tag: 'voltha-1.7'
+   repository: '192.168.100.1:30500/voltha/voltha-ofagent'
+   tag: 'dev'
 
  vcli:
-   tag: 'voltha-1.7'
+   repository: '192.168.100.1:30500/voltha/voltha-cli'
+   tag: 'dev'
 
  vcore:
-   tag: 'voltha-1.7'
+   repository: '192.168.100.1:30500/voltha/voltha-voltha'
+   tag: 'dev'
 # BBSIM
  bbsim:
    repository: voltha/voltha-bbsim
