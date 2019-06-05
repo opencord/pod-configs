@@ -66,6 +66,5 @@ hosts:
       dp_iface_ip_qinq: '10.8.2.100'
       dp_iface_ip: '10.8.3.1'
       dp_iface_gateway: '10.8.3.254'
-      dp_iface_ip_qinq: '8.8.8.8'
       container_type: null
       container_name: null
