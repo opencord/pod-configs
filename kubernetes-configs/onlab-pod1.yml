@@ -43,6 +43,11 @@ images:
     repository: 'matteoscandolo/onos'
     tag: '1.13.9-rc3'
 
+
+  xos_core:
+    repository: smbaker/xos-core
+    tag: 'test'
+
 rcord:
   image:
     tag: 'master'
