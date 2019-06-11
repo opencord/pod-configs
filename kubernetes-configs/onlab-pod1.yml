@@ -46,8 +46,8 @@ images:
     tag: 'voltha-1.7'
   alarm_generator:
     tag: 'voltha-1.7'
-  freeradius:
-    tag: 'voltha-1.7'
+  # freeradius:
+  #   tag: 'voltha-1.7'
 # BBSim
   bbsim:
     tag: 'latest'
