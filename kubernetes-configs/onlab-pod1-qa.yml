@@ -37,8 +37,11 @@ images:
 
 # ONOS
   onos:
-    repository: 'matteoscandolo/onos'
     tag: '1.13.9-rc4'
+
+volt:
+  image:
+    tag: 'master'
 
 rcord:
   image:
