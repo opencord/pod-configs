@@ -24,11 +24,15 @@ description: Pre-provsion a subscriber
 topology_template:
   node_templates:
 
-    default_bp:
+    high_speed_bp:
       type: tosca.nodes.BandwidthProfile
       properties:
-         name: Default
-         must-exist: true
+         air: 2000
+         cbs: 2000
+         cir: 2000
+         ebs: 2000
+         eir: 2000
+         name: Bronze
 
     # Pre-provision the subscriber the subscriber
     onf_subscriber_1:
@@ -44,10 +48,10 @@ topology_template:
         remote_id: bar1
       requirements:
         - upstream_bps:
-            node: default_bp
+            node: high_speed_bp
             relationship: tosca.relationships.BelongsToOne
         - downstream_bps:
-            node: default_bp
+            node: high_speed_bp
             relationship: tosca.relationships.BelongsToOne
 
     onf_subscriber_2:
@@ -63,10 +67,10 @@ topology_template:
         remote_id: bar2
       requirements:
         - upstream_bps:
-            node: default_bp
+            node: high_speed_bp
             relationship: tosca.relationships.BelongsToOne
         - downstream_bps:
-            node: default_bp
+            node: high_speed_bp
             relationship: tosca.relationships.BelongsToOne
 
     onf_subscriber_3:
@@ -82,8 +86,8 @@ topology_template:
         remote_id: bar3
       requirements:
         - upstream_bps:
-            node: default_bp
+            node: high_speed_bp
             relationship: tosca.relationships.BelongsToOne
         - downstream_bps:
-            node: default_bp
+            node: high_speed_bp
             relationship: tosca.relationships.BelongsToOne

@@ -19,6 +19,7 @@ imports:
   - custom_types/oltdevice.yaml
   - custom_types/onudevice.yaml
   - custom_types/voltservice.yaml
+  - custom_types/technologyprofile
 description: Create a simulated OLT Device in VOLTHA
 topology_template:
   node_templates:
@@ -45,3 +46,146 @@ topology_template:
         - volt_service:
             node: service#volt
             relationship: tosca.relationships.BelongsToOne
+
+    technologyProfile:
+      type: tosca.nodes.TechnologyProfile
+      properties:
+        profile_id: 64
+        technology: xgspon
+        profile_value: >
+          {
+          	"name": "4QueueHybridProfileMap1",
+          	"profile Type": "XPON",
+          	"version": 1.0,
+          	"instance_control": {
+          		"onu": "multi-instance",
+          		"uni": "single-instance",
+          		"num_gem_ports": 4,
+          		"Max_GEM_Payload_Size": "auto"
+          	},
+          	"u_s_scheduler": {
+          		"additional_bw": "auto",
+          		"priority": 0,
+          		"weight": 0,
+          		"q_sched_policy": "hybrid"
+          	},
+          	"d_s_scheduler": {
+          		"priority": 0,
+          		"weight": 0,
+          		"q_sched_policy": "hybrid"
+          	},
+          	"Upstream GEM_Port_attribute_List": [{
+          			"pbit_map": "0b00000101",
+          			"AES_Encryption": "TRUE",
+          			"Scheduling_Policy": "WRR",
+          			"Priority_Q": 4,
+          			"Weight": 25,
+          			"Discard_Policy": "Tail-Drop",
+          			"Max_Q_Size": "auto",
+          			"Discard_Config": {
+          				"Min_Threshold": 0,
+          				"Max_Threshold": 0,
+          				"Max_Probability": 0
+          			}
+          		},
+          		{
+          			"pbit_map": "0b00011010",
+          			"AES_Encryption": "TRUE",
+          			"Scheduling_Policy": "WRR",
+          			"Priority_Q": 3,
+          			"Weight": 75,
+          			"Discard_Policy": "Tail-Drop",
+          			"Max_Q_Size": "auto",
+          			"Discard_Config": {
+          				"Min_Threshold": 0,
+          				"Max_Threshold": 0,
+          				"Max_Probability": 0
+          			}
+          		},
+          		{
+          			"pbit_map": "0b00100000",
+          			"AES_Encryption": "TRUE",
+          			"Scheduling_Policy": "Strict-Priority",
+          			"Priority_Q": 2,
+          			"Weight": 0,
+          			"Discard_Policy": "Tail-Drop",
+          			"Max_Q_Size": "auto",
+          			"Discard_Config": {
+          				"Min_Threshold": 0,
+          				"Max_Threshold": 0,
+          				"Max_Probability": 0
+          			}
+          		},
+          		{
+          			"pbit_map": "0b11000000",
+          			"AES_Encryption": "TRUE",
+          			"Scheduling_Policy": "Strict-Priority",
+          			"Priority_Q": 1,
+          			"Weight": 0,
+          			"Discard_Policy": "Tail-Drop",
+          			"Max_Q_Size": "auto",
+          			"Discard_Config": {
+          				"Min_Threshold": 0,
+          				"Max_Threshold": 0,
+          				"Max_Probability": 0
+          			}
+          		}
+          	],
+          	"Downstream GEM_Port_attribute_List": [{
+          			"pbit_map": "0b00000101",
+          			"AES_Encryption": "TRUE",
+          			"Scheduling_Policy": "WRR",
+          			"Priority_Q": 4,
+          			"Weight": 10,
+          			"Discard_Policy": "Tail-Drop",
+          			"Max_Q_Size": "auto",
+          			"Discard_Config": {
+          				"Min_Threshold": 0,
+          				"Max_Threshold": 0,
+          				"Max_Probability": 0
+          			}
+          		},
+          		{
+          			"pbit_map": "0b00011010",
+          			"AES_Encryption": "TRUE",
+          			"Scheduling_Policy": "WRR",
+          			"Priority_Q": 3,
+          			"Weight": 90,
+          			"Discard_Policy": "Tail-Drop",
+          			"Max_Q_Size": "auto",
+          			"Discard_Config": {
+          				"Min_Threshold": 0,
+          				"Max_Threshold": 0,
+          				"Max_Probability": 0
+          			}
+          		},
+          		{
+          			"pbit_map": "0b00100000",
+          			"AES_Encryption": "TRUE",
+          			"Scheduling_Policy": "Strict-Priority",
+          			"Priority_Q": 2,
+          			"Weight": 0,
+          			"Discard_Policy": "Tail-Drop",
+          			"Max_Q_Size": "auto",
+          			"Discard_Config": {
+          				"Min_Threshold": 0,
+          				"Max_Threshold": 0,
+          				"Max_Probability": 0
+          			}
+          		},
+          		{
+          			"pbit_map": "0b11000000",
+          			"AES_Encryption": "TRUE",
+          			"Scheduling_Policy": "Strict-Priority",
+          			"Priority_Q": 1,
+          			"Weight": 0,
+          			"Discard_Policy": "Tail-Drop",
+          			"Max_Q_Size": "auto",
+          			"Discard_Config": {
+          				"Min_Threshold": 0,
+          				"Max_Threshold": 0,
+          				"Max_Probability": 0
+          			}
+          		}
+          	]
+          }
