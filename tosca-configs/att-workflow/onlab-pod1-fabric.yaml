@@ -150,12 +150,12 @@ topology_template:
         name: att-workflow-driver
         must-exist: true
 
-    BRCM22222222:
+    ALPHe3d1cfac:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
-        serial_number: BRCM22222222
-        # pon_port_id: 536870912
-        pon_port_id: 12345678
+        serial_number: ALPHe3d1cfac
+        pon_port_id: 536870912
+        # pon_port_id: 12345678
         device_id: of:000000000a5a0072
       requirements:
         - owner:
@@ -173,10 +173,10 @@ topology_template:
             node: service#att
             relationship: tosca.relationships.BelongsToOne
 
-    ISKT71e801a0:
+    ISKT71e80080:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
-        serial_number: ISKT71e801a0
+        serial_number: ISKT71e80080
         pon_port_id: 536870912
         device_id: of:000000000a5a0072
       requirements:

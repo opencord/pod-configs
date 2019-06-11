@@ -35,19 +35,19 @@ images:
     tag: '1.13.9-rc4'
 # VOLTHA
   vcore:
-    tag: 'latest'
+    tag: 'voltha-1.7'
   vcli:
-    tag: 'latest'
+    tag: 'voltha-1.7'
   ofagent:
-    tag: 'latest'
+    tag: 'voltha-1.7'
   netconf:
-    tag: 'latest'
+    tag: 'voltha-1.7'
   envoy_for_etcd:
-    tag: 'latest'
+    tag: 'voltha-1.7'
   alarm_generator:
-    tag: 'latest'
+    tag: 'voltha-1.7'
   freeradius:
-    tag: 'latest'
+    tag: 'voltha-1.7'
 # BBSim
   bbsim:
     tag: 'latest'
@@ -75,7 +75,7 @@ sadis-server:
     tag: 'latest'
 volt:
   image:
-    # repository: "10.128.22.1:30500/xosproject/volt-synchronizer"
+    # repository: "10.90.0.101:30500/xosproject/volt-synchronizer"
     # tag: 'candidate'
     tag: 'master'
 rcord:
