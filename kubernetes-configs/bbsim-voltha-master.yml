@@ -38,6 +38,7 @@ images:
   onos:
     repository: 'onosproject/onos'
     tag: 'latest'
+    pullPolicy: 'Never'
 
 # VOLTHA
   vcore:
