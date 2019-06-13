@@ -37,6 +37,7 @@ images:
 
 # ONOS
   onos:
+    repository: 'matteoscandolo/onos:1.13-branch'
     tag: '1.13.9-rc4'
 
 volt:
