@@ -35,16 +35,21 @@ images:
     repository: 'matteoscandolo/onos'
     tag: '1.13-branch'
 # VOLTHA
-  vcore:
-    tag: 'voltha-1.7'
-  vcli:
-    tag: 'voltha-1.7'
-  ofagent:
-    tag: 'voltha-1.7'
-  netconf:
-    tag: 'voltha-1.7'
   envoy_for_etcd:
-    tag: 'voltha-1.7'
+    repository: smbaker/voltha-envoy
+    tag: 'test'
+  netconf:
+    repository: smbaker/voltha-netconf
+    tag: 'test'
+  ofagent:
+    repository: smbaker/voltha-ofagent
+    tag: 'test'
+  vcli:
+    repository: smbaker/voltha-cli
+    tag: 'test'
+  vcore:
+    repository: smbaker/voltha-voltha
+    tag: 'test'
   alarm_generator:
     tag: 'voltha-1.7'
   # freeradius:
