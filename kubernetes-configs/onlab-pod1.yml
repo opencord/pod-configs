@@ -36,20 +36,15 @@ images:
     tag: '1.13-branch'
 # VOLTHA
   envoy_for_etcd:
-    repository: smbaker/voltha-envoy
-    tag: 'test'
+    tag: 'voltha-1.7'
   netconf:
-    repository: smbaker/voltha-netconf
-    tag: 'test'
+    tag: 'voltha-1.7'
   ofagent:
-    repository: smbaker/voltha-ofagent
-    tag: 'test'
+    tag: 'voltha-1.7'
   vcli:
-    repository: smbaker/voltha-cli
-    tag: 'test'
+    tag: 'voltha-1.7'
   vcore:
-    repository: smbaker/voltha-voltha
-    tag: 'test'
+    tag: 'voltha-1.7'
   alarm_generator:
     tag: 'voltha-1.7'
   # freeradius:
@@ -81,9 +76,9 @@ sadis-server:
     tag: 'latest'
 volt:
   image:
-    # repository: "10.90.0.101:30500/xosproject/volt-synchronizer"
-    # tag: 'candidate'
-    tag: 'master'
+    repository: "10.90.0.101:30500/xosproject/volt-synchronizer"
+    tag: 'candidate'
+    # tag: 'master'
 rcord:
   image:
     #repository: "10.128.22.1:30500/xosproject/rcord-synchronizer"
