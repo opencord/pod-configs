@@ -20,5 +20,5 @@ mcord-subscriber:
 
 nginx:
   images:
-    nginx_image: "node1:30500/woojoong/nginx:onf-video-v3"
+    nginx_image: "woojoong/nginx:onf-video-v3"
 
