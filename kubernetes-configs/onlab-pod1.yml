@@ -81,7 +81,7 @@ volt:
     # tag: 'master'
 rcord:
   image:
-    repository: "10.128.22.1:30500/xosproject/rcord-synchronizer"
+    repository: "10.90.0.101:30500/xosproject/rcord-synchronizer"
     tag: 'candidate'
     #tag: 'master'
 
