@@ -53,6 +53,7 @@ topology_template:
         nas_port_id : "PON 1/1/03/1:1.1.1"
         circuit_id: foo1
         remote_id: bar1
+        tech_profile_id: 64
       requirements:
         - upstream_bps:
             node: default_bp
@@ -72,6 +73,7 @@ topology_template:
         nas_port_id : "PON 1/1/04/1:1.1.1"
         circuit_id: foo2
         remote_id: bar2
+        tech_profile_id: 64
       requirements:
         - upstream_bps:
             node: bandwidth2_bp
@@ -91,6 +93,7 @@ topology_template:
         nas_port_id : "PON 1/1/05/1:1.1.1"
         circuit_id: foo3
         remote_id: bar3
+        tech_profile_id: 64
       requirements:
         - upstream_bps:
             node: bandwidth2_bp

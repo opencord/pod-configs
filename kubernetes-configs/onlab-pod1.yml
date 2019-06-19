@@ -81,9 +81,9 @@ volt:
     # tag: 'master'
 rcord:
   image:
-    #repository: "10.128.22.1:30500/xosproject/rcord-synchronizer"
-    #tag: 'candidate'
-    tag: 'master'
+    repository: "10.128.22.1:30500/xosproject/rcord-synchronizer"
+    tag: 'candidate'
+    #tag: 'master'
 
 # in base-kubernetes chart
 kubernetes:
