@@ -1,10 +1,4 @@
 ---
-xos-gui:
-  images:
-    xos_gui:
-      repository: 'matteoscandolo/xos-gui'
-      tag: "mwc"
-
 log_agent:
     enabled: false
 
