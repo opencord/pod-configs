@@ -53,6 +53,7 @@ topology_template:
         nas_port_id : "PON 1/1/03/1:1.1.1"
         circuit_id: foo1
         remote_id: bar1
+        tech_profile_id: 64
       requirements:
         - upstream_bps:
             node: bandwidth2_bp

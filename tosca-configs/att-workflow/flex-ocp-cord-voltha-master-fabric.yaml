@@ -56,7 +56,7 @@ topology_template:
     port#bng_port:
       type: tosca.nodes.SwitchPort
       properties:
-        portId: 8
+        portId: 3
       requirements:
         - switch:
             node: switch#leaf_1
