@@ -55,52 +55,52 @@ topology_template:
         profile_value: >
           {
           	"name": "4QueueHybridProfileMap1",
-          	"profile Type": "XPON",
+          	"profile_type": "XPON",
           	"version": 1.0,
           	"instance_control": {
           		"onu": "multi-instance",
           		"uni": "single-instance",
           		"num_gem_ports": 1,
-          		"Max_GEM_Payload_Size": "auto"
+          		"max_gem_payload_size": "auto"
           	},
-          	"u_s_scheduler": {
+          	"us_scheduler": {
           		"additional_bw": "auto",
           		"priority": 0,
           		"weight": 0,
           		"q_sched_policy": "hybrid"
           	},
-          	"d_s_scheduler": {
+          	"ds_scheduler": {
           		"priority": 0,
           		"weight": 0,
           		"q_sched_policy": "hybrid"
           	},
-          	"Upstream GEM_Port_attribute_List": [{
+          	"upstream_gem_port_attribute_list": [{
           			"pbit_map": "0b11000000",
-          			"AES_Encryption": "TRUE",
-          			"Scheduling_Policy": "Strict-Priority",
-          			"Priority_Q": 1,
-          			"Weight": 0,
-          			"Discard_Policy": "Tail-Drop",
-          			"Max_Q_Size": "auto",
-          			"Discard_Config": {
-          				"Min_Threshold": 0,
-          				"Max_Threshold": 0,
-          				"Max_Probability": 0
+          			"aes_encryption": "TRUE",
+          			"scheduling_policy": "Strict-Priority",
+          			"priority_q": 1,
+          			"weight": 0,
+          			"discard_policy": "Tail-Drop",
+          			"max_q_size": "auto",
+          			"discard_config": {
+          				"min_threshold": 0,
+          				"max_threshold": 0,
+          				"max_probability": 0
           			}
           		}
           	],
-          	"Downstream GEM_Port_attribute_List": [{
+          	"downstream_gem_port_attribute_list": [{
           			"pbit_map": "0b11000000",
-          			"AES_Encryption": "TRUE",
-          			"Scheduling_Policy": "Strict-Priority",
-          			"Priority_Q": 1,
-          			"Weight": 0,
-          			"Discard_Policy": "Tail-Drop",
-          			"Max_Q_Size": "auto",
-          			"Discard_Config": {
-          				"Min_Threshold": 0,
-          				"Max_Threshold": 0,
-          				"Max_Probability": 0
+          			"aes_encryption": "TRUE",
+          			"scheduling_policy": "Strict-Priority",
+          			"priority_q": 1,
+          			"weight": 0,
+          			"discard_policy": "Tail-Drop",
+          			"max_q_size": "auto",
+          			"discard_config": {
+          				"min_threshold": 0,
+          				"max_threshold": 0,
+          				"max_probability": 0
           			}
           		}
           	]
