@@ -12,13 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# curl -H "xos-username: admin@opencord.org" -H "xos-password: letmein" -X POST --data-binary @onlab-pod1-qa-olt.yaml http://10.90.0.101:30007/run
+# curl -H "xos-username: admin@opencord.org" -H "xos-password: letmein" -X POST --data-binary @onlab-pod1-olt.yaml http://10.90.0.101:30007/run
 
 tosca_definitions_version: tosca_simple_yaml_1_0
 imports:
   - custom_types/oltdevice.yaml
   - custom_types/onudevice.yaml
   - custom_types/voltservice.yaml
+  - custom_types/technologyprofile.yaml
 description: Create a simulated OLT Device in VOLTHA
 topology_template:
   node_templates:
@@ -45,3 +46,62 @@ topology_template:
         - volt_service:
             node: service#volt
             relationship: tosca.relationships.BelongsToOne
+
+    technologyProfile:
+      type: tosca.nodes.TechnologyProfile
+      properties:
+        profile_id: 64
+        technology: xgspon
+        profile_value: >
+          {
+          	"name": "4QueueHybridProfileMap1",
+          	"profile Type": "XPON",
+          	"version": 1.0,
+          	"instance_control": {
+          		"onu": "multi-instance",
+          		"uni": "single-instance",
+          		"num_gem_ports": 1,
+          		"Max_GEM_Payload_Size": "auto"
+          	},
+          	"u_s_scheduler": {
+          		"additional_bw": "auto",
+          		"priority": 0,
+          		"weight": 0,
+          		"q_sched_policy": "hybrid"
+          	},
+          	"d_s_scheduler": {
+          		"priority": 0,
+          		"weight": 0,
+          		"q_sched_policy": "hybrid"
+          	},
+          	"Upstream GEM_Port_attribute_List": [{
+          			"pbit_map": "0b11000000",
+          			"AES_Encryption": "TRUE",
+          			"Scheduling_Policy": "Strict-Priority",
+          			"Priority_Q": 1,
+          			"Weight": 0,
+          			"Discard_Policy": "Tail-Drop",
+          			"Max_Q_Size": "auto",
+          			"Discard_Config": {
+          				"Min_Threshold": 0,
+          				"Max_Threshold": 0,
+          				"Max_Probability": 0
+          			}
+          		}
+          	],
+          	"Downstream GEM_Port_attribute_List": [{
+          			"pbit_map": "0b11000000",
+          			"AES_Encryption": "TRUE",
+          			"Scheduling_Policy": "Strict-Priority",
+          			"Priority_Q": 1,
+          			"Weight": 0,
+          			"Discard_Policy": "Tail-Drop",
+          			"Max_Q_Size": "auto",
+          			"Discard_Config": {
+          				"Min_Threshold": 0,
+          				"Max_Threshold": 0,
+          				"Max_Probability": 0
+          			}
+          		}
+          	]
+          }
