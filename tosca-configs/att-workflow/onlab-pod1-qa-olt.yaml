@@ -65,11 +65,14 @@ topology_template:
           	},
           	"us_scheduler": {
           		"additional_bw": "auto",
+                        "direction": "UPSTREAM",
           		"priority": 0,
           		"weight": 0,
           		"q_sched_policy": "hybrid"
           	},
           	"ds_scheduler": {
+                        "additional_bw": "auto",
+                        "direction": "DOWNSTREAM",
           		"priority": 0,
           		"weight": 0,
           		"q_sched_policy": "hybrid"
