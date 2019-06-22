@@ -57,10 +57,10 @@ topology_template:
           	"name": "4QueueHybridProfileMap1",
           	"profile_type": "XPON",
           	"version": 1.0,
+          	"num_gem_ports": 1,
           	"instance_control": {
           		"onu": "multi-instance",
           		"uni": "single-instance",
-          		"num_gem_ports": 1,
           		"max_gem_payload_size": "auto"
           	},
           	"us_scheduler": {
