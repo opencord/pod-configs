@@ -53,7 +53,7 @@ topology_template:
         profile_id: 64
         technology: xgspon
         profile_value: >
-i          {
+          {
             "name": "4QueueHybridProfileMap1",
             "profile_type": "XPON",
             "version": 1.0,
