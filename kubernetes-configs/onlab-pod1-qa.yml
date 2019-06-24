@@ -47,11 +47,15 @@ volt:
 
 rcord:
   image:
-    tag: 'master'
+    repository: '10.90.0.101:30500/xosproject/rcord-synchronizer'
+    tag: 'candidate'
+    #tag: 'master'
 
 att-workflow-driver:
   image:
-    tag: 'master'
+    #tag: 'master'
+    repository: '10.90.0.101:30500/xosproject/att-workflow-driver-synchronizer'
+    tag: 'candidate'
 
 sadis-server:
   image:
