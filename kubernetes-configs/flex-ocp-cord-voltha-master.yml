@@ -16,6 +16,9 @@
 # Automated deployment configuration for Flex POD 1 , olt/onu are connected to this
 
 images:
+  xos_core:
+    tag: 'master'
+
 # VOLTHA
   envoy_for_etcd:
     tag: 'voltha-1.7'
@@ -39,6 +42,7 @@ images:
     repository: 'matteoscandolo/onos'
     tag: '1.13-branch'
     #tag: '1.13.9-rc4'
+
 
 volt:
   image:
