@@ -46,6 +46,10 @@ olts:
     pass: 'onl'
     fortygig: 'true'
 
+onus:
+  -
+    serial: 'ALPHe3d1cfa7'
+
 hosts:
   src:
     -
@@ -53,13 +57,15 @@ hosts:
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'ens2f1'
-      container_type: ''
-      container_name: ''
+      container_type: null
+      container_name: null
       onu: 'ALPHe3d1cfa7'
+      c_tag: '999'
+      s_tag: '111'
 
   dst:
     -
-      ip: '10.192.20.198'
+      ip: '10.192.20.47'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'ens3d1'
