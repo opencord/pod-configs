@@ -68,7 +68,7 @@ topology_template:
       type: tosca.nodes.BNGPortMapping
       properties:
         s_tag: any
-        switch_port: 8
+        switch_port: 3
 
     # DHCP L2 Relay config
     onos_app#dhcpl2relay:
@@ -85,7 +85,7 @@ topology_template:
           {
             "dhcpl2relay" : {
               "useOltUplinkForServerPktInOut" : false,
-              "dhcpServerConnectPoints" : [ "of:0000cc37ab5b6da8/8" ]
+              "dhcpServerConnectPoints" : [ "of:0000cc37ab5b6da8/3" ]
             }
           }
       requirements:
