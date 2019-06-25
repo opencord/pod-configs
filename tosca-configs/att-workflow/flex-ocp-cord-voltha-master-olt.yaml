@@ -109,7 +109,7 @@ topology_template:
               {
                 "pbit_map": "0b00100000",
                 "aes_encryption": "True",
-                "scheduling_policy": "StrictPriority",
+                "scheduling_policy": "Strict-Priority",
                 "priority_q": 2,
                 "weight": 0,
                 "discard_policy": "TailDrop",
@@ -123,7 +123,7 @@ topology_template:
               {
                 "pbit_map": "0b11000000",
                 "aes_encryption": "True",
-                "scheduling_policy": "StrictPriority",
+                "scheduling_policy": "Strict-Priority",
                 "priority_q": 1,
                 "weight": 25,
                 "discard_policy": "TailDrop",
