@@ -83,7 +83,7 @@ topology_template:
                 "scheduling_policy": "Strict-Priority",
                 "priority_q": 1,
                 "weight": 0,
-                "discard_policy": "Tail-Drop",
+                "discard_policy": "TailDrop",
                 "max_q_size": "auto",
                 "discard_config": {
                   "min_threshold": 0,
@@ -98,7 +98,7 @@ topology_template:
                 "scheduling_policy": "Strict-Priority",
                 "priority_q": 1,
                 "weight": 0,
-                "discard_policy": "Tail-Drop",
+                "discard_policy": "TailDrop",
                 "max_q_size": "auto",
                 "discard_config": {
                   "min_threshold": 0,
