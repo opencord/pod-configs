@@ -79,7 +79,7 @@ topology_template:
             },
             "upstream_gem_port_attribute_list": [{
                 "pbit_map": "0b11000000",
-                "aes_encryption": "TRUE",
+                "aes_encryption": "True",
                 "scheduling_policy": "Strict-Priority",
                 "priority_q": 1,
                 "weight": 0,
@@ -94,7 +94,7 @@ topology_template:
             ],
             "downstream_gem_port_attribute_list": [{
                 "pbit_map": "0b11000000",
-                "aes_encryption": "TRUE",
+                "aes_encryption": "True",
                 "scheduling_policy": "Strict-Priority",
                 "priority_q": 1,
                 "weight": 0,
