@@ -161,7 +161,7 @@ topology_template:
                   "max_threshold": 0,
                   "max_probability": 0
                 }
-    	      },
+              },
               {
                 "pbit_map": "0b00100000",
                 "aes_encryption": "True",
