@@ -34,11 +34,11 @@ topology_template:
     bandwidth2_bp:
       type: tosca.nodes.BandwidthProfile
       properties:
-         air: 99999
-         cbs: 99999
-         cir: 99999
-         ebs: 99999
-         eir: 99999
+         air: 100000
+         cbs: 10000
+         cir: 5000
+         ebs: 1000
+         eir: 5000
          name: bandwidth2
 
     # Pre-provision the subscriber the subscriber
