@@ -40,6 +40,12 @@ images:
     repository: 'matteoscandolo/onos'
     tag: '1.13-branch'
     #tag: '1.13.9-rc4'
+xos-gui:
+  images:
+    xos_gui:
+      tag: 'master'
+    xos_ws:
+      tag: 'master'
 
 volt:
   image:
