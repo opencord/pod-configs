@@ -76,14 +76,10 @@ sadis-server:
     tag: 'latest'
 volt:
   image:
-    repository: "10.90.0.101:30500/xosproject/volt-synchronizer"
-    tag: 'candidate'
-    # tag: 'master'
+    tag: 'master'
 rcord:
   image:
-    repository: "10.90.0.101:30500/xosproject/rcord-synchronizer"
-    tag: 'candidate'
-    #tag: 'master'
+    tag: 'master'
 
 # in base-kubernetes chart
 kubernetes:
