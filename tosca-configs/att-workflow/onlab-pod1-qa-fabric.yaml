@@ -166,7 +166,7 @@ topology_template:
               "q_sched_policy": "hybrid"
             },
             "upstream_gem_port_attribute_list": [{
-                "pbit_map": "0b11000000",
+                "pbit_map": "0b11111111",
                 "aes_encryption": "True",
                 "scheduling_policy": "StrictPriority",
                 "priority_q": 1,
@@ -181,7 +181,7 @@ topology_template:
               }
             ],
             "downstream_gem_port_attribute_list": [{
-                "pbit_map": "0b11000000",
+                "pbit_map": "0b11111111",
                 "aes_encryption": "True",
                 "scheduling_policy": "StrictPriority",
                 "priority_q": 1,
