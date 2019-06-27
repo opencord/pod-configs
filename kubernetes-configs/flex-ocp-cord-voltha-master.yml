@@ -42,7 +42,12 @@ images:
     repository: 'matteoscandolo/onos'
     tag: '1.13-branch'
     #tag: '1.13.9-rc4'
-
+xos-gui:
+  images:
+    xos_gui:
+      tag: 'master'
+    xos_ws:
+      tag: 'master'
 
 volt:
   image:
@@ -50,11 +55,15 @@ volt:
 
 rcord:
   image:
+    #repository: '10.90.0.101:30500/xosproject/rcord-synchronizer'
+    #tag: 'candidate'
     tag: 'master'
 
 att-workflow-driver:
   image:
     tag: 'master'
+    #repository: '10.90.0.101:30500/xosproject/att-workflow-driver-synchronizer'
+    #tag: 'candidate'
 
 sadis-server:
   image:
