@@ -45,11 +45,11 @@ topology_template:
     onf_subscriber_1:
       type: tosca.nodes.RCORDSubscriber
       properties:
-        name: Sub_BRCM22222222
+        name: Sub_ISKT71e801a0
         status: pre-provisioned
         c_tag: 111
         s_tag: 111
-        onu_device: BRCM22222222
+        onu_device: ISKT71e801a0
         nas_port_id : "PON 1/1/03/1:1.1.1"
         circuit_id: foo1
         remote_id: bar1

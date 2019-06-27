@@ -101,10 +101,10 @@ topology_template:
         name: att-workflow-driver
         must-exist: true
 
-    BRCM22222222:
+    ISKT71e801a0:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
-        serial_number: BRCM22222222
+        serial_number: ISKT71e801a0
         # pon_port_id: 536870912
         pon_port_id: 12345678
         device_id: of:000000000a5a0072
@@ -156,20 +156,20 @@ topology_template:
               "direction": "UPSTREAM",
               "priority": 0,
               "weight": 0,
-              "q_sched_policy": "Hybrid"
+              "q_sched_policy": "hybrid"
             },
             "ds_scheduler": {
               "additional_bw": "auto",
               "direction": "DOWNSTREAM",
               "priority": 0,
               "weight": 0,
-              "q_sched_policy": "Hybrid"
+              "q_sched_policy": "hybrid"
             },
             "upstream_gem_port_attribute_list": [{
                 "pbit_map": "0b11111111",
                 "aes_encryption": "True",
-                "scheduling_policy": "WRR",
-                "priority_q": 0,
+                "scheduling_policy": "StrictPriority",
+                "priority_q": 1,
                 "weight": 0,
                 "discard_policy": "TailDrop",
                 "max_q_size": "auto",
@@ -183,8 +183,8 @@ topology_template:
             "downstream_gem_port_attribute_list": [{
                 "pbit_map": "0b11111111",
                 "aes_encryption": "True",
-                "scheduling_policy": "WRR",
-                "priority_q": 0,
+                "scheduling_policy": "StrictPriority",
+                "priority_q": 1,
                 "weight": 0,
                 "discard_policy": "TailDrop",
                 "max_q_size": "auto",
