@@ -24,6 +24,17 @@ description: Pre-provsion subscribers
 topology_template:
   node_templates:
 
+    default:
+      type: tosca.nodes.BandwidthProfile
+      properties:
+        name: Default
+        must-exist: true
+        air: 100000
+        cbs: 30
+        cir: 600
+        ebs: 30
+        eir: 400
+
     high_speed_bp:
       type: tosca.nodes.BandwidthProfile
       properties:
