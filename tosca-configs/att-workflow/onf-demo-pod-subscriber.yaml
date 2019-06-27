@@ -24,11 +24,15 @@ description: Pre-provsion subscribers
 topology_template:
   node_templates:
 
-    default_bp:
-     type: tosca.nodes.BandwidthProfile
-     properties:
-        name: Default
-        must-exist: true
+    high_speed_bp:
+      type: tosca.nodes.BandwidthProfile
+      properties:
+         air: 100000
+         cbs: 2000
+         cir: 5000
+         ebs: 2000
+         eir: 3000
+         name: Bronze
 
     # EdgeCore OLT subscribers
     edgecore_iskratel_subscriber:
@@ -45,10 +49,10 @@ topology_template:
         tech_profile_id: 64
       requirements:
        - upstream_bps:
-           node: default_bp
+           node: high_speed_bp
            relationship: tosca.relationships.BelongsToOne
        - downstream_bps:
-           node: default_bp
+           node: high_speed_bp
            relationship: tosca.relationships.BelongsToOne
 
     edgecore_brcm_subscriber:
@@ -65,8 +69,8 @@ topology_template:
         tech_profile_id: 64
       requirements:
        - upstream_bps:
-           node: default_bp
+           node: high_speed_bp
            relationship: tosca.relationships.BelongsToOne
        - downstream_bps:
-           node: default_bp
+           node: high_speed_bp
            relationship: tosca.relationships.BelongsToOne

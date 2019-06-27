@@ -27,11 +27,11 @@ topology_template:
     high_speed_bp:
       type: tosca.nodes.BandwidthProfile
       properties:
-         air: 2000
+         air: 100000
          cbs: 2000
-         cir: 2000
+         cir: 5000
          ebs: 2000
-         eir: 2000
+         eir: 3000
          name: Bronze
 
     # Pre-provision the subscriber the subscriber
