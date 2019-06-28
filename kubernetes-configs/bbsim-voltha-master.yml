@@ -87,7 +87,7 @@ sadis-server:
     tag: 'latest'
 volt:
   image:
-    tag: 'master'
+    tag: '2.2.3'
 rcord:
   image:
     tag: 'master'
