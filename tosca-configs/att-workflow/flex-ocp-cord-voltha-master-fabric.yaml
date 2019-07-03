@@ -46,7 +46,7 @@ topology_template:
     port#olt_port:
       type: tosca.nodes.SwitchPort
       properties:
-        portId: 7
+        portId: 10
         host_learning: false
       requirements:
         - switch:
