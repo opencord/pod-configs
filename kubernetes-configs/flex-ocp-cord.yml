@@ -13,57 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Automated deployment configuration for Flex POD 1 , olt/onu are connected to this
-
-# This file is used to optionally customize helm charts installations
-images:
-# VOLTHA
-  envoy_for_etcd:
-    tag: 'latest'
-
-  netconf:
-    tag: 'latest'
-
-  ofagent:
-    tag: 'latest'
-
-  vcli:
-    tag: 'latest'
-
-  vcore:
-    tag: 'latest'
-
-# ONOS
-  onos:
-    repository: 'matteoscandolo/onos'
-    tag: '1.13.9-rc3'
-
-sadis-server:
-  image:
-    repository: 10.90.0.101:30500/opencord/sadis-server
-    tag: candidate
-
-rcord:
-  image:
-    repository: 10.90.0.101:30500/xosproject/rcord-synchronizer
-    tag: candidate
-
-# # ONOS applications
-aaaAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/aaa/1.9.0-SNAPSHOT/aaa-1.9.0-20190410.071508-31.oar"
-aaaAppVersion: "1.9.0.SNAPSHOT"
-
-sadisAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/sadis-app/3.1.0-SNAPSHOT/sadis-app-3.1.0-20190410.071623-30.oar"
-sadisAppVersion: "3.1.0.SNAPSHOT"
-
-dhcpl2relayAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/dhcpl2relay/1.6.0-SNAPSHOT/dhcpl2relay-1.6.0-20190410.071549-30.oar"
-dhcpl2relayAppVersion: "1.6.0.SNAPSHOT"
-
-oltAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/olt-app/3.0.1-SNAPSHOT/olt-app-3.0.1-20190410.071612-30.oar"
-oltAppVersion: "3.0.1.SNAPSHOT"
-
-# kafkaAppUrl: "https://oss.sonatype.org/content/repositories/snapshots/org/opencord/kafka/1.1.0-SNAPSHOT/kafka-1.1.0-20190410.071556-30.oar"
-kafkaAppUrl: "http://10.90.0.101:30160/repository/kafka-1.1.0-SNAPSHOT.oar"
-kafkaAppVersion: "1.1.0.SNAPSHOT"
+# Automated deployment configuration for flex ocp cord pod build , olt/onu are connected to this
 
 application_logs: |
   log4j.logger.org.opencord.olt = DEBUG
@@ -71,3 +21,4 @@ application_logs: |
   log4j.logger.org.opencord.sadis = DEBUG
   log4j.logger.org.opencord.aaa = DEBUG
   log4j.logger.org.opencord.dhcpl2relay = DEBUG
+
