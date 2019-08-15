@@ -133,7 +133,7 @@ topology_template:
             node: service#att
             relationship: tosca.relationships.BelongsToOne
 
-    BRCM22222222:
+    ALPHe3d1cfe3:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
         serial_number: ALPHe3d1cfe3 
