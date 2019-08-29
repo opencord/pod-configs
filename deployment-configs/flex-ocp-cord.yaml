@@ -45,6 +45,7 @@ olts:
     user: 'root'
     pass: 'onl'
     fortygig: 'true'
+    serial: 'EC1838000853'
 
 onus:
   -
