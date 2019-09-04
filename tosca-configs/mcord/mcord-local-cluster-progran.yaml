@@ -39,9 +39,10 @@ topology_template:
         name: mcord
         must-exist: true
 
-    handover#onf-handover:
+    handover#barcelona-handover:
       type: tosca.nodes.Handover
       properties:
+        name: barcelona-handover
         A3offset: 1
         A3TriggerQuantity: 0
         A5Thresh1Rsrp: 74
@@ -95,12 +96,15 @@ topology_template:
         UlAllocRBRate: 50
         mmeip: 10.90.0.131
         mmeport: "36412"
+        start: 1567321200
+        end: 1569826800
+        SubsProfile: IMSI2
       requirements:
         - owner:
             node: service#progran
             relationship: tosca.relationships.BelongsToOne
         - handover:
-            node: handover#onf-handover
+            node: handover#barcelona-handover
             relationship: tosca.relationships.BelongsToOne
         - enodeb:
             node: enodeb#accelleran
@@ -118,12 +122,15 @@ topology_template:
         UlAllocRBRate: 20
         mmeip: 10.90.0.131
         mmeport: "36412"
+        start: 1567321200
+        end: 1569826800
+        SubsProfile: IMSI1
       requirements:
         - owner:
             node: service#progran
             relationship: tosca.relationships.BelongsToOne
         - handover:
-            node: handover#onf-handover
+            node: handover#barcelona-handover
             relationship: tosca.relationships.BelongsToOne
         - enodeb:
             node: enodeb#accelleran
