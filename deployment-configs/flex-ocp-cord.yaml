@@ -38,6 +38,8 @@ fabric_switches:
     ip: '10.192.20.217'
     user: 'root'
     pass: 'onl'
+    bngPort: '3'
+    oltPort: '10'
 
 olts:
   -
