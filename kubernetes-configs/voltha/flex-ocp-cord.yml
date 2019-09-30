@@ -21,8 +21,8 @@ images:
     tag_go: voltha-2.1
     pullPolicy: Always
   onos:
-    tag: voltha-2.1
-    repository: voltha/voltha-onos
+    tag: dhcp-fix
+    repository: matteoscandolo/voltha-onos
     pullPolicy: Always
   bbsim:
     tag: 2.0.2
