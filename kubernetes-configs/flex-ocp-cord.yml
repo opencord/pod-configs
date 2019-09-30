@@ -15,10 +15,14 @@
 
 # Automated deployment configuration for flex ocp cord pod build , olt/onu are connected to this
 
+images:
+  onos:
+    tag: dhcp-fix
+    repository: matteoscandolo/voltha-onos
+
 application_logs: |
   log4j.logger.org.opencord.olt = DEBUG
   log4j.logger.org.opencord.kafka = DEBUG
   log4j.logger.org.opencord.sadis = DEBUG
   log4j.logger.org.opencord.aaa = DEBUG
   log4j.logger.org.opencord.dhcpl2relay = DEBUG
-
