@@ -27,6 +27,12 @@ images:
   bbsim:
     tag: 2.0.2
     pullPolicy: Always
+  afrouter:
+    repository: voltha/voltha-afrouter
+    tag: master
+  afrouterd:
+    repository: voltha/voltha-afrouterd
+    tag: master
 
 deployments:
   etcdOperator: true
