@@ -73,7 +73,7 @@ hosts:
       user: null
       pass: null
       dp_iface_name: null
-      dp_iface_ip_qinq: '10.8.2.103'
+      dp_iface_ip_qinq: '10.8.9.100'
       dp_iface_ip: null
       dp_iface_gateway: null
       container_type: null
