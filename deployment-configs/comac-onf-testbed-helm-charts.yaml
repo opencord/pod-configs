@@ -50,11 +50,13 @@ config:
           apn: apn1
           key: "000102030405060708090a0b0c0d0e0f"
           opc: "69d5c2eb2e2e624750541d3bbc692ba5"
+          sqn: 135
         - imsi: "732111000000421"
           msisdn: "1122334455"
           apn: apn1
           key: "000102030405060708090a0b0c0d0e0f"
           opc: "69d5c2eb2e2e624750541d3bbc692ba5"
+          sqn: 135
       mmes:
         - id: 1
           isdn: "19136246000"
@@ -412,6 +414,10 @@ config:
       value: 480
     - name: 720p
       value: 720
+
+networks:
+  sgi:
+    gateway: 13.1.1.250 # Vyatta router IP
 
 # Accelleran configuration values
 mme:
