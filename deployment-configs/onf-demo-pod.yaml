@@ -16,19 +16,11 @@
 
 ---
 
-kube_config: '/var/bbwf.conf'
+kube_config: '/var/k8.conf'
 
 nodes:
   -
     ip: '192.168.100.1'
-    user: 'cord'
-    pass: 'cord'
-  -
-    ip: '192.168.100.2'
-    user: 'cord'
-    pass: 'cord'
-  -
-    ip: '192.168.100.3'
     user: 'cord'
     pass: 'cord'
 
