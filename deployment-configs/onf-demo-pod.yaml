@@ -30,6 +30,9 @@ fabric_switches:
     ip: '192.168.100.101'
     user: 'root'
     pass: 'onl'
+    bngPort: '31'
+    oltPort: '1'
+    device_id: 'of:0000000000000001'
 
 olts:
   -
@@ -38,3 +41,4 @@ olts:
     user: 'root'
     pass: 'onl'
     fortygig: 'true'
+    serial: 'EC1838000853'

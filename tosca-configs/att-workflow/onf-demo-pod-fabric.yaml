@@ -66,7 +66,7 @@ topology_template:
     port#bng_port:
       type: tosca.nodes.SwitchPort
       properties:
-        portId: 153
+        portId: 31
       requirements:
         - switch:
             node: switch#agg_sw
@@ -136,8 +136,8 @@ topology_template:
     ALPHe3d1cfe3:
       type: tosca.nodes.AttWorkflowDriverWhiteListEntry
       properties:
-        serial_number: ALPHe3d1cfe3 
-        pon_port_id: 536870920 
+        serial_number: ALPHe3d1cfe3
+        pon_port_id: 536870920
         device_id: of:00000000c0a8646f
       requirements:
         - owner:
