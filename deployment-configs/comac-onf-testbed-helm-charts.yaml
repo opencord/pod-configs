@@ -17,6 +17,13 @@ cassandra:
   config:
     cluster_size: 3
 
+# Accelleran CU images
+images:
+  tags:
+    nats: "10.90.0.150:5000/accelleran/vran-nats:20190121"
+    redis: "10.90.0.150:5000/accelleran/vran-redis:20190121"
+    vranL3: "10.90.0.150:5000/accelleran/vran-l3-fdd:20190121"
+
 config:
   sriov:
     resourceList:
@@ -30,6 +37,7 @@ config:
           - i40evf
           - ixgbevf
   mme:
+    nodeIpAddr: 10.90.0.151  # Used in Accelleran CU chart
     cfgFiles:
       config.json:
         mme:
@@ -414,24 +422,17 @@ config:
       value: 480
     - name: 720p
       value: 720
+# Accelleran CU
+  accelleranCU:
+    nodeIp: 10.90.0.151
+    vranL3:
+      progran:
+        enabled: true
+        progranCtrlIpAddr: 10.90.0.151
 
 networks:
   sgi:
     gateway: 13.1.1.250 # Vyatta router IP
-
-# Accelleran configuration values
-mme:
-  nodeport_ip_addr: 10.90.0.151
-cu:
-  accelleran:
-    images:
-      nats: "10.90.0.150:5000/accelleran/vran-nats:20190121"
-      redis: "10.90.0.150:5000/accelleran/vran-redis:20190121"
-      bbu: "10.90.0.150:5000/accelleran/vran-l3-fdd:20190121"
-    node_ip: 10.90.0.151
-    progran:
-      enabled: true
-      ip: 10.90.0.151
 
 # cord-platform values
 etcd-operator:
