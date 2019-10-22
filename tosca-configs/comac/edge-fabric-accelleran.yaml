@@ -232,3 +232,43 @@ topology_template:
         - interface:
             node: interface#rru_interface
             relationship: tosca.relationships.BelongsToOne
+
+    # Management node Port
+    port#man_node_port:
+      type: tosca.nodes.SwitchPort
+      properties:
+        portId: 35
+      requirements:
+        - switch:
+            node: switch#leaf_1
+            relationship: tosca.relationships.BelongsToOne
+
+    interface#man_node_interface:
+      type: tosca.nodes.PortInterface
+      properties:
+        vlanUntagged: 20
+        name: man_node
+      requirements:
+        - port:
+            node: port#man_node_port
+            relationship: tosca.relationships.BelongsToOne
+
+    ip#port_man_node_sgi_net:
+      type: tosca.nodes.FabricIpAddress
+      properties:
+        ip: 13.1.1.254/24
+        description: man_node_sgi_net
+      requirements:
+        - interface:
+            node: interface#man_node_interface
+            relationship: tosca.relationships.BelongsToOne
+
+    ip#port_man_node_s1u_net:
+      type: tosca.nodes.FabricIpAddress
+      properties:
+        ip: 119.0.0.254/24
+        description: man_node_s1u_net
+      requirements:
+        - interface:
+            node: interface#man_node_interface
+            relationship: tosca.relationships.BelongsToOne
