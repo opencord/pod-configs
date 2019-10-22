@@ -13,26 +13,14 @@
 # limitations under the License.
 
 defaults:
-  image_tag: voltha-2.1
+  image_tag: master
   image_pullPolicy: Always
 
 images:
-  adapter_open_olt:
-    tag_go: voltha-2.1
-    pullPolicy: Always
   onos:
     tag: dhcp-fix
     repository: matteoscandolo/voltha-onos
     pullPolicy: Always
-  bbsim:
-    tag: 2.0.2
-    pullPolicy: Always
-  afrouter:
-    repository: voltha/voltha-afrouter
-    tag: master
-  afrouterd:
-    repository: voltha/voltha-afrouterd
-    tag: master
 
 deployments:
   etcdOperator: true
