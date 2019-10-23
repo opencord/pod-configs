@@ -49,4 +49,33 @@ olts:
     user: 'root'
     pass: 'onl'
     fortygig: 'true'
-    serial: 'EC1838000853'
+    serial: 'EC1904000654'
+
+onus:
+  -
+    serial: 'BRCM22222222'
+  -
+    serial: 'ALPHe3d1cf9d'
+
+hosts:
+  src:
+    -
+      ip: '10.128.100.71'
+      user: 'cord'
+      pass: 'cord'
+      dp_iface_name: 'ens6f1'
+      container_type: null
+      container_name: null
+      onu: 'BRCM22222222'
+      c_tag: '99'
+      s_tag: '11'
+    -
+      ip: '10.128.100.71'
+      user: 'cord'
+      pass: 'cord'
+      dp_iface_name: 'ens6f0'
+      container_type: null
+      container_name: null
+      onu: 'ALPHe3d1cf9d'
+      c_tag: '99'
+      s_tag: '22'
