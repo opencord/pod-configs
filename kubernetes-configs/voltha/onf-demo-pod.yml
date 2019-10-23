@@ -16,7 +16,7 @@
 # Automated deployment configuration for ONF DEMO POD, olt/onu are connected to this
 
 defaults:
-  image_tag: voltha-2.1
+  image_tag: master
   image_pullPolicy: Always
 
 images:
