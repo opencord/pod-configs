@@ -67,8 +67,8 @@ hosts:
       container_type: null
       container_name: null
       onu: 'BRCM22222222'
-      c_tag: '99'
-      s_tag: '11'
+      c_tag: '11'
+      s_tag: '99'
     -
       ip: '10.128.100.71'
       user: 'cord'
@@ -77,5 +77,5 @@ hosts:
       container_type: null
       container_name: null
       onu: 'ALPHe3d1cf9d'
-      c_tag: '99'
-      s_tag: '22'
+      c_tag: '22'
+      s_tag: '99'
