@@ -20,14 +20,22 @@ kube_config: '/var/k8.conf'
 
 nodes:
   -
-    ip: '192.168.100.1'
+    ip: '10.128.100.70'
+    user: 'cord'
+    pass: 'cord'
+  -
+    ip: '10.128.100.71'
+    user: 'cord'
+    pass: 'cord'
+  -
+    ip: '10.128.100.72'
     user: 'cord'
     pass: 'cord'
 
 fabric_switches:
   -
     mac: 'cc:37:ab:61:80:ca'
-    ip: '192.168.100.101'
+    ip: '10.128.100.80'
     user: 'root'
     pass: 'onl'
     bngPort: '31'
@@ -37,7 +45,7 @@ fabric_switches:
 olts:
   -
     name: 'edgecore'
-    ip: '192.168.100.111'
+    ip: '10.128.100.90'
     user: 'root'
     pass: 'onl'
     fortygig: 'true'
