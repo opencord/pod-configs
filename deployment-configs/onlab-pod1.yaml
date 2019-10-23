@@ -66,5 +66,8 @@ hosts:
     dp_iface_name: 'eth1'
     container_type: 'LXC'
     container_name: 'ALPHe3d1cfde'
+    onu: 'ALPHe3d1cfde'
+    c_tag: '112'
+    s_tag: '111'
   dst:
     dp_iface_ip_qinq: '8.8.8.8'
