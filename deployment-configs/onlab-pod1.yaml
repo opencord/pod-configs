@@ -38,6 +38,9 @@ fabric_switches:
     ip: '10.90.0.111'
     user: 'root'
     pass: 'onl'
+    bngPort: '31'
+    oltPort: '1'
+    device_id: 'of:0000000000000001'
 
 olts:
   -
