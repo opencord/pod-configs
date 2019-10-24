@@ -438,13 +438,6 @@ networks:
 etcd-operator:
   enabled: false
 
-# comac-platform values
-residentialService:
+# comac values
+seba-services:
   enabled: false
-progran:
-  enabled: true
-comac:
-  residentialService:
-    enabled: false
-  progran:
-    enabled: true
