@@ -48,14 +48,15 @@ olts:
     user: 'root'
     pass: 'onl'
     fortygig: 'true'
+    serial: 'EC1721000216'
 
 onus:
   -
-    serial: 'BRCM22222222'
+    serial: 'ALPHe3d1cfde'
   -
     serial: 'ISKT71e801a0'
   -
-    serial: 'ALPHe3d1cfde'
+    serial: 'BRCM22222222'
 
 srcHost:
   ip: '10.0.3.56'
@@ -67,6 +68,7 @@ hosts:
     -
       ip: '10.90.0.51'
       user: 'ubuntu'
+      pass: null
       dp_iface_name: 'eth1'
       container_type: 'LXC'
       container_name: 'ALPHe3d1cfde'
@@ -76,4 +78,13 @@ hosts:
 
   dst:
     -
+      ip: null
+      user: null
+      pass: null
+      dp_iface_name: null
+      dp_iface_ip_qinq: null
+      dp_iface_ip: null
+      dp_iface_gateway: null
       dp_iface_ip_qinq: '8.8.8.8'
+      container_type: null
+      container_name: null
