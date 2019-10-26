@@ -86,7 +86,7 @@ hosts:
       dp_iface_name: 'ens6f2'
       container_type: null
       container_name: null
-      onu: 'ALPHe3d1ced5-1'
+      onu: 'ALPHe3d1ced5'
       c_tag: '33'
       s_tag: '99'
   dst:
@@ -95,7 +95,7 @@ hosts:
       user: null
       pass: null
       dp_iface_name: null
-      dp_iface_ip_qinq: '10.99.33.254'
+      dp_iface_ip_qinq: '10.99.11.254'
       dp_iface_ip: null
       dp_iface_gateway: null
       container_type: null
