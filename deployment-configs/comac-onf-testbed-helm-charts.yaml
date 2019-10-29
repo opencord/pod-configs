@@ -37,7 +37,7 @@ config:
           - i40evf
           - ixgbevf
   mme:
-    nodeIpAddr: 10.90.0.151  # Used in Accelleran CU chart
+    ip: 10.90.0.151  # Used in Accelleran CU chart
     cfgFiles:
       config.json:
         mme:
@@ -423,12 +423,11 @@ config:
     - name: 720p
       value: 720
 # Accelleran CU
-  accelleranCU:
-    nodeIp: 10.90.0.151
-    vranL3:
-      progran:
-        enabled: true
-        progranCtrlIpAddr: 10.90.0.151
+  nats:
+    ip: 10.90.0.151
+  progran:
+    enabled: true
+    ip: 10.90.0.151
 
 networks:
   sgi:
