@@ -28,7 +28,7 @@ etcd_memory_limit: 8192M
 # Docker
 docker_iptables_enabled: true
 docker_insecure_registries:
-  - 10.90.0.150
+  - 10.90.0.150:5000
 
 # K8S
 kubeadm_enabled: true
