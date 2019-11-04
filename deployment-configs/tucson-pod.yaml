@@ -14,16 +14,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Automated deployment configuration for kind-voltha running BBSim
+# Automated deployment configuration for Tucson pod
 
 # Change default values in tests
-has_dataplane: True
-external_libs: True
-teardown_device: False
-ONOS_API_PORT: 30120
+ONOS_REST_PORT: 8181
 ONOS_SSH_PORT: 30115
 OLT_PORT: 9191
-KUBERNETES_CONF: $HOME/.kube/kind-config-voltha-minimal
 
 # This tells the control node how to reach the Kubernetes nodes.
 # Since we're running kind-voltha, the nodes are reached on localhost.
@@ -32,7 +28,7 @@ nodes:
     ip: 127.0.0.1
 
 # The pipeline requires this even though we don't have a fabric switch
-fabric_switches:
+fabric_switches: []
 
 olts:
   -
