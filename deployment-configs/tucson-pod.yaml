@@ -20,6 +20,7 @@
 ONOS_REST_PORT: 30120
 ONOS_SSH_PORT: 30115
 OLT_PORT: 9191
+KUBERNETES_CONF: $HOME/.kube/kind-config-voltha-minimal
 
 # This tells the control node how to reach the Kubernetes nodes.
 # Since we're running kind-voltha, the nodes are reached on localhost.
