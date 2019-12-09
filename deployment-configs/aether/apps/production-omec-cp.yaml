@@ -1,0 +1,54 @@
+images:
+  tags:
+    hssdb: "registry.aether.opennetworking.org/c3po-hssdb:1.1.0"
+    hss: "registry.aether.opennetworking.org/c3po-hss:1.1.0"
+    mme: "registry.aether.opennetworking.org/openmme:1.1.0"
+    spgwc: "registry.aether.opennetworking.org/ngic-cp:1.1.0"
+  pullPolicy: "Always"
+
+cassandra:
+  deploy: false
+
+resources:
+  enabled: true
+
+config:
+  clusterDomain: "product.central"
+  hss:
+    hssdb: "cassandra"
+  spgwc:
+    s1uAddr: "119.0.0.3"
+  mme:
+    cfgFiles:
+      config.json:
+        mme:
+          mcc:
+            dig1: 7
+            dig2: 3
+            dig3: 2
+          mnc:
+            dig1: 1
+            dig2: 1
+            dig3: 1
+  hss:
+    acl:
+      oldTls: "*.product.central"
+    bootstrap:
+      enabled: true
+      users:
+        - imsi: "732111000000420"
+          msisdn: "1122334455"
+          apn: "apn1"
+          key: "000102030405060708090a0b0c0d0e0f"
+          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
+          sqn: 135
+        - imsi: "732111000000421"
+          msisdn: "1122334455"
+          apn: "apn1"
+          key: "000102030405060708090a0b0c0d0e0f"
+          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
+          sqn: 135
+      mmes:
+        - id: 1
+          isdn: "19136246000"
+          unreachability: 1
