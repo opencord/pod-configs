@@ -1,0 +1,13 @@
+secrets: 
+  htpasswd: ""
+persistence: 
+  enabled: false
+ingress: 
+  enabled: true
+  hosts: 
+    - "registry.aether.opennetworking.org"
+  annotations:
+     "nginx.ingress.kubernetes.io/proxy-body-size": "0"
+service: 
+  type: "NodePort"
+  nodePort: "30000"
