@@ -1,0 +1,3 @@
+config:
+  mme:
+    ip: mme.omec.svc.staging.central
