@@ -1,0 +1,9 @@
+fullnameOverride: "cassandra"
+image:
+  tag: "2.1.20"
+persistence:
+  enabled: true
+  storageClass: "zonal-ssd"
+config:
+  cluster_domain: "product.central"
+  endpoint_snitch: "GossipingPropertyFileSnitch"
