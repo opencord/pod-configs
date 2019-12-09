@@ -1,0 +1,53 @@
+etcd-operator:
+  enabled: false
+# NOTE: set central=true, edge=false for central cluster
+tags:
+  central: false
+  edge: true
+
+nem-monitoring:
+  kpi_exporter:
+    enabled: true
+
+  prometheus:
+    alertmanager:
+      enabled: false
+    kubeStateMetrics:
+      enabled: true
+      fullnameOverride: "cord-platform-prometheus-kube-state-metrics"
+    nodeExporter:
+      enabled: true
+      fullnameOverride: "cord-platform-prometheus-node-exporter"
+    pushgateway:
+      enabled: false
+    server:
+      enabled: true
+      fullnameOverride: "cord-platform-prometheus-server"
+      # NOTE: set unique datacenter name for each clusters
+      global:
+        external_labels:
+          datacenter: "edge-onf-menlo"
+    extraScrapeConfigs: |
+      - job_name: 'nem-kpi-exporter'
+        metrics_path: /metrics
+        scrape_interval: 15s
+        static_configs:
+          - targets:
+              - cord-platform-nem-kpi-exporter:8080
+
+  grafana:
+    fullnameOverride: "cord-platform-grafana"
+
+  # NOTE: set xos=true, aehterCentralPods=true for central cluster.
+  dashboards:
+    k8s: false
+    nodeExporter: false
+    xos: false
+    onos: true
+    aaa: false
+    voltha: false
+    omec: false
+    aetherClusters: false
+    aetherEdges: false
+    aetherCentralPods: false
+    aetherEdgePods: true

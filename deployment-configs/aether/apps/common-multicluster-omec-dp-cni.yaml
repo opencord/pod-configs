@@ -1,0 +1,6 @@
+config:
+  sriov:
+    resourceList:
+      vfio:
+        pfNames:
+          - eth2
