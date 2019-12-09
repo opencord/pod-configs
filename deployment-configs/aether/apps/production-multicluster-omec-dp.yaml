@@ -1,0 +1,21 @@
+images:
+  tags:
+    spgwu: registry.aether.opennetworking.org/ngic-dp:1.1.0
+  pullPolicy: Always
+
+config:
+  spgwu:
+    cpComm:
+      addr: "spgwc-headless.omec.svc.product.central"
+    s1u:
+      device: s1u-net
+      # NOTE: set different IP for each edge
+      ip: 119.0.0.3/24
+    sgi:
+      device: sgi-net
+      # NOTE: set different IP for each edge
+      ip: 13.1.1.3/24
+networks:
+  sgi:
+    # NOTE: set correct gateway for each edge
+    gateway: 13.1.1.250 # Vyatta router IP
