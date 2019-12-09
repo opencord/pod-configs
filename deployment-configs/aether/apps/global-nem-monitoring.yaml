@@ -1,0 +1,49 @@
+kpi_exporter:
+  enabled: false
+
+prometheus:
+  alertmanager:
+    enabled: false
+  kubeStateMetrics:
+    enabled: false
+  nodeExporter:
+    enabled: false
+  pushgateway:
+    enabled: false
+  server:
+    enabled: true
+    fullnameOverride: "nem-monitoring-prometheus-server"
+  serverFiles:
+    prometheus.yml:
+      scrape_configs:
+        - job_name: prometheus-aggregator
+          scrape_interval: 15s
+          honor_labels: true
+          metrics_path: /federate
+          params:
+            match[]:
+              - '{job="kubernetes-nodes-cadvisor"}'
+              - '{job="kubernetes-service-endpoints"}'
+          static_configs:
+            - targets:
+              - cord-platform-prometheus-server.staging-cord-platform-p-rp6p6.svc.staging.central:80
+              - cord-platform-prometheus-server.staging-cord-platform-p-8s6wg.svc.a.staging.edge:80
+              - cord-platform-prometheus-server.staging-cord-platform-p-lmx6j.svc.b.staging.edge:80
+              - cord-platform-prometheus-server.staging-cord-platform-p-867hl.svc.c.staging.edge:80
+  extraScrapeConfigs: ""
+
+grafana:
+  fullnameOverride: "nem-monitoring-grafana"
+
+dashboards:
+  k8s: false
+  nodeExporter: false
+  xos: true
+  onos: false
+  aaa: false
+  voltha: false
+  omec: false
+  aetherClusters: true
+  aetherEdges: true
+  aetherCentralPods: true
+  aetherEdgePods: false
