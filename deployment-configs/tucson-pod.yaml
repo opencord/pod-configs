@@ -61,6 +61,16 @@ hosts:
       onu: ISKT71e801a0
       c_tag: 12
       s_tag: 11
+    -
+      ip: 127.0.0.1
+      user: cord
+      pass: cord
+      dp_iface_name: eth1
+      container_type: LXC
+      container_name: voltha-client-ALPHe3d1cfac
+      onu: ALPHe3d1cfac
+      c_tag: 21
+      s_tag: 21
 
   dst:
     -
@@ -75,6 +85,16 @@ hosts:
       container_name: null
     -
       dp_iface_ip_qinq: 192.168.12.254
+      ip: null
+      user: null
+      pass: null
+      dp_iface_name: null
+      dp_iface_ip: null
+      dp_iface_gateway: null
+      container_type: null
+      container_name: null
+    -
+      dp_iface_ip_qinq: 192.168.21.254
       ip: null
       user: null
       pass: null
