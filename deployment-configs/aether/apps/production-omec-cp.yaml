@@ -14,10 +14,8 @@ resources:
 
 config:
   clusterDomain: "product.central"
-  hss:
-    hssdb: "cassandra"
   spgwc:
-    s1uAddr: "119.0.0.3"
+    s1uAddr: "119.0.0.7"
   mme:
     cfgFiles:
       config.json:

@@ -26,10 +26,9 @@ prometheus:
               - '{job="kubernetes-service-endpoints"}'
           static_configs:
             - targets:
-              - cord-platform-prometheus-server.staging-cord-platform-p-rp6p6.svc.staging.central:80
-              - cord-platform-prometheus-server.staging-cord-platform-p-8s6wg.svc.a.staging.edge:80
-              - cord-platform-prometheus-server.staging-cord-platform-p-lmx6j.svc.b.staging.edge:80
-              - cord-platform-prometheus-server.staging-cord-platform-p-867hl.svc.c.staging.edge:80
+              - cord-platform-prometheus-server.cord-platform-p-s5pp8.svc.product.central:80
+              - cord-platform-prometheus-server.cord-platform-p-6lcrm.svc.menlo.edge:80
+              - cord-platform-prometheus-server.cord-platform-p-lmx6j.svc.b.staging.edge:80
   extraScrapeConfigs: ""
 
 grafana:

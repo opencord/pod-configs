@@ -5,9 +5,27 @@ tags:
   central: false
   edge: true
 
+kafka:
+  fullnameOverride: "cord-platform-kafka"
+
+logging:
+  elasticsearch:
+    fullnameOverride: "cord-platform-elasticsearch"
+  kibana:
+    fullnameOverride: "cord-platform-kibana"
+  logstash:
+    fullnameOverride: "cord-platform-logstash"
+  fluentd-elasticsearch:
+    fullnameOverride: "cord-platform-fluentd-elasticsearch"
+
 nem-monitoring:
   kpi_exporter:
+    # NOTE: set enabled=false for central cluster
     enabled: true
+    fullnameOverride: "cord-platform-kpi-exporter"
+    kpi_broker: "cord-platform-kafka:9092"
+    topics:
+      - "onos.kpis"
 
   prometheus:
     alertmanager:
@@ -28,12 +46,12 @@ nem-monitoring:
         external_labels:
           datacenter: "edge-onf-menlo"
     extraScrapeConfigs: |
-      - job_name: 'nem-kpi-exporter'
+      - job_name: 'cord-platform-kpi-exporter'
         metrics_path: /metrics
         scrape_interval: 15s
         static_configs:
           - targets:
-              - cord-platform-nem-kpi-exporter:8080
+              - cord-platform-kpi-exporter:8080
 
   grafana:
     fullnameOverride: "cord-platform-grafana"
