@@ -1,7 +1,5 @@
 progran:
   enabled: false
-fabric:
-  enabled: true
 
 mcord-subscriber:
   image:
@@ -13,7 +11,8 @@ onos-service:
   kafkaService: "cord-platform-kafka"
 
 fabric:
+  enabled: true
   kafkaService: "cord-platform-kafka"
 
-onosFabricRestHost: "cord-platform-onos-ui.cord-platform-p-x7tlq.svc.menlo.edge"
+onosFabricRestHost: "cord-platform-onos-ui.cord-platform-p-6lcrm.svc.menlo.edge"
 onosFabricRestPort: 8181
