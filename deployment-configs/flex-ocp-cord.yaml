@@ -60,16 +60,6 @@ hosts:
       ip: '10.192.20.61'
       user: 'cord'
       pass: 'cord'
-      dp_iface_name: 'ens2f1'
-      container_type: null
-      container_name: null
-      onu: 'ALPHe3d1cfa7'
-      c_tag: '901'
-      s_tag: '111'
-    -
-      ip: '10.192.20.61'
-      user: 'cord'
-      pass: 'cord'
       dp_iface_name: 'ens2f0'
       container_type: null
       container_name: null
@@ -88,16 +78,6 @@ hosts:
       s_tag: '222'
 
   dst:
-    -
-      ip: null
-      user: null
-      pass: null
-      dp_iface_name: null
-      dp_iface_ip_qinq: '10.8.9.100'
-      dp_iface_ip: null
-      dp_iface_gateway: null
-      container_type: null
-      container_name: null
     -
       ip: null
       user: null
