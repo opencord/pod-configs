@@ -15,6 +15,7 @@ resources:
 config:
   clusterDomain: "product.central"
   spgwc:
+    multiUpfs: true
     s1uAddr: "119.0.0.7"
   mme:
     cfgFiles:

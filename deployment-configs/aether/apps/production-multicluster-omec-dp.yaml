@@ -5,6 +5,7 @@ images:
 
 config:
   spgwu:
+    multiUpfs: true
     cpComm:
       addr: "spgwc-headless.omec.svc.product.central"
     s1u:
