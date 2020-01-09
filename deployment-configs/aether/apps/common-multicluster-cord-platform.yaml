@@ -5,6 +5,8 @@ tags:
   central: false
   edge: true
 
+onos:
+  fullnameOverride: "cord-platform-onos"
 kafka:
   fullnameOverride: "cord-platform-kafka"
 
