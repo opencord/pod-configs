@@ -7,14 +7,17 @@ config:
   spgwu:
     multiUpfs: true
     cpComm:
-      addr: "spgwc-headless.omec.svc.staging.central"
+      addr: "spgwc-headless.omec.svc.product.central"
     s1u:
       device: "s1u-net"
-      ip: "119.0.0.3/24"
+      # NOTE: set different IP for each edge
+      ip: "119.0.0.8/24"
     sgi:
       device: "sgi-net"
-      ip: "13.1.1.3/24"
-    dpName: "dp1"
+      # NOTE: set different IP for each edge
+      ip: "13.1.1.8/24"
+    dpName: "dp2"
 networks:
   sgi:
+    # NOTE: set correct gateway for each edge
     gateway: "13.1.1.250" # Vyatta router IP
