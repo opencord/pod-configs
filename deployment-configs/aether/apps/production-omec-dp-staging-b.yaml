@@ -1,6 +1,6 @@
 images:
   tags:
-    spgwu: "registry.aether.opennetworking.org/ngic-dp:1.1.0-debug"
+    spgwu: "registry.aether.opennetworking.org/ngic-dp:1.1.0"
   pullPolicy: "Always"
 
 config:
@@ -11,12 +11,12 @@ config:
     s1u:
       device: "s1u-net"
       # NOTE: set different IP for each edge
-      ip: "119.0.0.7/24"
+      ip: "119.0.0.8/24"
     sgi:
       device: "sgi-net"
       # NOTE: set different IP for each edge
-      ip: "13.1.1.7/24"
-    dpName: "dp1"
+      ip: "13.1.1.8/24"
+    dpName: "dp2"
 networks:
   sgi:
     # NOTE: set correct gateway for each edge
