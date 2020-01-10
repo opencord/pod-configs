@@ -17,6 +17,7 @@ config:
   hss:
     hssdb: cassandra
   spgwc:
+    multiUpfs: true
     s1uAddr: "119.0.0.3"
   mme:
     cfgFiles:
