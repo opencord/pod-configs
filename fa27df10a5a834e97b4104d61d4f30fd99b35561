@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "62e7de52_6ae6fd1b",
+        "filename": "deployment-configs/aether/apps/staging-omec-dp-staging-nokia.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2020-01-14T19:51:54Z",
+      "side": 1,
+      "message": "looks like unnecessary string is copied here",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 51
+      },
+      "revId": "fa27df10a5a834e97b4104d61d4f30fd99b35561",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e5b0dde4_0b68072f",
+        "filename": "deployment-configs/aether/apps/staging-omec-dp-staging-nokia.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2020-01-14T19:51:54Z",
+      "side": 1,
+      "message": "since we have more ocp servers, maybe \"dp-nokia\" would be better name?",
+      "range": {
+        "startLine": 17,
+        "startChar": 13,
+        "endLine": 17,
+        "endChar": 25
+      },
+      "revId": "fa27df10a5a834e97b4104d61d4f30fd99b35561",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
