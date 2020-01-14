@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "646dfbfb_a2633ad4",
+        "filename": "deployment-configs/aether/apps/staging-multicluster-accelleran-cbrs-cu.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1000324
+      },
+      "writtenOn": "2020-01-14T01:47:36Z",
+      "side": 1,
+      "message": "onfcell222",
+      "range": {
+        "startLine": 6,
+        "startChar": 17,
+        "endLine": 6,
+        "endChar": 30
+      },
+      "revId": "f36a847ec1442a1acff1d581fd2f3c7d62565d3d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "47f9c249_321c5a6d",
+        "filename": "deployment-configs/aether/apps/staging-multicluster-accelleran-cbrs-cu.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000324
+      },
+      "writtenOn": "2020-01-14T01:47:36Z",
+      "side": 1,
+      "message": "222",
+      "range": {
+        "startLine": 7,
+        "startChar": 9,
+        "endLine": 7,
+        "endChar": 12
+      },
+      "revId": "f36a847ec1442a1acff1d581fd2f3c7d62565d3d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "70dbb314_af86b271",
+        "filename": "deployment-configs/aether/apps/staging-omec-cp.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1000324
+      },
+      "writtenOn": "2020-01-14T01:47:36Z",
+      "side": 1,
+      "message": "no, it is not 42. 119.0.0.42 is the IP address for the server running UPF.",
+      "range": {
+        "startLine": 20,
+        "startChar": 22,
+        "endLine": 20,
+        "endChar": 25
+      },
+      "revId": "f36a847ec1442a1acff1d581fd2f3c7d62565d3d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
