@@ -10,11 +10,11 @@ config:
       addr: "spgwc-headless.omec.svc.staging.central"
     s1u:
       device: "s1u-net"
-      ip: "119.0.0.43/24"
+      ip: "119.0.0.4/24"
     sgi:
       device: "sgi-net"
-      ip: "13.1.1.43/24"
-    dpName: "dp-nokia"
+      ip: "13.1.1.4/24"
+    dpName: "dp-staging-b"
 networks:
   sgi:
-    gateway: "13.1.1.42"
+    gateway: "13.1.1.21"

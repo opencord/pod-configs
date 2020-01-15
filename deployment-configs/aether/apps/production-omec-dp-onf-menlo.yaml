@@ -20,4 +20,4 @@ config:
 networks:
   sgi:
     # NOTE: set correct gateway for each edge
-    gateway: "13.1.1.250" # Vyatta router IP
+    gateway: "13.1.1.30"
