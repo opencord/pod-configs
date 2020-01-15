@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f684a785_0dc83049",
+        "filename": "deployment-configs/aether/apps/staging-omec-dp-staging-nokia.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1000324
+      },
+      "writtenOn": "2020-01-15T19:53:26Z",
+      "side": 1,
+      "message": "Why should it be 13.1.1.22, not 42?\n(I realized that the original one \"43\" is also wrong.. 42 is the IP address for a new Nokia server)",
+      "range": {
+        "startLine": 20,
+        "startChar": 4,
+        "endLine": 20,
+        "endChar": 24
+      },
+      "revId": "da81d20000f558a0357c64705e2f9386a06e3edb",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
