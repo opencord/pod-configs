@@ -22,6 +22,30 @@
       "revId": "da81d20000f558a0357c64705e2f9386a06e3edb",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2be93146_4b8ef96c",
+        "filename": "deployment-configs/aether/apps/staging-omec-dp-staging-nokia.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2020-01-15T19:55:11Z",
+      "side": 1,
+      "message": "Mistake, will fix it.",
+      "parentUuid": "f684a785_0dc83049",
+      "range": {
+        "startLine": 20,
+        "startChar": 4,
+        "endLine": 20,
+        "endChar": 24
+      },
+      "revId": "da81d20000f558a0357c64705e2f9386a06e3edb",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
     }
   ]
 }
