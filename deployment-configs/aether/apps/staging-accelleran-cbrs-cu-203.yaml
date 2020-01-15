@@ -3,5 +3,5 @@ config:
     ip: "10.168.0.192"
   vranL3:
     plmnId: "130501"
-    instanceId: "onfcell222"
-    tac: 222
+    instanceId: "onfcell203"
+    tac: 203
