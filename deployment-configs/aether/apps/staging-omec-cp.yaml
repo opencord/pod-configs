@@ -17,7 +17,8 @@ config:
   spgwc:
     apn: internet
     multiUpfs: true
-    s1uAddr: "119.0.0.43"
+    # can be any IP address, not used but crash without it
+    s1uAddr: "119.0.0.3"
   mme:
     cfgFiles:
       config.json:
