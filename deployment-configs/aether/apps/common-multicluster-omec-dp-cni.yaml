@@ -2,5 +2,7 @@ config:
   sriov:
     resourceList:
       vfio:
-        pfNames:
-          - eth2
+        s1uPfNames:
+          - eth2#0-3
+        sgiPfNames:
+          - eth2#4-7
