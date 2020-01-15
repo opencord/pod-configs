@@ -36,7 +36,7 @@ topology_template:
       properties:
         name: EdgeCore OLT
         device_type: openolt
-        host: 192.168.100.111
+        host: 192.168.100.112
         port: 9191
         switch_datapath_id: device:asg1
         switch_port: "128"
