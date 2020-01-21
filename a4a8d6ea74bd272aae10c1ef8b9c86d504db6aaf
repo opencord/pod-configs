@@ -16,6 +16,24 @@
       "revId": "a4a8d6ea74bd272aae10c1ef8b9c86d504db6aaf",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6174cc29_4b72f171",
+        "filename": "deployment-configs/aether/clusters/production-edge-mwc.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2020-01-21T19:12:32Z",
+      "side": 1,
+      "message": "This is K8S configuration that passed to Rancher when deploying a new K8S cluster. We do inter-cluster communication with pod and service IPs directly, so the pod and service IP ranges have to be unique.\nMaking it as a template is a good idea but I will do it later if it\u0027s okay.",
+      "parentUuid": "6e0f510a_14aa6eaf",
+      "revId": "a4a8d6ea74bd272aae10c1ef8b9c86d504db6aaf",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
     }
   ]
 }
