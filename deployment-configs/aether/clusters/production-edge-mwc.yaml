@@ -1,4 +1,4 @@
-name: staging-edge-b
+name: production-edge-mwc
 rancher_kubernetes_engine_config:
   authentication:
     strategy: x509
@@ -29,18 +29,18 @@ rancher_kubernetes_engine_config:
       always_pull_images: false
       pod_security_policy: false
       service_node_port_range: 2000-36767
-      service_cluster_ip_range: 10.49.128.0/17
+      service_cluster_ip_range: 10.54.128.0/17
       extra_args:
         feature-gates: "SCTPSupport=True"
     kubelet:
-      cluster_domain: b.staging.edge
-      cluster_dns_server: 10.49.128.10
+      cluster_domain: mwc.edge
+      cluster_dns_server: 10.54.128.10
       fail_swap_on: false
       extra_args:
         feature-gates: "SCTPSupport=True"
     kube-controller:
-      cluster_cidr: 10.49.0.0/17
-      service_cluster_ip_range: 10.49.128.0/17
+      cluster_cidr: 10.54.0.0/17
+      service_cluster_ip_range: 10.54.128.0/17
       extra_args:
         feature-gates: "SCTPSupport=True"
     scheduler:
@@ -63,7 +63,7 @@ rancher_kubernetes_engine_config:
         .:53 {
             errors
             health
-            kubernetes b.staging.edge in-addr.arpa ip6.arpa {
+            kubernetes mwc.edge in-addr.arpa ip6.arpa {
               pods insecure
               upstream
               fallthrough in-addr.arpa ip6.arpa
@@ -76,10 +76,10 @@ rancher_kubernetes_engine_config:
             reload
             loadbalance
         }
-        staging.central:53 {
+        product.central:53 {
             errors
             cache 30
-            forward . 10.47.128.10
+            forward . 10.52.128.10
         }
   addons_include:
     - https://raw.githubusercontent.com/intel/multus-cni/master/images/multus-daemonset-pre-1.16.yml

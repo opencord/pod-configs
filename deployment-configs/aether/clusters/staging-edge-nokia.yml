@@ -1,4 +1,4 @@
-name: staging-edge-a
+name: staging-edge-nokia
 rancher_kubernetes_engine_config:
   authentication:
     strategy: x509
@@ -29,18 +29,18 @@ rancher_kubernetes_engine_config:
       always_pull_images: false
       pod_security_policy: false
       service_node_port_range: 2000-36767
-      service_cluster_ip_range: 10.48.128.0/17
+      service_cluster_ip_range: 10.51.128.0/17
       extra_args:
         feature-gates: "SCTPSupport=True"
     kubelet:
-      cluster_domain: a.staging.edge
-      cluster_dns_server: 10.48.128.10
+      cluster_domain: nokia.staging.edge
+      cluster_dns_server: 10.51.128.10
       fail_swap_on: false
       extra_args:
         feature-gates: "SCTPSupport=True"
     kube-controller:
-      cluster_cidr: 10.48.0.0/17
-      service_cluster_ip_range: 10.48.128.0/17
+      cluster_cidr: 10.51.0.0/17
+      service_cluster_ip_range: 10.51.128.0/17
       extra_args:
         feature-gates: "SCTPSupport=True"
     scheduler:
@@ -63,7 +63,7 @@ rancher_kubernetes_engine_config:
         .:53 {
             errors
             health
-            kubernetes a.staging.edge in-addr.arpa ip6.arpa {
+            kubernetes nokia.staging.edge in-addr.arpa ip6.arpa {
               pods insecure
               upstream
               fallthrough in-addr.arpa ip6.arpa
