@@ -20,9 +20,9 @@ kube_config: 'infosys.conf'
 
 nodes:
   -
-    ip: '192.168.10.1'
-    user: 'infosys'
-    pass: 'Engne@12345'
+    ip: '192.168.10.13'
+    user: 'ubuntu'
+    pass: 'ubuntu'
 
 fabric_switches:
   -
