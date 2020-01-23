@@ -47,7 +47,7 @@ olts:
     user: root
     pass: onl
     fortygig: True
-    serial: 'EC1729003539' 
+    serial: 'EC1729003539'
 # Gpon OLT
   # -
   #   ip:  10.34.90.50
@@ -61,8 +61,8 @@ hosts:
     #XGSPON ONU
     -
       ip: 127.0.0.1
-      user: cord
-      pass: cord
+      user: community
+      pass: admin
       dp_iface_name: eno3
       container_type: null
       container_name: null
