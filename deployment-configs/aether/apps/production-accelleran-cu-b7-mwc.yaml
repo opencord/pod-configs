@@ -1,0 +1,14 @@
+images:
+  tags:
+    initCU: registry.aether.opennetworking.org/aether/pod-init:1.0.0
+    nats: registry.aether.opennetworking.org/accelleran/vran-nats:20190121
+    redis: registry.aether.opennetworking.org/accelleran/vran-redis:20190121
+    vranL3: registry.aether.opennetworking.org/accelleran/vran-l3-fdd:onf-dns
+  pullPolicy: IfNotPresent
+config:
+  nats:
+    ip: 119.0.0.20
+  mme:
+    ip: 172.16.0.8
+  progran:
+    enabled: false

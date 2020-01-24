@@ -1,7 +1,17 @@
-name: production-edge-mwc
+name: production-central
 rancher_kubernetes_engine_config:
   authentication:
     strategy: x509
+  cloud_provider:
+    name: gce
+    customCloudProvider: |-
+      [global]
+      project-id = m-cord
+      network-project-id = onf-vpn
+      network-name = default
+      subnetwork-name = default
+      regional = true
+      multizone = true
   ignore_docker_version: true
   ingress:
     provider: nginx
@@ -9,6 +19,8 @@ rancher_kubernetes_engine_config:
   monitoring:
     provider: none
   network:
+    options:
+      calico_cloud_provider: gce
     plugin: calico
   services:
     etcd:
@@ -29,18 +41,18 @@ rancher_kubernetes_engine_config:
       always_pull_images: false
       pod_security_policy: false
       service_node_port_range: 2000-36767
-      service_cluster_ip_range: 10.54.128.0/17
+      service_cluster_ip_range: 10.52.128.0/17
       extra_args:
         feature-gates: "SCTPSupport=True"
     kubelet:
-      cluster_domain: mwc.edge
-      cluster_dns_server: 10.54.128.10
+      cluster_domain: product.central
+      cluster_dns_server: 10.52.128.10
       fail_swap_on: false
       extra_args:
         feature-gates: "SCTPSupport=True"
     kube-controller:
-      cluster_cidr: 10.54.0.0/17
-      service_cluster_ip_range: 10.54.128.0/17
+      cluster_cidr: 10.52.0.0/17
+      service_cluster_ip_range: 10.52.128.0/17
       extra_args:
         feature-gates: "SCTPSupport=True"
     scheduler:
@@ -53,6 +65,14 @@ rancher_kubernetes_engine_config:
   addon_job_timeout: 30
   addons: |-
     ---
+    apiVersion: storage.k8s.io/v1
+    kind: StorageClass
+    metadata:
+      name: zonal-ssd
+    provisioner: kubernetes.io/gce-pd
+    parameters:
+      type: pd-ssd
+    ---
     apiVersion: v1
     kind: ConfigMap
     metadata:
@@ -63,7 +83,7 @@ rancher_kubernetes_engine_config:
         .:53 {
             errors
             health
-            kubernetes mwc.edge in-addr.arpa ip6.arpa {
+            kubernetes product.central in-addr.arpa ip6.arpa {
               pods insecure
               upstream
               fallthrough in-addr.arpa ip6.arpa
@@ -76,18 +96,16 @@ rancher_kubernetes_engine_config:
             reload
             loadbalance
         }
-        product.central:53 {
+        menlo.edge:53 {
             errors
             cache 30
-            forward . 10.52.128.10
+            forward . 10.53.128.10
         }
-        azure.central:53 {
+        mwc.edge:53 {
             errors
             cache 30
-            forward . 10.55.128.10
+            forward . 10.54.128.10
         }
-  addons_include:
-    - https://raw.githubusercontent.com/opencord/pod-configs/master/deployment-configs/aether/clusters/multus-daemonset-pre-1.16.yml
 
 windows_prefered_cluster: false
 docker_root_dir: /var/lib/docker
