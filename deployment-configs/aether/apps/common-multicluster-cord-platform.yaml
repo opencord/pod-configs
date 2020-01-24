@@ -54,6 +54,19 @@ nem-monitoring:
         static_configs:
           - targets:
               - cord-platform-kpi-exporter:8080
+      - job_name: 'mme-exporter-production'
+        metrics_path: /metrics
+        scrape_interval: 15s
+        static_configs:
+          - targets:
+              - mme.omec.svc.product.central:3081
+      - job_name: 'mme-exporter-azure'
+        metrics_path: /metrics
+        scrape_interval: 15s
+        static_configs:
+          - targets:
+              - mme.omec.svc.azure.central:3081
+
 
   grafana:
     fullnameOverride: "cord-platform-grafana"
@@ -71,3 +84,5 @@ nem-monitoring:
     aetherEdges: false
     aetherCentralPods: false
     aetherEdgePods: true
+    aetherMMEExporter: true
+
