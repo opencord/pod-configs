@@ -82,7 +82,7 @@ rancher_kubernetes_engine_config:
             forward . 10.52.128.10
         }
   addons_include:
-    - https://raw.githubusercontent.com/intel/multus-cni/master/images/multus-daemonset-pre-1.16.yml
+    - https://raw.githubusercontent.com/opencord/pod-configs/master/deployment-configs/aether/clusters/multus-daemonset-pre-1.16.yml
 
 windows_prefered_cluster: false
 docker_root_dir: /var/lib/docker

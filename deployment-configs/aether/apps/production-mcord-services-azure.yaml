@@ -1,0 +1,18 @@
+progran:
+  enabled: false
+
+mcord-subscriber:
+  image:
+    repository: "omecproject/mcord-synchronizer"
+    tag: "comac-1.0.0"
+    pullPolicy: "IfNotPresent"
+
+onos-service:
+  kafkaService: "cord-platform-kafka"
+
+fabric:
+  enabled: true
+  kafkaService: "cord-platform-kafka"
+
+onosFabricRestHost: "cord-platform-onos-ui.cord-platform-p-vqzqg.svc.mwc.edge"
+onosFabricRestPort: 8181

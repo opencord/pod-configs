@@ -7,20 +7,19 @@ tags:
 
 onos:
   fullnameOverride: "cord-platform-onos"
+  images:
+    onos:
+      pullPolicy: 'IfNotPresent'
 kafka:
   fullnameOverride: "cord-platform-kafka"
 
 logging:
-  elasticsearch:
-    fullnameOverride: "cord-platform-elasticsearch"
-  kibana:
-    fullnameOverride: "cord-platform-kibana"
-  logstash:
-    fullnameOverride: "cord-platform-logstash"
-  fluentd-elasticsearch:
-    fullnameOverride: "cord-platform-fluentd-elasticsearch"
+  enabled: false
 
 nem-monitoring:
+  images:
+    kpi_exporter:
+      pullPolicy: 'IfNotPresent'
   kpi_exporter:
     # NOTE: set enabled=false for central cluster
     enabled: true
