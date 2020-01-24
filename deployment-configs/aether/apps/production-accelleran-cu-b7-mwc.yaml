@@ -1,0 +1,14 @@
+images:
+  tags:
+    initCU: docker.io/omecproject/pod-init:1.0.0
+    nats: /accelleran/vran-nats:20190121
+    redis: node1:30500/accelleran/vran-redis:20190121
+    vranL3: node1:30500/accelleran/vran-l3-fdd:onf-dns
+  pullPolicy: IfNotPresent
+config:
+  nats:
+    ip: 10.93.1.20
+  mme:
+    ip: 172.16.0.8
+  progran:
+    enabled: false
