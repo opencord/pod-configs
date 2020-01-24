@@ -28,6 +28,8 @@ prometheus:
             - targets:
               - cord-platform-prometheus-server.cord-platform-p-s5pp8.svc.product.central:80
               - cord-platform-prometheus-server.cord-platform-p-6lcrm.svc.menlo.edge:80
+              - cord-platform-prometheus-server.cord-platform-p-dw2cc.svc.azure.central:80
+              - cord-platform-prometheus-server.cord-platform-p-vqzqg.svc.mwc.edge:80
   extraScrapeConfigs: ""
 
 grafana:
