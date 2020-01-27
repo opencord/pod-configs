@@ -8,6 +8,13 @@ images:
     ricWeb: registry.aether.opennetworking.org/aether/accelleran-cu-ricweb:v1.0.0
     depCheck: registry.aether.opennetworking.org/aether/kubernetes-entrypoint:v0.3.1
   pullPolicy: IfNotPresent
+
+nodeSelectors:
+  enabled: true
+  accelleranCBRSCommon:
+    label: omec-dp-cbrs
+    value: enabled
+
 config:
   nats:
     ip: "119.0.0.20"
