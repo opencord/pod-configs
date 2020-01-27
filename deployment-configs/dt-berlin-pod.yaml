@@ -46,14 +46,14 @@ olts:
     ip: 10.34.90.51
     user: root
     pass: onl
-    fortygig: True
+    fortygig: False
     serial: 'EC1729003539'
 # Gpon OLT
   # -
   #   ip:  10.34.90.50
   #   user: root
   #   pass: onl
-  #   fortygig: True
+  #   fortygig: False
   #   serial: ASGvOLT640000000
 
 hosts:
