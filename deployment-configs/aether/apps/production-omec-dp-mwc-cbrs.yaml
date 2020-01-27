@@ -16,7 +16,7 @@ config:
       device: "sgi-net"
       # NOTE: set different IP for each edge
       ip: "13.1.1.3/24"
-    dpName: "dp-cbrs"
+    dpName: "dp2"
 networks:
   sgi:
     # NOTE: set correct gateway for each edge
