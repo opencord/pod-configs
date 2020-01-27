@@ -1,8 +1,8 @@
 images:
   tags:
     hssdb: "registry.aether.opennetworking.org/c3po-hssdb:1.1.0"
-    hss: "registry.aether.opennetworking.org/c3po-hss:1.1.0"
-    mme: "registry.aether.opennetworking.org/openmme:1.1.0"
+    hss: "registry.aether.opennetworking.org/c3po-hss:1.1.2"
+    mme: "registry.aether.opennetworking.org/openmme:1.1.2"
     spgwc: "registry.aether.opennetworking.org/ngic-cp:1.1.0"
   pullPolicy: "Always"
 
