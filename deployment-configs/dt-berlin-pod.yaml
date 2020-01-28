@@ -33,7 +33,7 @@ fabric_switches:
     ip: 10.34.90.55
     user: root
     pass: onl
-    bngPort: 32
+    bngPort: 157
     #XGSPON
     oltPort: 1
     #GPON
