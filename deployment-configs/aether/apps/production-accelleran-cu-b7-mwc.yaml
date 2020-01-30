@@ -14,7 +14,7 @@ nodeSelectors:
 
 config:
   epc:
-    plmnId: 371211
+    plmnId: 130501
   nats:
     ip: 119.0.0.20
   mme:

@@ -3,7 +3,7 @@ images:
     hssdb: "registry.aether.opennetworking.org/c3po-hssdb:1.1.0"
     hss: "registry.aether.opennetworking.org/c3po-hss:1.1.2"
     mme: "registry.aether.opennetworking.org/openmme:1.1.2"
-    spgwc: "registry.aether.opennetworking.org/ngic-cp:1.1.0"
+    spgwc: "registry.aether.opennetworking.org/ngic-cp:1.1.1"
   pullPolicy: "Always"
 
 cassandra:
@@ -13,9 +13,12 @@ resources:
   enabled: true
 
 config:
+  coreDump:
+    enabled: true
+    path: /tmp/coredump
   clusterDomain: "azure.central"
   spgwc:
-    apn: apn1
+    apn: internet
     multiUpfs: true
     s1uAddr: "119.0.0.4"
     ueIpPool:
@@ -28,27 +31,39 @@ config:
         [DP_SELECTION_RULE_1]
         DPID = 1
         DPNAME = dp1
-        MCC = 732
-        MNC = 111
+        MCC = 315
+        MNC = 100
         TAC = 17
   mme:
     cfgFiles:
       config.json:
         mme:
           mcc:
-            dig1: 7
-            dig2: 3
-            dig3: 2
+            dig1: 3
+            dig2: 1
+            dig3: 5
           mnc:
             dig1: 1
-            dig2: 1
-            dig3: 1
+            dig2: 0
+            dig3: 0
   hss:
     acl:
       oldTls: "*.azure.central"
     bootstrap:
       enabled: true
       users:
+        - imsi: "315010999912343"
+          msisdn: "1122334455"
+          apn: "apn1"
+          key: "000102030405060708090a0b0c0d0e0f"
+          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
+          sqn: 135
+        - imsi: "315010999912344"
+          msisdn: "1122334455"
+          apn: "apn1"
+          key: "000102030405060708090a0b0c0d0e0f"
+          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
+          sqn: 135
         - imsi: "315010999912345"
           msisdn: "1122334455"
           apn: "apn1"

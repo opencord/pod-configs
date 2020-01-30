@@ -3,7 +3,7 @@ images:
     hssdb: "registry.aether.opennetworking.org/c3po-hssdb:1.1.0"
     hss: "registry.aether.opennetworking.org/c3po-hss:1.1.2"
     mme: "registry.aether.opennetworking.org/openmme:1.1.2"
-    spgwc: "registry.aether.opennetworking.org/ngic-cp:1.1.0"
+    spgwc: "registry.aether.opennetworking.org/ngic-cp:1.1.1"
   pullPolicy: "Always"
 
 cassandra:
@@ -13,6 +13,9 @@ resources:
   enabled: true
 
 config:
+  coreDump:
+    enabled: true
+    path: /tmp/coredump
   clusterDomain: "product.central"
   spgwc:
     apn: internet
@@ -36,6 +39,18 @@ config:
     bootstrap:
       enabled: true
       users:
+        - imsi: "315010999912343"
+          msisdn: "1122334455"
+          apn: "apn1"
+          key: "000102030405060708090a0b0c0d0e0f"
+          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
+          sqn: 135
+        - imsi: "315010999912344"
+          msisdn: "1122334455"
+          apn: "apn1"
+          key: "000102030405060708090a0b0c0d0e0f"
+          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
+          sqn: 135
         - imsi: "315010999912345"
           msisdn: "1122334455"
           apn: "apn1"
