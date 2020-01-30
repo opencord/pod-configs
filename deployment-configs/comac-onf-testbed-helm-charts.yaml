@@ -106,7 +106,7 @@ config:
 
 networks:
   sgi:
-    gateway: 13.1.1.250 # Vyatta router IP
+    gateway: 192.168.250.250 # Vyatta router IP
 
 # cord-platform values
 etcd-operator:
