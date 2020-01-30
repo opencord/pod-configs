@@ -45,14 +45,14 @@ topology_template:
       type: tosca.nodes.Node
       properties:
         dataPlaneIntf: eth2
-        dataPlaneIp: 119.0.0.131
+        dataPlaneIp: 192.168.251.131
         name: node1
 
     node#node2:
       type: tosca.nodes.Node
       properties:
         dataPlaneIntf: eth2
-        dataPlaneIp: 119.0.0.132
+        dataPlaneIp: 192.168.251.132
         name: node2
 
     # static routes
@@ -106,7 +106,7 @@ topology_template:
     ip#port_1_sgi_net:
       type: tosca.nodes.FabricIpAddress
       properties:
-        ip: 13.1.1.254/24
+        ip: 192.168.250.254/24
         description: node_1_sgi_net
       requirements:
         - interface:
@@ -116,18 +116,8 @@ topology_template:
     ip#port_1_s1u_net:
       type: tosca.nodes.FabricIpAddress
       properties:
-        ip: 119.0.0.254/24
+        ip: 192.168.251.254/24
         description: node_1_s1u_net
-      requirements:
-        - interface:
-            node: interface#port_1_interface
-            relationship: tosca.relationships.BelongsToOne
-
-    ip#port_1_rru_net:
-      type: tosca.nodes.FabricIpAddress
-      properties:
-        ip: 116.0.0.254/24
-        description: node_1_rru_net
       requirements:
         - interface:
             node: interface#port_1_interface
@@ -156,7 +146,7 @@ topology_template:
     ip#port_2_sgi_net:
       type: tosca.nodes.FabricIpAddress
       properties:
-        ip: 13.1.1.254/24
+        ip: 192.168.250.254/24
         description: node_2_sgi_net
       requirements:
         - interface:
@@ -166,18 +156,8 @@ topology_template:
     ip#port_2_s1u_net:
       type: tosca.nodes.FabricIpAddress
       properties:
-        ip: 119.0.0.254/24
+        ip: 192.168.251.254/24
         description: node_2_s1u_net
-      requirements:
-        - interface:
-            node: interface#port_2_interface
-            relationship: tosca.relationships.BelongsToOne
-
-    ip#port_2_rru_net:
-      type: tosca.nodes.FabricIpAddress
-      properties:
-        ip: 116.0.0.254/24
-        description: node_2_rru_net
       requirements:
         - interface:
             node: interface#port_2_interface
@@ -206,7 +186,7 @@ topology_template:
     ip#port_3_sgi_net:
       type: tosca.nodes.FabricIpAddress
       properties:
-        ip: 13.1.1.254/24
+        ip: 192.168.250.254/24
         description: node_3_sgi_net
       requirements:
         - interface:
@@ -216,7 +196,7 @@ topology_template:
     ip#port_3_s1u_net:
       type: tosca.nodes.FabricIpAddress
       properties:
-        ip: 119.0.0.254/24
+        ip: 192.168.251.254/24
         description: node_3_s1u_net
       requirements:
         - interface:
@@ -246,7 +226,7 @@ topology_template:
     ip#port_4_sgi_net:
       type: tosca.nodes.FabricIpAddress
       properties:
-        ip: 13.1.1.254/24
+        ip: 192.168.250.254/24
         description: node_4_sgi_net
       requirements:
         - interface:
@@ -256,7 +236,7 @@ topology_template:
     ip#port_4_s1u_net:
       type: tosca.nodes.FabricIpAddress
       properties:
-        ip: 119.0.0.254/24
+        ip: 192.168.251.254/24
         description: node_4_s1u_net
       requirements:
         - interface:
@@ -286,7 +266,7 @@ topology_template:
     ip#port_5_sgi_net:
       type: tosca.nodes.FabricIpAddress
       properties:
-        ip: 13.1.1.254/24
+        ip: 192.168.250.254/24
         description: node_5_sgi_net
       requirements:
         - interface:
@@ -296,7 +276,7 @@ topology_template:
     ip#port_5_s1u_net:
       type: tosca.nodes.FabricIpAddress
       properties:
-        ip: 119.0.0.254/24
+        ip: 192.168.251.254/24
         description: node_5_s1u_net
       requirements:
         - interface:
@@ -326,7 +306,7 @@ topology_template:
     ip#port_6_sgi_net:
       type: tosca.nodes.FabricIpAddress
       properties:
-        ip: 13.1.1.254/24
+        ip: 192.168.250.254/24
         description: node_6_sgi_net
       requirements:
         - interface:
@@ -336,7 +316,7 @@ topology_template:
     ip#port_6_s1u_net:
       type: tosca.nodes.FabricIpAddress
       properties:
-        ip: 119.0.0.254/24
+        ip: 192.168.251.254/24
         description: node_6_s1u_net
       requirements:
         - interface:
@@ -366,7 +346,7 @@ topology_template:
     ip#port_rru_sgi_net:
       type: tosca.nodes.FabricIpAddress
       properties:
-        ip: 13.1.1.254/24
+        ip: 192.168.250.254/24
         description: rru_sgi_net
       requirements:
         - interface:
@@ -376,18 +356,8 @@ topology_template:
     ip#port_rru_s1u_net:
       type: tosca.nodes.FabricIpAddress
       properties:
-        ip: 119.0.0.254/24
+        ip: 192.168.251.254/24
         description: rru_s1u_net
-      requirements:
-        - interface:
-            node: interface#rru_interface
-            relationship: tosca.relationships.BelongsToOne
-
-    ip#port_rru_net:
-      type: tosca.nodes.FabricIpAddress
-      properties:
-        ip: 116.0.0.254/24
-        description: rru_net
       requirements:
         - interface:
             node: interface#rru_interface
@@ -416,7 +386,7 @@ topology_template:
     ip#port_man_node_sgi_net:
       type: tosca.nodes.FabricIpAddress
       properties:
-        ip: 13.1.1.254/24
+        ip: 192.168.250.254/24
         description: man_node_sgi_net
       requirements:
         - interface:
@@ -426,7 +396,7 @@ topology_template:
     ip#port_man_node_s1u_net:
       type: tosca.nodes.FabricIpAddress
       properties:
-        ip: 119.0.0.254/24
+        ip: 192.168.251.254/24
         description: man_node_s1u_net
       requirements:
         - interface:
