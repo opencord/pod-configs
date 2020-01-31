@@ -24,6 +24,18 @@ prometheus:
             match[]:
               - '{job="kubernetes-nodes-cadvisor"}'
               - '{job="kubernetes-service-endpoints"}'
+        - job_name: 'mme-exporter-production'
+          metrics_path: /metrics
+          scrape_interval: 15s
+          static_configs:
+            - targets:
+                - mme.omec.svc.product.central:3081
+        - job_name: 'mme-exporter-azure'
+          metrics_path: /metrics
+          scrape_interval: 15s
+          static_configs:
+            - targets:
+                - mme.omec.svc.azure.central:3081
           static_configs:
             - targets:
               - cord-platform-prometheus-server.cord-platform-p-s5pp8.svc.product.central:80
@@ -47,3 +59,4 @@ dashboards:
   aetherEdges: true
   aetherCentralPods: true
   aetherEdgePods: false
+  aetherMMEExporter: true
