@@ -63,7 +63,7 @@ hosts:
       ip: 127.0.0.1
       user: community
       pass: admin
-      dp_iface_name: eno3.11.11
+      dp_iface_name: eno3
       container_type: null
       container_name: null
       onu: ALPHe3d1cf5c
