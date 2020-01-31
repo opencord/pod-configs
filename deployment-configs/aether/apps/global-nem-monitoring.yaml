@@ -30,6 +30,18 @@ prometheus:
               - cord-platform-prometheus-server.cord-platform-p-6lcrm.svc.menlo.edge:80
               - cord-platform-prometheus-server.cord-platform-p-dw2cc.svc.azure.central:80
               - cord-platform-prometheus-server.cord-platform-p-vqzqg.svc.mwc.edge:80
+        - job_name: 'mme-exporter-production'
+          metrics_path: /metrics
+          scrape_interval: 15s
+          static_configs:
+            - targets:
+                - mme.omec.svc.product.central:3081
+        - job_name: 'mme-exporter-azure'
+          metrics_path: /metrics
+          scrape_interval: 15s
+          static_configs:
+            - targets:
+                - mme.omec.svc.azure.central:3081
   extraScrapeConfigs: ""
 
 grafana:
@@ -47,3 +59,4 @@ dashboards:
   aetherEdges: true
   aetherCentralPods: true
   aetherEdgePods: false
+  aetherMMEExporter: true
