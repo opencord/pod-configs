@@ -21,7 +21,3 @@ config:
     ip: 172.16.0.8
   progran:
     enabled: false
-  vran:
-    ports:
-      s1ap:
-        nodePort: 31413

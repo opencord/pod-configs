@@ -20,10 +20,10 @@ config:
   spgwc:
     apn: internet
     multiUpfs: true
-    s1uAddr: "119.0.0.4"
+    s1uAddr: "192.168.251.4"
     ueIpPool:
-      ip: 17.0.0.0
-      mask: 255.0.0.0
+      ip: 10.251.0.0
+      mask: 255.255.0.0
     cfgFiles:
       app_config.cfg: |
         [GLOBAL]
@@ -34,6 +34,13 @@ config:
         MCC = 315
         MNC = 100
         TAC = 17
+        [DP_SELECTION_RULE_2]
+        DPID = 1
+        DPNAME = dp1
+        MCC = 315
+        MNC = 100
+        TAC = 18
+
   mme:
     cfgFiles:
       config.json:

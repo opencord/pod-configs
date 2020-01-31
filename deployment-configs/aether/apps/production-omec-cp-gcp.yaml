@@ -20,7 +20,7 @@ config:
   spgwc:
     apn: internet
     multiUpfs: true
-    s1uAddr: "119.0.0.7"
+    s1uAddr: "192.168.251.7"
   mme:
     cfgFiles:
       config.json:
