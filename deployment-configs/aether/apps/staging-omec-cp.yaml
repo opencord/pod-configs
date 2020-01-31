@@ -18,7 +18,7 @@ config:
     apn: internet
     multiUpfs: true
     # can be any IP address, not used but crash without it
-    s1uAddr: "119.0.0.3"
+    s1uAddr: "192.168.251.3"
   mme:
     cfgFiles:
       config.json:
