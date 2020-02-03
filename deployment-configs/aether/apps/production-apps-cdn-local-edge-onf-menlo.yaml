@@ -1,0 +1,33 @@
+images:
+  tags:
+    nginx: registry.aether.opennetworking.org/cdn-nginx:1.0.0
+  pullPolicy: IfNotPresent
+
+nodeSelectors:
+  enabled: true
+  nginx:
+    label: aether-apps
+    value: enabled
+
+config:
+  sriov:
+    enabled: false
+  nginx:
+    sgiInterface:
+      name: eth2
+      mtu: 1200
+  cdnRemotes:
+    - name: remote-gcp
+      ip: 10.168.0.200
+      port: 30935
+      streams:
+      - name: 480p
+        value: 480
+
+networks:
+  cniPlugin: sriov # which means netdevice
+  ipam: static
+  sgi:
+    subnet: 192.168.250.0/24
+    mask: 255.255.255.0
+    gateway: 192.168.250.31
