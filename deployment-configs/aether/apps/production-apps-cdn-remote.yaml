@@ -1,0 +1,8 @@
+config:
+  videoArchive:
+    q360p:
+      enabled: false
+    q480p:
+      enabled: true
+    q720p:
+      enabled: false
