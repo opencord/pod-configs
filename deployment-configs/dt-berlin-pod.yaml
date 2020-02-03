@@ -93,17 +93,17 @@ hosts:
 
   dst:
     -
-      dp_iface_ip_qinq: 192.168.11.254
-      ip: null
-      user: null
-      pass: null
+      dp_iface_ip_qinq: 10.11.2.254
+      ip: 10.34.90.43
+      user: community
+      pass: admin
       dp_iface_name: null
       dp_iface_ip: null
       dp_iface_gateway: null
       container_type: null
       container_name: null
     # -
-    #   dp_iface_ip_qinq: 192.168.12.254
+    #   dp_iface_ip_qinq: 10.11.2.254
     #   ip: null
     #   user: null
     #   pass: null
