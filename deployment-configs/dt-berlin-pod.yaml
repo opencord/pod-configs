@@ -63,9 +63,9 @@ hosts:
       ip: 127.0.0.1
       user: community
       pass: admin
-      dp_iface_name: eno3
-      container_type: null
-      container_name: null
+      dp_iface_name: eth1
+      container_type: LXC
+      container_name: voltha-client
       onu: ALPHe3d1cf5c
       c_tag: 11
       s_tag: 11
