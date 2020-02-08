@@ -55,8 +55,4 @@ dashboards:
   aaa: false
   voltha: false
   omec: false
-  aetherClusters: true
-  aetherEdges: true
-  aetherCentralPods: true
-  aetherEdgePods: false
-  aetherMMEExporter: true
+  aether: true
