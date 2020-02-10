@@ -63,7 +63,7 @@ rancher_kubernetes_engine_config:
         .:53 {
             errors
             health
-            kubernetes mwc.edge in-addr.arpa ip6.arpa {
+            kubernetes intel.edge in-addr.arpa ip6.arpa {
               pods insecure
               upstream
               fallthrough in-addr.arpa ip6.arpa

@@ -30,6 +30,7 @@ prometheus:
               - cord-platform-prometheus-server.cord-platform-p-6lcrm.svc.menlo.edge:80
               - cord-platform-prometheus-server.cord-platform-p-dw2cc.svc.azure.central:80
               - cord-platform-prometheus-server.cord-platform-p-vqzqg.svc.mwc.edge:80
+              - cord-platform-prometheus-server.cord-platform-p-hbr5z.svc.intel.edge:80
         - job_name: 'mme-exporter-production'
           metrics_path: /metrics
           scrape_interval: 15s
