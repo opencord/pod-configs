@@ -7,12 +7,8 @@ mcord-subscriber:
     tag: "comac-1.0.0"
     pullPolicy: "IfNotPresent"
 
-onos-service:
-  kafkaService: "cord-platform-kafka"
-
 fabric:
   enabled: true
-  kafkaService: "cord-platform-kafka"
 
-onosFabricRestHost: "cord-platform-onos-ui.cord-platform-p-6lcrm.svc.menlo.edge"
+onosFabricRestHost: "onos-ui.onos.svc.menlo.edge"
 onosFabricRestPort: 8181
