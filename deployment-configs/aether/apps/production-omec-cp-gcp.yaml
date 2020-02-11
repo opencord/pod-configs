@@ -2,8 +2,8 @@ images:
   tags:
     hssdb: "registry.aether.opennetworking.org/c3po-hssdb:1.1.0"
     hss: "registry.aether.opennetworking.org/c3po-hss:1.1.2"
-    mme: "registry.aether.opennetworking.org/openmme:1.3.6"
-    mmeExporter: "registry.aether.opennetworking.org/openmme:0.1.9"
+    mme: "registry.aether.opennetworking.org/openmme:1.4.3"
+    mmeExporter: "registry.aether.opennetworking.org/mme-exporter:0.1.9"
     spgwc: "registry.aether.opennetworking.org/ngic-cp:1.1.1"
   pullPolicy: "Always"
 
@@ -29,6 +29,28 @@ config:
     apn: internet
     multiUpfs: true
     s1uAddr: "192.168.251.7"
+    cfgFiles:
+      app_config.cfg: |
+        [GLOBAL]
+        NUM_DP_SELECTION_RULES = 3
+        [DP_SELECTION_RULE_1]
+        DPID = 1
+        DPNAME = dp1
+        MCC = 315
+        MNC = 010
+        TAC = 202
+        [DP_SELECTION_RULE_2]
+        DPID = 2
+        DPNAME = dp2
+        MCC = 315
+        MNC = 010
+        TAC = 203
+        [DP_SELECTION_RULE_3]
+        DPID = 3
+        DPNAME = dp-intel
+        MCC = 315
+        MNC = 010
+        TAC = 101
   mme:
     cfgFiles:
       config.json:
@@ -83,7 +105,25 @@ config:
           key: "000102030405060708090a0b0c0d0e0f"
           opc: "69d5c2eb2e2e624750541d3bbc692ba5"
           sqn: 135
+        - imsi: "315010999912342"
+          msisdn: "1122334455"
+          apn: "apn1"
+          key: "000102030405060708090a0b0c0d0e0f"
+          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
+          sqn: 135
         - imsi: "315010999912349"
+          msisdn: "1122334455"
+          apn: "apn1"
+          key: "000102030405060708090a0b0c0d0e0f"
+          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
+          sqn: 135
+        - imsi: "315010888812341"
+          msisdn: "1122334455"
+          apn: "apn1"
+          key: "000102030405060708090a0b0c0d0e0f"
+          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
+          sqn: 135
+        - imsi: "315010888812342"
           msisdn: "1122334455"
           apn: "apn1"
           key: "000102030405060708090a0b0c0d0e0f"

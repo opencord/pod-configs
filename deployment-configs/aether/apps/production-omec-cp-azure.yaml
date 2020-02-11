@@ -2,8 +2,8 @@ images:
   tags:
     hssdb: "registry.aether.opennetworking.org/c3po-hssdb:1.1.0"
     hss: "registry.aether.opennetworking.org/c3po-hss:1.1.2"
-    mme: "registry.aether.opennetworking.org/openmme:1.3.6"
-    mmeExporter: "registry.aether.opennetworking.org/openmme:0.1.9"
+    mme: "registry.aether.opennetworking.org/openmme:1.4.3"
+    mmeExporter: "registry.aether.opennetworking.org/mme-exporter:0.1.9"
     spgwc: "registry.aether.opennetworking.org/ngic-cp:1.1.1"
   pullPolicy: "Always"
 
@@ -41,7 +41,6 @@ config:
         MCC = 315
         MNC = 100
         TAC = 18
-
   mme:
     cfgFiles:
       config.json:
