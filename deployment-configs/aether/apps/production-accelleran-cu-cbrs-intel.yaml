@@ -1,0 +1,7 @@
+config:
+  mme:
+    ip: "10.168.0.204"
+  vranL3:
+    plmnId: "130501"
+    instanceId: "intelcell101"
+    tac: 101
