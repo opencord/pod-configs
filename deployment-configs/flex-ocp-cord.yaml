@@ -66,6 +66,7 @@ hosts:
       onu: 'ALPHe3d1cfa7'
       c_tag: '901'
       s_tag: '111'
+      power_switch_port: 4
     -
       ip: '10.192.20.61'
       user: 'cord'
@@ -76,6 +77,7 @@ hosts:
       onu: 'ALPHe3d1cea3'
       c_tag: '801'
       s_tag: '111'
+      power_switch_port: 0
     -
       ip: '10.192.20.46'
       user: 'cord'
@@ -86,6 +88,7 @@ hosts:
       onu: 'ALPHe3d1ceb7'
       c_tag: '101'
       s_tag: '222'
+      power_switch_port: 1
 
   dst:
     -
@@ -118,3 +121,8 @@ hosts:
       dp_iface_gateway: null
       container_type: null
       container_name: null
+
+web_power_switch:
+  ip: '10.192.20.56'
+  user: 'admin'
+  password: '1234'
