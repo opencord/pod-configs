@@ -20,14 +20,14 @@ kube_config: 'infosys.conf'
 
 nodes:
   -
-    ip: '192.168.10.13'
+    ip: '192.168.10.21'
     user: 'ubuntu'
     pass: 'ubuntu'
 
 fabric_switches:
   -
     mac: 'b8:6a:97:8b:ef:3c'
-    ip: '192.168.10.3'
+    ip: '192.168.10.30'
     user: 'root'
     pass: 'onl'
     bngPort: '3'
@@ -36,7 +36,7 @@ fabric_switches:
 
 olts:
   -
-    ip: '192.168.10.2'
+    ip: '192.168.10.29'
     user: 'root'
     pass: 'onl'
     fortygig: 'true'
@@ -49,7 +49,7 @@ onus:
 hosts:
   src:
     -
-      ip: '192.168.10.7'
+      ip: '192.168.10.25'
       user: 'voltharg'
       pass: 'voltharg'
       dp_iface_name: 'enp0s3'
