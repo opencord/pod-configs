@@ -16,10 +16,15 @@ defaults:
   image_tag: master
   image_pullPolicy: Always
 
+#images:
+#  onos:
+#    repository: voltha/voltha-onos
+#    tag: onos-2.2 
+
 images:
   onos:
-    repository: voltha/voltha-onos
-    tag: onos-2.2 
+    repository: matteoscandolo/voltha-onos
+    tag: onos-2.2-latest-apps
 
 deployments:
   etcdOperator: true
