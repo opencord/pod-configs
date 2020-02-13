@@ -26,4 +26,4 @@ config:
 networks:
   sgi:
     # NOTE: set correct gateway for each edge
-    gateway: "192.168.250.250"
+    gateway: "192.168.250.31"

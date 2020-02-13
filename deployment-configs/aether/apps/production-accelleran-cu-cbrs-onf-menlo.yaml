@@ -1,3 +1,9 @@
+nodeSelectors:
+  enabled: true
+  accelleranCBRSCU:
+    label: accelleran
+    value: enabled
+
 config:
   mme:
     ip: "10.168.0.204"

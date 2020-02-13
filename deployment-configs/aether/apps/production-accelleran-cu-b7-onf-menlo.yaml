@@ -16,7 +16,7 @@ config:
   epc:
     plmnId: 130501
   nats:
-    ip: 192.168.251.20
+    ip: 192.168.251.31
   mme:
     ip: 172.16.0.8
   progran:
