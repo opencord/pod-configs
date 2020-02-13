@@ -3,6 +3,12 @@ images:
     spgwu: "registry.aether.opennetworking.org/ngic-dp:1.1.0"
   pullPolicy: "Always"
 
+nodeSelectors:
+  enabled: true
+  spgwu:
+    label: omec-dp
+    value: enabled
+
 config:
   spgwu:
     multiUpfs: true
