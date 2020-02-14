@@ -21,10 +21,6 @@ images:
     repository: matteoscandolo/voltha-onos
     tag: 1.13.10
 
-  adapter_open_onu:
-    repository: etowah/voltha-openonu-adapter
-    tag: linkstatetesting
-
 deployments:
   etcdOperator: true
   backupOperator: false
