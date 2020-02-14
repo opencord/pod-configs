@@ -18,8 +18,8 @@ defaults:
 
 images:
   onos:
-    repository: matteoscandolo/voltha-onos
-    tag: 1.13.10
+    repository: voltha/voltha-onos
+    tag: onos-2.2
 
 deployments:
   etcdOperator: true
