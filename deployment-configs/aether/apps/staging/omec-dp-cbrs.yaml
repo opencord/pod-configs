@@ -13,7 +13,7 @@ config:
   spgwu:
     multiUpfs: true
     cpComm:
-      addr: "spgwc-headless.omec.svc.production.central"
+      addr: "spgwc-headless.omec.svc.staging.central"
     s1u:
       device: "s1u-net"
       # NOTE: set different IP for each edge
@@ -22,8 +22,8 @@ config:
       device: "sgi-net"
       # NOTE: set different IP for each edge
       ip: "192.168.250.3/24"
-    dpName: "dp2"
+    dpName: "dp-staging"
 networks:
   sgi:
     # NOTE: set correct gateway for each edge
-    gateway: "192.168.250.250"
+    gateway: "192.168.250.254"

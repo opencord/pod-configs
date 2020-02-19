@@ -1,0 +1,20 @@
+images:
+  tags:
+    initCU: registry.aether.opennetworking.org/aether/pod-init:1.0.0
+    nats: registry.aether.opennetworking.org/aether/accelleran-cu-nats:v1.0.0
+    redis: registry.aether.opennetworking.org/aether/accelleran-cu-redis:v1.0.0
+    redisClient: registry.aether.opennetworking.org/aether/redis:5.0.6-alpine3.10
+    ric: registry.aether.opennetworking.org/aether/accelleran-cu-ric:v1.0.0
+    ricWeb: registry.aether.opennetworking.org/aether/accelleran-cu-ricweb:v1.0.0
+    depCheck: registry.aether.opennetworking.org/aether/kubernetes-entrypoint:v0.3.1
+  pullPolicy: IfNotPresent
+
+nodeSelectors:
+  enabled: true
+  accelleranCBRSCommon:
+    label: omec-dp-cbrs
+    value: enabled
+
+config:
+  nats:
+    ip: "10.93.1.20"
