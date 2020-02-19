@@ -2,7 +2,7 @@ images:
   tags:
     hssdb: "registry.aether.opennetworking.org/c3po-hssdb:1.1.0"
     hss: "registry.aether.opennetworking.org/c3po-hss:1.1.4"
-    mme: "registry.aether.opennetworking.org/openmme:1.4.4"
+    mme: "registry.aether.opennetworking.org/openmme:1.5.4-bad"
     mmeExporter: "registry.aether.opennetworking.org/mme-exporter:0.2.2"
     spgwc: "registry.aether.opennetworking.org/ngic-cp:1.1.1"
   pullPolicy: "Always"

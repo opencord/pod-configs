@@ -60,8 +60,8 @@ config:
             dig2: 1
             dig3: 5
           mnc:
-            dig1: 1
-            dig2: 0
+            dig1: 0 
+            dig2: 1
             dig3: 0
   hss:
     acl:
