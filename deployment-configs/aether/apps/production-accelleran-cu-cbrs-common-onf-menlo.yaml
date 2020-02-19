@@ -1,9 +1,0 @@
-nodeSelectors:
-  enabled: true
-  accelleranCBRSCommon:
-    label: accelleran
-    value: enabled
-
-config:
-  nats:
-    ip: "192.168.251.30"

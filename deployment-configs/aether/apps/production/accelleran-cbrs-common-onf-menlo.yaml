@@ -12,9 +12,9 @@ images:
 nodeSelectors:
   enabled: true
   accelleranCBRSCommon:
-    label: omec-dp-cbrs
+    label: accelleran
     value: enabled
 
 config:
   nats:
-    ip: "10.93.1.20"
+    ip: "10.92.1.30"

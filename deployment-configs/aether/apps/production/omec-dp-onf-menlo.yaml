@@ -1,29 +1,29 @@
 images:
   tags:
-    spgwu: "registry.aether.opennetworking.org/ngic-dp:1.1.0"
-  pullPolicy: "Always"
+    spgwu: "registry.central.aetherproject.net/ngic-dp:1.1.0"
+  pullPolicy: "IfNotPresent"
 
 nodeSelectors:
   enabled: true
   spgwu:
-    label: omec-dp-b7
+    label: omec-dp
     value: enabled
 
 config:
   spgwu:
     multiUpfs: true
     cpComm:
-      addr: "spgwc-headless.omec.svc.azure.central"
+      addr: "spgwc-headless.omec.svc.product.central"
     s1u:
       device: "s1u-net"
       # NOTE: set different IP for each edge
-      ip: "192.168.251.4/24"
+      ip: "192.168.251.7/24"
     sgi:
       device: "sgi-net"
       # NOTE: set different IP for each edge
-      ip: "192.168.250.4/24"
-    dpName: "dp1"
+      ip: "192.168.250.7/24"
+    dpName: "dp-menlo"
 networks:
   sgi:
     # NOTE: set correct gateway for each edge
-    gateway: "192.168.250.31"
+    gateway: "192.168.250.1"

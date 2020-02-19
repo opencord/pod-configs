@@ -1,7 +1,7 @@
 images:
   tags:
-    spgwu: "registry.aether.opennetworking.org/ngic-dp:1.1.0"
-  pullPolicy: "Always"
+    spgwu: "registry.central.aetherproject.net/ngic-dp:1.1.0"
+  pullPolicy: "IfNotPresent"
 
 nodeSelectors:
   enabled: true

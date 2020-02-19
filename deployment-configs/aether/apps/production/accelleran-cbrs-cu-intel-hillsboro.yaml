@@ -5,19 +5,10 @@ images:
     depCheck: registry.central.aetherproject.net/aether/kubernetes-entrypoint:v0.3.1
   pullPolicy: IfNotPresent
 
-nodeSelectors:
-  enabled: true
-  accelleranCBRSCU:
-    label: omec-dp-cbrs
-    value: enabled
-
 config:
   mme:
-    ip: "10.168.0.192"
+    ip: "10.168.0.204"
   vranL3:
     plmnId: "130501"
-    instanceId: "onfcell203"
-    tac: 203
-    ports:
-      s1ap:
-        nodePort: 31412
+    instanceId: "intelcell101"
+    tac: 101

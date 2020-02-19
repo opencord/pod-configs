@@ -1,9 +1,9 @@
 images:
   tags:
-    initCU: registry.aether.opennetworking.org/aether/pod-init:1.0.0
-    nats: registry.aether.opennetworking.org/aether/accelleran-cu-nats-b17:v1.0.0
-    redis: registry.aether.opennetworking.org/aether/accelleran-cu-redis-b17:v1.0.0
-    vranL3: registry.aether.opennetworking.org/aether/accelleran-cu-l3-fdd-b17:v1.0.0
+    initCU: registry.central.aetherproject.net/aether/pod-init:1.0.0
+    nats: registry.central.aetherproject.net/aether/accelleran-cu-nats-b17:v1.0.0
+    redis: registry.central.aetherproject.net/aether/accelleran-cu-redis-b17:v1.0.0
+    vranL3: registry.central.aetherproject.net/aether/accelleran-cu-l3-fdd-b17:v1.0.0
   pullPolicy: IfNotPresent
 
 nodeSelectors:
