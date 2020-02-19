@@ -2,7 +2,7 @@ images:
   tags:
     hssdb: "registry.aether.opennetworking.org/c3po-hssdb:1.1.0"
     hss: "registry.aether.opennetworking.org/c3po-hss:1.1.0"
-    mme: "registry.aether.opennetworking.org/openmme:1.5.4-bad"
+    mme: "registry.aether.opennetworking.org/openmme:1.5.4"
     mmeExporter: "registry.aether.opennetworking.org/mme-exporter:0.2.2"
     spgwc: "registry.aether.opennetworking.org/ngic-cp:1.1.1"
   pullPolicy: "Always"
@@ -31,7 +31,7 @@ config:
       app_config.cfg: |
         [GLOBAL]
         DNS_PRIMARY = 8.8.8.8
-        DNS_SECONDARY = 8.8.8.4
+        DNS_SECONDARY = 8.8.4.4
         NUM_DP_SELECTION_RULES = 1
         [DP_SELECTION_RULE_1]
         DPID = 1
@@ -39,8 +39,8 @@ config:
         MCC = 315
         MNC = 010
         TAC = 203
-        DNS_PRIMARY = 1.1.1.1
-        DNS_SECONDARY = 8.8.8.8
+        DNS_PRIMARY = 8.8.8.8
+        DNS_SECONDARY = 8.8.4.4
   mme:
     cfgFiles:
       config.json:
@@ -61,19 +61,19 @@ config:
       users:
         - imsi: "315010999912342"
           msisdn: "1122334455"
-          apn: "apn1"
+          apn: "internet"
           key: "000102030405060708090a0b0c0d0e0f"
           opc: "69d5c2eb2e2e624750541d3bbc692ba5"
           sqn: 135
         - imsi: "315010999912343"
           msisdn: "1122334455"
-          apn: "apn1"
+          apn: "internet"
           key: "000102030405060708090a0b0c0d0e0f"
           opc: "69d5c2eb2e2e624750541d3bbc692ba5"
           sqn: 135
         - imsi: "315010999912344"
           msisdn: "1122334455"
-          apn: "apn1"
+          apn: "internet"
           key: "000102030405060708090a0b0c0d0e0f"
           opc: "69d5c2eb2e2e624750541d3bbc692ba5"
           sqn: 135
@@ -85,31 +85,31 @@ config:
           sqn: 135
         - imsi: "315010999912346"
           msisdn: "1122334455"
-          apn: "apn1"
+          apn: "internet"
           key: "000102030405060708090a0b0c0d0e0f"
           opc: "69d5c2eb2e2e624750541d3bbc692ba5"
           sqn: 135
         - imsi: "315010999912347"
           msisdn: "1122334455"
-          apn: "apn1"
+          apn: "internet"
           key: "000102030405060708090a0b0c0d0e0f"
           opc: "69d5c2eb2e2e624750541d3bbc692ba5"
           sqn: 135
         - imsi: "315010999912348"
           msisdn: "1122334455"
-          apn: "apn1"
+          apn: "internet"
           key: "000102030405060708090a0b0c0d0e0f"
           opc: "69d5c2eb2e2e624750541d3bbc692ba5"
           sqn: 135
         - imsi: "315010888812341"
           msisdn: "1122334455"
-          apn: "apn1"
+          apn: "internet"
           key: "000102030405060708090a0b0c0d0e0f"
           opc: "69d5c2eb2e2e624750541d3bbc692ba5"
           sqn: 135
         - imsi: "315010888812342"
           msisdn: "1122334455"
-          apn: "apn1"
+          apn: "internet"
           key: "000102030405060708090a0b0c0d0e0f"
           opc: "69d5c2eb2e2e624750541d3bbc692ba5"
           sqn: 135
