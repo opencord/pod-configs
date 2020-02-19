@@ -1,6 +1,6 @@
 images:
   tags:
-    nginx: registry.aether.opennetworking.org/cdn-nginx:1.0.0
+    nginx: registry.central.aetherproject.net/cdn-nginx:1.0.0
   pullPolicy: IfNotPresent
 
 nodeSelectors:
@@ -29,4 +29,4 @@ networks:
   sgi:
     subnet: 192.168.250.0/24
     mask: 255.255.255.0
-    gateway: 192.168.250.250
+    gateway: 192.168.250.254

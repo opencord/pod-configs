@@ -9,12 +9,6 @@ images:
     depCheck: registry.central.aetherproject.net/aether/kubernetes-entrypoint:v0.3.1
   pullPolicy: IfNotPresent
 
-nodeSelectors:
-  enabled: true
-  accelleranCBRSCommon:
-    label: omec-dp-cbrs
-    value: enabled
-
 config:
   nats:
-    ip: "10.93.1.20"
+    ip: "10.212.74.65"
