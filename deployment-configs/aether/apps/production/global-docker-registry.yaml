@@ -5,6 +5,6 @@ persistence:
 ingress:
   enabled: true
   hosts:
-    - "registry.aether.opennetworking.org"
+    - "registry.central.aetherproject.net"
   annotations:
      "nginx.ingress.kubernetes.io/proxy-body-size": "0"

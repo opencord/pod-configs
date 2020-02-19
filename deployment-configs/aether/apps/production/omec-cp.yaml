@@ -1,46 +1,56 @@
 images:
   tags:
-    hssdb: "registry.aether.opennetworking.org/c3po-hssdb:1.1.0"
-    hss: "registry.aether.opennetworking.org/c3po-hss:1.1.4"
-    mme: "registry.aether.opennetworking.org/openmme:1.4.4"
-    mmeExporter: "registry.aether.opennetworking.org/mme-exporter:0.2.2"
-    spgwc: "registry.aether.opennetworking.org/ngic-cp:1.1.1"
-  pullPolicy: "Always"
+    hssdb: "registry.central.aetherproject.net/c3po-hssdb:1.1.0"
+    hss: "registry.central.aetherproject.net/c3po-hss:1.1.4"
+    mme: "registry.central.aetherproject.net/openmme:1.5.5"
+    mmeExporter: "registry.central.aetherproject.net/mme-exporter:0.2.2"
+    spgwc: "registry.central.aetherproject.net/ngic-cp:1.1.2"
+  pullPolicy: "IfNotPresent"
 
 cassandra:
   deploy: false
 
 resources:
   enabled: true
+  mme:
+    requests:
+      cpu: 0.3
+      memory: 1Gi
+    limits:
+      cpu: 0.3
+      memory: 1Gi
 
 config:
   coreDump:
     enabled: true
     path: /tmp/coredump
-  clusterDomain: "azure.central"
+  clusterDomain: "product.central"
   spgwc:
     apn: internet
     multiUpfs: true
-    s1uAddr: "192.168.251.4"
-    ueIpPool:
-      ip: 10.251.0.0
-      mask: 255.255.0.0
+    s1uAddr: "192.168.251.7"
     cfgFiles:
       app_config.cfg: |
         [GLOBAL]
+        DNS_PRIMARY = 8.8.8.8
+        DNS_SECONDARY = 8.8.4.4
         NUM_DP_SELECTION_RULES = 2
         [DP_SELECTION_RULE_1]
         DPID = 1
-        DPNAME = dp1
+        DPNAME = dp-menlo
         MCC = 315
-        MNC = 100
-        TAC = 17
+        MNC = 010
+        TAC = 202
+        DNS_PRIMARY = 1.1.1.1
+        DNS_SECONDARY = 8.8.8.8
         [DP_SELECTION_RULE_2]
-        DPID = 1
-        DPNAME = dp1
+        DPID = 2
+        DPNAME = dp-intel
         MCC = 315
-        MNC = 100
-        TAC = 18
+        MNC = 010
+        TAC = 101
+        DNS_PRIMARY = 1.1.1.1
+        DNS_SECONDARY = 8.8.8.8
   mme:
     cfgFiles:
       config.json:
@@ -50,66 +60,66 @@ config:
             dig2: 1
             dig3: 5
           mnc:
-            dig1: 0
+            dig1: 0 
             dig2: 1
             dig3: 0
   hss:
     acl:
-      oldTls: "*.azure.central"
+      oldTls: "*.product.central"
     bootstrap:
       enabled: true
       users:
+        - imsi: "315010999912342"
+          msisdn: "1122334455"
+          apn: "internet"
+          key: "000102030405060708090a0b0c0d0e0f"
+          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
+          sqn: 135
         - imsi: "315010999912343"
           msisdn: "1122334455"
-          apn: "apn1"
+          apn: "internet"
           key: "000102030405060708090a0b0c0d0e0f"
           opc: "69d5c2eb2e2e624750541d3bbc692ba5"
           sqn: 135
         - imsi: "315010999912344"
           msisdn: "1122334455"
-          apn: "apn1"
+          apn: "internet"
           key: "000102030405060708090a0b0c0d0e0f"
           opc: "69d5c2eb2e2e624750541d3bbc692ba5"
           sqn: 135
         - imsi: "315010999912345"
           msisdn: "1122334455"
-          apn: "apn1"
+          apn: "internet"
           key: "000102030405060708090a0b0c0d0e0f"
           opc: "69d5c2eb2e2e624750541d3bbc692ba5"
           sqn: 135
         - imsi: "315010999912346"
           msisdn: "1122334455"
-          apn: "apn1"
+          apn: "internet"
           key: "000102030405060708090a0b0c0d0e0f"
           opc: "69d5c2eb2e2e624750541d3bbc692ba5"
           sqn: 135
         - imsi: "315010999912347"
           msisdn: "1122334455"
-          apn: "apn1"
+          apn: "internet"
           key: "000102030405060708090a0b0c0d0e0f"
           opc: "69d5c2eb2e2e624750541d3bbc692ba5"
           sqn: 135
         - imsi: "315010999912348"
           msisdn: "1122334455"
-          apn: "apn1"
+          apn: "internet"
           key: "000102030405060708090a0b0c0d0e0f"
           opc: "69d5c2eb2e2e624750541d3bbc692ba5"
           sqn: 135
-        - imsi: "315010999912349"
+        - imsi: "315010888812341"
           msisdn: "1122334455"
-          apn: "apn1"
+          apn: "internet"
           key: "000102030405060708090a0b0c0d0e0f"
           opc: "69d5c2eb2e2e624750541d3bbc692ba5"
           sqn: 135
-        - imsi: "732111000000420"
+        - imsi: "315010888812342"
           msisdn: "1122334455"
-          apn: apn1
-          key: "000102030405060708090a0b0c0d0e0f"
-          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
-          sqn: 135
-        - imsi: "732111000000421"
-          msisdn: "1122334455"
-          apn: apn1
+          apn: "internet"
           key: "000102030405060708090a0b0c0d0e0f"
           opc: "69d5c2eb2e2e624750541d3bbc692ba5"
           sqn: 135
