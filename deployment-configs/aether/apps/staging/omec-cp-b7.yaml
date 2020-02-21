@@ -4,7 +4,7 @@ images:
     hss: "registry.central.aetherproject.net/c3po-hss:1.1.4"
     mme: "registry.central.aetherproject.net/openmme:1.5.5"
     mmeExporter: "registry.central.aetherproject.net/mme-exporter:0.2.2"
-    spgwc: "registry.central.aetherproject.net/ngic-cp:1.1.2"
+    spgwc: "registry.central.aetherproject.net/ngic-cp:1.1.3"
   pullPolicy: "IfNotPresent"
 
 cassandra:
@@ -116,6 +116,12 @@ config:
         - imsi: "732111000000421"
           msisdn: "1122334455"
           apn: apn1
+          key: "000102030405060708090a0b0c0d0e0f"
+          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
+          sqn: 135
+        - imsi: "315010999912350"
+          msisdn: "1122334455"
+          apn: "internet"
           key: "000102030405060708090a0b0c0d0e0f"
           opc: "69d5c2eb2e2e624750541d3bbc692ba5"
           sqn: 135
