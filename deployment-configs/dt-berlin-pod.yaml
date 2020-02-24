@@ -34,10 +34,6 @@ fabric_switches:
     user: root
     pass: onl
     bngPort: 157
-    #XGSPON
-    oltPort: 1
-    #GPON
-    #oltPort: 2
     device_id: 'of:0000000000000001'
 
 olts:
@@ -47,14 +43,16 @@ olts:
     user: root
     pass: onl
     fortygig: False
+    aggPort: 1
     serial: 'EC1729003539'
 # Gpon OLT
-  # -
-  #   ip:  10.34.90.50
-  #   user: root
-  #   pass: onl
-  #   fortygig: False
-  #   serial: ASGvOLT640000000
+  -
+    ip:  10.34.90.50
+    user: root
+    pass: onl
+    fortygig: False
+    aggPort: 2
+    serial: ASGvOLT640000000
 
 hosts:
   src:
@@ -67,29 +65,21 @@ hosts:
       container_type: LXC
       container_name: voltha-client
       onu: ALPHe3d1cf5c
+      olt: EC1729003539
       c_tag: 11
       s_tag: 11
-    # -
-    #   ip: 127.0.0.1
-    #   user: community
-    #   pass: admin
-    #   dp_iface_name: eno3.11.22
-    #   container_type: null
-    #   container_name: null
-    #   onu: ALPHe3d1cf5c
-    #   c_tag: 22
-    #   s_tag: 11
     #GPON ONU
-    # -
-    #   ip: 127.0.0.1
-    #   user: cord
-    #   pass: cord
-    #   dp_iface_name: eno2
-    #   container_type: null
-    #   container_name: null
-    #   onu: SCOM00001c82
-    #   c_tag: 12
-    #   s_tag: 11
+    -
+      ip: 127.0.0.1
+      user: community
+      pass: admin
+      dp_iface_name: eth1
+      container_type: LXC
+      container_name: voltha-client-gpon
+      onu: SCOM00001c82
+      olt: ASGvOLT640000000
+      c_tag: 22
+      s_tag: 22
 
   dst:
     -
@@ -102,13 +92,13 @@ hosts:
       dp_iface_gateway: null
       container_type: null
       container_name: null
-    # -
-    #   dp_iface_ip_qinq: 10.11.2.254
-    #   ip: null
-    #   user: null
-    #   pass: null
-    #   dp_iface_name: null
-    #   dp_iface_ip: null
-    #   dp_iface_gateway: null
-    #   container_type: null
-    #   container_name: null
+    -
+      dp_iface_ip_qinq: 10.22.2.254
+      ip: null
+      user: null
+      pass: null
+      dp_iface_name: null
+      dp_iface_ip: null
+      dp_iface_gateway: null
+      container_type: null
+      container_name: null
