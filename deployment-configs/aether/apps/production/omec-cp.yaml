@@ -49,8 +49,8 @@ config:
         MCC = 315
         MNC = 010
         TAC = 101
-        DNS_PRIMARY = 1.1.1.1
-        DNS_SECONDARY = 8.8.8.8
+        DNS_PRIMARY = 10.212.87.15
+        DNS_SECONDARY = 10.212.87.16
   mme:
     cfgFiles:
       config.json:
