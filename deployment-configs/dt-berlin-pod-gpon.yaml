@@ -34,31 +34,23 @@ fabric_switches:
     user: root
     pass: onl
     bngPort: 157
-    #XGSPON
-    oltPort: 1
     #GPON
-    #oltPort: 2
+    oltPort: 2
     device_id: 'of:0000000000000001'
 
 olts:
-# XGS-PON OLT
+# Gpon OLT
   -
-    ip: 10.34.90.51
+    ip:  10.34.90.50
     user: root
     pass: onl
     fortygig: False
-    serial: 'EC1729003539'
-# Gpon OLT
-  # -
-  #   ip:  10.34.90.50
-  #   user: root
-  #   pass: onl
-  #   fortygig: False
-  #   serial: ASGvOLT640000000
+    aggPort: 2
+    serial: ASGvOLT640000000
 
 hosts:
   src:
-    #XGSPON ONU
+    #GPON ONU
     -
       ip: 127.0.0.1
       user: community
@@ -66,44 +58,14 @@ hosts:
       dp_iface_name: eth1
       container_type: LXC
       container_name: voltha-client
-      onu: ALPHe3d1cf5c
-      c_tag: 11
-      s_tag: 11
-    -
-      ip: 127.0.0.1
-      user: community
-      pass: admin
-      dp_iface_name: eth1
-      container_type: LXC
-      container_name: voltha-client-dt
-      onu: ALPHe3a69d03
-      c_tag: 7
-      s_tag: 11
-    #GPON ONU
-    # -
-    #   ip: 127.0.0.1
-    #   user: community
-    #   pass: admin
-    #   dp_iface_name: eno4
-    #   container_type: null
-    #   container_name: null
-    #   onu: SCOM00001c82
-    #   c_tag: 22
-    #   s_tag: 22
+      onu: SCOM00001c82
+      olt: ASGvOLT640000000
+      c_tag: 22
+      s_tag: 22
 
   dst:
     -
       dp_iface_ip_qinq: 10.11.2.254
-      ip: null
-      user: null
-      pass: null
-      dp_iface_name: null
-      dp_iface_ip: null
-      dp_iface_gateway: null
-      container_type: null
-      container_name: null
-    -
-      dp_iface_ip_qinq: 10.11.7.254
       ip: null
       user: null
       pass: null
