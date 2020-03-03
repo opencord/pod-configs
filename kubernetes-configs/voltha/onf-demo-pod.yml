@@ -20,9 +20,9 @@ images:
 #  onos:
 #    repository: voltha/voltha-onos
 #    tag: onos-2.2
-  adapter_open_onu:
-    repository: gcgirish/voltha-openonu-adapter
-    tag: dhcp-issue
+#  adapter_open_onu:
+#    repository: gcgirish/voltha-openonu-adapter
+#    tag: dhcp-issue
 
 deployments:
   etcdOperator: true
