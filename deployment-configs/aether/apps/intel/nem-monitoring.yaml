@@ -18,7 +18,7 @@ prometheus:
     # NOTE: set unique datacenter name for each clusters
     global:
       external_labels:
-        datacenter: "edge-onf-menlo"
+        datacenter: "edge-onf-menlo-staging"
 
 grafana:
   fullnameOverride: "nem-monitoring-grafana"
