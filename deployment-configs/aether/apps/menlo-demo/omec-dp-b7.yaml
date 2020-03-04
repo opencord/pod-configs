@@ -22,7 +22,7 @@ config:
       device: "sgi-net"
       # NOTE: set different IP for each edge
       ip: "192.168.250.4/24"
-    dpName: "dp1"
+    dpName: "dp-b7"
 networks:
   sgi:
     # NOTE: set correct gateway for each edge

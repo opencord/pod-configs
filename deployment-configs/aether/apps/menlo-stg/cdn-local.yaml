@@ -15,7 +15,7 @@ config:
   nginx:
     sgiInterface:
       name: eth2
-      mtu: 1200
+      mtu: 1450
   cdnRemotes:
     - name: remote-gcp
       ip: 10.168.0.200
@@ -29,4 +29,4 @@ networks:
   sgi:
     subnet: 192.168.250.0/24
     mask: 255.255.255.0
-    gateway: 192.168.250.254
+    gateway: 192.168.250.1
