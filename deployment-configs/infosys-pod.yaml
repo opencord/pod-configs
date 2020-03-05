@@ -52,7 +52,7 @@ hosts:
       ip: '192.168.10.25'
       user: 'voltharg'
       pass: 'voltharg'
-      dp_iface_name: 'enp0s3'
+      dp_iface_name: 'ens10'
       container_type: null
       container_name: null
       onu: 'ISKT71e82118'
