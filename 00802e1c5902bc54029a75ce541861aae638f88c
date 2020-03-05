@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0d9a83e3_5738cf94",
+        "filename": "kubernetes-configs/voltha/onf-demo-pod-goVersion.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2020-03-05T17:38:18Z",
+      "side": 1,
+      "message": "could this be named `onf-demo-pod-ofagent-go.yml` instead?",
+      "revId": "00802e1c5902bc54029a75ce541861aae638f88c",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
