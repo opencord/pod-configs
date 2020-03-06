@@ -126,79 +126,17 @@ config:
       oldTls: "*.product.central"
     bootstrap:
       enabled: true
+      apn: "internet"
+      key: "000102030405060708090a0b0c0d0e0f"
+      opc: "69d5c2eb2e2e624750541d3bbc692ba5"
+      sqn: 135
       users:
-        - imsi: "315010999912342"
-          msisdn: "1122334455"
-          apn: "internet"
-          key: "000102030405060708090a0b0c0d0e0f"
-          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
-          sqn: 135
-        - imsi: "315010999912343"
-          msisdn: "1122334455"
-          apn: "internet"
-          key: "000102030405060708090a0b0c0d0e0f"
-          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
-          sqn: 135
-        - imsi: "315010999912344"
-          msisdn: "1122334455"
-          apn: "internet"
-          key: "000102030405060708090a0b0c0d0e0f"
-          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
-          sqn: 135
-        - imsi: "315010999912345"
-          msisdn: "1122334455"
-          apn: "internet"
-          key: "000102030405060708090a0b0c0d0e0f"
-          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
-          sqn: 135
-        - imsi: "315010999912346"
-          msisdn: "1122334455"
-          apn: "internet"
-          key: "000102030405060708090a0b0c0d0e0f"
-          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
-          sqn: 135
-        - imsi: "315010999912347"
-          msisdn: "1122334455"
-          apn: "internet"
-          key: "000102030405060708090a0b0c0d0e0f"
-          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
-          sqn: 135
-        - imsi: "315010999912348"
-          msisdn: "1122334455"
-          apn: "internet"
-          key: "000102030405060708090a0b0c0d0e0f"
-          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
-          sqn: 135
-        - imsi: "315010888812341"
-          msisdn: "1122334455"
-          apn: "internet"
-          key: "000102030405060708090a0b0c0d0e0f"
-          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
-          sqn: 135
-        - imsi: "315010888812342"
-          msisdn: "1122334455"
-          apn: "internet"
-          key: "000102030405060708090a0b0c0d0e0f"
-          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
-          sqn: 135
-        - imsi: "315010999912349"
-          msisdn: "1122334455"
-          apn: "internet"
-          key: "000102030405060708090a0b0c0d0e0f"
-          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
-          sqn: 135
-        - imsi: "315010999912350"
-          msisdn: "1122334455"
-          apn: "internet"
-          key: "000102030405060708090a0b0c0d0e0f"
-          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
-          sqn: 135
-        - imsi: "315010999912351"
-          msisdn: "1122334455"
-          apn: "internet"
-          key: "000102030405060708090a0b0c0d0e0f"
-          opc: "69d5c2eb2e2e624750541d3bbc692ba5"
-          sqn: 135
+        - imsiStart: "315010888812340"
+          msisdnStart: "8888334455"
+          count: 100
+        - imsiStart: "315010999912340"
+          msisdnStart: "9999334455"
+          count: 100
       mmes:
         - id: 1
           isdn: "19136246000"
