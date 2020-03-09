@@ -126,3 +126,4 @@ web_power_switch:
   ip: '10.192.20.56'
   user: 'admin'
   password: '1234'
+  type: 'DLI'
