@@ -1,0 +1,14 @@
+images:
+  tags:
+    initCU: registry.central.aetherproject.net/aether/pod-init:1.0.0
+    vranL3: registry.central.aetherproject.net/aether/accelleran-cu-l3-tdd:v1.0.2
+    depCheck: registry.central.aetherproject.net/aether/kubernetes-entrypoint:v0.3.1
+  pullPolicy: IfNotPresent
+
+config:
+  mme:
+    ip: "10.168.0.204"
+  vranL3:
+    plmnId: "130501"
+    instanceId: "onfcell222"
+    tac: 222

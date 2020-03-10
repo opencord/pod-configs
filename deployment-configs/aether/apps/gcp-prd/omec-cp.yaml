@@ -34,7 +34,7 @@ config:
         [GLOBAL]
         DNS_PRIMARY = 8.8.8.8
         DNS_SECONDARY = 8.8.4.4
-        NUM_DP_SELECTION_RULES = 4
+        NUM_DP_SELECTION_RULES = 5
         [DP_SELECTION_RULE_1]
         DPID = 1
         DPNAME = dp-staging
@@ -67,6 +67,22 @@ config:
         TAC = 203
         DNS_PRIMARY = 1.1.1.1
         DNS_SECONDARY = 8.8.8.8
+        [DP_SELECTION_RULE_4]
+        DPID = 3
+        DPNAME = dp-demo
+        MCC = 315
+        MNC = 010
+        TAC = 203
+        DNS_PRIMARY = 1.1.1.1
+        DNS_SECONDARY = 8.8.8.8
+        [DP_SELECTION_RULE_5]
+        DPID = 4
+        DPNAME = dp-tucson
+        MCC = 315
+        MNC = 010
+        TAC = 222
+        DNS_PRIMARY = 1.1.1.1
+        DNS_SECONDARY = 8.8.8.8
   mme:
     cfgFiles:
       config.json:
@@ -96,6 +112,9 @@ config:
         - id: onf-menlo-sercomm
           tac: 18
           edgeName: edge-demo
+        - id: onf-tucson
+          tac: 222
+          edgeName: edge-onf-tucson
         phoneTypes:
         - imsi: 315010999912342
           phoneType: "Pixel-4"
@@ -121,6 +140,12 @@ config:
           phoneType: "iPhone11"
         - imsi: 315010999912355
           phoneType: "Pixel-4"
+        - imsi: 315010999912301
+          phoneType: "iPhone 11"
+        - imsi: 315010999912302
+          phoneType: "iPhone 11"
+        - imsi: 315010999912303
+          phoneType: "iPhone 11"
   hss:
     acl:
       oldTls: "*.product.central"
@@ -137,6 +162,9 @@ config:
         - imsiStart: "315010999912340"
           msisdnStart: "9999334455"
           count: 100
+        - imsiStart: "315010999912301"
+          msisdnStart: "9999234455"
+          count: 30
       mmes:
         - id: 1
           isdn: "19136246000"
