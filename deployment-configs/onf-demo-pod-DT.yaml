@@ -1,0 +1,122 @@
+# Copyright 2017-present Open Networking Foundation
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Automated deployment configuration for BBWF POD
+
+---
+
+kube_config: '/var/k8.conf'
+
+nodes:
+  -
+    ip: '10.128.100.70'
+    user: 'cord'
+    pass: 'cord'
+  -
+    ip: '10.128.100.71'
+    user: 'cord'
+    pass: 'cord'
+  -
+    ip: '10.128.100.72'
+    user: 'cord'
+    pass: 'cord'
+
+fabric_switches:
+  -
+    mac: 'cc:37:ab:61:80:ca'
+    ip: '10.128.100.80'
+    user: 'root'
+    pass: 'onl'
+    bngPort: '31'
+    oltPort: '1'
+    device_id: 'of:0000000000000001'
+
+olts:
+  -
+    name: 'edgecore'
+    ip: '10.128.100.90'
+    user: 'root'
+    pass: 'onl'
+    fortygig: 'true'
+    serial: 'EC1904000654'
+
+onus:
+  -
+    serial: 'BRCM22222222'
+  -
+    serial: 'ALPHe3d1cf9d'
+
+hosts:
+  src:
+    -
+      ip: '10.128.100.71'
+      user: 'cord'
+      pass: 'cord'
+      dp_iface_name: 'ens6f1.11'
+      container_type: null
+      container_name: null
+      onu: 'BRCM22222222'
+      c_tag: '11'
+      s_tag: '11'
+    -
+      ip: '10.128.100.71'
+      user: 'cord'
+      pass: 'cord'
+      dp_iface_name: 'ens6f0.22'
+      container_type: null
+      container_name: null
+      onu: 'ALPHe3d1cf9d'
+      c_tag: '22'
+      s_tag: '22'
+    -
+      ip: '10.128.100.71'
+      user: 'cord'
+      pass: 'cord'
+      dp_iface_name: 'ens6f2.33'
+      container_type: null
+      container_name: null
+      onu: 'ALPHe3d1ced5'
+      c_tag: '33'
+      s_tag: '33'
+  dst:
+    -
+      ip: null
+      user: null
+      pass: null
+      dp_iface_name: null
+      dp_iface_ip_qinq: '10.11.11.254'
+      dp_iface_ip: null
+      dp_iface_gateway: null
+      container_type: null
+      container_name: null
+    -
+      ip: null
+      user: null
+      pass: null
+      dp_iface_name: null
+      dp_iface_ip_qinq: '10.22.22.254'
+      dp_iface_ip: null
+      dp_iface_gateway: null
+      container_type: null
+      container_name: null
+    -
+      ip: null
+      user: null
+      pass: null
+      dp_iface_name: null
+      dp_iface_ip_qinq: '10.33.33.254'
+      dp_iface_ip: null
+      dp_iface_gateway: null
+      container_type: null
+      container_name: null
