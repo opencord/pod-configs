@@ -1,0 +1,36 @@
+images:
+  tags:
+    spgwu: "registry.central.aetherproject.net/upf-epc-bess:0.1.0-intel-dev"
+    cpiface: "registry.central.aetherproject.net/upf-epc-cpiface:0.1.0-intel-dev"
+  pullPolicy: "IfNotPresent"
+
+nodeSelectors:
+  enabled: true
+  spgwu:
+    label: omec-upf
+    value: enabled
+
+config:
+  spgwu:
+    name: "dp-intel"
+    s1u:
+      device: "s1u"
+      ip: "10.212.74.81/28"
+    sgi:
+      device: "sgi"
+      ip: "10.212.74.97/27"
+    zmq:
+      spgwc:
+        addr: "spgwc-headless.omec.svc.staging.central"
+
+networks:
+  enb:
+    subnet: "10.212.74.64/28"
+  ue:
+    subnet: "10.250.0.0/16"
+  sgi:
+    subnet: "10.212.74.96/27"
+    gateway: "10.212.74.126"
+  s1u:
+    subnet: "10.212.74.80/28"
+    gateway: "10.212.74.94"
