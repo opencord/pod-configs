@@ -49,6 +49,7 @@ olts:
     pass: 'onl'
     fortygig: 'true'
     serial: 'EC1838000853'
+    power_switch_port: 5
 
 onus:
   -
