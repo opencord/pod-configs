@@ -17,7 +17,7 @@ config:
     s1u:
       device: "s1u-net"
       # NOTE: set different IP for each edge
-      ip: "10.212.74.67/27"
+      ip: "10.212.74.67/28"
     sgi:
       device: "sgi-net"
       # NOTE: set different IP for each edge
@@ -26,4 +26,5 @@ config:
 networks:
   sgi:
     # NOTE: set correct gateway for each edge
+    mask: "255.255.255.224"
     gateway: "10.212.74.126"
