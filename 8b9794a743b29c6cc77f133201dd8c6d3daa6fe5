@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5e059a61_d0ada9f5",
+        "filename": "deployment-configs/flex-ocp-cord.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1000596
+      },
+      "writtenOn": "2020-03-17T05:07:55Z",
+      "side": 1,
+      "message": "Change to 5, since the port starts from 0 in DLI switch API.",
+      "revId": "8b9794a743b29c6cc77f133201dd8c6d3daa6fe5",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
