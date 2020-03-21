@@ -16,11 +16,19 @@ defaults:
   image_tag: master
   image_pullPolicy: Always
 
-#images:
+images:
 #  onos:
 #    repository: voltha/voltha-onos
 #    tag: onos-2.2
-
+  adapter_open_onu:
+     repository: gcgirish/voltha-openonu-adapter
+     tag: flow-sync
+  adapter_open_olt:
+    repository: gcgirish/voltha-openolt-adapter
+    tag: flow-sync
+  rw_core:
+    repository: gcgirish/voltha-rw-core
+    tag: delete-device
 deployments:
   etcdOperator: true
   backupOperator: false
