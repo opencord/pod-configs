@@ -86,6 +86,11 @@ rancher_kubernetes_engine_config:
             cache 30
             forward . 10.55.128.10
         }
+        aetherproject.net {
+            hosts {
+                10.168.0.3 rancher.central.aetherproject.net
+            }
+        }
   addons_include:
     - https://raw.githubusercontent.com/opencord/pod-configs/master/deployment-configs/aether/clusters/multus-daemonset-pre-1.16.yml
 
