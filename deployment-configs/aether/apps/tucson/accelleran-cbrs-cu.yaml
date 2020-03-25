@@ -7,7 +7,7 @@ images:
 
 config:
   mme:
-    ip: "10.168.0.204"
+    ip: "35.235.67.169"
   vranL3:
     plmnId: "130501"
     instanceId: "onfcell222"
