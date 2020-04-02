@@ -36,8 +36,6 @@ fabric_switches:
     bngPort: 157
     #XGSPON
     oltPort: 1
-    #GPON
-    #oltPort: 2
     device_id: 'of:0000000000000001'
 
 olts:
@@ -48,13 +46,6 @@ olts:
     pass: onl
     fortygig: False
     serial: 'EC1729003539'
-# Gpon OLT
-  # -
-  #   ip:  10.34.90.50
-  #   user: root
-  #   pass: onl
-  #   fortygig: False
-  #   serial: ASGvOLT640000000
 
 hosts:
   src:
@@ -81,17 +72,6 @@ hosts:
       c_tag: 7
       s_tag: 11
       power_switch_port: 8
-    #GPON ONU
-    # -
-    #   ip: 127.0.0.1
-    #   user: community
-    #   pass: admin
-    #   dp_iface_name: eno4
-    #   container_type: null
-    #   container_name: null
-    #   onu: SCOM00001c82
-    #   c_tag: 22
-    #   s_tag: 22
 
   dst:
     -
