@@ -1,0 +1,98 @@
+name: #SET_VALUE(production-edge-onf-menlo)
+rancher_kubernetes_engine_config:
+  authentication:
+    strategy: x509
+  ignore_docker_version: true
+  ingress:
+    provider: nginx
+  kubernetes_version: v1.15.6-rancher1-2
+  monitoring:
+    provider: none
+  network:
+    plugin: calico
+  services:
+    etcd:
+      backup_config:
+        enabled: true
+        interval_hours: 12
+        retention: 6
+        safe_timestamp: false
+      creation: 12h
+      extra_args:
+        election-timeout: 5000
+        heartbeat-interval: 500
+      gid: 0
+      retention: 72h
+      snapshot: false
+      uid: 0
+    kube_api:
+      always_pull_images: false
+      pod_security_policy: false
+      service_node_port_range: 2000-36767
+      service_cluster_ip_range: #SET_VALUE(10.53.128.0/17)
+      extra_args:
+        feature-gates: "SCTPSupport=True"
+    kubelet:
+      cluster_domain: #SET_VALUE(menlo.edge)
+      cluster_dns_server: #SET_VALUE(10.53.128.10)
+      fail_swap_on: false
+      extra_args:
+        feature-gates: "SCTPSupport=True"
+    kube-controller:
+      cluster_cidr: #SET_VALUE(10.53.0.0/17)
+      service_cluster_ip_range: #SET_VALUE(10.53.128.0/17)
+      extra_args:
+        feature-gates: "SCTPSupport=True"
+    scheduler:
+      extra_args:
+        feature-gates: "SCTPSupport=True"
+    kubeproxy:
+      extra_args:
+        feature-gates: "SCTPSupport=True"
+  ssh_agent_auth: false
+  addon_job_timeout: 30
+  addons: |-
+    ---
+    apiVersion: v1
+    kind: ConfigMap
+    metadata:
+      namespace: kube-system
+      name: coredns
+    data:
+      Corefile: |
+        .:53 {
+            errors
+            health
+            kubernetes #SET_VALUE(menlo.edge) in-addr.arpa ip6.arpa {
+              pods insecure
+              upstream
+              fallthrough in-addr.arpa ip6.arpa
+              ttl 30
+            }
+            prometheus :9153
+            forward . "/etc/resolv.conf"
+            cache 30
+            loop
+            reload
+            loadbalance
+        }
+        product.central:53 {
+            errors
+            cache 30
+            forward . 10.52.128.10
+        }
+        aetherproject.net {
+            hosts {
+                10.168.0.3 rancher.central.aetherproject.net
+            }
+        }
+  addons_include:
+    - https://raw.githubusercontent.com/opencord/pod-configs/master/deployment-configs/aether/clusters/multus-daemonset-pre-1.16.yml
+
+windows_prefered_cluster: false
+docker_root_dir: /var/lib/docker
+local_cluster_auth_endpoint:
+  enabled: true
+enable_network_policy: false
+enable_cluster_alerting: false
+enable_cluster_monitoring: false
