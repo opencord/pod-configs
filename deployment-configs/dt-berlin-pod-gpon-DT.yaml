@@ -81,7 +81,7 @@
         container_name: voltha-client-gpon-3
         onu: SCOM00001c96
         c_tag: 7
-        s_tag: 32
+        s_tag: 33
         power_switch_port: 4
   
     dst:
