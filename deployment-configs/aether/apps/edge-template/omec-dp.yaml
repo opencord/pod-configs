@@ -1,0 +1,26 @@
+images:
+  tags:
+    spgwu: "registry.central.aetherproject.net/ngic-dp:#SET_VALUE"
+  pullPolicy: "IfNotPresent"
+
+nodeSelectors:
+  enabled: #SET_VALUE
+  spgwu:
+    label: omec-dp
+    value: enabled
+
+config:
+  spgwu:
+    multiUpfs: true
+    cpComm:
+      addr: "spgwc-headless.omec.svc.product.central"
+    s1u:
+      device: "s1u-net"
+      ip: #SET_VALUE
+    sgi:
+      device: "sgi-net"
+      ip: #SET_VALUE
+    dpName: #SET_VALUE
+networks:
+  sgi:
+    gateway: #SET_VALUE
