@@ -1,0 +1,30 @@
+images:
+  tags:
+    bess: "registry.central.aetherproject.net/upf-epc-bess:0.1.0-dev"
+    cpiface: "registry.central.aetherproject.net/upf-epc-cpiface:0.1.0-dev"
+  pullPolicy: "IfNotPresent"
+nodeSelectors:
+  enabled: true
+config:
+  spgwu:
+    name: "dp-staging"
+    s1u:
+      device: "s1u"
+      ip: "192.168.252.7/24"
+    sgi:
+      device: "sgi"
+      ip: "192.168.250.7/24"
+    zmq:
+      spgwc:
+        addr: "spgwc-headless.omec.svc.product.central"
+networks:
+  enb:
+    subnet: "192.168.251.0/24"
+  ue:
+    subnet: "10.250.0.0/16"
+  sgi:
+    subnet: "192.168.250.0/24"
+    gateway: "192.168.250.1"
+  s1u:
+    subnet: "192.168.252.0/24"
+    gateway: "192.168.252.1"
