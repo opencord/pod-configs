@@ -1,6 +1,6 @@
 images:
   tags:
-    spgwu: "registry.central.aetherproject.net/ngic-dp:1.1.0"
+    spgwu: "registry.central.aetherproject.net/ngic-dp:tucson-native-debug"
   pullPolicy: "IfNotPresent"
 
 nodeSelectors:
