@@ -1,0 +1,34 @@
+kpi_exporter:
+  enabled: false
+
+prometheus:
+  alertmanager:
+    enabled: false
+  kubeStateMetrics:
+    enabled: true
+    fullnameOverride: "nem-monitoring-prometheus-kube-state-metrics"
+  nodeExporter:
+    enabled: true
+    fullnameOverride: "nem-monitoring-prometheus-node-exporter"
+  pushgateway:
+    enabled: false
+  server:
+    enabled: true
+    fullnameOverride: "nem-monitoring-prometheus-server"
+    # NOTE: set unique datacenter name for each clusters
+    global:
+      external_labels:
+        datacenter: #SET_VALUE
+
+grafana:
+  fullnameOverride: "nem-monitoring-grafana"
+
+dashboards:
+  k8s: false
+  nodeExporter: false
+  xos: false
+  onos: false
+  aaa: false
+  voltha: false
+  omec: false
+  aether: true
