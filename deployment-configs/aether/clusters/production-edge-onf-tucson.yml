@@ -37,6 +37,9 @@ rancher_kubernetes_engine_config:
       cluster_dns_server: 10.59.128.10
       fail_swap_on: false
       extra_args:
+        cpu-manager-policy: static
+        kube-reserved: 'cpu=500m,memory=256Mi'
+        system-reserved: 'cpu=500m,memory=256Mi'
         feature-gates: "SCTPSupport=True"
     kube-controller:
       cluster_cidr: 10.59.0.0/17
