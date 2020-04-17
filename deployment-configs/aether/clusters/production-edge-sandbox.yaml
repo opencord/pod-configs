@@ -1,4 +1,4 @@
-name: #SET_VALUE(production-edge-onf-menlo)
+name: production-edge-sandbox
 rancher_kubernetes_engine_config:
   authentication:
     strategy: x509
@@ -66,7 +66,7 @@ rancher_kubernetes_engine_config:
         .:53 {
             errors
             health
-            kubernetes #SET_VALUE(menlo.edge) in-addr.arpa ip6.arpa {
+            kubernetes sandbox.edge in-addr.arpa ip6.arpa {
               pods insecure
               upstream
               fallthrough in-addr.arpa ip6.arpa
