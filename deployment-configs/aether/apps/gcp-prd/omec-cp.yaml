@@ -2,9 +2,9 @@ images:
   tags:
     hssdb: "registry.central.aetherproject.net/c3po-hssdb:1.1.0"
     hss: "registry.central.aetherproject.net/c3po-hss:1.1.4"
-    mme: "registry.central.aetherproject.net/openmme:1.7.1"
+    mme: "registry.central.aetherproject.net/openmme:1.7.3"
     mmeExporter: "registry.central.aetherproject.net/mme-exporter:0.3.1"
-    spgwc: "registry.central.aetherproject.net/ngic-cp:1.1.5"
+    spgwc: "registry.central.aetherproject.net/ngic-cp:1.1.6"
   pullPolicy: "IfNotPresent"
 
 cassandra:
@@ -35,6 +35,7 @@ config:
         DNS_PRIMARY = 8.8.8.8
         DNS_SECONDARY = 8.8.4.4
         NUM_DP_SELECTION_RULES = 5
+        IPV4_MTU = 1450
         [DP_SELECTION_RULE_1]
         DPID = 1
         DPNAME = dp-staging
@@ -56,23 +57,23 @@ config:
         DPNAME = dp-demo
         MCC = 315
         MNC = 010
-        TAC = 18
-        DNS_PRIMARY = 1.1.1.1
-        DNS_SECONDARY = 8.8.8.8
-        [DP_SELECTION_RULE_4]
-        DPID = 3
-        DPNAME = dp-demo
-        MCC = 315
-        MNC = 010
         TAC = 203
         DNS_PRIMARY = 1.1.1.1
         DNS_SECONDARY = 8.8.8.8
-        [DP_SELECTION_RULE_5]
+        [DP_SELECTION_RULE_4]
         DPID = 4
         DPNAME = dp-tucson
         MCC = 315
         MNC = 010
         TAC = 222
+        DNS_PRIMARY = 1.1.1.1
+        DNS_SECONDARY = 8.8.8.8
+        [DP_SELECTION_RULE_5]
+        DPID = 5
+        DPNAME = dp-ntt
+        MCC = 999
+        MNC = 002
+        TAC = 1
         DNS_PRIMARY = 1.1.1.1
         DNS_SECONDARY = 8.8.8.8
   mme:
@@ -87,6 +88,9 @@ config:
             dig1: 0
             dig2: 1
             dig3: 0
+          plmnlist:
+            plmn1: "mcc=315,mnc=010"
+            plmn2: "mcc=999,mnc=002"
       mme_exporter.json:
         edges:
         - id: onf-menlo-b48-1
