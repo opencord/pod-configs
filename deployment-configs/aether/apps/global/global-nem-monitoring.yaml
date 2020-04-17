@@ -31,6 +31,7 @@ prometheus:
               - nem-monitoring-prometheus-server.nem-monitoring-p-jpq59.svc.mwc.edge:80
               - nem-monitoring-prometheus-server.nem-monitoring-p-ccrkh.svc.intel.edge:80
               - nem-monitoring-prometheus-server.nem-monitoring-p-dn5h5.svc.tucson.edge:80
+              - nem-monitoring-prometheus-server.nem-monitoring-p-bcrtc.svc.ntt.edge:80
         - job_name: 'mme-exporter-production'
           metrics_path: /metrics
           scrape_interval: 15s
