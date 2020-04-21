@@ -1,4 +1,4 @@
-name: production-azure-central
+name: production-central-azure
 rancher_kubernetes_engine_config:
   authentication:
     strategy: x509
@@ -75,11 +75,6 @@ rancher_kubernetes_engine_config:
             loop
             reload
             loadbalance
-        }
-        mwc.edge:53 {
-            errors
-            cache 30
-            forward . 10.54.128.10
         }
 
 windows_prefered_cluster: false

@@ -1,4 +1,4 @@
-name: production-central
+name: production-central-gcp
 rancher_kubernetes_engine_config:
   authentication:
     strategy: x509
@@ -95,16 +95,6 @@ rancher_kubernetes_engine_config:
             loop
             reload
             loadbalance
-        }
-        menlo.edge:53 {
-            errors
-            cache 30
-            forward . 10.53.128.10
-        }
-        mwc.edge:53 {
-            errors
-            cache 30
-            forward . 10.54.128.10
         }
 
 windows_prefered_cluster: false

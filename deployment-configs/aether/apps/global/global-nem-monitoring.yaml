@@ -13,6 +13,14 @@ prometheus:
   server:
     enabled: true
     fullnameOverride: "nem-monitoring-prometheus-server"
+    extraArgs:
+      web.route-prefix: "/prometheus"
+      web.external-url: "https://aether.onlab.us/prometheus"
+    prefixURL: "/prometheus"
+    ingress:
+      enabled: true
+      hosts:
+        - aether.onlab.us/prometheus
   serverFiles:
     prometheus.yml:
       scrape_configs:
@@ -26,12 +34,12 @@ prometheus:
               - '{job="kubernetes-service-endpoints"}'
           static_configs:
             - targets:
-              - nem-monitoring-prometheus-server.nem-monitoring-p-s5pp8.svc.product.central:80
-              - nem-monitoring-prometheus-server.nem-monitoring-p-dw2cc.svc.azure.central:80
-              - nem-monitoring-prometheus-server.nem-monitoring-p-jpq59.svc.mwc.edge:80
-              - nem-monitoring-prometheus-server.nem-monitoring-p-ccrkh.svc.intel.edge:80
-              - nem-monitoring-prometheus-server.nem-monitoring-p-dn5h5.svc.tucson.edge:80
-              - nem-monitoring-prometheus-server.nem-monitoring-p-bcrtc.svc.ntt.edge:80
+              - nem-monitoring-prometheus-server.nem-monitoring-p-74nmx.svc.product.central:80
+              - nem-monitoring-prometheus-server.nem-monitoring-p-whlwm.svc.azure.central:80
+              - nem-monitoring-prometheus-server.nem-monitoring-p-9ljjp.svc.menlo.edge:80
+              - nem-monitoring-prometheus-server.nem-monitoring-p-7jkzz.svc.intel.edge:80
+              - nem-monitoring-prometheus-server.nem-monitoring-p-h27t2.svc.tucson.edge:80
+              - nem-monitoring-prometheus-server.nem-monitoring-p-5lgn2.svc.ntt.edge:80
         - job_name: 'mme-exporter-production'
           metrics_path: /metrics
           scrape_interval: 15s
@@ -48,6 +56,36 @@ prometheus:
 
 grafana:
   fullnameOverride: "nem-monitoring-grafana"
+  ingress:
+    enabled: true
+    hosts:
+      - aether.onlab.us
+    path: "/grafana"
+  grafana.ini:
+    server:
+      domain: aether.onlab.us
+      root_url: https://aether.onlab.us/grafana
+      serve_from_sub_path: true
+    paths:
+      data: /var/lib/grafana/data
+      logs: /var/log/grafana
+      plugins: /var/lib/grafana/plugins
+      provisioning: /etc/grafana/provisioning
+    analytics:
+      check_for_updates: true
+    log:
+      mode: console
+    grafana_net:
+      url: https://grafana.net
+  datasources:
+    datasources.yaml:
+      apiVersion: 1
+      datasources:
+        - name: Prometheus
+          type: prometheus
+          url: http://nem-monitoring-prometheus-server/prometheus
+          access: proxy
+          isDefault: true
 
 dashboards:
   k8s: false

@@ -93,30 +93,30 @@ rancher_kubernetes_engine_config:
             cache 30
             forward . 10.52.128.10
         }
-        staging.central:53 {
+        azure.central:53 {
             errors
             cache 30
-            forward . 10.47.128.10
+            forward . 10.55.128.10
         }
         menlo.edge:53 {
             errors
             cache 30
             forward . 10.53.128.10
         }
-        a.staging.edge:53 {
+        tucson.edge:53 {
             errors
             cache 30
-            forward . 10.48.128.10
+            forward . 10.59.128.10
         }
-        b.staging.edge:53 {
+        intel.edge:53 {
             errors
             cache 30
-            forward . 10.49.128.10
+            forward . 10.212.74.138
         }
-        c.staging.edge:53 {
+        ntt.edge:53 {
             errors
             cache 30
-            forward . 10.50.128.10
+            forward . 10.80.128.10
         }
 
 windows_prefered_cluster: false

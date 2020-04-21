@@ -79,10 +79,10 @@ rancher_kubernetes_engine_config:
             reload
             loadbalance
         }
-        product.central:53 {
+        staging.central:53 {
             errors
             cache 30
-            forward . 10.52.128.10
+            forward . 10.47.128.10
         }
         aetherproject.net {
             hosts {

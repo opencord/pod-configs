@@ -1,7 +1,7 @@
 images:
   tags:
-    bess: "registry.central.aetherproject.net/upf-epc-bess:0.1.0-intel"
-    cpiface: "registry.central.aetherproject.net/upf-epc-cpiface:0.1.0-intel"
+    bess: "registry.central.aetherproject.net/upf-epc-bess:intel-native"
+    cpiface: "registry.central.aetherproject.net/upf-epc-cpiface:intel-native"
   pullPolicy: "IfNotPresent"
 
 nodeSelectors:
