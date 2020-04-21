@@ -1,0 +1,23 @@
+images:
+  tags:
+    spgwu: "registry.central.aetherproject.net/ngic-dp:ntt-native-debug"
+  pullPolicy: "IfNotPresent"
+
+nodeSelectors:
+  enabled: false
+
+config:
+  spgwu:
+    multiUpfs: true
+    cpComm:
+      addr: "spgwc-headless.omec.svc.product.central"
+    s1u:
+      device: "s1u-net"
+      ip: "10.155.10.254/24"
+    sgi:
+      device: "sgi-net"
+      ip: "10.155.0.254/24"
+    dpName: "dp-ntt"
+networks:
+  sgi:
+    gateway: "10.155.0.1"
