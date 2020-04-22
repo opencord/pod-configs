@@ -39,7 +39,6 @@ fabric_switches:
     user: 'root'
     pass: 'onl'
     bngPort: '31'
-    oltPort: '1'
     device_id: 'of:0000000000000001'
 
 olts:
@@ -48,7 +47,9 @@ olts:
     user: 'root'
     pass: 'onl'
     fortygig: 'true'
+    aggPort: '1'
     serial: 'EC1721000216'
+    oltDebVersion: openolt_asfvolt16-2.3.0-bc6e0853e0e8bf6bd7e4223d4a7ee0dd35ce634d.deb
 
 onus:
   -
@@ -73,6 +74,7 @@ hosts:
       container_type: 'LXC'
       container_name: 'ALPHe3d1cfde'
       onu: 'ALPHe3d1cfde'
+      olt: 'EC1721000216'
       c_tag: '112'
       s_tag: '111'
 
