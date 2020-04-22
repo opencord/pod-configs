@@ -39,7 +39,6 @@ fabric_switches:
     user: 'root'
     pass: 'onl'
     bngPort: '3'
-    oltPort: '10'
     device_id: 'of:0000000000000001'
 
 olts:
@@ -48,6 +47,7 @@ olts:
     user: 'root'
     pass: 'onl'
     fortygig: 'true'
+    aggPort: '10'
     serial: 'EC1838000853'
 
 onus:
@@ -64,6 +64,7 @@ hosts:
       container_type: null
       container_name: null
       onu: 'ALPHe3d1cfa7'
+      olt: 'EC1838000853'
       c_tag: '901'
       s_tag: '111'
       power_switch_port: 5
@@ -75,6 +76,7 @@ hosts:
       container_type: null
       container_name: null
       onu: 'ALPHe3d1cea3'
+      olt: 'EC1838000853'
       c_tag: '801'
       s_tag: '111'
       power_switch_port: 1
@@ -86,6 +88,7 @@ hosts:
       container_type: null
       container_name: null
       onu: 'ALPHe3d1ceb7'
+      olt: 'EC1838000853'
       c_tag: '101'
       s_tag: '222'
       power_switch_port: 2

@@ -34,8 +34,6 @@ fabric_switches:
     user: root
     pass: onl
     bngPort: 157
-    #XGSPON
-    oltPort: 1
     device_id: 'of:0000000000000001'
 
 olts:
@@ -45,6 +43,7 @@ olts:
     user: root
     pass: onl
     fortygig: False
+    aggPort: 1
     serial: 'EC1729003539'
 
 hosts:
@@ -58,6 +57,7 @@ hosts:
       container_type: LXC
       container_name: voltha-client
       onu: ALPHe3d1cf5c
+      olt: EC1729003539
       c_tag: 11
       s_tag: 11
       power_switch_port: 6
@@ -69,6 +69,7 @@ hosts:
       container_type: LXC
       container_name: voltha-client-dt
       onu: ALPHe3a69d03
+      olt: EC1729003539
       c_tag: 7
       s_tag: 11
       power_switch_port: 8

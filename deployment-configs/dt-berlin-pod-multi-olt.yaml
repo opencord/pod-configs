@@ -45,6 +45,14 @@
       fortygig: False
       aggPort: 2
       serial: EC1912001814
+  # XGS-PON OLT
+    -
+      ip: 10.34.90.51
+      user: root
+      pass: onl
+      fortygig: False
+      aggPort: 1
+      serial: EC1729003539
   
   hosts:
     src:
@@ -85,6 +93,31 @@
         c_tag: 7
         s_tag: 33
         power_switch_port: 4
+        #XGSPON ONU
+      -
+        ip: 127.0.0.1
+        user: community
+        pass: admin
+        dp_iface_name: eth1
+        container_type: LXC
+        container_name: voltha-client
+        onu: ALPHe3d1cf5c
+        olt: EC1729003539
+        c_tag: 11
+        s_tag: 11
+        power_switch_port: 6
+      -
+        ip: 127.0.0.1
+        user: community
+        pass: admin
+        dp_iface_name: eth1
+        container_type: LXC
+        container_name: voltha-client-dt
+        onu: ALPHe3a69d03
+        olt: EC1729003539
+        c_tag: 7
+        s_tag: 11
+        power_switch_port: 8
   
     dst:
       -
@@ -117,6 +150,26 @@
         dp_iface_gateway: null
         container_type: null
         container_name: null
+      -
+        dp_iface_ip_qinq: 10.11.2.254
+        ip: null
+        user: null
+        pass: null
+        dp_iface_name: null
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
+      -
+        dp_iface_ip_qinq: 10.11.7.254
+        ip: null
+        user: null
+        pass: null
+        dp_iface_name: null
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null  
   
   web_power_switch:
     ip: '10.34.90.48'
