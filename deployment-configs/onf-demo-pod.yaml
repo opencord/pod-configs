@@ -69,6 +69,7 @@ hosts:
       onu: 'BRCM22222222'
       c_tag: '11'
       s_tag: '99'
+      power_switch_port: 6
     -
       ip: '10.128.100.71'
       user: 'cord'
@@ -79,6 +80,7 @@ hosts:
       onu: 'ALPHe3d1cf9d'
       c_tag: '22'
       s_tag: '99'
+      power_switch_port: 1
     -
       ip: '10.128.100.71'
       user: 'cord'
@@ -89,6 +91,7 @@ hosts:
       onu: 'ALPHe3d1ced5'
       c_tag: '33'
       s_tag: '99'
+      power_switch_port: 5
   dst:
     -
       ip: null
@@ -120,3 +123,9 @@ hosts:
       dp_iface_gateway: null
       container_type: null
       container_name: null
+
+web_power_switch:
+  ip: '10.128.100.75'
+  user: 'cord'
+  password: 'cord'
+  type: 'DLI'
