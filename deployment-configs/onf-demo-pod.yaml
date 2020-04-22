@@ -39,7 +39,6 @@ fabric_switches:
     user: 'root'
     pass: 'onl'
     bngPort: '31'
-    oltPort: '1'
     device_id: 'of:0000000000000001'
 
 olts:
@@ -49,6 +48,7 @@ olts:
     user: 'root'
     pass: 'onl'
     fortygig: 'true'
+    aggPort: '1'
     serial: 'EC1904000654'
 
 onus:
@@ -67,6 +67,7 @@ hosts:
       container_type: null
       container_name: null
       onu: 'ALPHe3d1cf9d'
+      olt: 'EC1904000654'
       c_tag: '22'
       s_tag: '99'
     -
@@ -77,6 +78,7 @@ hosts:
       container_type: null
       container_name: null
       onu: 'ALPHe3d1ced5'
+      olt: 'EC1904000654'
       c_tag: '33'
       s_tag: '99'
   dst:
