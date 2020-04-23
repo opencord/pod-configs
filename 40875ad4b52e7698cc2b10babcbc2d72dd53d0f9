@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "38f6f831_7ff0b3e6",
+        "filename": "deployment-configs/onf-demo-pod.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1000064
+      },
+      "writtenOn": "2020-04-23T00:40:42Z",
+      "side": 1,
+      "message": "Do we have a power switch for this ONU?",
+      "range": {
+        "startLine": 69,
+        "startChar": 12,
+        "endLine": 69,
+        "endChar": 25
+      },
+      "revId": "40875ad4b52e7698cc2b10babcbc2d72dd53d0f9",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
