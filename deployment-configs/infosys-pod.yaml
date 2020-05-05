@@ -31,7 +31,6 @@ fabric_switches:
     user: 'root'
     pass: 'onl'
     bngPort: '3'
-    oltPort: '10'
     device_id: 'of:0000000000000001'
 
 olts:
@@ -40,7 +39,9 @@ olts:
     user: 'root'
     pass: 'onl'
     fortygig: 'true'
+    aggPort: '10'
     serial: 'EC1917000121'
+    oltDebVersion: openolt_asfvolt16-2.3.0-bc6e0853e0e8bf6bd7e4223d4a7ee0dd35ce634d.deb
 
 onus:
   -
@@ -55,6 +56,7 @@ hosts:
       dp_iface_name: 'ens10'
       container_type: null
       container_name: null
+      olt: 'EC1917000121'
       onu: 'ISKT71e82118'
       c_tag: '222'
       s_tag: '111'
