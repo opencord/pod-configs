@@ -68,6 +68,7 @@ hosts:
       container_type: null
       container_name: null
       onu: 'BRCM22222222'
+      olt: 'EC1904000654'
       c_tag: '11'
       s_tag: '11'
       power_switch_port: 6
