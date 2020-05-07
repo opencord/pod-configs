@@ -16,6 +16,10 @@ defaults:
   image_tag: master
   image_pullPolicy: Always
 
+onosSshPort: 30115
+onosApiPort: 30120
+onosOfPort: 31653
+
 deployments:
   etcdOperator: true
   backupOperator: false
