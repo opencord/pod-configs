@@ -95,6 +95,19 @@
         c_tag: 7
         s_tag: 33
         power_switch_port: 4
+       -
+        ip: 10.34.90.42
+        user: community
+        pass: admin
+        dp_iface_name: eth1.7
+        container_type: LXC
+        container_name: voltha-client-gpon-4
+        onu: SCOM00001c0b
+        olt: EC1912001814
+        c_tag: 7
+        s_tag: 34
+        power_switch_port: 7
+
         #XGSPON ONU
       -
         ip: 127.0.0.1
@@ -144,6 +157,16 @@
         container_name: null
       -
         dp_iface_ip_qinq: 10.33.7.254
+        ip: null
+        user: null
+        pass: null
+        dp_iface_name: null
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
+      -
+        dp_iface_ip_qinq: 10.34.7.254
         ip: null
         user: null
         pass: null
