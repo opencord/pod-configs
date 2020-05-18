@@ -46,6 +46,7 @@ olts:
     aggPort: 1
     serial: 'EC1729003539'
     oltDebVersion: openolt_asfvolt16-2.3.0-bc6e0853e0e8bf6bd7e4223d4a7ee0dd35ce634d.deb
+    oltDebVersion23: openolt_asfvolt16-2.3.0-bc6e0853e0e8bf6bd7e4223d4a7ee0dd35ce634d.deb
 
 
 hosts:
