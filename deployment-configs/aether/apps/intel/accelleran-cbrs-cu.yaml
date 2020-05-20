@@ -12,3 +12,4 @@ config:
     plmnId: "130501"
     instanceId: "intelcell101"
     tac: 101
+    cellID: 1
