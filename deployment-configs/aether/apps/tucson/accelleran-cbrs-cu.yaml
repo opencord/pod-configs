@@ -12,3 +12,4 @@ config:
     plmnId: "130501"
     instanceId: "onfcell222"
     tac: 222
+    enbId: 3
