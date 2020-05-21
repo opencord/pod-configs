@@ -1,0 +1,41 @@
+{
+  "devices": {
+    "of:0000000000000001" : {
+      "segmentrouting" : {
+        "name" : "Leaf-R1",
+        "ipv4NodeSid" : 101,
+        "ipv4Loopback" : "10.6.1.254",
+        "routerMac" : "00:00:00:00:01:80",
+        "isEdgeRouter" : true,
+        "adjacencySids" : []
+      },
+      "basic" : {
+        "driver" : "ofdpa3"
+      }
+    }
+  },
+  "ports" : {
+    "of:0000000000000001/20" : {
+      "interfaces" : [
+        { "name" : "voltha-intf", "vlan-untagged": 4093 }
+      ]
+    },
+    "of:0000000000000001/48" : {
+      "interfaces" : [
+        { "name" : "bng-intf", "vlan-untagged": 4093 }
+      ]
+    },
+    "of:0000000000000001/1" : {
+      "interfaces" : [
+        { "name" : "olt-intf", "vlan-tagged": [4093] }
+      ]
+    }
+  },
+  "apps": {
+    "org.opencord.dhcpl2relay" : {
+      "dhcpl2relay" : {
+        "useOltUplinkForServerPktInOut" : true
+      }
+    }
+  }
+}
