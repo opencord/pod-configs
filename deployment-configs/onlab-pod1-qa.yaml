@@ -71,6 +71,7 @@ hosts:
       onu: 'ALPHe3d1cfde'
       c_tag: '112'
       s_tag: '111'
+      onu_type: 'alpha'
 
     -
       ip: '10.90.0.51'
@@ -82,6 +83,7 @@ hosts:
       onu: 'ISKT71e80080'
       c_tag: '113'
       s_tag: '111'
+      onu_type: 'iskratel'
     -
       ip: '10.90.0.51'
       user: 'ubuntu'
@@ -92,6 +94,7 @@ hosts:
       onu: 'BRCM22222222'
       c_tag: '114'
       s_tag: '110'
+      onu_type: 'brcm'
 
   dst:
     -

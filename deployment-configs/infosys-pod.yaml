@@ -61,6 +61,7 @@ hosts:
       onu: 'ISKT71e82118'
       c_tag: '222'
       s_tag: '111'
+      onu_type: 'iskratel'
 
   dst:
     -
