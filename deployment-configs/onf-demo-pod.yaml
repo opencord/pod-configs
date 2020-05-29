@@ -73,6 +73,7 @@ hosts:
       c_tag: '22'
       s_tag: '99'
       power_switch_port: 1
+      onu_type: alpha
     -
       ip: '10.128.100.71'
       user: 'cord'
@@ -85,6 +86,7 @@ hosts:
       c_tag: '33'
       s_tag: '99'
       power_switch_port: 5
+      onu_type: alpha
   dst:
     -
       ip: null
