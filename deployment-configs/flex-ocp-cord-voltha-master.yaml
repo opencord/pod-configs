@@ -62,6 +62,7 @@ hosts:
       onu: 'ALPHe3d1cfa7'
       c_tag: '999'
       s_tag: '111'
+      onu_type: alpha
 
   dst:
     -
