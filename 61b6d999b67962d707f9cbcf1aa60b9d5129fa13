@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b1250be9_9134cb8b",
+        "filename": "deployment-configs/flex-ocp-cord.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 1000064
+      },
+      "writtenOn": "2020-05-29T22:37:24Z",
+      "side": 1,
+      "message": "may be put this parameter in the src section instead",
+      "range": {
+        "startLine": 109,
+        "startChar": 6,
+        "endLine": 109,
+        "endChar": 21
+      },
+      "revId": "61b6d999b67962d707f9cbcf1aa60b9d5129fa13",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
