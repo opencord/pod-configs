@@ -106,6 +106,7 @@ hosts:
       dp_iface_gateway: null
       container_type: null
       container_name: null
+      onu_type: alpha
     -
       ip: null
       user: null
@@ -116,6 +117,7 @@ hosts:
       dp_iface_gateway: null
       container_type: null
       container_name: null
+      onu_type: alpha
     -
       ip: null
       user: null
@@ -126,6 +128,7 @@ hosts:
       dp_iface_gateway: null
       container_type: null
       container_name: null
+      onu_type: alpha
 
 web_power_switch:
   ip: '10.192.20.56'
