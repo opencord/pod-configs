@@ -46,6 +46,30 @@
       "revId": "3ef6b8510611b9064c645274cee3781210d5dd16",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "87a64a9f_8a8cb0cd",
+        "filename": "deployment-configs/onf-soak-pod.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1000064
+      },
+      "writtenOn": "2020-06-02T21:54:13Z",
+      "side": 1,
+      "message": "It should be present, it was changed recently.  You should add something like below\nolts:\n  -\n    name: \u0027edgecore\u0027\n    ip: \u002710.128.100.90\u0027\n    user: \u0027root\u0027\n    pass: \u0027onl\u0027\n    fortygig: \u0027true\u0027\n    aggPort: \u00271\u0027\n    serial: \u0027EC1904000654\u0027\n    oltDebVersion: openolt_asfvolt16-2.4.6-5d9ab1a36e13e55ca3687af160cfd4f582317493.deb",
+      "parentUuid": "22a224a6_75dbbfd8",
+      "range": {
+        "startLine": 43,
+        "startChar": 4,
+        "endLine": 43,
+        "endChar": 26
+      },
+      "revId": "3ef6b8510611b9064c645274cee3781210d5dd16",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
     }
   ]
 }
