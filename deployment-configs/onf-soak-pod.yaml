@@ -1,0 +1,95 @@
+# Copyright 2017-present Open Networking Foundation
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Automated deployment configuration for menlo-soak-pod
+
+---
+
+kube_config: '/home/cord/.kube/config'
+
+nodes:
+  -
+    ip: '10.128.90.90'
+    user: 'cord'
+    pass: 'cord'
+
+fabric_switches:
+  -
+    ip: '192.168.100.44'
+    user: 'root'
+    pass: 'onl'
+    bngPort: '31'
+    oltPort: '1'
+    device_id: 'of:0000000000000205'
+
+olts:
+  -
+    name: 'edgecore'
+    ip: '192.168.100.112'
+    user: 'root'
+    pass: 'onl'
+    fortygig: 'true'
+    serial: 'EC1721000208'
+    oltDebVersion: openolt_asfvolt16-2.4.6-5d9ab1a36e13e55ca3687af160cfd4f582317493.deb
+    oltDebVersion23: openolt_asfvolt16-2.4.3-c636279643a1cac3128395cc9fc22977e8edc46d.deb
+
+onus:
+  -
+    serial: 'ALPHe3d1cf8e'
+  -
+    serial: 'ALPHe3d1cfe3'
+
+hosts:
+  src:
+    -
+      ip: '10.128.90.90'
+      user: 'cord'
+      pass: 'cord'
+      dp_iface_name: 'ens6f0'
+      container_type: null
+      container_name: null
+      onu: 'ALPHe3d1cf8e'
+      c_tag: '11'
+      s_tag: '111'
+    -
+      ip: '10.128.90.90'
+      user: 'cord'
+      pass: 'cord'
+      dp_iface_name: 'ens6f1'
+      container_type: null
+      container_name: null
+      onu: 'ALPHe3d1cfe3'
+      c_tag: '12'
+      s_tag: '111'
+  dst:
+    -
+      ip: null
+      user: null
+      pass: null
+      dp_iface_name: null
+      dp_iface_ip_qinq: '10.11.1.254'
+      dp_iface_ip: null
+      dp_iface_gateway: null
+      container_type: null
+      container_name: null
+    -
+      ip: null
+      user: null
+      pass: null
+      dp_iface_name: null
+      dp_iface_ip_qinq: '10.11.2.254'
+      dp_iface_ip: null
+      dp_iface_gateway: null
+      container_type: null
+      container_name: null
