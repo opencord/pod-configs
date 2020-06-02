@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0edb0cd0_abfeec09",
+        "filename": "deployment-configs/onf-soak-pod.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 1000064
+      },
+      "writtenOn": "2020-06-02T21:44:21Z",
+      "side": 1,
+      "message": "need to add a parameter as \"oltDebianVersion\" and include the debian version",
+      "range": {
+        "startLine": 43,
+        "startChar": 4,
+        "endLine": 43,
+        "endChar": 26
+      },
+      "revId": "3ef6b8510611b9064c645274cee3781210d5dd16",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
