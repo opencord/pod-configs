@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "eb357741_aa1fb7c6",
+        "filename": "deployment-configs/flex-ocp-cord-voltha-master.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1000064
+      },
+      "writtenOn": "2020-06-03T21:28:06Z",
+      "side": 1,
+      "message": "Do you think quote needs to be given here? In some files there is no quote",
+      "range": {
+        "startLine": 65,
+        "startChar": 16,
+        "endLine": 65,
+        "endChar": 21
+      },
+      "revId": "ce3331b44529f21f0563055ab65a0726b0771f52",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
+    }
+  ]
+}
