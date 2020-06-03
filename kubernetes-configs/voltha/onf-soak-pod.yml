@@ -15,6 +15,26 @@
 
 # Automated deployment configuration for ONF DEMO POD, olt/onu are connected to this
 
+defaults:
+  image_tag: master
+  image_pullPolicy: Always
+
+onosSshPort: 30115
+onosApiPort: 30120
+onosOfPort: 31653
+
+onos_env:
+- name: POD_IP
+  valueFrom:
+  fieldRef:
+    fieldPath: status.podIP
+- name: NAMESPACE
+  valueFrom:
+  fieldRef:
+    fieldPath: metadata.namespace
+- name: ONOS_APPS
+  value: "drivers,openflow-base,hostprovider"
+
 application_logs: |
   log4j.logger.org.opencord.olt = DEBUG
   log4j.logger.org.opencord.kafka = DEBUG
