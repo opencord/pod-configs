@@ -70,6 +70,7 @@ hosts:
       c_tag: '901'
       s_tag: '111'
       power_switch_port: 5
+      onu_type: 'alpha'
     -
       ip: '10.192.20.61'
       user: 'cord'
@@ -82,6 +83,7 @@ hosts:
       c_tag: '801'
       s_tag: '111'
       power_switch_port: 1
+      onu_type: 'alpha'
     -
       ip: '10.192.20.46'
       user: 'cord'
@@ -94,6 +96,7 @@ hosts:
       c_tag: '101'
       s_tag: '222'
       power_switch_port: 2
+      onu_type: 'alpha'
 
   dst:
     -

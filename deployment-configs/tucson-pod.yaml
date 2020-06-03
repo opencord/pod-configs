@@ -51,6 +51,7 @@ hosts:
       onu: ALPHe3d1ce7b
       c_tag: 11
       s_tag: 11
+      onu_type: 'alpha'
     -
       ip: 127.0.0.1
       user: cord
@@ -61,6 +62,7 @@ hosts:
       onu: ISKT71e801a0
       c_tag: 12
       s_tag: 11
+      onu_type: 'iskratel'
     -
       ip: 127.0.0.1
       user: cord
@@ -71,6 +73,7 @@ hosts:
       onu: ALPHe3d1cfac
       c_tag: 21
       s_tag: 21
+      onu_type: 'alpha'
 
   dst:
     -
