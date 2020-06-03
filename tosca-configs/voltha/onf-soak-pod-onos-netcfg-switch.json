@@ -1,6 +1,6 @@
 {
   "devices": {
-    "of:0000000000000205" : {
+    "of:000000000000da7a" : {
       "segmentrouting" : {
         "name" : "Agg Switch",
         "ipv4NodeSid" : 101,
