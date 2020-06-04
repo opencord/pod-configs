@@ -30,8 +30,7 @@ fabric_switches:
     user: 'root'
     pass: 'onl'
     bngPort: '31'
-    oltPort: '1'
-    device_id: 'of:0000000000000205'
+    device_id: 'of:000000000000da7a'
 
 olts:
   -
