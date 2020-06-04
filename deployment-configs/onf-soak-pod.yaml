@@ -56,9 +56,10 @@ hosts:
       ip: '10.128.90.90'
       user: 'cord'
       pass: 'cord'
-      dp_iface_name: 'ens6f0'
-      container_type: null
-      container_name: null
+      # dp_iface_name: 'ens6f0'
+      dp_iface_name: 'eth1'
+      container_type: 'LXC'
+      container_name: 'ALPHe3d1cf8e'
       onu: 'ALPHe3d1cf8e'
       olt: 'EC1721000208'
       c_tag: '11'
@@ -67,9 +68,10 @@ hosts:
       ip: '10.128.90.90'
       user: 'cord'
       pass: 'cord'
-      dp_iface_name: 'ens6f1'
-      container_type: null
-      container_name: null
+      # dp_iface_name: 'ens6f1'
+      dp_iface_name: 'eth1'
+      container_type: 'LXC'
+      container_name: 'ALPHe3d1cfe3'
       onu: 'ALPHe3d1cfe3'
       olt: 'EC1721000208'
       c_tag: '12'
