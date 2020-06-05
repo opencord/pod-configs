@@ -64,7 +64,6 @@ hosts:
       c_tag: 11
       s_tag: 11
       power_switch_port: 6
-      onu_type: 'alpha'
     -
       ip: 127.0.0.1
       user: community
@@ -77,7 +76,6 @@ hosts:
       c_tag: 7
       s_tag: 11
       power_switch_port: 8
-      onu_type: 'alpha'
 
   dst:
     -
