@@ -55,12 +55,24 @@ olts:
 
 onus:
   -
-    serial: 'BRCM22222222'
+    serial: 'iISKT71e80080'
   -
     serial: 'ALPHe3d1cf9d'
 
 hosts:
   src:
+    -
+      ip: '10.128.100.71'
+      user: 'cord'
+      pass: 'cord'
+      dp_iface_name: 'ens6f1.11'
+      container_type: null
+      container_name: null
+      onu: 'BRCM22222222'
+      olt: 'EC1904000654'
+      c_tag: '11'
+      s_tag: '11'
+      power_switch_port: 6
     -
       ip: '10.128.100.71'
       user: 'cord'
@@ -88,6 +100,16 @@ hosts:
       power_switch_port: 5
       onu_type: 'alpha'
   dst:
+    -
+      ip: null
+      user: null
+      pass: null
+      dp_iface_name: null
+      dp_iface_ip_qinq: '10.11.11.254'
+      dp_iface_ip: null
+      dp_iface_gateway: null
+      container_type: null
+      container_name: null
     -
       ip: null
       user: null
