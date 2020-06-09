@@ -73,6 +73,7 @@ hosts:
       c_tag: '11'
       s_tag: '11'
       power_switch_port: 6
+      onu_type: 'iskratel'
     -
       ip: '10.128.100.71'
       user: 'cord'
