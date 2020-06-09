@@ -55,7 +55,7 @@ olts:
 
 onus:
   -
-    serial: 'iISKT71e80080'
+    serial: 'ISKT71e80080'
   -
     serial: 'ALPHe3d1cf9d'
 
@@ -68,7 +68,7 @@ hosts:
       dp_iface_name: 'ens6f1.11'
       container_type: null
       container_name: null
-      onu: 'BRCM22222222'
+      onu: 'ISKT71e80080'
       olt: 'EC1904000654'
       c_tag: '11'
       s_tag: '11'
