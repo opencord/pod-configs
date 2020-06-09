@@ -1,8 +1,0 @@
-config:
-  sriov:
-    resourceList:
-      vfio:
-        s1uPfNames:
-          - #SET_VALUE#0-3
-        sgiPfNames:
-          - #SET_VALUE#4-7
