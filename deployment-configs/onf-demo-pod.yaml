@@ -87,19 +87,6 @@ hosts:
       s_tag: '99'
       power_switch_port: 1
       onu_type: 'alpha'
-    -
-      ip: '10.128.100.71'
-      user: 'cord'
-      pass: 'cord'
-      dp_iface_name: 'ens6f2'
-      container_type: null
-      container_name: null
-      onu: 'ALPHe3d1ced5'
-      olt: 'EC1904000654'
-      c_tag: '33'
-      s_tag: '99'
-      power_switch_port: 5
-      onu_type: 'alpha'
   dst:
     -
       ip: null
@@ -117,16 +104,6 @@ hosts:
       pass: null
       dp_iface_name: null
       dp_iface_ip_qinq: '10.99.22.254'
-      dp_iface_ip: null
-      dp_iface_gateway: null
-      container_type: null
-      container_name: null
-    -
-      ip: null
-      user: null
-      pass: null
-      dp_iface_name: null
-      dp_iface_ip_qinq: '10.99.33.254'
       dp_iface_ip: null
       dp_iface_gateway: null
       container_type: null
