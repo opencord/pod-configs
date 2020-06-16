@@ -81,6 +81,9 @@ hosts:
       ip: null
       user: null
       pass: null
+      noroot_ip: 127.0.0.1
+      noroot_user: cord
+      noroot_pass: cord
       dp_iface_name: null
       dp_iface_ip: null
       dp_iface_gateway: null
@@ -91,6 +94,9 @@ hosts:
       ip: null
       user: null
       pass: null
+      noroot_ip: 127.0.0.1
+      noroot_user: cord
+      noroot_pass: cord
       dp_iface_name: null
       dp_iface_ip: null
       dp_iface_gateway: null
@@ -101,6 +107,9 @@ hosts:
       ip: null
       user: null
       pass: null
+      noroot_ip: 127.0.0.1
+      noroot_user: cord
+      noroot_pass: cord
       dp_iface_name: null
       dp_iface_ip: null
       dp_iface_gateway: null
