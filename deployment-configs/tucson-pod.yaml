@@ -52,6 +52,7 @@ hosts:
       c_tag: 11
       s_tag: 11
       onu_type: 'alpha'
+      power_switch_port: 2
     -
       ip: 127.0.0.1
       user: cord
@@ -63,6 +64,7 @@ hosts:
       c_tag: 12
       s_tag: 11
       onu_type: 'iskratel'
+      power_switch_port: 3
     -
       ip: 127.0.0.1
       user: cord
@@ -74,6 +76,7 @@ hosts:
       c_tag: 21
       s_tag: 21
       onu_type: 'alpha'
+      power_switch_port: 4
 
   dst:
     -
@@ -115,3 +118,9 @@ hosts:
       dp_iface_gateway: null
       container_type: null
       container_name: null
+
+web_power_switch:
+  ip: '10.76.28.23'
+  user: 'cord'
+  password: 'cord'
+  type: 'DLI'
