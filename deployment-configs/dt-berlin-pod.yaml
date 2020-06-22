@@ -45,8 +45,8 @@ olts:
     fortygig: False
     aggPort: 1
     serial: 'EC1729003539'
-    oltDebVersion: openolt_asfvolt16-2.4.9-dev-5057a3db7f0c73ef23903901514159963d1ef7a2.deb
-    oltDebVersion23: openolt_asfvolt16-2.4.9-dev-5057a3db7f0c73ef23903901514159963d1ef7a2.deb
+    oltDebVersion: openolt_asfvolt16-2.4.9-dev-d4aeca5a2094f7dc7c519913ab1558348c546dab.deb
+    oltDebVersion23: openolt_asfvolt16-2.4.9-dev-d4aeca5a2094f7dc7c519913ab1558348c546dab.deb
 
 
 hosts:
