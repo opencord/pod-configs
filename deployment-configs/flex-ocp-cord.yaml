@@ -90,7 +90,10 @@ hosts:
       ip: null
       user: null
       pass: null
-      dp_iface_name: null
+      noroot_ip: '10.192.20.47'
+      noroot_user: cord
+      noroot_pass: cord
+      dp_iface_name: ens3d1
       dp_iface_ip_qinq: '10.8.8.100'
       dp_iface_ip: null
       dp_iface_gateway: null
@@ -100,7 +103,10 @@ hosts:
       ip: null
       user: null
       pass: null
-      dp_iface_name: null
+      noroot_ip: '10.192.20.47'
+      noroot_user: cord
+      noroot_pass: cord
+      dp_iface_name: ens3d1
       dp_iface_ip_qinq: '10.8.7.100'
       dp_iface_ip: null
       dp_iface_gateway: null
