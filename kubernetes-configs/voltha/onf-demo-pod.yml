@@ -38,6 +38,9 @@ deployments:
   backupOperator: false
   restoreOperator: false
 
+nodeAffinityConfig:
+  enabled: true
+
 voltha-etcd-cluster:
   clusterSize: 1
 onos_env:
