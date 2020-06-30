@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c25044f4_ad2fe63e",
+        "filename": "kubernetes-configs/voltha/onf-demo-pod.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1000011
+      },
+      "writtenOn": "2020-06-30T16:03:48Z",
+      "side": 1,
+      "message": "I would add the labels here, as the value in the chart could change.",
+      "range": {
+        "startLine": 41,
+        "startChar": 0,
+        "endLine": 42,
+        "endChar": 15
+      },
+      "revId": "f998b908e2ccfef9f4163b810e48b0d4e6b68626",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
