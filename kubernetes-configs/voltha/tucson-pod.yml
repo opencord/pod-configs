@@ -13,8 +13,3 @@
 # limitations under the License.
 
 # This file can be used to override values in kind-voltha's minimal-values.yaml
-
-images:
-  onos:
-    repository: voltha/voltha-onos@sha256
-    tag: 9f781ace4c6f4bf3b2e5ff9cb9f26aa4b328284da1d6b6523636dca1375d7666
