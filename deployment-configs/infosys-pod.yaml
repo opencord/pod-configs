@@ -69,6 +69,10 @@ hosts:
       user: null
       pass: null
       dp_iface_name: null
+      noroot_ip: '192.168.20.254' 
+      noroot_user: volthadhcp
+      noroot_pass: volthadhcp 
+      dp_iface_name: ens10
       dp_iface_ip_qinq: '192.168.20.254'
       dp_iface_ip: null
       dp_iface_gateway: null
