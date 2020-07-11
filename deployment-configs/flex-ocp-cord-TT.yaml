@@ -71,6 +71,19 @@ hosts:
       s_tag: '111'
       power_switch_port: 1
       onu_type: 'alpha'
+    -
+      ip: '10.192.20.46'
+      user: 'cord'
+      pass: 'cord'
+      dp_iface_name: 'ens2f1.35'
+      container_type: null
+      container_name: null
+      onu: 'ALPHe3d1ceb7'
+      olt: 'EC1838000853'
+      c_tag: '101'
+      s_tag: '222'
+      power_switch_port: 2
+      onu_type: 'alpha'
 
   dst:
     -
@@ -79,6 +92,19 @@ hosts:
       pass: null
       dp_iface_name: null
       dp_iface_ip_qinq: '10.8.8.100'
+      dp_iface_ip: null
+      dp_iface_gateway: null
+      container_type: null
+      container_name: null
+    -
+      ip: null
+      user: null
+      pass: null
+      noroot_ip: '10.192.20.47'
+      noroot_user: cord
+      noroot_pass: cord
+      dp_iface_name: ens3d1
+      dp_iface_ip_qinq: '10.8.7.100'
       dp_iface_ip: null
       dp_iface_gateway: null
       container_type: null
