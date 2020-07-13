@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "84b9f5a5_57621354",
+        "filename": "tosca-configs/voltha/onf-demo-pod-onos-netcfg-switch-inband.json",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2020-07-13T23:13:59Z",
+      "side": 1,
+      "message": "This should be tagged per the current setup configuration",
+      "revId": "7775aad5ea1f58ff3749a9cec691bbc91fb98b34",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
