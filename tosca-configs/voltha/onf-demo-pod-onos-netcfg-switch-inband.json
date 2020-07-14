@@ -22,7 +22,7 @@
     },
     "of:0000000000000001/31" : {
       "interfaces" : [
-        { "name" : "bng-intf", "vlan-tagged": 4093 }
+        { "name" : "bng-intf", "vlan-tagged": [4093] }
       ]
     },
     "of:0000000000000001/1" : {
