@@ -44,6 +44,7 @@ fabric_switches:
 olts:
   -
     ip: '10.192.20.206'
+    sship: '10.192.20.206'
     user: 'root'
     pass: 'onl'
     fortygig: 'true'

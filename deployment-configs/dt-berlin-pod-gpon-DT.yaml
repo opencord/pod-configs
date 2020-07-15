@@ -40,6 +40,7 @@
   # Gpon OLT
     -
       ip:  10.34.90.50
+      sship:  10.34.90.50
       user: root
       pass: onl
       fortygig: False

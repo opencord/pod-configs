@@ -40,6 +40,7 @@ olts:
 # XGS-PON OLT
   -
     ip: 10.34.90.51
+    sship: 10.34.90.51
     user: root
     pass: onl
     fortygig: False
