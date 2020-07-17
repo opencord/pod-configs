@@ -16,7 +16,7 @@
 
 ---
 
-kube_config: 'infosys.conf'
+kube_config: 'infosys-pod.conf'
 
 nodes:
   -
@@ -42,8 +42,8 @@ olts:
     fortygig: 'true'
     aggPort: '10'
     serial: 'EC1917000123'
-    oltDebVersion: openolt_asfvolt16-2.4.6-5d9ab1a36e13e55ca3687af160cfd4f582317493.deb
-    oltDebVersion23: openolt_asfvolt16-2.4.6-5d9ab1a36e13e55ca3687af160cfd4f582317493.deb
+    oltDebVersion: openolt_asfvolt16-2.4.9-dev-d4aeca5a2094f7dc7c519913ab1558348c546dab.deb 
+    oltDebVersion23: openolt_asfvolt16-2.4.9-dev-d4aeca5a2094f7dc7c519913ab1558348c546dab.deb 
 
 onus:
   -
@@ -70,7 +70,7 @@ hosts:
       user: null
       pass: null
       dp_iface_name: null
-      noroot_ip: '192.168.20.254' 
+      noroot_ip: '192.168.10.24' 
       noroot_user: volthadhcp
       noroot_pass: volthadhcp 
       dp_iface_name: ens10
