@@ -145,22 +145,6 @@ hosts:
       mcast_rg: '10.8.11.3/24'
       mcast_grp_subnet_mask: '224.0.0.0/4'
       service_type: 'mcast'
-    -
-      ip: '10.192.20.46'
-      user: 'cord'
-      pass: 'cord'
-      dp_iface_name: 'ens2f1.55'
-      container_type: null
-      container_name: null
-      onu: 'ALPHe3d1ceb7'
-      olt: 'EC1838000853'
-      c_tag: '55'
-      s_tag: '550'
-      power_switch_port: 2
-      onu_type: ''
-      mcast_rg: '10.8.11.4/24'
-      mcast_grp_subnet_mask: '224.0.0.0/4'
-      service_type: 'mcast'
   dst:
     -
       ip: null
@@ -226,19 +210,6 @@ hosts:
       bng_user: cord
       bng_pass: cord
       dp_iface_name: null
-      dp_iface_ip_qinq: '225.22.0.2'
-      dp_iface_ip: null
-      dp_iface_gateway: null
-      container_type: null
-      container_name: null
-    -
-      ip: null
-      user: null
-      pass: null
-      bng_ip: '10.192.20.47'
-      bng_user: cord
-      bng_pass: cord
-      dp_iface_name: ens3d1
       dp_iface_ip_qinq: '225.22.0.2'
       dp_iface_ip: null
       dp_iface_gateway: null
