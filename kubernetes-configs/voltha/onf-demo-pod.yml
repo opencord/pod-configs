@@ -30,9 +30,9 @@ images:
 #  adapter_open_olt:
 #    repository: gcgirish/voltha-openolt-adapter
 #    tag: flow-sync
-  rw_core:
-    repository: khagerma/voltha-rw-core
-    tag: update-port-fix
+#  rw_core:
+#    repository: khagerma/voltha-rw-core
+#    tag: update-port-fix
 deployments:
   etcdOperator: true
   backupOperator: false
