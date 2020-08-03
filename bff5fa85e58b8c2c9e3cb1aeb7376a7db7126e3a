@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9884ae26_62eea9fc",
+        "filename": "deployment-configs/onf-demo-pod-DT-gpon.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2020-08-03T22:18:28Z",
+      "side": 1,
+      "message": "There are redundant spaces, we can remove those.",
+      "revId": "bff5fa85e58b8c2c9e3cb1aeb7376a7db7126e3a",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e97c9caf_7ef78cd3",
+        "filename": "deployment-configs/onf-demo-pod-DT-gpon.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2020-08-03T22:18:28Z",
+      "side": 1,
+      "message": "are you sure about the stag 31, 32 and 33 in use here?\nIs this something you chose just now for these ONUs?",
+      "range": {
+        "startLine": 69,
+        "startChar": 15,
+        "endLine": 69,
+        "endChar": 17
+      },
+      "revId": "bff5fa85e58b8c2c9e3cb1aeb7376a7db7126e3a",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
