@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5d02f5d2_4b782a8d",
+        "filename": "deployment-configs/tucson-pod-DT.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1000010
+      },
+      "writtenOn": "2020-08-12T19:38:10Z",
+      "side": 1,
+      "message": "Should this be eth1.7, like in this file?\nhttps://github.com/opencord/pod-configs/blob/master/deployment-configs/dt-berlin-pod-gpon-DT.yaml#L59",
+      "range": {
+        "startLine": 48,
+        "startChar": 0,
+        "endLine": 48,
+        "endChar": 25
+      },
+      "revId": "01a443262602c4fe9b526763a614b76c1eeda885",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
