@@ -22,6 +22,30 @@
       "revId": "01a443262602c4fe9b526763a614b76c1eeda885",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "72d73fc4_559b2bf5",
+        "filename": "deployment-configs/tucson-pod-DT.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1000010
+      },
+      "writtenOn": "2020-08-17T21:28:25Z",
+      "side": 1,
+      "message": "Figured it out, answer is yes",
+      "parentUuid": "5d02f5d2_4b782a8d",
+      "range": {
+        "startLine": 48,
+        "startChar": 0,
+        "endLine": 48,
+        "endChar": 25
+      },
+      "revId": "01a443262602c4fe9b526763a614b76c1eeda885",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
     }
   ]
 }
