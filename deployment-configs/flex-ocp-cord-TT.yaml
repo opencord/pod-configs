@@ -156,7 +156,7 @@ hosts:
       s_tag: '550'
       power_switch_port: 1
       onu_type: ''
-      mcast_rg: '10.8.11.3/24'
+      mcast_rg: '10.8.13.3/24'
       mcast_grp_subnet_mask: '224.0.0.0/4'
       service_type: 'mcast'
   dst:
