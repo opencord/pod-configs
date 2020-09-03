@@ -18,7 +18,8 @@ defaults:
 
 onosSshPort: 30115
 onosApiPort: 30120
-onosOfPort: 31653
+
+exposeNodePorts: true
 
 #images:
 #  onos:
@@ -51,6 +52,25 @@ onos_env:
     fieldPath: metadata.namespace
 - name: ONOS_APPS
   value: "drivers,openflow-base,hostprovider"
+
+apps:
+  - org.onosproject.lldpprovider
+  - org.onosproject.openflow-base
+  - org.onosproject.gui2
+  - org.onosproject.drivers
+  - org.onosproject.mcast
+  - org.opencord.kafka
+  - org.opencord.sadis
+  - org.opencord.dhcpl2relay
+  - org.opencord.maclearner
+  - org.opencord.igmpproxy
+  - org.opencord.mcast
+  - org.opencord.olt
+  - org.opencord.aaa
+
+atomix:
+  persistence:
+    enabled: false
 
 # Customization for BBSIM
 kafka_broker: 'voltha-kafka.voltha.svc.cluster.local:9092'
