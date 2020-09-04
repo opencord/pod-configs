@@ -67,28 +67,6 @@
         olt: EC1912001818
         c_tag: 7
         s_tag: 31
-      -
-        ip: 10.90.0.51
-        user: ubuntu
-        pass: null
-        dp_iface_name: eth1.7
-        container_type: LXC
-        container_name: SCOM00001c8d
-        onu: SCOM00001c8d
-        olt: EC1912001818
-        c_tag: 7
-        s_tag: 32
-      -
-        ip: 10.90.0.51
-        user: ubuntu
-        pass: null
-        dp_iface_name: eth1.7
-        container_type: LXC
-        container_name: SCOM00001c7f
-        onu: SCOM00001c7f
-        olt: EC1912001818
-        c_tag: 7
-        s_tag: 33
 
     dst:
       -
@@ -98,36 +76,9 @@
         noroot_ip: '10.128.100.70'
         noroot_user: cord
         noroot_pass: cord
-        dp_iface_name: enp3s0f0
+        dp_iface_name: ens6f0
         dp_iface_ip_qinq: '10.31.7.254'
         dp_iface_ip: null
         dp_iface_gateway: null
         container_type: null
         container_name: null
-      -
-        ip: null
-        user: null
-        pass: null
-        noroot_ip: '10.128.100.70'
-        noroot_user: cord
-        noroot_pass: cord
-        dp_iface_name: enp3s0f0
-        dp_iface_ip_qinq: '10.32.7.254'
-        dp_iface_ip: null
-        dp_iface_gateway: null
-        container_type: null
-        container_name: null
-      -
-        ip: null
-        user: null
-        pass: null
-        noroot_ip: '10.128.100.70'
-        noroot_user: cord
-        noroot_pass: cord
-        dp_iface_name: enp3s0f0
-        dp_iface_ip_qinq: '10.33.7.254'
-        dp_iface_ip: null
-        dp_iface_gateway: null
-        container_type: null
-        container_name: null
-
