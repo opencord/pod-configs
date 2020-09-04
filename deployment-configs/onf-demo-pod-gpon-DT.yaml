@@ -67,6 +67,7 @@
         olt: EC1912001818
         c_tag: 7
         s_tag: 31
+        onu_type: 'scom'
 
     dst:
       -
