@@ -19,7 +19,7 @@ defaults:
 onosSshPort: 30115
 onosApiPort: 30120
 
-exposeNodePorts: true
+individualOpenFlowNodePorts: true
 
 #images:
 #  onos:
