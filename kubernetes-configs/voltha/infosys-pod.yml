@@ -55,7 +55,6 @@ apps:
   - org.opencord.kafka
   - org.opencord.sadis
   - org.opencord.dhcpl2relay
-  - org.opencord.maclearner
   - org.opencord.igmpproxy
   - org.opencord.mcast
   - org.opencord.olt
