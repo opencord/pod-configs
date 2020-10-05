@@ -25,8 +25,8 @@ individualOpenFlowNodePorts: true
 use_openonu_adapter_go: true
 
 adapter_open_onu:
-  repository: voltha/voltha-openonu-adapter-go
-  tag: master
+  repository: andreacampanella/voltha-openonu-adapter-go
+  tag: omci-msg-info
 
 deployments:
   etcdOperator: true
