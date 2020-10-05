@@ -29,9 +29,9 @@ individualOpenFlowNodePorts: true
 #  adapter_open_onu:
 #    repository: gcgirish/voltha-openonu-adapter
 #    tag: tpstate
-#  adapter_open_olt:
-#    repository: gcgirish/voltha-openolt-adapter
-#    tag: flow-sync
+  adapter_open_olt:
+    repository: gcgirish/voltha-openolt-adapter
+    tag: flowReplica
 #  rw_core:
 #    repository: khagerma/voltha-rw-core
 #    tag: update-port-fix
