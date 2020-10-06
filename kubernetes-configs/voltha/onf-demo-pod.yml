@@ -22,16 +22,16 @@ onosOfPort: 31653
 
 individualOpenFlowNodePorts: true
 
-images:
+#images:
 #  onos:
 #    repository: voltha/voltha-onos@sha256
 #    tag: 6f23767b85a6515bc465c4678c945d194551dd27abe2cf1b926a524b5e9eb3e6
 #  adapter_open_onu:
 #    repository: gcgirish/voltha-openonu-adapter
 #    tag: tpstate
-  adapter_open_olt:
-    repository: gcgirish/voltha-openolt-adapter
-    tag: flowReplica
+#  adapter_open_olt:
+#    repository: gcgirish/voltha-openolt-adapter
+#    tag: flow-sync
 #  rw_core:
 #    repository: khagerma/voltha-rw-core
 #    tag: update-port-fix
