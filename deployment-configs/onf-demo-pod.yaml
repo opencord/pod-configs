@@ -63,10 +63,10 @@ onus:
 hosts:
   src:
     -
-      ip: '10.128.100.71'
+      ip: '10.128.100.72'
       user: 'cord'
       pass: 'cord'
-      dp_iface_name: 'ens6f1'
+      dp_iface_name: 'ens255f0'
       container_type: null
       container_name: null
       onu: 'ISKT71e80080'
@@ -79,7 +79,7 @@ hosts:
       ip: '10.128.100.71'
       user: 'cord'
       pass: 'cord'
-      dp_iface_name: 'ens6f0'
+      dp_iface_name: 'ens255f0'
       container_type: null
       container_name: null
       onu: 'ALPHe3d1cf9d'
