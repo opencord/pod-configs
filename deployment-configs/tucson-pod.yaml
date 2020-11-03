@@ -50,6 +50,7 @@ hosts:
       container_type: LXC
       container_name: voltha-client
       onu: ALPHe3d1ce7b
+      olt: EC1925000157
       c_tag: 11
       s_tag: 11
       onu_type: 'alpha'
@@ -62,6 +63,7 @@ hosts:
       container_type: LXC
       container_name: voltha-client-ISKT71e801a0
       onu: ISKT71e801a0
+      olt: EC1925000157
       c_tag: 12
       s_tag: 11
       onu_type: 'iskratel'
@@ -74,6 +76,7 @@ hosts:
       container_type: LXC
       container_name: voltha-client-ALPHe3d1cfac
       onu: ALPHe3d1cfac
+      olt: EC1925000157
       c_tag: 21
       s_tag: 21
       onu_type: 'alpha'
