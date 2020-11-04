@@ -21,11 +21,21 @@
   ONOS_SSH_PORT: 30115
   OLT_PORT: 9191
   KUBERNETES_CONF: $HOME/.kube/kind-config-voltha-minimal
-  
-  # This tells the control node how to reach the Kubernetes nodes.
+
+# This tells the control node how to reach the Kubernetes nodes.
   nodes:
     -
-      ip: '127.0.0.1'
+      ip: '10.34.90.40'
+      user: 'community'
+      pass: 'admin'
+    -
+      ip: '10.34.90.41'
+      user: 'community'
+      pass: 'admin'
+    -
+      ip: '10.34.90.42'
+      user: 'community'
+      pass: 'admin'
   
   fabric_switches:
     -
