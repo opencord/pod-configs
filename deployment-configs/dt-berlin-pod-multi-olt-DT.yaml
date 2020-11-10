@@ -110,7 +110,7 @@
         c_tag: 7
         s_tag: 33
         power_switch_port: 4
-       -
+      -
         ip: 10.34.90.42
         user: community
         pass: admin
