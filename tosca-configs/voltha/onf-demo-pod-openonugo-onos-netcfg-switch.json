@@ -14,6 +14,23 @@
       }
     }
   },
+  "ports" : {
+    "of:0000000000000001/16" : {
+      "interfaces" : [
+        { "name" : "voltha-intf", "vlan-untagged": 4093 }
+      ]
+    },
+    "of:0000000000000001/31" : {
+      "interfaces" : [
+        { "name" : "bng-intf", "vlan-tagged": [4093] }
+      ]
+    },
+    "of:0000000000000001/1" : {
+      "interfaces" : [
+        { "name" : "olt-intf", "vlan-tagged": [4093] }
+      ]
+    }
+  },
   "apps": {
     "org.opencord.dhcpl2relay" : {
       "dhcpl2relay" : {
