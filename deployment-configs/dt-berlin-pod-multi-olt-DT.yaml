@@ -92,18 +92,6 @@
         pass: admin
         dp_iface_name: eth1.7
         container_type: LXC
-        container_name: voltha-client-gpon-2
-        onu: SCOM00001c89
-        olt: EC1912001814
-        c_tag: 7
-        s_tag: 32
-        power_switch_port: 2
-      -
-        ip: 10.34.90.42
-        user: community
-        pass: admin
-        dp_iface_name: eth1.7
-        container_type: LXC
         container_name: voltha-client-gpon-3
         onu: SCOM00001c96
         olt: EC1912001814
@@ -152,16 +140,6 @@
     dst:
       -
         dp_iface_ip_qinq: 10.31.7.254
-        ip: null
-        user: null
-        pass: null
-        dp_iface_name: null
-        dp_iface_ip: null
-        dp_iface_gateway: null
-        container_type: null
-        container_name: null
-      -
-        dp_iface_ip_qinq: 10.32.7.254
         ip: null
         user: null
         pass: null
