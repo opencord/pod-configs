@@ -1,0 +1,121 @@
+# Copyright 2017-present Open Networking Foundation
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Automated deployment configuration for Flex POD 1 , olt/onu are connected to this
+
+---
+
+kube_config: 'flex-ocp-cord-voltha-master.conf'
+
+nodes:
+  -
+    ip: '10.192.20.45'
+    user: 'cord'
+    pass: 'cord'
+  -
+    ip: '10.192.20.46'
+    user: 'cord'
+    pass: 'cord'
+  -
+    ip: '10.192.20.47'
+    user: 'cord'
+    pass: 'cord'
+
+fabric_switches:
+  -
+    mac: 'cc:37:ab:5b:6d:a8'
+    ip: '10.192.20.217'
+    user: 'root'
+    pass: 'onl'
+    bngPort: '3'
+    device_id: 'of:0000000000000001'
+
+olts:
+  -
+    ip: '10.192.20.206'
+    sship: '10.192.20.206'
+    user: 'root'
+    pass: 'onl'
+    fortygig: 'true'
+    aggPort: '10'
+    serial: 'EC1838000853'
+    oltDebVersion: openolt_asfvolt16-3.1.0-812c1126ece038da5c40d0830a09cb67ca36ea07.deb
+    oltDebVersion23: openolt_asfvolt16-2.4.9-dev-d4aeca5a2094f7dc7c519913ab1558348c546dab.deb
+
+onus:
+  -
+    serial: 'ALPHe3d1cfa7'
+
+hosts:
+  src:
+    -
+      ip: '10.192.20.61'
+      user: 'cord'
+      pass: 'cord'
+      dp_iface_name: 'ens2f0'
+      container_type: null
+      container_name: null
+      onu: 'ALPHe3d1cea3'
+      olt: 'EC1838000853'
+      c_tag: '801'
+      s_tag: '111'
+      power_switch_port: 1
+      onu_type: 'alpha'
+    -
+      ip: '10.192.20.46'
+      user: 'cord'
+      pass: 'cord'
+      dp_iface_name: 'ens2f1'
+      container_type: null
+      container_name: null
+      onu: 'ALPHe3d1ceb7'
+      olt: 'EC1838000853'
+      c_tag: '101'
+      s_tag: '222'
+      power_switch_port: 2
+      onu_type: 'alpha'
+
+  dst:
+    -
+      ip: null
+      user: null
+      pass: null
+      noroot_ip: '10.192.20.47'
+      noroot_user: cord
+      noroot_pass: cord
+      dp_iface_name: ens3d1
+      dp_iface_ip_qinq: '10.8.8.100'
+      dp_iface_ip: null
+      dp_iface_gateway: null
+      container_type: null
+      container_name: null
+    -
+      ip: null
+      user: null
+      pass: null
+      noroot_ip: '10.192.20.47'
+      noroot_user: cord
+      noroot_pass: cord
+      dp_iface_name: ens3d1
+      dp_iface_ip_qinq: '10.8.7.100'
+      dp_iface_ip: null
+      dp_iface_gateway: null
+      container_type: null
+      container_name: null
+
+web_power_switch:
+  ip: '10.192.20.56'
+  user: 'admin'
+  password: '1234'
+  type: 'DLI'
