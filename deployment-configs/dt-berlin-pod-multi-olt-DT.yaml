@@ -116,7 +116,7 @@
         ip: 127.0.0.1
         user: community
         pass: admin
-        dp_iface_name: eth1
+        dp_iface_name: eth1.7
         container_type: LXC
         container_name: voltha-client
         onu: ALPHe3d1cf5c
@@ -128,7 +128,7 @@
         ip: 127.0.0.1
         user: community
         pass: admin
-        dp_iface_name: eth1
+        dp_iface_name: eth1.7
         container_type: LXC
         container_name: voltha-client-dt
         onu: ALPHe3a69d03
@@ -169,7 +169,7 @@
         container_type: null
         container_name: null
       -
-        dp_iface_ip_qinq: 10.11.2.254
+        dp_iface_ip_qinq: 10.12.7.254
         ip: null
         user: null
         pass: null
