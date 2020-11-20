@@ -121,8 +121,8 @@
         container_name: voltha-client
         onu: ALPHe3d1cf5c
         olt: EC1729003539
-        c_tag: 11
-        s_tag: 11
+        c_tag: 7
+        s_tag: 12
         power_switch_port: 6
       -
         ip: 127.0.0.1
