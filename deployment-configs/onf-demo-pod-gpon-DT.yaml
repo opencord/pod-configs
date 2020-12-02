@@ -50,7 +50,7 @@
       fortygig: True
       aggPort: 9
       serial: EC1912001818
-      oltDebVersion: openolt_asgvolt64-3.1.0-812c1126ece038da5c40d0830a09cb67ca36ea07.deb
+      oltDebVersion: openolt_asgvolt64-3.2.0-a5b2335b9dbf2fe47dc4acbeb77a44840785f65e.deb-40G-NNI
       oltDebVersion23: openolt_asgvolt64-2.4.9-dev-d4aeca5a2094f7dc7c519913ab1558348c546dab.deb
 
   hosts:
