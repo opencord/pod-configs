@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "29f91875_053f6c2f",
+        "filename": "deployment-configs/dt-berlin-pod.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2020-12-02T17:21:44Z",
+      "side": 1,
+      "message": "same here, why are we having this ?",
+      "revId": "596137e202cba14c205682af4cc8029d4846ce2a",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
