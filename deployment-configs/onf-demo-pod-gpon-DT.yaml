@@ -62,8 +62,8 @@
         pass: null
         dp_iface_name: eth1.7
         container_type: LXC
-        container_name: SCOM00001c7f
-        onu: SCOM00019ab7
+        container_name: SCOM00001ca7
+        onu: SCOM00001ca7
         olt: EC1912001818
         c_tag: 7
         s_tag: 31
