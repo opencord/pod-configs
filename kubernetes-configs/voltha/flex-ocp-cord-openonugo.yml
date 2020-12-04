@@ -22,6 +22,8 @@ onosOfPort: 31653
 
 individualOpenFlowNodePorts: true
 
+use_openonu_adapter_go: true
+
 #images:
 #  onos:
 #    repository: voltha/voltha-onos@sha256
