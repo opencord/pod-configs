@@ -26,7 +26,7 @@ use_openonu_adapter_go: true
 
 images:
   adapter_open_onu_go:
-    repository: registry.menlo.onlab.us/voltha-dev/voltha-openonu-adapter-go
+    repository: andreacampanella/voltha-openonu-adapter-go
     tag: mcast-ac-final
 #  onos:
 #    repository: voltha/voltha-onos@sha256
