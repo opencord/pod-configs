@@ -24,10 +24,10 @@ individualOpenFlowNodePorts: true
 
 use_openonu_adapter_go: true
 
-images:
-  adapter_open_onu_go:
-    repository: andreacampanella/voltha-openonu-adapter-go
-    tag: mcast-ac-final
+#images:
+#  adapter_open_onu_go:
+#    repository: andreacampanella/voltha-openonu-adapter-go
+#    tag: mcast-ac-final
 #  onos:
 #    repository: voltha/voltha-onos@sha256
 #    tag: 9f781ace4c6f4bf3b2e5ff9cb9f26aa4b328284da1d6b6523636dca1375d7666
