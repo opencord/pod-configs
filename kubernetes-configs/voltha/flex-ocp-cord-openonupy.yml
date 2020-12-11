@@ -22,7 +22,7 @@ onosOfPort: 31653
 
 individualOpenFlowNodePorts: true
 
-use_openonu_adapter_go: true
+use_openonu_adapter_go: false
 
 #images:
 #  adapter_open_onu_go:
