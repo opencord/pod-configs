@@ -51,7 +51,7 @@ olts:
     aggPort: '10'
     serial: 'EC1838000853'
     oltDebVersion: openolt_asfvolt16-3.1.0-812c1126ece038da5c40d0830a09cb67ca36ea07.deb
-    oltDebVersion23: openolt_asfvolt16-2.4.9-dev-d4aeca5a2094f7dc7c519913ab1558348c546dab.deb
+    oltDebVersion23: openolt_asfvolt16-3.2.0-fc10f0d035181d3125ffc6e7a60bf5328fcf5bfa-40G-NNI.deb
 
 onus:
   -

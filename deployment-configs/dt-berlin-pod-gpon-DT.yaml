@@ -57,7 +57,7 @@
       aggPort: 2
       serial: EC1912001814
       oltDebVersion: openolt_asgvolt64-3.2.0-fc10f0d035181d3125ffc6e7a60bf5328fcf5bfa-100G-NNI.deb
-      oltDebVersion23: openolt_asgvolt64-2.4.9-dev-d4aeca5a2094f7dc7c519913ab1558348c546dab.deb
+      oltDebVersion23: openolt_asgvolt64-3.2.0-fc10f0d035181d3125ffc6e7a60bf5328fcf5bfa-100G-NNI.deb
  
   hosts:
     src:
