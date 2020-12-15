@@ -69,7 +69,7 @@
       aggPort: 1
       serial: EC1729003539
       oltDebVersion: openolt_asfvolt16-3.2.0-fc10f0d035181d3125ffc6e7a60bf5328fcf5bfa-100G-NNI.deb
-      oltDebVersion23: openolt_asfvolt16-3.2.0-fc10f0d035181d3125ffc6e7a60bf5328fcf5bfa-40G-NNI.deb
+      oltDebVersion23: openolt_asfvolt16-3.2.0-fc10f0d035181d3125ffc6e7a60bf5328fcf5bfa-100G-NNI.deb
 
   hosts:
     src:
