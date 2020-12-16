@@ -1,0 +1,135 @@
+---
+
+  # Copyright 2020-present Open Networking Foundation
+  #
+  # Licensed under the Apache License, Version 2.0 (the "License");
+  # you may not use this file except in compliance with the License.
+  # You may obtain a copy of the License at
+  #
+  # http://www.apache.org/licenses/LICENSE-2.0
+  #
+  # Unless required by applicable law or agreed to in writing, software
+  # distributed under the License is distributed on an "AS IS" BASIS,
+  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  # See the License for the specific language governing permissions and
+  # limitations under the License.
+  
+  # Automated deployment configuration for Tucson pod
+  
+  # Change default values in tests
+  ONOS_REST_PORT: 30120
+  ONOS_SSH_PORT: 30115
+  OLT_PORT: 9191
+  KUBERNETES_CONF: $HOME/.kube/kind-config-voltha-minimal
+
+# This tells the control node how to reach the Kubernetes nodes.
+  nodes:
+    -
+      ip: '10.34.90.40'
+      user: 'community'
+      pass: 'admin'
+    -
+      ip: '10.34.90.41'
+      user: 'community'
+      pass: 'admin'
+    -
+      ip: '10.34.90.42'
+      user: 'community'
+      pass: 'admin'
+  
+  fabric_switches:
+    -
+      mac: '8c:ea:1b:a7:29:72'
+      ip: 10.34.90.55
+      user: root
+      pass: onl
+      bngPort: 157
+      device_id: 'of:0000000000000001'
+  
+  olts:
+  # Gpon OLT
+    -
+      ip:  10.34.90.52
+      sship:  10.34.90.52
+      fortygig: False
+      aggPort: 3
+      serial: LBADTN2038AD991
+ 
+  hosts:
+    src:
+      #GPON ONU
+      -
+        ip: 10.34.90.41
+        user: community
+        pass: admin
+        dp_iface_name: eth1.7
+        container_type: LXC
+        container_name: SCOMA0302125
+        onu: SCOMA0302125
+        olt: LBADTN2038AD991
+        c_tag: 7
+        s_tag: 35
+      -
+        ip: 10.34.90.41
+        user: community
+        pass: admin
+        dp_iface_name: eth1.7
+        container_type: LXC
+        container_name: SCOMA030210E
+        onu: SCOMA030210E
+        olt: LBADTN2038AD991
+        c_tag: 7
+        s_tag: 36
+      -
+        ip: 10.34.90.41
+        user: community
+        pass: admin
+        dp_iface_name: eth1.7
+        container_type: LXC
+        container_name: SCOM00001C0F
+        onu: SCOM00001C0F
+        olt: LBADTN2038AD991
+        c_tag: 7
+        s_tag: 37
+  
+    dst:
+      -
+        dp_iface_ip_qinq: 10.35.7.254
+        ip: null
+        user: null
+        pass: null
+        noroot_ip: 10.34.90.43
+        noroot_user: community
+        noroot_pass: admin
+        dp_iface_name: ens3f0
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
+      -
+        dp_iface_ip_qinq: 10.36.7.254
+        ip: null
+        user: null
+        pass: null
+        noroot_ip: 10.34.90.43
+        noroot_user: community
+        noroot_pass: admin
+        dp_iface_name: ens3f0
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
+      -
+        dp_iface_ip_qinq: 10.37.7.254
+        ip: null
+        user: null
+        pass: null
+        noroot_ip: 10.34.90.43
+        noroot_user: community
+        noroot_pass: admin
+        dp_iface_name: ens3f0
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
+  
