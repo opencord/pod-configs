@@ -56,7 +56,7 @@
       fortygig: False
       aggPort: 2
       serial: EC1912001814
-      oltDebVersion: openolt_asgvolt64-3.2.0-fc10f0d035181d3125ffc6e7a60bf5328fcf5bfa-100G-NNI.deb
+      oltDebVersion: openolt_asgvolt64-3.3.2-f7feb4b828467ccc99104b56b29dc7a19aa2008b-100G-NNI.deb
       oltDebVersion23: openolt_asgvolt64-3.2.0-fc10f0d035181d3125ffc6e7a60bf5328fcf5bfa-100G-NNI.deb
  
   hosts:
