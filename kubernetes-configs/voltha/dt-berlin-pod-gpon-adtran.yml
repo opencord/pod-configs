@@ -25,6 +25,8 @@ individualOpenFlowNodePorts: true
 images:
   adapter_adtran_olt:
     registry: "10.34.90.43:443/"
+    repository: ''
+    tag: "1.4.0"
 
 
 deployments:
