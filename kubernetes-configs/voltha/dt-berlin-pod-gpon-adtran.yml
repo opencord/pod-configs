@@ -28,6 +28,9 @@ images:
     repository: "voltha-adtran-adapter"
     tag: "1.4.0"
 
+network:
+  netconfUserSecret: ''
+
 
 deployments:
   etcdOperator: true
