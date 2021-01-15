@@ -19,7 +19,7 @@
   # Change default values in tests
   ONOS_REST_PORT: 30120
   ONOS_SSH_PORT: 30115
-  OLT_PORT: 9191
+  OLT_PORT: 830
   KUBERNETES_CONF: $HOME/.kube/kind-config-voltha-minimal
 
 # This tells the control node how to reach the Kubernetes nodes.
@@ -54,6 +54,7 @@
       fortygig: False
       aggPort: 3
       serial: LBADTN2038AD991
+      type: adtranolt
  
   hosts:
     src:
