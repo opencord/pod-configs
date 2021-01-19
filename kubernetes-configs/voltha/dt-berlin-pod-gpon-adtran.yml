@@ -26,7 +26,7 @@ images:
   adapter_adtran_olt:
     registry: "10.34.90.43:443/"
     repository: "voltha-adtran-adapter"
-    tag: "1.4.0"
+    tag: "1.4.1.dev1"
 
 network:
   netconfUserSecret: ''
