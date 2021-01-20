@@ -66,7 +66,7 @@
         dp_iface_name: eth1.7
         container_type: LXC
         container_name: SCOMA0302125
-        onu: SCOMA0302125
+        onu: SCOMa0302125
         olt: LBADTN2038AD991
         c_tag: 7
         s_tag: 35
@@ -77,7 +77,7 @@
         dp_iface_name: eth1.7
         container_type: LXC
         container_name: SCOMA030210E
-        onu: SCOMA030210E
+        onu: SCOMa030210e
         olt: LBADTN2038AD991
         c_tag: 7
         s_tag: 36
@@ -88,7 +88,7 @@
         dp_iface_name: eth1.7
         container_type: LXC
         container_name: SCOM00001C0F
-        onu: SCOM00001C0F
+        onu: SCOM00001c0f
         olt: LBADTN2038AD991
         c_tag: 7
         s_tag: 37
