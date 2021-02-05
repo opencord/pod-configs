@@ -55,6 +55,7 @@
       aggPort: 3
       serial: LBADTN2038AD991
       type: adtranolt
+      user: hsvroot
  
   hosts:
     src:
