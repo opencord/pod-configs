@@ -45,6 +45,10 @@ olts:
     oltDebVersion: openolt_asfvolt16-3.3.2-f7feb4b828467ccc99104b56b29dc7a19aa2008b-40G-NNI.deb
     oltDebVersion23: openolt_asfvolt16-3.2.0-fc10f0d035181d3125ffc6e7a60bf5328fcf5bfa-40G-NNI.deb
 
+  -
+    ip: bbsim0
+    serial: BBSIM_OLT_1
+
 onus:
   -
     serial: 'ALPHe3d1cf8e'
