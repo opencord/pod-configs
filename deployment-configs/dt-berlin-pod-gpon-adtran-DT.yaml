@@ -71,6 +71,7 @@
         olt: LBADTN2038AD991
         c_tag: 7
         s_tag: 35
+        power_switch_port: 1
       -
         ip: 10.34.90.41
         user: community
@@ -82,6 +83,7 @@
         olt: LBADTN2038AD991
         c_tag: 7
         s_tag: 36
+        power_switch_port: 2
       -
         ip: 10.34.90.41
         user: community
@@ -93,6 +95,7 @@
         olt: LBADTN2038AD991
         c_tag: 7
         s_tag: 37
+        power_switch_port: 3
   
     dst:
       -
@@ -134,4 +137,9 @@
         dp_iface_gateway: null
         container_type: null
         container_name: null
-  
+
+  web_power_switch:
+    ip: '10.34.90.49'
+    user: 'admin'
+    password: 'secret'
+    type: 'EPC'
