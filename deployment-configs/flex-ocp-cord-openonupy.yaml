@@ -20,22 +20,22 @@ kube_config: 'flex-ocp-cord-voltha-master.conf'
 
 nodes:
   -
-    ip: '10.192.20.45'
+    ip: '10.90.0.221'
     user: 'cord'
     pass: 'cord'
   -
-    ip: '10.192.20.46'
+    ip: '10.90.0.222'
     user: 'cord'
     pass: 'cord'
   -
-    ip: '10.192.20.47'
+    ip: '10.90.0.223'
     user: 'cord'
     pass: 'cord'
 
 fabric_switches:
   -
     mac: 'cc:37:ab:5b:6d:a8'
-    ip: '10.192.20.217'
+    ip: '10.90.0.224'
     user: 'root'
     pass: 'onl'
     bngPort: '3'
@@ -43,8 +43,8 @@ fabric_switches:
 
 olts:
   -
-    ip: '10.192.20.206'
-    sship: '10.192.20.206'
+    ip: '10.90.0.225'
+    sship: '10.90.0.225'
     user: 'root'
     pass: 'onl'
     fortygig: 'true'
@@ -60,12 +60,12 @@ onus:
 hosts:
   src:
     -
-      ip: '10.192.20.61'
+      ip: '10.90.0.221'
       user: 'cord'
       pass: 'cord'
-      dp_iface_name: 'ens2f0'
-      container_type: null
-      container_name: null
+      dp_iface_name: 'eth1'
+      container_type: LXC
+      container_name: ALPHe3d1cea3
       onu: 'ALPHe3d1cea3'
       olt: 'EC1838000853'
       c_tag: '801'
@@ -73,12 +73,12 @@ hosts:
       power_switch_port: 1
       onu_type: 'alpha'
     -
-      ip: '10.192.20.46'
+      ip: '10.90.0.221'
       user: 'cord'
       pass: 'cord'
-      dp_iface_name: 'ens2f1'
-      container_type: null
-      container_name: null
+      dp_iface_name: 'eth1'
+      container_type: LXC
+      container_name: ALPHe3d1ceb7
       onu: 'ALPHe3d1ceb7'
       olt: 'EC1838000853'
       c_tag: '101'
@@ -91,11 +91,11 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip: '10.192.20.47'
+      noroot_ip: '10.90.0.223'
       noroot_user: cord
       noroot_pass: cord
-      dp_iface_name: ens3d1
-      dp_iface_ip_qinq: '10.8.8.100'
+      dp_iface_name: ens6f1
+      dp_iface_ip_qinq: '10.11.1.254'
       dp_iface_ip: null
       dp_iface_gateway: null
       container_type: null
@@ -104,18 +104,18 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip: '10.192.20.47'
+      noroot_ip: '10.90.0.223'
       noroot_user: cord
       noroot_pass: cord
-      dp_iface_name: ens3d1
-      dp_iface_ip_qinq: '10.8.7.100'
+      dp_iface_name: ens6f1
+      dp_iface_ip_qinq: '10.11.2.254'
       dp_iface_ip: null
       dp_iface_gateway: null
       container_type: null
       container_name: null
 
 web_power_switch:
-  ip: '10.192.20.56'
-  user: 'admin'
-  password: '1234'
+  ip: '10.90.0.229'
+  user: 'cord'
+  password: 'cord'
   type: 'DLI'
