@@ -91,7 +91,7 @@ hosts:
       ip: '10.90.0.221'
       user: 'cord'
       pass: 'cord'
-      dp_iface_name: 'ens2f0.65'
+      dp_iface_name: 'eth1.65'
       container_type: LXC
       container_name: ALPHe3d1cea3
       onu: 'ALPHe3d1cea3'
@@ -105,7 +105,7 @@ hosts:
       ip: '10.90.0.221'
       user: 'cord'
       pass: 'cord'
-      dp_iface_name: 'ens2f1.65'
+      dp_iface_name: 'eth1.65'
       container_type: LXC
       container_name: ALPHe3d1ceb7
       onu: 'ALPHe3d1ceb7'
@@ -119,7 +119,7 @@ hosts:
       ip: '10.90.0.221'
       user: 'cord'
       pass: 'cord'
-      dp_iface_name: 'ens2f0.55'
+      dp_iface_name: 'eth1.55'
       container_type: LXC
       container_name: ALPHe3d1cea3
       onu: 'ALPHe3d1cea3'
@@ -133,7 +133,7 @@ hosts:
       ip: '10.90.0.221'
       user: 'cord'
       pass: 'cord'
-      dp_iface_name: 'ens2f1.55'
+      dp_iface_name: 'eth1.55'
       container_type: LXC
       container_name: ALPHe3d1ceb7
       onu: 'ALPHe3d1ceb7'
@@ -147,7 +147,7 @@ hosts:
       ip: '10.90.0.221'
       user: 'cord'
       pass: 'cord'
-      dp_iface_name: 'ens2f0.55'
+      dp_iface_name: 'eth1.55'
       container_type: LXC
       container_name: ALPHe3d1cea3
       onu: 'ALPHe3d1cea3'
