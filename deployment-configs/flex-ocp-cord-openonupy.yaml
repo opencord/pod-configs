@@ -63,9 +63,9 @@ hosts:
       ip: '10.90.0.221'
       user: 'cord'
       pass: 'cord'
-      dp_iface_name: 'eth1'
-      container_type: LXC
-      container_name: ALPHe3d1cea3
+      dp_iface_name: 'ens255f0'
+      container_type: null
+      container_name: null
       onu: 'ALPHe3d1cea3'
       olt: 'EC1838000853'
       c_tag: '801'
@@ -73,12 +73,12 @@ hosts:
       power_switch_port: 1
       onu_type: 'alpha'
     -
-      ip: '10.90.0.221'
+      ip: '10.90.0.222'
       user: 'cord'
       pass: 'cord'
-      dp_iface_name: 'eth1'
-      container_type: LXC
-      container_name: ALPHe3d1ceb7
+      dp_iface_name: 'ens255f0'
+      container_type: null
+      container_name: null
       onu: 'ALPHe3d1ceb7'
       olt: 'EC1838000853'
       c_tag: '101'
