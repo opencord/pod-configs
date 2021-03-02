@@ -38,7 +38,7 @@ fabric_switches:
     ip: '10.90.0.224'
     user: 'root'
     pass: 'onl'
-    bngPort: '3'
+    bngPort: '31'
     device_id: 'of:0000000000000001'
 
 olts:
@@ -48,7 +48,7 @@ olts:
     user: 'root'
     pass: 'onl'
     fortygig: 'true'
-    aggPort: '10'
+    aggPort: '1'
     serial: 'EC1838000853'
     oltDebVersion: openolt_asfvolt16-3.3.2-f7feb4b828467ccc99104b56b29dc7a19aa2008b-40G-NNI.deb
     oltDebVersion23: openolt_asfvolt16-3.2.0-fc10f0d035181d3125ffc6e7a60bf5328fcf5bfa-40G-NNI.deb
