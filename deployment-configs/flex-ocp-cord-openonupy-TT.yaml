@@ -63,9 +63,9 @@ hosts:
       ip: '10.90.0.221'
       user: 'cord'
       pass: 'cord'
-      dp_iface_name: 'ens255f0.35'
-      container_type: null
-      container_name: null
+      dp_iface_name: 'eth1.35'
+      container_type: LXC
+      container_name: ALPHe3d1cea3
       onu: 'ALPHe3d1cea3'
       olt: 'EC1838000853'
       c_tag: '801'
@@ -77,9 +77,9 @@ hosts:
       ip: '10.90.0.222'
       user: 'cord'
       pass: 'cord'
-      dp_iface_name: 'ens255f0.35'
-      container_type: null
-      container_name: null
+      dp_iface_name: 'eth1.35'
+      container_type: LXC
+      container_name: ALPHe3d1ceb7
       onu: 'ALPHe3d1ceb7'
       olt: 'EC1838000853'
       c_tag: '101'
@@ -91,9 +91,9 @@ hosts:
       ip: '10.90.0.221'
       user: 'cord'
       pass: 'cord'
-      dp_iface_name: 'ens255f0.65'
-      container_type: null
-      container_name: null
+      dp_iface_name: 'eth1.65'
+      container_type: LXC
+      container_name: ALPHe3d1cea3
       onu: 'ALPHe3d1cea3'
       olt: 'EC1838000853'
       c_tag: '444'
@@ -105,9 +105,9 @@ hosts:
       ip: '10.90.0.222'
       user: 'cord'
       pass: 'cord'
-      dp_iface_name: 'ens255f0.65'
-      container_type: null
-      container_name: null
+      dp_iface_name: 'eth1.65'
+      container_type: LXC
+      container_name: ALPHe3d1ceb7
       onu: 'ALPHe3d1ceb7'
       olt: 'EC1838000853'
       c_tag: '444'
@@ -119,9 +119,9 @@ hosts:
       ip: '10.90.0.221'
       user: 'cord'
       pass: 'cord'
-      dp_iface_name: 'ens255f0.55'
-      container_type: null
-      container_name: null
+      dp_iface_name: 'eth1.55'
+      container_type: LXC
+      container_name: ALPHe3d1cea3
       onu: 'ALPHe3d1cea3'
       olt: 'EC1838000853'
       c_tag: '55'
@@ -133,9 +133,9 @@ hosts:
       ip: '10.90.0.222'
       user: 'cord'
       pass: 'cord'
-      dp_iface_name: 'ens255f0.55'
-      container_type: null
-      container_name: null
+      dp_iface_name: 'eth1.55'
+      container_type: LXC
+      container_name: ALPHe3d1ceb7
       onu: 'ALPHe3d1ceb7'
       olt: 'EC1838000853'
       c_tag: '55'
@@ -147,9 +147,9 @@ hosts:
       ip: '10.90.0.221'
       user: 'cord'
       pass: 'cord'
-      dp_iface_name: 'ens255f0.55'
-      container_type: null
-      container_name: null
+      dp_iface_name: 'eth1.55'
+      container_type: LXC
+      container_name: ALPHe3d1cea3
       onu: 'ALPHe3d1cea3'
       olt: 'EC1838000853'
       c_tag: '55'
@@ -224,7 +224,7 @@ hosts:
       user: null
       pass: null
       dp_iface_name: null
-      dp_iface_ip_qinq: '10.11.6.254'
+      dp_iface_ip_qinq: '10.11.5.254'
       dp_iface_ip: null
       dp_iface_gateway: null
       container_type: null
