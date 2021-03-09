@@ -1,4 +1,4 @@
-# Copyright 2019-present Open Networking Foundation
+# Copyright 2019 Ciena Corporation
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -27,10 +27,6 @@ images:
     registry: "10.34.90.43:443/"
     repository: "voltha-adtran-adapter"
     tag: "1.4.1.dev2"
-
-image:
-  repository: "andreacampanella/voltha-onos"
-  tag: "app-update-sadis"
 
 network:
   netconfUserSecret: ''
