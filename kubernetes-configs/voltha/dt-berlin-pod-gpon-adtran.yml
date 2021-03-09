@@ -27,6 +27,9 @@ images:
     registry: "10.34.90.43:443/"
     repository: "voltha-adtran-adapter"
     tag: "1.4.1.dev2"
+  onos:
+    repository: "andreacampanella/voltha-onos"
+    tag: "app-update-sadis"
 
 network:
   netconfUserSecret: ''

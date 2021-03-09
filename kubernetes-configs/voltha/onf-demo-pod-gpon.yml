@@ -21,10 +21,10 @@ onosApiPort: 30120
 
 individualOpenFlowNodePorts: true
 
-#images:
-#  onos:
-#    repository: voltha/voltha-onos@sha256
-#    tag: 6f23767b85a6515bc465c4678c945d194551dd27abe2cf1b926a524b5e9eb3e6
+images:
+  onos:
+    repository: "andreacampanella/voltha-onos"
+    tag: "app-update-sadis"
 #  adapter_open_onu:
 #    repository: gcgirish/voltha-openonu-adapter
 #    tag: tpstate
