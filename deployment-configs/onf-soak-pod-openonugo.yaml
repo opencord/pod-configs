@@ -42,8 +42,8 @@ olts:
     fortygig: 'true'
     aggPort: '1'
     serial: 'EC1721000208'
-    oltDebVersion: openolt_asfvolt16-3.1.0-812c1126ece038da5c40d0830a09cb67ca36ea07.deb
-    oltDebVersion23: openolt_asfvolt16-2.4.3-c636279643a1cac3128395cc9fc22977e8edc46d.deb
+    oltDebVersion: openolt_asfvolt16-3.3.3-1a5d68b50d8bcc5ba6cb1630d3294c30c37cd2f5-40G-NNI.deb
+    oltDebVersion23: openolt_asfvolt16-3.3.3-1a5d68b50d8bcc5ba6cb1630d3294c30c37cd2f5-40G-NNI.deb
 
 onus:
   -
