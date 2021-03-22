@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # This file can be used to override values in kind-voltha's minimal-values.yaml
-#images:
-#  onos:
-#    repository: "andreacampanella/voltha-onos"
-#    tag: "app-update-sadis"
+images:
+  onos:
+    repository: "andreacampanella/voltha-onos"
+    tag: "olt-group-pkt-req-mcast-fix"

@@ -21,10 +21,10 @@ onosApiPort: 30120
 
 individualOpenFlowNodePorts: true
 
-#images:
-#  onos:
-#    repository: "andreacampanella/voltha-onos"
-#    tag: "app-update-sadis"
+images:
+  onos:
+    repository: "andreacampanella/voltha-onos"
+    tag: "olt-group-pkt-req-mcast-fix"
 #  adapter_open_onu:
 #    repository: gcgirish/voltha-openonu-adapter
 #    tag: tpstate
