@@ -25,7 +25,7 @@ individualOpenFlowNodePorts: true
 images:
   onos:
     repository: "andreacampanella/voltha-onos"
-    tag: "olt-group-pkt-req-mcast-fix"
+    tag: "olt-required-drivers"
 
 deployments:
   etcdOperator: true
