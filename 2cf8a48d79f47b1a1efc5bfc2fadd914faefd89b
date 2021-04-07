@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f1e91d94_d97789ea",
+        "filename": "deployment-configs/dt-berlin-pod-gpon-adtran-DT.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2021-04-07T15:25:20Z",
+      "side": 1,
+      "message": "Please remove the extra spaces",
+      "revId": "2cf8a48d79f47b1a1efc5bfc2fadd914faefd89b",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
