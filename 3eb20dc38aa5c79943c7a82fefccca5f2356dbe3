@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0b9bbb2d_f4a05e73",
+        "filename": "deployment-configs/menlo-certification-pod-radisys-DT.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2021-04-30T12:52:41Z",
+      "side": 1,
+      "message": "Please clean up these extra spaces. Here and below.",
+      "revId": "3eb20dc38aa5c79943c7a82fefccca5f2356dbe3",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
