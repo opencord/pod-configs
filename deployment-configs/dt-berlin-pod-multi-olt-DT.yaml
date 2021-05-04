@@ -56,7 +56,7 @@
       fortygig: False
       aggPort: 2
       serial: EC1912001814
-      oltDebVersion: openolt_asgvolt64-3.3.3-1a5d68b50d8bcc5ba6cb1630d3294c30c37cd2f5-100G-NNI.deb
+      oltDebVersion: openolt_asgvolt64-3.4.1-dev-261e7bc983a502001c9fcb983ec173aad273059c-100G-NNI.deb
       oltDebVersion23: openolt_asgvolt64-3.3.3-1a5d68b50d8bcc5ba6cb1630d3294c30c37cd2f5-100G-NNI.deb
 
   # XGS-PON OLT
@@ -68,7 +68,7 @@
       fortygig: False
       aggPort: 1
       serial: EC1729003539
-      oltDebVersion: openolt_asfvolt16-3.3.3-1a5d68b50d8bcc5ba6cb1630d3294c30c37cd2f5-100G-NNI.deb
+      oltDebVersion: openolt_asfvolt16-3.4.1-dev-c5dcc7f2b27df1c42868b3a79a5416808511bb1d-100G-NNI.deb
       oltDebVersion23: openolt_asfvolt16-3.3.3-1a5d68b50d8bcc5ba6cb1630d3294c30c37cd2f5-100G-NNI.deb
 
   hosts:
