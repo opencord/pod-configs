@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6e1ada6f_51bf718c",
+        "filename": "kubernetes-configs/voltha/onf-demo-pod.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2021-05-07T20:58:49Z",
+      "side": 1,
+      "message": "Is this really needed?",
+      "range": {
+        "startLine": 46,
+        "startChar": 0,
+        "endLine": 49,
+        "endChar": 25
+      },
+      "revId": "c7b0e58b1b72df25bffd1f67ea3ba19723738d5a",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
