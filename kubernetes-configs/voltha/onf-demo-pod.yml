@@ -48,6 +48,12 @@ nodeAffinityConfig:
   node_label_key: "in-band"
   node_label_value: "yes"
 
+voltha-adapter-openolt:
+  nodeAffinityConfig:
+    enabled: true
+    node_label_key: "in-band"
+    node_label_value: "yes"
+
 voltha-etcd-cluster:
   clusterSize: 1
 onos_env:
