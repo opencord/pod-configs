@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "37f3b6e9_e63075d7",
+        "filename": "deployment-configs/menlo-certification-pod-radisys-gpon-DT.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-05-13T07:44:59Z",
+      "side": 1,
+      "message": "to be honest I do not think it\u0027s used, it was wrong in this ONU but tests passed",
+      "parentUuid": "389c62f0_61aaaab7",
+      "range": {
+        "startLine": 96,
+        "startChar": 23,
+        "endLine": 96,
+        "endChar": 31
+      },
+      "revId": "54f6207a73cc0947b2f84a9e14d6aef88f28f036",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "3ae4e46f_d9b1ad38",
         "filename": "deployment-configs/menlo-certification-pod-radisys-gpon-DT.yaml",
         "patchSetId": 2
