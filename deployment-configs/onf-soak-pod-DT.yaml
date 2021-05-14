@@ -32,6 +32,11 @@ fabric_switches:
     bngPort: '31'
     device_id: 'of:000000000000da7a'
 
+bbsim:
+  -
+    ip: bbsim0
+    serial: BBSIM_OLT_10
+
 olts:
   -
     name: 'edgecore'
