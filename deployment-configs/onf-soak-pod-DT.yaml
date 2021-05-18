@@ -88,6 +88,9 @@ hosts:
       ip: null
       user: null
       pass: null
+      noroot_ip: 10.128.90.90
+      noroot_user: cord
+      noroot_pass: cord
       dp_iface_name: null
       dp_iface_ip_qinq: '10.11.1.254'
       dp_iface_ip: null
@@ -98,6 +101,9 @@ hosts:
       ip: null
       user: null
       pass: null
+      noroot_ip: 10.128.90.90
+      noroot_user: cord
+      noroot_pass: cord
       dp_iface_name: null
       dp_iface_ip_qinq: '10.11.2.254'
       dp_iface_ip: null
