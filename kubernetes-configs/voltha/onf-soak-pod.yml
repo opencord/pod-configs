@@ -15,7 +15,7 @@
 
 # Automated deployment configuration for ONF DEMO POD, olt/onu are connected to this
 
-defaults:
+global:
   image_tag: master
   image_pullPolicy: Always
 
