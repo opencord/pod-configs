@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "104e106c_04e81ab9",
+        "filename": "deployment-configs/flex-ocp-cord-TT.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 255,
+      "author": {
+        "id": 1000064
+      },
+      "writtenOn": "2021-05-25T16:38:48Z",
+      "side": 1,
+      "message": "We wanted to just add the bandwidth profile as discussed yesterday above in various ONUs instead of creating a whole new section here. Any particular reason?",
+      "revId": "3ccd511f84b16408e70eb54a5d6c247d1bb34dbc",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
