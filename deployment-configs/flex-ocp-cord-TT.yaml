@@ -247,3 +247,46 @@ web_power_switch:
   user: 'cord'
   password: 'cord'
   type: 'DLI'
+
+multi_tcont_tests:
+  test1:
+    -
+      onu: 'ALPHe3d1cea3'
+      service_type: 'voip'
+      us_bw_profile: 'TCONT_TYPE1_200Mbps_Fixed_ForVOIP'
+  test2:
+    -
+      onu: 'ALPHe3d1cea3'
+      service_type: 'voip'
+      us_bw_profile: 'TCONT_TYPE1_200Mbps_Fixed_ForVOIP'
+    -
+      onu: 'ALPHe3d1cea3'
+      service_type: 'hsia'
+      us_bw_profile: 'TCONT_TYPE4_1Gbps_Peak_User1_HSI_Upstream'
+  test3:
+    -
+      onu: 'ALPHe3d1cea3'
+      service_type: 'vod'
+      us_bw_profile: 'TCONT_TYPE2_500Mbps_Assured_ForVoD'
+    -
+      onu: 'ALPHe3d1cea3'
+      service_type: 'hsia'
+      us_bw_profile: 'TCONT_TYPE4_1Gbps_Peak_User1_HSI_Upstream'
+  test4:
+    -
+      onu: 'ALPHe3d1cea3'
+      service_type: 'vod'
+      us_bw_profile: 'TCONT_TYPE2_500Mbps_Assured_ForVoD'
+    -
+      onu: 'ALPHe3d1ceb7'
+      service_type: 'vod'
+      us_bw_profile: 'TCONT_TYPE3_700Mbps_Peak_500Mbps_Assured_ForVoD'
+  test5:
+    -
+      onu: 'ALPHe3d1cea3'
+      service_type: 'hsia'
+      us_bw_profile: 'TCONT_TYPE4_1Gbps_Peak_User1_HSI_Upstream'
+    -
+      onu: 'ALPHe3d1ceb7'
+      service_type: 'hsia'
+      us_bw_profile: 'TCONT_TYPE5_1Gbps_Peak_500Mbps_Assured_200Mbps_Fixed_User1_HSI_Upstream'
