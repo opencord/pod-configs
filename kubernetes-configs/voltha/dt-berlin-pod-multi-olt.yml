@@ -22,10 +22,10 @@ onosOfPort: 31653
 
 individualOpenFlowNodePorts: true
 
-#images:
-#  onos:
-#    repository: "andreacampanella/voltha-onos"
-#    tag: "olt-required-drivers"
+images:
+  onos:
+    repository: "andreacampanella/voltha-onos"
+    tag: "voltha-onos-2.5"
 
 deployments:
   etcdOperator: true

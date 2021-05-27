@@ -25,10 +25,10 @@ onosOfPort: 31653
 
 individualOpenFlowNodePorts: true
 
-#images:
-#  onos:
-#    repository: "andreacampanella/voltha-onos"
-#    tag: "olt-required-drivers"
+images:
+  onos:
+    repository: "andreacampanella/voltha-onos"
+    tag: "voltha-onos-2.5"
 #  adapter_open_onu:
 #     repository: gcgirish/voltha-openonu-adapter
 #     tag: ttfix
