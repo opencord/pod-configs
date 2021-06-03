@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "444801f5_9622931b",
+        "filename": "deployment-configs/menlo-certification-pod-radisys-gpon-DT.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2021-06-03T18:01:10Z",
+      "side": 1,
+      "message": "54",
+      "range": {
+        "startLine": 165,
+        "startChar": 29,
+        "endLine": 165,
+        "endChar": 31
+      },
+      "revId": "51166435b1507c64e673370615cf9e2827991291",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8fe8aff8_fa12e032",
+        "filename": "deployment-configs/menlo-certification-pod-radisys-gpon-DT.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 178,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2021-06-03T18:01:10Z",
+      "side": 1,
+      "message": "55",
+      "range": {
+        "startLine": 178,
+        "startChar": 29,
+        "endLine": 178,
+        "endChar": 31
+      },
+      "revId": "51166435b1507c64e673370615cf9e2827991291",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
