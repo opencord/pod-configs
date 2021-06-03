@@ -97,6 +97,30 @@
         s_tag: 33
         power_switch_port: 8
 
+      - ip: 10.90.0.240
+        user: cord
+        pass: cord
+        dp_iface_name: eth1.41
+        container_type: LXC
+        container_name: SCOMa0108af9
+        onu: SCOMa0108af9
+        olt: 722033538840
+        c_tag: 41
+        s_tag: 44
+        power_switch_port: 6
+
+      - ip: 10.90.0.240
+        user: cord
+        pass: cord
+        dp_iface_name: eth1.42
+        container_type: LXC
+        container_name: SCOMa0108aea
+        onu: SCOMa0108aea
+        olt: 722033538840
+        c_tag: 42
+        s_tag: 44
+        power_switch_port: 5
+
     dst:
       -
         dp_iface_ip_qinq: 10.11.11.254
@@ -126,6 +150,32 @@
         container_name: null
       -
         dp_iface_ip_qinq: 10.33.33.254
+        ip: null
+        user: null
+        pass: null
+        noroot_ip: 10.90.0.241
+        noroot_user: cord
+        noroot_pass: cord
+        dp_iface_name: enp3s0d1
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
+
+      - dp_iface_ip_qinq: 10.54.41.254
+        ip: null
+        user: null
+        pass: null
+        noroot_ip: 10.90.0.241
+        noroot_user: cord
+        noroot_pass: cord
+        dp_iface_name: enp3s0d1
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
+
+      - dp_iface_ip_qinq: 10.55.42.254
         ip: null
         user: null
         pass: null
