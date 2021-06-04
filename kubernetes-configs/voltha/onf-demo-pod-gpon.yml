@@ -17,8 +17,7 @@ global:
   image_pullPolicy: Always
 onos-classic:
   image:
-    repository: "andreacampanella/voltha-onos"
-    tag: "voltha-onos-2.5"
+    tag: "master"
 
 onosSshPort: 30115
 onosApiPort: 30120
@@ -28,7 +27,7 @@ individualOpenFlowNodePorts: true
 #images:
 #  onos:
 #    repository: "andreacampanella/voltha-onos"
-#    tag: "voltha-onos-2.5"
+#    tag: "olt-required-drivers"
 #  adapter_open_onu:
 #    repository: gcgirish/voltha-openonu-adapter
 #    tag: tpstate
