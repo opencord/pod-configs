@@ -15,10 +15,6 @@
 global:
   image_tag: master
   image_pullPolicy: Always
-onos-classic:
-  image:
-    repository: "andreacampanella/voltha-onos"
-    tag: "voltha-onos-2.5"
 
 deployments:
   etcdOperator: true
