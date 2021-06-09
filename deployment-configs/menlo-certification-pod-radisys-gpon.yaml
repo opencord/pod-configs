@@ -69,7 +69,7 @@
         onu: SCOMa0108af9
         olt: 722033538840
         c_tag: 41
-        s_tag: 54
+        s_tag: 44
         power_switch_port: 6
 
       - ip: 10.90.0.240
@@ -81,7 +81,7 @@
         onu: SCOMa0108aea
         olt: 722033538840
         c_tag: 42
-        s_tag: 55
+        s_tag: 44
         power_switch_port: 5
 
     dst:
