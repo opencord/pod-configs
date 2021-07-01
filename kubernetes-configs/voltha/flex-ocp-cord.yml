@@ -19,18 +19,25 @@ onos-classic:
   image:
     tag: master
 
-voltha-adapter-openonu:
-  images:
-    adapter_open_onu_go:
-      repository: hhildebr/voltha-openonu-adapter-go
-      tag: hh-VOL-4207-rd
-
 onosSshPort: 30115
 onosApiPort: 30120
 onosOfPort: 31653
 
 individualOpenFlowNodePorts: true
 
+#images:
+#  onos:
+#    repository: "andreacampanella/voltha-onos"
+#    tag: "olt-required-drivers"
+#  adapter_open_onu:
+#     repository: gcgirish/voltha-openonu-adapter
+#     tag: ttfix
+#  adapter_open_olt:
+#    repository: gcgirish/voltha-openolt-adapter
+#    tag: fixAction
+#  rw_core:
+#    repository: gcgirish/voltha-rw-core
+#    tag: delete-device
 deployments:
   etcdOperator: true
   backupOperator: false
