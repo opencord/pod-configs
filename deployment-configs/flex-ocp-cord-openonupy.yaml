@@ -72,6 +72,7 @@ hosts:
       s_tag: '111'
       power_switch_port: 1
       onu_type: 'alpha'
+      uni_id: '1'
     -
       ip: '10.90.0.222'
       user: 'cord'
@@ -85,6 +86,7 @@ hosts:
       s_tag: '222'
       power_switch_port: 2
       onu_type: 'alpha'
+      uni_id: '1'
 
   dst:
     -

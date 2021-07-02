@@ -75,6 +75,7 @@ hosts:
       s_tag: '99'
       power_switch_port: 6
       onu_type: 'iskratel'
+      uni_id: '1'
     -
       ip: '10.128.100.71'
       user: 'cord'
@@ -88,6 +89,7 @@ hosts:
       s_tag: '99'
       power_switch_port: 1
       onu_type: 'alpha'
+      uni_id: '1'
   dst:
     -
       ip: null

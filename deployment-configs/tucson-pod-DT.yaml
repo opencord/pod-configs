@@ -55,6 +55,7 @@ hosts:
       s_tag: 11
       onu_type: 'alpha'
       power_switch_port: 2
+      uni_id: 1
     -
       ip: 127.0.0.1
       user: cord
@@ -68,6 +69,7 @@ hosts:
       s_tag: 22
       onu_type: 'iskratel'
       power_switch_port: 3
+      uni_id: 1
     -
       ip: 127.0.0.1
       user: cord
@@ -81,6 +83,7 @@ hosts:
       s_tag: 21
       onu_type: 'alpha'
       power_switch_port: 4
+      uni_id: 1
 
   dst:
     -

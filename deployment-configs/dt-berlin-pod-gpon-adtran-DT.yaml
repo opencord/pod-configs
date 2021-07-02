@@ -72,6 +72,7 @@
         c_tag: 7
         s_tag: 35
         power_switch_port: 1
+        uni_id: 1
       -
         ip: 10.34.90.41
         user: community
@@ -84,6 +85,7 @@
         c_tag: 7
         s_tag: 36
         power_switch_port: 2
+        uni_id: 1
       -
         ip: 10.34.90.41
         user: community
@@ -96,6 +98,7 @@
         c_tag: 7
         s_tag: 37
         power_switch_port: 3
+        uni_id: 1
 
       -
         ip: 10.34.90.40
@@ -109,6 +112,7 @@
         c_tag: 7
         s_tag: 38
         power_switch_port: 8
+        uni_id: 1
 
     dst:
       -
