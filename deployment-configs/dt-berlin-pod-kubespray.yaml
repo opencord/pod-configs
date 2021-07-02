@@ -83,6 +83,7 @@ hosts:
       onu: ALPHe3d1cf5c
       c_tag: 11
       s_tag: 11
+      uni_id: 1
     #GPON ONU
     # -
     #   ip: 127.0.0.1

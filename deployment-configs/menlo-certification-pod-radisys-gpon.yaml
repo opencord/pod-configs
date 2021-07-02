@@ -71,6 +71,7 @@
         c_tag: 41
         s_tag: 44
         power_switch_port: 6
+        uni_id: 1
 
       - ip: 10.90.0.240
         user: cord
@@ -83,6 +84,7 @@
         c_tag: 42
         s_tag: 44
         power_switch_port: 5
+        uni_id: 1
 
     dst:
 

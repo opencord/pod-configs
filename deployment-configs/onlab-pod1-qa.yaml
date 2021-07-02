@@ -72,6 +72,7 @@ hosts:
       c_tag: '112'
       s_tag: '111'
       onu_type: 'alpha'
+      uni_id: '1'
 
     -
       ip: '10.90.0.51'
@@ -84,6 +85,7 @@ hosts:
       c_tag: '113'
       s_tag: '111'
       onu_type: 'iskratel'
+      uni_id: '1'
     -
       ip: '10.90.0.51'
       user: 'ubuntu'
@@ -95,6 +97,7 @@ hosts:
       c_tag: '114'
       s_tag: '110'
       onu_type: 'brcm'
+      uni_id: '1'
 
   dst:
     -
