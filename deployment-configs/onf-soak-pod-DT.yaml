@@ -71,6 +71,7 @@ hosts:
       olt: 'EC1721000208'
       c_tag: '11'
       s_tag: '222'
+      uni_id: 1
     -
       ip: '10.128.90.90'
       user: 'cord'
@@ -83,6 +84,7 @@ hosts:
       olt: 'EC1721000208'
       c_tag: '12'
       s_tag: '111'
+      uni_id: 1
   dst:
     -
       ip: null

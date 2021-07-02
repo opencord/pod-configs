@@ -78,6 +78,7 @@ hosts:
       c_tag: '112'
       s_tag: '111'
       onu_type: 'alpha'
+      uni_id: 1
 
   dst:
     -

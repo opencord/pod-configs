@@ -86,6 +86,7 @@
         c_tag: 7
         s_tag: 31
         power_switch_port: 1
+        uni_id: 1
       -
         ip: 10.34.90.42
         user: community
@@ -98,6 +99,7 @@
         c_tag: 7
         s_tag: 33
         power_switch_port: 4
+        uni_id: 1
       -
         ip: 10.34.90.42
         user: community
@@ -110,6 +112,7 @@
         c_tag: 7
         s_tag: 34
         power_switch_port: 7
+        uni_id: 1
 
         #XGSPON ONU
       -
@@ -124,6 +127,7 @@
         c_tag: 7
         s_tag: 12
         power_switch_port: 6
+        uni_id: 1
       -
         ip: 127.0.0.1
         user: community
@@ -136,6 +140,7 @@
         c_tag: 7
         s_tag: 11
         power_switch_port: 8
+        uni_id: 1
 
     dst:
       -
