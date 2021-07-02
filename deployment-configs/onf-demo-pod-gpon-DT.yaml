@@ -68,6 +68,7 @@
         c_tag: 7
         s_tag: 31
         onu_type: 'scom'
+        uni_id: 1
 
     dst:
       -
