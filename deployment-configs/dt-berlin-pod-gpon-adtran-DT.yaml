@@ -56,6 +56,7 @@
       serial: LBADTN2038AD991
       type: adtranolt
       user: hsvroot
+      board_technology: GPON
  
   hosts:
     src:

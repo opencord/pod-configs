@@ -52,6 +52,7 @@
       serial: EC1912001818
       oltDebVersion: openolt_asgvolt64-3.3.3-1a5d68b50d8bcc5ba6cb1630d3294c30c37cd2f5-40G-NNI.deb
       oltDebVersion23: openolt_asgvolt64-3.3.3-1a5d68b50d8bcc5ba6cb1630d3294c30c37cd2f5-40G-NNI.deb
+      board_technology: GPON
 
   hosts:
     src:

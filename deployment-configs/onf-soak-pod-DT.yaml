@@ -50,6 +50,7 @@ olts:
     oltDebVersion: openolt_asfvolt16-3.4.8-eec0fc9e9a01dc0d35b0b8441e0a22a4c0cc51b4-40G-NNI.deb
     oltDebVersion23: openolt_asfvolt16-3.3.3-1a5d68b50d8bcc5ba6cb1630d3294c30c37cd2f5-40G-NNI.deb
     oltPort: '9191'
+    board_technology: XGS-PON
 
 onus:
   -
