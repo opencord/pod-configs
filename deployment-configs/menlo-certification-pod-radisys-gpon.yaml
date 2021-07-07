@@ -52,9 +52,8 @@
       fortygig: True
       aggPort: 1
       serial: 722033538840
-      #TODO need update
-      oltDebVersion: openolt_asgvolt64-3.3.3-1a5d68b50d8bcc5ba6cb1630d3294c30c37cd2f5-100G-NNI.deb
-      oltDebVersion23: openolt_asgvolt64-3.3.3-1a5d68b50d8bcc5ba6cb1630d3294c30c37cd2f5-100G-NNI.deb
+      oltDebVersion: openolt_rlt-3200g-w-40g-3.4.8-eec0fc9e9a01dc0d35b0b8441e0a22a4c0cc51b4.deb
+      oltDebVersion23: openolt_rlt-3200g-w-40g-3.4.8-eec0fc9e9a01dc0d35b0b8441e0a22a4c0cc51b4.deb
 
   hosts:
     src:
