@@ -96,6 +96,10 @@ hosts:
       pass: null
       dp_iface_name: null
       dp_iface_ip_qinq: '10.11.11.254'
+      noroot_ip: 10.128.100.70
+      noroot_user: cord
+      noroot_pass: cord
+      dp_iface_name: ens6f0
       dp_iface_ip: null
       dp_iface_gateway: null
       container_type: null
@@ -106,6 +110,10 @@ hosts:
       pass: null
       dp_iface_name: null
       dp_iface_ip_qinq: '10.22.22.254'
+      noroot_ip: '10.128.100.70'
+      noroot_user: cord
+      noroot_pass: cord
+      dp_iface_name: ens6f0
       dp_iface_ip: null
       dp_iface_gateway: null
       container_type: null
