@@ -13,11 +13,7 @@
 # limitations under the License.
 
 global:
-  image_tag: master
   image_pullPolicy: Always
-onos-classic:
-  image:
-    tag: "master"
 
 deployments:
   etcdOperator: true

@@ -16,7 +16,6 @@
 # Automated deployment configuration for ONF DEMO POD, olt/onu are connected to this
 
 global:
-  image_tag: master
   image_pullPolicy: Always
 
 onosSshPort: 30115

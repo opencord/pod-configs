@@ -13,7 +13,6 @@
 # limitations under the License.
 
 defaults:
-  image_tag: master
   image_pullPolicy: Always
 
 onosSshPort: 30115
