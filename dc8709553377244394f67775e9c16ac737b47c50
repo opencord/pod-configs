@@ -22,6 +22,30 @@
       "revId": "dc8709553377244394f67775e9c16ac737b47c50",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c0010e4f_91ddee41",
+        "filename": "deployment-configs/dt-berlin-pod.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2021-07-13T07:14:02Z",
+      "side": 1,
+      "message": "As discussed, will take this as a separate item",
+      "parentUuid": "c68d7554_02efe9f1",
+      "range": {
+        "startLine": 60,
+        "startChar": 4,
+        "endLine": 60,
+        "endChar": 19
+      },
+      "revId": "dc8709553377244394f67775e9c16ac737b47c50",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
     }
   ]
 }
