@@ -51,7 +51,6 @@ olts:
     aggPort: '1'
     serial: 'EC1838000853'
     oltDebVersion: openolt_asfvolt16-3.4.8-eec0fc9e9a01dc0d35b0b8441e0a22a4c0cc51b4-40G-NNI.deb
-    oltDebVersion23: openolt_asfvolt16-3.4.8-eec0fc9e9a01dc0d35b0b8441e0a22a4c0cc51b4-40G-NNI.deb
     board_technology: XGS-PON
 
 onus:
