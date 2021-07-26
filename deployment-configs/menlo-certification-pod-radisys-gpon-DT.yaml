@@ -71,33 +71,6 @@
         s_tag: 11
         power_switch_port: 2
         uni_id: 1
-      -
-        ip: 10.90.0.240
-        user: cord
-        pass: cord
-        dp_iface_name: eth1.222
-        container_type: LXC
-        container_name: SCOM00001c8d
-        onu: SCOM00001c8d
-        olt: 722033538840
-        c_tag: 222
-        s_tag: 22
-        power_switch_port: 4
-        uni_id: 1
-
-      -
-        ip: 10.90.0.240
-        user: cord
-        pass: cord
-        dp_iface_name: eth1.333
-        container_type: LXC
-        container_name: SCOM00019ab7
-        onu: SCOM00019ab7
-        olt: 722033538840
-        c_tag: 333
-        s_tag: 33
-        power_switch_port: 8
-        uni_id: 1
 
       - ip: 10.90.0.240
         user: cord
