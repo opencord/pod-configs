@@ -126,7 +126,7 @@
         ip: 10.90.0.240
         user: cord
         pass: cord
-        dp_iface_name: eth1.222
+        dp_iface_name: eth1.333
         container_type: LXC
         container_name: SCOM00019ab7
         onu: SCOM00019ab7
