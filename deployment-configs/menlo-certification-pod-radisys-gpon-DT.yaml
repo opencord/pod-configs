@@ -52,7 +52,7 @@
       fortygig: True
       aggPort: 1
       serial: 722033538840
-      oltDebVersion: openolt_rlt-3200g-w-40g-3.4.8-eec0fc9e9a01dc0d35b0b8441e0a22a4c0cc51b4.deb
+      oltDebVersion: openolt_rlt-3200g-w-40g-3.5.1-dev-262b6293cdeda78317dda9d3a6cfab0e7ebfbf05.deb
       board_technology: GPON
     -
       ip:  10.90.0.246
@@ -62,7 +62,7 @@
       fortygig: True
       aggPort: 3
       serial: 722033738988
-      oltDebVersion: openolt_rlt-1600g-w-40g-3.5.0-dev-4525f70fb6438ec5a3a1004fcfd82fbe7fb7cc57.deb
+      oltDebVersion: openolt_rlt-1600g-w-40g-3.5.1-dev-262b6293cdeda78317dda9d3a6cfab0e7ebfbf05.deb
       board_technology: GPON
 
   hosts:

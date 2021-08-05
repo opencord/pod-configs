@@ -47,7 +47,7 @@ olts:
     fortygig: 'true'
     aggPort: '1'
     serial: 'EC1721000208'
-    oltDebVersion: openolt_asfvolt16-3.4.8-eec0fc9e9a01dc0d35b0b8441e0a22a4c0cc51b4-40G-NNI.deb
+    oltDebVersion: openolt_asfvolt16-3.5.1-b8c09facd3da5d93b7c2815e176c6682de737437-40G-NNI.deb
     oltPort: '9191'
     board_technology: XGS-PON
 
