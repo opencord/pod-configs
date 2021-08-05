@@ -50,7 +50,7 @@
       fortygig: True
       aggPort: 9
       serial: EC1912001818
-      oltDebVersion: openolt_asgvolt64-3.4.8-eec0fc9e9a01dc0d35b0b8441e0a22a4c0cc51b4-40G-NNI.deb
+      oltDebVersion: openolt_asgvolt64-3.4.9-e2a9597f3d690fe3a0ea0df244571dfc9e8c2833-40G-NNI.deb
       board_technology: GPON
 
   hosts:
