@@ -64,6 +64,16 @@
       serial: 722033738988
       oltDebVersion: openolt_rlt-1600g-w-40g-3.5.1-dev-262b6293cdeda78317dda9d3a6cfab0e7ebfbf05.deb
       board_technology: GPON
+    -
+      ip:  10.90.0.245
+      sship:  10.90.0.245
+      user: root
+      pass: onl
+      fortygig: True
+      aggPort: 1
+      serial: 722033038194
+      oltDebVersion: openolt_rlt-1600x-w-40g-3.5.1-dev-2171f0eddae3c531aeac244a7d6f122f20264d2c.deb
+      board_technology: GPON
 
   hosts:
     src:
@@ -136,6 +146,21 @@
         power_switch_port: 8
         uni_id: 1
 
+      # 1600X OLT
+      -
+        ip: 10.90.0.240
+        user: cord
+        pass: cord
+        dp_iface_name: eth1.88
+        container_type: LXC
+        container_name: SCOMa0108adf
+        onu: SCOMa0108adf
+        olt: 722033038194
+        c_tag: 88
+        s_tag: 89
+        power_switch_port: 7
+        uni_id: 1
+
     dst:
       # 3200G OLT
       -
@@ -194,6 +219,20 @@
         container_name: null
       -
         dp_iface_ip_qinq: 10.33.33.254
+        ip: null
+        user: null
+        pass: null
+        noroot_ip: 10.90.0.241
+        noroot_user: cord
+        noroot_pass: cord
+        dp_iface_name: enp3s0d1
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
+      # 1600X OLT
+      -
+        dp_iface_ip_qinq: 10.89.88.254
         ip: null
         user: null
         pass: null
