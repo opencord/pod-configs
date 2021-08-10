@@ -16,6 +16,24 @@
       "revId": "6e701dff5c7d1c7e1a202c94a3e4e2437a911a41",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "65e5896c_756fdcbc",
+        "filename": "deployment-configs/menlo-certification-pod-radisys-gpon-DT.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 160,
+      "author": {
+        "id": 1000007
+      },
+      "writtenOn": "2021-08-10T14:33:25Z",
+      "side": 1,
+      "message": "good catch, thanks",
+      "parentUuid": "1df3d208_1e10eed6",
+      "revId": "6e701dff5c7d1c7e1a202c94a3e4e2437a911a41",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": false
     }
   ]
 }
