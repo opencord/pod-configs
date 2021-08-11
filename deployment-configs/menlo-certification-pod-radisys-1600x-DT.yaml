@@ -50,7 +50,7 @@
       user: root
       pass: onl
       fortygig: True
-      aggPort: 1
+      aggPort: 2
       serial: 722033038194
       oltDebVersion: openolt_rlt-1600x-w-40g-3.5.1-dev-2171f0eddae3c531aeac244a7d6f122f20264d2c.deb
       board_technology: GPON
