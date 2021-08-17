@@ -1,0 +1,147 @@
+---
+
+  # Copyright 2020-present Open Networking Foundation
+  #
+  # Licensed under the Apache License, Version 2.0 (the "License");
+  # you may not use this file except in compliance with the License.
+  # You may obtain a copy of the License at
+  #
+  # http://www.apache.org/licenses/LICENSE-2.0
+  #
+  # Unless required by applicable law or agreed to in writing, software
+  # distributed under the License is distributed on an "AS IS" BASIS,
+  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  # See the License for the specific language governing permissions and
+  # limitations under the License.
+
+  # Automated deployment configuration for Tucson pod
+
+  # Change default values in tests
+  ONOS_REST_PORT: 30120
+  ONOS_SSH_PORT: 30115
+  OLT_PORT: 9191
+  KUBERNETES_CONF: $HOME/.kube/kind-config-voltha-minimal
+
+# This tells the control node how to reach the Kubernetes nodes.
+  nodes:
+    -
+      ip: '10.90.0.240'
+      user: 'cord'
+      pass: 'cord'
+    -
+      ip: '10.90.0.241'
+      user: 'cord'
+      pass: 'cord'
+
+  fabric_switches:
+    -
+      mac: '8c:ea:1b:a7:29:72'
+      ip: 10.90.0.243
+      user: root
+      pass: onl
+      bngPort: 31
+      device_id: 'of:0000000000000001'
+
+  olts:
+  # Gpon OLT
+    -
+      ip:  10.90.0.244
+      sship:  10.90.0.244
+      user: root
+      pass: onl
+      fortygig: True
+      aggPort: 1
+      serial: 722033538840
+      oltDebVersion: openolt_rlt-3200g-w-40g-3.5.1-dev-262b6293cdeda78317dda9d3a6cfab0e7ebfbf05.deb
+      board_technology: GPON
+
+  hosts:
+    src:
+      # 3200G ONU
+      -
+        ip: 10.90.0.241
+        user: cord
+        pass: cord
+        dp_iface_name: eth1.111
+        container_type: LXC
+        container_name: SCOM00001c7f
+        onu: SCOM00001c7f
+        olt: 722033538840
+        c_tag: 111
+        s_tag: 11
+        power_switch_port: 2
+        uni_id: 1
+
+      - ip: 10.90.0.240
+        user: cord
+        pass: cord
+        dp_iface_name: eth1.41
+        container_type: LXC
+        container_name: SCOMa0108af9
+        onu: SCOMa0108af9
+        olt: 722033538840
+        c_tag: 41
+        s_tag: 54
+        power_switch_port: 6
+        uni_id: 1
+
+      - ip: 10.90.0.240
+        user: cord
+        pass: cord
+        dp_iface_name: eth1.42
+        container_type: LXC
+        container_name: SCOMa0108aea
+        onu: SCOMa0108aea
+        olt: 722033538840
+        c_tag: 42
+        s_tag: 55
+        power_switch_port: 5
+        uni_id: 1
+
+    dst:
+      # 3200G OLT
+      -
+        dp_iface_ip_qinq: 10.11.11.254
+        ip: null
+        user: null
+        pass: null
+        noroot_ip: 10.90.0.241
+        noroot_user: cord
+        noroot_pass: cord
+        dp_iface_name: enp3s0d1
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
+
+      - dp_iface_ip_qinq: 10.54.41.254
+        ip: null
+        user: null
+        pass: null
+        noroot_ip: 10.90.0.241
+        noroot_user: cord
+        noroot_pass: cord
+        dp_iface_name: enp3s0d1
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
+
+      - dp_iface_ip_qinq: 10.55.42.254
+        ip: null
+        user: null
+        pass: null
+        noroot_ip: 10.90.0.241
+        noroot_user: cord
+        noroot_pass: cord
+        dp_iface_name: enp3s0d1
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
+
+  web_power_switch:
+    ip: '10.90.0.250'
+    user: 'cord'
+    password: 'cord'
+    type: 'DLI'
