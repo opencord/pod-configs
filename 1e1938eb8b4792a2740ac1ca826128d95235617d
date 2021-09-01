@@ -1,0 +1,165 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "506ab15e_67a95e05",
+        "filename": "deployment-configs/flex-ocp-cord-multi-uni-TT.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2021-09-01T08:21:25Z",
+      "side": 1,
+      "message": "ALPHe3d1cea3-2",
+      "range": {
+        "startLine": 83,
+        "startChar": 22,
+        "endLine": 83,
+        "endChar": 36
+      },
+      "revId": "1e1938eb8b4792a2740ac1ca826128d95235617d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3d91cef4_a06f1423",
+        "filename": "deployment-configs/flex-ocp-cord-multi-uni-TT.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2021-09-01T08:21:25Z",
+      "side": 1,
+      "message": "ALPHe3d1cea3-2",
+      "range": {
+        "startLine": 143,
+        "startChar": 22,
+        "endLine": 143,
+        "endChar": 36
+      },
+      "revId": "1e1938eb8b4792a2740ac1ca826128d95235617d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f0b16ecf_58d245db",
+        "filename": "deployment-configs/flex-ocp-cord-multi-uni-TT.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 203,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2021-09-01T08:21:25Z",
+      "side": 1,
+      "message": "ALPHe3d1cea3-2",
+      "range": {
+        "startLine": 203,
+        "startChar": 22,
+        "endLine": 203,
+        "endChar": 36
+      },
+      "revId": "1e1938eb8b4792a2740ac1ca826128d95235617d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fb67a537_0122be95",
+        "filename": "deployment-configs/flex-ocp-cord-multi-uni-TT.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 265,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2021-09-01T08:21:25Z",
+      "side": 1,
+      "message": "ALPHe3d1cea3-2",
+      "range": {
+        "startLine": 265,
+        "startChar": 22,
+        "endLine": 265,
+        "endChar": 34
+      },
+      "revId": "1e1938eb8b4792a2740ac1ca826128d95235617d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dfcd5928_88b5b01a",
+        "filename": "deployment-configs/flex-ocp-cord-multi-uni-TT.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 287,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2021-09-01T08:21:25Z",
+      "side": 1,
+      "message": "2",
+      "range": {
+        "startLine": 287,
+        "startChar": 25,
+        "endLine": 287,
+        "endChar": 26
+      },
+      "revId": "1e1938eb8b4792a2740ac1ca826128d95235617d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "17d04b38_1551971b",
+        "filename": "deployment-configs/flex-ocp-cord-multi-uni-TT.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 299,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2021-09-01T08:21:25Z",
+      "side": 1,
+      "message": "ALPHe3d1ceb7-2",
+      "range": {
+        "startLine": 299,
+        "startChar": 22,
+        "endLine": 299,
+        "endChar": 36
+      },
+      "revId": "1e1938eb8b4792a2740ac1ca826128d95235617d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f31a88fd_8377a8d3",
+        "filename": "deployment-configs/flex-ocp-cord-multi-uni-TT.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 304,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2021-09-01T08:21:25Z",
+      "side": 1,
+      "message": "2",
+      "range": {
+        "startLine": 304,
+        "startChar": 25,
+        "endLine": 304,
+        "endChar": 26
+      },
+      "revId": "1e1938eb8b4792a2740ac1ca826128d95235617d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
+      "unresolved": true
+    }
+  ]
+}
