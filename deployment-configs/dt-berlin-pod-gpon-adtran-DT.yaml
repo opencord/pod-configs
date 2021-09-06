@@ -101,20 +101,6 @@
         power_switch_port: 3
         uni_id: 1
 
-      -
-        ip: 10.34.90.40
-        user: community
-        pass: admin
-        dp_iface_name: eth1.7
-        container_type: LXC
-        container_name: ADTN20177888
-        onu: ADTN20177888
-        olt: LBADTN2038AD991
-        c_tag: 7
-        s_tag: 38
-        power_switch_port: 8
-        uni_id: 1
-
     dst:
       -
         dp_iface_ip_qinq: 10.35.7.254
