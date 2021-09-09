@@ -69,7 +69,33 @@
         olt: 722033038194
         c_tag: 88
         s_tag: 89
-        power_switch_port: 7
+        power_switch_port: 4
+        uni_id: 1
+      -
+        ip: 10.90.0.223
+        user: cord
+        pass: cord
+        dp_iface_name: eth1.89
+        container_type: LXC
+        container_name: SCOMa030230f
+        onu: SCOMa030230f
+        olt: 722033038194
+        c_tag: 89
+        s_tag: 90
+        power_switch_port: 2
+        uni_id: 1
+      -
+        ip: 10.90.0.223
+        user: cord
+        pass: cord
+        dp_iface_name: eth1.90
+        container_type: LXC
+        container_name: SCOMa030216a
+        onu: SCOMa030216a
+        olt: 722033038194
+        c_tag: 90
+        s_tag: 91
+        power_switch_port: 1
         uni_id: 1
 
     dst:
@@ -87,9 +113,35 @@
         dp_iface_gateway: null
         container_type: null
         container_name: null
+      -
+        dp_iface_ip_qinq: 10.90.89.254
+        ip: null
+        user: null
+        pass: null
+        noroot_ip: 10.90.0.241
+        noroot_user: cord
+        noroot_pass: cord
+        dp_iface_name: enp3s0d1
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
+      -
+        dp_iface_ip_qinq: 10.91.90.254
+        ip: null
+        user: null
+        pass: null
+        noroot_ip: 10.90.0.241
+        noroot_user: cord
+        noroot_pass: cord
+        dp_iface_name: enp3s0d1
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
 
   web_power_switch:
-    ip: '10.90.0.250'
+    ip: '10.90.0.251'
     user: 'cord'
     password: 'cord'
     type: 'DLI'
