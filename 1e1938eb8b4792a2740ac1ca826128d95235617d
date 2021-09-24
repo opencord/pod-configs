@@ -1,6 +1,7 @@
 {
   "comments": [
     {
+      "unresolved": true,
       "key": {
         "uuid": "506ab15e_67a95e05",
         "filename": "deployment-configs/flex-ocp-cord-multi-uni-TT.yaml",
@@ -20,10 +21,34 @@
         "endChar": 36
       },
       "revId": "1e1938eb8b4792a2740ac1ca826128d95235617d",
-      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
-      "unresolved": true
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "781ec597_c72a0d1b",
+        "filename": "deployment-configs/flex-ocp-cord-multi-uni-TT.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1000804
+      },
+      "writtenOn": "2021-09-24T08:54:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "506ab15e_67a95e05",
+      "range": {
+        "startLine": 83,
+        "startChar": 22,
+        "endLine": 83,
+        "endChar": 36
+      },
+      "revId": "1e1938eb8b4792a2740ac1ca826128d95235617d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
       "key": {
         "uuid": "3d91cef4_a06f1423",
         "filename": "deployment-configs/flex-ocp-cord-multi-uni-TT.yaml",
@@ -43,10 +68,34 @@
         "endChar": 36
       },
       "revId": "1e1938eb8b4792a2740ac1ca826128d95235617d",
-      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
-      "unresolved": true
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "bfa80976_8e62c0c2",
+        "filename": "deployment-configs/flex-ocp-cord-multi-uni-TT.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 1000804
+      },
+      "writtenOn": "2021-09-24T08:54:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3d91cef4_a06f1423",
+      "range": {
+        "startLine": 143,
+        "startChar": 22,
+        "endLine": 143,
+        "endChar": 36
+      },
+      "revId": "1e1938eb8b4792a2740ac1ca826128d95235617d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
       "key": {
         "uuid": "f0b16ecf_58d245db",
         "filename": "deployment-configs/flex-ocp-cord-multi-uni-TT.yaml",
@@ -66,10 +115,34 @@
         "endChar": 36
       },
       "revId": "1e1938eb8b4792a2740ac1ca826128d95235617d",
-      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
-      "unresolved": true
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "bd962136_5c4add56",
+        "filename": "deployment-configs/flex-ocp-cord-multi-uni-TT.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 203,
+      "author": {
+        "id": 1000804
+      },
+      "writtenOn": "2021-09-24T08:54:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f0b16ecf_58d245db",
+      "range": {
+        "startLine": 203,
+        "startChar": 22,
+        "endLine": 203,
+        "endChar": 36
+      },
+      "revId": "1e1938eb8b4792a2740ac1ca826128d95235617d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
       "key": {
         "uuid": "fb67a537_0122be95",
         "filename": "deployment-configs/flex-ocp-cord-multi-uni-TT.yaml",
@@ -89,10 +162,34 @@
         "endChar": 34
       },
       "revId": "1e1938eb8b4792a2740ac1ca826128d95235617d",
-      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
-      "unresolved": true
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3642d81e_4d7e4eba",
+        "filename": "deployment-configs/flex-ocp-cord-multi-uni-TT.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 265,
+      "author": {
+        "id": 1000804
+      },
+      "writtenOn": "2021-09-24T08:54:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fb67a537_0122be95",
+      "range": {
+        "startLine": 265,
+        "startChar": 22,
+        "endLine": 265,
+        "endChar": 34
+      },
+      "revId": "1e1938eb8b4792a2740ac1ca826128d95235617d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
       "key": {
         "uuid": "dfcd5928_88b5b01a",
         "filename": "deployment-configs/flex-ocp-cord-multi-uni-TT.yaml",
@@ -112,10 +209,34 @@
         "endChar": 26
       },
       "revId": "1e1938eb8b4792a2740ac1ca826128d95235617d",
-      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
-      "unresolved": true
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f03228ff_dc385fe7",
+        "filename": "deployment-configs/flex-ocp-cord-multi-uni-TT.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 287,
+      "author": {
+        "id": 1000804
+      },
+      "writtenOn": "2021-09-24T08:54:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dfcd5928_88b5b01a",
+      "range": {
+        "startLine": 287,
+        "startChar": 25,
+        "endLine": 287,
+        "endChar": 26
+      },
+      "revId": "1e1938eb8b4792a2740ac1ca826128d95235617d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
       "key": {
         "uuid": "17d04b38_1551971b",
         "filename": "deployment-configs/flex-ocp-cord-multi-uni-TT.yaml",
@@ -135,10 +256,34 @@
         "endChar": 36
       },
       "revId": "1e1938eb8b4792a2740ac1ca826128d95235617d",
-      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
-      "unresolved": true
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b9e3029c_aaf393be",
+        "filename": "deployment-configs/flex-ocp-cord-multi-uni-TT.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 299,
+      "author": {
+        "id": 1000804
+      },
+      "writtenOn": "2021-09-24T08:54:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "17d04b38_1551971b",
+      "range": {
+        "startLine": 299,
+        "startChar": 22,
+        "endLine": 299,
+        "endChar": 36
+      },
+      "revId": "1e1938eb8b4792a2740ac1ca826128d95235617d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
       "key": {
         "uuid": "f31a88fd_8377a8d3",
         "filename": "deployment-configs/flex-ocp-cord-multi-uni-TT.yaml",
@@ -158,8 +303,31 @@
         "endChar": 26
       },
       "revId": "1e1938eb8b4792a2740ac1ca826128d95235617d",
-      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388",
-      "unresolved": true
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "57952b44_964d4c73",
+        "filename": "deployment-configs/flex-ocp-cord-multi-uni-TT.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 304,
+      "author": {
+        "id": 1000804
+      },
+      "writtenOn": "2021-09-24T08:54:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f31a88fd_8377a8d3",
+      "range": {
+        "startLine": 304,
+        "startChar": 25,
+        "endLine": 304,
+        "endChar": 26
+      },
+      "revId": "1e1938eb8b4792a2740ac1ca826128d95235617d",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
