@@ -16,6 +16,29 @@
       "message": "I accidentally removed you from reviewers, sorry.",
       "revId": "dcf2c637216bf7faa94e6e55e9491c47f7ad80f4",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ceebe84f_61c24393",
+        "filename": "deployment-configs/flex-ocp-cord-multi-uni-TT.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-09-27T09:34:46Z",
+      "side": 1,
+      "message": "we probably ought to change the BNG here, correct ?",
+      "range": {
+        "startLine": 101,
+        "startChar": 14,
+        "endLine": 101,
+        "endChar": 17
+      },
+      "revId": "dcf2c637216bf7faa94e6e55e9491c47f7ad80f4",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
