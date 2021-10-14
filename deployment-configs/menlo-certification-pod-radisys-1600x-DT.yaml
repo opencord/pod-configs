@@ -72,7 +72,7 @@
         power_switch_port: 4
         uni_id: 1
       -
-        ip: 10.90.0.223
+        ip: 10.93.1.12
         user: cord
         pass: cord
         dp_iface_name: eth1.89
@@ -85,7 +85,7 @@
         power_switch_port: 2
         uni_id: 1
       -
-        ip: 10.90.0.223
+        ip: 10.93.1.12
         user: cord
         pass: cord
         dp_iface_name: eth1.90

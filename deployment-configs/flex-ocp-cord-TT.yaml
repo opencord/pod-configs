@@ -20,22 +20,22 @@ kube_config: 'flex-ocp-cord-voltha-master.conf'
 
 nodes:
   -
-    ip: '10.90.0.221'
+    ip: '10.93.1.10'
     user: 'cord'
     pass: 'cord'
   -
-    ip: '10.90.0.222'
+    ip: '10.93.1.11'
     user: 'cord'
     pass: 'cord'
   -
-    ip: '10.90.0.223'
+    ip: '10.93.1.12'
     user: 'cord'
     pass: 'cord'
 
 fabric_switches:
   -
     mac: 'cc:37:ab:5b:6d:a8'
-    ip: '10.90.0.224'
+    ip: '10.93.1.13'
     user: 'root'
     pass: 'onl'
     bngPort: '31'
@@ -43,8 +43,8 @@ fabric_switches:
 
 olts:
   -
-    ip: '10.90.0.225'
-    sship: '10.90.0.225'
+    ip: '10.93.1.14'
+    sship: '10.93.1.14'
     user: 'root'
     pass: 'onl'
     fortygig: 'true'
@@ -60,7 +60,7 @@ onus:
 hosts:
   src:
     -
-      ip: '10.90.0.221'
+      ip: '10.93.1.10'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1.35'
@@ -75,7 +75,7 @@ hosts:
       service_type: 'hsia'
       uni_id: '1'
     -
-      ip: '10.90.0.222'
+      ip: '10.93.1.11'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1.35'
@@ -85,12 +85,12 @@ hosts:
       olt: 'EC1838000853'
       c_tag: '101'
       s_tag: '222'
-      power_switch_port: 2
+      power_switch_port: 4
       onu_type: 'alpha'
       service_type: 'hsia'
       uni_id: '1'
     -
-      ip: '10.90.0.221'
+      ip: '10.93.1.10'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1.65'
@@ -105,7 +105,7 @@ hosts:
       service_type: 'voip'
       uni_id: '1'
     -
-      ip: '10.90.0.222'
+      ip: '10.93.1.11'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1.65'
@@ -115,12 +115,12 @@ hosts:
       olt: 'EC1838000853'
       c_tag: '444'
       s_tag: '333'
-      power_switch_port: 2
+      power_switch_port: 4
       onu_type: ''
       service_type: 'voip'
       uni_id: '1'
     -
-      ip: '10.90.0.221'
+      ip: '10.93.1.10'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1.55'
@@ -135,7 +135,7 @@ hosts:
       service_type: 'vod'
       uni_id: '1'
     -
-      ip: '10.90.0.222'
+      ip: '10.93.1.11'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1.55'
@@ -145,12 +145,12 @@ hosts:
       olt: 'EC1838000853'
       c_tag: '55'
       s_tag: '555'
-      power_switch_port: 2
+      power_switch_port: 4
       onu_type: ''
       service_type: 'vod'
       uni_id: '1'
     -
-      ip: '10.90.0.221'
+      ip: '10.93.1.10'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1.55'
@@ -181,7 +181,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip: '10.90.0.223'
+      noroot_ip: '10.93.1.12'
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens6f1
@@ -204,7 +204,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip: '10.90.0.223'
+      noroot_ip: '10.93.1.12'
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens6f1
@@ -217,7 +217,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip: '10.90.0.223'
+      noroot_ip: '10.93.1.12'
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens6f1
@@ -240,7 +240,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      bng_ip: '10.90.0.223'
+      bng_ip: '10.93.1.12'
       bng_user: cord
       bng_pass: cord
       dp_iface_name: null
@@ -250,7 +250,7 @@ hosts:
       container_type: null
       container_name: null
 web_power_switch:
-  ip: '10.90.0.229'
+  ip: '10.93.1.15'
   user: 'cord'
   password: 'cord'
   type: 'DLI'
