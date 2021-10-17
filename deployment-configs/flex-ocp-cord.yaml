@@ -20,15 +20,15 @@ kube_config: 'flex-ocp-cord-voltha-master.conf'
 
 nodes:
   -
-    ip: '10.90.0.221'
+    ip: '10.93.1.10'
     user: 'cord'
     pass: 'cord'
   -
-    ip: '10.90.0.222'
+    ip: '10.93.1.11'
     user: 'cord'
     pass: 'cord'
   -
-    ip: '10.90.0.223'
+    ip: '10.93.1.12'
     user: 'cord'
     pass: 'cord'
 
@@ -60,7 +60,7 @@ onus:
 hosts:
   src:
     -
-      ip: '10.90.0.221'
+      ip: '10.93.1.10'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1'
@@ -74,7 +74,7 @@ hosts:
       onu_type: 'alpha'
       uni_id: 1
     -
-      ip: '10.90.0.222'
+      ip: '10.93.1.11'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1'
@@ -93,7 +93,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip: '10.90.0.223'
+      noroot_ip: '10.93.1.12'
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens6f1
@@ -106,7 +106,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip: '10.90.0.223'
+      noroot_ip: '10.93.1.12'
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens6f1

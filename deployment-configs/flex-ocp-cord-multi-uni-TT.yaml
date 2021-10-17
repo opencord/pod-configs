@@ -20,15 +20,15 @@ kube_config: 'flex-ocp-cord-voltha-master.conf'
 
 nodes:
   -
-    ip: '10.90.0.221'
+    ip: '10.93.1.10'
     user: 'cord'
     pass: 'cord'
   -
-    ip: '10.90.0.222'
+    ip: '10.93.1.11'
     user: 'cord'
     pass: 'cord'
   -
-    ip: '10.90.0.223'
+    ip: '10.93.1.12'
     user: 'cord'
     pass: 'cord'
 
@@ -60,7 +60,7 @@ onus:
 hosts:
   src:
     -
-      ip: '10.90.0.221'
+      ip: '10.93.1.10'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1.35'
@@ -75,7 +75,7 @@ hosts:
       service_type: 'hsia'
       uni_id: '1'
     -
-      ip: '10.90.0.222'
+      ip: '10.93.1.11'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1.35'
@@ -90,7 +90,7 @@ hosts:
       service_type: 'hsia'
       uni_id: '1'
     -
-      ip: '10.90.0.222'
+      ip: '10.93.1.11'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1.35'
@@ -105,7 +105,7 @@ hosts:
       service_type: 'hsia'
       uni_id: '2'
     -
-      ip: '10.90.0.221'
+      ip: '10.93.1.10'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1.65'
@@ -120,7 +120,7 @@ hosts:
       service_type: 'voip'
       uni_id: '1'
     -
-      ip: '10.90.0.222'
+      ip: '10.93.1.11'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1.65'
@@ -135,7 +135,7 @@ hosts:
       service_type: 'voip'
       uni_id: '1'
     -
-      ip: '10.90.0.222'
+      ip: '10.93.1.11'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1.65'
@@ -150,7 +150,7 @@ hosts:
       service_type: 'voip'
       uni_id: '2'
     -
-      ip: '10.90.0.221'
+      ip: '10.93.1.10'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1.55'
@@ -165,7 +165,7 @@ hosts:
       service_type: 'vod'
       uni_id: '1'
     -
-      ip: '10.90.0.222'
+      ip: '10.93.1.11'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1.55'
@@ -180,7 +180,7 @@ hosts:
       service_type: 'vod'
       uni_id: '1'
     -
-      ip: '10.90.0.222'
+      ip: '10.93.1.11'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1.55'
@@ -195,7 +195,7 @@ hosts:
       service_type: 'vod'
       uni_id: '2'
     -
-      ip: '10.90.0.221'
+      ip: '10.93.1.10'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1.55'
@@ -226,7 +226,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip: '10.90.0.223'
+      noroot_ip: '10.93.1.12'
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens6f1
@@ -239,7 +239,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip: '10.90.0.223'
+      noroot_ip: '10.93.1.12'
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens6f1
@@ -262,7 +262,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip: '10.90.0.223'
+      noroot_ip: '10.93.1.12'
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens6f1
@@ -275,7 +275,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip: '10.90.0.223'
+      noroot_ip: '10.93.1.12'
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens6f1
@@ -288,7 +288,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip: '10.90.0.223'
+      noroot_ip: '10.93.1.12'
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens6f1
@@ -321,7 +321,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      bng_ip: '10.90.0.223'
+      bng_ip: '10.93.1.12'
       bng_user: cord
       bng_pass: cord
       dp_iface_name: null
