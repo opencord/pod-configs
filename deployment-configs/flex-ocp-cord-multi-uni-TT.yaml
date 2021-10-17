@@ -28,7 +28,7 @@ nodes:
     user: 'cord'
     pass: 'cord'
   -
-    ip: '10.93.1.13'
+    ip: '10.93.1.12'
     user: 'cord'
     pass: 'cord'
 
@@ -322,7 +322,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip: '10.93.1.13'
+      noroot_ip: '10.93.1.12'
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens6f1
@@ -335,7 +335,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip: '10.93.1.13'
+      noroot_ip: '10.93.1.12'
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens6f1
@@ -348,7 +348,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip: '10.93.1.13'
+      noroot_ip: '10.93.1.12'
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens6f1
@@ -371,7 +371,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip: '10.93.1.13'
+      noroot_ip: '10.93.1.12'
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens6f1
@@ -384,7 +384,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip: '10.93.1.13'
+      noroot_ip: '10.93.1.12'
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens6f1
@@ -397,7 +397,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip: '10.93.1.13'
+      noroot_ip: '10.93.1.12'
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens6f1
@@ -410,7 +410,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip: '10.93.1.13'
+      noroot_ip: '10.93.1.12'
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens6f1
@@ -423,7 +423,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip: '10.93.1.13'
+      noroot_ip: '10.93.1.12'
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens6f1
@@ -456,7 +456,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      bng_ip: '10.93.1.13'
+      bng_ip: '10.93.1.12'
       bng_user: cord
       bng_pass: cord
       dp_iface_name: null
@@ -469,7 +469,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      bng_ip: '10.93.1.13'
+      bng_ip: '10.93.1.12'
       bng_user: cord
       bng_pass: cord
       dp_iface_name: null
@@ -482,7 +482,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      bng_ip: '10.93.1.13'
+      bng_ip: '10.93.1.12'
       bng_user: cord
       bng_pass: cord
       dp_iface_name: null
@@ -495,7 +495,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      bng_ip: '10.93.1.13'
+      bng_ip: '10.93.1.12'
       bng_user: cord
       bng_pass: cord
       dp_iface_name: null
