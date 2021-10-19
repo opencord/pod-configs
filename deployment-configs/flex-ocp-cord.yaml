@@ -35,7 +35,7 @@ nodes:
 fabric_switches:
   -
     mac: 'cc:37:ab:5b:6d:a8'
-    ip: '10.90.0.224'
+    ip: '10.93.1.13'
     user: 'root'
     pass: 'onl'
     bngPort: '31'
@@ -43,8 +43,8 @@ fabric_switches:
 
 olts:
   -
-    ip: '10.90.0.225'
-    sship: '10.90.0.225'
+    ip: '10.93.1.14'
+    sship: '10.93.1.14'
     user: 'root'
     pass: 'onl'
     fortygig: 'true'
@@ -117,7 +117,7 @@ hosts:
       container_name: null
 
 web_power_switch:
-  ip: '10.90.0.229'
+  ip: '10.93.1.15'
   user: 'cord'
   password: 'cord'
   type: 'DLI'
