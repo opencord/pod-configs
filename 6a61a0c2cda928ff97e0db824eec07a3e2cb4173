@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f15ec7c1_11fcddc9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2021-10-19T20:18:22Z",
+      "side": 1,
+      "message": "the k8s config was copied from master branch.",
+      "revId": "6a61a0c2cda928ff97e0db824eec07a3e2cb4173",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
