@@ -1,0 +1,7 @@
+Code-Review+2: Matteo Scandolo <teo@opennetworking.org>
+Verified+1: Matteo Scandolo <teo@opennetworking.org>
+Submitted-by: Girish Gowdra <girish@opennetworking.org>
+Submitted-at: Tue, 19 Oct 2021 21:16:29 +0000
+Reviewed-on: https://gerrit.opencord.org/c/pod-configs/+/28316
+Project: pod-configs
+Branch: refs/heads/voltha-2.8
