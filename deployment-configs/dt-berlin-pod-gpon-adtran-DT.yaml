@@ -100,6 +100,19 @@
         s_tag: 37
         power_switch_port: 4
         uni_id: 1
+      -
+        ip: 10.34.90.40
+        user: community
+        pass: admin
+        dp_iface_name: eth1.7
+        container_type: LXC
+        container_name: SCOMA0305FC1
+        onu: SCOMA0305FC1
+        olt: LBADTN2038AD991
+        c_tag: 7
+        s_tag: 40
+        power_switch_port: 5
+        uni_id: 1
 
     dst:
       -
@@ -130,6 +143,19 @@
         container_name: null
       -
         dp_iface_ip_qinq: 10.37.7.254
+        ip: null
+        user: null
+        pass: null
+        noroot_ip: 10.34.90.43
+        noroot_user: community
+        noroot_pass: admin
+        dp_iface_name: ens3f0
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
+      -
+        dp_iface_ip_qinq: 10.40.7.254
         ip: null
         user: null
         pass: null
