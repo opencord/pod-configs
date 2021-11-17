@@ -120,7 +120,7 @@
         dp_iface_name: eth1.7
         container_type: LXC
         container_name: SCOMA0305F84
-        onu: SCOMA0305F84
+        onu: SCOMa0305f84
         olt: EC1912001814
         c_tag: 7
         s_tag: 39
