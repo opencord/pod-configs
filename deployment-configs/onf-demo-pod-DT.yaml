@@ -50,7 +50,7 @@ olts:
     pass: 'onl'
     fortygig: 'true'
     aggPort: '1'
-    serial: 'EC1904000654'
+    serial: 'EC1721000216'
     oltDebVersion: openolt_asfvolt16-3.4.9-e2a9597f3d690fe3a0ea0df244571dfc9e8c2833-40G-NNI.deb
     board_technology: XGS-PON
 
@@ -70,7 +70,7 @@ hosts:
       container_type: LXC
       container_name: ISKT71e80080
       onu: 'ISKT71e80080'
-      olt: 'EC1904000654'
+      olt: 'EC1721000216'
       c_tag: '11'
       s_tag: '11'
       power_switch_port: 6
@@ -84,7 +84,7 @@ hosts:
       container_type: LXC
       container_name: ALPHe3d1cf9d
       onu: 'ALPHe3d1cf9d'
-      olt: 'EC1904000654'
+      olt: 'EC1721000216'
       c_tag: '22'
       s_tag: '22'
       power_switch_port: 1
