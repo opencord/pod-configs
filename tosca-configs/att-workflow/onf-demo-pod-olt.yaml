@@ -42,7 +42,7 @@ topology_template:
         outer_tpid: "0x8100"
         uplink: "65536"
         nas_id: "NAS_ID"
-        serial_number: "EC1904000654"
+        serial_number: "EC1721000216"
       requirements:
         - volt_service:
             node: service#volt
