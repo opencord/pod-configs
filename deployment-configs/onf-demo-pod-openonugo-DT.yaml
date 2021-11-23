@@ -44,7 +44,7 @@ fabric_switches:
 olts:
   -
     name: 'edgecore'
-    ip: '10.111.0.3'
+    ip: '10.128.99.90'
     sship: '10.128.99.90'
     user: 'root'
     pass: 'onl'
