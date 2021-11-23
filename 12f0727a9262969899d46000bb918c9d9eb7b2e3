@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f7dcac3d_2aa5a6ce",
+        "filename": "deployment-configs/menlo-certification-pod-radisys-1600x-DT.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 1000127
+      },
+      "writtenOn": "2021-11-23T19:27:10Z",
+      "side": 1,
+      "message": "This is 10.90.0.51 and the user is ubuntu and the access is via a public key",
+      "revId": "12f0727a9262969899d46000bb918c9d9eb7b2e3",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
