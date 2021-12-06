@@ -27,6 +27,8 @@ KUBERNETES_CONF: $HOME/.kube/kind-config-voltha-minimal
 nodes:
   -
     ip: 127.0.0.1
+    user: 'cord'
+    pass: 'cord'
 
 # The pipeline requires this even though we don't have a fabric switch
 fabric_switches: []
