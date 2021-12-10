@@ -52,7 +52,7 @@
       fortygig: True
       aggPort: 1
       serial: 722033538840
-      oltDebVersion: openolt_rlt-3200g-w-40g-3.5.1-dev-262b6293cdeda78317dda9d3a6cfab0e7ebfbf05.deb
+      oltDebVersion: openolt_rlt-3200g-w-40g-3.6.2-cdd5e5f29842b7b51a277958031de720d0dc9407.deb
       board_technology: GPON
 
   hosts:
