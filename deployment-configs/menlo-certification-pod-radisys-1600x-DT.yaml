@@ -52,7 +52,7 @@
       fortygig: True
       aggPort: 2
       serial: 722033038194
-      oltDebVersion: openolt_rlt-1600x-w-40g-3.5.1-dev-2171f0eddae3c531aeac244a7d6f122f20264d2c.deb
+      oltDebVersion: openolt_rlt-1600x-w-40g-3.6.2-cdd5e5f29842b7b51a277958031de720d0dc9407.deb
       board_technology: GPON
 
   hosts:
