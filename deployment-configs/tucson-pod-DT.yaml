@@ -41,6 +41,7 @@ olts:
     pass: onl
     fortygig: True
     serial: EC1925000157
+    board_technology: XGS-PON
 
 hosts:
   src:
