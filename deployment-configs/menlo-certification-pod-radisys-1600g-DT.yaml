@@ -28,10 +28,6 @@
       ip: '10.90.0.240'
       user: 'cord'
       pass: 'cord'
-    -
-      ip: '10.90.0.241'
-      user: 'cord'
-      pass: 'cord'
 
   fabric_switches: []
   # The switch is shared across 3 PODs, thus is externally controlled
