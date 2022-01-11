@@ -25,11 +25,7 @@
 # This tells the control node how to reach the Kubernetes nodes.
   nodes:
     -
-      ip: '10.90.0.240'
-      user: 'cord'
-      pass: 'cord'
-    -
-      ip: '10.90.0.241'
+      ip: '10.90.0.242'
       user: 'cord'
       pass: 'cord'
 
