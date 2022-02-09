@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d123602b_15475365",
+        "filename": "deployment-configs/dt-berlin-pod-gpon-adtran-dmi.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2022-02-09T10:34:36Z",
+      "side": 1,
+      "message": "remove useless spaces",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 2
+      },
+      "revId": "f96e7599e4bca279b69c63cbb196f56a28935708",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
