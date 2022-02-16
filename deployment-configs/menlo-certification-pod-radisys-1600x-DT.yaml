@@ -94,6 +94,19 @@
         s_tag: 91
         power_switch_port: 1
         uni_id: 1
+      -
+        ip: 10.90.0.51
+        user: ubuntu
+        pass: null
+        dp_iface_name: eth1.92
+        container_type: LXC
+        container_name: ZYWN67C18B52
+        onu: ZYWN67c18b52
+        olt: 722033038194
+        c_tag: 92
+        s_tag: 93
+        power_switch_port: null
+        uni_id: 1
 
     dst:
       # 1600X OLT
@@ -125,6 +138,19 @@
         container_name: null
       -
         dp_iface_ip_qinq: 10.91.90.254
+        ip: null
+        user: null
+        pass: null
+        noroot_ip: 10.90.0.241
+        noroot_user: cord
+        noroot_pass: cord
+        dp_iface_name: enp3s0d1
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
+      -
+        dp_iface_ip_qinq: 10.93.92.254
         ip: null
         user: null
         pass: null
