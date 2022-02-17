@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "87a16139_a192da15",
+        "filename": "deployment-configs/menlo-certification-pod-radisys-1600x-DT.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2022-02-17T04:56:43Z",
+      "side": 1,
+      "message": "Imo, you should set power_switch_port to null here, else the read could fail in tests as per your patch https://gerrit.opencord.org/c/voltha-system-tests/+/31059/1/tests/dt-workflow/Voltha_DT_FailureScenarios.robot#95",
+      "range": {
+        "startLine": 97,
+        "startChar": 0,
+        "endLine": 108,
+        "endChar": 17
+      },
+      "revId": "543c7f64668c7fd55c28476118fc3df89fcd8847",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
