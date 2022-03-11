@@ -75,46 +75,20 @@
     src:
       #GPON ONU
       -
-        ip: 10.34.90.42
+        ip: 10.34.90.43
         user: community
         pass: admin
         dp_iface_name: eth1.7
         container_type: LXC
-        container_name: voltha-client-gpon-3
-        onu: SCOM00001c96
+        container_name: voltha-client-gpon-1
+        onu: SCOM00001c82
         olt: EC1912001814
         c_tag: 7
-        s_tag: 33
-        power_switch_port: 4
-        uni_id: 1
-      -
-        ip: 10.34.90.42
-        user: community
-        pass: admin
-        dp_iface_name: eth1.7
-        container_type: LXC
-        container_name: voltha-client-gpon-4
-        onu: SCOM00001c0b
-        olt: EC1912001814
-        c_tag: 7
-        s_tag: 34
-        power_switch_port: 7
-        uni_id: 1
-      -
-        ip: 10.34.90.40
-        user: community
-        pass: admin
-        dp_iface_name: eth1.7
-        container_type: LXC
-        container_name: SCOMA0305F84
-        onu: SCOMa0305f84
-        olt: EC1912001814
-        c_tag: 7
-        s_tag: 39
-        power_switch_port: 7
+        s_tag: 31
+        power_switch_port: 1
         uni_id: 1
 
-        #XGSPON ONU
+      #XGSPON ONU
       -
         ip: 127.0.0.1
         user: community
@@ -144,34 +118,11 @@
 
     dst:
       -
-        dp_iface_ip_qinq: 10.33.7.254
+        dp_iface_ip_qinq: 10.31.7.254
         ip: null
         user: null
         pass: null
         dp_iface_name: null
-        dp_iface_ip: null
-        dp_iface_gateway: null
-        container_type: null
-        container_name: null
-      -
-        dp_iface_ip_qinq: 10.34.7.254
-        ip: null
-        user: null
-        pass: null
-        dp_iface_name: null
-        dp_iface_ip: null
-        dp_iface_gateway: null
-        container_type: null
-        container_name: null
-      -
-        dp_iface_ip_qinq: 10.39.7.254
-        ip: null
-        user: null
-        pass: null
-        noroot_ip: 10.34.90.43
-        noroot_user: community
-        noroot_pass: admin
-        dp_iface_name: ens3f0
         dp_iface_ip: null
         dp_iface_gateway: null
         container_type: null
