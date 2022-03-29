@@ -1,4 +1,4 @@
----
+  ---
 
   # Copyright 2020-present Open Networking Foundation
   #
@@ -22,10 +22,10 @@
   OLT_PORT: 9191
   KUBERNETES_CONF: $HOME/.kube/kind-config-voltha-minimal
 
-# This tells the control node how to reach the Kubernetes nodes.
+  # This tells the control node how to reach the Kubernetes nodes.
   nodes:
     -
-      ip: '10.34.90.40'
+      ip: '10.34.90.43'
       user: 'community'
       pass: 'admin'
     -
@@ -80,7 +80,7 @@
         pass: admin
         dp_iface_name: eth1.7
         container_type: LXC
-        container_name: voltha-client-gpon-1
+        container_name: SCOM00001c82
         onu: SCOM00001c82
         olt: EC1912001814
         c_tag: 7
@@ -95,7 +95,7 @@
         pass: admin
         dp_iface_name: eth1.7
         container_type: LXC
-        container_name: voltha-client
+        container_name: ALPHe3d1cf5c
         onu: ALPHe3d1cf5c
         olt: EC1729003539
         c_tag: 7
@@ -108,7 +108,7 @@
         pass: admin
         dp_iface_name: eth1.7
         container_type: LXC
-        container_name: voltha-client-dt
+        container_name: ALPHe3a69d03
         onu: ALPHe3a69d03
         olt: EC1729003539
         c_tag: 7
