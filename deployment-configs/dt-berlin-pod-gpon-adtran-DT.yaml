@@ -25,7 +25,7 @@
 # This tells the control node how to reach the Kubernetes nodes.
   nodes:
     -
-      ip: '10.34.90.40'
+      ip: '10.34.90.43'
       user: 'community'
       pass: 'admin'
     -
@@ -101,7 +101,7 @@
         power_switch_port: 4
         uni_id: 1
       -
-        ip: 10.34.90.40
+        ip: 10.34.90.44
         user: community
         pass: admin
         dp_iface_name: eth1.7
