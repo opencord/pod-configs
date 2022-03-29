@@ -25,7 +25,7 @@ KUBERNETES_CONF: $HOME/.kube/kind-config-voltha-minimal
 # This tells the control node how to reach the Kubernetes nodes.
 nodes:
   -
-    ip: '10.34.90.40'
+    ip: '10.34.90.43'
     user: 'community'
     pass: 'admin'
   -
