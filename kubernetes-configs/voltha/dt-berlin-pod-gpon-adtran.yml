@@ -1,3 +1,4 @@
+<<<<<<< HEAD   (90c48d Updating k8s config for berlin pod)
 # Copyright 2019 Ciena Corporation
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -72,3 +73,5 @@ atomix:
   persistence:
     enabled: false
 
+=======
+>>>>>>> CHANGE (c1b4e2 Renaming all config from dt-berlin-pod to berlin-community-p)

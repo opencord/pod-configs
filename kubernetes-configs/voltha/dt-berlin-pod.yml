@@ -1,3 +1,4 @@
+<<<<<<< HEAD   (90c48d Updating k8s config for berlin pod)
 # Copyright 2019 Ciena Corporation
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -71,3 +72,5 @@ atomix:
 kafka_broker: 'voltha-kafka.voltha.svc.cluster.local:9092'
 pon_ports: 1
 onus_per_pon_port: 1
+=======
+>>>>>>> CHANGE (c1b4e2 Renaming all config from dt-berlin-pod to berlin-community-p)
