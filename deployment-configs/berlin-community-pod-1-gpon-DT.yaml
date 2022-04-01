@@ -13,9 +13,9 @@
   # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   # See the License for the specific language governing permissions and
   # limitations under the License.
-  
+
   # Automated deployment configuration for Tucson pod
-  
+
   # Change default values in tests
   ONOS_REST_PORT: 30120
   ONOS_SSH_PORT: 30115
@@ -36,7 +36,7 @@
       ip: '10.34.90.42'
       user: 'community'
       pass: 'admin'
-  
+
   fabric_switches:
     -
       mac: '8c:ea:1b:a7:29:72'
@@ -45,7 +45,7 @@
       pass: onl
       bngPort: 157
       device_id: 'of:0000000000000001'
-  
+
   olts:
   # Gpon OLT
     -
@@ -58,7 +58,7 @@
       serial: EC1912001823
       oltDebVersion: openolt_asgvolt64-3.4.9-e2a9597f3d690fe3a0ea0df244571dfc9e8c2833-100G-NNI.deb
       board_technology: GPON
- 
+
   hosts:
     src:
       #GPON ONU
@@ -83,7 +83,7 @@
         container_type: LXC
         container_name: voltha-client-gpon-2
         onu: SCOM00001c89
-        olt: EC1912001814
+        olt: EC1912001823
         c_tag: 7
         s_tag: 32
         power_switch_port: 2
@@ -96,7 +96,7 @@
         container_type: LXC
         container_name: voltha-client-gpon-3
         onu: SCOM00001c96
-        olt: EC1912001814
+        olt: EC1912001823
         c_tag: 7
         s_tag: 33
         power_switch_port: 4
@@ -141,10 +141,9 @@
         dp_iface_gateway: null
         container_type: null
         container_name: null
-  
+
   web_power_switch:
     ip: '10.34.90.48'
     user: 'admin'
     password: 'secret'
     type: 'EPC'
-  
