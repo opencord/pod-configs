@@ -55,8 +55,13 @@
       pass: onl
       fortygig: False
       aggPort: 2
+<<<<<<< HEAD   (c1b4e2 Renaming all config from dt-berlin-pod to berlin-community-p)
       serial: EC1912001814
       oltDebVersion: openolt_asgvolt64-3.4.9-e2a9597f3d690fe3a0ea0df244571dfc9e8c2833-100G-NNI.deb
+=======
+      serial: EC1912001823
+      oltDebVersion: openolt_asgvolt64-3.6.2-51d1824e8c049909fd516c7ce3c5f834b9649152-100G-NNI.deb
+>>>>>>> CHANGE (19d91f Updating OLT serial in Berlin)
       board_technology: GPON
 
   # XGS-PON OLT
@@ -82,7 +87,7 @@
         container_type: LXC
         container_name: SCOM00001c82
         onu: SCOM00001c82
-        olt: EC1912001814
+        olt: EC1912001823
         c_tag: 7
         s_tag: 31
         power_switch_port: 1
