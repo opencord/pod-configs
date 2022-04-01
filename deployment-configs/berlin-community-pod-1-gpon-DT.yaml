@@ -55,7 +55,7 @@
       pass: onl
       fortygig: False
       aggPort: 2
-      serial: EC1912001814
+      serial: EC1912001823
       oltDebVersion: openolt_asgvolt64-3.6.2-51d1824e8c049909fd516c7ce3c5f834b9649152-100G-NNI.deb
       board_technology: GPON
  
@@ -70,7 +70,7 @@
         container_type: LXC
         container_name: SCOM00001c82
         onu: SCOM00001c82
-        olt: EC1912001814
+        olt: EC1912001823
         c_tag: 7
         s_tag: 31
         power_switch_port: 1
