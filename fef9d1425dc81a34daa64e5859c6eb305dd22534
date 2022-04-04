@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "34a32887_ee71a741",
+        "filename": "deployment-configs/berlin-community-pod-1-multi-olt-DT.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2022-04-04T07:14:09Z",
+      "side": 1,
+      "message": "This OLT is not mentioned above in the `olts` section.",
+      "range": {
+        "startLine": 98,
+        "startChar": 13,
+        "endLine": 98,
+        "endChar": 25
+      },
+      "revId": "fef9d1425dc81a34daa64e5859c6eb305dd22534",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "47d6a74b_093db540",
+        "filename": "deployment-configs/berlin-community-pod-1-multi-olt-DT.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2022-04-04T07:14:09Z",
+      "side": 1,
+      "message": "Same here.",
+      "range": {
+        "startLine": 111,
+        "startChar": 13,
+        "endLine": 111,
+        "endChar": 25
+      },
+      "revId": "fef9d1425dc81a34daa64e5859c6eb305dd22534",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
