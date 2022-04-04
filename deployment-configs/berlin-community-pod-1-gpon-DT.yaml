@@ -81,7 +81,7 @@
         pass: admin
         dp_iface_name: eth1.7
         container_type: LXC
-        container_name: voltha-client-gpon-2
+        container_name: SCOM00001c89
         onu: SCOM00001c89
         olt: EC1912001823
         c_tag: 7
@@ -94,7 +94,7 @@
         pass: admin
         dp_iface_name: eth1.7
         container_type: LXC
-        container_name: voltha-client-gpon-3
+        container_name: SCOM00001c96
         onu: SCOM00001c96
         olt: EC1912001823
         c_tag: 7
