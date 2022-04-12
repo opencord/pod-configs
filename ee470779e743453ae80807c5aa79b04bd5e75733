@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "08568655_64bac24e",
+        "filename": "deployment-configs/flex-ocp-cord.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2022-04-12T13:45:57Z",
+      "side": 1,
+      "message": "In Berlin I have the OLTs on 2 power adapters, any way we can support this use case as well ? (maybe a jira for when we need to do it in Berlin)",
+      "revId": "ee470779e743453ae80807c5aa79b04bd5e75733",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
