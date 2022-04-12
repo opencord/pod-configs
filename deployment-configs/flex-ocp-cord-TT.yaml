@@ -52,6 +52,7 @@ olts:
     serial: 'EC1838000853'
     oltDebVersion: openolt_asfvolt16-3.6.2-602bf0a2b75e27e241cb73d7daf1e2c883539102-40G-NNI.deb
     board_technology: XGS-PON
+    power_switch_port: 6
 
 onus:
   -
