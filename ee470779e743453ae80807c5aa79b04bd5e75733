@@ -16,6 +16,23 @@
       "message": "In Berlin I have the OLTs on 2 power adapters, any way we can support this use case as well ? (maybe a jira for when we need to do it in Berlin)",
       "revId": "ee470779e743453ae80807c5aa79b04bd5e75733",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6d27c421_d4998976",
+        "filename": "deployment-configs/onf-demo-pod-openonugo-DT.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2022-04-12T13:46:29Z",
+      "side": 1,
+      "message": "this file can be deleted entirely, those jobs are not existent anymore",
+      "revId": "ee470779e743453ae80807c5aa79b04bd5e75733",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
