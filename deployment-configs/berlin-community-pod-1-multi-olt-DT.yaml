@@ -90,7 +90,7 @@
 
       #XGSPON ONU
       -
-        ip: 127.0.0.1
+        ip: 10.34.90.43
         user: community
         pass: admin
         dp_iface_name: eth1.7
@@ -103,7 +103,7 @@
         power_switch_port: 6
         uni_id: 1
       -
-        ip: 127.0.0.1
+        ip: 10.34.90.43
         user: community
         pass: admin
         dp_iface_name: eth1.7
