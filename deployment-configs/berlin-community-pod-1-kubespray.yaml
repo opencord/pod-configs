@@ -74,12 +74,12 @@ hosts:
   src:
     #XGSPON ONU
     -
-      ip: 127.0.0.1
+      ip: 10.34.90.43
       user: community
       pass: admin
       dp_iface_name: eno3
-      container_type: null
-      container_name: null
+      container_type: lxc
+      container_name: ALPHe3a69d03
       onu: ALPHe3d1cf5c
       c_tag: 11
       s_tag: 11
