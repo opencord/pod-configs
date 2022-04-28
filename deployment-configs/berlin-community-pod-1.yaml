@@ -64,12 +64,12 @@ hosts:
   src:
     #XGSPON ONU
     -
-      ip: 127.0.0.1
+      ip: 10.34.90.43
       user: community
       pass: admin
       dp_iface_name: eth1
       container_type: LXC
-      container_name: voltha-client
+      container_name: ALPHe3d1cf5c
       onu: ALPHe3d1cf5c
       olt: EC1729003539
       c_tag: 11
@@ -77,12 +77,12 @@ hosts:
       power_switch_port: 6
       uni_id: 1
     -
-      ip: 127.0.0.1
+      ip: 10.34.90.43
       user: community
       pass: admin
       dp_iface_name: eth1
       container_type: LXC
-      container_name: voltha-client-dt
+      container_name: ALPHe3a69d03
       onu: ALPHe3a69d03
       olt: EC1729003539
       c_tag: 7
