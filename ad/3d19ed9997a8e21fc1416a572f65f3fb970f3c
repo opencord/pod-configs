@@ -1,0 +1,8 @@
+Code-Review+1: Hardik Windlass <hardik.windlass@intel.com>
+Code-Review+2: Andrea Campanella <andrea.campanella@intel.com>
+Verified+1: Andrea Campanella <andrea.campanella@intel.com>
+Submitted-by: Andrea Campanella <andrea.campanella@intel.com>
+Submitted-at: Fri, 29 Apr 2022 09:15:56 +0000
+Reviewed-on: https://gerrit.opencord.org/c/pod-configs/+/32336
+Project: pod-configs
+Branch: refs/heads/voltha-2.8
