@@ -20,6 +20,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "cd2d1aa2_0c4c2b6e",
+        "filename": "deployment-configs/berlin-community-pod-1-gpon-fttb-DT.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2022-05-13T12:51:23Z",
+      "side": 1,
+      "message": "take that back, should be just eth1, it\u0027s the DPU that tags it",
+      "parentUuid": "04643f14_0e960bea",
+      "revId": "7181270c338cdf9f06493ec62bec331eb912985f",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "33146758_5d388208",
         "filename": "deployment-configs/berlin-community-pod-1-gpon-fttb-DT.yaml",
         "patchSetId": 1
