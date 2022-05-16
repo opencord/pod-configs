@@ -71,6 +71,24 @@
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5d63ddc8_b72036d1",
+        "filename": "deployment-configs/berlin-community-pod-1-gpon-fttb-DT.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2022-05-16T10:05:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6a0509fe_48bf8371",
+      "revId": "7181270c338cdf9f06493ec62bec331eb912985f",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "33146758_5d388208",
