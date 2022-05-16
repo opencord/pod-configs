@@ -74,13 +74,13 @@
         power_switch_port: 8
         service:
           -
-            name: FTTB_SUBSCRIBER_TRAFFIC
-            c_tag: '101'
-            s_tag: '3101'
-          -
             name: DPU_MGMT_TRAFFIC
             c_tag: '4090'
             s_tag: '60'
+          -
+            name: FTTB_SUBSCRIBER_TRAFFIC
+            c_tag: '101'
+            s_tag: '3101'
         uni_id: 1
     dst:
       -
