@@ -47,12 +47,12 @@
       device_id: 'of:0000000000000001'
   
   olts:
-  # Gpon OLT
+  # XGSPON OLT
     -
       ip:  10.34.90.53
       sship:  10.34.90.53
       fortygig: False
-      aggPort: 4
+      aggPort: 6
       user: root
       pass: onl
       serial: S210Z14009247
@@ -61,9 +61,9 @@
  
   hosts:
     src:
-      #xgspond ONU
+      #xgspon ONU
       -
-        ip: 10.34.90.41
+        ip: 10.34.90.46
         user: community
         pass: admin
         dp_iface_name: eth1.7
