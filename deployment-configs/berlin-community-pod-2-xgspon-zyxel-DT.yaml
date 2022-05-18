@@ -69,7 +69,7 @@
         dp_iface_name: eth1.7
         container_type: LXC
         container_name: ZYXE8CAC752C
-        onu: ZYXE8CAC752C
+        onu: ZYXE8cac752c
         olt: S210Z14009247
         c_tag: 7
         s_tag: 41

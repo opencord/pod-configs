@@ -69,7 +69,7 @@
         dp_iface_name: eth1.7
         container_type: LXC
         container_name: SCOM00001C90
-        onu: SCOM00001C90
+        onu: SCOM00001c90
         olt: S210Z14009247
         c_tag: 7
         s_tag: 42
@@ -82,7 +82,7 @@
         dp_iface_name: eth1.7
         container_type: LXC
         container_name: SCOMA030600F
-        onu: SCOMA030600F
+        onu: SCOMa030600f
         olt: S210Z14009247
         c_tag: 7
         s_tag: 43
