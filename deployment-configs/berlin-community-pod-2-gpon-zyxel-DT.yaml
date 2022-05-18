@@ -52,7 +52,7 @@
       ip:  10.34.90.53
       sship:  10.34.90.53
       fortygig: False
-      aggPort: 4
+      aggPort: 6
       user: root
       pass: onl
       serial: S210Z14009247
@@ -63,7 +63,7 @@
     src:
       #GPON ONU
       -
-        ip: 10.34.90.41
+        ip: 10.34.90.45
         user: community
         pass: admin
         dp_iface_name: eth1.7
@@ -76,7 +76,7 @@
         power_switch_port: 6
         uni_id: 1
       -
-        ip: 10.34.90.41
+        ip: 10.34.90.45
         user: community
         pass: admin
         dp_iface_name: eth1.7
