@@ -41,18 +41,18 @@ nodes:
     user: 'community'
     pass: 'admin'
 
-fabric_switches:
-  -
-    mac: '??'
-    ip: 10.34.90.55
-    user: root
-    pass: onl
-    bngPort: 32
-    #XGSPON
-    oltPort: 1
-    #GPON
-    #oltPort: 2
-    device_id: 'of:0000000000000001'
+fabric_switches: []
+#  -
+#    mac: '??'
+#    ip: 10.34.90.55
+#    user: root
+#    pass: onl
+#    bngPort: 32
+#    #XGSPON
+#    oltPort: 1
+#    #GPON
+#    #oltPort: 2
+#    device_id: 'of:0000000000000001'
 
 olts:
 # XGS-PON OLT

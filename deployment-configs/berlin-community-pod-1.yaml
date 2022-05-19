@@ -37,14 +37,15 @@ nodes:
     user: 'community'
     pass: 'admin'
 
-fabric_switches:
-  -
-    mac: '8c:ea:1b:a7:29:72'
-    ip: 10.34.90.55
-    user: root
-    pass: onl
-    bngPort: 157
-    device_id: 'of:0000000000000001'
+fabric_switches: []
+  # The switch is shared across 2 PODs, thus is externally controlled
+  #-
+  #  mac: '8c:ea:1b:a7:29:72'
+  #  ip: 10.34.90.55
+  #  user: root
+  #  pass: onl
+  #  bngPort: 157
+  #  device_id: 'of:0000000000000001'
 
 olts:
 # XGS-PON OLT
