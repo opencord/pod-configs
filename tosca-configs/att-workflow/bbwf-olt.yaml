@@ -51,7 +51,7 @@ topology_template:
     #   properties:
     #     name: Adtran OLT
     #     device_type: adtran_olt
-    #     host: 192.168.100.112
+    #     host: 10.35.90.42
     #     port: 830
     #     switch_datapath_id: of:0000000000000001
     #     switch_port: "50"

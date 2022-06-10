@@ -20,22 +20,22 @@ kube_config: '/var/k8.conf'
 
 nodes:
   -
-    ip: '10.128.100.70'
+    ip: '10.35.90.46'
     user: 'cord'
     pass: 'cord'
   -
-    ip: '10.128.100.71'
+    ip: '10.35.90.47'
     user: 'cord'
     pass: 'cord'
   -
-    ip: '10.128.100.72'
+    ip: '10.35.90.48'
     user: 'cord'
     pass: 'cord'
 
 fabric_switches:
   -
     mac: 'cc:37:ab:61:80:ca'
-    ip: '10.128.100.80'
+    ip: '10.35.90.44'
     user: 'root'
     pass: 'onl'
     bngPort: '31'
@@ -44,8 +44,8 @@ fabric_switches:
 olts:
   -
     name: 'edgecore'
-    ip: '10.128.99.90'
-    sship: '10.128.99.90'
+    ip: '10.35.90.45'
+    sship: '10.35.90.45'
     user: 'root'
     pass: 'onl'
     fortygig: 'true'
@@ -64,7 +64,7 @@ onus:
 hosts:
   src:
     -
-      ip: '10.128.100.72'
+      ip: '10.35.90.48'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1.11'
@@ -78,7 +78,7 @@ hosts:
       onu_type: 'iskratel'
       uni_id: '1'
     -
-      ip: '10.128.100.71'
+      ip: '10.35.90.47'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1.22'
@@ -98,7 +98,7 @@ hosts:
       pass: null
       dp_iface_name: null
       dp_iface_ip_qinq: '10.11.11.254'
-      noroot_ip: 10.128.100.70
+      noroot_ip: 10.35.90.46
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens6f0
@@ -112,7 +112,7 @@ hosts:
       pass: null
       dp_iface_name: null
       dp_iface_ip_qinq: '10.22.22.254'
-      noroot_ip: '10.128.100.70'
+      noroot_ip: '10.35.90.46'
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens6f0
@@ -122,7 +122,7 @@ hosts:
       container_name: null
 
 web_power_switch:
-  ip: '10.128.100.75'
+  ip: '10.35.90.49'
   user: 'cord'
   password: 'cord'
   type: 'DLI'
