@@ -23,11 +23,11 @@
       user: 'cord'
       pass: 'cord'
     -
-      ip: '10.128.100.71'
+      ip: '10.35.90.47'
       user: 'cord'
       pass: 'cord'
     -
-      ip: '10.128.100.72'
+      ip: '10.35.90.48'
       user: 'cord'
       pass: 'cord'
 
@@ -58,7 +58,7 @@
     src:
       #GPON ONU
       -
-        ip: 10.90.0.51
+        ip: 10.35.90.27
         user: ubuntu
         pass: null
         dp_iface_name: eth1.7

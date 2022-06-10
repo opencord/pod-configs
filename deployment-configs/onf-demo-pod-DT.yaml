@@ -24,11 +24,11 @@ nodes:
     user: 'cord'
     pass: 'cord'
   -
-    ip: '10.128.100.71'
+    ip: '10.35.90.47'
     user: 'cord'
     pass: 'cord'
   -
-    ip: '10.128.100.72'
+    ip: '10.35.90.48'
     user: 'cord'
     pass: 'cord'
 
@@ -64,7 +64,7 @@ onus:
 hosts:
   src:
     -
-      ip: '10.128.100.72'
+      ip: '10.35.90.48'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1.11'
@@ -78,7 +78,7 @@ hosts:
       onu_type: 'iskratel'
       uni_id: '1'
     -
-      ip: '10.128.100.71'
+      ip: '10.35.90.47'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1.22'
