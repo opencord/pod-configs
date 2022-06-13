@@ -19,7 +19,7 @@
   # This tells the control node how to reach the Kubernetes nodes.
   nodes:
     -
-      ip: '10.128.100.70'
+      ip: '10.35.90.46'
       user: 'cord'
       pass: 'cord'
     -
@@ -34,7 +34,7 @@
   fabric_switches:
     -
       mac: 'cc:37:ab:61:80:ca'
-      ip: '10.128.100.80'
+      ip: '10.35.90.44'
       user: 'root'
       pass: 'onl'
       bngPort: '31'
@@ -76,7 +76,7 @@
         ip: null
         user: null
         pass: null
-        noroot_ip: '10.128.100.70'
+        noroot_ip: '10.35.90.46'
         noroot_user: cord
         noroot_pass: cord
         dp_iface_name: ens6f0
