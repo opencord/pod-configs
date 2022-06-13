@@ -90,7 +90,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip:10.35.90.43
+      noroot_ip: 10.35.90.43
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens1f0
@@ -103,7 +103,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip:10.35.90.43
+      noroot_ip: 10.35.90.43
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens1f0
