@@ -120,7 +120,7 @@ hosts:
       container_name: null
 
 web_power_switch:
-  ip: '10.128.100.75'
+  ip: '10.35.90.49'
   user: 'cord'
   password: 'cord'
   type: 'DLI'
