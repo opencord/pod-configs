@@ -33,7 +33,7 @@
   # The switch is shared across 3 PODs, thus is externally controlled
   #   -
   #     mac: '8c:ea:1b:a7:29:72'
-  #     ip: 10.90.0.243
+  #     ip: 10.35.90.17
   #     user: root
   #     pass: onl
   #     bngPort: 31
@@ -56,7 +56,7 @@
     src:
       # 1600X OLT
       -
-        ip: 10.90.0.240
+        ip: 10.35.90.18
         user: cord
         pass: cord
         dp_iface_name: eth1.88
@@ -164,7 +164,7 @@
         container_name: null
 
   web_power_switch:
-    ip: '10.90.0.251'
+    ip: '10.35.90.22'
     user: 'cord'
     password: 'cord'
     type: 'DLI'
