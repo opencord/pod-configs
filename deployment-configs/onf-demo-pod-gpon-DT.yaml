@@ -57,9 +57,15 @@
     src:
       #GPON ONU
       -
+<<<<<<< HEAD   (0f6172 change deployment config on berlin pod to use external onos )
         ip: 10.90.0.51
         user: ubuntu
         pass: null
+=======
+        ip: 10.35.90.27
+        user: cord
+        pass: cord
+>>>>>>> CHANGE (522dfc - Update dev pod login credentials - Disable RG for SCOM0000)
         dp_iface_name: eth1.7
         container_type: LXC
         container_name: SCOM00001ca7

@@ -55,6 +55,7 @@
   hosts:
     src:
       # 3200G ONU
+<<<<<<< HEAD   (0f6172 change deployment config on berlin pod to use external onos )
       -
         ip: 10.90.0.241
         user: cord
@@ -68,6 +69,21 @@
         s_tag: 11
         power_switch_port: 2
         uni_id: 1
+=======
+#      -
+#        ip: 10.35.90.20
+#        user: cord
+#        pass: cord
+#        dp_iface_name: eth1.111
+#        container_type: LXC
+#        container_name: SCOM00001c7f
+#        onu: SCOM00001c7f
+#        olt: 722033538840
+#        c_tag: 111
+#        s_tag: 11
+#        power_switch_port: 2
+#        uni_id: 1
+>>>>>>> CHANGE (522dfc - Update dev pod login credentials - Disable RG for SCOM0000)
 
       - ip: 10.90.0.240
         user: cord
@@ -97,6 +113,7 @@
 
     dst:
       # 3200G OLT
+<<<<<<< HEAD   (0f6172 change deployment config on berlin pod to use external onos )
       -
         dp_iface_ip_qinq: 10.11.11.254
         ip: null
@@ -110,6 +127,21 @@
         dp_iface_gateway: null
         container_type: null
         container_name: null
+=======
+#      -
+#        dp_iface_ip_qinq: 10.11.11.254
+#        ip: null
+#        user: null
+#        pass: null
+#        noroot_ip: 10.35.90.20
+#        noroot_user: cord
+#        noroot_pass: cord
+#        dp_iface_name: enp3s0d1
+#        dp_iface_ip: null
+#        dp_iface_gateway: null
+#        container_type: null
+#        container_name: null
+>>>>>>> CHANGE (522dfc - Update dev pod login credentials - Disable RG for SCOM0000)
 
       - dp_iface_ip_qinq: 10.54.41.254
         ip: null
