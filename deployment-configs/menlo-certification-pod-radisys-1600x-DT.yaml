@@ -96,8 +96,8 @@
         uni_id: 1
       -
         ip: 10.35.90.27
-        user: ubuntu
-        pass: null
+        user: cord
+        pass: cord
         dp_iface_name: eth1.92
         container_type: LXC
         container_name: ZYWN67C18B52
