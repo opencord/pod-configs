@@ -26,7 +26,7 @@ KUBERNETES_CONF: $HOME/.kube/kind-config-voltha-minimal
 # Since we're running kind-voltha, the nodes are reached on localhost.
 nodes:
   -
-    ip: 127.0.0.1
+    ip: 10.35.90.27
     user: 'cord'
     pass: 'cord'
 
@@ -35,8 +35,8 @@ fabric_switches: []
 
 olts:
   -
-    ip: 192.168.2.22
-    sship: 192.168.2.22
+    ip: 10.35.90.28
+    sship: 10.35.90.28
     user: root
     pass: onl
     fortygig: True
@@ -57,7 +57,7 @@ hosts:
       c_tag: 11
       s_tag: 11
       onu_type: 'alpha'
-      power_switch_port: 2
+#      power_switch_port: 2
       uni_id: 1
     -
       ip: 127.0.0.1
@@ -71,7 +71,7 @@ hosts:
       c_tag: 12
       s_tag: 11
       onu_type: 'iskratel'
-      power_switch_port: 3
+#      power_switch_port: 3
       uni_id: 1
     -
       ip: 127.0.0.1
@@ -85,7 +85,7 @@ hosts:
       c_tag: 21
       s_tag: 21
       onu_type: 'alpha'
-      power_switch_port: 4
+#      power_switch_port: 4
       uni_id: 1
 
   dst:
