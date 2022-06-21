@@ -55,19 +55,19 @@
   hosts:
     src:
       # 3200G ONU
-#      -
-#        ip: 10.35.90.20
-#        user: cord
-#        pass: cord
-#        dp_iface_name: eth1.111
-#        container_type: LXC
-#        container_name: SCOM00001c7f
-#        onu: SCOM00001c7f
-#        olt: 722033538840
-#        c_tag: 111
-#        s_tag: 11
-#        power_switch_port: 2
-#        uni_id: 1
+      -
+        ip: 10.35.90.20
+        user: cord
+        pass: cord
+        dp_iface_name: eth1.111
+        container_type: LXC
+        container_name: SCOM00001c7f
+        onu: SCOM00001c7f
+        olt: 722033538840
+        c_tag: 111
+        s_tag: 11
+        power_switch_port: 2
+        uni_id: 1
 
       - ip: 10.35.90.18
         user: cord
@@ -97,19 +97,19 @@
 
     dst:
       # 3200G OLT
-#      -
-#        dp_iface_ip_qinq: 10.11.11.254
-#        ip: null
-#        user: null
-#        pass: null
-#        noroot_ip: 10.35.90.20
-#        noroot_user: cord
-#        noroot_pass: cord
-#        dp_iface_name: enp3s0d1
-#        dp_iface_ip: null
-#        dp_iface_gateway: null
-#        container_type: null
-#        container_name: null
+      -
+        dp_iface_ip_qinq: 10.11.11.254
+        ip: null
+        user: null
+        pass: null
+        noroot_ip: 10.35.90.20
+        noroot_user: cord
+        noroot_pass: cord
+        dp_iface_name: enp3s0d1
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
 
       - dp_iface_ip_qinq: 10.54.41.254
         ip: null
