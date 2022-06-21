@@ -56,27 +56,27 @@ olts:
     power_switch_port: 2
 
 onus:
-  -
-    serial: 'ISKT71e80080'
+#  -
+#    serial: 'ISKT71e80080'
   -
     serial: 'ALPHe3d1cf9d'
 
 hosts:
   src:
-    -
-      ip: '10.35.90.48'
-      user: 'cord'
-      pass: 'cord'
-      dp_iface_name: 'eth1.11'
-      container_type: LXC
-      container_name: ISKT71e80080
-      onu: 'ISKT71e80080'
-      olt: 'EC1721000216'
-      c_tag: '11'
-      s_tag: '11'
-      power_switch_port: 6
-      onu_type: 'iskratel'
-      uni_id: '1'
+#    -
+#      ip: '10.35.90.48'
+#      user: 'cord'
+#      pass: 'cord'
+#      dp_iface_name: 'eth1.11'
+#      container_type: LXC
+#      container_name: ISKT71e80080
+#      onu: 'ISKT71e80080'
+#      olt: 'EC1721000216'
+#      c_tag: '11'
+#      s_tag: '11'
+#      power_switch_port: 6
+#      onu_type: 'iskratel'
+#      uni_id: '1'
     -
       ip: '10.35.90.47'
       user: 'cord'
@@ -92,20 +92,20 @@ hosts:
       onu_type: 'alpha'
       uni_id: '1'
   dst:
-    -
-      ip: null
-      user: null
-      pass: null
-      dp_iface_name: null
-      dp_iface_ip_qinq: '10.11.11.254'
-      noroot_ip: 10.35.90.46
-      noroot_user: cord
-      noroot_pass: cord
-      dp_iface_name: ens6f0
-      dp_iface_ip: null
-      dp_iface_gateway: null
-      container_type: null
-      container_name: null
+#    -
+#      ip: null
+#      user: null
+#      pass: null
+#      dp_iface_name: null
+#      dp_iface_ip_qinq: '10.11.11.254'
+#      noroot_ip: 10.35.90.46
+#      noroot_user: cord
+#      noroot_pass: cord
+#      dp_iface_name: ens6f0
+#      dp_iface_ip: null
+#      dp_iface_gateway: null
+#      container_type: null
+#      container_name: null
     -
       ip: null
       user: null
