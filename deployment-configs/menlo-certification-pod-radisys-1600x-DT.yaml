@@ -138,7 +138,7 @@
         container_name: null
 
   web_power_switch:
-    ip: '10.35.90.22'
+    ip: '10.35.90.25'
     user: 'cord'
     password: 'cord'
     type: 'DLI'
