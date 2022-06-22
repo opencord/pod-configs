@@ -77,7 +77,7 @@
         container_name: SCOMa0108af9
         onu: SCOMa0108af9
         olt: 722033538840
-        c_tag: 41
+        c_tag: 42
         s_tag: 54
         power_switch_port: 6
         uni_id: 1
@@ -90,7 +90,7 @@
         container_name: SCOMa0108aea
         onu: SCOMa0108aea
         olt: 722033538840
-        c_tag: 42
+        c_tag: 41
         s_tag: 55
         power_switch_port: 5
         uni_id: 1
