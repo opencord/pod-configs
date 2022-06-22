@@ -72,7 +72,7 @@
       - ip: 10.35.90.18
         user: cord
         pass: cord
-        dp_iface_name: eth1.41
+        dp_iface_name: eth1.42
         container_type: LXC
         container_name: SCOMa0108af9
         onu: SCOMa0108af9
@@ -85,7 +85,7 @@
       - ip: 10.35.90.18
         user: cord
         pass: cord
-        dp_iface_name: eth1.42
+        dp_iface_name: eth1.41
         container_type: LXC
         container_name: SCOMa0108aea
         onu: SCOMa0108aea
