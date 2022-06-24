@@ -19,22 +19,22 @@
   # This tells the control node how to reach the Kubernetes nodes.
   nodes:
     -
-      ip: '10.128.100.70'
+      ip: '10.35.90.46'
       user: 'cord'
       pass: 'cord'
     -
-      ip: '10.128.100.71'
+      ip: '10.35.90.47'
       user: 'cord'
       pass: 'cord'
     -
-      ip: '10.128.100.72'
+      ip: '10.35.90.48'
       user: 'cord'
       pass: 'cord'
 
   fabric_switches:
     -
       mac: 'cc:37:ab:61:80:ca'
-      ip: '10.128.100.80'
+      ip: '10.35.90.44'
       user: 'root'
       pass: 'onl'
       bngPort: '31'
@@ -52,14 +52,15 @@
       serial: EC1912001818
       oltDebVersion: openolt_asgvolt64-3.4.9-e2a9597f3d690fe3a0ea0df244571dfc9e8c2833-40G-NNI.deb
       board_technology: GPON
+      power_switch_port: 3
 
   hosts:
     src:
       #GPON ONU
       -
-        ip: 10.90.0.51
-        user: ubuntu
-        pass: null
+        ip: 10.35.90.27
+        user: cord
+        pass: cord
         dp_iface_name: eth1.7
         container_type: LXC
         container_name: SCOM00001ca7
@@ -75,7 +76,7 @@
         ip: null
         user: null
         pass: null
-        noroot_ip: '10.128.100.70'
+        noroot_ip: '10.35.90.46'
         noroot_user: cord
         noroot_pass: cord
         dp_iface_name: ens6f0

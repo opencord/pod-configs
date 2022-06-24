@@ -20,22 +20,22 @@ kube_config: '/var/k8.conf'
 
 nodes:
   -
-    ip: '10.128.100.70'
+    ip: '10.35.90.46'
     user: 'cord'
     pass: 'cord'
   -
-    ip: '10.128.100.71'
+    ip: '10.35.90.47'
     user: 'cord'
     pass: 'cord'
   -
-    ip: '10.128.100.72'
+    ip: '10.35.90.48'
     user: 'cord'
     pass: 'cord'
 
 fabric_switches:
   -
     mac: 'cc:37:ab:61:80:ca'
-    ip: '10.128.100.80'
+    ip: '10.35.90.44'
     user: 'root'
     pass: 'onl'
     bngPort: '31'
@@ -44,8 +44,8 @@ fabric_switches:
 olts:
   -
     name: 'edgecore'
-    ip: '10.128.99.90'
-    sship: '10.128.99.90'
+    ip: '10.35.90.45'
+    sship: '10.35.90.45'
     user: 'root'
     pass: 'onl'
     fortygig: 'true'
@@ -53,31 +53,32 @@ olts:
     serial: 'EC1721000216'
     oltDebVersion: openolt_asfvolt16-3.4.9-e2a9597f3d690fe3a0ea0df244571dfc9e8c2833-40G-NNI.deb
     board_technology: XGS-PON
+    power_switch_port: 2
 
 onus:
-  -
-    serial: 'ISKT71e80080'
+#  -
+#    serial: 'ISKT71e80080'
   -
     serial: 'ALPHe3d1cf9d'
 
 hosts:
   src:
+#    -
+#      ip: '10.35.90.48'
+#      user: 'cord'
+#      pass: 'cord'
+#      dp_iface_name: 'eth1'
+#      container_type: LXC
+#      container_name: ISKT71e80080
+#      onu: 'ISKT71e80080'
+#      olt: 'EC1721000216'
+#      c_tag: '11'
+#      s_tag: '99'
+#      power_switch_port: 6
+#      onu_type: 'iskratel'
+#      uni_id: '1'
     -
-      ip: '10.128.100.72'
-      user: 'cord'
-      pass: 'cord'
-      dp_iface_name: 'eth1'
-      container_type: LXC
-      container_name: ISKT71e80080
-      onu: 'ISKT71e80080'
-      olt: 'EC1721000216'
-      c_tag: '11'
-      s_tag: '99'
-      power_switch_port: 6
-      onu_type: 'iskratel'
-      uni_id: '1'
-    -
-      ip: '10.128.100.71'
+      ip: '10.35.90.47'
       user: 'cord'
       pass: 'cord'
       dp_iface_name: 'eth1'
@@ -91,24 +92,24 @@ hosts:
       onu_type: 'alpha'
       uni_id: '1'
   dst:
+#    -
+#      ip: null
+#      user: null
+#      pass: null
+#      noroot_ip: '10.35.90.46'
+#      noroot_user: cord
+#      noroot_pass: cord
+#      dp_iface_name: ens6f0
+#      dp_iface_ip_qinq: '10.99.11.254'
+#      dp_iface_ip: null
+#      dp_iface_gateway: null
+#      container_type: null
+#      container_name: null
     -
       ip: null
       user: null
       pass: null
-      noroot_ip: '10.128.100.70'
-      noroot_user: cord
-      noroot_pass: cord
-      dp_iface_name: ens6f0
-      dp_iface_ip_qinq: '10.99.11.254'
-      dp_iface_ip: null
-      dp_iface_gateway: null
-      container_type: null
-      container_name: null
-    -
-      ip: null
-      user: null
-      pass: null
-      noroot_ip: '10.128.100.70'
+      noroot_ip: '10.35.90.46'
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens6f0
@@ -119,7 +120,7 @@ hosts:
       container_name: null
 
 web_power_switch:
-  ip: '10.128.100.75'
+  ip: '10.35.90.49'
   user: 'cord'
   password: 'cord'
   type: 'DLI'

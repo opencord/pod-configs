@@ -20,13 +20,13 @@ kube_config: '/home/cord/.kube/config'
 
 nodes:
   -
-    ip: '10.128.90.90'
+    ip: '10.35.90.43'
     user: 'cord'
     pass: 'cord'
 
 fabric_switches:
   -
-    ip: '192.168.100.44'
+    ip: '10.35.90.41'
     user: 'root'
     pass: 'onl'
     bngPort: '31'
@@ -40,8 +40,8 @@ bbsim:
 olts:
   -
     name: 'edgecore'
-    ip: '192.168.100.112'
-    sship: '192.168.100.112'
+    ip: '10.35.90.42'
+    sship: '10.35.90.42'
     user: 'root'
     pass: 'onl'
     fortygig: 'true'
@@ -60,7 +60,7 @@ onus:
 hosts:
   src:
     -
-      ip: '10.128.90.90'
+      ip: '10.35.90.43'
       user: 'cord'
       pass: 'cord'
       # dp_iface_name: 'ens6f0.11'
@@ -73,7 +73,7 @@ hosts:
       s_tag: '222'
       uni_id: '1'
     -
-      ip: '10.128.90.90'
+      ip: '10.35.90.43'
       user: 'cord'
       pass: 'cord'
       # dp_iface_name: 'ens6f1.12'
@@ -90,7 +90,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip: 10.128.90.90
+      noroot_ip: 10.35.90.43
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens1f0
@@ -103,7 +103,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip: 10.128.90.90
+      noroot_ip: 10.35.90.43
       noroot_user: cord
       noroot_pass: cord
       dp_iface_name: ens1f0

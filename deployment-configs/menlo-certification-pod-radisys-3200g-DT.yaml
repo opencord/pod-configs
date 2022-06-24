@@ -25,7 +25,7 @@
 # This tells the control node how to reach the Kubernetes nodes.
   nodes:
     -
-      ip: '10.90.0.242'
+      ip: '10.35.90.23'
       user: 'cord'
       pass: 'cord'
 
@@ -33,7 +33,7 @@
   # The switch is shared across 3 PODs, thus is externally controlled
   #   -
   #     mac: '8c:ea:1b:a7:29:72'
-  #     ip: 10.90.0.243
+  #     ip: 10.35.90.17
   #     user: root
   #     pass: onl
   #     bngPort: 31
@@ -42,8 +42,8 @@
   olts:
   # Gpon OLT
     -
-      ip:  10.90.0.244
-      sship:  10.90.0.244
+      ip:  10.35.90.24
+      sship:  10.35.90.24
       user: root
       pass: onl
       fortygig: True
@@ -56,7 +56,7 @@
     src:
       # 3200G ONU
       -
-        ip: 10.90.0.241
+        ip: 10.35.90.20
         user: cord
         pass: cord
         dp_iface_name: eth1.111
@@ -69,31 +69,31 @@
         power_switch_port: 2
         uni_id: 1
 
-      - ip: 10.90.0.240
-        user: cord
-        pass: cord
-        dp_iface_name: eth1.41
-        container_type: LXC
-        container_name: SCOMa0108af9
-        onu: SCOMa0108af9
-        olt: 722033538840
-        c_tag: 41
-        s_tag: 54
-        power_switch_port: 6
-        uni_id: 1
+#      - ip: 10.35.90.18
+#        user: cord
+#        pass: cord
+#        dp_iface_name: eth1.42
+#        container_type: LXC
+#        container_name: SCOMa0108af9
+#        onu: SCOMa0108af9
+#        olt: 722033538840
+#        c_tag: 42
+#        s_tag: 54
+#        power_switch_port: 6
+#        uni_id: 1
 
-      - ip: 10.90.0.240
-        user: cord
-        pass: cord
-        dp_iface_name: eth1.42
-        container_type: LXC
-        container_name: SCOMa0108aea
-        onu: SCOMa0108aea
-        olt: 722033538840
-        c_tag: 42
-        s_tag: 55
-        power_switch_port: 5
-        uni_id: 1
+#      - ip: 10.35.90.18
+#        user: cord
+#        pass: cord
+#        dp_iface_name: eth1.41
+#        container_type: LXC
+#        container_name: SCOMa0108aea
+#        onu: SCOMa0108aea
+#        olt: 722033538840
+#        c_tag: 41
+#        s_tag: 55
+#        power_switch_port: 5
+#        uni_id: 1
 
     dst:
       # 3200G OLT
@@ -102,7 +102,7 @@
         ip: null
         user: null
         pass: null
-        noroot_ip: 10.90.0.241
+        noroot_ip: 10.35.90.20
         noroot_user: cord
         noroot_pass: cord
         dp_iface_name: enp3s0d1
@@ -111,34 +111,34 @@
         container_type: null
         container_name: null
 
-      - dp_iface_ip_qinq: 10.54.41.254
-        ip: null
-        user: null
-        pass: null
-        noroot_ip: 10.90.0.241
-        noroot_user: cord
-        noroot_pass: cord
-        dp_iface_name: enp3s0d1
-        dp_iface_ip: null
-        dp_iface_gateway: null
-        container_type: null
-        container_name: null
+#      - dp_iface_ip_qinq: 10.54.42.254
+#        ip: null
+#        user: null
+#        pass: null
+#        noroot_ip: 10.35.90.20
+#        noroot_user: cord
+#        noroot_pass: cord
+#        dp_iface_name: enp3s0d1
+#        dp_iface_ip: null
+#        dp_iface_gateway: null
+#        container_type: null
+#        container_name: null
 
-      - dp_iface_ip_qinq: 10.55.42.254
-        ip: null
-        user: null
-        pass: null
-        noroot_ip: 10.90.0.241
-        noroot_user: cord
-        noroot_pass: cord
-        dp_iface_name: enp3s0d1
-        dp_iface_ip: null
-        dp_iface_gateway: null
-        container_type: null
-        container_name: null
+#      - dp_iface_ip_qinq: 10.55.41.254
+#        ip: null
+#        user: null
+#        pass: null
+#        noroot_ip: 10.35.90.20
+#        noroot_user: cord
+#        noroot_pass: cord
+#        dp_iface_name: enp3s0d1
+#        dp_iface_ip: null
+#        dp_iface_gateway: null
+#        container_type: null
+#        container_name: null
 
   web_power_switch:
-    ip: '10.90.0.250'
+    ip: '10.35.90.22'
     user: 'cord'
     password: 'cord'
     type: 'DLI'

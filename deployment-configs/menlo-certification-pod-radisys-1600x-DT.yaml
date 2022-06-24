@@ -25,7 +25,7 @@
 # This tells the control node how to reach the Kubernetes nodes.
   nodes:
     -
-      ip: '10.90.0.241'
+      ip: '10.35.90.20'
       user: 'cord'
       pass: 'cord'
 
@@ -33,7 +33,7 @@
   # The switch is shared across 3 PODs, thus is externally controlled
   #   -
   #     mac: '8c:ea:1b:a7:29:72'
-  #     ip: 10.90.0.243
+  #     ip: 10.35.90.17
   #     user: root
   #     pass: onl
   #     bngPort: 31
@@ -42,8 +42,8 @@
   olts:
   # Gpon OLT
     -
-      ip:  10.90.0.245
-      sship:  10.90.0.245
+      ip:  10.35.90.21
+      sship:  10.35.90.21
       user: root
       pass: onl
       fortygig: True
@@ -56,7 +56,7 @@
     src:
       # 1600X OLT
       -
-        ip: 10.90.0.240
+        ip: 10.35.90.18
         user: cord
         pass: cord
         dp_iface_name: eth1.88
@@ -66,7 +66,7 @@
         olt: 722033038194
         c_tag: 88
         s_tag: 89
-        power_switch_port: 7
+        power_switch_port: 4
         uni_id: 1
 
     dst:
@@ -76,7 +76,7 @@
         ip: null
         user: null
         pass: null
-        noroot_ip: 10.90.0.241
+        noroot_ip: 10.35.90.20
         noroot_user: cord
         noroot_pass: cord
         dp_iface_name: enp3s0d1
@@ -86,7 +86,7 @@
         container_name: null
 
   web_power_switch:
-    ip: '10.90.0.250'
+    ip: '10.35.90.25'
     user: 'cord'
     password: 'cord'
     type: 'DLI'
