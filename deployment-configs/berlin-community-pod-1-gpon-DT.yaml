@@ -57,7 +57,7 @@
       fortygig: False
       aggPort: 2
       serial: EC1912001823
-      oltDebVersion: openolt_asgvolt64-3.6.2-51d1824e8c049909fd516c7ce3c5f834b9649152-100G-NNI.deb
+      oltDebVersion: openolt_asgvolt64-3.7.4-3b190f027136e845c5850a5b1a97897ce2b74ebf-100G-NNI.deb
       board_technology: GPON
 
   hosts:
