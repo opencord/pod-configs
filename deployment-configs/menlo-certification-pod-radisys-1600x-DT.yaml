@@ -55,19 +55,19 @@
   hosts:
     src:
       # 1600X OLT
-      -
-        ip: 10.35.90.18
-        user: cord
-        pass: cord
-        dp_iface_name: eth1.88
-        container_type: LXC
-        container_name: SCOMa0108adf
-        onu: SCOMa0108adf
-        olt: 722033038194
-        c_tag: 88
-        s_tag: 89
-        power_switch_port: 4
-        uni_id: 1
+      #-
+      #  ip: 10.35.90.18
+      #  user: cord
+      #  pass: cord
+      #  dp_iface_name: eth1.88
+      #  container_type: LXC
+      #  container_name: SCOMa0108adf
+      #  onu: SCOMa0108adf
+      #  olt: 722033038194
+      #  c_tag: 88
+      #  s_tag: 89
+      #  power_switch_port: 4
+      #  uni_id: 1
       -
         ip: 10.35.90.20
         user: cord
@@ -97,19 +97,19 @@
 
     dst:
       # 1600X OLT
-      -
-        dp_iface_ip_qinq: 10.89.88.254
-        ip: null
-        user: null
-        pass: null
-        noroot_ip: 10.35.90.20
-        noroot_user: cord
-        noroot_pass: cord
-        dp_iface_name: enp3s0d1
-        dp_iface_ip: null
-        dp_iface_gateway: null
-        container_type: null
-        container_name: null
+      #-
+      #  dp_iface_ip_qinq: 10.89.88.254
+      #  ip: null
+      #  user: null
+      #  pass: null
+      #  noroot_ip: 10.35.90.20
+      #  noroot_user: cord
+      #  noroot_pass: cord
+      #  dp_iface_name: enp3s0d1
+      #  dp_iface_ip: null
+      #  dp_iface_gateway: null
+      #  container_type: null
+      #  container_name: null
       -
         dp_iface_ip_qinq: 10.190.89.254
         ip: null
