@@ -15,48 +15,48 @@
 # Automated deployment configuration for Flex POD 1 , olt/onu are connected to this
 
 ---
-  # Change default values in tests
-  ONOS_REST_PORT: 30120
-  ONOS_SSH_PORT: 30115
-  OLT_PORT: 9191
-  KUBERNETES_CONF: $HOME/.kube/kind-config-voltha-minimal
+# Change default values in tests
+ONOS_REST_PORT: 30120
+ONOS_SSH_PORT: 30115
+OLT_PORT: 9191
+KUBERNETES_CONF: $HOME/.kube/kind-config-voltha-minimal
 
-  nodes:
-    -
-      ip: '10.34.90.44'
-      user: 'community'
-      pass: 'admin'
-    -
-      ip: '10.34.90.45'
-      user: 'community'
-      pass: 'admin'
-    -
-      ip: '10.34.90.46'
-      user: 'community'
-      pass: 'admin'
-  
-  fabric_switches: []
-  # The switch is shared across 2 PODs, thus is externally controlled
-  #  -
-  #    mac: '8c:ea:1b:a7:29:72'
-  #    ip: 10.34.90.55
-  #    user: root
-  #    pass: onl
-  #    bngPort: 157
-  #    device_id: 'of:0000000000000001'
-  
-  olts:
-  # XGSPON OLT
-    -
-      ip:  10.34.90.53
-      sship:  10.34.90.53
-      fortygig: False
-      aggPort: 6
-      user: root
-      pass: onl
-      serial: S210Z14009247
-      oltDebVersion: openolt_sda3016ss-3.7.2-dev-xgspon-20220520.deb
-      board_technology: XGSPON
+nodes:
+  -
+    ip: '10.34.90.44'
+    user: 'community'
+    pass: 'admin'
+  -
+    ip: '10.34.90.45'
+    user: 'community'
+    pass: 'admin'
+  -
+    ip: '10.34.90.46'
+    user: 'community'
+    pass: 'admin'
+
+fabric_switches: []
+# The switch is shared across 2 PODs, thus is externally controlled
+#  -
+#    mac: '8c:ea:1b:a7:29:72'
+#    ip: 10.34.90.55
+#    user: root
+#    pass: onl
+#    bngPort: 157
+#    device_id: 'of:0000000000000001'
+
+olts:
+# XGSPON OLT
+  -
+    ip:  10.34.90.53
+    sship:  10.34.90.53
+    fortygig: False
+    aggPort: 6
+    user: root
+    pass: onl
+    serial: S210Z14009247
+    oltDebVersion: openolt_sda3016ss-3.7.2-dev-xgspon-20220520.deb
+    board_technology: XGSPON
  
 onus:
   -
