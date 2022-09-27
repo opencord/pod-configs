@@ -72,7 +72,7 @@ hosts:
       container_type: LXC
       container_name: ZYXE8CAC752C
       onu: 'ZYXE8cac752c'
-      olt: 'EC1838000853'
+      olt: 'S210Z14009247'
       c_tag: '801'
       s_tag: '111'
       power_switch_port: 4
@@ -87,7 +87,7 @@ hosts:
       container_type: LXC
       container_name: ZYXE8CAC752C
       onu: 'ZYXE8cac752c'
-      olt: 'EC1838000853'
+      olt: 'S210Z14009247'
       c_tag: '444'
       s_tag: '333'
       power_switch_port: 4
@@ -102,7 +102,7 @@ hosts:
       container_type: LXC
       container_name: ZYXE8CAC752C
       onu: 'ZYXE8cac752c'
-      olt: 'EC1838000853'
+      olt: 'S210Z14009247'
       c_tag: '55'
       s_tag: '555'
       power_switch_port: 4
