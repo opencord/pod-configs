@@ -174,8 +174,8 @@ hosts:
       container_type: null
       container_name: null
 
-  web_power_switch:
-    ip: '10.34.90.61'
-    user: 'admin'
-    password: 'secret'
-    type: 'EPC'
+web_power_switch:
+  ip: '10.34.90.61'
+  user: 'admin'
+  password: 'secret'
+  type: 'EPC'
