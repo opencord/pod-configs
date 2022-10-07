@@ -71,7 +71,7 @@ hosts:
       dp_iface_name: 'eth1.35'
       container_type: LXC
       container_name: ZYXE8CAC752C
-      onu: 'ZYXE8cac752c'
+      onu: 'ZYWN8cac752c'
       olt: 'S210Z14009247'
       c_tag: '801'
       s_tag: '111'
