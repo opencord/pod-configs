@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fa52a503_21f833b4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2022-10-13T06:39:08Z",
+      "side": 1,
+      "message": "This patch is showing as a REBASE in gerrit -vs- buttons to grant approval.\nAdding approval using the [reply] button instead.",
+      "revId": "00f280504d3984e625b17ba0bb58623254ba56ab",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
