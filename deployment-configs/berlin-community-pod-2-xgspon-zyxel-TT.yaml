@@ -70,7 +70,7 @@ hosts:
       pass: 'admin'
       dp_iface_name: 'eth1.35'
       container_type: LXC
-      container_name: ZYWN8cac752c
+      container_name: ZYXE8CAC752C
       onu: 'ZYWN8cac752c'
       olt: 'S210Z14009247'
       c_tag: '801'
@@ -85,7 +85,7 @@ hosts:
       pass: 'admin'
       dp_iface_name: 'eth1.65'
       container_type: LXC
-      container_name: ZYWN8cac752c
+      container_name: ZYXE8CAC752C
       onu: 'ZYWN8cac752c'
       olt: 'S210Z14009247'
       c_tag: '444'
@@ -100,7 +100,7 @@ hosts:
       pass: 'admin'
       dp_iface_name: 'eth1.55'
       container_type: LXC
-      container_name: ZYWN8cac752c
+      container_name: ZYXE8CAC752C
       onu: 'ZYWN8cac752c'
       olt: 'S210Z14009247'
       c_tag: '55'
@@ -115,7 +115,7 @@ hosts:
       pass: 'admin'
       dp_iface_name: 'eth1.55'
       container_type: LXC
-      container_name: ZYWN8cac752c
+      container_name: ZYXE8CAC752C
       onu: 'ZYWN8cac752c'
       olt: 'S210Z14009247'
       c_tag: '55'
