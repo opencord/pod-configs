@@ -58,7 +58,7 @@
       pass: onl
       serial: S210Z14009247
       oltDebVersion: openolt_sda3016ss-3.7.2-dev-xgspon-20220520.deb
-      board_technology: XGSPON
+      board_technology: XGS-PON
  
   hosts:
     src:
