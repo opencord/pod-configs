@@ -1,0 +1,188 @@
+---
+
+  # Copyright 2020-present Open Networking Foundation
+  #
+  # Licensed under the Apache License, Version 2.0 (the "License");
+  # you may not use this file except in compliance with the License.
+  # You may obtain a copy of the License at
+  #
+  # http://www.apache.org/licenses/LICENSE-2.0
+  #
+  # Unless required by applicable law or agreed to in writing, software
+  # distributed under the License is distributed on an "AS IS" BASIS,
+  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  # See the License for the specific language governing permissions and
+  # limitations under the License.
+
+  # Automated deployment configuration for Tucson pod
+
+  # Change default values in tests
+  ONOS_REST_PORT: 30120
+  ONOS_SSH_PORT: 30115
+  OLT_PORT: 9191
+  KUBERNETES_CONF: $HOME/.kube/kind-config-voltha-minimal
+
+# This tells the control node how to reach the Kubernetes nodes.
+  nodes:
+    -
+      ip: '10.34.90.43'
+      user: 'community'
+      pass: 'admin'
+    -
+      ip: '10.34.90.41'
+      user: 'community'
+      pass: 'admin'
+    -
+      ip: '10.34.90.42'
+      user: 'community'
+      pass: 'admin'
+
+  fabric_switches: []
+  # The switch is shared across 2 PODs, thus is externally controlled
+  #  -
+  #    mac: '8c:ea:1b:a7:29:72'
+  #    ip: 10.34.90.55
+  #    user: root
+  #    pass: onl
+  #    bngPort: 157
+  #    device_id: 'of:0000000000000001'
+
+  olts:
+  # Gpon OLT
+    -
+      ip:  10.34.90.50
+      sship:  10.34.90.50
+      user: root
+      pass: onl
+      fortygig: False
+      aggPort: 2
+      serial: EC1912001823
+      oltDebVersion: openolt_asgvolt64-3.7.4-3b190f027136e845c5850a5b1a97897ce2b74ebf-100G-NNI.deb
+      board_technology: GPON
+
+  hosts:
+ src:
+    -
+      ip: 10.34.90.43
+      user: community
+      pass: admin
+      dp_iface_name: eth1.35
+      container_type: LXC
+      container_name: SCOM00001c82
+      onu: SCOM00001c82
+      olt: EC1912001823
+      c_tag: 801
+      s_tag: 111
+      power_switch_port: 1
+      onu_type: 'scom'
+      service_type: 'hsia'
+      uni_id: 1
+    -
+      ip: 10.34.90.43
+      user: community
+      pass: admin
+      dp_iface_name: eth1.65
+      container_type: LXC
+      container_name: SCOM00001c82
+      onu: SCOM00001c82
+      olt: EC1912001823
+      c_tag: 444
+      s_tag: 333
+      power_switch_port: 1
+      onu_type: 'scom'
+      service_type: 'voip'
+      uni_id: 1
+    -
+      ip: 10.34.90.43
+      user: community
+      pass: admin
+      dp_iface_name: eth1.55
+      container_type: LXC
+      container_name: SCOM00001c82
+      onu: SCOM00001c82
+      olt: EC1912001823
+      c_tag: 55
+      s_tag: 555
+      power_switch_port: 1
+      onu_type: 'scom'
+      service_type: 'vod'
+      uni_id: 1
+
+    -
+      ip: '10.34.90.43'
+      user: 'community'
+      pass: 'admin'
+      dp_iface_name: 'eth1.55'
+      container_type: LXC
+      container_name: SCOM00001c82
+      onu: 'SCOM00001c82'
+      olt: 'EC1912001823'
+      c_tag: '55'
+      s_tag: '550'
+      power_switch_port: 1
+      onu_type: 'scom'
+      mcast_rg: '10.11.6.3/24'
+      mcast_grp_subnet_mask: '224.0.0.0/4'
+      service_type: 'mcast'
+      uni_id: '1'
+  dst:
+    -
+    #HSI
+      ip: null
+      user: null
+      pass: null
+      dp_iface_name: ens1f0
+      dp_iface_ip_qinq: '10.11.1.254'
+      dp_iface_ip: null
+      dp_iface_gateway: null
+      container_type: null
+      container_name: null
+    -
+    #VOIP
+      ip: null
+      user: null
+      pass: null
+      noroot_ip: '10.34.90.43'
+      noroot_user: community
+      noroot_pass: admin
+      dp_iface_name: ens1f0
+      dp_iface_ip_qinq: '10.11.4.254'
+      dp_iface_ip: null
+      dp_iface_gateway: null
+      container_type: null
+      container_name: null
+
+    -
+     #VOD
+      ip: null
+      user: null
+      pass: null
+      noroot_ip: '10.34.90.43'
+      noroot_user: community
+      noroot_pass: admin
+      dp_iface_name: ens1f0
+      dp_iface_ip_qinq: '10.11.5.254'
+      dp_iface_ip: null
+      dp_iface_gateway: null
+      container_type: null
+      container_name: null
+    -
+    #MCAST
+      ip: null
+      user: null
+      pass: null
+      bng_ip: '10.34.90.43'
+      bng_user: community
+      bng_pass: admin
+      dp_iface_name: null
+      dp_iface_ip_qinq: '225.22.0.2'
+      dp_iface_ip: null
+      dp_iface_gateway: null
+      container_type: null
+      container_name: null
+
+  web_power_switch:
+    ip: '10.34.90.48'
+    user: 'admin'
+    password: 'secret'
+    type: 'EPC'
