@@ -131,7 +131,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      dp_iface_name: null
+      dp_iface_name: ens1f0
       dp_iface_ip_qinq: '10.11.1.254'
       dp_iface_ip: null
       dp_iface_gateway: null
@@ -141,7 +141,7 @@ hosts:
       ip: null
       user: null
       pass: null
-      dp_iface_name: null
+      dp_iface_name: ens1f0
       dp_iface_ip_qinq: '10.11.4.254'
       dp_iface_ip: null
       dp_iface_gateway: null
@@ -167,7 +167,7 @@ hosts:
       bng_ip: '10.34.90.43'
       bng_user: community
       bng_pass: admin
-      dp_iface_name: null
+      dp_iface_name: ens1f0
       dp_iface_ip_qinq: '225.22.0.2'
       dp_iface_ip: null
       dp_iface_gateway: null
