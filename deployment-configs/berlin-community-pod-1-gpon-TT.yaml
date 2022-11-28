@@ -61,126 +61,124 @@
       board_technology: GPON
 
   hosts:
- src:
-    -
-      ip: 10.34.90.43
-      user: community
-      pass: admin
-      dp_iface_name: eth1.35
-      container_type: LXC
-      container_name: SCOM00001c82
-      onu: SCOM00001c82
-      olt: EC1912001823
-      c_tag: 801
-      s_tag: 111
-      power_switch_port: 1
-      onu_type: 'scom'
-      service_type: 'hsia'
-      uni_id: 1
-    -
-      ip: 10.34.90.43
-      user: community
-      pass: admin
-      dp_iface_name: eth1.65
-      container_type: LXC
-      container_name: SCOM00001c82
-      onu: SCOM00001c82
-      olt: EC1912001823
-      c_tag: 444
-      s_tag: 333
-      power_switch_port: 1
-      onu_type: 'scom'
-      service_type: 'voip'
-      uni_id: 1
-    -
-      ip: 10.34.90.43
-      user: community
-      pass: admin
-      dp_iface_name: eth1.55
-      container_type: LXC
-      container_name: SCOM00001c82
-      onu: SCOM00001c82
-      olt: EC1912001823
-      c_tag: 55
-      s_tag: 555
-      power_switch_port: 1
-      onu_type: 'scom'
-      service_type: 'vod'
-      uni_id: 1
-
-    -
-      ip: '10.34.90.43'
-      user: 'community'
-      pass: 'admin'
-      dp_iface_name: 'eth1.55'
-      container_type: LXC
-      container_name: SCOM00001c82
-      onu: 'SCOM00001c82'
-      olt: 'EC1912001823'
-      c_tag: '55'
-      s_tag: '550'
-      power_switch_port: 1
-      onu_type: 'scom'
-      mcast_rg: '10.11.6.3/24'
-      mcast_grp_subnet_mask: '224.0.0.0/4'
-      service_type: 'mcast'
-      uni_id: '1'
-  dst:
-    -
-    #HSI
-      ip: null
-      user: null
-      pass: null
-      dp_iface_name: ens1f0
-      dp_iface_ip_qinq: '10.11.1.254'
-      dp_iface_ip: null
-      dp_iface_gateway: null
-      container_type: null
-      container_name: null
-    -
-    #VOIP
-      ip: null
-      user: null
-      pass: null
-      noroot_ip: '10.34.90.43'
-      noroot_user: community
-      noroot_pass: admin
-      dp_iface_name: ens1f0
-      dp_iface_ip_qinq: '10.11.4.254'
-      dp_iface_ip: null
-      dp_iface_gateway: null
-      container_type: null
-      container_name: null
-
-    -
-     #VOD
-      ip: null
-      user: null
-      pass: null
-      noroot_ip: '10.34.90.43'
-      noroot_user: community
-      noroot_pass: admin
-      dp_iface_name: ens1f0
-      dp_iface_ip_qinq: '10.11.5.254'
-      dp_iface_ip: null
-      dp_iface_gateway: null
-      container_type: null
-      container_name: null
-    -
-    #MCAST
-      ip: null
-      user: null
-      pass: null
-      bng_ip: '10.34.90.43'
-      bng_user: community
-      bng_pass: admin
-      dp_iface_name: null
-      dp_iface_ip_qinq: '225.22.0.2'
-      dp_iface_ip: null
-      dp_iface_gateway: null
-      container_type: null
-      container_name: null
-
+    src:
+      -
+        ip: 10.34.90.43
+        user: community
+        pass: admin
+        dp_iface_name: eth1.35
+        container_type: LXC
+        container_name: SCOM00001c82
+        onu: SCOM00001c82
+        olt: EC1912001823
+        c_tag: 801
+        s_tag: 111
+        power_switch_port: 1
+        onu_type: 'scom'
+        service_type: 'hsia'
+        uni_id: 1
+      -
+        ip: 10.34.90.43
+        user: community
+        pass: admin
+        dp_iface_name: eth1.65
+        container_type: LXC
+        container_name: SCOM00001c82
+        onu: SCOM00001c82
+        olt: EC1912001823
+        c_tag: 444
+        s_tag: 333
+        power_switch_port: 1
+        onu_type: 'scom'
+        service_type: 'voip'
+        uni_id: 1
+      -
+        ip: 10.34.90.43
+        user: community
+        pass: admin
+        dp_iface_name: eth1.55
+        container_type: LXC
+        container_name: SCOM00001c82
+        onu: SCOM00001c82
+        olt: EC1912001823
+        c_tag: 55
+        s_tag: 555
+        power_switch_port: 1
+        onu_type: 'scom'
+        service_type: 'vod'
+        uni_id: 1
+      -
+        ip: '10.34.90.43'
+        user: 'community'
+        pass: 'admin'
+        dp_iface_name: 'eth1.55'
+        container_type: LXC
+        container_name: SCOM00001c82
+        onu: 'SCOM00001c82'
+        olt: 'EC1912001823'
+        c_tag: '55'
+        s_tag: '550'
+        power_switch_port: 1
+        onu_type: 'scom'
+        mcast_rg: '10.11.6.3/24'
+        mcast_grp_subnet_mask: '224.0.0.0/4'
+        service_type: 'mcast'
+        uni_id: '1'
+    dst:  
+      -
+        #HSI
+        ip: null
+        user: null
+        pass: null
+        dp_iface_name: ens1f0
+        dp_iface_ip_qinq: '10.11.1.254'
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
+      -
+        #VOIP
+        ip: null
+        user: null
+        pass: null
+        noroot_ip: '10.34.90.43'
+        noroot_user: community
+        noroot_pass: admin
+        dp_iface_name: ens1f0
+        dp_iface_ip_qinq: '10.11.4.254'
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
+      -
+        #VOD
+        ip: null
+        user: null
+        pass: null
+        noroot_ip: '10.34.90.43'
+        noroot_user: community
+        noroot_pass: admin
+        dp_iface_name: ens1f0
+        dp_iface_ip_qinq: '10.11.5.254'
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
+      -
+        #MCAST
+        ip: null
+        user: null
+        pass: null
+        bng_ip: '10.34.90.43'
+        bng_user: community
+        bng_pass: admin
+        dp_iface_name: null
+        dp_iface_ip_qinq: '225.22.0.2'
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
+  
   web_power_switch:
     ip: '10.34.90.48'
     user: 'admin'
