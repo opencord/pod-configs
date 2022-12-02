@@ -60,6 +60,24 @@ pre-check:
 
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
+.PHONY: pre-commit
+.PHONY: fixperms
+pre-commit: lint fixperms
+
+## -----------------------------------------------------------------------
+## Scrub volume messages from jenksins logs and help secure nodes.
+## WARNING: Kubernetes configuration file is group-readable. This is insecure
+## -----------------------------------------------------------------------
+fixperms-args :=$(null)
+fixperms-args += -name '*.conf'
+fixperms-args += -o -name '*.json'
+fixperms-args += -o -name '*.yaml'
+fixperms:
+	$(HIDE)find . \( $(fixperms-args) \) -print0 \
+	    | xargs -0 chmod og-rwx
+
+## -----------------------------------------------------------------------
+## -----------------------------------------------------------------------
 clean:
 
 ## -----------------------------------------------------------------------
@@ -89,5 +107,12 @@ help:
 	@echo "[LINT]"
 	@echo "  lint-json   Syntax check .json sources"
 	@echo "  lint-yaml   Syntax check .yaml sources"
+	@echo
+	@echo "[PRE:check]"
+	@echo "  pre-check   Verify tools and deps are available for testing"
+	@echo
+	@echo "[PRE:commit]"
+	@echo "  pre-commit  Perform common repairs on source"
+	@echo "  fixperms    Remove group write permission on config files"
 	@echo
 # [EOF]
