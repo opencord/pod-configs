@@ -33,6 +33,24 @@
       "message": "Never mind ...   ",
       "revId": "ffd93d2840d98e106d4886f2c893842ec4495a05",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "49b5adeb_f3ff74e8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2022-12-02T22:53:58Z",
+      "side": 1,
+      "message": "Logic works in the opposite direction:\n   xargs -0 chmod og-rwx  \u003d\u003e the minus sign will apply chmod -x to group and other removing the execute bit.\n\nBelieve we still have a separate problem to deal with.\nWhatever installed these configs on the server (ansible or jenkins) allowed coping in files w/o umask 077.",
+      "parentUuid": "3bba73a1_d1919679",
+      "revId": "ffd93d2840d98e106d4886f2c893842ec4495a05",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
