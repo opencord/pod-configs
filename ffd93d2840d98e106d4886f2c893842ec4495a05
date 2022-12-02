@@ -16,6 +16,23 @@
       "message": "I don\u0027t think of these files as executables and they\u0027re not directories.   Why add \u0027x\u0027 permission?   What am I missing?",
       "revId": "ffd93d2840d98e106d4886f2c893842ec4495a05",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e079223c_9c489eef",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000947
+      },
+      "writtenOn": "2022-12-02T21:57:22Z",
+      "side": 1,
+      "message": "Never mind ...   ",
+      "revId": "ffd93d2840d98e106d4886f2c893842ec4495a05",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
