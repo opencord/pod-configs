@@ -1,5 +1,6 @@
----
-# Copyright 2017-2023 Open Networking Foundation (ONF) and the ONF Contributors
+#!/bin/bash
+# -----------------------------------------------------------------------
+# Copyright 2022 Open Networking Foundation
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,12 +13,19 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+# -----------------------------------------------------------------------
 
-# Automated deployment configuration for flex ocp cord pod build , olt/onu are connected to this
+declare -i status=$#
 
-application_logs: |
-  log4j.logger.org.opencord.olt = DEBUG
-  log4j.logger.org.opencord.kafka = DEBUG
-  log4j.logger.org.opencord.sadis = DEBUG
-  log4j.logger.org.opencord.aaa = DEBUG
-  log4j.logger.org.opencord.dhcpl2relay = DEBUG
+while [ $# -gt 0 ]; do
+    arg="$1"; shift
+    echo "ERROR: Detected missing license header: ${arg}"
+done
+
+if [ $status -ne 0 ]; then
+    exit 1
+fi
+
+/bin/true # set $?
+
+# [EOF]
