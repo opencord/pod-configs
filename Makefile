@@ -1,5 +1,26 @@
 # -*- makefile -*-
 # -----------------------------------------------------------------------
+# Copyright 2023 Open Networking Foundation (ONF) and the ONF Contributors
+# Copyright 2017-2023 Open Networking Foundation (ONF) and the ONF Contributors
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+# SPDX-FileCopyrightText: 2017-2023 Open Networking Foundation (ONF) and the ONF Contributors
+# SPDX-License-Identifier: Apache-2.0
+# -----------------------------------------------------------------------
+
+# -*- makefile -*-
+# -----------------------------------------------------------------------
 # Copyright 2017-2022 Open Networking Foundation (ONF) and the ONF Contributors
 # SPDX-FileCopyrightText: 2022-present Intel Corporation
 #
@@ -8,14 +29,9 @@
 
 .DEFAULT_GOAL := test
 
-HIDE        ?= @
-SHELL       := bash -e -o pipefail
-
 dot         ?= .
 TOP         ?= $(dot)
 MAKEDIR     ?= $(TOP)/makefiles
-
-env-clean = /usr/bin/env --ignore-environment
 
 jq          = $(env-clean) jq
 jq-args     += --exit-status
@@ -23,6 +39,11 @@ jq-args     += --exit-status
 YAMLLINT      = $(shell which yamllint)
 yamllint      := $(env-clean) $(YAMLLINT)
 yamllint-args := -c .yamllint
+
+##--------------------##
+##---]  INCLUDES  [---##
+##--------------------##
+include $(MAKEDIR)/include.mk
 
 ##-------------------##
 ##---]  TARGETS  [---##
@@ -82,22 +103,7 @@ clean:
 
 ## -----------------------------------------------------------------------
 ## -----------------------------------------------------------------------
-todo:
-	@echo
-	@echo "USAGE: $(MAKE)"
-	@echo "[TODO]"
-	@echo "  o Update to support standard makefile target behavior:"
-	@echo "    all taget is test not default behavior for automation."
-	@echo "  o Change lint target dep from test to check -or smoke"
-	@echo "    target test sould be more involved with content validation"
-	@echo "  o Refactor lint target(s) with voltha-system-tests/makefiles"
-	@echo "  o Linting should be dependency driven,"
-	@echo "    only check when sources are modified."
-	@echo
-
-## -----------------------------------------------------------------------
-## -----------------------------------------------------------------------
-help:
+help::
 	@echo
 	@echo "USAGE: $(MAKE)"
 	@echo "  lint        perform syntax checks on source"
@@ -115,4 +121,5 @@ help:
 	@echo "  pre-commit  Perform common repairs on source"
 	@echo "  fixperms    Remove group write permission on config files"
 	@echo
+
 # [EOF]
