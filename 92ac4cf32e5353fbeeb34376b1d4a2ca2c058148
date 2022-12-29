@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b307351a_d4b8a295",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2022-12-29T12:17:07Z",
+      "side": 1,
+      "message": "No jenkins job triggered.  Merge in copyright changes to see if a downstream job will be triggered.",
+      "revId": "92ac4cf32e5353fbeeb34376b1d4a2ca2c058148",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
