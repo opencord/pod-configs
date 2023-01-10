@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "46681041_65548e9b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-01-10T07:24:37Z",
+      "side": 1,
+      "message": "simple copyright notice update.\nstrange no jenkins job was triggered by this commit, at a minimum we should perform syntax checking.",
+      "revId": "003e83e75f821010e2f92045759c714596567355",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
