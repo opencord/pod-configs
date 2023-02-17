@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "670aa821_9894b67a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-02-17T15:28:23Z",
+      "side": 1,
+      "message": "Simple edit on the release branch but waiting to see if a jenkins job will launch.",
+      "revId": "34b44bdb9a5a7708305a1c581090d7eb6b4d5862",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
