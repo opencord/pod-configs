@@ -16,6 +16,23 @@
       "message": "Simple edit on the release branch but waiting to see if a jenkins job will launch.",
       "revId": "34b44bdb9a5a7708305a1c581090d7eb6b4d5862",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e70ada20_8a71e18a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-02-27T14:23:35Z",
+      "side": 1,
+      "message": "no job triggered by a simple gitreview edit so merge in.",
+      "revId": "34b44bdb9a5a7708305a1c581090d7eb6b4d5862",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
