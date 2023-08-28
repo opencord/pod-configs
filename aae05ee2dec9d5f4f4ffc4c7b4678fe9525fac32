@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "46c8245f_f763765c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-08-28T13:57:35Z",
+      "side": 1,
+      "message": "Update target branch for merge/rebase.\nConfig file edit did not trigger a jenkins job so manually apply attributes.",
+      "revId": "aae05ee2dec9d5f4f4ffc4c7b4678fe9525fac32",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
