@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "35bed7b5_884d5fa3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000982
+      },
+      "writtenOn": "2023-10-05T14:54:19Z",
+      "side": 1,
+      "message": "LGTM! I am however not a 100% sure what you need to do here to trigger a jenkins pipeline, so that the \"Jenkins Technical User\" can add the needed \"+1 verified\" to the pipeline. Most of the other commits towards this repo also look like there are usually no pipelines triggered and people (with admin privileges) have just added those \"+1 verified\" manually. If so, we need to wait for an admin to come back and add the \"+1 verified\" before we can merge this...",
+      "revId": "9af9abea64469acf92171ce4e29859779546979c",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
