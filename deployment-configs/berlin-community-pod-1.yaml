@@ -100,7 +100,7 @@ hosts:
       noroot_ip: 10.34.90.43
       noroot_user: community
       noroot_pass: admin
-      dp_iface_name: ens3f0
+      dp_iface_name: ens1f0
       dp_iface_ip: null
       dp_iface_gateway: null
       container_type: null
@@ -113,7 +113,7 @@ hosts:
       noroot_ip: 10.34.90.43
       noroot_user: community
       noroot_pass: admin
-      dp_iface_name: ens3f0
+      dp_iface_name: ens1f0
       dp_iface_ip: null
       dp_iface_gateway: null
       container_type: null
