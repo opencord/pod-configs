@@ -124,6 +124,36 @@
         mcast_grp_subnet_mask: '224.0.0.0/4'
         service_type: 'mcast'
         uni_id: '1'
+      -
+        ip: 10.34.90.43
+        user: community
+        pass: admin
+        dp_iface_name: eth1.35
+        container_type: LXC
+        container_name: SCOM00001c89
+        onu: SCOM00001c89
+        olt: EC1912001823
+        c_tag: 802
+        s_tag: 222
+        power_switch_port: 1
+        onu_type: 'scom'
+        service_type: 'hsia'
+        uni_id: 1
+      -
+        ip: 10.34.90.43
+        user: community
+        pass: admin
+        dp_iface_name: eth1.55
+        container_type: LXC
+        container_name: SCOM00001c89
+        onu: SCOM00001c89
+        olt: EC1912001823
+        c_tag: 55
+        s_tag: 555
+        power_switch_port: 1
+        onu_type: 'scom'
+        service_type: 'vod'
+        uni_id: 1
     dst:  
       -
         #HSI
@@ -178,7 +208,47 @@
         dp_iface_gateway: null
         container_type: null
         container_name: null
-  
+      -
+        #HSI
+        ip: null
+        user: null
+        pass: null
+        dp_iface_name: ens1f0
+        dp_iface_ip_qinq: '10.11.1.254'
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
+      -
+        #VOIP
+        ip: null
+        user: null
+        pass: null
+        noroot_ip: '10.34.90.43'
+        noroot_user: community
+        noroot_pass: admin
+        dp_iface_name: ens1f0
+        dp_iface_ip_qinq: '10.11.4.254'
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
+ 
+      -
+        #VOD
+        ip: null
+        user: null
+        pass: null
+        noroot_ip: '10.34.90.43'
+        noroot_user: community
+        noroot_pass: admin
+        dp_iface_name: ens1f0
+        dp_iface_ip_qinq: '10.11.5.254'
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
+ 
   web_power_switch:
     ip: '10.34.90.48'
     user: 'admin'
