@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "538d8701_73044b8d",
+        "filename": "deployment-configs/berlin-community-pod-1-gpon-TT.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 266,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-11-16T18:20:10Z",
+      "side": 1,
+      "message": "stray whitespace",
+      "revId": "20083458d34e258dbd72c23e998d67b3293cd2f6",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
