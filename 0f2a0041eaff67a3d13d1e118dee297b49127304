@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "085bddbd_6ab5a47e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-11-16T18:29:45Z",
+      "side": 1,
+      "message": "Manually adding +1 verify, Mahir noticed this repo is not triggering jenkins validation jobs.",
+      "revId": "0f2a0041eaff67a3d13d1e118dee297b49127304",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
