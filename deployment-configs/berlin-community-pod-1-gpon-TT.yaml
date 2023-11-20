@@ -78,7 +78,7 @@
         service_type: 'hsia'
         uni_id: 1
       -
-        ip: 10.34.90.43
+        ip: 10.34.90.42
         user: community
         pass: admin
         dp_iface_name: eth1.35
@@ -108,7 +108,7 @@
         service_type: 'voip'
         uni_id: 1
       -
-        ip: 10.34.90.43
+        ip: 10.34.90.42
         user: community
         pass: admin
         dp_iface_name: eth1.65
@@ -138,7 +138,7 @@
         service_type: 'vod'
         uni_id: 1
       -
-        ip: 10.34.90.43
+        ip: 10.34.90.42
         user: community
         pass: admin
         dp_iface_name: eth1.55
