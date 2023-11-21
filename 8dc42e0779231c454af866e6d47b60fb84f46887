@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e869cb9b_c3df738d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-11-21T16:19:53Z",
+      "side": 1,
+      "message": "+2 from Mahir\nManually addingd +1 verify per request\n\nps\u003e Sometimes extra peripheral source changes can be included with a patch to trigger a jenkins job.\npod-configs may be a special snowflake if jobs were not triggered (at a minimum we should make lint-yaml).  Some experimentation could determine what sources can be used to trigger a job run.",
+      "revId": "8dc42e0779231c454af866e6d47b60fb84f46887",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
