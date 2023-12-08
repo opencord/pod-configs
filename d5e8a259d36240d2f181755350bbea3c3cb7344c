@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0d5f0c6f_723926fc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-12-08T20:01:46Z",
+      "side": 1,
+      "message": "LGTM\n\n+1 verify manually added for repo:pod-config",
+      "revId": "d5e8a259d36240d2f181755350bbea3c3cb7344c",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
