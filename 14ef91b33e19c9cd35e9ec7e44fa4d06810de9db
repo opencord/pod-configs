@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "65966f09_3a1a6054",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-12-20T21:08:43Z",
+      "side": 1,
+      "message": "Inlined comments aside (review input) edits LGTM",
+      "revId": "14ef91b33e19c9cd35e9ec7e44fa4d06810de9db",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9c2649cd_13b8d7e2",
+        "filename": "deployment-configs/berlin-community-pod-1-gpon-TT.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1000948
+      },
+      "writtenOn": "2023-12-20T21:08:43Z",
+      "side": 1,
+      "message": "Do we need to retain the commented entries or can they be removed in favor of code cleanup and retrieval from revision control if needed ?",
+      "revId": "14ef91b33e19c9cd35e9ec7e44fa4d06810de9db",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
