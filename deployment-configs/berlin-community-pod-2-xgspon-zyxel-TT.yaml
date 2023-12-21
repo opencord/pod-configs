@@ -57,10 +57,6 @@ olts:
     serial: S210Z14009247
     oltDebVersion: openolt_sda3016ss-3.7.2-dev-xgspon-20220520.deb
     board_technology: XGS-PON
- 
-onus:
-  -
-    serial: 'ZYWN8cac752c'
 
 hosts:
   src:
@@ -74,7 +70,7 @@ hosts:
       onu: 'ZYWN8cac752c'
       olt: 'S210Z14009247'
       c_tag: '801'
-      s_tag: '111'
+      s_tag: '211'
       power_switch_port: 4
       onu_type: 'zyxel'
       service_type: 'hsia'
@@ -89,9 +85,9 @@ hosts:
       onu: 'ZYWN8cac752c'
       olt: 'S210Z14009247'
       c_tag: '444'
-      s_tag: '333'
+      s_tag: '433'
       power_switch_port: 4
-      onu_type: ''
+      onu_type: 'zyxel'
       service_type: 'voip'
       uni_id: '1'
     -
@@ -104,9 +100,9 @@ hosts:
       onu: 'ZYWN8cac752c'
       olt: 'S210Z14009247'
       c_tag: '55'
-      s_tag: '555'
+      s_tag: '655'
       power_switch_port: 4
-      onu_type: ''
+      onu_type: 'zyxel'
       service_type: 'vod'
       uni_id: '1'
     -
@@ -119,10 +115,10 @@ hosts:
       onu: 'ZYWN8cac752c'
       olt: 'S210Z14009247'
       c_tag: '55'
-      s_tag: '550'
+      s_tag: '650'
       power_switch_port: 4
-      onu_type: ''
-      mcast_rg: '10.11.6.3/24'
+      onu_type: 'zyxel'
+      mcast_rg: '10.12.6.3/24'
       mcast_grp_subnet_mask: '224.0.0.0/4'
       service_type: 'mcast'
       uni_id: '1'
@@ -132,7 +128,7 @@ hosts:
       user: null
       pass: null
       dp_iface_name: ens1f0
-      dp_iface_ip_qinq: '10.11.1.254'
+      dp_iface_ip_qinq: '10.12.1.254'
       dp_iface_ip: null
       dp_iface_gateway: null
       container_type: null
@@ -142,7 +138,7 @@ hosts:
       user: null
       pass: null
       dp_iface_name: ens1f0
-      dp_iface_ip_qinq: '10.11.4.254'
+      dp_iface_ip_qinq: '10.12.4.254'
       dp_iface_ip: null
       dp_iface_gateway: null
       container_type: null
@@ -155,7 +151,7 @@ hosts:
       noroot_user: community
       noroot_pass: admin
       dp_iface_name: ens1f0
-      dp_iface_ip_qinq: '10.11.5.254'
+      dp_iface_ip_qinq: '10.12.5.254'
       dp_iface_ip: null
       dp_iface_gateway: null
       container_type: null
