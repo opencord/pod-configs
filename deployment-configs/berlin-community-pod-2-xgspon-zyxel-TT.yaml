@@ -74,7 +74,7 @@ hosts:
       onu: 'ZYWN8cac752c'
       olt: 'S210Z14009247'
       c_tag: '801'
-      s_tag: '111'
+      s_tag: '211'
       power_switch_port: 4
       onu_type: 'zyxel'
       service_type: 'hsia'
@@ -89,7 +89,7 @@ hosts:
       onu: 'ZYWN8cac752c'
       olt: 'S210Z14009247'
       c_tag: '444'
-      s_tag: '333'
+      s_tag: '433'
       power_switch_port: 4
       onu_type: ''
       service_type: 'voip'
@@ -104,7 +104,7 @@ hosts:
       onu: 'ZYWN8cac752c'
       olt: 'S210Z14009247'
       c_tag: '55'
-      s_tag: '555'
+      s_tag: '655'
       power_switch_port: 4
       onu_type: ''
       service_type: 'vod'
@@ -119,7 +119,7 @@ hosts:
       onu: 'ZYWN8cac752c'
       olt: 'S210Z14009247'
       c_tag: '55'
-      s_tag: '550'
+      s_tag: '650'
       power_switch_port: 4
       onu_type: ''
       mcast_rg: '10.11.6.3/24'
