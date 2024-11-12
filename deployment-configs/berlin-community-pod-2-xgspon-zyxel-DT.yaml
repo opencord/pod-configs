@@ -50,8 +50,8 @@
   olts:
   # XGSPON OLT
     -
-      ip:  10.34.90.53
-      sship:  10.34.90.53
+      ip: zyxel-olt.berlin-lab.lfbroadband.org
+      sship: zyxel-olt.berlin-lab.lfbroadband.org
       fortygig: False
       aggPort: 6
       user: root
@@ -64,26 +64,77 @@
     src:
       #xgspon ONU
       -
-        ip: 10.34.90.46
+        ip: node-6.berlin-lab.lfbroadband.org
         user: community
         pass: admin
         dp_iface_name: eth1.7
         container_type: LXC
-        container_name: ZYXE8CAC752C
-        onu: ZYWN8cac752c
+        container_name: ZYXE8CABE30B
+        onu: ZYXE8CABE30B
         olt: S210Z14009247
         c_tag: 7
         s_tag: 41
-        power_switch_port: 4
+        power_switch_port: 5
         uni_id: 1
-
+      -
+        ip: node-3.berlin-lab.lfbroadband.org
+        user: community
+        pass: admin
+        dp_iface_name: eth1.7
+        container_type: LXC
+        container_name: ALPHE3A69D03
+        onu: ALPHE3A69D03
+        olt: S210Z14009247
+        c_tag: 7
+        s_tag: 11
+        power_switch_port: 7
+        uni_id: 1
+      -
+        ip: node-3.berlin-lab.lfbroadband.org
+        user: community
+        pass: admin
+        dp_iface_name: eth1.7
+        container_type: LXC
+        container_name: ALPHE3D1CF5C
+        onu: ALPHE3D1CF5C
+        olt: S210Z14009247
+        c_tag: 7
+        s_tag: 12
+        power_switch_port: 8
+        uni_id: 1
     dst:
       -
         dp_iface_ip_qinq: 10.41.7.254
         ip: null
         user: null
         pass: null
-        noroot_ip: 10.34.90.43
+        noroot_ip: node-3.berlin-lab.lfbroadband.org
+        noroot_user: community
+        noroot_pass: admin
+        dp_iface_name: ens1f0
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
+      -
+        dp_iface_ip_qinq: 10.11.7.254
+        ip: null
+        user: null
+        pass: null
+        noroot_ip: node-3.berlin-lab.lfbroadband.org
+        noroot_user: community
+        noroot_pass: admin
+        dp_iface_name: ens1f0
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
+      -
+        dp_iface_ip_qinq: 10.12.7.254
+        ip: null
+        user: null
+        pass: null
+        noroot_ip: node-3.berlin-lab.lfbroadband.org
         noroot_user: community
         noroot_pass: admin
         dp_iface_name: ens1f0
@@ -93,7 +144,7 @@
         container_name: null
 
   web_power_switch:
-    ip: '10.34.90.61'
+    ip: 'pdu02.berlin-lab.lfbroadband.org'
     user: 'admin'
     password: 'secret'
     type: 'EPC'
