@@ -74,7 +74,7 @@
         olt: LBADTN2038AD991
         c_tag: 7
         s_tag: 35
-        power_switch_port: 1
+        power_switch_port: 4
         uni_id: 1
       -
         ip: 10.34.90.41
@@ -87,7 +87,7 @@
         olt: LBADTN2038AD991
         c_tag: 7
         s_tag: 36
-        power_switch_port: 2
+        power_switch_port: 5
         uni_id: 1
       -
         ip: 10.34.90.41
@@ -100,7 +100,7 @@
         olt: LBADTN2038AD991
         c_tag: 7
         s_tag: 37
-        power_switch_port: 4
+        power_switch_port: 7
         uni_id: 1
       -
         ip: 10.34.90.44
@@ -113,7 +113,7 @@
         olt: LBADTN2038AD991
         c_tag: 7
         s_tag: 40
-        power_switch_port: 5
+        power_switch_port: 2
         uni_id: 1
 
     dst:
