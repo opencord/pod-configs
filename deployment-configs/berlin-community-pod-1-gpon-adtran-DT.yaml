@@ -25,15 +25,15 @@
 # This tells the control node how to reach the Kubernetes nodes.
   nodes:
     -
-      ip: '10.34.90.43'
+      ip: 'node-3.berlin-lab.lfbroadband.org'
       user: 'community'
       pass: 'admin'
     -
-      ip: '10.34.90.41'
+      ip: 'node-1.berlin-lab.lfbroadband.org'
       user: 'community'
       pass: 'admin'
     -
-      ip: '10.34.90.42'
+      ip: 'node-2.berlin-lab.lfbroadband.org'
       user: 'community'
       pass: 'admin'
   
@@ -50,8 +50,8 @@
   olts:
   # Gpon OLT
     -
-      ip:  10.34.90.52
-      sship:  10.34.90.52
+      ip:  adtran-olt.berlin-lab.lfbroadband.org
+      sship:  adtran-olt.berlin-lab.lfbroadband.org
       fortygig: False
       aggPort: 3
       serial: LBADTN2038AD991
@@ -64,7 +64,7 @@
     src:
       #GPON ONU
       -
-        ip: 10.34.90.41
+        ip: node-1.berlin-lab.lfbroadband.org
         user: community
         pass: admin
         dp_iface_name: eth1.7
@@ -77,7 +77,7 @@
         power_switch_port: 4
         uni_id: 1
       -
-        ip: 10.34.90.41
+        ip: node-1.berlin-lab.lfbroadband.org
         user: community
         pass: admin
         dp_iface_name: eth1.7
@@ -90,7 +90,7 @@
         power_switch_port: 5
         uni_id: 1
       -
-        ip: 10.34.90.41
+        ip: node-1.berlin-lab.lfbroadband.org
         user: community
         pass: admin
         dp_iface_name: eth1.7
@@ -103,7 +103,7 @@
         power_switch_port: 7
         uni_id: 1
       -
-        ip: 10.34.90.44
+        ip: node-4.berlin-lab.lfbroadband.org
         user: community
         pass: admin
         dp_iface_name: eth1.7
@@ -122,7 +122,7 @@
         ip: null
         user: null
         pass: null
-        noroot_ip: 10.34.90.43
+        noroot_ip: bng.berlin-lab.lfbroadband.org
         noroot_user: community
         noroot_pass: admin
         dp_iface_name: ens1f0
@@ -135,7 +135,7 @@
         ip: null
         user: null
         pass: null
-        noroot_ip: 10.34.90.43
+        noroot_ip: bng.berlin-lab.lfbroadband.org
         noroot_user: community
         noroot_pass: admin
         dp_iface_name: ens1f0
@@ -148,7 +148,7 @@
         ip: null
         user: null
         pass: null
-        noroot_ip: 10.34.90.43
+        noroot_ip: bng.berlin-lab.lfbroadband.org
         noroot_user: community
         noroot_pass: admin
         dp_iface_name: ens1f0
@@ -161,7 +161,7 @@
         ip: null
         user: null
         pass: null
-        noroot_ip: 10.34.90.43
+        noroot_ip: bng.berlin-lab.lfbroadband.org
         noroot_user: community
         noroot_pass: admin
         dp_iface_name: ens1f0
@@ -171,7 +171,7 @@
         container_name: null
 
   web_power_switch:
-    ip: '10.34.90.49'
+    ip: 'pdu03.berlin-lab.lfbroadband.org'
     user: 'admin'
     password: 'secret'
     type: 'EPC'
