@@ -74,7 +74,7 @@
         olt: S210Z14009247
         c_tag: 7
         s_tag: 42
-        power_switch_port: 6
+        power_switch_port: 2
         uni_id: 1
       -
         ip: 10.34.90.45
@@ -87,7 +87,7 @@
         olt: S210Z14009247
         c_tag: 7
         s_tag: 43
-        power_switch_port: 7
+        power_switch_port: 4
         uni_id: 1
 
     dst:
