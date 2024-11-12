@@ -25,15 +25,15 @@
 # This tells the control node how to reach the Kubernetes nodes.
   nodes:
     -
-      ip: '10.34.90.44'
+      ip: 'node-4.berlin-lab.lfbroadband.org'
       user: 'community'
       pass: 'admin'
     -
-      ip: '10.34.90.45'
+      ip: 'node-5.berlin-lab.lfbroadband.org'
       user: 'community'
       pass: 'admin'
     -
-      ip: '10.34.90.46'
+      ip: 'node-6.berlin-lab.lfbroadband.org'
       user: 'community'
       pass: 'admin'
   
@@ -50,8 +50,8 @@
   olts:
   # Gpon OLT
     -
-      ip:  10.34.90.53
-      sship:  10.34.90.53
+      ip: zyxel-olt.berlin-lab.lfbroadband.org
+      sship: zyxel-olt.berlin-lab.lfbroadband.org
       fortygig: False
       aggPort: 6
       user: root
@@ -64,7 +64,7 @@
     src:
       #GPON ONU
       -
-        ip: 10.34.90.45
+        ip: node-5.berlin-lab.lfbroadband.org
         user: community
         pass: admin
         dp_iface_name: eth1.7
@@ -77,7 +77,7 @@
         power_switch_port: 2
         uni_id: 1
       -
-        ip: 10.34.90.45
+        ip: node-5.berlin-lab.lfbroadband.org
         user: community
         pass: admin
         dp_iface_name: eth1.7
@@ -96,7 +96,7 @@
         ip: null
         user: null
         pass: null
-        noroot_ip: 10.34.90.43
+        noroot_ip: bng.berlin-lab.lfbroadband.org
         noroot_user: community
         noroot_pass: admin
         dp_iface_name: ens1f0
@@ -109,7 +109,7 @@
         ip: null
         user: null
         pass: null
-        noroot_ip: 10.34.90.43
+        noroot_ip: bng.berlin-lab.lfbroadband.org
         noroot_user: community
         noroot_pass: admin
         dp_iface_name: ens1f0
@@ -119,7 +119,7 @@
         container_name: null
 
   web_power_switch:
-    ip: '10.34.90.61'
+    ip: 'pdu01.berlin-lab.lfbroadband.org'
     user: 'admin'
     password: 'secret'
     type: 'EPC'
