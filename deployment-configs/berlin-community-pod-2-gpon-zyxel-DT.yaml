@@ -89,6 +89,46 @@
         s_tag: 43
         power_switch_port: 7
         uni_id: 1
+      #XGS-PON ONU
+      -
+        ip: node-3.berlin-lab.lfbroadband.org
+        user: community
+        pass: admin
+        dp_iface_name: eth1.7
+        container_type: LXC
+        container_name: ALPHE3A69D03
+        onu: ALPHE3A69D03
+        olt: S210Z14009247
+        c_tag: 7
+        s_tag: 11
+        power_switch_port: 7
+        uni_id: 1
+      -
+        ip: node-3.berlin-lab.lfbroadband.org
+        user: community
+        pass: admin
+        dp_iface_name: eth1.7
+        container_type: LXC
+        container_name: ALPHE3D1CF5C
+        onu: ALPHE3D1CF5C
+        olt: S210Z14009247
+        c_tag: 7
+        s_tag: 12
+        power_switch_port: 8
+        uni_id: 1
+      -
+        ip: node-6.berlin-lab.lfbroadband.org
+        user: community
+        pass: admin
+        dp_iface_name: eth1.7
+        container_type: LXC
+        container_name: ZYXE8CABE30B
+        onu: ZYXE8CABE30B
+        olt: S210Z14009247
+        c_tag: 7
+        s_tag: 41
+        power_switch_port: 5
+        uni_id: 1
 
     dst:
       -
