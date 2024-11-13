@@ -125,7 +125,7 @@
         noroot_ip: bng.berlin-lab.lfbroadband.org
         noroot_user: community
         noroot_pass: admin
-        dp_iface_name: ens1f0
+        dp_iface_name: enp7s0
         dp_iface_ip: null
         dp_iface_gateway: null
         container_type: null
@@ -138,7 +138,7 @@
         noroot_ip: bng.berlin-lab.lfbroadband.org
         noroot_user: community
         noroot_pass: admin
-        dp_iface_name: ens1f0
+        dp_iface_name: enp7s0
         dp_iface_ip: null
         dp_iface_gateway: null
         container_type: null
@@ -151,7 +151,7 @@
         noroot_ip: bng.berlin-lab.lfbroadband.org
         noroot_user: community
         noroot_pass: admin
-        dp_iface_name: ens1f0
+        dp_iface_name: enp7s0
         dp_iface_ip: null
         dp_iface_gateway: null
         container_type: null
@@ -164,7 +164,7 @@
         noroot_ip: bng.berlin-lab.lfbroadband.org
         noroot_user: community
         noroot_pass: admin
-        dp_iface_name: ens1f0
+        dp_iface_name: enp7s0
         dp_iface_ip: null
         dp_iface_gateway: null
         container_type: null
