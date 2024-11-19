@@ -70,7 +70,7 @@
         dp_iface_name: eth1.7
         container_type: LXC
         container_name: ZYXE8CABE30B
-        onu: ZYXE8CABE30B
+        onu: ZYXE8cabe30b
         olt: S210Z14009247
         c_tag: 7
         s_tag: 41
