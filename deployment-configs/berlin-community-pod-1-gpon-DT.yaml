@@ -82,7 +82,7 @@
         ip: null
         user: null
         pass: null
-        noroot_ip: node-3.berlin-lab.lfbroadband.org
+        noroot_ip: bng.berlin-lab.lfbroadband.org
         noroot_user: community
         noroot_pass: admin
         dp_iface_name: enp7s0
