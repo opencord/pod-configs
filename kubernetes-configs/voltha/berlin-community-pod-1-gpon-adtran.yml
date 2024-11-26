@@ -24,7 +24,7 @@ individualOpenFlowNodePorts: true
 
 images:
   adapter_adtran_olt:
-    registry: "registry.berlin-lab.lfbroadband.org:443/"
+    registry: "registry.berlin-lab.lfbroadband.org/"
     repository: "voltha-adtran-adapter"
     tag: "2.11.2"
 #  onos:
