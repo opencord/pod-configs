@@ -72,3 +72,13 @@ atomix:
   persistence:
     enabled: false
 
+# Overwrite service endpoints for kafka and etcd to match the ones deployed in
+# voltha-infra
+services:
+  kafka:
+    cluster:
+      address: voltha-infra-kafka.infra.svc:9092
+
+  # Define connectivity to etcd
+  etcd:
+    address: voltha-infra-etcd.infra.svc:2379
