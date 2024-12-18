@@ -23,15 +23,15 @@ KUBERNETES_CONF: $HOME/.kube/kind-config-voltha-minimal
 
 nodes:
   -
-    ip: '10.34.90.44'
+    ip: 'node-4.berlin-lab.lfbroadband.org'
     user: 'community'
     pass: 'admin'
   -
-    ip: '10.34.90.45'
+    ip: 'node-5.berlin-lab.lfbroadband.org'
     user: 'community'
     pass: 'admin'
   -
-    ip: '10.34.90.46'
+    ip: 'node-6.berlin-lab.lfbroadband.org'
     user: 'community'
     pass: 'admin'
 
@@ -48,8 +48,8 @@ fabric_switches: []
 olts:
 # XGSPON OLT
   -
-    ip:  10.34.90.53
-    sship:  10.34.90.53
+    ip:  zyxel-olt.berlin-lab.lfbroadband.org
+    sship:  zyxel-olt.berlin-lab.lfbroadband.org
     fortygig: False
     aggPort: 6
     user: root
@@ -61,74 +61,74 @@ olts:
 hosts:
   src:
     -
-      ip: '10.34.90.46'
-      user: 'community'
-      pass: 'admin'
-      dp_iface_name: 'eth1.35'
+      ip: node-6.berlin-lab.lfbroadband.org
+      user: community
+      pass: admin
+      dp_iface_name: eth1.35
       container_type: LXC
-      container_name: ZYXE8CAC752C
-      onu: 'ZYWN8cac752c'
-      olt: 'S210Z14009247'
-      c_tag: '801'
-      s_tag: '211'
-      power_switch_port: 4
-      onu_type: 'zyxel'
-      service_type: 'hsia'
-      uni_id: '1'
+      container_name: ZYXE8CABE30B
+      onu: ZYXE8cabe30b
+      olt: S210Z14009247
+      c_tag: 801
+      s_tag: 111
+      power_switch_port: 5
+      onu_type: zyxel
+      service_type: hsia
+      uni_id: 1
     -
-      ip: '10.34.90.46'
-      user: 'community'
-      pass: 'admin'
-      dp_iface_name: 'eth1.65'
+      ip: node-6.berlin-lab.lfbroadband.org
+      user: community
+      pass: admin
+      dp_iface_name: eth1.65
       container_type: LXC
-      container_name: ZYXE8CAC752C
-      onu: 'ZYWN8cac752c'
-      olt: 'S210Z14009247'
-      c_tag: '444'
-      s_tag: '433'
-      power_switch_port: 4
-      onu_type: 'zyxel'
-      service_type: 'voip'
-      uni_id: '1'
+      container_name: ZYXE8CABE30B
+      onu: ZYXE8cabe30b
+      olt: S210Z14009247
+      c_tag: 444
+      s_tag: 333
+      power_switch_port: 5
+      onu_type: zyxel
+      service_type: voip
+      uni_id: 1
     -
-      ip: '10.34.90.46'
-      user: 'community'
-      pass: 'admin'
-      dp_iface_name: 'eth1.55'
+      ip: node-6.berlin-lab.lfbroadband.org
+      user: community
+      pass: admin
+      dp_iface_name: eth1.55
       container_type: LXC
-      container_name: ZYXE8CAC752C
-      onu: 'ZYWN8cac752c'
-      olt: 'S210Z14009247'
-      c_tag: '55'
-      s_tag: '655'
-      power_switch_port: 4
-      onu_type: 'zyxel'
-      service_type: 'vod'
-      uni_id: '1'
+      container_name: ZYXE8CABE30B
+      onu: ZYXE8cabe30b
+      olt: S210Z14009247
+      c_tag: 55
+      s_tag: 555
+      power_switch_port: 5
+      onu_type: zyxel
+      service_type: vod
+      uni_id: 1
     -
-      ip: '10.34.90.46'
-      user: 'community'
-      pass: 'admin'
-      dp_iface_name: 'eth1.55'
+      ip: node-6.berlin-lab.lfbroadband.org
+      user: community
+      pass: admin
+      dp_iface_name: eth1.55
       container_type: LXC
-      container_name: ZYXE8CAC752C
-      onu: 'ZYWN8cac752c'
-      olt: 'S210Z14009247'
-      c_tag: '55'
-      s_tag: '650'
-      power_switch_port: 4
-      onu_type: 'zyxel'
-      mcast_rg: '10.12.6.3/24'
+      container_name: ZYXE8CABE30B
+      onu: ZYXE8cabe30b
+      olt: S210Z14009247
+      c_tag: 55
+      s_tag: 550
+      power_switch_port: 5
+      onu_type: zyxel'
+      mcast_rg: '10.11.6.3/24'
       mcast_grp_subnet_mask: '224.0.0.0/4'
-      service_type: 'mcast'
-      uni_id: '1'
+      service_type: mcast
+      uni_id: 1
   dst:
     -
       ip: null
       user: null
       pass: null
-      dp_iface_name: ens1f0
-      dp_iface_ip_qinq: '10.12.1.254'
+      dp_iface_name: enp7s0
+      dp_iface_ip_qinq: 10.11.1.254
       dp_iface_ip: null
       dp_iface_gateway: null
       container_type: null
@@ -137,8 +137,8 @@ hosts:
       ip: null
       user: null
       pass: null
-      dp_iface_name: ens1f0
-      dp_iface_ip_qinq: '10.12.4.254'
+      dp_iface_name: enp7s0
+      dp_iface_ip_qinq: 10.11.4.254
       dp_iface_ip: null
       dp_iface_gateway: null
       container_type: null
@@ -147,11 +147,11 @@ hosts:
       ip: null
       user: null
       pass: null
-      noroot_ip: '10.34.90.43'
+      noroot_ip: bng.berlin-lab.lfbroadband.org
       noroot_user: community
       noroot_pass: admin
-      dp_iface_name: ens1f0
-      dp_iface_ip_qinq: '10.12.5.254'
+      dp_iface_name: enp7s0
+      dp_iface_ip_qinq: 10.11.5.254
       dp_iface_ip: null
       dp_iface_gateway: null
       container_type: null
@@ -160,18 +160,18 @@ hosts:
       ip: null
       user: null
       pass: null
-      bng_ip: '10.34.90.43'
+      bng_ip: bng.berlin-lab.lfbroadband.org
       bng_user: community
       bng_pass: admin
-      dp_iface_name: ens1f0
-      dp_iface_ip_qinq: '225.22.0.2'
+      dp_iface_name: enp7s0
+      dp_iface_ip_qinq: 225.22.0.2
       dp_iface_ip: null
       dp_iface_gateway: null
       container_type: null
       container_name: null
 
 web_power_switch:
-  ip: '10.34.90.61'
+  ip: 'pdu01.berlin-lab.lfbroadband.org'
   user: 'admin'
   password: 'secret'
   type: 'EPC'
