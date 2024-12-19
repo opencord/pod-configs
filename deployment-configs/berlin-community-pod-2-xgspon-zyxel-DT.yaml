@@ -64,6 +64,19 @@
     src:
       #xgspon ONU
       -
+        ip: node-6.berlin-lab.lfbroadband.org
+        user: community
+        pass: admin
+        dp_iface_name: eth1.7
+        container_type: LXC
+        container_name: ZYXE8CABE30B
+        onu: ZYXE8cabe30b
+        olt: S210Z14009247
+        c_tag: 7
+        s_tag: 41
+        power_switch_port: 5
+        uni_id: 1
+      -
         ip: node-3.berlin-lab.lfbroadband.org
         user: community
         pass: admin
@@ -91,6 +104,19 @@
         uni_id: 1
 
     dst:
+      -
+        dp_iface_ip_qinq: 10.41.7.254
+        ip: null
+        user: null
+        pass: null
+        noroot_ip: bng.berlin-lab.lfbroadband.org
+        noroot_user: community
+        noroot_pass: admin
+        dp_iface_name: enp7s0
+        dp_iface_ip: null
+        dp_iface_gateway: null
+        container_type: null
+        container_name: null
       -
         dp_iface_ip_qinq: 10.11.7.254
         ip: null
