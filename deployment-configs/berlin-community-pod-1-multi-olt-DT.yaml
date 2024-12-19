@@ -25,15 +25,15 @@
   # This tells the control node how to reach the Kubernetes nodes.
   nodes:
     -
-      ip: '10.34.90.43'
+      ip: 'node-3.berlin-lab.lfbroadband.org'
       user: 'community'
       pass: 'admin'
     -
-      ip: '10.34.90.41'
+      ip: 'node-1.berlin-lab.lfbroadband.org'
       user: 'community'
       pass: 'admin'
     -
-      ip: '10.34.90.42'
+      ip: 'node-2.berlin-lab.lfbroadband.org'
       user: 'community'
       pass: 'admin'
 
@@ -50,71 +50,71 @@
   olts:
   # Gpon OLT
     -
-      ip:  10.34.90.50
-      sship:  10.34.90.50
-      user: root
-      pass: onl
-      fortygig: False
-      aggPort: 2
-      serial: EC1912001823
-      oltDebVersion: openolt_asgvolt64-3.7.4-3b190f027136e845c5850a5b1a97897ce2b74ebf-100G-NNI.deb
-      board_technology: GPON
-
-  # XGS-PON OLT
-    -
-      ip: 10.34.90.51
-      sship: 10.34.90.51
+      ip:  radisys-olt.berlin-lab.lfbroadband.org
+      sship:  radisys-olt.berlin-lab.lfbroadband.org
       user: root
       pass: onl
       fortygig: False
       aggPort: 1
-      serial: EC1729003539
-      oltDebVersion: openolt_asfvolt16-3.7.4-3b190f027136e845c5850a5b1a97897ce2b74ebf-100G-NNI.deb
+      serial: 722033038194
+      oltDebVersion: openolt_rlt-1600x-w-3.10.1-05bf9d424f4fae480cb0fe2c13ffbde5b6be27ee.deb
+      board_technology: GPON
+
+  # XGS-PON OLT
+    -
+      ip: zyxel-olt.berlin-lab.lfbroadband.org
+      sship: zyxel-olt.berlin-lab.lfbroadband.org
+      user: root
+      pass: onl
+      fortygig: False
+      aggPort: 6
+      serial: S210Z14009247
+      oltDebVersion: openolt_sda3016ss-3.7.2-dev-xgspon-20220520.deb
       board_technology: XGS-PON
 
   hosts:
     src:
       #GPON ONU
       -
-        ip: 10.34.90.43
+        ip: node-3.berlin-lab.lfbroadband.org
         user: community
         pass: admin
         dp_iface_name: eth1.7
         container_type: LXC
-        container_name: SCOM00001c82
+        container_name: SCOM00001C82
         onu: SCOM00001c82
-        olt: EC1912001823
+        olt: 722033038194
         c_tag: 7
         s_tag: 31
-        power_switch_port: 1
+        power_switch_port: 4
         uni_id: 1
 
       #XGSPON ONU
       -
-        ip: 10.34.90.43
+        ip: node-3.berlin-lab.lfbroadband.org
         user: community
         pass: admin
         dp_iface_name: eth1.7
         container_type: LXC
-        container_name: ALPHe3d1cf5c
+        container_name: ALPHE3D1CF5C
         onu: ALPHe3d1cf5c
-        olt: EC1729003539
+        olt: S210Z14009247
         c_tag: 7
         s_tag: 12
-        power_switch_port: 6
+        power_switch_port: 8
         uni_id: 1
       -
-        ip: 10.34.90.43
+        ip: node-3.berlin-lab.lfbroadband.org
         user: community
         pass: admin
         dp_iface_name: eth1.7
         container_type: LXC
-        container_name: ALPHe3a69d03
+        container_name: ALPHE3A69D03
         onu: ALPHe3a69d03
-        olt: EC1729003539
+        olt: S210Z14009247
         c_tag: 7
         s_tag: 11
-        power_switch_port: 8
+        power_switch_port: 7
         uni_id: 1
 
     dst:
@@ -150,7 +150,7 @@
         container_name: null
 
   web_power_switch:
-    ip: '10.34.90.48'
+    ip: 'pdu01.berlin-lab.lfbroadband.org'
     user: 'admin'
     password: 'secret'
     type: 'EPC'
