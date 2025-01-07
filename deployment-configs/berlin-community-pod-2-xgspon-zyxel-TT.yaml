@@ -66,13 +66,13 @@ hosts:
       pass: admin
       dp_iface_name: eth1.35
       container_type: LXC
-      container_name: ZYXE8CABE30B
-      onu: ZYXE8cabe30b
+      container_name: ALPHE3A69D03
+      onu: ALPHe3a69d03
       olt: S210Z14009247
       c_tag: 801
       s_tag: 111
-      power_switch_port: 5
-      onu_type: zyxel
+      power_switch_port: 7
+      onu_type: alpha
       service_type: hsia
       uni_id: 1
     -
@@ -81,13 +81,13 @@ hosts:
       pass: admin
       dp_iface_name: eth1.65
       container_type: LXC
-      container_name: ZYXE8CABE30B
-      onu: ZYXE8cabe30b
+      container_name: ALPHE3A69D03
+      onu: ALPHe3a69d03
       olt: S210Z14009247
       c_tag: 444
       s_tag: 333
-      power_switch_port: 5
-      onu_type: zyxel
+      power_switch_port: 7
+      onu_type: alpha
       service_type: voip
       uni_id: 1
     -
@@ -96,13 +96,13 @@ hosts:
       pass: admin
       dp_iface_name: eth1.55
       container_type: LXC
-      container_name: ZYXE8CABE30B
-      onu: ZYXE8cabe30b
+      container_name: ALPHE3A69D03
+      onu: ALPHe3a69d03
       olt: S210Z14009247
       c_tag: 55
       s_tag: 555
-      power_switch_port: 5
-      onu_type: zyxel
+      power_switch_port: 7
+      onu_type: alpha
       service_type: vod
       uni_id: 1
     -
@@ -111,13 +111,13 @@ hosts:
       pass: admin
       dp_iface_name: eth1.55
       container_type: LXC
-      container_name: ZYXE8CABE30B
-      onu: ZYXE8cabe30b
+      container_name: ALPHE3A69D03
+      onu: ALPHe3a69d03
       olt: S210Z14009247
       c_tag: 55
       s_tag: 550
-      power_switch_port: 5
-      onu_type: zyxel'
+      power_switch_port: 7
+      onu_type: alpha
       mcast_rg: '10.11.6.3/24'
       mcast_grp_subnet_mask: '224.0.0.0/4'
       service_type: mcast
