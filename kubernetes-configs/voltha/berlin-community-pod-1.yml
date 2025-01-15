@@ -25,7 +25,9 @@ onosOfPort: 31653
 
 individualOpenFlowNodePorts: true
 
-#images:
+images:
+  rw_core:
+    tag: "3.6.4"
 #  onos:
 #    repository: "andreacampanella/voltha-onos"
 #    tag: "olt-required-drivers"

@@ -27,6 +27,8 @@ images:
     registry: "registry.berlin-lab.lfbroadband.org/"
     repository: "voltha-adtran-adapter"
     tag: "2.11.2"
+  rw_core:
+    tag: "3.6.4"
 #  onos:
 #    repository: "andreacampanella/voltha-onos"
 #    tag: "app-update-sadis"
