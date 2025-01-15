@@ -76,45 +76,45 @@
         s_tag: 35
         power_switch_port: 4
         uni_id: 1
-      -
-        ip: node-1.berlin-lab.lfbroadband.org
-        user: community
-        pass: admin
-        dp_iface_name: eth1.7
-        container_type: LXC
-        container_name: SCOMA030210E
-        onu: SCOMa030210e
-        olt: LBADTN2038AD991
-        c_tag: 7
-        s_tag: 36
-        power_switch_port: 5
-        uni_id: 1
-      -
-        ip: node-1.berlin-lab.lfbroadband.org
-        user: community
-        pass: admin
-        dp_iface_name: eth1.7
-        container_type: LXC
-        container_name: SCOM00001C0F
-        onu: SCOM00001c0f
-        olt: LBADTN2038AD991
-        c_tag: 7
-        s_tag: 37
-        power_switch_port: 7
-        uni_id: 1
-      -
-        ip: node-4.berlin-lab.lfbroadband.org
-        user: community
-        pass: admin
-        dp_iface_name: eth1.7
-        container_type: LXC
-        container_name: SCOMA0305FC1
-        onu: SCOMa0305fc1
-        olt: LBADTN2038AD991
-        c_tag: 7
-        s_tag: 40
-        power_switch_port: 2
-        uni_id: 1
+#      -
+#        ip: node-1.berlin-lab.lfbroadband.org
+#        user: community
+#        pass: admin
+#        dp_iface_name: eth1.7
+#        container_type: LXC
+#        container_name: SCOMA030210E
+#        onu: SCOMa030210e
+#        olt: LBADTN2038AD991
+#        c_tag: 7
+#        s_tag: 36
+#        power_switch_port: 5
+#        uni_id: 1
+#      -
+#        ip: node-1.berlin-lab.lfbroadband.org
+#        user: community
+#        pass: admin
+#        dp_iface_name: eth1.7
+#        container_type: LXC
+#        container_name: SCOM00001C0F
+#        onu: SCOM00001c0f
+#        olt: LBADTN2038AD991
+#        c_tag: 7
+#        s_tag: 37
+#        power_switch_port: 7
+#        uni_id: 1
+#      -
+#        ip: node-4.berlin-lab.lfbroadband.org
+#        user: community
+#        pass: admin
+#        dp_iface_name: eth1.7
+#        container_type: LXC
+#        container_name: SCOMA0305FC1
+#        onu: SCOMa0305fc1
+#        olt: LBADTN2038AD991
+#        c_tag: 7
+#        s_tag: 40
+#        power_switch_port: 2
+#        uni_id: 1
 
     dst:
       -
@@ -130,45 +130,45 @@
         dp_iface_gateway: null
         container_type: null
         container_name: null
-      -
-        dp_iface_ip_qinq: 10.36.7.254
-        ip: null
-        user: null
-        pass: null
-        noroot_ip: bng.berlin-lab.lfbroadband.org
-        noroot_user: community
-        noroot_pass: admin
-        dp_iface_name: enp7s0
-        dp_iface_ip: null
-        dp_iface_gateway: null
-        container_type: null
-        container_name: null
-      -
-        dp_iface_ip_qinq: 10.37.7.254
-        ip: null
-        user: null
-        pass: null
-        noroot_ip: bng.berlin-lab.lfbroadband.org
-        noroot_user: community
-        noroot_pass: admin
-        dp_iface_name: enp7s0
-        dp_iface_ip: null
-        dp_iface_gateway: null
-        container_type: null
-        container_name: null
-      -
-        dp_iface_ip_qinq: 10.40.7.254
-        ip: null
-        user: null
-        pass: null
-        noroot_ip: bng.berlin-lab.lfbroadband.org
-        noroot_user: community
-        noroot_pass: admin
-        dp_iface_name: enp7s0
-        dp_iface_ip: null
-        dp_iface_gateway: null
-        container_type: null
-        container_name: null
+#      -
+#        dp_iface_ip_qinq: 10.36.7.254
+#        ip: null
+#        user: null
+#        pass: null
+#        noroot_ip: bng.berlin-lab.lfbroadband.org
+#        noroot_user: community
+#        noroot_pass: admin
+#        dp_iface_name: enp7s0
+#        dp_iface_ip: null
+#        dp_iface_gateway: null
+#        container_type: null
+#        container_name: null
+#      -
+#        dp_iface_ip_qinq: 10.37.7.254
+#        ip: null
+#        user: null
+#        pass: null
+#        noroot_ip: bng.berlin-lab.lfbroadband.org
+#        noroot_user: community
+#        noroot_pass: admin
+#        dp_iface_name: enp7s0
+#        dp_iface_ip: null
+#        dp_iface_gateway: null
+#        container_type: null
+#        container_name: null
+#      -
+#        dp_iface_ip_qinq: 10.40.7.254
+#        ip: null
+#        user: null
+#        pass: null
+#        noroot_ip: bng.berlin-lab.lfbroadband.org
+#        noroot_user: community
+#        noroot_pass: admin
+#        dp_iface_name: enp7s0
+#        dp_iface_ip: null
+#        dp_iface_gateway: null
+#        container_type: null
+#        container_name: null
 
   web_power_switch:
     ip: 'pdu03.berlin-lab.lfbroadband.org'
