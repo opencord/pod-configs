@@ -61,7 +61,7 @@ olts:
 hosts:
   src:
     -
-      ip: node-6.berlin-lab.lfbroadband.org
+      ip: node-3.berlin-lab.lfbroadband.org
       user: community
       pass: admin
       dp_iface_name: eth1.35
@@ -76,7 +76,7 @@ hosts:
       service_type: hsia
       uni_id: 1
     -
-      ip: node-6.berlin-lab.lfbroadband.org
+      ip: node-3.berlin-lab.lfbroadband.org
       user: community
       pass: admin
       dp_iface_name: eth1.65
@@ -91,7 +91,7 @@ hosts:
       service_type: voip
       uni_id: 1
     -
-      ip: node-6.berlin-lab.lfbroadband.org
+      ip: node-3.berlin-lab.lfbroadband.org
       user: community
       pass: admin
       dp_iface_name: eth1.55
@@ -106,7 +106,7 @@ hosts:
       service_type: vod
       uni_id: 1
     -
-      ip: node-6.berlin-lab.lfbroadband.org
+      ip: node-3.berlin-lab.lfbroadband.org
       user: community
       pass: admin
       dp_iface_name: eth1.55
