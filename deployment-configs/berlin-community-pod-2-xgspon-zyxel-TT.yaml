@@ -71,7 +71,7 @@ hosts:
       olt: S210Z14009247
       c_tag: 801
       s_tag: 111
-      power_switch_port: 7
+      power_switch_port: 6
       onu_type: alpha
       service_type: hsia
       uni_id: 1
@@ -86,7 +86,7 @@ hosts:
       olt: S210Z14009247
       c_tag: 444
       s_tag: 333
-      power_switch_port: 7
+      power_switch_port: 6
       onu_type: alpha
       service_type: voip
       uni_id: 1
@@ -101,7 +101,7 @@ hosts:
       olt: S210Z14009247
       c_tag: 55
       s_tag: 555
-      power_switch_port: 7
+      power_switch_port: 6
       onu_type: alpha
       service_type: vod
       uni_id: 1
@@ -116,7 +116,7 @@ hosts:
       olt: S210Z14009247
       c_tag: 55
       s_tag: 550
-      power_switch_port: 7
+      power_switch_port: 6
       onu_type: alpha
       mcast_rg: '10.11.6.3/24'
       mcast_grp_subnet_mask: '224.0.0.0/4'

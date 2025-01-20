@@ -74,7 +74,7 @@
         olt: S210Z14009247
         c_tag: 7
         s_tag: 11
-        power_switch_port: 7
+        power_switch_port: 6
         uni_id: 1
 #      -
 #        ip: node-3.berlin-lab.lfbroadband.org
@@ -87,7 +87,7 @@
 #        olt: S210Z14009247
 #        c_tag: 7
 #        s_tag: 12
-#        power_switch_port: 8
+#        power_switch_port: 7
 #        uni_id: 1
 
     dst:
