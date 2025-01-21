@@ -123,7 +123,10 @@
         ip: null
         user: null
         pass: null
-        dp_iface_name: null
+        noroot_ip: bng.berlin-lab.lfbroadband.org
+        noroot_user: community
+        noroot_pass: admin
+        dp_iface_name: enp7s0
         dp_iface_ip: null
         dp_iface_gateway: null
         container_type: null
@@ -143,7 +146,10 @@
         ip: null
         user: null
         pass: null
-        dp_iface_name: null
+        noroot_ip: bng.berlin-lab.lfbroadband.org
+        noroot_user: community
+        noroot_pass: admin
+        dp_iface_name: enp7s0
         dp_iface_ip: null
         dp_iface_gateway: null
         container_type: null
