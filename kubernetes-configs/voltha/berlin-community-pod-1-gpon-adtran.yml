@@ -22,6 +22,10 @@ onosOfPort: 31653
 
 individualOpenFlowNodePorts: true
 
+voltha:
+  images:
+    rw_core:
+      tag: "3.6.4"
 
 images:
   adapter_adtran_olt:
